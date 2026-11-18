@@ -401,7 +401,7 @@ ExamEngine.prototype.grade = function(auto){
       if(segData){
         if(segData.mp3) html += reviewAudioHtml(segData.mp3, 'Nghe lại ' + segLabel.toLowerCase() + ' ' + item.seg);
         if(segData.lines){
-          var tr = segData.lines.map(function(l){ return l.text; }).join('\n');
+          var tr = segData.lines.map(function(l){ return (typeof l === 'string') ? l : (l.text || ''); }).join('\n');
           html += '<div class="transcript jp"><strong>Transcript ' + segLabel.toLowerCase() + ' ' + item.seg + ':</strong>\n' + tr + '</div>';
         }
         html += viTrHtml(segData.vi, 'Bản dịch ' + segLabel.toLowerCase() + ' ' + item.seg);
