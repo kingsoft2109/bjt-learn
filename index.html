@@ -470,7 +470,8 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
   <div class="exam-picker">
     <label for="examSelect">Chọn đề</label>
     <select id="examSelect" aria-label="Chọn đề thi" onchange="switchExam(this.value)">
-      <option value="day21" selected>Ngày 21 — Luyện đọc hiểu （読解） · 12 câu · Mới nhất</option>
+      <option value="day22" selected>Ngày 22 — Luyện nghe + đọc （聴読解） · 12 câu · Mới nhất</option>
+      <option value="day21">Ngày 21 — Luyện đọc hiểu （読解） · 12 câu</option>
       <option value="day20">Ngày 20 — Luyện nghe （聴解） · 12 câu</option>
       <option value="day19">Ngày 19 — Kiểm tra bấm giờ Nghe （聴解） · 12 câu</option>
       <option value="day18">Ngày 18 — Luyện đọc hiểu （読解） · 12 câu</option>
@@ -498,7 +499,8 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     </select>
   </div>
   <div class="tabs" role="tablist" aria-label="Chọn đề thi">
-    <button class="tab active" id="tabDay21" onclick="switchExam('day21')">Ngày 21 — Luyện đọc hiểu （読解） · 12 câu<span class="new-badge">Mới nhất</span></button>
+    <button class="tab active" id="tabDay22" onclick="switchExam('day22')">Ngày 22 — Luyện nghe + đọc （聴読解） · 12 câu<span class="new-badge">Mới nhất</span></button>
+    <button class="tab" id="tabDay21" onclick="switchExam('day21')">Ngày 21 — Luyện đọc hiểu （読解） · 12 câu</button>
     <button class="tab" id="tabDay20" onclick="switchExam('day20')">Ngày 20 — Luyện nghe （聴解） · 12 câu</button>
     <button class="tab" id="tabDay19" onclick="switchExam('day19')">Ngày 19 — Kiểm tra bấm giờ Nghe （聴解） · 12 câu</button>
     <button class="tab" id="tabDay18" onclick="switchExam('day18')">Ngày 18 — Luyện đọc hiểu （読解） · 12 câu</button>
@@ -776,9 +778,9 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
    Supported deep-link forms on the public URL:
      ?de=ngay-4   (query parameter — primary form; ?exam=ngay-4 also works)
      #ngay-4      (hash — kept for in-app use)
-   A valid tag in the URL wins over the default (newest exam, Ngày 21);
+   A valid tag in the URL wins over the default (newest exam, Ngày 22);
    switching exams on the page updates the hash to match. */
-var EXAM_TAGS = { day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
+var EXAM_TAGS = { day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
 var TAG_EXAMS = {};
 Object.keys(EXAM_TAGS).forEach(function(k){ TAG_EXAMS[EXAM_TAGS[k]] = k; });
 /* The published page is displayed inside the Muse shell, and the #tag
@@ -874,7 +876,7 @@ function syncExamHash(which){
     try{ window.location.hash = tag; }catch(e2){}
   }
 }
-var currentExam = 'day21';
+var currentExam = 'day22';
 /* Set when the reader picks an exam themselves (tab or dropdown): a tag
    that only becomes readable a moment after load must never override a
    choice already made, nor interrupt an exam already started. */
@@ -889,7 +891,7 @@ function anyExamStarted(){
   return false;
 }
 function switchExam(which){
-  if(!EXAM_TAGS[which]) which = 'day21';
+  if(!EXAM_TAGS[which]) which = 'day22';
   currentExam = which;
   syncExamHash(which);
   var examSel = document.getElementById('examSelect');
@@ -1871,7 +1873,7 @@ window.resetDay21 = resetDay21;
 window.cbtPrev21 = cbtPrev21;
 window.cbtNext21 = cbtNext21;
 (function wireTabs(){
-  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabMock1:'mock1', tabDemo:'demo' };
+  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabMock1:'mock1', tabDemo:'demo' };
   Object.keys(map).forEach(function(id){
     var el = document.getElementById(id);
     if(el) el.addEventListener('click', function(){ userPickedExam = true; switchExam(map[id]); });
@@ -1882,7 +1884,7 @@ window.cbtNext21 = cbtNext21;
   if(fs) fs.addEventListener('click', function(){ cycleFontSize(); });
   /* URL tag: a link like …#ngay-3 opens that exam, overriding the
      newest-exam default; with no (or an unknown) tag the page keeps
-     Ngày 21 and writes its tag into the URL so the address always
+     Ngày 22 and writes its tag into the URL so the address always
      points at the exam on screen. On the published page the tag lives
      on the shell's address, so examFromHash also looks there. */
   window.addEventListener('hashchange', function(){
@@ -1930,6 +1932,7 @@ window.cbtNext21 = cbtNext21;
 <script src="data/exams/day19.js"></script>
 <script src="data/exams/day20.js"></script>
 <script src="data/exams/day21.js"></script>
+<script src="data/exams/day22.js"></script>
 
 <!-- Exam engine -->
 <script src="js/exam-engine.js"></script>
