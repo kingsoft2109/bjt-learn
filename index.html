@@ -453,9 +453,6 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
   .qcard{scroll-margin-top:16px}
   .submit-bar{position:static}
 }
-/* ===== ads ===== */
-.ad-container{margin:18px 0;text-align:center;min-height:90px;overflow:hidden}
-.ad-container ins{display:block}
 </style>
 </head>
 <body>
@@ -13849,32 +13846,6 @@ var vocabBtn = document.getElementById('vocabBtn');
 if(vocabBtn) vocabBtn.addEventListener('click', function(){ try{ userPickedExam = true; }catch(e){} switchExam('vocab'); });
 var vocabTab = document.getElementById('tabVocab');
 if(vocabTab) vocabTab.addEventListener('click', function(){ try{ userPickedExam = true; }catch(e){} });
-</script>
-<script>
-(function(){
-  var AD_CLIENT = 'ca-pub-1771607040249447';
-  function makeAd(){
-    var d = document.createElement('div');
-    d.className = 'ad-container';
-    d.innerHTML = '<ins class="adsbygoogle" style="display:block" data-ad-client="'+AD_CLIENT+'" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>';
-    return d;
-  }
-  var mains = document.querySelectorAll('main.wrap');
-  mains.forEach(function(m){
-    var startPanel = m.querySelector('.start-panel');
-    if(startPanel){
-      var ad = makeAd();
-      startPanel.parentNode.insertBefore(ad, startPanel);
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    }
-    var resultPanel = m.querySelector('.result-panel');
-    if(resultPanel){
-      var ad2 = makeAd();
-      resultPanel.parentNode.insertBefore(ad2, resultPanel.nextSibling);
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    }
-  });
-})();
 </script>
 </body>
 </html>
