@@ -1,0 +1,66 @@
+(function(){
+var cfg = {
+  id: 'day24',
+  type: 'dokkai',
+  title: 'Ngày 24 — Luyện <span class="jp">読解</span> (Đọc hiểu)',
+  subtitle: '4 bộ · 12 câu · §1 <span class="jp">語彙・文法</span> （クレーム対応） · §2 <span class="jp">表現読解</span> （見積り・価格交渉） · §3 <span class="jp">お知らせ</span> （採用説明会） + <span class="jp">社内規則</span> （出張旅費規程） · Thứ Sáu 20/11/2026',
+  timeSeconds: 40*60,
+  questionCount: 12,
+  segmentCount: 4,
+  segLabel: 'Bộ',
+  segments: {
+  1: { title:'第1問 — 語彙・文法：社内連絡 — 商品の不具合に関する対応について', desc:'Câu 1–3 · Thông báo nội bộ về 商品の不具合 — chọn từ/cụm đúng nhất điền vào （　　1　　）〜（　　3　　）: 分かり次第, 深くお詫び申し上げます và 徹底してまいります.',
+    subject:'社内連絡：商品の不具合に関する対応について',
+    body:'先日、お客様より商品の不具合についてご指摘をいただきました。原因の調査を進めております。調査結果につきましては、（　　1　　）改めてご連絡いたします。お客様にはご迷惑をおかけしたことを、深くお詫び（　　2　　）。今後、このようなことがないよう、品質管理を徹底して（　　3　　）。',
+    vi:['Mới đây, chúng tôi đã nhận được phản ánh của khách hàng về lỗi của sản phẩm. Chúng tôi đang tiến hành điều tra nguyên nhân. Về kết quả điều tra, chúng tôi sẽ liên lạc lại ngay khi có kết quả. Chúng tôi xin lỗi sâu sắc vì đã gây phiền phức cho quý khách. Từ nay, để không xảy ra việc như vậy nữa, chúng tôi sẽ triệt để thực hiện quản lý chất lượng.']},
+  2: { title:'第2問 — 表現読解：Hội thoại điền chỗ trống — 見積り・価格交渉', desc:'Câu 4–6 · Ba đoạn hội thoại ngắn về 見積り・価格交渉, mỗi đoạn điền một chỗ trống — chọn cách nói lịch sự, mềm mỏng đúng nhất: đồng cảm trước khi từ chối, nhờ xác nhận và mở đầu cuộc gọi.',
+    subject:'表現読解 — Hội thoại điền chỗ trống',
+    body:'A：今回の見積書ですが、予算の関係で、もう少し価格を下げていただくことは可能でしょうか。\nB：ご要望は（　　4　　）が、原価の面から大幅な値下げは難しいかと存じます。\n\nA：お手数ですが、こちらの見積書を（　　5　　）。\n\nA：先ほどいただいたお電話で（　　6　　）、納期の件でひとつご相談したいことがございまして……。',
+    vi:['A: Về bảng báo giá lần này, vì lý do ngân sách, liệu có thể giảm giá thêm một chút được không ạ. B: Tôi rất hiểu yêu cầu của anh/chị, nhưng xét về mặt chi phí gốc thì việc giảm giá mạnh e là khó ạ.', 'A: Làm phiền anh/chị, xin anh/chị xác nhận giúp bảng báo giá này ạ.', 'A: Về cuộc điện thoại vừa rồi tôi nhận được, xin lỗi đã làm phiền, tôi có một việc muốn trao đổi về thời hạn giao hàng ạ.']},
+  3: { title:'第3問 — 総合読解：掲示・お知らせ — 新卒採用説明会の開催について', desc:'Câu 7–9 · お知らせ về 採用説明会 — đối tượng, hạn đăng ký và cách nhận tài liệu; chú ý ngoại lệ "事前の送付はいたしません".',
+    subject:'新卒採用説明会の開催について',
+    body:'人事部では、2027年度新卒採用の会社説明会を下記のとおり開催いたします。\n対象：2027年3月に大学を卒業予定の方\n日時：12月15日火曜日、午後2時から午後4時まで\n場所：本社5階の大会議室\n定員：50名\n参加を希望される方は、12月10日木曜日までに、人事部の採用担当までメールでお申し込みください。\nなお、説明会の資料は、当日、会場でお渡しいたします。事前の送付はいたしませんので、ご了承ください。',
+    vi:['Phòng Nhân sự sẽ tổ chức buổi thuyết minh công ty cho đợt tuyển dụng sinh viên mới năm tài chính 2027 như dưới đây. Đối tượng: những người dự kiến tốt nghiệp đại học vào tháng 3 năm 2027. Thời gian: thứ Ba ngày 15 tháng 12, từ 2 giờ chiều đến 4 giờ chiều. Địa điểm: phòng họp lớn tầng 5 trụ sở chính. Số lượng: 50 người. Những ai muốn tham gia, vui lòng đăng ký qua email cho người phụ trách tuyển dụng của Phòng Nhân sự trước thứ Năm ngày 10 tháng 12. Ngoài ra, tài liệu của buổi thuyết minh sẽ được phát tại hội trường vào ngày diễn ra. Chúng tôi sẽ không gửi trước, mong quý vị thông cảm.']},
+  4: { title:'第4問 — 総合読解：文書 dài — 社内規則（抜粋）: 出張旅費規程', desc:'Câu 10–12 · 社内規則 (抜粋) về 出張旅費規程 — 申請 7日前, グリーン車 không được chi trả, 宿泊費上限 10,000円 (東京23区内 12,000円); ghi số kèm nhãn (hạng ghế nào? khu vực nào?) trước khi chọn.',
+    subject:'出張旅費規程（抜粋）',
+    body:'第5条（出張の申請）出張する社員は、出張の7日前までに、出張申請書を直属の上司に提出し、承認を得なければならない。ただし、緊急の出張については、この限りではない。\n第6条（交通費）出張の交通費は、実費を支給する。ただし、新幹線を利用する場合は、指定席の料金までを支給するものとし、グリーン車の料金は支給しない。\n第7条（宿泊費）宿泊費は、1泊につき上限10,000円までを支給する。ただし、出張先が東京23区内の場合は、上限を12,000円とする。\n第8条（精算）出張から戻った社員は、帰着後5営業日以内に、領収書を添えて精算書を経理部に提出しなければならない。',
+    vi:['Quy định về chi phí công tác (trích). Điều 5 (Đăng ký công tác): Nhân viên đi công tác phải nộp đơn đăng ký công tác cho cấp trên trực tiếp ít nhất 7 ngày trước khi đi công tác và phải được phê duyệt. Tuy nhiên, trường hợp công tác khẩn cấp thì không áp dụng quy định này. Điều 6 (Chi phí đi lại): Chi phí đi lại khi công tác được chi trả theo thực phí. Tuy nhiên, khi sử dụng Shinkansen, chỉ chi trả đến mức phí ghế chỉ định, không chi trả phí toa Green. Điều 7 (Chi phí lưu trú): Chi phí lưu trú được chi trả tối đa 10.000 yên một đêm. Tuy nhiên, nếu nơi công tác nằm trong 23 quận của Tokyo thì mức tối đa là 12.000 yên. Điều 8 (Quyết toán): Nhân viên trở về từ chuyến công tác phải nộp bảng quyết toán kèm hóa đơn cho Phòng Kế toán trong vòng 5 ngày làm việc sau khi về.']}
+},
+  segNames: { 1:'語彙・文法', 2:'表現読解 — Cách nói lịch sự', 3:'総合読解 — お知らせ (採用説明会)', 4:'総合読解 — 社内規則 (出張旅費規程)' },
+  questions: [
+  {n:1, seg:1, q:'調査結果につきましては、（　　）改めてご連絡いたします。', opts:['分かり次第','分かりしだい','分かったら','分かるまで'], ans:'A', trap:'Cụm cố định 「分かり次第」', explain:'「分かり次第、ご連絡いたします」= ngay khi rõ kết quả sẽ liên lạc lại; trong văn bản trang trọng viết bằng chữ Hán 次第 (B viết hiragana しだい không phải dạng chuẩn của cụm này); C là thể thường, sai văn phong; D là "cho tới khi hiểu" — sai nghĩa (không phải "ngay khi").'},
+  {n:2, seg:1, q:'お客様にはご迷惑をおかけしたことを、深くお詫び（　　）。', opts:['申し上げました','申し上げます','申し上げております','申し上げたいです'], ans:'B', trap:'Cụm cố định 「深くお詫び申し上げます」', explain:'「深くお詫び申し上げます」= xin lỗi sâu sắc (hiện tại, đang xin lỗi); A là quá khứ (đã xin lỗi rồi), sai thì; C là trạng thái tiếp diễn, không dùng trong lời xin lỗi này; D là "muốn xin lỗi" — chưa phải lời xin lỗi.'},
+  {n:3, seg:1, q:'今後、このようなことがないよう、品質管理を徹底して（　　）。', opts:['いきます','おります','まいります','きます'], ans:'C', trap:'「徹底してまいります」— khiêm nhường ngữ', explain:'「徹底してまいります」 là dạng khiêm nhường ngữ chuẩn cho cam kết của phía mình (sẽ triệt để thực hiện); A là thể thường, sai văn phong trang trọng; B sai động từ; D sai hướng (きます = đi về phía người nói).'},
+  {n:4, seg:2, q:'A：今回の見積書ですが、予算の関係で、もう少し価格を下げていただくことは可能でしょうか。 B：ご要望は（　　）が、原価の面から大幅な値下げは難しいかと存じます。', opts:['よくわかりません','よくわかるはずです','よくわかっていません','よくわかります'], ans:'D', trap:'Đồng cảm trước rồi mới từ chối: 「よくわかりますが」', explain:'「ご要望はよくわかりますが」 là cách mềm mỏng để từ chối sau khi tỏ ý đồng cảm (đã hiểu yêu cầu rồi mới nêu lý do khó); A mâu thuẫn với vế sau (đã hiểu rõ nên mới từ chối có lý do); B là suy đoán, không phải lời đáp lịch sự; C sai nghĩa (không hiểu).'},
+  {n:5, seg:2, q:'A：お手数ですが、こちらの見積書を（　　）。', opts:['ご確認いただけますでしょうか','ご確認してください','ご確認なさいますか','ご確認いただきます'], ans:'A', trap:'「ご確認いただけますでしょうか」— nhờ vả lịch sự', explain:'「ご確認いただけますでしょうか」 là cách nhờ vả lịch sự chuẩn (xin đối phương xác nhận giúp); B là mệnh lệnh, thô; C chỉ là câu hỏi "ngài có xác nhận không?" — không phải lời nhờ; D là câu trần thuật, không phải lời nhờ.'},
+  {n:6, seg:2, q:'A：先ほどいただいたお電話で（　　）、納期の件でひとつご相談したいことがございまして……。', opts:['お手数ですが','恐縮ですが','お願いですが','勝手ですが'], ans:'B', trap:'「恐縮ですが」— mở đầu cuộc gọi lịch sự', explain:'「恐縮ですが」 là cụm mở đầu lịch sự khi gọi điện/yêu cầu (xin lỗi vì làm phiền); A dùng khi nhờ làm việc gây phiền phức, không khớp với mở đầu cuộc gọi; C và D không phải cụm mở đầu chuẩn trong tình huống này.'},
+  {n:7, seg:3, q:'会社説明会の対象者は誰ですか。', opts:['すでに大学を卒業した方','大学1年生の方','2027年3月に大学を卒業予定の方','人事部の社員'], ans:'C', trap:'対象 = 2027年3月に大学を卒業予定の方', explain:'対象 là 2027年3月に大学を卒業予定の方; A và B không khớp dòng 対象.'},
+  {n:8, seg:3, q:'参加を希望する方は、いつまでに申し込めばいいですか。', opts:['12月15日火曜日まで','当日まで','12月4日金曜日まで','12月10日木曜日まで'], ans:'D', trap:'Hạn đăng ký 12月10日 vs ngày tổ chức 12月15日', explain:'12月10日木曜日までにメールで申し込む; 12月15日 là ngày tổ chức説明会 (không phải hạn đăng ký); 12月4日 không được nhắc tới.'},
+  {n:9, seg:3, q:'説明会の資料について正しいものはどれですか。', opts:['事前にメールで送る','申し込みのときに渡す','当日、会場で渡す','会場では渡さない'], ans:'C', trap:'「事前の送付はいたしません」— không gửi trước', explain:'資料は当日、会場でお渡しいたします; 事前の送付はいたしません — bẫy "chưa/gửi trước": A lấy ngược ý (事前に送る = điều văn bản nói rõ KHÔNG làm).'},
+  {n:10, seg:4, q:'出張の申請について正しいものはどれですか。', opts:['出張の7日前までに申請し、承認を得る（緊急の出張は除く）','出張の3日前までに申請する','申請は不要だ','出張後に申請する'], ans:'A', trap:'申請 7日前 + 承認; 緊急の出張は例外', explain:'出張の7日前までに申請書を提出し、承認を得る; 緊急の出張は例外. B sai số ngày (3日前 không được nêu); C sai (申請 là bắt buộc); D hoán đổi 申請 với 精算 (精算 mới làm sau khi về).'},
+  {n:11, seg:4, q:'新幹線のグリーン車の料金について正しいものはどれですか。', opts:['実費を支給する','指定席の料金まで支給する','支給しない','半額を支給する'], ans:'C', trap:'グリーン車は支給しない vs 指定席まで支給', explain:'グリーン車の料金は支給しない; A là quy tắc chung của 交通費 (thực phí) nhưng có ngoại lệ cho グリーン車; B là mức支給 của 指定席, không phải グリーン車 — bẫy hoán đổi mức支給 giữa hai hạng ghế.'},
+  {n:12, seg:4, q:'宿泊費について正しいものはどれですか。', opts:['どこでも1泊12,000円まで','1泊10,000円までだが、東京23区内は12,000円まで','東京23区内は10,000円まで','上限はない'], ans:'B', trap:'Mức chung 10,000円 vs 東京23区内 12,000円', explain:'宿泊費は1泊上限10,000円, 東京23区内は上限12,000円; A lấy mức ngoại lệ làm mức chung; C hoán đổi hai mức.'}
+],
+  instructions: `<li><strong>Khoảng 40 phút</strong> cho 12 câu đọc hiểu. Đồng hồ bắt đầu chạy khi bạn bấm <em>Bắt đầu làm bài</em>; hết giờ bài tự nộp.</li>
+          <li>Bài gồm <strong>4 bộ</strong>, mỗi bộ có 1 văn bản + 3 câu hỏi và <strong>cả 3 câu của bộ hiển thị cùng nhau</strong> ngay dưới văn bản đó, trong khung làm bài kiểu phòng thi CBT — đọc xong trả lời luôn cả 3 câu, không phải chuyển qua lại từng câu. <strong>Không có audio</strong> — buổi này chỉ luyện đọc.</li>
+          <li>Bài gồm 1 bộ <span class="jp">語彙・文法</span> (điền vào thông báo nội bộ về 商品の不具合), 1 bộ <span class="jp">表現読解</span> (điền vào hội thoại 見積り・価格交渉 — cách nói lịch sự, mềm mỏng), 1 bộ <span class="jp">お知らせ</span> (採用説明会) và 1 bộ văn bản dài <span class="jp">社内規則</span> (出張旅費規程). Với mọi bộ, hãy <strong>đọc kỹ cả văn bản trước khi chọn</strong> đáp án — đừng chọn ngay khi thấy một cụm quen ở dòng đầu.</li>
+          <li>Ở các bộ điền chỗ trống, chú ý <strong>cụm cố định</strong> thường đi kèm với cấu trúc trước/sau chỗ trống và <strong>hướng kính ngữ</strong>: ai là người thực hiện hành động, ai là người nhận — phía mình thì khiêm nhường (<span class="jp">お〜いたします</span>/<span class="jp">〜てまいります</span>), phía đối phương thì tôn kính; ở bộ <span class="jp">表現読解</span>, chú ý thêm cách <strong>đồng cảm trước rồi mới từ chối</strong> và cách mở đầu cuộc gọi.</li>
+          <li>Ở các bộ đọc hiểu, chú ý ba điểm hay bị đặt bẫy: (1) <strong>ngoại lệ</strong> (<span class="jp">ただし…</span>) và trạng thái <strong>đã / chưa</strong> — khi gặp "chưa…" hay "không gửi trước", hãy xác định rõ trạng thái đó áp cho <em>hạng mục nào</em> và hệ quả đi kèm; (2) <strong>số liệu</strong> — với câu hỏi so sánh hay tính toán, ghi từng con số ra nháp <em>kèm nhãn</em> (hạng ghế nào, khu vực nào, mức chung hay mức ngoại lệ) rồi mới chọn đúng cặp mà câu hỏi hỏi; (3) <strong>chủ thể</strong> của từng hành động — đừng gán việc của người này cho người kia, hay việc của hạng mục này cho hạng mục kia.</li>
+          <li>Dùng cột <strong>Danh sách câu hỏi</strong> bên trái để nhảy tới câu bất kỳ (trang tự cuộn tới câu đó), hoặc phím <kbd>←</kbd> <kbd>→</kbd> để cuộn tới câu trước / câu tiếp. Phím <kbd>A</kbd>–<kbd>D</kbd> chọn đáp án cho câu bạn vừa bấm vào. Mỗi câu chỉ chọn <strong>một</strong> đáp án.</li>
+          <li>Câu nào chưa chắc, bấm <strong>⚑ Đánh dấu</strong> ở ngay câu đó để quay lại sau.</li>
+          <li>Nút <strong>Nộp bài</strong> luôn nằm ở thanh cuối trang (và trong cột bên trái) — bấm vào sẽ hiện hộp xác nhận, bấm <em>Nộp bài</em> trong hộp đó mới chấm điểm. Đáp án, giải thích tiếng Việt và <strong>bản dịch gợi ý của từng văn bản</strong> chỉ hiện sau khi nộp, kèm sổ lỗi sai.</li>`,
+  candidateInfo: { subject: 'BJT 読解 — Luyện tập Ngày 24', questionInfo: '12 câu · 4 bộ', time: '~40 phút', format: '語彙・文法 · 表現読解 · お知らせ · 社内規則' },
+  tips: `Đọc hết văn bản rồi mới nhìn lựa chọn; với câu điền chỗ trống, chọn theo cụm cố định chứ không theo nghĩa từng từ, và kiểm tra hướng kính ngữ bằng câu hỏi "ai làm việc này?"; gặp ngoại lệ (ただし…) thì khoanh rõ nó áp cho hạng mục nào; với câu hỏi số liệu, ghi mỗi con số kèm nhãn (hạng ghế nào, khu vực nào, mức chung hay mức ngoại lệ) ra nháp rồi mới chọn đúng cặp được hỏi.`,
+  footerNote: 'Bài Ngày 24 — Luyện 読解 (Đọc hiểu): thông báo nội bộ về 商品の不具合 (分かり次第 / 深くお詫び申し上げます / 徹底してまいります), hội thoại 見積り・価格交渉, お知らせ 採用説明会 và 社内規則 出張旅費規程 (抜粋). Không có audio.',
+  scoreMessages: [
+    {min: 12, text: 'Xuất sắc — sạch cả 12 câu đọc hiểu Ngày 24!'},
+    {min: 10, text: 'Rất tốt — ngữ pháp, cách nói lịch sự, số liệu và quy định đều chắc'},
+    {min: 8, text: 'Khá chắc tay — còn vài chỗ cần đối chiếu kỹ'},
+    {min: 5, text: 'Đang vào form — chú ý cụm cố định, hướng kính ngữ và ngoại lệ'},
+    {min: 1, text: 'Cần luyện thêm — đọc lại từng bộ kèm giải thích nhé'},
+    {min: 0, text: 'Nền đọc hiểu đang hổng — đọc lại văn bản từng bộ nhé'}
+  ]
+};
+if(!window.EXAM_DAYS) window.EXAM_DAYS = {};
+window.EXAM_DAYS[cfg.id] = cfg;
+})();
