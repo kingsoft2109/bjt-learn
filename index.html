@@ -473,7 +473,8 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
   <div class="exam-picker">
     <label for="examSelect">Chọn đề</label>
     <select id="examSelect" aria-label="Chọn đề thi" onchange="switchExam(this.value)">
-      <option value="day23" selected>Ngày 23 — Luyện nghe （聴解） · 12 câu · Mới nhất</option>
+      <option value="day24" selected>Ngày 24 — Luyện đọc hiểu （読解） · 12 câu · Mới nhất</option>
+      <option value="day23">Ngày 23 — Luyện nghe （聴解） · 12 câu</option>
       <option value="day22">Ngày 22 — Luyện nghe + đọc （聴読解） · 12 câu</option>
       <option value="day21">Ngày 21 — Luyện đọc hiểu （読解） · 12 câu</option>
       <option value="day20">Ngày 20 — Luyện nghe （聴解） · 12 câu</option>
@@ -497,13 +498,15 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <option value="day2">Ngày 2 — Chẩn đoán đọc hiểu （読解） · 9 câu</option>
       <option value="day1">Ngày 1 — Chẩn đoán Nghe · 9 câu</option>
       <option value="mock1">Đề thi thử BJT 01 — 40 câu · 3 phần</option>
+      <option value="mock2">Đề thi thử BJT 02 — 80 câu · 3 phần</option>
       <option value="demo">Đề mẫu 01 — 3 phần · 3 câu</option>
       <option value="videos">Thư viện video — 56 video tình huống theo chủ đề</option>
       <option value="vocab">Thẻ từ vựng — 884 từ theo ngày</option>
     </select>
   </div>
   <div class="tabs" role="tablist" aria-label="Chọn đề thi">
-    <button class="tab active" id="tabDay23" onclick="switchExam('day23')">Ngày 23 — Luyện nghe （聴解） · 12 câu<span class="new-badge">Mới nhất</span></button>
+    <button class="tab active" id="tabDay24" onclick="switchExam('day24')">Ngày 24 — Luyện đọc hiểu （読解） · 12 câu<span class="new-badge">Mới nhất</span></button>
+    <button class="tab" id="tabDay23" onclick="switchExam('day23')">Ngày 23 — Luyện nghe （聴解） · 12 câu</button>
     <button class="tab" id="tabDay22" onclick="switchExam('day22')">Ngày 22 — Luyện nghe + đọc （聴読解） · 12 câu</button>
     <button class="tab" id="tabDay21" onclick="switchExam('day21')">Ngày 21 — Luyện đọc hiểu （読解） · 12 câu</button>
     <button class="tab" id="tabDay20" onclick="switchExam('day20')">Ngày 20 — Luyện nghe （聴解） · 12 câu</button>
@@ -527,6 +530,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <button class="tab" id="tabDay2" onclick="switchExam('day2')">Ngày 2 — Chẩn đoán đọc hiểu （読解） · 9 câu</button>
     <button class="tab" id="tabDay1" onclick="switchExam('day1')">Ngày 1 — Chẩn đoán Nghe · 9 câu</button>
     <button class="tab" id="tabMock1" onclick="switchExam('mock1')">Đề thi thử BJT 01 — 40 câu · 3 phần</button>
+    <button class="tab" id="tabMock2" onclick="switchExam('mock2')">Đề thi thử BJT 02 — 80 câu · 3 phần</button>
     <button class="tab" id="tabDemo" onclick="switchExam('demo')">Đề mẫu 01 — 3 phần · 3 câu</button>
     <button class="tab" id="tabVideos" onclick="switchExam('videos')">Thư viện video — 56 video tình huống</button>
     <button class="tab" id="tabVocab" onclick="switchExam('vocab')">Thẻ từ vựng — 884 từ theo ngày</button>
@@ -542,6 +546,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
   <ul>
     <li><strong><span id="seoExamCount">22</span> đề luyện theo ngày</strong> — mỗi ngày tập trung một kỹ năng: Nghe hiểu (聴解), Đọc hiểu (読解), hoặc Nghe + Đọc (聴読解). Mỗi đề 9–12 câu, bấm giờ như thi thật.</li>
     <li><strong>Đề thi thử BJT 01</strong> — 40 câu, 3 phần nối tiếp (聴解 → 聴読解 → 読解), tổng ~52 phút. Format giống đề thi chính thức, rút gọn một nửa.</li>
+    <li><strong>Đề thi thử BJT 02</strong> — 80 câu, 3 phần nối tiếp (聴解 → 聴読解 → 読解), tổng ~105 phút. Format đúng như đề thi chính thức.</li>
     <li><strong>Đề mẫu 01</strong> — 3 câu mẫu kèm giải thích chi tiết, dành cho người mới bắt đầu.</li>
     <li><strong><span id="seoVideoCount">54</span> video tình huống</strong> — hội thoại tiếng Nhật thương mại có phụ đề JP/VI/EN, lời thoại và từ vựng đi kèm.</li>
     <li><strong><span id="seoVocabCount">884</span> thẻ từ vựng</strong> — toàn bộ danh sách từ vựng BJT, chia theo ngày học, mỗi thẻ có cách đọc, nghĩa tiếng Việt và cụm từ đi kèm.</li>
@@ -668,6 +673,106 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
   <div id="mkReview"></div>
 
   <p class="footer-note">Đề thi thử BJT 01 — bản 40 câu theo đúng format đề thi thật (3 phần nối tiếp, khóa phần khi hết giờ). Audio là file MP3 thu sẵn, không đọc tên người nói. Điểm /800 là quy đổi ước lượng theo tỉ lệ đúng, không phải cách tính điểm chính thức của kỳ thi.</p>
+</main>
+<main class="wrap hidden" id="examMock2">
+  <div class="cbt-head">
+    <div>
+      <h1>Đề thi thử BJT 02 — Đề thi thử hoàn chỉnh (bản 80 câu)</h1>
+      <div class="sub">Format đúng như đề thi thật: 80 câu · 3 phần nối tiếp · tổng ~105 phút</div>
+      <div class="mode-row">
+        <span class="lbl">Chế độ:</span>
+        <button class="mode-btn active" id="mk2ModeReal" onclick="setModeMk2('real')">Thi thật — audio phát 1 lần</button>
+        <button class="mode-btn" id="mk2ModePrac" onclick="setModeMk2('practice')">Luyện tập — nghe lại được</button>
+      </div>
+    </div>
+    <div class="cbt-timer">
+      <div class="t" id="mk2Timer">45:00</div>
+      <div class="lbl">Thời gian phần hiện tại</div>
+    </div>
+  </div>
+
+  <div class="mk-stepper" id="mk2Stepper" aria-label="Tiến trình 3 phần thi">
+    <div class="mk-step" id="mk2Step1"><b class="jp">Phần 1 — 聴解</b>25 câu · 45 phút<span class="st" id="mk2StepSt1">Chưa bắt đầu</span></div>
+    <div class="mk-step" id="mk2Step2"><b class="jp">Phần 2 — 聴読解</b>25 câu · 30 phút<span class="st" id="mk2StepSt2">Chưa bắt đầu</span></div>
+    <div class="mk-step" id="mk2Step3"><b class="jp">Phần 3 — 読解</b>30 câu · 30 phút<span class="st" id="mk2StepSt3">Chưa bắt đầu</span></div>
+  </div>
+
+  <section class="start-panel" id="mk2Start">
+    <h2>Giới thiệu đề thi thử — đọc kỹ quy tắc trước khi bắt đầu</h2>
+    <div class="start-grid">
+      <div>
+        <ul>
+          <li>Đề gồm <strong>80 câu</strong> chia <strong>3 phần</strong> làm nối tiếp theo đúng thứ tự của đề thi thật, tổng thời gian khoảng <strong>105 phút</strong>.</li>
+          <li><strong>Quy tắc khóa phần (như thi thật):</strong> mỗi phần có đồng hồ riêng. Khi <strong>hết giờ</strong> hoặc bạn bấm <strong>nộp phần</strong>, phần đó bị <strong>khóa ngay</strong> và bài tự chuyển sang phần tiếp theo — <strong>không quay lại phần trước được</strong>, kể cả để xem lại đáp án.</li>
+          <li>Trong từng phần, các câu của cùng một bộ (cùng một đoạn nghe / tài liệu) hiển thị <strong>gộp trên một màn hình</strong>. Dùng cột <strong>Danh sách câu hỏi</strong> để nhảy câu, nút <strong>← Câu trước / Câu tiếp →</strong> hoặc phím <kbd>←</kbd> <kbd>→</kbd> để di chuyển, phím <kbd>A</kbd>–<kbd>D</kbd> để chọn đáp án. Mỗi câu chỉ chọn đúng <strong>một</strong> đáp án; câu chưa chắc thì bấm <strong>⚑ Đánh dấu</strong>.</li>
+          <li>Audio là file MP3 thu sẵn, <strong>không đọc tên người nói</strong>. Ở chế độ <strong>Thi thật</strong>, mỗi đoạn audio chỉ phát <strong>1 lần duy nhất</strong>; ở chế độ <strong>Luyện tập</strong> nghe lại được.</li>
+          <li><strong>Đáp án, giải thích và transcript chỉ hiện sau khi nộp xong Phần 3.</strong> Kết quả sẽ báo điểm từng phần, điểm toàn đề (/40) và điểm quy đổi <strong>ước lượng</strong> ra thang 800 kèm mức tham khảo.</li>
+        </ul>
+        <div class="mk-partcards">
+          <div class="mk-partcard"><b class="jp">Phần 1 — 聴解</b><p>25 câu · 45 phút<br>場面把握 · 発言聴解 · 総合聴解 (hội thoại, thông báo)</p></div>
+          <div class="mk-partcard"><b class="jp">Phần 2 — 聴読解</b><p>25 câu · 30 phút<br>Vừa nghe vừa đọc memo, 見積書, lịch trình, bảng giá, email</p></div>
+          <div class="mk-partcard"><b class="jp">Phần 3 — 読解</b><p>30 câu · 30 phút<br>語彙・文法 · 表現読解 · Đọc 掲示・新聞記事・議事録</p></div>
+        </div>
+        <p style="margin-top:14px"><button class="btn btn-primary" id="mk2StartBtn" type="button" style="font-size:16px" onclick="startMock2()">Bắt đầu Phần 1 — 聴解</button></p>
+        <p class="start-status" id="mk2StartStatus" role="status" aria-live="polite"></p>
+        <p class="note js-warn" id="mk2JsWarn">Trang đang tải… Nếu nút <strong>Bắt đầu</strong> chưa phản hồi, hãy đợi vài giây cho trang tải xong, hoặc mở trang này bằng trình duyệt Chrome / Safari rồi bấm lại.</p>
+      </div>
+      <div>
+        <div class="candidate" aria-label="Thông tin đề thi thử BJT 02">
+          <div><span>Môn thi</span><b class="jp">BJT — Đề thi thử 02</b></div>
+          <div><span>Số câu hỏi</span><b>80 câu · 3 phần</b></div>
+          <div><span>Thời gian</span><b>~105 phút (45 + 30 + 30)</b></div>
+          <div><span>Cấu trúc</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
+          <div><span>Quy tắc</span><b>Hết giờ / nộp phần → khóa phần, không quay lại</b></div>
+        </div>
+        <div class="note" style="margin-top:14px"><strong>Lưu ý:</strong> hãy dành đủ ~105 phút yên tĩnh trước khi bắt đầu. Đang làm dở mà chuyển sang tab đề khác, đồng hồ của phần hiện tại vẫn chạy.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mk-partbanner hidden" id="mk2PartBanner" role="status"></div>
+
+  <section id="mk2Exam" class="hidden">
+    <div class="cbt-layout">
+      <aside class="palette" aria-label="Danh sách câu hỏi của phần hiện tại">
+        <h3 id="mk2PalTitle">Danh sách câu hỏi — Phần 1</h3>
+        <div class="count" id="mk2PalCount">Đã trả lời 0 / 25</div>
+        <div class="pal-grid" id="mk2PalGrid"></div>
+        <div class="legend">
+          <span><i style="background:var(--card)"></i>Chưa làm</span>
+          <span><i style="background:var(--ok);border-color:var(--ok)"></i>Đã chọn</span>
+          <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>Đang mở</span>
+          <span>⚑ Đã đánh dấu</span>
+        </div>
+        <button class="btn btn-primary submit-wide" id="mk2SubmitBtnSide" type="button" onclick="mk2AskSubmitPart()">Nộp phần này</button>
+        <div class="kbd-hint">Phím tắt: <kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> chọn đáp án · <kbd>←</kbd> <kbd>→</kbd> chuyển câu (trong phần hiện tại)</div>
+      </aside>
+      <div class="cbt-main">
+        <div id="mk2Groups" aria-label="Các bộ và câu hỏi của phần hiện tại"></div>
+        <div class="cbt-footnav">
+          <button class="nav-btn" id="mk2PrevBtn" type="button" onclick="mk2PrevQ()">← Câu trước</button>
+          <span class="foot-status" id="mk2FootStatus">Câu 1 / 80</span>
+          <button class="nav-btn primary" id="mk2NextBtn" type="button" onclick="mk2NextQ()">Câu tiếp →</button>
+        </div>
+      </div>
+    </div>
+    <div class="d1-submitbar">
+      <p id="mk2SubmitHint">Đã trả lời 0 / 25 câu của phần này.</p>
+      <button class="btn btn-primary" id="mk2SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk2AskSubmitPart()">Nộp phần này</button>
+    </div>
+  </section>
+
+  <section class="result-panel" id="mk2Result">
+    <div class="big" id="mk2ScoreBig">0 / 80</div>
+    <h2 id="mk2ScoreTitle">Kết quả Đề thi thử BJT 02</h2>
+    <div class="mk-scoregrid" id="mk2ScoreGrid"></div>
+    <p id="mk2ScoreDetail"></p>
+    <p style="font-size:14px">Đáp án, giải thích tiếng Việt, transcript và bản dịch từng câu nằm ngay bên dưới.</p>
+    <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mk2Reset()">↺ Làm lại Đề thi thử 02</button>
+  </section>
+  <div id="mk2Review"></div>
+
+  <p class="footer-note">Đề thi thử BJT 02 — bản 80 câu theo đúng format đề thi thật (3 phần nối tiếp, khóa phần khi hết giờ). Audio là file MP3 thu sẵn, không đọc tên người nói. Điểm /800 là quy đổi ước lượng theo tỉ lệ đúng, không phải cách tính điểm chính thức của kỳ thi.</p>
 </main>
 <main class="wrap wrap-narrow hidden" id="examDemo">
   <div class="hero">
@@ -806,17 +911,27 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     </div>
   </div>
 </div>
+<div class="modal-overlay" id="mk2Modal" role="dialog" aria-modal="true" aria-labelledby="mk2ModalTitle">
+  <div class="modal">
+    <h3 id="mk2ModalTitle">Nộp phần này?</h3>
+    <p id="mk2ModalText">Nộp phần này sẽ khóa phần và chuyển sang phần tiếp theo — không quay lại được.</p>
+    <div class="row">
+      <button class="btn btn-ghost" id="mk2ModalCancel" type="button" onclick="mk2CloseModal()">Làm tiếp</button>
+      <button class="btn btn-primary" id="mk2ModalConfirm" type="button" onclick="mk2ConfirmSubmitPart()">Nộp phần</button>
+    </div>
+  </div>
+</div>
 
 <script>
 /* ============ TAB SWITCH + URL TAG (deep link) ============
    Each exam has its own link tag so a shared link opens exactly that exam:
-     ngay-1 … ngay-14 · de-thi-thu (Đề thi thử BJT 01) · de-mau (Đề mẫu 01)
+     ngay-1 … ngay-14 · de-thi-thu (Đề thi thử BJT 01) · de-thi-thu-2 (Đề thi thử BJT 02) · de-mau (Đề mẫu 01)
    Supported deep-link forms on the public URL:
      ?de=ngay-4   (query parameter — primary form; ?exam=ngay-4 also works)
      #ngay-4      (hash — kept for in-app use)
    A valid tag in the URL wins over the default (newest exam, Ngày 22);
    switching exams on the page updates the hash to match. */
-var EXAM_TAGS = { day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
+var EXAM_TAGS = { day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
 var TAG_EXAMS = {};
 Object.keys(EXAM_TAGS).forEach(function(k){ TAG_EXAMS[EXAM_TAGS[k]] = k; });
 /* The published page is displayed inside the Muse shell, and the #tag
@@ -912,7 +1027,7 @@ function syncExamHash(which){
     try{ window.location.hash = tag; }catch(e2){}
   }
 }
-var currentExam = 'day23';
+var currentExam = 'day24';
 /* Set when the reader picks an exam themselves (tab or dropdown): a tag
    that only becomes readable a moment after load must never override a
    choice already made, nor interrupt an exam already started. */
@@ -923,11 +1038,12 @@ function anyExamStarted(){
     for(var k in eng){ if(eng[k].started) return true; }
   }
   try{ if(window.mkStarted) return true; }catch(e){}
+  try{ if(window.mk2Started) return true; }catch(e){}
   try{ if(window.demoTimerStarted) return true; }catch(e){}
   return false;
 }
 function switchExam(which){
-  if(!EXAM_TAGS[which]) which = 'day23';
+  if(!EXAM_TAGS[which]) which = 'day24';
   currentExam = which;
   syncExamHash(which);
   var seoL = document.getElementById('seoLanding');
@@ -953,6 +1069,8 @@ function switchExam(which){
   // Non-engine sections
   var exM = document.getElementById('examMock1');
   if(exM) exM.classList.toggle('hidden', which !== 'mock1');
+  var exM2 = document.getElementById('examMock2');
+  if(exM2) exM2.classList.toggle('hidden', which !== 'mock2');
   document.getElementById('examDemo').classList.toggle('hidden', which !== 'demo');
   var exV = document.getElementById('videoLibrary');
   if(exV) exV.classList.toggle('hidden', which !== 'videos');
@@ -960,6 +1078,8 @@ function switchExam(which){
   if(exVc) exVc.classList.toggle('hidden', which !== 'vocab');
   var tbM = document.getElementById('tabMock1');
   if(tbM) tbM.classList.toggle('active', which === 'mock1');
+  var tbM2 = document.getElementById('tabMock2');
+  if(tbM2) tbM2.classList.toggle('active', which === 'mock2');
   document.getElementById('tabDemo').classList.toggle('active', which === 'demo');
   var tbV = document.getElementById('tabVideos');
   if(tbV) tbV.classList.toggle('active', which === 'videos');
@@ -968,6 +1088,7 @@ function switchExam(which){
   if(which !== 'videos'){ try{ pauseLibraryVideos(); }catch(e){} }
   if(which === 'demo') startDemoTimer();
   if(which !== 'mock1'){ try{ mkStopAudio(); }catch(e){} }
+  if(which !== 'mock2'){ try{ mk2StopAudio(); }catch(e){} }
   try{ bjtWarmExam(which); }catch(e){}
   window.scrollTo({top:0, behavior:'smooth'});
 }
@@ -1071,6 +1192,10 @@ function bjtWarmExam(which){
     try{ if(typeof mkGroups !== 'undefined' && mkGroups) mkGroups.forEach(function(g){ if(g && g.audio) bjtWarmAudio(g.audio); }); }catch(e){}
     return;
   }
+  if(which === 'mock2'){
+    try{ if(typeof mk2Groups !== 'undefined' && mk2Groups) mk2Groups.forEach(function(g){ if(g && g.audio) bjtWarmAudio(g.audio); }); }catch(e){}
+    return;
+  }
   if(which === 'demo'){
     ['assets/listening1.mp3', 'assets/listening2.mp3'].forEach(function(u){
       bjtFetchBlob(u, function(bu){
@@ -1157,6 +1282,7 @@ function cycleFontSize(){
 /* mkParts, mkGroups, mkQuestions loaded below via external script */
 </script>
 <script src="data/exams/mock1.js"></script>
+<script src="data/exams/mock2.js"></script>
 <script>
 var mkGroupById = {};
 mkGroups.forEach(function(g){ mkGroupById[g.id] = g; });
@@ -1911,7 +2037,7 @@ window.resetDay21 = resetDay21;
 window.cbtPrev21 = cbtPrev21;
 window.cbtNext21 = cbtNext21;
 (function wireTabs(){
-  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabDay23:'day23', tabMock1:'mock1', tabDemo:'demo' };
+  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabDay23:'day23', tabDay24:'day24', tabMock1:'mock1', tabMock2:'mock2', tabDemo:'demo' };
   Object.keys(map).forEach(function(id){
     var el = document.getElementById(id);
     if(el) el.addEventListener('click', function(){ userPickedExam = true; switchExam(map[id]); });
@@ -1947,6 +2073,476 @@ window.cbtNext21 = cbtNext21;
   }, 250);
 })();
 </script>
+<script>
+var mk2GroupById = {};
+mk2Groups.forEach(function(g){ mk2GroupById[g.id] = g; });
+var mk2Sel = {}, mk2Flag = {}, mk2Plays = {};
+var mk2Part = 0, mk2Started = false, mk2Finished = false, mk2Mode = 'real';
+var mk2Current = 1, mk2Remain = 0, mk2TimerId = null;
+var mk2PartScore = {1:null, 2:null, 3:null};
+var mk2Player = null, mk2Speaking = false, mk2AudioId = null, mk2Watchdog = null;
+function mk2PartOf(n){ for(var i=0;i<mk2Parts.length;i++){ if(n>=mk2Parts[i].from && n<=mk2Parts[i].to) return mk2Parts[i]; } return mk2Parts[0]; }
+function mk2PartScoreCalc(p){
+  var part = mk2Parts[p-1], c = 0;
+  for(var n=part.from;n<=part.to;n++){ if(mk2Sel[n]===mk2Questions[n-1].ans) c++; }
+  return c;
+}
+function setModeMk2(m){
+  if(mk2Started && !mk2Finished) return;
+  mk2Mode = m;
+  document.getElementById('mk2ModeReal').classList.toggle('active', m==='real');
+  document.getElementById('mk2ModePrac').classList.toggle('active', m==='practice');
+}
+function mk2RenderStepper(){
+  for(var p=1;p<=3;p++){
+    var step = document.getElementById('mk2Step'+p), st = document.getElementById('mk2StepSt'+p);
+    if(!step || !st) continue;
+    step.classList.toggle('done', mk2PartScore[p]!==null);
+    step.classList.toggle('now', mk2Part===p && mk2PartScore[p]===null);
+    var part = mk2Parts[p-1], total = part.to - part.from + 1;
+    st.textContent = mk2PartScore[p]!==null
+      ? ('✓ Đã khóa — đúng ' + mk2PartScore[p] + ' / ' + total)
+      : (mk2Part===p ? 'Đang làm…' : 'Chưa bắt đầu');
+  }
+}
+function startMock2(){
+  if(mk2Started) return;
+  var status = document.getElementById('mk2StartStatus');
+  if(status) status.textContent = 'Đang mở Phần 1…';
+  mk2Started = true;
+  var sp = document.getElementById('mk2Start');
+  if(sp){ sp.classList.add('hidden'); sp.style.display = 'none'; }
+  mk2BeginPart(1, false);
+  if(status) status.textContent = '';
+}
+function mk2BeginPart(p, auto){
+  mk2Part = p;
+  var part = mk2Parts[p-1];
+  mk2Current = part.from;
+  mk2Remain = part.time;
+  var t = document.getElementById('mk2Timer');
+  t.textContent = fmtT(mk2Remain); t.classList.remove('warn');
+  var banner = document.getElementById('mk2PartBanner');
+  if(banner){
+    if(p>1){
+      var prev = mk2Parts[p-2], pTotal = prev.to - prev.from + 1;
+      banner.textContent = (auto ? '⏱ Hết giờ ' : 'Đã nộp ') + prev.name + ' — phần này đã bị khóa (đúng ' + mk2PartScore[p-1] + ' / ' + pTotal + '), không thể quay lại. Bạn đang làm ' + part.name + '.';
+      banner.classList.remove('hidden');
+    } else {
+      banner.textContent = 'Bạn đang làm ' + part.name + ' — đồng hồ ' + fmtT(part.time) + ' đang chạy. Hết giờ hoặc nộp phần thì phần này khóa và chuyển phần tiếp theo.';
+      banner.classList.remove('hidden');
+    }
+  }
+  var ex = document.getElementById('mk2Exam');
+  ex.classList.remove('hidden'); ex.style.display = '';
+  document.getElementById('mk2PalTitle').textContent = 'Danh sách câu hỏi — Phần ' + p + ' (' + part.jp + ')';
+  mk2BuildGroups();
+  mk2RenderPalette();
+  mk2UpdateHint();
+  mk2RenderStepper();
+  clearInterval(mk2TimerId);
+  mk2TimerId = setInterval(function(){
+    if(mk2Remain<=0){ clearInterval(mk2TimerId); var tt = document.getElementById('mk2Timer'); tt.textContent = '00:00'; mk2LockPart(true); return; }
+    mk2Remain--;
+    var el = document.getElementById('mk2Timer');
+    el.textContent = fmtT(mk2Remain);
+    if(mk2Remain<=60) el.classList.add('warn');
+  }, 1000);
+  safeScrollToEl(document.getElementById('mk2Exam'));
+}
+function mk2BuildGroups(){
+  var wrap = document.getElementById('mk2Groups');
+  if(!wrap) return;
+  wrap.innerHTML = '';
+  mk2Groups.forEach(function(g){
+    if(g.part !== mk2Part) return;
+    var group = document.createElement('div');
+    group.className = 'seg-group'; group.id = 'mk2SegGroup' + g.id;
+    var banner = document.createElement('div'); banner.className = 'seg-banner';
+    var st = document.createElement('div'); st.className = 'seg-title jp'; st.textContent = g.title;
+    var sd = document.createElement('div'); sd.className = 'seg-desc';
+    sd.textContent = g.desc + (g.audio ? (mk2Mode==='real' ? ' · Chế độ thi thật: audio của bộ này chỉ phát 1 lần.' : ' · Chế độ luyện tập: nghe lại được.') : '');
+    banner.appendChild(st); banner.appendChild(sd);
+    if(g.audio){
+      var arow = document.createElement('div'); arow.className = 'audio-row';
+      var pb = document.createElement('button');
+      pb.type = 'button'; pb.className = 'play-btn'; pb.id = 'mk2PlayBtn' + g.id;
+      pb.innerHTML = '<span class="tri">▶</span><span>Phát audio bộ ' + g.id + '</span>';
+      (function(gid){ pb.addEventListener('click', function(){ mk2Play(gid); }); })(g.id);
+      var ps = document.createElement('span'); ps.className = 'play-state'; ps.id = 'mk2PlayState' + g.id;
+      arow.appendChild(pb); arow.appendChild(ps);
+      banner.appendChild(arow);
+    }
+    group.appendChild(banner);
+    if(g.mat){
+      var matWrap = document.createElement('div');
+      matWrap.innerHTML = g.mat;
+      while(matWrap.firstChild) group.appendChild(matWrap.firstChild);
+    }
+    g.qs.forEach(function(n){
+      var item = mk2Questions[n-1];
+      var card = document.createElement('div');
+      card.className = 'qcard'; card.id = 'mkqcard-' + n;
+      var meta = document.createElement('div'); meta.className = 'q-meta';
+      var qn = document.createElement('span'); qn.className = 'q-num';
+      qn.textContent = 'Câu ' + n + ' / 80 · Bộ ' + g.id;
+      var fb = document.createElement('button');
+      fb.type = 'button'; fb.className = 'flag-btn'; fb.id = 'mkflagBtn' + n;
+      (function(nn){ fb.addEventListener('click', function(){ mk2ToggleFlag(nn); }); })(n);
+      meta.appendChild(qn); meta.appendChild(fb);
+      var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = item.q;
+      var opts = document.createElement('div');
+      opts.className = 'options'; opts.id = 'mkqOptions' + n;
+      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','Đáp án câu ' + n);
+      card.appendChild(meta); card.appendChild(qt); card.appendChild(opts);
+      (function(nn){ card.addEventListener('click', function(){ mk2SetActive(nn, false); }); })(n);
+      group.appendChild(card);
+    });
+    wrap.appendChild(group);
+  });
+  var part = mk2Parts[mk2Part-1];
+  for(var n=part.from;n<=part.to;n++) mk2UpdateQuestion(n);
+  mk2MarkActive();
+  mk2RefreshPlayUI();
+}
+function mk2MarkActive(){
+  var part = mk2Parts[mk2Part-1];
+  for(var n=part.from;n<=part.to;n++){
+    var c = document.getElementById('mkqcard-' + n);
+    if(c) c.classList.toggle('current', n === mk2Current);
+  }
+}
+function mk2SetActive(n, scroll){
+  mk2Current = n;
+  mk2MarkActive();
+  mk2RenderPalette();
+  if(scroll){
+    var el = document.getElementById('mkqcard-' + n);
+    if(el) safeScrollToEl(el);
+  }
+}
+function mk2UpdateQuestion(n){
+  var item = mk2Questions[n-1];
+  var fb = document.getElementById('mkflagBtn' + n);
+  if(fb){
+    fb.classList.toggle('on', !!mk2Flag[n]);
+    fb.textContent = mk2Flag[n] ? '⚑ Đã đánh dấu — bấm để bỏ' : '⚑ Đánh dấu câu này';
+  }
+  var box = document.getElementById('mkqOptions' + n);
+  if(!box) return;
+  box.innerHTML = '';
+  var letters = ['A','B','C','D'];
+  item.opts.forEach(function(opt, idx){
+    var b = document.createElement('button');
+    b.className = 'd1opt'; b.type = 'button';
+    if(mk2Sel[n] === letters[idx]) b.classList.add('selected');
+    b.innerHTML = '<span class="letter">' + letters[idx] + '</span><span class="jp"></span>';
+    b.querySelector('.jp').textContent = opt;
+    (function(nn, v){ b.addEventListener('click', function(){ mk2Pick(nn, v); }); })(n, letters[idx]);
+    box.appendChild(b);
+  });
+}
+function mk2RenderPalette(){
+  var g = document.getElementById('mk2PalGrid'); if(!g) return;
+  var part = mk2Parts[mk2Part-1];
+  g.innerHTML = '';
+  for(var n=part.from;n<=part.to;n++){
+    var item = mk2Questions[n-1];
+    var b = document.createElement('button');
+    b.className = 'pal-btn'; b.setAttribute('aria-label','Câu ' + n);
+    b.innerHTML = '<span class="pnum">' + n + '</span><span class="plabel"></span><span class="pstat"></span>';
+    b.querySelector('.plabel').textContent = 'Bộ ' + item.g + ' · ' + part.jp;
+    var st = b.querySelector('.pstat');
+    if(mk2Sel[n]) b.classList.add('answered');
+    if(mk2Sel[n]) st.textContent = '✓';
+    if(mk2Flag[n]) st.textContent = '⚑' + (st.textContent ? ' ✓' : '');
+    if(n===mk2Current) b.classList.add('current');
+    (function(nn){ b.addEventListener('click', function(){ mk2SetActive(nn, true); }); })(n);
+    g.appendChild(b);
+  }
+  var done = 0;
+  for(var m=part.from;m<=part.to;m++){ if(mk2Sel[m]) done++; }
+  document.getElementById('mk2PalCount').textContent = 'Đã trả lời ' + done + ' / ' + (part.to - part.from + 1) + ' (phần ' + mk2Part + ')';
+  var fs = document.getElementById('mk2FootStatus');
+  if(fs) fs.textContent = 'Đang xem câu ' + mk2Current + ' / 80 · Phần ' + mk2Part + ': đã trả lời ' + done + ' / ' + (part.to - part.from + 1);
+  var prev = document.getElementById('mk2PrevBtn'), next = document.getElementById('mk2NextBtn');
+  if(prev) prev.disabled = (mk2Current <= part.from);
+  if(next) next.disabled = (mk2Current >= part.to);
+}
+function mk2UpdateHint(){
+  var part = mk2Parts[mk2Part-1];
+  var done = 0, total = part.to - part.from + 1;
+  for(var m=part.from;m<=part.to;m++){ if(mk2Sel[m]) done++; }
+  var el = document.getElementById('mk2SubmitHint');
+  if(el) el.textContent = done === total
+    ? 'Đã trả lời đủ ' + done + ' / ' + total + ' câu của phần này — bấm Nộp phần để khóa phần và chuyển tiếp.'
+    : 'Đã trả lời ' + done + ' / ' + total + ' câu của phần này — còn ' + (total - done) + ' câu chưa chọn. Nộp phần vẫn được (câu trống tính là sai) và phần sẽ bị khóa.';
+  var lbl = mk2Part===3 ? 'Nộp Phần 3 — xem kết quả' : ('Nộp phần ' + mk2Part + ' — sang Phần ' + (mk2Part+1));
+  var s1 = document.getElementById('mk2SubmitBtnSide'), s2 = document.getElementById('mk2SubmitBtnBottom');
+  if(s1) s1.textContent = lbl;
+  if(s2) s2.textContent = lbl;
+}
+function mk2Pick(n, v){
+  if(mk2Finished || mk2PartScore[mk2Part]!==null) return;
+  var part = mk2Parts[mk2Part-1];
+  if(n < part.from || n > part.to) return;
+  mk2Sel[n] = v;
+  mk2Current = n;
+  mk2UpdateQuestion(n);
+  mk2MarkActive();
+  mk2RenderPalette();
+  mk2UpdateHint();
+}
+function mk2ToggleFlag(n){
+  if(mk2Finished || mk2PartScore[mk2Part]!==null) return;
+  mk2Flag[n] = !mk2Flag[n];
+  mk2Current = n;
+  mk2UpdateQuestion(n);
+  mk2MarkActive();
+  mk2RenderPalette();
+}
+function mk2PrevQ(){ var part = mk2Parts[mk2Part-1]; if(mk2Current > part.from) mk2SetActive(mk2Current-1, true); }
+function mk2NextQ(){ var part = mk2Parts[mk2Part-1]; if(mk2Current < part.to) mk2SetActive(mk2Current+1, true); }
+/* Playback mirrors Day 4: fresh Audio per press, play counted only once
+   audio actually starts, watchdog unwedges a stuck button. */
+function mk2RefreshPlayUI(){
+  mk2Groups.forEach(function(g){ if(g.audio && g.part===mk2Part) mk2RefreshOnePlayUI(g.id); });
+}
+function mk2RefreshOnePlayUI(gid){
+  var btn = document.getElementById('mk2PlayBtn' + gid), st = document.getElementById('mk2PlayState' + gid);
+  if(!btn || !st) return;
+  var plays = mk2Plays[gid] || 0;
+  if(mk2Speaking && mk2AudioId===gid){ btn.disabled = true; st.textContent = 'Đang phát audio bộ ' + gid + '… nghe kỹ và trả lời các câu của bộ này.'; return; }
+  if(mk2Mode==='real' && plays>=1){ btn.disabled = true; st.textContent = 'Audio bộ ' + gid + ' đã phát 1/1 lần (chế độ thi thật).'; return; }
+  btn.disabled = false;
+  if(mk2Speaking){ st.textContent = 'Đang phát audio bộ ' + mk2AudioId + ' — bấm nút này để dừng đoạn đó và phát audio bộ ' + gid + '.'; return; }
+  st.textContent = plays>0 ? ('Đã phát ' + plays + ' lần' + (mk2Mode==='practice' ? ' — nghe lại được.' : '')) : 'Chưa phát — bấm để nghe audio bộ ' + gid + '.';
+}
+function mk2SetPlayState(gid, msg){
+  var st = document.getElementById('mk2PlayState' + gid);
+  if(st) st.textContent = msg;
+}
+function mk2StopAudio(){
+  if(mk2Watchdog){ clearTimeout(mk2Watchdog); mk2Watchdog = null; }
+  if(mk2Player){
+    var old = mk2Player; mk2Player = null;
+    try{ old.onended = null; old.onerror = null; old.onplaying = null; old.pause(); old.removeAttribute('src'); old.load(); }catch(e){}
+  }
+  mk2Speaking = false;
+}
+function mk2Play(gid){
+  if(mk2Finished || mk2PartScore[mk2Part]!==null) return;
+  if(mk2Speaking && mk2AudioId===gid) return;
+  if(mk2Mode==='real' && (mk2Plays[gid]||0)>=1) return;
+  mk2StopAudio();
+  var a = new Audio();
+  mk2Player = a;
+  mk2AudioId = gid;
+  mk2Speaking = true; mk2RefreshPlayUI();
+  var counted = false;
+  a.onplaying = function(){
+    if(mk2Player!==a) return;
+    if(mk2Watchdog){ clearTimeout(mk2Watchdog); mk2Watchdog = null; }
+    if(!counted){ counted = true; mk2Plays[gid] = (mk2Plays[gid]||0) + 1; }
+  };
+  a.onended = function(){
+    if(mk2Player!==a) return;
+    mk2Player = null; mk2Speaking = false;
+    mk2RefreshPlayUI();
+  };
+  a.onerror = function(){
+    if(mk2Player!==a || counted) return;
+    if(mk2Watchdog){ clearTimeout(mk2Watchdog); mk2Watchdog = null; }
+    mk2Player = null; mk2Speaking = false;
+    mk2RefreshPlayUI();
+    mk2SetPlayState(gid, 'Không tải được file audio của bộ ' + gid + ' — kiểm tra kết nối mạng rồi bấm phát lại.');
+  };
+  var wdWaits = 0;
+  function armStartWatchdog(){
+    mk2Watchdog = setTimeout(function(){
+      mk2Watchdog = null;
+      if(mk2Player!==a || !mk2Speaking || counted) return;
+      wdWaits++;
+      var loading = false;
+      try{ loading = (a.readyState > 0) || (a.networkState === 2) || (a.buffered && a.buffered.length > 0); }catch(e){}
+      if(loading && wdWaits < 5){
+        mk2SetPlayState(gid, 'Đang tải audio bộ ' + gid + '… mạng hơi chậm, đợi thêm một chút — đừng bấm lại.');
+        armStartWatchdog();
+        return;
+      }
+      if(!loading && wdWaits === 1 && typeof bjtAutoRetryOnce === 'function' && bjtAutoRetryOnce('mk-' + gid)){
+        mk2StopAudio();
+        mk2Play(gid);
+        mk2SetPlayState(gid, 'Lần phát đầu bị kẹt — đang tự thử phát lại audio bộ ' + gid + '…');
+        return;
+      }
+      mk2StopAudio();
+      mk2RefreshPlayUI();
+      mk2SetPlayState(gid, 'Audio bộ ' + gid + ' chưa phát được (mạng chậm hoặc trình duyệt bị kẹt) — bấm lại nút Phát audio bộ ' + gid + '.');
+    }, 8000);
+  }
+  bjtStartAudio(a, mk2GroupById[gid].audio, {
+    isCurrent: function(){ return mk2Player===a; },
+    arm: armStartWatchdog,
+    onLoading: function(){ mk2SetPlayState(gid, 'Đang tải audio bộ ' + gid + ' về máy… tải xong trang tự phát ngay, đừng bấm lại.'); },
+    onBlocked: function(){
+      if(mk2Player!==a || counted) return;
+      if(mk2Watchdog){ clearTimeout(mk2Watchdog); mk2Watchdog = null; }
+      mk2Player = null; mk2Speaking = false;
+      mk2RefreshPlayUI();
+      mk2SetPlayState(gid, 'Trình duyệt chặn phát audio — bấm lại nút Phát audio bộ ' + gid + '.');
+    }
+  });
+}
+document.addEventListener('keydown', function(e){
+  if(currentExam!=='mock1' || !mk2Started || mk2Finished || mk2PartScore[mk2Part]!==null) return;
+  var modal = document.getElementById('mk2Modal');
+  if(modal && (modal.classList.contains('show') || modal.style.display==='flex')) return;
+  var k = e.key.toLowerCase();
+  if(['a','b','c','d'].indexOf(k)>=0){ mk2Pick(mk2Current, k.toUpperCase()); }
+  else if(e.key==='ArrowRight'){ mk2NextQ(); }
+  else if(e.key==='ArrowLeft'){ mk2PrevQ(); }
+});
+var mk2ModalPart = 0;
+function mk2AskSubmitPart(){
+  if(!mk2Started || mk2Finished || mk2PartScore[mk2Part]!==null) return;
+  mk2ModalPart = mk2Part;
+  var part = mk2Parts[mk2Part-1];
+  var done = 0, missing = [];
+  for(var n=part.from;n<=part.to;n++){ if(mk2Sel[n]) done++; else missing.push(n); }
+  var total = part.to - part.from + 1;
+  var tail = mk2Part===3
+    ? 'Đây là phần cuối — nộp xong sẽ hiện kết quả toàn đề, đáp án, giải thích, transcript và bản dịch tiếng Việt.'
+    : 'Nộp xong, phần này bị KHÓA và bài chuyển sang ' + mk2Parts[mk2Part].name + ' — không quay lại được.';
+  document.getElementById('mk2ModalTitle').textContent = 'Nộp ' + part.name + '?';
+  document.getElementById('mk2ModalText').textContent = (done===total
+    ? 'Bạn đã trả lời đủ ' + done + '/' + total + ' câu của phần này. '
+    : 'Bạn mới trả lời ' + done + '/' + total + ' câu. Câu chưa làm: ' + missing.join(', ') + ' (câu trống tính là sai). ') + tail;
+  var cf = document.getElementById('mk2ModalConfirm');
+  if(cf) cf.textContent = mk2Part===3 ? 'Nộp phần — xem kết quả' : 'Nộp phần — khóa & chuyển tiếp';
+  var modal = document.getElementById('mk2Modal');
+  modal.classList.add('show');
+  modal.style.display = 'flex';
+  if(cf){ try{ cf.focus(); }catch(e){} }
+}
+function mk2CloseModal(){
+  var modal = document.getElementById('mk2Modal');
+  modal.classList.remove('show');
+  modal.style.display = '';
+}
+function mk2ConfirmSubmitPart(){
+  /* The confirm button carries both an inline onclick and a direct
+     addEventListener binding (same pattern as the day exams), so one click
+     can reach this handler twice. The first call locks the part and moves
+     on; the duplicate must not lock the NEXT part too — it is recognised
+     because mk2Part no longer matches the part the modal was opened for. */
+  if(mk2ModalPart && mk2Part !== mk2ModalPart){ mk2CloseModal(); return; }
+  mk2CloseModal(); mk2LockPart(false);
+}
+function mk2LockPart(auto){
+  if(mk2Finished || mk2PartScore[mk2Part]!==null) return;
+  clearInterval(mk2TimerId);
+  mk2StopAudio();
+  mk2PartScore[mk2Part] = mk2PartScoreCalc(mk2Part);
+  mk2RenderStepper();
+  if(mk2Part < 3){
+    mk2BeginPart(mk2Part + 1, auto);
+  } else {
+    mk2Finish(auto);
+  }
+}
+function mk2Finish(auto){
+  mk2Finished = true;
+  document.getElementById('mk2Exam').classList.add('hidden');
+  var banner = document.getElementById('mk2PartBanner');
+  if(banner) banner.classList.add('hidden');
+  var totals = [0,0,0], grand = 0;
+  for(var p=1;p<=3;p++){ totals[p-1] = mk2PartScore[p] || 0; grand += totals[p-1]; }
+  var pct = Math.round(grand / 80 * 100);
+  var est = grand * 10;
+  var level = pct>=66 ? '≈ vùng J1 (530 điểm trở lên)' : pct>=54 ? '≈ vùng J2' : pct>=45 ? '≈ vùng J3' : 'dưới vùng J3 — tiếp tục luyện tập';
+  var box = document.getElementById('mk2Result');
+  box.classList.add('show');
+  document.getElementById('mk2ScoreBig').textContent = grand + ' / 80';
+  document.getElementById('mk2ScoreTitle').textContent =
+    pct>=66 ? 'Kết quả Đề thi thử BJT 02 — chạm vùng J1 (ước lượng)' :
+    pct>=54 ? 'Kết quả Đề thi thử BJT 02 — vùng J2 (ước lượng)' :
+    pct>=45 ? 'Kết quả Đề thi thử BJT 02 — vùng J3 (ước lượng)' :
+               'Kết quả Đề thi thử BJT 02 — cần luyện thêm';
+  var cells = '';
+  for(var q=1;q<=3;q++){
+    var pp = mk2Parts[q-1], tt = pp.to - pp.from + 1;
+    cells += '<div class="mk-scorecell"><div class="v">' + totals[q-1] + ' / ' + tt + '</div><div class="k">' + pp.name + ' · ' + Math.round(totals[q-1]/tt*100) + '%</div></div>';
+  }
+  cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">Quy đổi ƯỚC LƯỢNG theo tỉ lệ đúng (' + pct + '%) · Mức tham khảo: ' + level + '</div></div>';
+  document.getElementById('mk2ScoreGrid').innerHTML = cells;
+  document.getElementById('mk2ScoreDetail').textContent = (auto ? '⏱ Hết giờ Phần 3 — bài đã tự nộp. ' : '')
+    + 'Toàn đề: đúng ' + grand + '/80 (' + pct + '%). Điểm /800 ở trên chỉ là ƯỚC LƯỢNG theo tỉ lệ số câu đúng — điểm thi thật được tính bằng thuật toán riêng của ban tổ chức, không quy đổi tuyến tính.';
+  var rv = document.getElementById('mk2Review'); rv.innerHTML = '';
+  var shownTr = {};
+  var lastPart = 0;
+  mk2Questions.forEach(function(item){
+    var part = mk2PartOf(item.n);
+    if(part.num !== lastPart){
+      lastPart = part.num;
+      var h = document.createElement('h3');
+      h.className = 'section-title';
+      h.textContent = part.name + ' — đúng ' + (mk2PartScore[part.num]||0) + ' / ' + (part.to - part.from + 1);
+      rv.appendChild(h);
+    }
+    var card = document.createElement('div'); card.className = 'review-card';
+    var isOk = mk2Sel[item.n] === item.ans;
+    var html = '<div class="q-num">Câu ' + item.n + ' · Bộ ' + item.g + '</div>';
+    html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
+    html += '<p style="margin:0 0 6px">Đáp án của bạn: <strong>' + (mk2Sel[item.n] ? mk2Sel[item.n] + ' — ' : 'Chưa chọn') + '</strong>' + (mk2Sel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mk2Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">Đáp án đúng: <strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ Đúng' : '✗ Sai') + '</div>';
+    html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
+    var grp = mk2GroupById[item.g];
+    if(grp && grp.lines && !shownTr[item.g]){
+      shownTr[item.g] = true;
+      var tr = grp.lines.join('\n');
+      html += reviewAudioHtml(grp.audio, 'Nghe lại bộ ' + item.g);
+      html += '<div class="transcript jp"><strong>Transcript bộ ' + item.g + ':</strong>\n' + tr + '</div>';
+      html += viTrHtml(grp.vi, 'Bản dịch bộ ' + item.g);
+    }
+    card.innerHTML = html;
+    rv.appendChild(card);
+  });
+  box.scrollIntoView({behavior:'smooth', block:'center'});
+}
+function mk2Reset(){
+  mk2Sel = {}; mk2Flag = {}; mk2Plays = {};
+  mk2Part = 0; mk2Started = false; mk2Finished = false; mk2Current = 1; mk2Speaking = false; mk2ModalPart = 0;
+  mk2PartScore = {1:null, 2:null, 3:null};
+  clearInterval(mk2TimerId);
+  mk2StopAudio();
+  var t = document.getElementById('mk2Timer'); t.textContent = '45:00'; t.classList.remove('warn');
+  document.getElementById('mk2Result').classList.remove('show');
+  document.getElementById('mk2Review').innerHTML = '';
+  var ex = document.getElementById('mk2Exam'); ex.classList.add('hidden'); ex.style.display = '';
+  var gr = document.getElementById('mk2Groups'); if(gr) gr.innerHTML = '';
+  var bn = document.getElementById('mk2PartBanner'); if(bn){ bn.classList.add('hidden'); bn.textContent = ''; }
+  var sp = document.getElementById('mk2Start'); sp.classList.remove('hidden'); sp.style.display = '';
+  var st = document.getElementById('mk2StartStatus'); if(st) st.textContent = '';
+  mk2RenderStepper();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+(function(){
+  var b = document.getElementById('mk2StartBtn');
+  if(b) b.addEventListener('click', function(){ startMock2(); });
+  var sb = document.getElementById('mk2SubmitBtnSide');
+  if(sb) sb.addEventListener('click', function(){ mk2AskSubmitPart(); });
+  var bb = document.getElementById('mk2SubmitBtnBottom');
+  if(bb) bb.addEventListener('click', function(){ mk2AskSubmitPart(); });
+  var mc = document.getElementById('mk2ModalConfirm');
+  if(mc) mc.addEventListener('click', function(){ mk2ConfirmSubmitPart(); });
+  var mx = document.getElementById('mk2ModalCancel');
+  if(mx) mx.addEventListener('click', function(){ mk2CloseModal(); });
+  var jw = document.getElementById('mk2JsWarn');
+  if(jw) jw.style.display = 'none';
+})();
+</script>
 
 <!-- Exam day data files -->
 <script src="data/exams/day1.js"></script>
@@ -1972,6 +2568,7 @@ window.cbtNext21 = cbtNext21;
 <script src="data/exams/day21.js"></script>
 <script src="data/exams/day22.js"></script>
 <script src="data/exams/day23.js"></script>
+<script src="data/exams/day24.js"></script>
 
 <!-- Exam engine -->
 <script src="js/exam-engine.js"></script>
