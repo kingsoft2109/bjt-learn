@@ -499,6 +499,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <option value="day1">Ngày 1 — Chẩn đoán Nghe · 9 câu</option>
       <option value="mock1">Đề thi thử BJT 01 — 40 câu · 3 phần</option>
       <option value="mock2">Đề thi thử BJT 02 — 80 câu · 3 phần</option>
+      <option value="mock3">模擬試験 BJT 03 — 80問 · 3部</option>
       <option value="demo">Đề mẫu 01 — 3 phần · 3 câu</option>
       <option value="videos">Thư viện video — 56 video tình huống theo chủ đề</option>
       <option value="vocab">Thẻ từ vựng — 884 từ theo ngày</option>
@@ -531,6 +532,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <button class="tab" id="tabDay1" onclick="switchExam('day1')">Ngày 1 — Chẩn đoán Nghe · 9 câu</button>
     <button class="tab" id="tabMock1" onclick="switchExam('mock1')">Đề thi thử BJT 01 — 40 câu · 3 phần</button>
     <button class="tab" id="tabMock2" onclick="switchExam('mock2')">Đề thi thử BJT 02 — 80 câu · 3 phần</button>
+    <button class="tab" id="tabMock3" onclick="switchExam('mock3')">模擬試験 BJT 03 — 80問 · 3部</button>
     <button class="tab" id="tabDemo" onclick="switchExam('demo')">Đề mẫu 01 — 3 phần · 3 câu</button>
     <button class="tab" id="tabVideos" onclick="switchExam('videos')">Thư viện video — 56 video tình huống</button>
     <button class="tab" id="tabVocab" onclick="switchExam('vocab')">Thẻ từ vựng — 884 từ theo ngày</button>
@@ -547,6 +549,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <li><strong><span id="seoExamCount">22</span> đề luyện theo ngày</strong> — mỗi ngày tập trung một kỹ năng: Nghe hiểu (聴解), Đọc hiểu (読解), hoặc Nghe + Đọc (聴読解). Mỗi đề 9–12 câu, bấm giờ như thi thật.</li>
     <li><strong>Đề thi thử BJT 01</strong> — 40 câu, 3 phần nối tiếp (聴解 → 聴読解 → 読解), tổng ~52 phút. Format giống đề thi chính thức, rút gọn một nửa.</li>
     <li><strong>Đề thi thử BJT 02</strong> — 80 câu, 3 phần nối tiếp (聴解 → 聴読解 → 読解), tổng ~105 phút. Format đúng như đề thi chính thức.</li>
+    <li><strong>模擬試験 BJT 03</strong> — 80問、3部連続（聴解 → 聴読解 → 読解）、合計約105分。本番と同じ形式です。</li>
     <li><strong>Đề mẫu 01</strong> — 3 câu mẫu kèm giải thích chi tiết, dành cho người mới bắt đầu.</li>
     <li><strong><span id="seoVideoCount">54</span> video tình huống</strong> — hội thoại tiếng Nhật thương mại có phụ đề JP/VI/EN, lời thoại và từ vựng đi kèm.</li>
     <li><strong><span id="seoVocabCount">884</span> thẻ từ vựng</strong> — toàn bộ danh sách từ vựng BJT, chia theo ngày học, mỗi thẻ có cách đọc, nghĩa tiếng Việt và cụm từ đi kèm.</li>
@@ -774,6 +777,106 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 
   <p class="footer-note">Đề thi thử BJT 02 — bản 80 câu theo đúng format đề thi thật (3 phần nối tiếp, khóa phần khi hết giờ). Audio là file MP3 thu sẵn, không đọc tên người nói. Điểm /800 là quy đổi ước lượng theo tỉ lệ đúng, không phải cách tính điểm chính thức của kỳ thi.</p>
 </main>
+<main class="wrap hidden" id="examMock3">
+  <div class="cbt-head">
+    <div>
+      <h1>模擬試験 BJT 03 — 80問の完全模擬試験</h1>
+      <div class="sub">本番と同じ形式：80問 · 3部連続 · 合計約105分</div>
+      <div class="mode-row">
+        <span class="lbl">モード：</span>
+        <button class="mode-btn active" id="mk3ModeReal" onclick="setModeMk3('real')">本番モード — 音声は1回のみ</button>
+        <button class="mode-btn" id="mk3ModePrac" onclick="setModeMk3('practice')">練習モード — 音声をくり返し聞ける</button>
+      </div>
+    </div>
+    <div class="cbt-timer">
+      <div class="t" id="mk3Timer">45:00</div>
+      <div class="lbl">現在の部の残り時間</div>
+    </div>
+  </div>
+
+  <div class="mk-stepper" id="mk3Stepper" aria-label="3部の進み具合">
+    <div class="mk-step" id="mk3Step1"><b class="jp">第1部 — 聴解</b>25問 · 45分<span class="st" id="mk3StepSt1">未開始</span></div>
+    <div class="mk-step" id="mk3Step2"><b class="jp">第2部 — 聴読解</b>25問 · 30分<span class="st" id="mk3StepSt2">未開始</span></div>
+    <div class="mk-step" id="mk3Step3"><b class="jp">第3部 — 読解</b>30問 · 30分<span class="st" id="mk3StepSt3">未開始</span></div>
+  </div>
+
+  <section class="start-panel" id="mk3Start">
+    <h2>模擬試験の説明 — 始める前にルールをよく読んでください</h2>
+    <div class="start-grid">
+      <div>
+        <ul>
+          <li>本番と同じ順序で<strong>80問</strong>を<strong>3部</strong>続けて解きます。合計時間は約<strong>105分</strong>です。</li>
+          <li><strong>部のロック（本番と同じ）：</strong>各部にそれぞれ制限時間があります。<strong>時間切れ</strong>になるか、<strong>部を提出</strong>すると、その部は<strong>すぐにロック</strong>され、次の部へ進みます — <strong>前の部には戻れません</strong>。答えを見直すこともできません。</li>
+          <li>各部では、同じセット（同じ音声・資料）の問題が<strong>1つの画面にまとめて</strong>表示されます。<strong>問題一覧</strong>から問題へ移動したり、<strong>← 前の問題 / 次の問題 →</strong>ボタンや<kbd>←</kbd> <kbd>→</kbd>キーで移動したり、<kbd>A</kbd>–<kbd>D</kbd>キーで答えを選んだりできます。各問題は<strong>1つ</strong>だけ選んでください。自信がない問題は<strong>⚑ 印を付ける</strong>を押してください。</li>
+          <li>音声は録音済みのMP3ファイルで、<strong>話者の名前は読み上げません</strong>。<strong>本番モード</strong>では、各音声は<strong>1回のみ</strong>再生できます。<strong>練習モード</strong>ではくり返し聞けます。</li>
+          <li><strong>答え、解説、トランスクリプトは第3部を提出した後に表示されます。</strong>結果には各部の点数、全問の点数（/80）と、800点満点への<strong>推定</strong>換算点と目安のレベルが表示されます。</li>
+        </ul>
+        <div class="mk-partcards">
+          <div class="mk-partcard"><b class="jp">第1部 — 聴解</b><p>25問 · 45分<br>場面把握 · 発言聴解 · 総合聴解（会話・お知らせ）</p></div>
+          <div class="mk-partcard"><b class="jp">第2部 — 聴読解</b><p>25問 · 30分<br>請求書・グラフ・メールを見ながら聞く</p></div>
+          <div class="mk-partcard"><b class="jp">第3部 — 読解</b><p>30問 · 30分<br>語彙・文法 · 表現読解 · 社内メール・報告書・手順書を読む</p></div>
+        </div>
+        <p style="margin-top:14px"><button class="btn btn-primary" id="mk3StartBtn" type="button" style="font-size:16px" onclick="startMock3()">第1部 — 聴解を始める</button></p>
+        <p class="start-status" id="mk3StartStatus" role="status" aria-live="polite"></p>
+        <p class="note js-warn" id="mk3JsWarn">読み込み中です。「<strong>始める</strong>」ボタンが反応しない場合は、数秒待ってページの読み込みが終わるのを待つか、Chrome / Safariでこのページを開いてもう一度押してください。</p>
+      </div>
+      <div>
+        <div class="candidate" aria-label="模擬試験 BJT 03の情報">
+          <div><span>試験</span><b class="jp">BJT — 模擬試験 03</b></div>
+          <div><span>問題数</span><b>80問 · 3部</b></div>
+          <div><span>時間</span><b>約105分（45 + 30 + 30）</b></div>
+          <div><span>構成</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
+          <div><span>ルール</span><b>時間切れ／部の提出 → 部をロック、戻れません</b></div>
+        </div>
+        <div class="note" style="margin-top:14px"><strong>注意：</strong>始める前に約105分の静かな時間を確保してください。途中で他の試験のタブに切り替えても、現在の部のタイマーは進み続けます。</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mk-partbanner hidden" id="mk3PartBanner" role="status"></div>
+
+  <section id="mk3Exam" class="hidden">
+    <div class="cbt-layout">
+      <aside class="palette" aria-label="現在の部の問題一覧">
+        <h3 id="mk3PalTitle">問題一覧 — 第1部</h3>
+        <div class="count" id="mk3PalCount">回答済み 0 / 25</div>
+        <div class="pal-grid" id="mk3PalGrid"></div>
+        <div class="legend">
+          <span><i style="background:var(--card)"></i>未回答</span>
+          <span><i style="background:var(--ok);border-color:var(--ok)"></i>回答済み</span>
+          <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>開いている問題</span>
+          <span>⚑ 印付き</span>
+        </div>
+        <button class="btn btn-primary submit-wide" id="mk3SubmitBtnSide" type="button" onclick="mk3AskSubmitPart()">この部を提出する</button>
+        <div class="kbd-hint">ショートカット：<kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd>で答えを選ぶ · <kbd>←</kbd> <kbd>→</kbd>で問題を移動する（現在の部のみ）</div>
+      </aside>
+      <div class="cbt-main">
+        <div id="mk3Groups" aria-label="現在の部のセットと問題"></div>
+        <div class="cbt-footnav">
+          <button class="nav-btn" id="mk3PrevBtn" type="button" onclick="mk3PrevQ()">← 前の問題</button>
+          <span class="foot-status" id="mk3FootStatus">第1問 / 80</span>
+          <button class="nav-btn primary" id="mk3NextBtn" type="button" onclick="mk3NextQ()">次の問題 →</button>
+        </div>
+      </div>
+    </div>
+    <div class="d1-submitbar">
+      <p id="mk3SubmitHint">この部は 0 / 25問に回答しました。</p>
+      <button class="btn btn-primary" id="mk3SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk3AskSubmitPart()">この部を提出する</button>
+    </div>
+  </section>
+
+  <section class="result-panel" id="mk3Result">
+    <div class="big" id="mk3ScoreBig">0 / 80</div>
+    <h2 id="mk3ScoreTitle">模擬試験 BJT 03の結果</h2>
+    <div class="mk-scoregrid" id="mk3ScoreGrid"></div>
+    <p id="mk3ScoreDetail"></p>
+    <p style="font-size:14px">答え、解説、トランスクリプトと各問題の訳はすぐ下にあります。</p>
+    <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mk3Reset()">↺ 模擬試験 03をもう一度解く</button>
+  </section>
+  <div id="mk3Review"></div>
+
+  <p class="footer-note">模擬試験 BJT 03 — 本番と同じ形式の80問（3部連続、時間切れで部をロック）。音声は録音済みのMP3ファイルで、話者の名前は読み上げません。/800の点数は正答率からの推定換算であり、正式な採点方法ではありません。</p>
+</main>
 <main class="wrap wrap-narrow hidden" id="examDemo">
   <div class="hero">
     <h1>Đề thi thử BJT — 3 câu, đủ 3 phần thi</h1>
@@ -921,17 +1024,27 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     </div>
   </div>
 </div>
+<div class="modal-overlay" id="mk3Modal" role="dialog" aria-modal="true" aria-labelledby="mk3ModalTitle">
+  <div class="modal">
+    <h3 id="mk3ModalTitle">この部を提出しますか？</h3>
+    <p id="mk3ModalText">この部を提出すると部がロックされ、次の部へ進みます — 戻ることはできません。</p>
+    <div class="row">
+      <button class="btn btn-ghost" id="mk3ModalCancel" type="button" onclick="mk3CloseModal()">続けて解く</button>
+      <button class="btn btn-primary" id="mk3ModalConfirm" type="button" onclick="mk3ConfirmSubmitPart()">部を提出する</button>
+    </div>
+  </div>
+</div>
 
 <script>
 /* ============ TAB SWITCH + URL TAG (deep link) ============
    Each exam has its own link tag so a shared link opens exactly that exam:
-     ngay-1 … ngay-14 · de-thi-thu (Đề thi thử BJT 01) · de-thi-thu-2 (Đề thi thử BJT 02) · de-mau (Đề mẫu 01)
+     ngay-1 … ngay-14 · de-thi-thu (Đề thi thử BJT 01) · de-thi-thu-2 (Đề thi thử BJT 02) · de-thi-thu-3 (模擬試験 BJT 03) · de-mau (Đề mẫu 01)
    Supported deep-link forms on the public URL:
      ?de=ngay-4   (query parameter — primary form; ?exam=ngay-4 also works)
      #ngay-4      (hash — kept for in-app use)
    A valid tag in the URL wins over the default (newest exam, Ngày 22);
    switching exams on the page updates the hash to match. */
-var EXAM_TAGS = { day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
+var EXAM_TAGS = { day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', mock3:'de-thi-thu-3', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
 var TAG_EXAMS = {};
 Object.keys(EXAM_TAGS).forEach(function(k){ TAG_EXAMS[EXAM_TAGS[k]] = k; });
 /* The published page is displayed inside the Muse shell, and the #tag
@@ -1039,6 +1152,7 @@ function anyExamStarted(){
   }
   try{ if(window.mkStarted) return true; }catch(e){}
   try{ if(window.mk2Started) return true; }catch(e){}
+  try{ if(window.mk3Started) return true; }catch(e){}
   try{ if(window.demoTimerStarted) return true; }catch(e){}
   return false;
 }
@@ -1071,6 +1185,8 @@ function switchExam(which){
   if(exM) exM.classList.toggle('hidden', which !== 'mock1');
   var exM2 = document.getElementById('examMock2');
   if(exM2) exM2.classList.toggle('hidden', which !== 'mock2');
+  var exM3 = document.getElementById('examMock3');
+  if(exM3) exM3.classList.toggle('hidden', which !== 'mock3');
   document.getElementById('examDemo').classList.toggle('hidden', which !== 'demo');
   var exV = document.getElementById('videoLibrary');
   if(exV) exV.classList.toggle('hidden', which !== 'videos');
@@ -1080,6 +1196,8 @@ function switchExam(which){
   if(tbM) tbM.classList.toggle('active', which === 'mock1');
   var tbM2 = document.getElementById('tabMock2');
   if(tbM2) tbM2.classList.toggle('active', which === 'mock2');
+  var tbM3 = document.getElementById('tabMock3');
+  if(tbM3) tbM3.classList.toggle('active', which === 'mock3');
   document.getElementById('tabDemo').classList.toggle('active', which === 'demo');
   var tbV = document.getElementById('tabVideos');
   if(tbV) tbV.classList.toggle('active', which === 'videos');
@@ -1089,6 +1207,7 @@ function switchExam(which){
   if(which === 'demo') startDemoTimer();
   if(which !== 'mock1'){ try{ mkStopAudio(); }catch(e){} }
   if(which !== 'mock2'){ try{ mk2StopAudio(); }catch(e){} }
+  if(which !== 'mock3'){ try{ mk3StopAudio(); }catch(e){} }
   try{ bjtWarmExam(which); }catch(e){}
   window.scrollTo({top:0, behavior:'smooth'});
 }
@@ -1196,6 +1315,10 @@ function bjtWarmExam(which){
     try{ if(typeof mk2Groups !== 'undefined' && mk2Groups) mk2Groups.forEach(function(g){ if(g && g.audio) bjtWarmAudio(g.audio); }); }catch(e){}
     return;
   }
+  if(which === 'mock3'){
+    try{ if(typeof mk3Groups !== 'undefined' && mk3Groups) mk3Groups.forEach(function(g){ if(g && g.audio) bjtWarmAudio(g.audio); }); }catch(e){}
+    return;
+  }
   if(which === 'demo'){
     ['assets/listening1.mp3', 'assets/listening2.mp3'].forEach(function(u){
       bjtFetchBlob(u, function(bu){
@@ -1283,6 +1406,7 @@ function cycleFontSize(){
 </script>
 <script src="data/exams/mock1.js"></script>
 <script src="data/exams/mock2.js"></script>
+<script src="data/exams/mock3.js"></script>
 <script>
 var mkGroupById = {};
 mkGroups.forEach(function(g){ mkGroupById[g.id] = g; });
@@ -2037,7 +2161,7 @@ window.resetDay21 = resetDay21;
 window.cbtPrev21 = cbtPrev21;
 window.cbtNext21 = cbtNext21;
 (function wireTabs(){
-  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabDay23:'day23', tabDay24:'day24', tabMock1:'mock1', tabMock2:'mock2', tabDemo:'demo' };
+  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabDay23:'day23', tabDay24:'day24', tabMock1:'mock1', tabMock2:'mock2', tabMock3:'mock3', tabDemo:'demo' };
   Object.keys(map).forEach(function(id){
     var el = document.getElementById(id);
     if(el) el.addEventListener('click', function(){ userPickedExam = true; switchExam(map[id]); });
@@ -2540,6 +2664,476 @@ function mk2Reset(){
   var mx = document.getElementById('mk2ModalCancel');
   if(mx) mx.addEventListener('click', function(){ mk2CloseModal(); });
   var jw = document.getElementById('mk2JsWarn');
+  if(jw) jw.style.display = 'none';
+})();
+</script>
+<script>
+var mk3GroupById = {};
+mk3Groups.forEach(function(g){ mk3GroupById[g.id] = g; });
+var mk3Sel = {}, mk3Flag = {}, mk3Plays = {};
+var mk3Part = 0, mk3Started = false, mk3Finished = false, mk3Mode = 'real';
+var mk3Current = 1, mk3Remain = 0, mk3TimerId = null;
+var mk3PartScore = {1:null, 2:null, 3:null};
+var mk3Player = null, mk3Speaking = false, mk3AudioId = null, mk3Watchdog = null;
+function mk3PartOf(n){ for(var i=0;i<mk3Parts.length;i++){ if(n>=mk3Parts[i].from && n<=mk3Parts[i].to) return mk3Parts[i]; } return mk3Parts[0]; }
+function mk3PartScoreCalc(p){
+  var part = mk3Parts[p-1], c = 0;
+  for(var n=part.from;n<=part.to;n++){ if(mk3Sel[n]===mk3Questions[n-1].ans) c++; }
+  return c;
+}
+function setModeMk3(m){
+  if(mk3Started && !mk3Finished) return;
+  mk3Mode = m;
+  document.getElementById('mk3ModeReal').classList.toggle('active', m==='real');
+  document.getElementById('mk3ModePrac').classList.toggle('active', m==='practice');
+}
+function mk3RenderStepper(){
+  for(var p=1;p<=3;p++){
+    var step = document.getElementById('mk3Step'+p), st = document.getElementById('mk3StepSt'+p);
+    if(!step || !st) continue;
+    step.classList.toggle('done', mk3PartScore[p]!==null);
+    step.classList.toggle('now', mk3Part===p && mk3PartScore[p]===null);
+    var part = mk3Parts[p-1], total = part.to - part.from + 1;
+    st.textContent = mk3PartScore[p]!==null
+      ? ('✓ ロック済み — 正解 ' + mk3PartScore[p] + ' / ' + total)
+      : (mk3Part===p ? '解答中…' : '未開始');
+  }
+}
+function startMock3(){
+  if(mk3Started) return;
+  var status = document.getElementById('mk3StartStatus');
+  if(status) status.textContent = '第1部を開いています…';
+  mk3Started = true;
+  var sp = document.getElementById('mk3Start');
+  if(sp){ sp.classList.add('hidden'); sp.style.display = 'none'; }
+  mk3BeginPart(1, false);
+  if(status) status.textContent = '';
+}
+function mk3BeginPart(p, auto){
+  mk3Part = p;
+  var part = mk3Parts[p-1];
+  mk3Current = part.from;
+  mk3Remain = part.time;
+  var t = document.getElementById('mk3Timer');
+  t.textContent = fmtT(mk3Remain); t.classList.remove('warn');
+  var banner = document.getElementById('mk3PartBanner');
+  if(banner){
+    if(p>1){
+      var prev = mk3Parts[p-2], pTotal = prev.to - prev.from + 1;
+      banner.textContent = (auto ? '⏱ 時間切れ ' : '提出済み ') + prev.name + ' — この部はロックされました（正解 ' + mk3PartScore[p-1] + ' / ' + pTotal + '）。戻ることはできません。現在は' + part.name + 'を解いています。';
+      banner.classList.remove('hidden');
+    } else {
+      banner.textContent = '現在は' + part.name + 'を解いています — タイマー ' + fmtT(part.time) + 'が進んでいます。時間切れになるか部を提出すると、この部がロックされ、次の部へ進みます。';
+      banner.classList.remove('hidden');
+    }
+  }
+  var ex = document.getElementById('mk3Exam');
+  ex.classList.remove('hidden'); ex.style.display = '';
+  document.getElementById('mk3PalTitle').textContent = '問題一覧 — 第' + p + '部（' + part.jp + '）';
+  mk3BuildGroups();
+  mk3RenderPalette();
+  mk3UpdateHint();
+  mk3RenderStepper();
+  clearInterval(mk3TimerId);
+  mk3TimerId = setInterval(function(){
+    if(mk3Remain<=0){ clearInterval(mk3TimerId); var tt = document.getElementById('mk3Timer'); tt.textContent = '00:00'; mk3LockPart(true); return; }
+    mk3Remain--;
+    var el = document.getElementById('mk3Timer');
+    el.textContent = fmtT(mk3Remain);
+    if(mk3Remain<=60) el.classList.add('warn');
+  }, 1000);
+  safeScrollToEl(document.getElementById('mk3Exam'));
+}
+function mk3BuildGroups(){
+  var wrap = document.getElementById('mk3Groups');
+  if(!wrap) return;
+  wrap.innerHTML = '';
+  mk3Groups.forEach(function(g){
+    if(g.part !== mk3Part) return;
+    var group = document.createElement('div');
+    group.className = 'seg-group'; group.id = 'mk3SegGroup' + g.id;
+    var banner = document.createElement('div'); banner.className = 'seg-banner';
+    var st = document.createElement('div'); st.className = 'seg-title jp'; st.textContent = g.title;
+    var sd = document.createElement('div'); sd.className = 'seg-desc';
+    sd.textContent = g.desc + (g.audio ? (mk3Mode==='real' ? ' · 本番モード：このセットの音声は1回のみ再生できます。' : ' · 練習モード：くり返し聞けます。') : '');
+    banner.appendChild(st); banner.appendChild(sd);
+    if(g.audio){
+      var arow = document.createElement('div'); arow.className = 'audio-row';
+      var pb = document.createElement('button');
+      pb.type = 'button'; pb.className = 'play-btn'; pb.id = 'mk3PlayBtn' + g.id;
+      pb.innerHTML = '<span class="tri">▶</span><span>セット' + g.id + 'の音声を再生</span>';
+      (function(gid){ pb.addEventListener('click', function(){ mk3Play(gid); }); })(g.id);
+      var ps = document.createElement('span'); ps.className = 'play-state'; ps.id = 'mk3PlayState' + g.id;
+      arow.appendChild(pb); arow.appendChild(ps);
+      banner.appendChild(arow);
+    }
+    group.appendChild(banner);
+    if(g.mat){
+      var matWrap = document.createElement('div');
+      matWrap.innerHTML = g.mat;
+      while(matWrap.firstChild) group.appendChild(matWrap.firstChild);
+    }
+    g.qs.forEach(function(n){
+      var item = mk3Questions[n-1];
+      var card = document.createElement('div');
+      card.className = 'qcard'; card.id = 'mkqcard-' + n;
+      var meta = document.createElement('div'); meta.className = 'q-meta';
+      var qn = document.createElement('span'); qn.className = 'q-num';
+      qn.textContent = '第' + n + '問 / 80 · セット' + g.id;
+      var fb = document.createElement('button');
+      fb.type = 'button'; fb.className = 'flag-btn'; fb.id = 'mkflagBtn' + n;
+      (function(nn){ fb.addEventListener('click', function(){ mk3ToggleFlag(nn); }); })(n);
+      meta.appendChild(qn); meta.appendChild(fb);
+      var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = item.q;
+      var opts = document.createElement('div');
+      opts.className = 'options'; opts.id = 'mkqOptions' + n;
+      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','第' + n + '問の答え');
+      card.appendChild(meta); card.appendChild(qt); card.appendChild(opts);
+      (function(nn){ card.addEventListener('click', function(){ mk3SetActive(nn, false); }); })(n);
+      group.appendChild(card);
+    });
+    wrap.appendChild(group);
+  });
+  var part = mk3Parts[mk3Part-1];
+  for(var n=part.from;n<=part.to;n++) mk3UpdateQuestion(n);
+  mk3MarkActive();
+  mk3RefreshPlayUI();
+}
+function mk3MarkActive(){
+  var part = mk3Parts[mk3Part-1];
+  for(var n=part.from;n<=part.to;n++){
+    var c = document.getElementById('mkqcard-' + n);
+    if(c) c.classList.toggle('current', n === mk3Current);
+  }
+}
+function mk3SetActive(n, scroll){
+  mk3Current = n;
+  mk3MarkActive();
+  mk3RenderPalette();
+  if(scroll){
+    var el = document.getElementById('mkqcard-' + n);
+    if(el) safeScrollToEl(el);
+  }
+}
+function mk3UpdateQuestion(n){
+  var item = mk3Questions[n-1];
+  var fb = document.getElementById('mkflagBtn' + n);
+  if(fb){
+    fb.classList.toggle('on', !!mk3Flag[n]);
+    fb.textContent = mk3Flag[n] ? '⚑ 印付き — 押して外す' : '⚑ この問題に印を付ける';
+  }
+  var box = document.getElementById('mkqOptions' + n);
+  if(!box) return;
+  box.innerHTML = '';
+  var letters = ['A','B','C','D'];
+  item.opts.forEach(function(opt, idx){
+    var b = document.createElement('button');
+    b.className = 'd1opt'; b.type = 'button';
+    if(mk3Sel[n] === letters[idx]) b.classList.add('selected');
+    b.innerHTML = '<span class="letter">' + letters[idx] + '</span><span class="jp"></span>';
+    b.querySelector('.jp').textContent = opt;
+    (function(nn, v){ b.addEventListener('click', function(){ mk3Pick(nn, v); }); })(n, letters[idx]);
+    box.appendChild(b);
+  });
+}
+function mk3RenderPalette(){
+  var g = document.getElementById('mk3PalGrid'); if(!g) return;
+  var part = mk3Parts[mk3Part-1];
+  g.innerHTML = '';
+  for(var n=part.from;n<=part.to;n++){
+    var item = mk3Questions[n-1];
+    var b = document.createElement('button');
+    b.className = 'pal-btn'; b.setAttribute('aria-label','第' + n + '問');
+    b.innerHTML = '<span class="pnum">' + n + '</span><span class="plabel"></span><span class="pstat"></span>';
+    b.querySelector('.plabel').textContent = 'セット' + item.g + ' · ' + part.jp;
+    var st = b.querySelector('.pstat');
+    if(mk3Sel[n]) b.classList.add('answered');
+    if(mk3Sel[n]) st.textContent = '✓';
+    if(mk3Flag[n]) st.textContent = '⚑' + (st.textContent ? ' ✓' : '');
+    if(n===mk3Current) b.classList.add('current');
+    (function(nn){ b.addEventListener('click', function(){ mk3SetActive(nn, true); }); })(n);
+    g.appendChild(b);
+  }
+  var done = 0;
+  for(var m=part.from;m<=part.to;m++){ if(mk3Sel[m]) done++; }
+  document.getElementById('mk3PalCount').textContent = '回答済み ' + done + ' / ' + (part.to - part.from + 1) + '（第' + mk3Part + '部）';
+  var fs = document.getElementById('mk3FootStatus');
+  if(fs) fs.textContent = '第' + mk3Current + '問を表示中 / 80 · 第' + mk3Part + '部：回答済み ' + done + ' / ' + (part.to - part.from + 1);
+  var prev = document.getElementById('mk3PrevBtn'), next = document.getElementById('mk3NextBtn');
+  if(prev) prev.disabled = (mk3Current <= part.from);
+  if(next) next.disabled = (mk3Current >= part.to);
+}
+function mk3UpdateHint(){
+  var part = mk3Parts[mk3Part-1];
+  var done = 0, total = part.to - part.from + 1;
+  for(var m=part.from;m<=part.to;m++){ if(mk3Sel[m]) done++; }
+  var el = document.getElementById('mk3SubmitHint');
+  if(el) el.textContent = done === total
+    ? 'この部の' + done + ' / ' + total + '問すべてに回答しました —「この部を提出する」を押して部をロックし、次へ進んでください。'
+    : 'この部は' + done + ' / ' + total + '問に回答しました — あと' + (total - done) + '問未回答です。提出することもできます（未回答は不正解になります）。提出すると部がロックされます。';
+  var lbl = mk3Part===3 ? '第3部を提出 — 結果を見る' : ('第' + mk3Part + '部を提出 — 第' + (mk3Part+1) + '部へ');
+  var s1 = document.getElementById('mk3SubmitBtnSide'), s2 = document.getElementById('mk3SubmitBtnBottom');
+  if(s1) s1.textContent = lbl;
+  if(s2) s2.textContent = lbl;
+}
+function mk3Pick(n, v){
+  if(mk3Finished || mk3PartScore[mk3Part]!==null) return;
+  var part = mk3Parts[mk3Part-1];
+  if(n < part.from || n > part.to) return;
+  mk3Sel[n] = v;
+  mk3Current = n;
+  mk3UpdateQuestion(n);
+  mk3MarkActive();
+  mk3RenderPalette();
+  mk3UpdateHint();
+}
+function mk3ToggleFlag(n){
+  if(mk3Finished || mk3PartScore[mk3Part]!==null) return;
+  mk3Flag[n] = !mk3Flag[n];
+  mk3Current = n;
+  mk3UpdateQuestion(n);
+  mk3MarkActive();
+  mk3RenderPalette();
+}
+function mk3PrevQ(){ var part = mk3Parts[mk3Part-1]; if(mk3Current > part.from) mk3SetActive(mk3Current-1, true); }
+function mk3NextQ(){ var part = mk3Parts[mk3Part-1]; if(mk3Current < part.to) mk3SetActive(mk3Current+1, true); }
+/* Playback mirrors Day 4: fresh Audio per press, play counted only once
+   audio actually starts, watchdog unwedges a stuck button. */
+function mk3RefreshPlayUI(){
+  mk3Groups.forEach(function(g){ if(g.audio && g.part===mk3Part) mk3RefreshOnePlayUI(g.id); });
+}
+function mk3RefreshOnePlayUI(gid){
+  var btn = document.getElementById('mk3PlayBtn' + gid), st = document.getElementById('mk3PlayState' + gid);
+  if(!btn || !st) return;
+  var plays = mk3Plays[gid] || 0;
+  if(mk3Speaking && mk3AudioId===gid){ btn.disabled = true; st.textContent = 'セット' + gid + 'の音声を再生中です… よく聞いて、このセットの問題に答えてください。'; return; }
+  if(mk3Mode==='real' && plays>=1){ btn.disabled = true; st.textContent = 'セット' + gid + 'の音声は1/1回再生済みです（本番モード）。'; return; }
+  btn.disabled = false;
+  if(mk3Speaking){ st.textContent = 'セット' + mk3AudioId + 'の音声を再生中です — このボタンを押すとその音声を止めて、セット' + gid + 'の音声を再生します。'; return; }
+  st.textContent = plays>0 ? ('再生済み ' + plays + '回' + (mk3Mode==='practice' ? ' — くり返し聞けます。' : '')) : '未再生 — 押してセット' + gid + 'の音声を聞く。';
+}
+function mk3SetPlayState(gid, msg){
+  var st = document.getElementById('mk3PlayState' + gid);
+  if(st) st.textContent = msg;
+}
+function mk3StopAudio(){
+  if(mk3Watchdog){ clearTimeout(mk3Watchdog); mk3Watchdog = null; }
+  if(mk3Player){
+    var old = mk3Player; mk3Player = null;
+    try{ old.onended = null; old.onerror = null; old.onplaying = null; old.pause(); old.removeAttribute('src'); old.load(); }catch(e){}
+  }
+  mk3Speaking = false;
+}
+function mk3Play(gid){
+  if(mk3Finished || mk3PartScore[mk3Part]!==null) return;
+  if(mk3Speaking && mk3AudioId===gid) return;
+  if(mk3Mode==='real' && (mk3Plays[gid]||0)>=1) return;
+  mk3StopAudio();
+  var a = new Audio();
+  mk3Player = a;
+  mk3AudioId = gid;
+  mk3Speaking = true; mk3RefreshPlayUI();
+  var counted = false;
+  a.onplaying = function(){
+    if(mk3Player!==a) return;
+    if(mk3Watchdog){ clearTimeout(mk3Watchdog); mk3Watchdog = null; }
+    if(!counted){ counted = true; mk3Plays[gid] = (mk3Plays[gid]||0) + 1; }
+  };
+  a.onended = function(){
+    if(mk3Player!==a) return;
+    mk3Player = null; mk3Speaking = false;
+    mk3RefreshPlayUI();
+  };
+  a.onerror = function(){
+    if(mk3Player!==a || counted) return;
+    if(mk3Watchdog){ clearTimeout(mk3Watchdog); mk3Watchdog = null; }
+    mk3Player = null; mk3Speaking = false;
+    mk3RefreshPlayUI();
+    mk3SetPlayState(gid, 'セット' + gid + 'の音声ファイルを読み込めませんでした — ネット接続を確認して、もう一度再生してください。');
+  };
+  var wdWaits = 0;
+  function armStartWatchdog(){
+    mk3Watchdog = setTimeout(function(){
+      mk3Watchdog = null;
+      if(mk3Player!==a || !mk3Speaking || counted) return;
+      wdWaits++;
+      var loading = false;
+      try{ loading = (a.readyState > 0) || (a.networkState === 2) || (a.buffered && a.buffered.length > 0); }catch(e){}
+      if(loading && wdWaits < 5){
+        mk3SetPlayState(gid, 'セット' + gid + 'の音声を読み込んでいます… ネットが少し遅いようです。もう少し待ってください — もう一度押さないでください。');
+        armStartWatchdog();
+        return;
+      }
+      if(!loading && wdWaits === 1 && typeof bjtAutoRetryOnce === 'function' && bjtAutoRetryOnce('mk-' + gid)){
+        mk3StopAudio();
+        mk3Play(gid);
+        mk3SetPlayState(gid, '最初の再生が止まりました — セット' + gid + 'の音声を自動でもう一度再生しています…');
+        return;
+      }
+      mk3StopAudio();
+      mk3RefreshPlayUI();
+      mk3SetPlayState(gid, 'セット' + gid + 'の音声を再生できませんでした（ネットが遅いか、ブラウザーの調子が悪いためです）—「セット' + gid + 'の音声を再生」ボタンをもう一度押してください。');
+    }, 8000);
+  }
+  bjtStartAudio(a, mk3GroupById[gid].audio, {
+    isCurrent: function(){ return mk3Player===a; },
+    arm: armStartWatchdog,
+    onLoading: function(){ mk3SetPlayState(gid, 'セット' + gid + 'の音声をダウンロードしています… ダウンロードが終わると自動で再生します。もう一度押さないでください。'); },
+    onBlocked: function(){
+      if(mk3Player!==a || counted) return;
+      if(mk3Watchdog){ clearTimeout(mk3Watchdog); mk3Watchdog = null; }
+      mk3Player = null; mk3Speaking = false;
+      mk3RefreshPlayUI();
+      mk3SetPlayState(gid, 'ブラウザーが音声の再生をブロックしました —「セット' + gid + 'の音声を再生」ボタンをもう一度押してください。');
+    }
+  });
+}
+document.addEventListener('keydown', function(e){
+  if(currentExam!=='mock1' || !mk3Started || mk3Finished || mk3PartScore[mk3Part]!==null) return;
+  var modal = document.getElementById('mk3Modal');
+  if(modal && (modal.classList.contains('show') || modal.style.display==='flex')) return;
+  var k = e.key.toLowerCase();
+  if(['a','b','c','d'].indexOf(k)>=0){ mk3Pick(mk3Current, k.toUpperCase()); }
+  else if(e.key==='ArrowRight'){ mk3NextQ(); }
+  else if(e.key==='ArrowLeft'){ mk3PrevQ(); }
+});
+var mk3ModalPart = 0;
+function mk3AskSubmitPart(){
+  if(!mk3Started || mk3Finished || mk3PartScore[mk3Part]!==null) return;
+  mk3ModalPart = mk3Part;
+  var part = mk3Parts[mk3Part-1];
+  var done = 0, missing = [];
+  for(var n=part.from;n<=part.to;n++){ if(mk3Sel[n]) done++; else missing.push(n); }
+  var total = part.to - part.from + 1;
+  var tail = mk3Part===3
+    ? 'これが最後の部です — 提出すると全問の結果、答え、解説、トランスクリプトと訳が表示されます。'
+    : '提出すると、この部はロックされ、' + mk3Parts[mk3Part].name + 'へ進みます — 戻ることはできません。';
+  document.getElementById('mk3ModalTitle').textContent = part.name + 'を提出しますか？';
+  document.getElementById('mk3ModalText').textContent = (done===total
+    ? 'この部の' + done + '/' + total + '問すべてに回答しました。'
+    : 'この部は' + done + '/' + total + '問に回答しました。未回答の問題：' + missing.join(', ') + '（未回答は不正解になります）。') + tail;
+  var cf = document.getElementById('mk3ModalConfirm');
+  if(cf) cf.textContent = mk3Part===3 ? '部を提出 — 結果を見る' : '部を提出 — ロックして次へ進む';
+  var modal = document.getElementById('mk3Modal');
+  modal.classList.add('show');
+  modal.style.display = 'flex';
+  if(cf){ try{ cf.focus(); }catch(e){} }
+}
+function mk3CloseModal(){
+  var modal = document.getElementById('mk3Modal');
+  modal.classList.remove('show');
+  modal.style.display = '';
+}
+function mk3ConfirmSubmitPart(){
+  /* The confirm button carries both an inline onclick and a direct
+     addEventListener binding (same pattern as the day exams), so one click
+     can reach this handler twice. The first call locks the part and moves
+     on; the duplicate must not lock the NEXT part too — it is recognised
+     because mk3Part no longer matches the part the modal was opened for. */
+  if(mk3ModalPart && mk3Part !== mk3ModalPart){ mk3CloseModal(); return; }
+  mk3CloseModal(); mk3LockPart(false);
+}
+function mk3LockPart(auto){
+  if(mk3Finished || mk3PartScore[mk3Part]!==null) return;
+  clearInterval(mk3TimerId);
+  mk3StopAudio();
+  mk3PartScore[mk3Part] = mk3PartScoreCalc(mk3Part);
+  mk3RenderStepper();
+  if(mk3Part < 3){
+    mk3BeginPart(mk3Part + 1, auto);
+  } else {
+    mk3Finish(auto);
+  }
+}
+function mk3Finish(auto){
+  mk3Finished = true;
+  document.getElementById('mk3Exam').classList.add('hidden');
+  var banner = document.getElementById('mk3PartBanner');
+  if(banner) banner.classList.add('hidden');
+  var totals = [0,0,0], grand = 0;
+  for(var p=1;p<=3;p++){ totals[p-1] = mk3PartScore[p] || 0; grand += totals[p-1]; }
+  var pct = Math.round(grand / 80 * 100);
+  var est = grand * 10;
+  var level = pct>=66 ? '≈ J1レベル（530点以上）' : pct>=54 ? '≈ J2レベル' : pct>=45 ? '≈ J3レベル' : 'J3レベル未満 — 練習を続けましょう';
+  var box = document.getElementById('mk3Result');
+  box.classList.add('show');
+  document.getElementById('mk3ScoreBig').textContent = grand + ' / 80';
+  document.getElementById('mk3ScoreTitle').textContent =
+    pct>=66 ? '模擬試験 BJT 03の結果 — J1レベルに到達（推定）' :
+    pct>=54 ? '模擬試験 BJT 03の結果 — J2レベル（推定）' :
+    pct>=45 ? '模擬試験 BJT 03の結果 — J3レベル（推定）' :
+               '模擬試験 BJT 03の結果 — もっと練習しましょう';
+  var cells = '';
+  for(var q=1;q<=3;q++){
+    var pp = mk3Parts[q-1], tt = pp.to - pp.from + 1;
+    cells += '<div class="mk-scorecell"><div class="v">' + totals[q-1] + ' / ' + tt + '</div><div class="k">' + pp.name + ' · ' + Math.round(totals[q-1]/tt*100) + '%</div></div>';
+  }
+  cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">正答率からの推定換算（' + pct + '%）· 目安のレベル：' + level + '</div></div>';
+  document.getElementById('mk3ScoreGrid').innerHTML = cells;
+  document.getElementById('mk3ScoreDetail').textContent = (auto ? '⏱ 第3部の時間切れ — 自動で提出されました。' : '')
+    + '全問：正解 ' + grand + '/80（' + pct + '%）。上の/800の点数は、正答率からの推定換算にすぎません — 本番の点数は主催者の独自の方法で計算され、単純な比例換算ではありません。';
+  var rv = document.getElementById('mk3Review'); rv.innerHTML = '';
+  var shownTr = {};
+  var lastPart = 0;
+  mk3Questions.forEach(function(item){
+    var part = mk3PartOf(item.n);
+    if(part.num !== lastPart){
+      lastPart = part.num;
+      var h = document.createElement('h3');
+      h.className = 'section-title';
+      h.textContent = part.name + ' — 正解 ' + (mk3PartScore[part.num]||0) + ' / ' + (part.to - part.from + 1);
+      rv.appendChild(h);
+    }
+    var card = document.createElement('div'); card.className = 'review-card';
+    var isOk = mk3Sel[item.n] === item.ans;
+    var html = '<div class="q-num">第' + item.n + '問 · セット' + item.g + '</div>';
+    html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
+    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk3Sel[item.n] ? mk3Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk3Sel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mk3Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">正解：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ 不正解') + '</div>';
+    html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
+    var grp = mk3GroupById[item.g];
+    if(grp && grp.lines && !shownTr[item.g]){
+      shownTr[item.g] = true;
+      var tr = grp.lines.join('\n');
+      html += reviewAudioHtml(grp.audio, 'セット' + item.g + 'の音声をもう一度聞く');
+      html += '<div class="transcript jp"><strong>セット' + item.g + 'のトランスクリプト：</strong>\n' + tr + '</div>';
+      html += viTrHtml(grp.vi, 'セット' + item.g + 'の訳');
+    }
+    card.innerHTML = html;
+    rv.appendChild(card);
+  });
+  box.scrollIntoView({behavior:'smooth', block:'center'});
+}
+function mk3Reset(){
+  mk3Sel = {}; mk3Flag = {}; mk3Plays = {};
+  mk3Part = 0; mk3Started = false; mk3Finished = false; mk3Current = 1; mk3Speaking = false; mk3ModalPart = 0;
+  mk3PartScore = {1:null, 2:null, 3:null};
+  clearInterval(mk3TimerId);
+  mk3StopAudio();
+  var t = document.getElementById('mk3Timer'); t.textContent = '45:00'; t.classList.remove('warn');
+  document.getElementById('mk3Result').classList.remove('show');
+  document.getElementById('mk3Review').innerHTML = '';
+  var ex = document.getElementById('mk3Exam'); ex.classList.add('hidden'); ex.style.display = '';
+  var gr = document.getElementById('mk3Groups'); if(gr) gr.innerHTML = '';
+  var bn = document.getElementById('mk3PartBanner'); if(bn){ bn.classList.add('hidden'); bn.textContent = ''; }
+  var sp = document.getElementById('mk3Start'); sp.classList.remove('hidden'); sp.style.display = '';
+  var st = document.getElementById('mk3StartStatus'); if(st) st.textContent = '';
+  mk3RenderStepper();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+(function(){
+  var b = document.getElementById('mk3StartBtn');
+  if(b) b.addEventListener('click', function(){ startMock3(); });
+  var sb = document.getElementById('mk3SubmitBtnSide');
+  if(sb) sb.addEventListener('click', function(){ mk3AskSubmitPart(); });
+  var bb = document.getElementById('mk3SubmitBtnBottom');
+  if(bb) bb.addEventListener('click', function(){ mk3AskSubmitPart(); });
+  var mc = document.getElementById('mk3ModalConfirm');
+  if(mc) mc.addEventListener('click', function(){ mk3ConfirmSubmitPart(); });
+  var mx = document.getElementById('mk3ModalCancel');
+  if(mx) mx.addEventListener('click', function(){ mk3CloseModal(); });
+  var jw = document.getElementById('mk3JsWarn');
   if(jw) jw.style.display = 'none';
 })();
 </script>
