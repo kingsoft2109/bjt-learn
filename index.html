@@ -2519,7 +2519,7 @@ function mk2Play(gid){
   });
 }
 document.addEventListener('keydown', function(e){
-  if(currentExam!=='mock1' || !mk2Started || mk2Finished || mk2PartScore[mk2Part]!==null) return;
+  if(currentExam!=='mock2' || !mk2Started || mk2Finished || mk2PartScore[mk2Part]!==null) return;
   var modal = document.getElementById('mk2Modal');
   if(modal && (modal.classList.contains('show') || modal.style.display==='flex')) return;
   var k = e.key.toLowerCase();
@@ -2989,7 +2989,7 @@ function mk3Play(gid){
   });
 }
 document.addEventListener('keydown', function(e){
-  if(currentExam!=='mock1' || !mk3Started || mk3Finished || mk3PartScore[mk3Part]!==null) return;
+  if(currentExam!=='mock3' || !mk3Started || mk3Finished || mk3PartScore[mk3Part]!==null) return;
   var modal = document.getElementById('mk3Modal');
   if(modal && (modal.classList.contains('show') || modal.style.display==='flex')) return;
   var k = e.key.toLowerCase();
