@@ -69,7 +69,7 @@ ExamEngine.prototype.openExam = function(){
 ExamEngine.prototype.start = function(){
   if(this.started && !this.submitted) return;
   var status = el(this.p + 'StartStatus');
-  if(status) status.textContent = 'Đang mở bài…';
+  if(status) status.textContent = '問題を開いています…';
   this.started = true;
   var self = this;
   try{
@@ -95,7 +95,7 @@ ExamEngine.prototype.start = function(){
     try{
       this.openExam();
       try{ this.buildGroups(); this.renderPalette(); this.updateSubmitHint(); }catch(e3){}
-      if(status) status.textContent = 'Đã mở bài — nếu chưa thấy câu hỏi, hãy cuộn xuống một chút.';
+      if(status) status.textContent = '問題が開きました — 問題が見えない場合は、少し下にスクロールしてください。';
     }catch(e4){}
   }
 };
@@ -117,7 +117,7 @@ ExamEngine.prototype.buildGroups = function(){
     var st = document.createElement('div'); st.className = 'seg-title jp'; st.textContent = seg.title;
     var sd = document.createElement('div'); sd.className = 'seg-desc';
     if(self.hasAudio){
-      sd.textContent = seg.desc + (self.mode==='real' ? ' · Chế độ thi thật: đoạn này chỉ phát 1 lần.' : ' · Chế độ luyện tập: nghe lại được.');
+      sd.textContent = seg.desc + (self.mode==='real' ? ' · 本番モード：この音声は1回だけ再生されます。' : ' · 練習モード：聞き直しできます。');
     } else {
       sd.textContent = seg.desc;
     }
@@ -127,7 +127,7 @@ ExamEngine.prototype.buildGroups = function(){
       var arow = document.createElement('div'); arow.className = 'audio-row';
       var pb = document.createElement('button');
       pb.type = 'button'; pb.className = 'play-btn'; pb.id = self.p + 'playBtn' + segNum;
-      pb.innerHTML = '<span class="tri">▶</span><span>Phát đoạn ' + segNum + '</span>';
+      pb.innerHTML = '<span class="tri">▶</span><span>音声 ' + segNum + '</span>';
       (function(s){ pb.addEventListener('click', function(){ self.playSegment(s); }); })(segNum);
       var ps = document.createElement('span'); ps.className = 'play-state'; ps.id = self.p + 'playState' + segNum;
       arow.appendChild(pb); arow.appendChild(ps);
@@ -144,7 +144,7 @@ ExamEngine.prototype.buildGroups = function(){
       group.appendChild(passage);
     }
 
-    if(cfg.type === 'choudokkai' && seg.visual){
+    if((cfg.type === 'choudokkai' || cfg.type === 'choukai') && seg.visual){
       var vis = document.createElement('div'); vis.className = 'visual-material';
       vis.innerHTML = seg.visual;
       group.appendChild(vis);
@@ -157,9 +157,9 @@ ExamEngine.prototype.buildGroups = function(){
 
       var meta = document.createElement('div'); meta.className = 'q-meta';
       var qn = document.createElement('span'); qn.className = 'q-num';
-      var segLabel = cfg.segLabel || (isReading ? 'Bộ' : 'Đoạn');
+      var segLabel = cfg.segLabel || (isReading ? 'セット' : 'セット');
       var segName = cfg.segNames ? cfg.segNames[item.seg] : (isReading ? '' : '');
-      qn.textContent = 'Câu ' + item.n + ' / ' + self.qCount + ' · ' + segLabel + ' ' + item.seg + (segName ? ' — ' + segName : '');
+      qn.textContent = '問題 ' + item.n + ' / ' + self.qCount + ' · ' + segLabel + ' ' + item.seg + (segName ? ' — ' + segName : '');
 
       var fb = document.createElement('button');
       fb.type = 'button'; fb.className = 'flag-btn'; fb.id = self.p + 'flagBtn' + item.n;
@@ -169,7 +169,7 @@ ExamEngine.prototype.buildGroups = function(){
       var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = item.q;
       var opts = document.createElement('div');
       opts.className = 'options'; opts.id = self.p + 'qOptions' + item.n;
-      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','Đáp án câu ' + item.n);
+      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','問題の答え ' + item.n);
 
       card.appendChild(meta); card.appendChild(qt); card.appendChild(opts);
       (function(n){ card.addEventListener('click', function(){ self.setActiveQ(n, false); }); })(item.n);
@@ -188,12 +188,12 @@ ExamEngine.prototype.renderPalette = function(){
   var self = this;
   var cfg = this.cfg;
   var isReading = (cfg.type === 'dokkai');
-  var segLabel = cfg.segLabel || (isReading ? 'Bộ' : 'Đoạn');
+  var segLabel = cfg.segLabel || (isReading ? 'セット' : 'セット');
 
   for(var i=1;i<=this.qCount;i++){
     var item = cfg.questions[i-1];
     var b = document.createElement('button');
-    b.className = 'pal-btn'; b.setAttribute('aria-label','Câu '+i);
+    b.className = 'pal-btn'; b.setAttribute('aria-label','問題 '+i);
     b.innerHTML = '<span class="pnum">' + i + '</span><span class="plabel"></span><span class="pstat"></span>';
     var segName = cfg.segNames ? cfg.segNames[item.seg] : (isReading ? '' : '聴解');
     b.querySelector('.plabel').textContent = segLabel + ' ' + item.seg + (segName ? ' · ' + segName : '');
@@ -214,14 +214,14 @@ ExamEngine.prototype.renderPalette = function(){
   }
   var done = Object.keys(this.sel).filter(function(k){return self.sel[k];}).length;
   var palCount = el(this.p + 'PalCount');
-  if(palCount) palCount.textContent = this.submitted ? ('Đã chấm — đúng ' + this.score() + ' / ' + this.qCount) : ('Đã trả lời ' + done + ' / ' + this.qCount);
+  if(palCount) palCount.textContent = this.submitted ? ('採点済み — 正解 ' + this.score() + ' / ' + this.qCount) : ('回答済み ' + done + ' / ' + this.qCount);
   this.updateFootNav();
 };
 
 ExamEngine.prototype.updateFootNav = function(){
   var fs = el(this.p + 'FootStatus');
   var done = Object.keys(this.sel).filter(function(k){return this.sel[k];}.bind(this)).length;
-  if(fs) fs.textContent = 'Đang xem câu ' + this.current + ' / ' + this.qCount + ' · Đã trả lời ' + done + ' / ' + this.qCount;
+  if(fs) fs.textContent = '表示中：問題 ' + this.current + ' / ' + this.qCount + ' · 回答済み ' + done + ' / ' + this.qCount;
 };
 
 ExamEngine.prototype.markActiveCard = function(){
@@ -246,7 +246,7 @@ ExamEngine.prototype.updateQuestion = function(n){
   var fb = el(this.p + 'flagBtn' + n);
   if(fb){
     fb.classList.toggle('on', !!this.flag[n]);
-    fb.textContent = this.flag[n] ? '⚑ Đã đánh dấu — bấm để bỏ' : '⚑ Đánh dấu câu này';
+    fb.textContent = this.flag[n] ? '⚑ フラグ済み — 押して解除' : '⚑ この問題にフラグ';
   }
   var box = el(this.p + 'qOptions' + n);
   if(!box) return;
@@ -268,8 +268,8 @@ ExamEngine.prototype.updateSubmitHint = function(){
   var done = Object.keys(this.sel).filter(function(k){ return this.sel[k]; }.bind(this)).length;
   var hint = el(this.p + 'SubmitHint');
   if(hint) hint.textContent = done === this.qCount
-    ? 'Đã trả lời đủ ' + this.qCount + ' / ' + this.qCount + ' — bấm Nộp bài để chấm điểm.'
-    : 'Đã trả lời ' + done + ' / ' + this.qCount + ' — còn ' + (this.qCount - done) + ' câu chưa chọn. Bấm Nộp bài vẫn nộp được (câu trống tính là sai).';
+    ? 'すべて回答しました' + this.qCount + ' / ' + this.qCount + ' — 「提出」を押して採点しましょう。'
+    : '回答済み ' + done + ' / ' + this.qCount + ' — あと ' + (this.qCount - done) + ' 問が未選択です。「提出」を押して提出できます（空欄は不正解になります）。';
 };
 
 ExamEngine.prototype.pick = function(n, v){
@@ -313,8 +313,8 @@ ExamEngine.prototype.askSubmit = function(){
   for(var i=1;i<=this.qCount;i++){ if(!this.sel[i]) missing.push(i); }
   var modalText = el(this.p + 'ModalText');
   if(modalText) modalText.textContent = done===this.qCount
-    ? 'Bạn đã trả lời đủ ' + this.qCount + '/' + this.qCount + ' câu. Nộp bài để xem đáp án và giải thích?'
-    : 'Bạn mới trả lời ' + done + '/' + this.qCount + ' câu. Câu chưa làm: ' + missing.join(', ') + '. Nộp bây giờ thì các câu trống tính là sai — vẫn nộp chứ?';
+    ? '全問回答しました：' + this.qCount + '/' + this.qCount + ' 問。提出して答えと解説を見ますか？'
+    : '回答済みはまだ ' + done + '/' + this.qCount + ' 問だけです。未回答の問題：' + missing.join(', ') + '。今提出すると空欄は不正解になります — それでも提出しますか？';
   var modal = el(this.p + 'Modal');
   modal.classList.add('show');
   modal.style.display = 'flex';
@@ -351,12 +351,12 @@ ExamEngine.prototype.grade = function(auto){
       if(score >= this.cfg.scoreMessages[si].min){ scoreTitle = this.cfg.scoreMessages[si].text; break; }
     }
   }
-  el(this.p + 'ScoreTitle').textContent = scoreTitle || ('Kết quả ' + this.cfg.id);
+  el(this.p + 'ScoreTitle').textContent = scoreTitle || ('結果 ' + this.cfg.id);
 
   var cfg = this.cfg;
   var self = this;
   var isReading = (cfg.type === 'dokkai');
-  var segLabel = cfg.segLabel || (isReading ? 'Bộ' : 'Đoạn');
+  var segLabel = cfg.segLabel || (isReading ? 'セット' : 'セット');
 
   var segScore = this.segNums.map(function(s){
     var c = 0;
@@ -365,7 +365,7 @@ ExamEngine.prototype.grade = function(auto){
     var name = cfg.segNames ? cfg.segNames[s] : '';
     return segLabel + ' ' + s + (name ? ' (' + name + ')' : '') + ': ' + c + '/' + perSeg;
   });
-  el(this.p + 'ScoreDetail').textContent = (auto ? '⏱ Hết giờ — bài đã tự nộp. ' : '') + segScore.join('  ·  ');
+  el(this.p + 'ScoreDetail').textContent = (auto ? '⏱ 時間切れ — 自動で提出されました。' : '') + segScore.join('  ·  ');
 
   var rv = el(this.p + 'Review'); rv.innerHTML = '';
   var lastSeg = 0;
@@ -377,7 +377,7 @@ ExamEngine.prototype.grade = function(auto){
       var segName = cfg.segNames ? cfg.segNames[item.seg] : '';
       var thtml = '<div class="q-num">' + segLabel + ' ' + item.seg + (segName ? ' — ' + segName : '') + '</div>';
       thtml += '<p class="q-text jp" style="font-size:16px;margin:6px 0 8px"></p>';
-      thtml += viTrHtml(seg.vi, 'Bản dịch gợi ý — ' + segLabel + ' ' + item.seg);
+      thtml += viTrHtml(seg.vi, '参考訳 — ' + segLabel + ' ' + item.seg);
       tcard.innerHTML = thtml;
       tcard.querySelector('.q-text').textContent = seg.subject || '';
       rv.appendChild(tcard);
@@ -386,12 +386,12 @@ ExamEngine.prototype.grade = function(auto){
     var card = document.createElement('div'); card.className = 'review-card';
     var isOk = self.sel[item.n] === item.ans;
     var segName2 = cfg.segNames ? cfg.segNames[item.seg] : '';
-    var html = '<div class="q-num">Câu ' + item.n + ' · ' + segLabel + ' ' + item.seg + (segName2 ? ' — ' + segName2 : '') + '</div>';
+    var html = '<div class="q-num">問題 ' + item.n + ' · ' + segLabel + ' ' + item.seg + (segName2 ? ' — ' + segName2 : '') + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px"></p>';
-    html += '<p style="margin:0 0 6px">Đáp án của bạn: <strong>' + (self.sel[item.n] ? self.sel[item.n] + ' — ' : 'Chưa chọn') + '</strong>' + (self.sel[item.n] ? '<span class="jp"></span>' : '') + '</p>';
-    html += '<p style="margin:0 0 6px">Đáp án đúng: <strong>' + item.ans + ' — </strong><span class="jp"></span></p>';
-    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ Đúng' : '✗ Sai');
-    if(item.trap) html += ' · Bẫy: ' + item.trap;
+    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (self.sel[item.n] ? self.sel[item.n] + ' — ' : '未選択') + '</strong>' + (self.sel[item.n] ? '<span class="jp"></span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">正しい答え：<strong>' + item.ans + ' — </strong><span class="jp"></span></p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ Sai');
+    if(item.trap) html += ' · 注意： ' + item.trap;
     html += '</div>';
     html += '<p style="margin:8px 0 0"></p>';
 
@@ -399,12 +399,12 @@ ExamEngine.prototype.grade = function(auto){
       lastSeg = item.seg;
       var segData = cfg.segments[item.seg];
       if(segData){
-        if(segData.mp3) html += reviewAudioHtml(segData.mp3, 'Nghe lại ' + segLabel.toLowerCase() + ' ' + item.seg);
+        if(segData.mp3) html += reviewAudioHtml(segData.mp3, '聞き直し ' + segLabel.toLowerCase() + ' ' + item.seg);
         if(segData.lines){
           var tr = segData.lines.map(function(l){ return (typeof l === 'string') ? l : (l.text || ''); }).join('\n');
           html += '<div class="transcript jp"><strong>Transcript ' + segLabel.toLowerCase() + ' ' + item.seg + ':</strong>\n' + tr + '</div>';
         }
-        html += viTrHtml(segData.vi, 'Bản dịch ' + segLabel.toLowerCase() + ' ' + item.seg);
+        html += viTrHtml(segData.vi, '翻訳 ' + segLabel.toLowerCase() + ' ' + item.seg);
       }
     }
 
@@ -424,12 +424,12 @@ ExamEngine.prototype.grade = function(auto){
   if(wrong.length === 0){
     var tr0 = document.createElement('tr');
     var td0 = document.createElement('td'); td0.colSpan = 3; td0.style.color = 'var(--ok)';
-    td0.textContent = 'Không có câu sai — sạch cả ' + this.qCount + ' câu. 🎉';
+    td0.textContent = '間違えた問題はありません — 全 ' + this.qCount + ' 問正解です。🎉';
     tr0.appendChild(td0); lb.appendChild(tr0);
   } else {
     wrong.forEach(function(q){
       var tr = document.createElement('tr');
-      var td1 = document.createElement('td'); td1.innerHTML = '<strong>Câu ' + q.n + '</strong><br>Bạn chọn: ' + (self.sel[q.n] || '—') + ' · Đúng: ' + q.ans;
+      var td1 = document.createElement('td'); td1.innerHTML = '<strong>問題 ' + q.n + '</strong><br>あなたの選択：' + (self.sel[q.n] || '—') + ' · 正解：' + q.ans;
       var td2 = document.createElement('td'); td2.textContent = q.trap;
       var td3 = document.createElement('td'); td3.textContent = q.explain;
       tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3);
@@ -454,10 +454,10 @@ ExamEngine.prototype.reset = function(){
   el(this.p+'Result').classList.remove('show');
   el(this.p+'Review').innerHTML = '';
   var lb = el(this.p+'LogBody');
-  if(lb) lb.innerHTML = '<tr><td colspan="3" style="color:var(--muted)">Chưa có dữ liệu — nộp bài ở trên, sổ lỗi sai sẽ tự điền các câu bạn làm sai.</td></tr>';
+  if(lb) lb.innerHTML = '<tr><td colspan="3" style="color:var(--muted)">データはまだありません — 上で提出すると、ミスノートに間違えた問題が自動で入ります。</td></tr>';
   var ex = el(this.p+'Exam'); ex.classList.add('hidden'); ex.style.display = '';
   var g = el(this.p+'Groups'); if(g) g.innerHTML = '';
-  var h = el(this.p+'SubmitHint'); if(h) h.textContent = 'Đã trả lời 0 / ' + this.qCount + ' — trả lời xong bấm Nộp bài để chấm điểm.';
+  var h = el(this.p+'SubmitHint'); if(h) h.textContent = '回答済み 0 / ' + this.qCount + ' — 回答が終わったら「提出」を押して採点しましょう。';
   var sp = el(this.p+'Start'); sp.classList.remove('hidden'); sp.style.display = '';
   var st = el(this.p+'StartStatus'); if(st) st.textContent = '';
   window.scrollTo({top:0, behavior:'smooth'});
@@ -473,11 +473,11 @@ ExamEngine.prototype.refreshPlayUI = function(){
 ExamEngine.prototype.refreshOnePlayUI = function(seg){
   var btn = el(this.p + 'playBtn' + seg), st = el(this.p + 'playState' + seg);
   if(!btn || !st) return;
-  if(this.speaking && this.audioSeg===seg){ btn.disabled = true; st.textContent = 'Đang phát đoạn ' + seg + '…'; return; }
-  if(this.mode==='real' && this.plays[seg]>=1){ btn.disabled = true; st.textContent = 'Đoạn ' + seg + ' đã phát 1/1 lần (chế độ thi thật).'; return; }
+  if(this.speaking && this.audioSeg===seg){ btn.disabled = true; st.textContent = '音声 ' + seg + '…'; return; }
+  if(this.mode==='real' && this.plays[seg]>=1){ btn.disabled = true; st.textContent = '音声 ' + seg + ' は1/1回再生済みです（本番モード）。'; return; }
   btn.disabled = false;
-  if(this.speaking){ st.textContent = 'Đang phát đoạn ' + this.audioSeg + ' — bấm nút này để dừng đoạn đó và phát đoạn ' + seg + '.'; return; }
-  st.textContent = this.plays[seg]>0 ? ('Đã phát ' + this.plays[seg] + ' lần' + (this.mode==='practice' ? ' — nghe lại được.' : '')) : 'Chưa phát — bấm để nghe đoạn ' + seg + '.';
+  if(this.speaking){ st.textContent = '音声 ' + this.audioSeg + ' を再生中 — このボタンを押すと停止し、代わりに音声 ' + seg + '.'; return; }
+  st.textContent = this.plays[seg]>0 ? ('再生済み ' + this.plays[seg] + ' 回' + (this.mode==='practice' ? ' — 聞き直しできます。' : '')) : '未再生 — 押して音声 ' + seg + '.';
 };
 
 ExamEngine.prototype.setPlayState = function(seg, msg){
@@ -520,7 +520,7 @@ ExamEngine.prototype.playSegment = function(seg){
     if(self.playWatchdog){ clearTimeout(self.playWatchdog); self.playWatchdog = null; }
     self.player = null; self.speaking = false;
     self.refreshPlayUI();
-    self.setPlayState(seg, 'Không tải được file audio — kiểm tra kết nối mạng rồi bấm phát lại.');
+    self.setPlayState(seg, '音声ファイルを読み込めませんでした — ネットワーク接続を確認して、もう一度再生してください。');
   };
   var wdWaits = 0;
   function armStartWatchdog(){
@@ -531,31 +531,31 @@ ExamEngine.prototype.playSegment = function(seg){
       var loading = false;
       try{ loading = (a.readyState > 0) || (a.networkState === 2) || (a.buffered && a.buffered.length > 0); }catch(e){}
       if(loading && wdWaits < 5){
-        self.setPlayState(seg, 'Đang tải audio đoạn ' + seg + '… mạng hơi chậm, đợi thêm một chút.');
+        self.setPlayState(seg, '読み込み中：音声 ' + seg + '… ネットワークが少し遅いです。もう少しお待ちください。');
         armStartWatchdog();
         return;
       }
       if(!loading && wdWaits === 1 && typeof bjtAutoRetryOnce === 'function' && bjtAutoRetryOnce(self.id + '-' + seg)){
         self.stopAudio();
         self.playSegment(seg);
-        self.setPlayState(seg, 'Lần phát đầu bị kẹt — đang tự thử phát lại…');
+        self.setPlayState(seg, '最初の再生が止まりました — 自動でもう一度再生を試みています…');
         return;
       }
       self.stopAudio();
       self.refreshPlayUI();
-      self.setPlayState(seg, 'Audio chưa phát được — bấm lại nút Phát.');
+      self.setPlayState(seg, '音声がまだ再生できません — もう一度再生ボタンを押してください。');
     }, 8000);
   }
   bjtStartAudio(a, this.cfg.segments[seg].mp3, {
     isCurrent: function(){ return self.player===a; },
     arm: armStartWatchdog,
-    onLoading: function(){ self.setPlayState(seg, 'Đang tải audio đoạn ' + seg + '…'); },
+    onLoading: function(){ self.setPlayState(seg, '読み込み中：音声 ' + seg + '…'); },
     onBlocked: function(){
       if(self.player!==a || counted) return;
       if(self.playWatchdog){ clearTimeout(self.playWatchdog); self.playWatchdog = null; }
       self.player = null; self.speaking = false;
       self.refreshPlayUI();
-      self.setPlayState(seg, 'Trình duyệt chặn phát audio — bấm lại nút Phát.');
+      self.setPlayState(seg, 'ブラウザが音声の再生をブロックしました — もう一度再生ボタンを押してください。');
     }
   });
 };
@@ -574,85 +574,85 @@ ExamEngine.prototype.generateHTML = function(){
   html += '<div class="cbt-head"><div>';
   html += '<h1>' + cfg.title + '</h1>';
   html += '<div class="sub">' + cfg.subtitle + '</div>';
-  html += '<div class="mode-row"><span class="lbl">Chế độ:</span>';
+  html += '<div class="mode-row"><span class="lbl">モード：</span>';
   if(this.hasAudio){
-    html += '<button class="mode-btn active" id="modeReal' + suffix + '">Thi thật — audio phát 1 lần</button>';
-    html += '<button class="mode-btn" id="modePrac' + suffix + '">Luyện tập — nghe lại được</button>';
+    html += '<button class="mode-btn active" id="modeReal' + suffix + '">本番 — 音声は1回だけ再生</button>';
+    html += '<button class="mode-btn" id="modePrac' + suffix + '">練習 — 聞き直し可能</button>';
   } else {
-    html += '<button class="mode-btn active" id="modeReal' + suffix + '">Thi thật</button>';
-    html += '<button class="mode-btn" id="modePrac' + suffix + '">Luyện tập</button>';
+    html += '<button class="mode-btn active" id="modeReal' + suffix + '">本番</button>';
+    html += '<button class="mode-btn" id="modePrac' + suffix + '">練習</button>';
   }
   html += '</div></div>';
   html += '<div class="cbt-timer"><div class="t" id="' + p + 'Timer">' + fmtT(cfg.timeSeconds) + '</div>';
-  html += '<div class="lbl">Thời gian còn lại</div></div></div>';
+  html += '<div class="lbl">残り時間</div></div></div>';
 
   html += '<section class="start-panel" id="' + p + 'Start">';
-  html += '<h2>Hướng dẫn làm bài — đọc trước khi bấm Bắt đầu</h2>';
+  html += '<h2>受験の案内 — 開始を押す前に読んでください</h2>';
   html += '<div class="start-grid"><div>';
   html += cfg.instructions || '';
-  html += '<p style="margin-top:14px"><button class="btn btn-primary" id="' + p + 'StartBtn" type="button" style="font-size:16px">Bắt đầu làm bài</button></p>';
+  html += '<p style="margin-top:14px"><button class="btn btn-primary" id="' + p + 'StartBtn" type="button" style="font-size:16px">開始</button></p>';
   html += '<p class="start-status" id="' + p + 'StartStatus" role="status" aria-live="polite"></p>';
-  html += '<p class="note js-warn" id="' + p + 'JsWarn">Trang đang tải…</p>';
+  html += '<p class="note js-warn" id="' + p + 'JsWarn">ページを読み込み中…</p>';
   html += '</div><div>';
   if(cfg.candidateInfo){
-    html += '<div class="candidate" aria-label="Thông tin bài thi">';
+    html += '<div class="candidate" aria-label="試験情報">';
     var ci = cfg.candidateInfo;
-    html += '<div><span>Môn thi</span><b class="jp">' + (ci.subject||'') + '</b></div>';
-    html += '<div><span>Số câu hỏi</span><b>' + (ci.questionInfo||'') + '</b></div>';
-    html += '<div><span>Thời gian</span><b>' + (ci.time||'') + '</b></div>';
-    if(ci.format) html += '<div><span>Dạng bài</span><b class="jp">' + ci.format + '</b></div>';
+    html += '<div><span>科目</span><b class="jp">' + (ci.subject||'') + '</b></div>';
+    html += '<div><span>問題数</span><b>' + (ci.questionInfo||'') + '</b></div>';
+    html += '<div><span>時間</span><b>' + (ci.time||'') + '</b></div>';
+    if(ci.format) html += '<div><span>形式</span><b class="jp">' + ci.format + '</b></div>';
     html += '</div>';
   }
   if(cfg.tips) html += '<div class="note" style="margin-top:14px">' + cfg.tips + '</div>';
   html += '</div></div></section>';
 
   html += '<section id="' + p + 'Exam" class="hidden"><div class="cbt-layout">';
-  html += '<aside class="palette"><h3>Danh sách câu hỏi</h3>';
-  html += '<div class="count" id="' + p + 'PalCount">Đã trả lời 0 / ' + this.qCount + '</div>';
+  html += '<aside class="palette"><h3>問題一覧</h3>';
+  html += '<div class="count" id="' + p + 'PalCount">回答済み 0 / ' + this.qCount + '</div>';
   html += '<div class="pal-grid" id="' + p + 'PalGrid"></div>';
-  html += '<div class="legend"><span><i style="background:var(--card)"></i>Chưa làm</span>';
-  html += '<span><i style="background:var(--ok);border-color:var(--ok)"></i>Đã chọn</span>';
-  html += '<span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>Đang mở</span>';
-  html += '<span>⚑ Đã đánh dấu</span></div>';
-  html += '<button class="btn btn-primary submit-wide" id="' + p + 'SubmitBtnSide" type="button">Nộp bài</button>';
-  html += '<div class="kbd-hint">Phím tắt: <kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> chọn đáp án · <kbd>←</kbd> <kbd>→</kbd> chuyển câu</div>';
+  html += '<div class="legend"><span><i style="background:var(--card)"></i>未回答</span>';
+  html += '<span><i style="background:var(--ok);border-color:var(--ok)"></i>選択済み</span>';
+  html += '<span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>表示中</span>';
+  html += '<span>⚑ フラグ済み</span></div>';
+  html += '<button class="btn btn-primary submit-wide" id="' + p + 'SubmitBtnSide" type="button">提出</button>';
+  html += '<div class="kbd-hint">ショートカット：<kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> で答えを選択 · <kbd>←</kbd> <kbd>→</kbd> で問題を移動</div>';
   html += '</aside>';
   html += '<div class="cbt-main"><div id="' + p + 'Groups"></div>';
   html += '<div class="cbt-footnav">';
-  html += '<button class="nav-btn" id="' + p + 'PrevBtn" type="button">← Câu trước</button>';
-  html += '<span class="foot-status" id="' + p + 'FootStatus">Câu 1 / ' + this.qCount + '</span>';
-  html += '<button class="nav-btn primary" id="' + p + 'NextBtn" type="button">Câu tiếp →</button>';
+  html += '<button class="nav-btn" id="' + p + 'PrevBtn" type="button">← 前の問題</button>';
+  html += '<span class="foot-status" id="' + p + 'FootStatus">問題 1 / ' + this.qCount + '</span>';
+  html += '<button class="nav-btn primary" id="' + p + 'NextBtn" type="button">次の問題 →</button>';
   html += '</div></div></div>';
   html += '<div class="d1-submitbar">';
-  html += '<p id="' + p + 'SubmitHint">Đã trả lời 0 / ' + this.qCount + ' — trả lời xong bấm Nộp bài để chấm điểm.</p>';
-  html += '<button class="btn btn-primary" id="' + p + 'SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px">Nộp bài</button>';
+  html += '<p id="' + p + 'SubmitHint">回答済み 0 / ' + this.qCount + ' — 回答が終わったら「提出」を押して採点しましょう。</p>';
+  html += '<button class="btn btn-primary" id="' + p + 'SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px">提出</button>';
   html += '</div></section>';
 
   html += '<section class="result-panel" id="' + p + 'Result">';
   html += '<div class="big" id="' + p + 'ScoreBig">0 / ' + this.qCount + '</div>';
-  html += '<h2 id="' + p + 'ScoreTitle">Kết quả</h2>';
+  html += '<h2 id="' + p + 'ScoreTitle">結果</h2>';
   html += '<p id="' + p + 'ScoreDetail"></p>';
-  html += '<p style="font-size:14px">Chi tiết từng câu kèm giải thích và sổ lỗi sai nằm ngay bên dưới.</p>';
-  html += '<button class="btn" style="background:#fff;color:#14365e;margin-top:10px" id="' + p + 'ResetBtn">↺ Làm lại</button>';
+  html += '<p style="font-size:14px">各問題の詳細（解説付き）とミスノートはすぐ下にあります。</p>';
+  html += '<button class="btn" style="background:#fff;color:#14365e;margin-top:10px" id="' + p + 'ResetBtn">↺ もう一度</button>';
   html += '</section>';
   html += '<div id="' + p + 'Review"></div>';
 
-  html += '<h2 class="section-title">Sổ lỗi sai</h2>';
-  html += '<p class="section-sub">Sau khi nộp bài, các câu sai sẽ tự liệt kê ở đây.</p>';
+  html += '<h2 class="section-title">ミスノート</h2>';
+  html += '<p class="section-sub">提出後、間違えた問題がここに自動で一覧表示されます。</p>';
   html += '<div class="card" style="padding:6px 6px"><div class="log-wrap">';
-  html += '<table class="log"><thead><tr><th style="width:70px">Câu</th><th style="width:180px">Loại bẫy</th><th>Điểm cần nhớ</th></tr></thead>';
-  html += '<tbody id="' + p + 'LogBody"><tr><td colspan="3" style="color:var(--muted)">Chưa có dữ liệu — nộp bài ở trên, sổ lỗi sai sẽ tự điền các câu bạn làm sai.</td></tr></tbody>';
+  html += '<table class="log"><thead><tr><th style="width:70px">問題</th><th style="width:180px">注意点の種類</th><th>覚えるポイント</th></tr></thead>';
+  html += '<tbody id="' + p + 'LogBody"><tr><td colspan="3" style="color:var(--muted)">データはまだありません — 上で提出すると、ミスノートに間違えた問題が自動で入ります。</td></tr></tbody>';
   html += '</table></div></div>';
 
   if(cfg.footerNote) html += '<p class="footer-note">' + cfg.footerNote + '</p>';
   html += '</main>';
 
   html += '<div class="modal-overlay" id="' + p + 'Modal" role="dialog" aria-modal="true">';
-  html += '<div class="modal"><h3>Nộp bài?</h3>';
+  html += '<div class="modal"><h3>提出しますか？</h3>';
   html += '<p id="' + p + 'ModalText"></p>';
   html += '<div class="row">';
-  html += '<button class="btn btn-ghost" id="' + p + 'ModalCancel" type="button">Làm tiếp</button>';
-  html += '<button class="btn btn-primary" id="' + p + 'ModalConfirm" type="button">Nộp bài</button>';
+  html += '<button class="btn btn-ghost" id="' + p + 'ModalCancel" type="button">続ける</button>';
+  html += '<button class="btn btn-primary" id="' + p + 'ModalConfirm" type="button">提出</button>';
   html += '</div></div></div>';
 
   return html;
