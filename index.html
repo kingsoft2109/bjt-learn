@@ -8,9 +8,9 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1771607040249447"
      crossorigin="anonymous"></script>
 <link rel="icon" href="data:,">
-<title>Đề thi BJT — Luyện thi BJT online miễn phí | Phòng thi trên máy tính</title>
-<meta name="description" content="Luyện thi BJT (Business Japanese Proficiency Test) online miễn phí. 22 đề luyện tập theo ngày, đề thi thử 40 câu, 57 video tình huống, 884 thẻ từ vựng. Nghe hiểu 聴解, đọc hiểu 読解, nghe + đọc 聴読解.">
-<meta name="keywords" content="BJT, luyện thi BJT, đề thi BJT, Business Japanese, 聴解, 読解, 聴読解, tiếng Nhật thương mại, JLPT, BJT online">
+<title>BJT問題 — 無料オンラインBJT対策 | コンピューター試験室</title>
+<meta name="description" content="無料オンラインBJT（Business Japanese Proficiency Test）対策。日別の練習問題22セット、40問の模擬テスト、状況ビデオ56本、単語カード884枚。聴解、読解、聴読解。">
+<meta name="keywords" content="BJT, BJT対策, BJT問題, Business Japanese, 聴解, 読解, 聴読解, ビジネス日本語, JLPT, BJT online">
 <link rel="canonical" href="https://kingsoft2109.github.io/bjt-learn/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -466,111 +466,113 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 
 <div class="topbar">
   <span class="cbt-badge">BJT CBT</span>
-  <div class="brand">BJT <span>模擬テスト</span> · Phòng thi</div>
-  <button class="fs-btn" id="fsBtn" type="button" onclick="cycleFontSize()" title="Đổi cỡ chữ trong khu vực làm bài">A＋ Cỡ chữ</button>
-  <button class="fs-btn" id="videoLibBtn" type="button" title="Mở thư viện video tình huống để ôn luyện">▶ Thư viện video</button>
-  <button class="fs-btn" id="vocabBtn" type="button" title="Mở thẻ từ vựng — toàn bộ 884 từ chia theo ngày học">🃏 Thẻ từ vựng</button>
+  <div class="brand">BJT <span>模擬テスト</span> · 試験室</div>
+  <button class="fs-btn" id="fsBtn" type="button" onclick="cycleFontSize()" title="解答エリアの文字サイズを変更">A＋ 文字サイズ</button>
+  <button class="fs-btn" id="videoLibBtn" type="button" title="状況ビデオライブラリを開いて復習">▶ 動画ライブラリ</button>
+  <button class="fs-btn" id="vocabBtn" type="button" title="単語カードを開く — 884語を日別に分類">🃏 単語カード</button>
   <div class="exam-picker">
-    <label for="examSelect">Chọn đề</label>
-    <select id="examSelect" aria-label="Chọn đề thi" onchange="switchExam(this.value)">
-      <option value="day24" selected>Ngày 24 — Luyện đọc hiểu （読解） · 12 câu · Mới nhất</option>
-      <option value="day23">Ngày 23 — Luyện nghe （聴解） · 12 câu</option>
-      <option value="day22">Ngày 22 — Luyện nghe + đọc （聴読解） · 12 câu</option>
-      <option value="day21">Ngày 21 — Luyện đọc hiểu （読解） · 12 câu</option>
-      <option value="day20">Ngày 20 — Luyện nghe （聴解） · 12 câu</option>
-      <option value="day19">Ngày 19 — Kiểm tra bấm giờ Nghe （聴解） · 12 câu</option>
-      <option value="day18">Ngày 18 — Luyện đọc hiểu （読解） · 12 câu</option>
-      <option value="day17">Ngày 17 — Luyện nghe （聴解） · 12 câu</option>
-      <option value="day16">Ngày 16 — Luyện nghe + đọc （聴読解） · 12 câu</option>
-      <option value="day15">Ngày 15 — Luyện đọc hiểu （読解） · 12 câu</option>
-      <option value="day14">Ngày 14 — Luyện nghe （聴解） · 12 câu</option>
-      <option value="day13">Ngày 13 — Kiểm tra bấm giờ đọc hiểu （読解） · 12 câu</option>
-      <option value="day12">Ngày 12 — Luyện đọc hiểu （読解） · 12 câu</option>
-      <option value="day11">Ngày 11 — Luyện nghe （聴解） · 12 câu</option>
-      <option value="day10">Ngày 10 — Luyện nghe + đọc （聴読解） · 12 câu</option>
-      <option value="day9">Ngày 9 — Luyện đọc （読解） · 12 câu</option>
-      <option value="day8">Ngày 8 — Luyện nghe （聴解） · 12 câu</option>
-      <option value="day7">Ngày 7 — Kiểm tra bấm giờ 聴読解 · 12 câu</option>
-      <option value="day6">Ngày 6 — Luyện đọc （読解） · 12 câu</option>
-      <option value="day5">Ngày 5 — Luyện nghe （聴解） · 12 câu</option>
-      <option value="day4">Ngày 4 — Drill nghe + đọc: số liệu （聴読解） · 9 câu</option>
-      <option value="day3">Ngày 3 — Chẩn đoán nghe + đọc （聴読解） · 9 câu</option>
-      <option value="day2">Ngày 2 — Chẩn đoán đọc hiểu （読解） · 9 câu</option>
-      <option value="day1">Ngày 1 — Chẩn đoán Nghe · 9 câu</option>
-      <option value="mock1">Đề thi thử BJT 01 — 40 câu · 3 phần</option>
-      <option value="mock2">Đề thi thử BJT 02 — 80 câu · 3 phần</option>
+    <label for="examSelect">問題を選ぶ</label>
+    <select id="examSelect" aria-label="問題を選ぶ" onchange="switchExam(this.value)">
+      <option value="day25" selected>第25回 — 聴解 練習 · 12問 · 最新</option>
+      <option value="day24">第24回 — 読解 練習 · 12問</option>
+      <option value="day23">第23回 — 聴解 練習 · 12問</option>
+      <option value="day22">第22回 — 聴読解 練習 · 12問</option>
+      <option value="day21">第21回 — 読解 練習 · 12問</option>
+      <option value="day20">第20回 — 聴解 練習 · 12問</option>
+      <option value="day19">第19回 — 聴解 時間測定テスト · 12問</option>
+      <option value="day18">第18回 — 読解 練習 · 12問</option>
+      <option value="day17">第17回 — 聴解 練習 · 12問</option>
+      <option value="day16">第16回 — 聴読解 練習 · 12問</option>
+      <option value="day15">第15回 — 読解 練習 · 12問</option>
+      <option value="day14">第14回 — 聴解 練習 · 12問</option>
+      <option value="day13">第13回 — 読解 時間測定テスト · 12問</option>
+      <option value="day12">第12回 — 読解 練習 · 12問</option>
+      <option value="day11">第11回 — 聴解 練習 · 12問</option>
+      <option value="day10">第10回 — 聴読解 練習 · 12問</option>
+      <option value="day9">第9回 — 読解 練習 · 12問</option>
+      <option value="day8">第8回 — 聴解 練習 · 12問</option>
+      <option value="day7">第7回 — 聴読解 時間測定テスト · 12問</option>
+      <option value="day6">第6回 — 読解 練習 · 12問</option>
+      <option value="day5">第5回 — 聴解 練習 · 12問</option>
+      <option value="day4">第4回 — 聴読解 ドリル：数値 · 9問</option>
+      <option value="day3">第3回 — 聴読解 診断テスト · 9問</option>
+      <option value="day2">第2回 — 読解 診断テスト · 9問</option>
+      <option value="day1">第1回 — 聴解 診断テスト · 9問</option>
+      <option value="mock1">BJT模擬テスト01 — 40問 · 3パート</option>
+      <option value="mock2">BJT模擬テスト02 — 80問 · 3パート</option>
       <option value="mock3">模擬試験 BJT 03 — 80問 · 3部</option>
-      <option value="demo">Đề mẫu 01 — 3 phần · 3 câu</option>
-      <option value="videos">Thư viện video — 57 video tình huống theo chủ đề</option>
-      <option value="vocab">Thẻ từ vựng — 884 từ theo ngày</option>
+      <option value="demo">サンプル問題01 — 3パート · 3問</option>
+      <option value="videos">動画ライブラリ — テーマ別状況ビデオ56本</option>
+      <option value="vocab">単語カード — 日別884語</option>
     </select>
   </div>
-  <div class="tabs" role="tablist" aria-label="Chọn đề thi">
-    <button class="tab active" id="tabDay24" onclick="switchExam('day24')">Ngày 24 — Luyện đọc hiểu （読解） · 12 câu<span class="new-badge">Mới nhất</span></button>
-    <button class="tab" id="tabDay23" onclick="switchExam('day23')">Ngày 23 — Luyện nghe （聴解） · 12 câu</button>
-    <button class="tab" id="tabDay22" onclick="switchExam('day22')">Ngày 22 — Luyện nghe + đọc （聴読解） · 12 câu</button>
-    <button class="tab" id="tabDay21" onclick="switchExam('day21')">Ngày 21 — Luyện đọc hiểu （読解） · 12 câu</button>
-    <button class="tab" id="tabDay20" onclick="switchExam('day20')">Ngày 20 — Luyện nghe （聴解） · 12 câu</button>
-    <button class="tab" id="tabDay19" onclick="switchExam('day19')">Ngày 19 — Kiểm tra bấm giờ Nghe （聴解） · 12 câu</button>
-    <button class="tab" id="tabDay18" onclick="switchExam('day18')">Ngày 18 — Luyện đọc hiểu （読解） · 12 câu</button>
-    <button class="tab" id="tabDay17" onclick="switchExam('day17')">Ngày 17 — Luyện nghe （聴解） · 12 câu</button>
-    <button class="tab" id="tabDay16" onclick="switchExam('day16')">Ngày 16 — Luyện nghe + đọc （聴読解） · 12 câu</button>
-    <button class="tab" id="tabDay15" onclick="switchExam('day15')">Ngày 15 — Luyện đọc hiểu （読解） · 12 câu</button>
-    <button class="tab" id="tabDay14" onclick="switchExam('day14')">Ngày 14 — Luyện nghe （聴解） · 12 câu</button>
-    <button class="tab" id="tabDay13" onclick="switchExam('day13')">Ngày 13 — Kiểm tra bấm giờ đọc hiểu （読解） · 12 câu</button>
-    <button class="tab" id="tabDay12" onclick="switchExam('day12')">Ngày 12 — Luyện đọc hiểu （読解） · 12 câu</button>
-    <button class="tab" id="tabDay11" onclick="switchExam('day11')">Ngày 11 — Luyện nghe （聴解） · 12 câu</button>
-    <button class="tab" id="tabDay10" onclick="switchExam('day10')">Ngày 10 — Luyện nghe + đọc （聴読解） · 12 câu</button>
-    <button class="tab" id="tabDay9" onclick="switchExam('day9')">Ngày 9 — Luyện đọc （読解） · 12 câu</button>
-    <button class="tab" id="tabDay8" onclick="switchExam('day8')">Ngày 8 — Luyện nghe （聴解） · 12 câu</button>
-    <button class="tab" id="tabDay7" onclick="switchExam('day7')">Ngày 7 — Kiểm tra bấm giờ nghe + đọc （聴読解） · 12 câu</button>
-    <button class="tab" id="tabDay6" onclick="switchExam('day6')">Ngày 6 — Luyện đọc （読解） · 12 câu</button>
-    <button class="tab" id="tabDay5" onclick="switchExam('day5')">Ngày 5 — Luyện nghe （聴解） · 12 câu</button>
-    <button class="tab" id="tabDay4" onclick="switchExam('day4')">Ngày 4 — Drill nghe + đọc: số liệu （聴読解） · 9 câu</button>
-    <button class="tab" id="tabDay3" onclick="switchExam('day3')">Ngày 3 — Chẩn đoán nghe + đọc kết hợp （聴読解） · 9 câu</button>
-    <button class="tab" id="tabDay2" onclick="switchExam('day2')">Ngày 2 — Chẩn đoán đọc hiểu （読解） · 9 câu</button>
-    <button class="tab" id="tabDay1" onclick="switchExam('day1')">Ngày 1 — Chẩn đoán Nghe · 9 câu</button>
-    <button class="tab" id="tabMock1" onclick="switchExam('mock1')">Đề thi thử BJT 01 — 40 câu · 3 phần</button>
-    <button class="tab" id="tabMock2" onclick="switchExam('mock2')">Đề thi thử BJT 02 — 80 câu · 3 phần</button>
+  <div class="tabs" role="tablist" aria-label="問題を選ぶ">
+    <button class="tab active" id="tabDay25" onclick="switchExam('day25')">第25回 — 聴解 練習 · 12問<span class="new-badge">最新</span></button>
+    <button class="tab" id="tabDay24" onclick="switchExam('day24')">第24回 — 読解 練習 · 12問</button>
+    <button class="tab" id="tabDay23" onclick="switchExam('day23')">第23回 — 聴解 練習 · 12問</button>
+    <button class="tab" id="tabDay22" onclick="switchExam('day22')">第22回 — 聴読解 練習 · 12問</button>
+    <button class="tab" id="tabDay21" onclick="switchExam('day21')">第21回 — 読解 練習 · 12問</button>
+    <button class="tab" id="tabDay20" onclick="switchExam('day20')">第20回 — 聴解 練習 · 12問</button>
+    <button class="tab" id="tabDay19" onclick="switchExam('day19')">第19回 — 聴解 時間測定テスト · 12問</button>
+    <button class="tab" id="tabDay18" onclick="switchExam('day18')">第18回 — 読解 練習 · 12問</button>
+    <button class="tab" id="tabDay17" onclick="switchExam('day17')">第17回 — 聴解 練習 · 12問</button>
+    <button class="tab" id="tabDay16" onclick="switchExam('day16')">第16回 — 聴読解 練習 · 12問</button>
+    <button class="tab" id="tabDay15" onclick="switchExam('day15')">第15回 — 読解 練習 · 12問</button>
+    <button class="tab" id="tabDay14" onclick="switchExam('day14')">第14回 — 聴解 練習 · 12問</button>
+    <button class="tab" id="tabDay13" onclick="switchExam('day13')">第13回 — 読解 時間測定テスト · 12問</button>
+    <button class="tab" id="tabDay12" onclick="switchExam('day12')">第12回 — 読解 練習 · 12問</button>
+    <button class="tab" id="tabDay11" onclick="switchExam('day11')">第11回 — 聴解 練習 · 12問</button>
+    <button class="tab" id="tabDay10" onclick="switchExam('day10')">第10回 — 聴読解 練習 · 12問</button>
+    <button class="tab" id="tabDay9" onclick="switchExam('day9')">第9回 — 読解 練習 · 12問</button>
+    <button class="tab" id="tabDay8" onclick="switchExam('day8')">第8回 — 聴解 練習 · 12問</button>
+    <button class="tab" id="tabDay7" onclick="switchExam('day7')">第7回 — 聴読解 時間測定テスト · 12問</button>
+    <button class="tab" id="tabDay6" onclick="switchExam('day6')">第6回 — 読解 練習 · 12問</button>
+    <button class="tab" id="tabDay5" onclick="switchExam('day5')">第5回 — 聴解 練習 · 12問</button>
+    <button class="tab" id="tabDay4" onclick="switchExam('day4')">第4回 — 聴読解 ドリル：数値 · 9問</button>
+    <button class="tab" id="tabDay3" onclick="switchExam('day3')">第3回 — 聴読解 診断テスト · 9問</button>
+    <button class="tab" id="tabDay2" onclick="switchExam('day2')">第2回 — 読解 診断テスト · 9問</button>
+    <button class="tab" id="tabDay1" onclick="switchExam('day1')">第1回 — 聴解 診断テスト · 9問</button>
+    <button class="tab" id="tabMock1" onclick="switchExam('mock1')">BJT模擬テスト01 — 40問 · 3パート</button>
+    <button class="tab" id="tabMock2" onclick="switchExam('mock2')">BJT模擬テスト02 — 80問 · 3パート</button>
     <button class="tab" id="tabMock3" onclick="switchExam('mock3')">模擬試験 BJT 03 — 80問 · 3部</button>
-    <button class="tab" id="tabDemo" onclick="switchExam('demo')">Đề mẫu 01 — 3 phần · 3 câu</button>
-    <button class="tab" id="tabVideos" onclick="switchExam('videos')">Thư viện video — 57 video tình huống</button>
-    <button class="tab" id="tabVocab" onclick="switchExam('vocab')">Thẻ từ vựng — 884 từ theo ngày</button>
+    <button class="tab" id="tabDemo" onclick="switchExam('demo')">サンプル問題01 — 3パート · 3問</button>
+    <button class="tab" id="tabVideos" onclick="switchExam('videos')">動画ライブラリ — 状況ビデオ56本</button>
+    <button class="tab" id="tabVocab" onclick="switchExam('vocab')">単語カード — 日別884語</button>
   </div>
 </div>
 
 <!-- Static landing — visible to crawlers & before JS initializes; hidden once app loads -->
 <main class="wrap" id="seoLanding">
-  <h1>Luyện thi BJT online miễn phí — Phòng thi trên máy tính</h1>
-  <p>Trang luyện thi <strong>BJT (Business Japanese Proficiency Test)</strong> với giao diện mô phỏng phòng thi thật trên máy tính (CBT). Chọn đề từ menu phía trên để bắt đầu làm bài.</p>
+  <h1>無料オンラインBJT対策 — コンピューター試験室</h1>
+  <p>対策ページ <strong>BJT (Business Japanese Proficiency Test)</strong> コンピューター上の実際の試験室を模したインターフェース（CBT）で。上のメニューから問題を選んで始めましょう。</p>
 
-  <h2>Nội dung luyện tập</h2>
+  <h2>練習内容</h2>
   <ul>
-    <li><strong><span id="seoExamCount">22</span> đề luyện theo ngày</strong> — mỗi ngày tập trung một kỹ năng: Nghe hiểu (聴解), Đọc hiểu (読解), hoặc Nghe + Đọc (聴読解). Mỗi đề 9–12 câu, bấm giờ như thi thật.</li>
-    <li><strong>Đề thi thử BJT 01</strong> — 40 câu, 3 phần nối tiếp (聴解 → 聴読解 → 読解), tổng ~52 phút. Format giống đề thi chính thức, rút gọn một nửa.</li>
-    <li><strong>Đề thi thử BJT 02</strong> — 80 câu, 3 phần nối tiếp (聴解 → 聴読解 → 読解), tổng ~105 phút. Format đúng như đề thi chính thức.</li>
-    <li><strong>模擬試験 BJT 03</strong> — 80問、3部連続（聴解 → 聴読解 → 読解）、合計約105分。本番と同じ形式です。</li>
-    <li><strong>Đề mẫu 01</strong> — 3 câu mẫu kèm giải thích chi tiết, dành cho người mới bắt đầu.</li>
-    <li><strong><span id="seoVideoCount">57</span> video tình huống</strong> — hội thoại tiếng Nhật thương mại có phụ đề JP/VI/EN, lời thoại và từ vựng đi kèm.</li>
-    <li><strong><span id="seoVocabCount">884</span> thẻ từ vựng</strong> — toàn bộ danh sách từ vựng BJT, chia theo ngày học, mỗi thẻ có cách đọc, nghĩa tiếng Việt và cụm từ đi kèm.</li>
+    <li><strong><span id="seoExamCount">22</span> 日別の練習問題</strong> — 毎日1つのスキルに集中：聴解、読解、または聴読解。各問題は9–12問、本番同様に時間を測ります。</li>
+    <li><strong>BJT模擬テスト01</strong> — 40問、3パート連続（聴解 → 聴読解 → 読解）、合計約52分。公式試験と同じ形式で、半分に短縮。</li>
+    <li><strong>BJT模擬テスト02</strong> — 80問、3パート連続（聴解 → 聴読解 → 読解）、合計約105分。公式試験とまったく同じ形式。</li>
+    <li><strong>BJT模擬テスト03</strong> — 80問、3パート連続（聴解 → 聴読解 → 読解）、合計約105分。公式試験とまったく同じ形式。</li>
+    <li><strong>サンプル問題01</strong> — 詳しい解説付きのサンプル3問、初心者向け。</li>
+    <li><strong><span id="seoVideoCount">54</span> 状況ビデオ</strong> — JP/VI/EN字幕付きのビジネス日本語の会話、セリフと単語付き。</li>
+    <li><strong><span id="seoVocabCount">884</span> 単語カード</strong> — BJT単語リスト全体を日別に分類。各カードには読み方、ベトナム語の意味、一緒に使う表現が付いています。</li>
   </ul>
 
-  <h2>Các dạng bài thi BJT</h2>
+  <h2>BJTの出題形式</h2>
   <dl>
-    <dt>聴解 — Nghe hiểu</dt>
-    <dd>Nghe hội thoại hoặc thông báo trong môi trường công sở, chọn đáp án đúng. Bao gồm: 場面把握 (nắm tình huống), 発言聴解 (hiểu phát ngôn), 総合聴解 (nghe tổng hợp).</dd>
-    <dt>読解 — Đọc hiểu</dt>
-    <dd>Đọc email, thông báo, báo cáo bằng tiếng Nhật thương mại và trả lời câu hỏi. Bao gồm: 語彙 (từ vựng), 文法・表現 (ngữ pháp), 短文読解 (đọc văn bản ngắn), 総合読解 (đọc tổng hợp).</dd>
-    <dt>聴読解 — Nghe + Đọc kết hợp</dt>
-    <dd>Vừa nghe audio vừa đọc tài liệu (memo, biểu đồ, bảng giá, email) — khi audio và tài liệu khác nhau, lấy audio làm chuẩn.</dd>
+    <dt>聴解</dt>
+    <dd>オフィス環境での会話やお知らせを聞いて、正しい答えを選びます。含まれる形式：場面把握、発言聴解、総合聴解。</dd>
+    <dt>読解</dt>
+    <dd>ビジネス日本語のメール、お知らせ、報告書を読んで質問に答えます。含まれる形式：語彙、文法・表現、短文読解、総合読解。</dd>
+    <dt>聴読解</dt>
+    <dd>音声を聞きながら資料（メモ、グラフ、価格表、メール）を読みます — 音声と資料が異なる場合は、音声を基準にします。</dd>
   </dl>
 
-  <h2>Tính năng</h2>
+  <h2>機能</h2>
   <ul>
-    <li>Giao diện CBT mô phỏng phòng thi thật, hỗ trợ dark mode</li>
-    <li>Bấm giờ đếm ngược, chấm điểm tự động, giải thích chi tiết từng câu</li>
-    <li>Chế độ Thi thật (audio phát 1 lần) và Luyện tập (nghe lại được)</li>
-    <li>Hoàn toàn miễn phí, không cần đăng ký, chạy trên mọi thiết bị</li>
+    <li>実際の試験室を模したCBTインターフェース、ダークモード対応</li>
+    <li>カウントダウンタイマー、自動採点、各問題の詳しい解説</li>
+    <li>本番モード（音声は1回だけ再生）と練習モード（聞き直し可能）</li>
+    <li>完全無料、登録不要、すべての端末で動作</li>
   </ul>
 </main>
 
@@ -580,55 +582,55 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 <main class="wrap hidden" id="examMock1">
   <div class="cbt-head">
     <div>
-      <h1>Đề thi thử BJT 01 — Đề thi thử hoàn chỉnh (bản 40 câu)</h1>
-      <div class="sub">Format như đề thi thật, rút gọn một nửa: 40 câu · 3 phần nối tiếp · tổng ~52 phút</div>
+      <h1>BJT模擬テスト01 — 完全な模擬テスト（40問版）</h1>
+      <div class="sub">実際の試験と同じ形式で、半分に短縮：40問 · 3パート連続 · 合計約52分</div>
       <div class="mode-row">
-        <span class="lbl">Chế độ:</span>
-        <button class="mode-btn active" id="mkModeReal" onclick="setModeMk('real')">Thi thật — audio phát 1 lần</button>
-        <button class="mode-btn" id="mkModePrac" onclick="setModeMk('practice')">Luyện tập — nghe lại được</button>
+        <span class="lbl">モード：</span>
+        <button class="mode-btn active" id="mkModeReal" onclick="setModeMk('real')">本番 — 音声は1回だけ再生</button>
+        <button class="mode-btn" id="mkModePrac" onclick="setModeMk('practice')">練習 — 聞き直し可能</button>
       </div>
     </div>
     <div class="cbt-timer">
       <div class="t" id="mkTimer">22:00</div>
-      <div class="lbl">Thời gian phần hiện tại</div>
+      <div class="lbl">現在のパートの時間</div>
     </div>
   </div>
 
-  <div class="mk-stepper" id="mkStepper" aria-label="Tiến trình 3 phần thi">
-    <div class="mk-step" id="mkStep1"><b class="jp">Phần 1 — 聴解</b>12 câu · 22 phút<span class="st" id="mkStepSt1">Chưa bắt đầu</span></div>
-    <div class="mk-step" id="mkStep2"><b class="jp">Phần 2 — 聴読解</b>12 câu · 15 phút<span class="st" id="mkStepSt2">Chưa bắt đầu</span></div>
-    <div class="mk-step" id="mkStep3"><b class="jp">Phần 3 — 読解</b>16 câu · 15 phút<span class="st" id="mkStepSt3">Chưa bắt đầu</span></div>
+  <div class="mk-stepper" id="mkStepper" aria-label="3パートの進捗">
+    <div class="mk-step" id="mkStep1"><b class="jp">パート1 — 聴解</b>12問 · 22分<span class="st" id="mkStepSt1">未開始</span></div>
+    <div class="mk-step" id="mkStep2"><b class="jp">パート2 — 聴読解</b>12問 · 15分<span class="st" id="mkStepSt2">未開始</span></div>
+    <div class="mk-step" id="mkStep3"><b class="jp">パート3 — 読解</b>16問 · 15分<span class="st" id="mkStepSt3">未開始</span></div>
   </div>
 
   <section class="start-panel" id="mkStart">
-    <h2>Giới thiệu đề thi thử — đọc kỹ quy tắc trước khi bắt đầu</h2>
+    <h2>模擬テストの案内 — 開始前にルールをよく読んでください</h2>
     <div class="start-grid">
       <div>
         <ul>
-          <li>Đề gồm <strong>40 câu</strong> chia <strong>3 phần</strong> làm nối tiếp theo đúng thứ tự của đề thi thật, tổng thời gian khoảng <strong>52 phút</strong>.</li>
-          <li><strong>Quy tắc khóa phần (như thi thật):</strong> mỗi phần có đồng hồ riêng. Khi <strong>hết giờ</strong> hoặc bạn bấm <strong>nộp phần</strong>, phần đó bị <strong>khóa ngay</strong> và bài tự chuyển sang phần tiếp theo — <strong>không quay lại phần trước được</strong>, kể cả để xem lại đáp án.</li>
-          <li>Trong từng phần, các câu của cùng một bộ (cùng một đoạn nghe / tài liệu) hiển thị <strong>gộp trên một màn hình</strong>. Dùng cột <strong>Danh sách câu hỏi</strong> để nhảy câu, nút <strong>← Câu trước / Câu tiếp →</strong> hoặc phím <kbd>←</kbd> <kbd>→</kbd> để di chuyển, phím <kbd>A</kbd>–<kbd>D</kbd> để chọn đáp án. Mỗi câu chỉ chọn đúng <strong>một</strong> đáp án; câu chưa chắc thì bấm <strong>⚑ Đánh dấu</strong>.</li>
-          <li>Audio là file MP3 thu sẵn, <strong>không đọc tên người nói</strong>. Ở chế độ <strong>Thi thật</strong>, mỗi đoạn audio chỉ phát <strong>1 lần duy nhất</strong>; ở chế độ <strong>Luyện tập</strong> nghe lại được.</li>
-          <li><strong>Đáp án, giải thích và transcript chỉ hiện sau khi nộp xong Phần 3.</strong> Kết quả sẽ báo điểm từng phần, điểm toàn đề (/40) và điểm quy đổi <strong>ước lượng</strong> ra thang 800 kèm mức tham khảo.</li>
+          <li>全体は <strong>40問</strong> chia <strong>3パート</strong> 実際の試験の順序どおりに連続して行い、合計時間は約 <strong>52分</strong>.</li>
+          <li><strong>パートのロック規則（本番同様）：</strong> 各パートには専用のタイマーがあります。 <strong>時間切れ</strong> になるか、 <strong>パートを提出</strong>ボタンを押すと、そのパートは <strong>すぐにロック</strong> され、自動的に次のパートへ進みます — <strong>前のパートには戻れません</strong>、答えを見直す場合も含みます。</li>
+          <li>各パートでは、同じセット（同じ音声／資料）の問題は <strong>1画面にまとめて</strong>表示されます。 <strong>問題一覧</strong> の列で問題へジャンプし、ボタン <strong>← 前の問題／次の問題 →</strong> または <kbd>←</kbd> <kbd>→</kbd> キーで移動し、 <kbd>A</kbd>–<kbd>D</kbd> キーで答えを選びます。各問題で選べる答えは正確に <strong>1つ</strong> だけです。自信のない問題は押してください： <strong>⚑ フラグ</strong>.</li>
+          <li>音声は録音済みのMP3ファイルです。 <strong>話者の名前は読み上げません</strong>。 <strong>本番</strong>モードでは、各音声は <strong>1回だけ</strong>再生されます。 <strong>練習</strong> モードでは聞き直しできます。</li>
+          <li><strong>答え、解説、トランスクリプトは、パート3を提出した後にのみ表示されます。</strong> 結果には、パートごとのスコア、全体のスコア（/40）、 <strong>推定</strong> 換算の800点満点のスコアと参考レベルが表示されます。</li>
         </ul>
         <div class="mk-partcards">
-          <div class="mk-partcard"><b class="jp">Phần 1 — 聴解</b><p>12 câu · 22 phút<br>場面把握 · 発言聴解 · 総合聴解 (hội thoại, thông báo)</p></div>
-          <div class="mk-partcard"><b class="jp">Phần 2 — 聴読解</b><p>12 câu · 15 phút<br>Vừa nghe vừa đọc memo, biểu đồ, bảng phí, email</p></div>
-          <div class="mk-partcard"><b class="jp">Phần 3 — 読解</b><p>16 câu · 15 phút<br>語彙 · 文法・表現 · Đọc thông báo &amp; báo cáo</p></div>
+          <div class="mk-partcard"><b class="jp">パート1 — 聴解</b><p>12問 · 22分<br>場面把握 · 発言聴解 · 総合聴解</p></div>
+          <div class="mk-partcard"><b class="jp">パート2 — 聴読解</b><p>12問 · 15分<br>音声を聞きながらメモ、グラフ、料金表、メールを読む</p></div>
+          <div class="mk-partcard"><b class="jp">パート3 — 読解</b><p>16問 · 15分<br>語彙 · 文法・表現 · お知らせと報告書を読む</p></div>
         </div>
-        <p style="margin-top:14px"><button class="btn btn-primary" id="mkStartBtn" type="button" style="font-size:16px" onclick="startMock1()">Bắt đầu Phần 1 — 聴解</button></p>
+        <p style="margin-top:14px"><button class="btn btn-primary" id="mkStartBtn" type="button" style="font-size:16px" onclick="startMock1()">パート1を開始 — 聴解</button></p>
         <p class="start-status" id="mkStartStatus" role="status" aria-live="polite"></p>
-        <p class="note js-warn" id="mkJsWarn">Trang đang tải… Nếu nút <strong>Bắt đầu</strong> chưa phản hồi, hãy đợi vài giây cho trang tải xong, hoặc mở trang này bằng trình duyệt Chrome / Safari rồi bấm lại.</p>
+        <p class="note js-warn" id="mkJsWarn">ページを読み込み中… もし <strong>開始</strong> ボタンが反応しない場合は、数秒待ってページの読み込みを終わらせるか、このページを Chrome / Safari ブラウザで開いてもう一度押してください。</p>
       </div>
       <div>
-        <div class="candidate" aria-label="Thông tin đề thi thử BJT 01">
-          <div><span>Môn thi</span><b class="jp">BJT — Đề thi thử 01</b></div>
-          <div><span>Số câu hỏi</span><b>40 câu · 3 phần</b></div>
-          <div><span>Thời gian</span><b>~52 phút (22 + 15 + 15)</b></div>
-          <div><span>Cấu trúc</span><b class="jp">聴解 12 · 聴読解 12 · 読解 16</b></div>
-          <div><span>Quy tắc</span><b>Hết giờ / nộp phần → khóa phần, không quay lại</b></div>
+        <div class="candidate" aria-label="BJT模擬テスト01の情報">
+          <div><span>科目</span><b class="jp">BJT — 模擬テスト01</b></div>
+          <div><span>問題数</span><b>40問 · 3パート</b></div>
+          <div><span>時間</span><b>約52分（22 + 15 + 15）</b></div>
+          <div><span>構成</span><b class="jp">聴解 12 · 聴読解 12 · 読解 16</b></div>
+          <div><span>ルール</span><b>時間切れ／パート提出 → パートをロックし、戻れません</b></div>
         </div>
-        <div class="note" style="margin-top:14px"><strong>Lưu ý:</strong> hãy dành đủ ~52 phút yên tĩnh trước khi bắt đầu. Đang làm dở mà chuyển sang tab đề khác, đồng hồ của phần hiện tại vẫn chạy.</div>
+        <div class="note" style="margin-top:14px"><strong>注意：</strong> 開始前に静かな時間を約52分確保してください。途中で別の問題のタブに切り替えても、現在のパートのタイマーは動き続けます。</div>
       </div>
     </div>
   </section>
@@ -637,98 +639,98 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 
   <section id="mkExam" class="hidden">
     <div class="cbt-layout">
-      <aside class="palette" aria-label="Danh sách câu hỏi của phần hiện tại">
-        <h3 id="mkPalTitle">Danh sách câu hỏi — Phần 1</h3>
-        <div class="count" id="mkPalCount">Đã trả lời 0 / 12</div>
+      <aside class="palette" aria-label="現在のパートの問題一覧">
+        <h3 id="mkPalTitle">問題一覧 — パート1</h3>
+        <div class="count" id="mkPalCount">回答済み 0 / 12</div>
         <div class="pal-grid" id="mkPalGrid"></div>
         <div class="legend">
-          <span><i style="background:var(--card)"></i>Chưa làm</span>
-          <span><i style="background:var(--ok);border-color:var(--ok)"></i>Đã chọn</span>
-          <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>Đang mở</span>
-          <span>⚑ Đã đánh dấu</span>
+          <span><i style="background:var(--card)"></i>未回答</span>
+          <span><i style="background:var(--ok);border-color:var(--ok)"></i>選択済み</span>
+          <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>表示中</span>
+          <span>⚑ フラグ済み</span>
         </div>
-        <button class="btn btn-primary submit-wide" id="mkSubmitBtnSide" type="button" onclick="mkAskSubmitPart()">Nộp phần này</button>
-        <div class="kbd-hint">Phím tắt: <kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> chọn đáp án · <kbd>←</kbd> <kbd>→</kbd> chuyển câu (trong phần hiện tại)</div>
+        <button class="btn btn-primary submit-wide" id="mkSubmitBtnSide" type="button" onclick="mkAskSubmitPart()">このパートを提出</button>
+        <div class="kbd-hint">ショートカット： <kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> 答えを選択 · <kbd>←</kbd> <kbd>→</kbd> 問題を移動（現在のパート内）</div>
       </aside>
       <div class="cbt-main">
-        <div id="mkGroups" aria-label="Các bộ và câu hỏi của phần hiện tại"></div>
+        <div id="mkGroups" aria-label="現在のパートのセットと問題"></div>
         <div class="cbt-footnav">
-          <button class="nav-btn" id="mkPrevBtn" type="button" onclick="mkPrevQ()">← Câu trước</button>
-          <span class="foot-status" id="mkFootStatus">Câu 1 / 40</span>
-          <button class="nav-btn primary" id="mkNextBtn" type="button" onclick="mkNextQ()">Câu tiếp →</button>
+          <button class="nav-btn" id="mkPrevBtn" type="button" onclick="mkPrevQ()">← 前の問題</button>
+          <span class="foot-status" id="mkFootStatus">問題 1 / 40</span>
+          <button class="nav-btn primary" id="mkNextBtn" type="button" onclick="mkNextQ()">次の問題 →</button>
         </div>
       </div>
     </div>
     <div class="d1-submitbar">
-      <p id="mkSubmitHint">Đã trả lời 0 / 12 câu của phần này.</p>
-      <button class="btn btn-primary" id="mkSubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mkAskSubmitPart()">Nộp phần này</button>
+      <p id="mkSubmitHint">このパートの回答済み 0 / 12問。</p>
+      <button class="btn btn-primary" id="mkSubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mkAskSubmitPart()">このパートを提出</button>
     </div>
   </section>
 
   <section class="result-panel" id="mkResult">
     <div class="big" id="mkScoreBig">0 / 40</div>
-    <h2 id="mkScoreTitle">Kết quả Đề thi thử BJT 01</h2>
+    <h2 id="mkScoreTitle">BJT模擬テスト01の結果</h2>
     <div class="mk-scoregrid" id="mkScoreGrid"></div>
     <p id="mkScoreDetail"></p>
-    <p style="font-size:14px">Đáp án, giải thích tiếng Việt, transcript và bản dịch từng câu nằm ngay bên dưới.</p>
-    <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mkReset()">↺ Làm lại Đề thi thử 01</button>
+    <p style="font-size:14px">答え、ベトナム語の解説、トランスクリプト、各文の翻訳はすぐ下にあります。</p>
+    <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mkReset()">↺ 模擬テスト01をもう一度</button>
   </section>
   <div id="mkReview"></div>
 
-  <p class="footer-note">Đề thi thử BJT 01 — bản 40 câu theo đúng format đề thi thật (3 phần nối tiếp, khóa phần khi hết giờ). Audio là file MP3 thu sẵn, không đọc tên người nói. Điểm /800 là quy đổi ước lượng theo tỉ lệ đúng, không phải cách tính điểm chính thức của kỳ thi.</p>
+  <p class="footer-note">BJT模擬テスト01 — 実際の試験の形式どおりの40問版（3パート連続、時間切れでパートをロック）。音声は録音済みのMP3ファイルで、話者の名前は読み上げません。/800のスコアは正答率による推定換算であり、試験の公式な採点方法ではありません。</p>
 </main>
 <main class="wrap hidden" id="examMock2">
   <div class="cbt-head">
     <div>
-      <h1>Đề thi thử BJT 02 — Đề thi thử hoàn chỉnh (bản 80 câu)</h1>
-      <div class="sub">Format đúng như đề thi thật: 80 câu · 3 phần nối tiếp · tổng ~105 phút</div>
+      <h1>BJT模擬テスト02 — 完全な模擬テスト（80問版）</h1>
+      <div class="sub">実際の試験とまったく同じ形式：80問 · 3パート連続 · 合計約105分</div>
       <div class="mode-row">
-        <span class="lbl">Chế độ:</span>
-        <button class="mode-btn active" id="mk2ModeReal" onclick="setModeMk2('real')">Thi thật — audio phát 1 lần</button>
-        <button class="mode-btn" id="mk2ModePrac" onclick="setModeMk2('practice')">Luyện tập — nghe lại được</button>
+        <span class="lbl">モード：</span>
+        <button class="mode-btn active" id="mk2ModeReal" onclick="setModeMk2('real')">本番 — 音声は1回だけ再生</button>
+        <button class="mode-btn" id="mk2ModePrac" onclick="setModeMk2('practice')">練習 — 聞き直し可能</button>
       </div>
     </div>
     <div class="cbt-timer">
       <div class="t" id="mk2Timer">45:00</div>
-      <div class="lbl">Thời gian phần hiện tại</div>
+      <div class="lbl">現在のパートの時間</div>
     </div>
   </div>
 
-  <div class="mk-stepper" id="mk2Stepper" aria-label="Tiến trình 3 phần thi">
-    <div class="mk-step" id="mk2Step1"><b class="jp">Phần 1 — 聴解</b>25 câu · 45 phút<span class="st" id="mk2StepSt1">Chưa bắt đầu</span></div>
-    <div class="mk-step" id="mk2Step2"><b class="jp">Phần 2 — 聴読解</b>25 câu · 30 phút<span class="st" id="mk2StepSt2">Chưa bắt đầu</span></div>
-    <div class="mk-step" id="mk2Step3"><b class="jp">Phần 3 — 読解</b>30 câu · 30 phút<span class="st" id="mk2StepSt3">Chưa bắt đầu</span></div>
+  <div class="mk-stepper" id="mk2Stepper" aria-label="3パートの進捗">
+    <div class="mk-step" id="mk2Step1"><b class="jp">パート1 — 聴解</b>25問 · 45分<span class="st" id="mk2StepSt1">未開始</span></div>
+    <div class="mk-step" id="mk2Step2"><b class="jp">パート2 — 聴読解</b>25問 · 30分<span class="st" id="mk2StepSt2">未開始</span></div>
+    <div class="mk-step" id="mk2Step3"><b class="jp">パート3 — 読解</b>30問 · 30分<span class="st" id="mk2StepSt3">未開始</span></div>
   </div>
 
   <section class="start-panel" id="mk2Start">
-    <h2>Giới thiệu đề thi thử — đọc kỹ quy tắc trước khi bắt đầu</h2>
+    <h2>模擬テストの案内 — 開始前にルールをよく読んでください</h2>
     <div class="start-grid">
       <div>
         <ul>
-          <li>Đề gồm <strong>80 câu</strong> chia <strong>3 phần</strong> làm nối tiếp theo đúng thứ tự của đề thi thật, tổng thời gian khoảng <strong>105 phút</strong>.</li>
-          <li><strong>Quy tắc khóa phần (như thi thật):</strong> mỗi phần có đồng hồ riêng. Khi <strong>hết giờ</strong> hoặc bạn bấm <strong>nộp phần</strong>, phần đó bị <strong>khóa ngay</strong> và bài tự chuyển sang phần tiếp theo — <strong>không quay lại phần trước được</strong>, kể cả để xem lại đáp án.</li>
-          <li>Trong từng phần, các câu của cùng một bộ (cùng một đoạn nghe / tài liệu) hiển thị <strong>gộp trên một màn hình</strong>. Dùng cột <strong>Danh sách câu hỏi</strong> để nhảy câu, nút <strong>← Câu trước / Câu tiếp →</strong> hoặc phím <kbd>←</kbd> <kbd>→</kbd> để di chuyển, phím <kbd>A</kbd>–<kbd>D</kbd> để chọn đáp án. Mỗi câu chỉ chọn đúng <strong>một</strong> đáp án; câu chưa chắc thì bấm <strong>⚑ Đánh dấu</strong>.</li>
-          <li>Audio là file MP3 thu sẵn, <strong>không đọc tên người nói</strong>. Ở chế độ <strong>Thi thật</strong>, mỗi đoạn audio chỉ phát <strong>1 lần duy nhất</strong>; ở chế độ <strong>Luyện tập</strong> nghe lại được.</li>
-          <li><strong>Đáp án, giải thích và transcript chỉ hiện sau khi nộp xong Phần 3.</strong> Kết quả sẽ báo điểm từng phần, điểm toàn đề (/40) và điểm quy đổi <strong>ước lượng</strong> ra thang 800 kèm mức tham khảo.</li>
+          <li>全体は <strong>80問</strong> chia <strong>3パート</strong> 実際の試験の順序どおりに連続して行い、合計時間は約 <strong>105分</strong>.</li>
+          <li><strong>パートのロック規則（本番同様）：</strong> 各パートには専用のタイマーがあります。 <strong>時間切れ</strong> になるか、 <strong>パートを提出</strong>ボタンを押すと、そのパートは <strong>すぐにロック</strong> され、自動的に次のパートへ進みます — <strong>前のパートには戻れません</strong>、答えを見直す場合も含みます。</li>
+          <li>各パートでは、同じセット（同じ音声／資料）の問題は <strong>1画面にまとめて</strong>表示されます。 <strong>問題一覧</strong> の列で問題へジャンプし、ボタン <strong>← 前の問題／次の問題 →</strong> または <kbd>←</kbd> <kbd>→</kbd> キーで移動し、 <kbd>A</kbd>–<kbd>D</kbd> キーで答えを選びます。各問題で選べる答えは正確に <strong>1つ</strong> だけです。自信のない問題は押してください： <strong>⚑ フラグ</strong>.</li>
+          <li>音声は録音済みのMP3ファイルです。 <strong>話者の名前は読み上げません</strong>。 <strong>本番</strong>モードでは、各音声は <strong>1回だけ</strong>再生されます。 <strong>練習</strong> モードでは聞き直しできます。</li>
+          <li><strong>答え、解説、トランスクリプトは、パート3を提出した後にのみ表示されます。</strong> 結果には、パートごとのスコア、全体のスコア（/40）、 <strong>推定</strong> 換算の800点満点のスコアと参考レベルが表示されます。</li>
         </ul>
         <div class="mk-partcards">
-          <div class="mk-partcard"><b class="jp">Phần 1 — 聴解</b><p>25 câu · 45 phút<br>場面把握 · 発言聴解 · 総合聴解 (hội thoại, thông báo)</p></div>
-          <div class="mk-partcard"><b class="jp">Phần 2 — 聴読解</b><p>25 câu · 30 phút<br>Vừa nghe vừa đọc memo, 見積書, lịch trình, bảng giá, email</p></div>
-          <div class="mk-partcard"><b class="jp">Phần 3 — 読解</b><p>30 câu · 30 phút<br>語彙・文法 · 表現読解 · Đọc 掲示・新聞記事・議事録</p></div>
+          <div class="mk-partcard"><b class="jp">パート1 — 聴解</b><p>25問 · 45分<br>場面把握 · 発言聴解 · 総合聴解</p></div>
+          <div class="mk-partcard"><b class="jp">パート2 — 聴読解</b><p>25問 · 30分<br>音声を聞きながらメモ、見積書、スケジュール、価格表、メールを読む</p></div>
+          <div class="mk-partcard"><b class="jp">パート3 — 読解</b><p>30問 · 30分<br>語彙・文法 · 表現読解 · 掲示・新聞記事・議事録を読む</p></div>
         </div>
-        <p style="margin-top:14px"><button class="btn btn-primary" id="mk2StartBtn" type="button" style="font-size:16px" onclick="startMock2()">Bắt đầu Phần 1 — 聴解</button></p>
+        <p style="margin-top:14px"><button class="btn btn-primary" id="mk2StartBtn" type="button" style="font-size:16px" onclick="startMock2()">パート1を開始 — 聴解</button></p>
         <p class="start-status" id="mk2StartStatus" role="status" aria-live="polite"></p>
-        <p class="note js-warn" id="mk2JsWarn">Trang đang tải… Nếu nút <strong>Bắt đầu</strong> chưa phản hồi, hãy đợi vài giây cho trang tải xong, hoặc mở trang này bằng trình duyệt Chrome / Safari rồi bấm lại.</p>
+        <p class="note js-warn" id="mk2JsWarn">ページを読み込み中… もし <strong>開始</strong> ボタンが反応しない場合は、数秒待ってページの読み込みを終わらせるか、このページを Chrome / Safari ブラウザで開いてもう一度押してください。</p>
       </div>
       <div>
-        <div class="candidate" aria-label="Thông tin đề thi thử BJT 02">
-          <div><span>Môn thi</span><b class="jp">BJT — Đề thi thử 02</b></div>
-          <div><span>Số câu hỏi</span><b>80 câu · 3 phần</b></div>
-          <div><span>Thời gian</span><b>~105 phút (45 + 30 + 30)</b></div>
-          <div><span>Cấu trúc</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
-          <div><span>Quy tắc</span><b>Hết giờ / nộp phần → khóa phần, không quay lại</b></div>
+        <div class="candidate" aria-label="BJT模擬テスト02の情報">
+          <div><span>科目</span><b class="jp">BJT — 模擬テスト02</b></div>
+          <div><span>問題数</span><b>80問 · 3パート</b></div>
+          <div><span>時間</span><b>約105分（45 + 30 + 30）</b></div>
+          <div><span>構成</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
+          <div><span>ルール</span><b>時間切れ／パート提出 → パートをロックし、戻れません</b></div>
         </div>
-        <div class="note" style="margin-top:14px"><strong>Lưu ý:</strong> hãy dành đủ ~105 phút yên tĩnh trước khi bắt đầu. Đang làm dở mà chuyển sang tab đề khác, đồng hồ của phần hiện tại vẫn chạy.</div>
+        <div class="note" style="margin-top:14px"><strong>注意：</strong> 開始前に静かな時間を約105分確保してください。途中で別の問題のタブに切り替えても、現在のパートのタイマーは動き続けます。</div>
       </div>
     </div>
   </section>
@@ -737,45 +739,45 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 
   <section id="mk2Exam" class="hidden">
     <div class="cbt-layout">
-      <aside class="palette" aria-label="Danh sách câu hỏi của phần hiện tại">
-        <h3 id="mk2PalTitle">Danh sách câu hỏi — Phần 1</h3>
-        <div class="count" id="mk2PalCount">Đã trả lời 0 / 25</div>
+      <aside class="palette" aria-label="現在のパートの問題一覧">
+        <h3 id="mk2PalTitle">問題一覧 — パート1</h3>
+        <div class="count" id="mk2PalCount">回答済み 0 / 25</div>
         <div class="pal-grid" id="mk2PalGrid"></div>
         <div class="legend">
-          <span><i style="background:var(--card)"></i>Chưa làm</span>
-          <span><i style="background:var(--ok);border-color:var(--ok)"></i>Đã chọn</span>
-          <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>Đang mở</span>
-          <span>⚑ Đã đánh dấu</span>
+          <span><i style="background:var(--card)"></i>未回答</span>
+          <span><i style="background:var(--ok);border-color:var(--ok)"></i>選択済み</span>
+          <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>表示中</span>
+          <span>⚑ フラグ済み</span>
         </div>
-        <button class="btn btn-primary submit-wide" id="mk2SubmitBtnSide" type="button" onclick="mk2AskSubmitPart()">Nộp phần này</button>
-        <div class="kbd-hint">Phím tắt: <kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> chọn đáp án · <kbd>←</kbd> <kbd>→</kbd> chuyển câu (trong phần hiện tại)</div>
+        <button class="btn btn-primary submit-wide" id="mk2SubmitBtnSide" type="button" onclick="mk2AskSubmitPart()">このパートを提出</button>
+        <div class="kbd-hint">ショートカット： <kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> 答えを選択 · <kbd>←</kbd> <kbd>→</kbd> 問題を移動（現在のパート内）</div>
       </aside>
       <div class="cbt-main">
-        <div id="mk2Groups" aria-label="Các bộ và câu hỏi của phần hiện tại"></div>
+        <div id="mk2Groups" aria-label="現在のパートのセットと問題"></div>
         <div class="cbt-footnav">
-          <button class="nav-btn" id="mk2PrevBtn" type="button" onclick="mk2PrevQ()">← Câu trước</button>
-          <span class="foot-status" id="mk2FootStatus">Câu 1 / 80</span>
-          <button class="nav-btn primary" id="mk2NextBtn" type="button" onclick="mk2NextQ()">Câu tiếp →</button>
+          <button class="nav-btn" id="mk2PrevBtn" type="button" onclick="mk2PrevQ()">← 前の問題</button>
+          <span class="foot-status" id="mk2FootStatus">問題 1 / 80</span>
+          <button class="nav-btn primary" id="mk2NextBtn" type="button" onclick="mk2NextQ()">次の問題 →</button>
         </div>
       </div>
     </div>
     <div class="d1-submitbar">
-      <p id="mk2SubmitHint">Đã trả lời 0 / 25 câu của phần này.</p>
-      <button class="btn btn-primary" id="mk2SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk2AskSubmitPart()">Nộp phần này</button>
+      <p id="mk2SubmitHint">このパートの回答済み 0 / 25問。</p>
+      <button class="btn btn-primary" id="mk2SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk2AskSubmitPart()">このパートを提出</button>
     </div>
   </section>
 
   <section class="result-panel" id="mk2Result">
     <div class="big" id="mk2ScoreBig">0 / 80</div>
-    <h2 id="mk2ScoreTitle">Kết quả Đề thi thử BJT 02</h2>
+    <h2 id="mk2ScoreTitle">BJT模擬テスト02の結果</h2>
     <div class="mk-scoregrid" id="mk2ScoreGrid"></div>
     <p id="mk2ScoreDetail"></p>
-    <p style="font-size:14px">Đáp án, giải thích tiếng Việt, transcript và bản dịch từng câu nằm ngay bên dưới.</p>
-    <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mk2Reset()">↺ Làm lại Đề thi thử 02</button>
+    <p style="font-size:14px">答え、ベトナム語の解説、トランスクリプト、各文の翻訳はすぐ下にあります。</p>
+    <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mk2Reset()">↺ 模擬テスト02をもう一度</button>
   </section>
   <div id="mk2Review"></div>
 
-  <p class="footer-note">Đề thi thử BJT 02 — bản 80 câu theo đúng format đề thi thật (3 phần nối tiếp, khóa phần khi hết giờ). Audio là file MP3 thu sẵn, không đọc tên người nói. Điểm /800 là quy đổi ước lượng theo tỉ lệ đúng, không phải cách tính điểm chính thức của kỳ thi.</p>
+  <p class="footer-note">BJT模擬テスト02 — 実際の試験の形式どおりの80問版（3パート連続、時間切れでパートをロック）。音声は録音済みのMP3ファイルで、話者の名前は読み上げません。/800のスコアは正答率による推定換算であり、試験の公式な採点方法ではありません。</p>
 </main>
 <main class="wrap hidden" id="examMock3">
   <div class="cbt-head">
@@ -879,26 +881,26 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 </main>
 <main class="wrap wrap-narrow hidden" id="examDemo">
   <div class="hero">
-    <h1>Đề thi thử BJT — 3 câu, đủ 3 phần thi</h1>
-    <p>Làm như thi thật: nghe audio trước, tự nhận diện ai là sếp — ai là nhân viên qua giọng nói và cách dùng kính ngữ. Transcript và giải thích chỉ hiện sau khi nộp bài.</p>
+    <h1>BJT模擬テスト — 3問、全3パート</h1>
+    <p>本番同様に行いましょう：まず音声を聞き、声と敬語の使い方から、誰が上司で誰が社員かを自分で見分けます。トランスクリプトと解説は提出後にのみ表示されます。</p>
     <div class="meta-row">
-      <span>⏱ 12 phút</span><span>📝 3 câu · 3 phần</span><span>🎧 Audio thu sẵn (MP3)</span><span>📊 Có biểu đồ &amp; email</span>
+      <span>⏱ 12分</span><span>📝 3問 · 3パート</span><span>🎧 録音済み音声（MP3）</span><span>📊 グラフとメールあり</span>
     </div>
     <div class="demo-head" style="margin-top:16px">
       <div class="demo-timer" id="timer">12:00</div>
-      <span class="progress-txt" id="progressTxt">Đã chọn 0 / 3</span>
+      <span class="progress-txt" id="progressTxt">選択済み 0 / 3</span>
     </div>
     <div class="progress"><i id="progressBar"></i></div>
-    <div class="note" style="margin-top:12px"><strong>Lưu ý:</strong> audio <strong>không đọc tên/người nói</strong>. Hai giọng khác nhau — giọng trầm là cấp trên nói kiểu chỉ đạo, giọng còn lại dùng kính ngữ. Bạn phải tự nghe ra, giống phòng thi thật.</div>
+    <div class="note" style="margin-top:12px"><strong>注意：</strong> audio <strong>話者の名前は読み上げません</strong>。2つの異なる声 — 低い声は指示を出す上司、もう一方は敬語を使います。試験室と同じように、自分で聞き分けなければなりません。</div>
   </div>
 
-  <div class="section-head"><div class="section-num">1</div><div><h2 class="jp">聴解 — Nghe hiểu</h2><p>Nghe hội thoại ở nơi làm việc rồi chọn đáp án đúng nhất.</p></div></div>
+  <div class="section-head"><div class="section-num">1</div><div><h2 class="jp">聴解</h2><p>職場での会話を聞いて、最も正しい答えを選びます。</p></div></div>
   <div class="card" data-q="1">
-    <div class="q-label">Câu 1 · 聴解</div>
-    <p class="audio-hint">▶ Bấm nghe — có thể nghe lại, như khi ôn tập. Khi thi thật chỉ nghe 1 lần.</p>
+    <div class="q-label">問題1 · 聴解</div>
+    <p class="audio-hint">▶ 押して聞く — 復習のときのように聞き直しできます。本番では1回だけです。</p>
     <audio controls preload="metadata" src="assets/listening1.mp3"></audio>
     <p class="q-text jp" style="font-size:18px">会議はいつに変更になりましたか。</p>
-    <div class="options" role="radiogroup" aria-label="Câu 1">
+    <div class="options" role="radiogroup" aria-label="問題1">
       <button class="opt" data-q="1" data-v="A"><span class="letter">A</span><span class="jp">金曜日</span></button>
       <button class="opt" data-q="1" data-v="B"><span class="letter">B</span><span class="jp">木曜日</span></button>
       <button class="opt" data-q="1" data-v="C"><span class="letter">C</span><span class="jp">水曜日</span></button>
@@ -907,12 +909,12 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <div class="feedback" id="fb1"></div>
   </div>
 
-  <div class="section-head"><div class="section-num">2</div><div><h2 class="jp">聴読解 — Nghe + Đọc biểu đồ</h2><p>Nghe hội thoại đồng thời nhìn biểu đồ doanh số, rồi đối chiếu số liệu.</p></div></div>
+  <div class="section-head"><div class="section-num">2</div><div><h2 class="jp">聴読解</h2><p>会話を聞きながら売上グラフを見て、数値を照合します。</p></div></div>
   <div class="card" data-q="2">
-    <div class="q-label">Câu 2 · 聴読解</div>
-    <p class="audio-hint">▶ Nghe trong lúc nhìn biểu đồ bên dưới.</p>
+    <div class="q-label">問題2 · 聴読解</div>
+    <p class="audio-hint">▶ 下のグラフを見ながら聞いてください。</p>
     <audio controls preload="metadata" src="assets/listening2.mp3"></audio>
-    <div class="chart-wrap" aria-label="Biểu đồ doanh số sản phẩm A và B từ tháng 4 đến tháng 9">
+    <div class="chart-wrap" aria-label="製品Aと製品Bの4月から9月までの売上グラフ">
       <svg viewBox="0 0 640 300" role="img" aria-label="Line chart: Product A and B sales April to September">
         <g stroke="var(--line)" stroke-width="1">
           <line x1="60" y1="30" x2="600" y2="30"/><line x1="60" y1="70" x2="600" y2="70"/><line x1="60" y1="110" x2="600" y2="110"/><line x1="60" y1="150" x2="600" y2="150"/><line x1="60" y1="190" x2="600" y2="190"/><line x1="60" y1="230" x2="600" y2="230"/><line x1="60" y1="250" x2="600" y2="250" stroke="var(--muted)"/>
@@ -929,8 +931,8 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
         <g fill="#c2410c" font-size="12" font-weight="700" text-anchor="middle"><text x="90" y="230">90</text><text x="185" y="220">95</text><text x="280" y="206">102</text><text x="375" y="194">108</text><text x="470" y="180">115</text><text x="565" y="168">121</text></g>
         <g fill="var(--ink)" font-size="13" text-anchor="middle" font-weight="600"><text x="90" y="272">4月</text><text x="185" y="272">5月</text><text x="280" y="272">6月</text><text x="375" y="272">7月</text><text x="470" y="272">8月</text><text x="565" y="272">9月</text></g>
       </svg>
-      <div class="legend2"><span><i class="dot" style="background:#2563eb"></i>製品A</span><span><i class="dot" style="background:#c2410c"></i>製品B</span><span style="color:var(--muted)">Đơn vị: trăm triệu yên (百万円)</span></div>
-      <table class="data" aria-label="Bảng số liệu doanh số">
+      <div class="legend2"><span><i class="dot" style="background:#2563eb"></i>製品A</span><span><i class="dot" style="background:#c2410c"></i>製品B</span><span style="color:var(--muted)">単位：百万円</span></div>
+      <table class="data" aria-label="売上データ表">
         <tr><th></th><th>4月</th><th>5月</th><th>6月</th><th>7月</th><th>8月</th><th>9月</th></tr>
         <tr><td>製品A</td><td>120</td><td>132</td><td>145</td><td>155</td><td>165</td><td>158</td></tr>
         <tr><td>製品B</td><td>90</td><td>95</td><td>102</td><td>108</td><td>115</td><td>121</td></tr>
@@ -938,7 +940,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       </table>
     </div>
     <p class="q-text jp" style="margin-top:16px;font-size:18px">グラフと会話から分かることはどれですか。</p>
-    <div class="options" role="radiogroup" aria-label="Câu 2">
+    <div class="options" role="radiogroup" aria-label="問題2">
       <button class="opt" data-q="2" data-v="A"><span class="letter">A</span><span class="jp">製品Aは9月が一番売れた</span></button>
       <button class="opt" data-q="2" data-v="B"><span class="letter">B</span><span class="jp">9月の合計売上は279で、4月より約3割多い</span></button>
       <button class="opt" data-q="2" data-v="C"><span class="letter">C</span><span class="jp">製品Bは8月がピークだった</span></button>
@@ -947,9 +949,9 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <div class="feedback" id="fb2"></div>
   </div>
 
-  <div class="section-head"><div class="section-num">3</div><div><h2 class="jp">読解 — Đọc hiểu</h2><p>Đọc email thông báo nội bộ rồi chọn phát biểu đúng với nội dung.</p></div></div>
+  <div class="section-head"><div class="section-num">3</div><div><h2 class="jp">読解</h2><p>社内通知のメールを読んで、内容に合う発言を選びます。</p></div></div>
   <div class="card" data-q="3">
-    <div class="q-label">Câu 3 · 読解</div>
+    <div class="q-label">問題3 · 読解</div>
     <div class="passage jp"><span class="subj">件名：納品スケジュール変更のお知らせ</span>
 
 各位
@@ -958,7 +960,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 なお、出荷日については、取引先からの正式な回答を待って決定いたします。
 ご不明な点がございましたら、生産部までお問い合わせください。</div>
     <p class="q-text jp" style="margin-top:14px;font-size:18px">このメールについて、正しいものはどれですか。</p>
-    <div class="options" role="radiogroup" aria-label="Câu 3">
+    <div class="options" role="radiogroup" aria-label="問題3">
       <button class="opt" data-q="3" data-v="A"><span class="letter">A</span><span class="jp">出荷日は11月16日で確定している</span></button>
       <button class="opt" data-q="3" data-v="B"><span class="letter">B</span><span class="jp">納品は予定より前倒しされた</span></button>
       <button class="opt" data-q="3" data-v="C"><span class="letter">C</span><span class="jp">組み立ては11月12日から始まる</span></button>
@@ -969,58 +971,58 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 
   <div class="result" id="resultBox">
     <div class="big" id="scoreBig">0 / 3</div>
-    <h2 id="scoreTitle">Kết quả</h2>
+    <h2 id="scoreTitle">結果</h2>
     <p id="scoreDetail"></p>
-    <p style="font-size:14px">Điểm yếu cần để ý sẽ hiện trong phần giải thích từng câu bên trên — đặc biệt dạng cộng số từ biểu đồ ở phần 聴読解.</p>
-    <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="resetExam()">↺ Làm lại đề này</button>
+    <p style="font-size:14px">注意すべき弱点は、上の各問題の解説に表示されます — 特に聴読解パートのグラフから数字を加算する形式です。</p>
+    <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="resetExam()">↺ この問題をもう一度</button>
   </div>
 
   <div class="submit-bar">
-    <p id="submitHint">Chọn đủ 3 câu rồi bấm Nộp bài để chấm ngay.</p>
-    <button class="btn btn-primary" id="submitBtn" disabled onclick="submitExam()">Nộp bài</button>
+    <p id="submitHint">3問すべて選んでから「提出」を押して今すぐ採点しましょう。</p>
+    <button class="btn btn-primary" id="submitBtn" disabled onclick="submitExam()">提出</button>
   </div>
 
-  <p class="footer-note">Đề mẫu do Muse soạn theo đúng dạng BJT (nghe / nghe+đọc biểu đồ / đọc email) để luyện hằng ngày.</p>
+  <p class="footer-note">BJTの形式どおりに作成したサンプル問題（聴解／グラフ付き聴読解／メール読解）で、毎日の練習用です。</p>
 </main>
 <main class="wrap hidden" id="videoLibrary">
   <div class="vid-head">
-    <h1>Thư viện video tình huống BJT</h1>
-    <p class="sub">57 video tình huống công sở, xếp theo nhóm chủ đề. Bấm phát để xem ngay tại trang, bấm <strong>Phóng to</strong> ngay dưới trình phát để xem lớn phủ kín màn hình trong trang — mỗi video có sẵn lời thoại 3 thứ tiếng (Nhật – Việt – Anh) và bảng từ vựng đi kèm ở phần mở rộng dưới trình phát.</p>
-    <div class="vid-filters" id="vidFilters" role="group" aria-label="Lọc video theo nhóm chủ đề"></div>
+    <h1>BJT状況ビデオライブラリ</h1>
+    <p class="sub">オフィスの状況ビデオ56本、テーマ別に分類。再生を押してページ内ですぐ見られます。ボタンを押すと <strong>拡大</strong> プレーヤーのすぐ下にあり、ページ内で画面いっぱいに大きく見られます — 各ビデオには3言語（日本語 – ベトナム語 – 英語）のセリフと、プレーヤーの下の展開部分に単語表が付いています。</p>
+    <div class="vid-filters" id="vidFilters" role="group" aria-label="テーマ別にビデオを絞り込む"></div>
   </div>
   <div id="vidCats"></div>
-  <p class="footer-note">Video tình huống BJT — phụ đề 3 thứ tiếng Nhật · Việt · Anh được gắn sẵn ngay trong video.</p>
+  <p class="footer-note">BJT状況ビデオ — 日本語・ベトナム語・英語の3言語字幕がビデオに埋め込まれています。</p>
 </main>
 
 <!-- ================= THẺ TỪ VỰNG — 884 TỪ THEO NGÀY ================= -->
 <main class="wrap hidden" id="vocabCards">
   <div class="vid-head">
-    <h1>Thẻ từ vựng — danh sách 884 từ BJT</h1>
-    <p class="sub">Toàn bộ <strong>884 từ</strong> của danh sách từ vựng BJT, chia theo đúng tiến độ học từng ngày · Đã học: <strong>131 từ</strong> (Ngày 11–17) · Các nhóm «sắp học» đi tiếp theo nhịp 24 từ/ngày. Chọn một ngày ở hàng dưới đây để xem thẻ của ngày đó — bấm vào thẻ để lật xem cách đọc, nghĩa tiếng Việt và cụm từ đi kèm.</p>
-    <div class="vid-filters" id="vocabDays" role="group" aria-label="Chọn ngày học từ vựng"></div>
+    <h1>単語カード — BJT 884語リスト</h1>
+    <p class="sub">すべて <strong>884語</strong> BJT単語リストのうち、日々の学習進度どおりに分けられています · 学習済み： <strong>131語</strong> （第11回–第17回）· 「これから学ぶ」グループは1日24語のペースで続きます。下の行から日を選んでその日のカードを見ましょう — カードをクリックするとめくれて、読み方、ベトナム語の意味、一緒に使う表現が見られます。</p>
+    <div class="vid-filters" id="vocabDays" role="group" aria-label="単語学習の日を選ぶ"></div>
   </div>
-  <h2 class="section-title" id="vocabGroupTitle">Ngày 17</h2>
+  <h2 class="section-title" id="vocabGroupTitle">第17回</h2>
   <p class="section-sub" id="vocabGroupSub"></p>
   <div class="fc-grid" id="vocabGrid"></div>
-  <p class="footer-note">Thẻ từ vựng BJT — nghĩa tiếng Việt theo danh sách 884 từ gốc; cụm đi kèm là cách dùng điển hình trong văn phong công việc.</p>
+  <p class="footer-note">BJT単語カード — 元の884語リストに基づくベトナム語の意味。一緒に使う表現は、仕事の文体での典型的な使い方です。</p>
 </main>
 <div class="modal-overlay" id="mkModal" role="dialog" aria-modal="true" aria-labelledby="mkModalTitle">
   <div class="modal">
-    <h3 id="mkModalTitle">Nộp phần này?</h3>
-    <p id="mkModalText">Nộp phần này sẽ khóa phần và chuyển sang phần tiếp theo — không quay lại được.</p>
+    <h3 id="mkModalTitle">このパートを提出しますか？</h3>
+    <p id="mkModalText">このパートを提出すると、パートはロックされ、次のパートへ進みます — 戻ることはできません。</p>
     <div class="row">
-      <button class="btn btn-ghost" id="mkModalCancel" type="button" onclick="mkCloseModal()">Làm tiếp</button>
-      <button class="btn btn-primary" id="mkModalConfirm" type="button" onclick="mkConfirmSubmitPart()">Nộp phần</button>
+      <button class="btn btn-ghost" id="mkModalCancel" type="button" onclick="mkCloseModal()">続ける</button>
+      <button class="btn btn-primary" id="mkModalConfirm" type="button" onclick="mkConfirmSubmitPart()">パートを提出</button>
     </div>
   </div>
 </div>
 <div class="modal-overlay" id="mk2Modal" role="dialog" aria-modal="true" aria-labelledby="mk2ModalTitle">
   <div class="modal">
-    <h3 id="mk2ModalTitle">Nộp phần này?</h3>
-    <p id="mk2ModalText">Nộp phần này sẽ khóa phần và chuyển sang phần tiếp theo — không quay lại được.</p>
+    <h3 id="mk2ModalTitle">このパートを提出しますか？</h3>
+    <p id="mk2ModalText">このパートを提出すると、パートはロックされ、次のパートへ進みます — 戻ることはできません。</p>
     <div class="row">
-      <button class="btn btn-ghost" id="mk2ModalCancel" type="button" onclick="mk2CloseModal()">Làm tiếp</button>
-      <button class="btn btn-primary" id="mk2ModalConfirm" type="button" onclick="mk2ConfirmSubmitPart()">Nộp phần</button>
+      <button class="btn btn-ghost" id="mk2ModalCancel" type="button" onclick="mk2CloseModal()">続ける</button>
+      <button class="btn btn-primary" id="mk2ModalConfirm" type="button" onclick="mk2ConfirmSubmitPart()">パートを提出</button>
     </div>
   </div>
 </div>
@@ -1038,13 +1040,13 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 <script>
 /* ============ TAB SWITCH + URL TAG (deep link) ============
    Each exam has its own link tag so a shared link opens exactly that exam:
-     ngay-1 … ngay-14 · de-thi-thu (Đề thi thử BJT 01) · de-thi-thu-2 (Đề thi thử BJT 02) · de-thi-thu-3 (模擬試験 BJT 03) · de-mau (Đề mẫu 01)
+     ngay-1 … ngay-14 · de-thi-thu (Đề thi thử BJT 01) · de-thi-thu-2 (Đề thi thử BJT 02) · de-thi-thu-3 (Đề thi thử BJT 03) · de-mau (Đề mẫu 01)
    Supported deep-link forms on the public URL:
      ?de=ngay-4   (query parameter — primary form; ?exam=ngay-4 also works)
      #ngay-4      (hash — kept for in-app use)
    A valid tag in the URL wins over the default (newest exam, Ngày 22);
    switching exams on the page updates the hash to match. */
-var EXAM_TAGS = { day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', mock3:'de-thi-thu-3', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
+var EXAM_TAGS = { day25:'ngay-25', day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', mock3:'de-thi-thu-3', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
 var TAG_EXAMS = {};
 Object.keys(EXAM_TAGS).forEach(function(k){ TAG_EXAMS[EXAM_TAGS[k]] = k; });
 /* The published page is displayed inside the Muse shell, and the #tag
@@ -1140,7 +1142,7 @@ function syncExamHash(which){
     try{ window.location.hash = tag; }catch(e2){}
   }
 }
-var currentExam = 'day24';
+var currentExam = 'day25';
 /* Set when the reader picks an exam themselves (tab or dropdown): a tag
    that only becomes readable a moment after load must never override a
    choice already made, nor interrupt an exam already started. */
@@ -1157,7 +1159,7 @@ function anyExamStarted(){
   return false;
 }
 function switchExam(which){
-  if(!EXAM_TAGS[which]) which = 'day24';
+  if(!EXAM_TAGS[which]) which = 'day25';
   currentExam = which;
   syncExamHash(which);
   var seoL = document.getElementById('seoLanding');
@@ -1376,7 +1378,7 @@ function viTrHtml(viLines, label){
    lại; src rỗng (phần đọc không có audio) thì không chèn gì. */
 function reviewAudioHtml(src, label){
   if(!src) return '';
-  return '<div class="review-listen"><p class="rl-label">▶ ' + label + ' — nghe lại trong lúc xem đáp án:</p><audio class="review-audio" controls preload="metadata" src="' + ((typeof bjtBlobUrls !== 'undefined' && bjtBlobUrls[src]) || src) + '"></audio></div>';
+  return '<div class="review-listen"><p class="rl-label">▶ ' + label + ' — 答えを見ながら聞き直す：</p><audio class="review-audio" controls preload="metadata" src="' + ((typeof bjtBlobUrls !== 'undefined' && bjtBlobUrls[src]) || src) + '"></audio></div>';
 }
 /* chỉ một file nghe lại phát tại một thời điểm trong phần xem lại */
 document.addEventListener('play', function(e){
@@ -1400,13 +1402,85 @@ function cycleFontSize(){
   var large = document.body.getAttribute('data-fs')==='2';
   document.body.setAttribute('data-fs', large ? '1' : '2');
   var b = document.getElementById('fsBtn');
-  if(b) b.textContent = large ? 'A＋ Cỡ chữ' : 'A－ Cỡ chữ';
+  if(b) b.textContent = large ? 'A＋ 文字サイズ' : 'A－ 文字サイズ';
 }
 /* mkParts, mkGroups, mkQuestions loaded below via external script */
 </script>
-<script src="data/exams/mock1.js"></script>
-<script src="data/exams/mock2.js"></script>
-<script src="data/exams/mock3.js"></script>
+<script>
+/* ===== BJT DATA LOADER (JSON) =====
+   Data files are JSON now (data/exams/*.json, data/videos.json,
+   data/vocab.json). Fetched once, then registered into the same
+   globals the old <script src="data/..."> tags used to define, so
+   the exam engine, mock players, video library and vocab cards
+   work exactly as before. Loading starts after parsing, so
+   initAllExams / renderVideoLibrary / renderVocabDays all exist. */
+window.EXAM_DAYS = window.EXAM_DAYS || {};
+window.mkParts = []; window.mkGroups = []; window.mkQuestions = [];
+window.mk2Parts = []; window.mk2Groups = []; window.mk2Questions = [];
+window.mk3Parts = []; window.mk3Groups = []; window.mk3Questions = [];
+window.VIDEO_LIBRARY = null;
+window.VOCAB_DAYS = [];
+(function(){
+  var DAY_FILES = ["day1","day2","day3","day4","day5","day6","day7","day8","day9","day10","day11","day12","day13","day14","day15","day16","day17","day18","day19","day20","day21","day22","day23","day24","day25"];
+  var MOCK_FILES = ["mock1","mock2","mock3"];
+  function loadJSON(url){
+    return fetch(url).then(function(r){
+      if(!r.ok) throw new Error('HTTP ' + r.status + ' - ' + url);
+      return r.json();
+    });
+  }
+  function loadMock(id, pfx){
+    return loadJSON('data/exams/' + id + '.json').then(function(d){
+      window[pfx + 'Parts'] = d.parts;
+      window[pfx + 'Groups'] = d.groups;
+      window[pfx + 'Questions'] = d.questions;
+    });
+  }
+  function start(){
+    var jobs = [];
+    DAY_FILES.forEach(function(id){
+      jobs.push(loadJSON('data/exams/' + id + '.json').then(function(cfg){
+        window.EXAM_DAYS[cfg.id] = cfg;
+      }));
+    });
+    MOCK_FILES.forEach(function(id){
+      var pfx = 'mk' + (id === 'mock1' ? '' : id.slice(4));
+      jobs.push(loadMock(id, pfx));
+    });
+    jobs.push(loadJSON('data/videos.json').then(function(d){ window.VIDEO_LIBRARY = d; }));
+    jobs.push(loadJSON('data/vocab.json').then(function(d){ window.VOCAB_DAYS = d; }));
+    Promise.all(jobs).then(function(){
+      /* mock group lookups are built at parse time from (then-empty)
+         arrays, so rebuild them now that the data has arrived. */
+      [['mkGroups', 'mkGroupById'], ['mk2Groups', 'mk2GroupById'], ['mk3Groups', 'mk3GroupById']].forEach(function(pair){
+        var arr = window[pair[0]], map = window[pair[1]];
+        if(arr && map){ arr.forEach(function(g){ map[g.id] = g; }); }
+      });
+      initAllExams();
+      var ec = document.getElementById('seoExamCount');
+      if(ec && window.EXAM_DAYS) ec.textContent = Object.keys(window.EXAM_DAYS).length;
+      renderVideoLibrary();
+      var vc = document.getElementById('seoVideoCount');
+      if(vc && window.VIDEO_LIBRARY && window.VIDEO_LIBRARY.videos) vc.textContent = window.VIDEO_LIBRARY.videos.length;
+      renderVocabDays();
+      renderVocabCards();
+      var svc = document.getElementById('seoVocabCount');
+      if(svc && window.VOCAB_DAYS){
+        var total = 0;
+        window.VOCAB_DAYS.forEach(function(g){ total += g.cards.length; });
+        svc.textContent = total;
+      }
+      if(typeof currentExam !== 'undefined') switchExam(currentExam);
+    }).catch(function(err){
+      try{ console.error('[bjt] data load failed:', err); }catch(e){}
+      var c = document.getElementById('examContainer');
+      if(c) c.innerHTML = '<p style="padding:24px">\u554f\u984c\u30c7\u30fc\u30bf\u3092\u8aad\u307f\u8fbc\u3081\u307e\u305b\u3093\u3067\u3057\u305f\u3002\u30da\u30fc\u30b8\u3092\u518d\u8aad\u307f\u8fbc\u307f\u3057\u3066\u304f\u3060\u3055\u3044\u3002</p>';
+    });
+  }
+  if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', start); }
+  else{ start(); }
+})();
+</script>
 <script>
 var mkGroupById = {};
 mkGroups.forEach(function(g){ mkGroupById[g.id] = g; });
@@ -1435,14 +1509,14 @@ function mkRenderStepper(){
     step.classList.toggle('now', mkPart===p && mkPartScore[p]===null);
     var part = mkParts[p-1], total = part.to - part.from + 1;
     st.textContent = mkPartScore[p]!==null
-      ? ('✓ Đã khóa — đúng ' + mkPartScore[p] + ' / ' + total)
-      : (mkPart===p ? 'Đang làm…' : 'Chưa bắt đầu');
+      ? ('✓ ロック済み — 正解 ' + mkPartScore[p] + ' / ' + total)
+      : (mkPart===p ? '実施中…' : '未開始');
   }
 }
 function startMock1(){
   if(mkStarted) return;
   var status = document.getElementById('mkStartStatus');
-  if(status) status.textContent = 'Đang mở Phần 1…';
+  if(status) status.textContent = 'パート1を開いています…';
   mkStarted = true;
   var sp = document.getElementById('mkStart');
   if(sp){ sp.classList.add('hidden'); sp.style.display = 'none'; }
@@ -1460,16 +1534,16 @@ function mkBeginPart(p, auto){
   if(banner){
     if(p>1){
       var prev = mkParts[p-2], pTotal = prev.to - prev.from + 1;
-      banner.textContent = (auto ? '⏱ Hết giờ ' : 'Đã nộp ') + prev.name + ' — phần này đã bị khóa (đúng ' + mkPartScore[p-1] + ' / ' + pTotal + '), không thể quay lại. Bạn đang làm ' + part.name + '.';
+      banner.textContent = (auto ? '⏱ 時間切れ ' : '提出済み ') + prev.name + ' — このパートはロックされました（正解 ' + mkPartScore[p-1] + ' / ' + pTotal + '）、戻ることはできません。現在実施中：' + part.name + '.';
       banner.classList.remove('hidden');
     } else {
-      banner.textContent = 'Bạn đang làm ' + part.name + ' — đồng hồ ' + fmtT(part.time) + ' đang chạy. Hết giờ hoặc nộp phần thì phần này khóa và chuyển phần tiếp theo.';
+      banner.textContent = '現在実施中：' + part.name + ' — タイマー ' + fmtT(part.time) + ' が動いています。時間が終わるかパートを提出すると、このパートはロックされ、次のパートへ進みます。';
       banner.classList.remove('hidden');
     }
   }
   var ex = document.getElementById('mkExam');
   ex.classList.remove('hidden'); ex.style.display = '';
-  document.getElementById('mkPalTitle').textContent = 'Danh sách câu hỏi — Phần ' + p + ' (' + part.jp + ')';
+  document.getElementById('mkPalTitle').textContent = '問題一覧 — パート' + p + ' (' + part.jp + ')';
   mkBuildGroups();
   mkRenderPalette();
   mkUpdateHint();
@@ -1495,13 +1569,13 @@ function mkBuildGroups(){
     var banner = document.createElement('div'); banner.className = 'seg-banner';
     var st = document.createElement('div'); st.className = 'seg-title jp'; st.textContent = g.title;
     var sd = document.createElement('div'); sd.className = 'seg-desc';
-    sd.textContent = g.desc + (g.audio ? (mkMode==='real' ? ' · Chế độ thi thật: audio của bộ này chỉ phát 1 lần.' : ' · Chế độ luyện tập: nghe lại được.') : '');
+    sd.textContent = g.desc + (g.audio ? (mkMode==='real' ? ' · 本番モード：このセットの音声は1回だけ再生されます。' : ' · 練習モード：聞き直しできます。') : '');
     banner.appendChild(st); banner.appendChild(sd);
     if(g.audio){
       var arow = document.createElement('div'); arow.className = 'audio-row';
       var pb = document.createElement('button');
       pb.type = 'button'; pb.className = 'play-btn'; pb.id = 'mkPlayBtn' + g.id;
-      pb.innerHTML = '<span class="tri">▶</span><span>Phát audio bộ ' + g.id + '</span>';
+      pb.innerHTML = '<span class="tri">▶</span><span>音声 セット ' + g.id + '</span>';
       (function(gid){ pb.addEventListener('click', function(){ mkPlay(gid); }); })(g.id);
       var ps = document.createElement('span'); ps.className = 'play-state'; ps.id = 'mkPlayState' + g.id;
       arow.appendChild(pb); arow.appendChild(ps);
@@ -1519,7 +1593,7 @@ function mkBuildGroups(){
       card.className = 'qcard'; card.id = 'mkqcard-' + n;
       var meta = document.createElement('div'); meta.className = 'q-meta';
       var qn = document.createElement('span'); qn.className = 'q-num';
-      qn.textContent = 'Câu ' + n + ' / 40 · Bộ ' + g.id;
+      qn.textContent = '問題 ' + n + ' / 40 · セット ' + g.id;
       var fb = document.createElement('button');
       fb.type = 'button'; fb.className = 'flag-btn'; fb.id = 'mkflagBtn' + n;
       (function(nn){ fb.addEventListener('click', function(){ mkToggleFlag(nn); }); })(n);
@@ -1527,7 +1601,7 @@ function mkBuildGroups(){
       var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = item.q;
       var opts = document.createElement('div');
       opts.className = 'options'; opts.id = 'mkqOptions' + n;
-      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','Đáp án câu ' + n);
+      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','問題の答え ' + n);
       card.appendChild(meta); card.appendChild(qt); card.appendChild(opts);
       (function(nn){ card.addEventListener('click', function(){ mkSetActive(nn, false); }); })(n);
       group.appendChild(card);
@@ -1560,7 +1634,7 @@ function mkUpdateQuestion(n){
   var fb = document.getElementById('mkflagBtn' + n);
   if(fb){
     fb.classList.toggle('on', !!mkFlag[n]);
-    fb.textContent = mkFlag[n] ? '⚑ Đã đánh dấu — bấm để bỏ' : '⚑ Đánh dấu câu này';
+    fb.textContent = mkFlag[n] ? '⚑ フラグ済み — 押して解除' : '⚑ この問題にフラグ';
   }
   var box = document.getElementById('mkqOptions' + n);
   if(!box) return;
@@ -1583,9 +1657,9 @@ function mkRenderPalette(){
   for(var n=part.from;n<=part.to;n++){
     var item = mkQuestions[n-1];
     var b = document.createElement('button');
-    b.className = 'pal-btn'; b.setAttribute('aria-label','Câu ' + n);
+    b.className = 'pal-btn'; b.setAttribute('aria-label','問題 ' + n);
     b.innerHTML = '<span class="pnum">' + n + '</span><span class="plabel"></span><span class="pstat"></span>';
-    b.querySelector('.plabel').textContent = 'Bộ ' + item.g + ' · ' + part.jp;
+    b.querySelector('.plabel').textContent = 'セット ' + item.g + ' · ' + part.jp;
     var st = b.querySelector('.pstat');
     if(mkSel[n]) b.classList.add('answered');
     if(mkSel[n]) st.textContent = '✓';
@@ -1596,9 +1670,9 @@ function mkRenderPalette(){
   }
   var done = 0;
   for(var m=part.from;m<=part.to;m++){ if(mkSel[m]) done++; }
-  document.getElementById('mkPalCount').textContent = 'Đã trả lời ' + done + ' / ' + (part.to - part.from + 1) + ' (phần ' + mkPart + ')';
+  document.getElementById('mkPalCount').textContent = '回答済み ' + done + ' / ' + (part.to - part.from + 1) + '（パート ' + mkPart + ')';
   var fs = document.getElementById('mkFootStatus');
-  if(fs) fs.textContent = 'Đang xem câu ' + mkCurrent + ' / 40 · Phần ' + mkPart + ': đã trả lời ' + done + ' / ' + (part.to - part.from + 1);
+  if(fs) fs.textContent = '表示中：問題 ' + mkCurrent + ' / 40 · パート ' + mkPart + '：回答済み ' + done + ' / ' + (part.to - part.from + 1);
   var prev = document.getElementById('mkPrevBtn'), next = document.getElementById('mkNextBtn');
   if(prev) prev.disabled = (mkCurrent <= part.from);
   if(next) next.disabled = (mkCurrent >= part.to);
@@ -1609,9 +1683,9 @@ function mkUpdateHint(){
   for(var m=part.from;m<=part.to;m++){ if(mkSel[m]) done++; }
   var el = document.getElementById('mkSubmitHint');
   if(el) el.textContent = done === total
-    ? 'Đã trả lời đủ ' + done + ' / ' + total + ' câu của phần này — bấm Nộp phần để khóa phần và chuyển tiếp.'
-    : 'Đã trả lời ' + done + ' / ' + total + ' câu của phần này — còn ' + (total - done) + ' câu chưa chọn. Nộp phần vẫn được (câu trống tính là sai) và phần sẽ bị khóa.';
-  var lbl = mkPart===3 ? 'Nộp Phần 3 — xem kết quả' : ('Nộp phần ' + mkPart + ' — sang Phần ' + (mkPart+1));
+    ? 'すべて回答しました ' + done + ' / ' + total + ' 問（このパート）— 「パートを提出」を押してこのパートをロックし、次へ進みましょう。'
+    : '回答済み ' + done + ' / ' + total + ' 問（このパート）— あと ' + (total - done) + ' 問が未選択です。パートの提出はできます（空欄は不正解になります）。このパートはロックされます。';
+  var lbl = mkPart===3 ? 'パート3を提出 — 結果を見る' : ('パートを提出 ' + mkPart + ' — 次のパートへ：パート' + (mkPart+1));
   var s1 = document.getElementById('mkSubmitBtnSide'), s2 = document.getElementById('mkSubmitBtnBottom');
   if(s1) s1.textContent = lbl;
   if(s2) s2.textContent = lbl;
@@ -1646,11 +1720,11 @@ function mkRefreshOnePlayUI(gid){
   var btn = document.getElementById('mkPlayBtn' + gid), st = document.getElementById('mkPlayState' + gid);
   if(!btn || !st) return;
   var plays = mkPlays[gid] || 0;
-  if(mkSpeaking && mkAudioId===gid){ btn.disabled = true; st.textContent = 'Đang phát audio bộ ' + gid + '… nghe kỹ và trả lời các câu của bộ này.'; return; }
-  if(mkMode==='real' && plays>=1){ btn.disabled = true; st.textContent = 'Audio bộ ' + gid + ' đã phát 1/1 lần (chế độ thi thật).'; return; }
+  if(mkSpeaking && mkAudioId===gid){ btn.disabled = true; st.textContent = '再生中：音声 セット ' + gid + '… よく聞いて、このセットの問題に答えましょう。'; return; }
+  if(mkMode==='real' && plays>=1){ btn.disabled = true; st.textContent = '音声 セット ' + gid + ' は1/1回再生済みです（本番モード）。'; return; }
   btn.disabled = false;
-  if(mkSpeaking){ st.textContent = 'Đang phát audio bộ ' + mkAudioId + ' — bấm nút này để dừng đoạn đó và phát audio bộ ' + gid + '.'; return; }
-  st.textContent = plays>0 ? ('Đã phát ' + plays + ' lần' + (mkMode==='practice' ? ' — nghe lại được.' : '')) : 'Chưa phát — bấm để nghe audio bộ ' + gid + '.';
+  if(mkSpeaking){ st.textContent = '再生中：音声 セット ' + mkAudioId + ' — このボタンを押すとその音声を停止して、音声 セット ' + gid + '.'; return; }
+  st.textContent = plays>0 ? ('再生済み ' + plays + ' 回' + (mkMode==='practice' ? ' — 聞き直しできます。' : '')) : '未再生 — 押して音声 セット ' + gid + '.';
 }
 function mkSetPlayState(gid, msg){
   var st = document.getElementById('mkPlayState' + gid);
@@ -1689,7 +1763,7 @@ function mkPlay(gid){
     if(mkWatchdog){ clearTimeout(mkWatchdog); mkWatchdog = null; }
     mkPlayer = null; mkSpeaking = false;
     mkRefreshPlayUI();
-    mkSetPlayState(gid, 'Không tải được file audio của bộ ' + gid + ' — kiểm tra kết nối mạng rồi bấm phát lại.');
+    mkSetPlayState(gid, '音声ファイルを読み込めませんでした：セット ' + gid + ' — ネットワーク接続を確認して、もう一度再生してください。');
   };
   var wdWaits = 0;
   function armStartWatchdog(){
@@ -1700,31 +1774,31 @@ function mkPlay(gid){
       var loading = false;
       try{ loading = (a.readyState > 0) || (a.networkState === 2) || (a.buffered && a.buffered.length > 0); }catch(e){}
       if(loading && wdWaits < 5){
-        mkSetPlayState(gid, 'Đang tải audio bộ ' + gid + '… mạng hơi chậm, đợi thêm một chút — đừng bấm lại.');
+        mkSetPlayState(gid, '読み込み中：音声 セット ' + gid + '… ネットワークが少し遅いです。もう少しお待ちください — もう一度押さないでください。');
         armStartWatchdog();
         return;
       }
       if(!loading && wdWaits === 1 && typeof bjtAutoRetryOnce === 'function' && bjtAutoRetryOnce('mk-' + gid)){
         mkStopAudio();
         mkPlay(gid);
-        mkSetPlayState(gid, 'Lần phát đầu bị kẹt — đang tự thử phát lại audio bộ ' + gid + '…');
+        mkSetPlayState(gid, '最初の再生が止まりました — 自動でもう一度再生を試みています：音声 セット ' + gid + '…');
         return;
       }
       mkStopAudio();
       mkRefreshPlayUI();
-      mkSetPlayState(gid, 'Audio bộ ' + gid + ' chưa phát được (mạng chậm hoặc trình duyệt bị kẹt) — bấm lại nút Phát audio bộ ' + gid + '.');
+      mkSetPlayState(gid, '音声 セット ' + gid + ' はまだ再生できません（ネットワークが遅いか、ブラウザが止まっています）— もう一度再生ボタンを押してください：音声 セット ' + gid + '.');
     }, 8000);
   }
   bjtStartAudio(a, mkGroupById[gid].audio, {
     isCurrent: function(){ return mkPlayer===a; },
     arm: armStartWatchdog,
-    onLoading: function(){ mkSetPlayState(gid, 'Đang tải audio bộ ' + gid + ' về máy… tải xong trang tự phát ngay, đừng bấm lại.'); },
+    onLoading: function(){ mkSetPlayState(gid, '読み込み中：音声 セット ' + gid + ' を端末にダウンロード中… ダウンロードが終わるとページが自動で再生します。もう一度押さないでください。'); },
     onBlocked: function(){
       if(mkPlayer!==a || counted) return;
       if(mkWatchdog){ clearTimeout(mkWatchdog); mkWatchdog = null; }
       mkPlayer = null; mkSpeaking = false;
       mkRefreshPlayUI();
-      mkSetPlayState(gid, 'Trình duyệt chặn phát audio — bấm lại nút Phát audio bộ ' + gid + '.');
+      mkSetPlayState(gid, 'ブラウザが音声の再生をブロックしました — もう一度再生ボタンを押してください：音声 セット ' + gid + '.');
     }
   });
 }
@@ -1746,14 +1820,14 @@ function mkAskSubmitPart(){
   for(var n=part.from;n<=part.to;n++){ if(mkSel[n]) done++; else missing.push(n); }
   var total = part.to - part.from + 1;
   var tail = mkPart===3
-    ? 'Đây là phần cuối — nộp xong sẽ hiện kết quả toàn đề, đáp án, giải thích, transcript và bản dịch tiếng Việt.'
-    : 'Nộp xong, phần này bị KHÓA và bài chuyển sang ' + mkParts[mkPart].name + ' — không quay lại được.';
-  document.getElementById('mkModalTitle').textContent = 'Nộp ' + part.name + '?';
+    ? 'これは最後のパートです — 提出すると、全体の結果、答え、解説、トランスクリプト、ベトナム語訳が表示されます。'
+    : '提出すると、このパートはロックされ、次へ進みます：' + mkParts[mkPart].name + ' — 戻ることはできません。';
+  document.getElementById('mkModalTitle').textContent = '提出：' + part.name + '?';
   document.getElementById('mkModalText').textContent = (done===total
-    ? 'Bạn đã trả lời đủ ' + done + '/' + total + ' câu của phần này. '
-    : 'Bạn mới trả lời ' + done + '/' + total + ' câu. Câu chưa làm: ' + missing.join(', ') + ' (câu trống tính là sai). ') + tail;
+    ? 'すべて回答しました：' + done + '/' + total + ' 問（このパート）。'
+    : '回答済みはまだ ' + done + '/' + total + ' 問だけです。未回答の問題：' + missing.join(', ') + '（空欄は不正解になります）。') + tail;
   var cf = document.getElementById('mkModalConfirm');
-  if(cf) cf.textContent = mkPart===3 ? 'Nộp phần — xem kết quả' : 'Nộp phần — khóa & chuyển tiếp';
+  if(cf) cf.textContent = mkPart===3 ? 'パートを提出 — 結果を見る' : 'パートを提出 — ロックして次へ';
   var modal = document.getElementById('mkModal');
   modal.classList.add('show');
   modal.style.display = 'flex';
@@ -1794,24 +1868,24 @@ function mkFinish(auto){
   for(var p=1;p<=3;p++){ totals[p-1] = mkPartScore[p] || 0; grand += totals[p-1]; }
   var pct = Math.round(grand / 40 * 100);
   var est = grand * 20;
-  var level = pct>=66 ? '≈ vùng J1 (530 điểm trở lên)' : pct>=54 ? '≈ vùng J2' : pct>=45 ? '≈ vùng J3' : 'dưới vùng J3 — tiếp tục luyện tập';
+  var level = pct>=66 ? '≈ J1レベル（530点以上）' : pct>=54 ? '≈ J2レベル' : pct>=45 ? '≈ J3レベル' : 'J3レベル未満 — 練習を続けましょう';
   var box = document.getElementById('mkResult');
   box.classList.add('show');
   document.getElementById('mkScoreBig').textContent = grand + ' / 40';
   document.getElementById('mkScoreTitle').textContent =
-    pct>=66 ? 'Kết quả Đề thi thử BJT 01 — chạm vùng J1 (ước lượng)' :
-    pct>=54 ? 'Kết quả Đề thi thử BJT 01 — vùng J2 (ước lượng)' :
-    pct>=45 ? 'Kết quả Đề thi thử BJT 01 — vùng J3 (ước lượng)' :
-               'Kết quả Đề thi thử BJT 01 — cần luyện thêm';
+    pct>=66 ? 'BJT模擬テスト01の結果 — J1レベルに到達（推定）' :
+    pct>=54 ? 'BJT模擬テスト01の結果 — J2レベル（推定）' :
+    pct>=45 ? 'BJT模擬テスト01の結果 — J3レベル（推定）' :
+               'BJT模擬テスト01の結果 — もう少し練習が必要です';
   var cells = '';
   for(var q=1;q<=3;q++){
     var pp = mkParts[q-1], tt = pp.to - pp.from + 1;
     cells += '<div class="mk-scorecell"><div class="v">' + totals[q-1] + ' / ' + tt + '</div><div class="k">' + pp.name + ' · ' + Math.round(totals[q-1]/tt*100) + '%</div></div>';
   }
-  cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">Quy đổi ƯỚC LƯỢNG theo tỉ lệ đúng (' + pct + '%) · Mức tham khảo: ' + level + '</div></div>';
+  cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">正答率による推定換算（' + pct + '%) · 参考レベル：' + level + '</div></div>';
   document.getElementById('mkScoreGrid').innerHTML = cells;
-  document.getElementById('mkScoreDetail').textContent = (auto ? '⏱ Hết giờ Phần 3 — bài đã tự nộp. ' : '')
-    + 'Toàn đề: đúng ' + grand + '/40 (' + pct + '%). Điểm /800 ở trên chỉ là ƯỚC LƯỢNG theo tỉ lệ số câu đúng — điểm thi thật được tính bằng thuật toán riêng của ban tổ chức, không quy đổi tuyến tính.';
+  document.getElementById('mkScoreDetail').textContent = (auto ? '⏱ パート3の時間切れ — 自動で提出されました。' : '')
+    + '全体：正解 ' + grand + '/40 (' + pct + '%）。上の /800 のスコアは正答率による推定にすぎません — 実際の試験のスコアは主催者の独自のアルゴリズムで計算され、線形には換算されません。';
   var rv = document.getElementById('mkReview'); rv.innerHTML = '';
   var shownTr = {};
   var lastPart = 0;
@@ -1821,24 +1895,24 @@ function mkFinish(auto){
       lastPart = part.num;
       var h = document.createElement('h3');
       h.className = 'section-title';
-      h.textContent = part.name + ' — đúng ' + (mkPartScore[part.num]||0) + ' / ' + (part.to - part.from + 1);
+      h.textContent = part.name + ' — 正解 ' + (mkPartScore[part.num]||0) + ' / ' + (part.to - part.from + 1);
       rv.appendChild(h);
     }
     var card = document.createElement('div'); card.className = 'review-card';
     var isOk = mkSel[item.n] === item.ans;
-    var html = '<div class="q-num">Câu ' + item.n + ' · Bộ ' + item.g + '</div>';
+    var html = '<div class="q-num">問題 ' + item.n + ' · セット ' + item.g + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
-    html += '<p style="margin:0 0 6px">Đáp án của bạn: <strong>' + (mkSel[item.n] ? mkSel[item.n] + ' — ' : 'Chưa chọn') + '</strong>' + (mkSel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mkSel[item.n])] + '</span>' : '') + '</p>';
-    html += '<p style="margin:0 0 6px">Đáp án đúng: <strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
-    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ Đúng' : '✗ Sai') + '</div>';
+    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mkSel[item.n] ? mkSel[item.n] + ' — ' : '未選択') + '</strong>' + (mkSel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mkSel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">正しい答え：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ Sai') + '</div>';
     html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
     var grp = mkGroupById[item.g];
     if(grp && grp.lines && !shownTr[item.g]){
       shownTr[item.g] = true;
       var tr = grp.lines.join('\n');
-      html += reviewAudioHtml(grp.audio, 'Nghe lại bộ ' + item.g);
-      html += '<div class="transcript jp"><strong>Transcript bộ ' + item.g + ':</strong>\n' + tr + '</div>';
-      html += viTrHtml(grp.vi, 'Bản dịch bộ ' + item.g);
+      html += reviewAudioHtml(grp.audio, '聞き直し：セット ' + item.g);
+      html += '<div class="transcript jp"><strong>トランスクリプト：セット ' + item.g + ':</strong>\n' + tr + '</div>';
+      html += viTrHtml(grp.vi, '翻訳：セット ' + item.g);
     }
     card.innerHTML = html;
     rv.appendChild(card);
@@ -1895,7 +1969,7 @@ var flashcards = [
   flashcards.forEach(function(c, i){
     var b = document.createElement('button');
     b.className = 'fc'; b.setAttribute('aria-label','Flashcard ' + c.w);
-    b.innerHTML = '<span class="fc-inner"><span class="fc-face fc-front"><span class="tag">Thẻ ' + (i+1) + ' / 10</span><span class="word jp">' + c.w + '</span><span class="hint">Bấm để lật thẻ</span></span><span class="fc-face fc-back"><span class="tag">' + c.tag + '</span><span class="mean">' + c.m + '</span></span></span>';
+    b.innerHTML = '<span class="fc-inner"><span class="fc-face fc-front"><span class="tag">カード ' + (i+1) + ' / 10</span><span class="word jp">' + c.w + '</span><span class="hint">クリックでめくる</span></span><span class="fc-face fc-back"><span class="tag">' + c.tag + '</span><span class="mean">' + c.m + '</span></span></span>';
     b.addEventListener('click', function(){ b.classList.toggle('flipped'); });
     g.appendChild(b);
   });
@@ -1913,10 +1987,10 @@ var explanations = {
 };
 function updateProgress(){
   var n = Object.keys(selected).filter(function(k){return selected[k]}).length;
-  document.getElementById('progressTxt').textContent = 'Đã chọn ' + n + ' / 3';
+  document.getElementById('progressTxt').textContent = '選択済み ' + n + ' / 3';
   document.getElementById('progressBar').style.width = (n/3*100) + '%';
   document.getElementById('submitBtn').disabled = (n < 3 || submitted);
-  document.getElementById('submitHint').textContent = submitted ? 'Đã nộp bài — xem giải thích ở từng câu.' : (n<3 ? 'Còn ' + (3-n) + ' câu chưa chọn.' : 'Đã chọn đủ 3 câu — bấm Nộp bài để chấm ngay.');
+  document.getElementById('submitHint').textContent = submitted ? '提出済み — 各問題の解説をご覧ください。' : (n<3 ? 'あと ' + (3-n) + ' 問が未選択です。' : '3問すべて選択しました — 「提出」を押して今すぐ採点しましょう。');
 }
 document.querySelectorAll('#examDemo .opt').forEach(function(btn){
   btn.addEventListener('click', function(){
@@ -1958,21 +2032,21 @@ function submitExam(auto){
     var ex = explanations[q];
     var fb = document.getElementById('fb'+q);
     var isOk = (chosen === correct);
-    var html = '<div class="verdict '+(isOk?'ok':'ng')+'">'+(isOk?'✓ ':'✗ ')+(isOk?ex.okText:ex.ngText)+(chosen? '' : ' (Bạn chưa chọn câu này)')+'</div>';
+    var html = '<div class="verdict '+(isOk?'ok':'ng')+'">'+(isOk?'✓ ':'✗ ')+(isOk?ex.okText:ex.ngText)+(chosen? '' : '（この問題はまだ選択していません）')+'</div>';
     html += '<p style="margin:8px 0 0">'+ex.body+'</p>';
-    if(ex.transcript){ html += '<div class="transcript jp"><strong>Transcript:</strong>\n'+ex.transcript+'</div>'; html += viTrHtml(ex.transcriptVi, 'Bản dịch'); }
+    if(ex.transcript){ html += '<div class="transcript jp"><strong>Transcript:</strong>\n'+ex.transcript+'</div>'; html += viTrHtml(ex.transcriptVi, '翻訳'); }
     fb.innerHTML = html; fb.classList.add('show');
   });
   var box = document.getElementById('resultBox');
   box.classList.add('show');
   document.getElementById('scoreBig').textContent = score + ' / 3';
-  var titles = {0:'Cần luyện thêm nền tảng',1:'Khởi đầu ổn — cần chắc số liệu',2:'Rất tốt — suýt tuyệt đối',3:'Tuyệt vời — đúng cả 3 phần!'};
+  var titles = {0:'基礎の練習がもう少し必要です',1:'良いスタート — 数値を固めましょう',2:'とても良い — 満点まであと少し',3:'素晴らしい — 3パートすべて正解！'};
   document.getElementById('scoreTitle').textContent = titles[score];
   var parts = [];
-  parts.push('聴解: '+(selected[1]===answers[1]?'Đúng':'Sai'));
-  parts.push('聴読解: '+(selected[2]===answers[2]?'Đúng':'Sai'));
-  parts.push('読解: '+(selected[3]===answers[3]?'Đúng':'Sai'));
-  document.getElementById('scoreDetail').textContent = (auto?'⏱ Hết giờ — đã tự nộp. ':'') + parts.join('  ·  ');
+  parts.push('聴解: '+(selected[1]===answers[1]?'正解':'Sai'));
+  parts.push('聴読解: '+(selected[2]===answers[2]?'正解':'Sai'));
+  parts.push('読解: '+(selected[3]===answers[3]?'正解':'Sai'));
+  document.getElementById('scoreDetail').textContent = (auto?'⏱ 時間切れ — 自動で提出されました。':'') + parts.join('  ·  ');
   updateProgress();
   box.scrollIntoView({behavior:'smooth', block:'center'});
 }
@@ -2161,7 +2235,7 @@ window.resetDay21 = resetDay21;
 window.cbtPrev21 = cbtPrev21;
 window.cbtNext21 = cbtNext21;
 (function wireTabs(){
-  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabDay23:'day23', tabDay24:'day24', tabMock1:'mock1', tabMock2:'mock2', tabMock3:'mock3', tabDemo:'demo' };
+  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabDay23:'day23', tabDay24:'day24', tabDay25:'day25', tabMock1:'mock1', tabMock2:'mock2', tabMock3:'mock3', tabDemo:'demo' };
   Object.keys(map).forEach(function(id){
     var el = document.getElementById(id);
     if(el) el.addEventListener('click', function(){ userPickedExam = true; switchExam(map[id]); });
@@ -2225,14 +2299,14 @@ function mk2RenderStepper(){
     step.classList.toggle('now', mk2Part===p && mk2PartScore[p]===null);
     var part = mk2Parts[p-1], total = part.to - part.from + 1;
     st.textContent = mk2PartScore[p]!==null
-      ? ('✓ Đã khóa — đúng ' + mk2PartScore[p] + ' / ' + total)
-      : (mk2Part===p ? 'Đang làm…' : 'Chưa bắt đầu');
+      ? ('✓ ロック済み — 正解 ' + mk2PartScore[p] + ' / ' + total)
+      : (mk2Part===p ? '実施中…' : '未開始');
   }
 }
 function startMock2(){
   if(mk2Started) return;
   var status = document.getElementById('mk2StartStatus');
-  if(status) status.textContent = 'Đang mở Phần 1…';
+  if(status) status.textContent = 'パート1を開いています…';
   mk2Started = true;
   var sp = document.getElementById('mk2Start');
   if(sp){ sp.classList.add('hidden'); sp.style.display = 'none'; }
@@ -2250,16 +2324,16 @@ function mk2BeginPart(p, auto){
   if(banner){
     if(p>1){
       var prev = mk2Parts[p-2], pTotal = prev.to - prev.from + 1;
-      banner.textContent = (auto ? '⏱ Hết giờ ' : 'Đã nộp ') + prev.name + ' — phần này đã bị khóa (đúng ' + mk2PartScore[p-1] + ' / ' + pTotal + '), không thể quay lại. Bạn đang làm ' + part.name + '.';
+      banner.textContent = (auto ? '⏱ 時間切れ ' : '提出済み ') + prev.name + ' — このパートはロックされました（正解 ' + mk2PartScore[p-1] + ' / ' + pTotal + '）、戻ることはできません。現在実施中：' + part.name + '.';
       banner.classList.remove('hidden');
     } else {
-      banner.textContent = 'Bạn đang làm ' + part.name + ' — đồng hồ ' + fmtT(part.time) + ' đang chạy. Hết giờ hoặc nộp phần thì phần này khóa và chuyển phần tiếp theo.';
+      banner.textContent = '現在実施中：' + part.name + ' — タイマー ' + fmtT(part.time) + ' が動いています。時間が終わるかパートを提出すると、このパートはロックされ、次のパートへ進みます。';
       banner.classList.remove('hidden');
     }
   }
   var ex = document.getElementById('mk2Exam');
   ex.classList.remove('hidden'); ex.style.display = '';
-  document.getElementById('mk2PalTitle').textContent = 'Danh sách câu hỏi — Phần ' + p + ' (' + part.jp + ')';
+  document.getElementById('mk2PalTitle').textContent = '問題一覧 — パート' + p + ' (' + part.jp + ')';
   mk2BuildGroups();
   mk2RenderPalette();
   mk2UpdateHint();
@@ -2285,13 +2359,13 @@ function mk2BuildGroups(){
     var banner = document.createElement('div'); banner.className = 'seg-banner';
     var st = document.createElement('div'); st.className = 'seg-title jp'; st.textContent = g.title;
     var sd = document.createElement('div'); sd.className = 'seg-desc';
-    sd.textContent = g.desc + (g.audio ? (mk2Mode==='real' ? ' · Chế độ thi thật: audio của bộ này chỉ phát 1 lần.' : ' · Chế độ luyện tập: nghe lại được.') : '');
+    sd.textContent = g.desc + (g.audio ? (mk2Mode==='real' ? ' · 本番モード：このセットの音声は1回だけ再生されます。' : ' · 練習モード：聞き直しできます。') : '');
     banner.appendChild(st); banner.appendChild(sd);
     if(g.audio){
       var arow = document.createElement('div'); arow.className = 'audio-row';
       var pb = document.createElement('button');
       pb.type = 'button'; pb.className = 'play-btn'; pb.id = 'mk2PlayBtn' + g.id;
-      pb.innerHTML = '<span class="tri">▶</span><span>Phát audio bộ ' + g.id + '</span>';
+      pb.innerHTML = '<span class="tri">▶</span><span>音声 セット ' + g.id + '</span>';
       (function(gid){ pb.addEventListener('click', function(){ mk2Play(gid); }); })(g.id);
       var ps = document.createElement('span'); ps.className = 'play-state'; ps.id = 'mk2PlayState' + g.id;
       arow.appendChild(pb); arow.appendChild(ps);
@@ -2309,7 +2383,7 @@ function mk2BuildGroups(){
       card.className = 'qcard'; card.id = 'mkqcard-' + n;
       var meta = document.createElement('div'); meta.className = 'q-meta';
       var qn = document.createElement('span'); qn.className = 'q-num';
-      qn.textContent = 'Câu ' + n + ' / 80 · Bộ ' + g.id;
+      qn.textContent = '問題 ' + n + ' / 80 · セット ' + g.id;
       var fb = document.createElement('button');
       fb.type = 'button'; fb.className = 'flag-btn'; fb.id = 'mkflagBtn' + n;
       (function(nn){ fb.addEventListener('click', function(){ mk2ToggleFlag(nn); }); })(n);
@@ -2317,7 +2391,7 @@ function mk2BuildGroups(){
       var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = item.q;
       var opts = document.createElement('div');
       opts.className = 'options'; opts.id = 'mkqOptions' + n;
-      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','Đáp án câu ' + n);
+      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','問題の答え ' + n);
       card.appendChild(meta); card.appendChild(qt); card.appendChild(opts);
       (function(nn){ card.addEventListener('click', function(){ mk2SetActive(nn, false); }); })(n);
       group.appendChild(card);
@@ -2350,7 +2424,7 @@ function mk2UpdateQuestion(n){
   var fb = document.getElementById('mkflagBtn' + n);
   if(fb){
     fb.classList.toggle('on', !!mk2Flag[n]);
-    fb.textContent = mk2Flag[n] ? '⚑ Đã đánh dấu — bấm để bỏ' : '⚑ Đánh dấu câu này';
+    fb.textContent = mk2Flag[n] ? '⚑ フラグ済み — 押して解除' : '⚑ この問題にフラグ';
   }
   var box = document.getElementById('mkqOptions' + n);
   if(!box) return;
@@ -2373,9 +2447,9 @@ function mk2RenderPalette(){
   for(var n=part.from;n<=part.to;n++){
     var item = mk2Questions[n-1];
     var b = document.createElement('button');
-    b.className = 'pal-btn'; b.setAttribute('aria-label','Câu ' + n);
+    b.className = 'pal-btn'; b.setAttribute('aria-label','問題 ' + n);
     b.innerHTML = '<span class="pnum">' + n + '</span><span class="plabel"></span><span class="pstat"></span>';
-    b.querySelector('.plabel').textContent = 'Bộ ' + item.g + ' · ' + part.jp;
+    b.querySelector('.plabel').textContent = 'セット ' + item.g + ' · ' + part.jp;
     var st = b.querySelector('.pstat');
     if(mk2Sel[n]) b.classList.add('answered');
     if(mk2Sel[n]) st.textContent = '✓';
@@ -2386,9 +2460,9 @@ function mk2RenderPalette(){
   }
   var done = 0;
   for(var m=part.from;m<=part.to;m++){ if(mk2Sel[m]) done++; }
-  document.getElementById('mk2PalCount').textContent = 'Đã trả lời ' + done + ' / ' + (part.to - part.from + 1) + ' (phần ' + mk2Part + ')';
+  document.getElementById('mk2PalCount').textContent = '回答済み ' + done + ' / ' + (part.to - part.from + 1) + '（パート ' + mk2Part + ')';
   var fs = document.getElementById('mk2FootStatus');
-  if(fs) fs.textContent = 'Đang xem câu ' + mk2Current + ' / 80 · Phần ' + mk2Part + ': đã trả lời ' + done + ' / ' + (part.to - part.from + 1);
+  if(fs) fs.textContent = '表示中：問題 ' + mk2Current + ' / 80 · パート ' + mk2Part + '：回答済み ' + done + ' / ' + (part.to - part.from + 1);
   var prev = document.getElementById('mk2PrevBtn'), next = document.getElementById('mk2NextBtn');
   if(prev) prev.disabled = (mk2Current <= part.from);
   if(next) next.disabled = (mk2Current >= part.to);
@@ -2399,9 +2473,9 @@ function mk2UpdateHint(){
   for(var m=part.from;m<=part.to;m++){ if(mk2Sel[m]) done++; }
   var el = document.getElementById('mk2SubmitHint');
   if(el) el.textContent = done === total
-    ? 'Đã trả lời đủ ' + done + ' / ' + total + ' câu của phần này — bấm Nộp phần để khóa phần và chuyển tiếp.'
-    : 'Đã trả lời ' + done + ' / ' + total + ' câu của phần này — còn ' + (total - done) + ' câu chưa chọn. Nộp phần vẫn được (câu trống tính là sai) và phần sẽ bị khóa.';
-  var lbl = mk2Part===3 ? 'Nộp Phần 3 — xem kết quả' : ('Nộp phần ' + mk2Part + ' — sang Phần ' + (mk2Part+1));
+    ? 'すべて回答しました ' + done + ' / ' + total + ' 問（このパート）— 「パートを提出」を押してこのパートをロックし、次へ進みましょう。'
+    : '回答済み ' + done + ' / ' + total + ' 問（このパート）— あと ' + (total - done) + ' 問が未選択です。パートの提出はできます（空欄は不正解になります）。このパートはロックされます。';
+  var lbl = mk2Part===3 ? 'パート3を提出 — 結果を見る' : ('パートを提出 ' + mk2Part + ' — 次のパートへ：パート' + (mk2Part+1));
   var s1 = document.getElementById('mk2SubmitBtnSide'), s2 = document.getElementById('mk2SubmitBtnBottom');
   if(s1) s1.textContent = lbl;
   if(s2) s2.textContent = lbl;
@@ -2436,11 +2510,11 @@ function mk2RefreshOnePlayUI(gid){
   var btn = document.getElementById('mk2PlayBtn' + gid), st = document.getElementById('mk2PlayState' + gid);
   if(!btn || !st) return;
   var plays = mk2Plays[gid] || 0;
-  if(mk2Speaking && mk2AudioId===gid){ btn.disabled = true; st.textContent = 'Đang phát audio bộ ' + gid + '… nghe kỹ và trả lời các câu của bộ này.'; return; }
-  if(mk2Mode==='real' && plays>=1){ btn.disabled = true; st.textContent = 'Audio bộ ' + gid + ' đã phát 1/1 lần (chế độ thi thật).'; return; }
+  if(mk2Speaking && mk2AudioId===gid){ btn.disabled = true; st.textContent = '再生中：音声 セット ' + gid + '… よく聞いて、このセットの問題に答えましょう。'; return; }
+  if(mk2Mode==='real' && plays>=1){ btn.disabled = true; st.textContent = '音声 セット ' + gid + ' は1/1回再生済みです（本番モード）。'; return; }
   btn.disabled = false;
-  if(mk2Speaking){ st.textContent = 'Đang phát audio bộ ' + mk2AudioId + ' — bấm nút này để dừng đoạn đó và phát audio bộ ' + gid + '.'; return; }
-  st.textContent = plays>0 ? ('Đã phát ' + plays + ' lần' + (mk2Mode==='practice' ? ' — nghe lại được.' : '')) : 'Chưa phát — bấm để nghe audio bộ ' + gid + '.';
+  if(mk2Speaking){ st.textContent = '再生中：音声 セット ' + mk2AudioId + ' — このボタンを押すとその音声を停止して、音声 セット ' + gid + '.'; return; }
+  st.textContent = plays>0 ? ('再生済み ' + plays + ' 回' + (mk2Mode==='practice' ? ' — 聞き直しできます。' : '')) : '未再生 — 押して音声 セット ' + gid + '.';
 }
 function mk2SetPlayState(gid, msg){
   var st = document.getElementById('mk2PlayState' + gid);
@@ -2479,7 +2553,7 @@ function mk2Play(gid){
     if(mk2Watchdog){ clearTimeout(mk2Watchdog); mk2Watchdog = null; }
     mk2Player = null; mk2Speaking = false;
     mk2RefreshPlayUI();
-    mk2SetPlayState(gid, 'Không tải được file audio của bộ ' + gid + ' — kiểm tra kết nối mạng rồi bấm phát lại.');
+    mk2SetPlayState(gid, '音声ファイルを読み込めませんでした：セット ' + gid + ' — ネットワーク接続を確認して、もう一度再生してください。');
   };
   var wdWaits = 0;
   function armStartWatchdog(){
@@ -2490,31 +2564,31 @@ function mk2Play(gid){
       var loading = false;
       try{ loading = (a.readyState > 0) || (a.networkState === 2) || (a.buffered && a.buffered.length > 0); }catch(e){}
       if(loading && wdWaits < 5){
-        mk2SetPlayState(gid, 'Đang tải audio bộ ' + gid + '… mạng hơi chậm, đợi thêm một chút — đừng bấm lại.');
+        mk2SetPlayState(gid, '読み込み中：音声 セット ' + gid + '… ネットワークが少し遅いです。もう少しお待ちください — もう一度押さないでください。');
         armStartWatchdog();
         return;
       }
       if(!loading && wdWaits === 1 && typeof bjtAutoRetryOnce === 'function' && bjtAutoRetryOnce('mk-' + gid)){
         mk2StopAudio();
         mk2Play(gid);
-        mk2SetPlayState(gid, 'Lần phát đầu bị kẹt — đang tự thử phát lại audio bộ ' + gid + '…');
+        mk2SetPlayState(gid, '最初の再生が止まりました — 自動でもう一度再生を試みています：音声 セット ' + gid + '…');
         return;
       }
       mk2StopAudio();
       mk2RefreshPlayUI();
-      mk2SetPlayState(gid, 'Audio bộ ' + gid + ' chưa phát được (mạng chậm hoặc trình duyệt bị kẹt) — bấm lại nút Phát audio bộ ' + gid + '.');
+      mk2SetPlayState(gid, '音声 セット ' + gid + ' はまだ再生できません（ネットワークが遅いか、ブラウザが止まっています）— もう一度再生ボタンを押してください：音声 セット ' + gid + '.');
     }, 8000);
   }
   bjtStartAudio(a, mk2GroupById[gid].audio, {
     isCurrent: function(){ return mk2Player===a; },
     arm: armStartWatchdog,
-    onLoading: function(){ mk2SetPlayState(gid, 'Đang tải audio bộ ' + gid + ' về máy… tải xong trang tự phát ngay, đừng bấm lại.'); },
+    onLoading: function(){ mk2SetPlayState(gid, '読み込み中：音声 セット ' + gid + ' を端末にダウンロード中… ダウンロードが終わるとページが自動で再生します。もう一度押さないでください。'); },
     onBlocked: function(){
       if(mk2Player!==a || counted) return;
       if(mk2Watchdog){ clearTimeout(mk2Watchdog); mk2Watchdog = null; }
       mk2Player = null; mk2Speaking = false;
       mk2RefreshPlayUI();
-      mk2SetPlayState(gid, 'Trình duyệt chặn phát audio — bấm lại nút Phát audio bộ ' + gid + '.');
+      mk2SetPlayState(gid, 'ブラウザが音声の再生をブロックしました — もう一度再生ボタンを押してください：音声 セット ' + gid + '.');
     }
   });
 }
@@ -2536,14 +2610,14 @@ function mk2AskSubmitPart(){
   for(var n=part.from;n<=part.to;n++){ if(mk2Sel[n]) done++; else missing.push(n); }
   var total = part.to - part.from + 1;
   var tail = mk2Part===3
-    ? 'Đây là phần cuối — nộp xong sẽ hiện kết quả toàn đề, đáp án, giải thích, transcript và bản dịch tiếng Việt.'
-    : 'Nộp xong, phần này bị KHÓA và bài chuyển sang ' + mk2Parts[mk2Part].name + ' — không quay lại được.';
-  document.getElementById('mk2ModalTitle').textContent = 'Nộp ' + part.name + '?';
+    ? 'これは最後のパートです — 提出すると、全体の結果、答え、解説、トランスクリプト、ベトナム語訳が表示されます。'
+    : '提出すると、このパートはロックされ、次へ進みます：' + mk2Parts[mk2Part].name + ' — 戻ることはできません。';
+  document.getElementById('mk2ModalTitle').textContent = '提出：' + part.name + '?';
   document.getElementById('mk2ModalText').textContent = (done===total
-    ? 'Bạn đã trả lời đủ ' + done + '/' + total + ' câu của phần này. '
-    : 'Bạn mới trả lời ' + done + '/' + total + ' câu. Câu chưa làm: ' + missing.join(', ') + ' (câu trống tính là sai). ') + tail;
+    ? 'すべて回答しました：' + done + '/' + total + ' 問（このパート）。'
+    : '回答済みはまだ ' + done + '/' + total + ' 問だけです。未回答の問題：' + missing.join(', ') + '（空欄は不正解になります）。') + tail;
   var cf = document.getElementById('mk2ModalConfirm');
-  if(cf) cf.textContent = mk2Part===3 ? 'Nộp phần — xem kết quả' : 'Nộp phần — khóa & chuyển tiếp';
+  if(cf) cf.textContent = mk2Part===3 ? 'パートを提出 — 結果を見る' : 'パートを提出 — ロックして次へ';
   var modal = document.getElementById('mk2Modal');
   modal.classList.add('show');
   modal.style.display = 'flex';
@@ -2584,24 +2658,24 @@ function mk2Finish(auto){
   for(var p=1;p<=3;p++){ totals[p-1] = mk2PartScore[p] || 0; grand += totals[p-1]; }
   var pct = Math.round(grand / 80 * 100);
   var est = grand * 10;
-  var level = pct>=66 ? '≈ vùng J1 (530 điểm trở lên)' : pct>=54 ? '≈ vùng J2' : pct>=45 ? '≈ vùng J3' : 'dưới vùng J3 — tiếp tục luyện tập';
+  var level = pct>=66 ? '≈ J1レベル（530点以上）' : pct>=54 ? '≈ J2レベル' : pct>=45 ? '≈ J3レベル' : 'J3レベル未満 — 練習を続けましょう';
   var box = document.getElementById('mk2Result');
   box.classList.add('show');
   document.getElementById('mk2ScoreBig').textContent = grand + ' / 80';
   document.getElementById('mk2ScoreTitle').textContent =
-    pct>=66 ? 'Kết quả Đề thi thử BJT 02 — chạm vùng J1 (ước lượng)' :
-    pct>=54 ? 'Kết quả Đề thi thử BJT 02 — vùng J2 (ước lượng)' :
-    pct>=45 ? 'Kết quả Đề thi thử BJT 02 — vùng J3 (ước lượng)' :
-               'Kết quả Đề thi thử BJT 02 — cần luyện thêm';
+    pct>=66 ? 'BJT模擬テスト02の結果 — J1レベルに到達（推定）' :
+    pct>=54 ? 'BJT模擬テスト02の結果 — J2レベル（推定）' :
+    pct>=45 ? 'BJT模擬テスト02の結果 — J3レベル（推定）' :
+               'BJT模擬テスト02の結果 — もう少し練習が必要です';
   var cells = '';
   for(var q=1;q<=3;q++){
     var pp = mk2Parts[q-1], tt = pp.to - pp.from + 1;
     cells += '<div class="mk-scorecell"><div class="v">' + totals[q-1] + ' / ' + tt + '</div><div class="k">' + pp.name + ' · ' + Math.round(totals[q-1]/tt*100) + '%</div></div>';
   }
-  cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">Quy đổi ƯỚC LƯỢNG theo tỉ lệ đúng (' + pct + '%) · Mức tham khảo: ' + level + '</div></div>';
+  cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">正答率による推定換算（' + pct + '%) · 参考レベル：' + level + '</div></div>';
   document.getElementById('mk2ScoreGrid').innerHTML = cells;
-  document.getElementById('mk2ScoreDetail').textContent = (auto ? '⏱ Hết giờ Phần 3 — bài đã tự nộp. ' : '')
-    + 'Toàn đề: đúng ' + grand + '/80 (' + pct + '%). Điểm /800 ở trên chỉ là ƯỚC LƯỢNG theo tỉ lệ số câu đúng — điểm thi thật được tính bằng thuật toán riêng của ban tổ chức, không quy đổi tuyến tính.';
+  document.getElementById('mk2ScoreDetail').textContent = (auto ? '⏱ パート3の時間切れ — 自動で提出されました。' : '')
+    + '全体：正解 ' + grand + '/80 (' + pct + '%）。上の /800 のスコアは正答率による推定にすぎません — 実際の試験のスコアは主催者の独自のアルゴリズムで計算され、線形には換算されません。';
   var rv = document.getElementById('mk2Review'); rv.innerHTML = '';
   var shownTr = {};
   var lastPart = 0;
@@ -2611,24 +2685,24 @@ function mk2Finish(auto){
       lastPart = part.num;
       var h = document.createElement('h3');
       h.className = 'section-title';
-      h.textContent = part.name + ' — đúng ' + (mk2PartScore[part.num]||0) + ' / ' + (part.to - part.from + 1);
+      h.textContent = part.name + ' — 正解 ' + (mk2PartScore[part.num]||0) + ' / ' + (part.to - part.from + 1);
       rv.appendChild(h);
     }
     var card = document.createElement('div'); card.className = 'review-card';
     var isOk = mk2Sel[item.n] === item.ans;
-    var html = '<div class="q-num">Câu ' + item.n + ' · Bộ ' + item.g + '</div>';
+    var html = '<div class="q-num">問題 ' + item.n + ' · セット ' + item.g + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
-    html += '<p style="margin:0 0 6px">Đáp án của bạn: <strong>' + (mk2Sel[item.n] ? mk2Sel[item.n] + ' — ' : 'Chưa chọn') + '</strong>' + (mk2Sel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mk2Sel[item.n])] + '</span>' : '') + '</p>';
-    html += '<p style="margin:0 0 6px">Đáp án đúng: <strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
-    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ Đúng' : '✗ Sai') + '</div>';
+    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk2Sel[item.n] ? mk2Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk2Sel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mk2Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">正しい答え：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ Sai') + '</div>';
     html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
     var grp = mk2GroupById[item.g];
     if(grp && grp.lines && !shownTr[item.g]){
       shownTr[item.g] = true;
       var tr = grp.lines.join('\n');
-      html += reviewAudioHtml(grp.audio, 'Nghe lại bộ ' + item.g);
-      html += '<div class="transcript jp"><strong>Transcript bộ ' + item.g + ':</strong>\n' + tr + '</div>';
-      html += viTrHtml(grp.vi, 'Bản dịch bộ ' + item.g);
+      html += reviewAudioHtml(grp.audio, '聞き直し：セット ' + item.g);
+      html += '<div class="transcript jp"><strong>トランスクリプト：セット ' + item.g + ':</strong>\n' + tr + '</div>';
+      html += viTrHtml(grp.vi, '翻訳：セット ' + item.g);
     }
     card.innerHTML = html;
     rv.appendChild(card);
@@ -3139,30 +3213,6 @@ function mk3Reset(){
 </script>
 
 <!-- Exam day data files -->
-<script src="data/exams/day1.js"></script>
-<script src="data/exams/day2.js"></script>
-<script src="data/exams/day3.js"></script>
-<script src="data/exams/day4.js"></script>
-<script src="data/exams/day5.js"></script>
-<script src="data/exams/day6.js"></script>
-<script src="data/exams/day7.js"></script>
-<script src="data/exams/day8.js"></script>
-<script src="data/exams/day9.js"></script>
-<script src="data/exams/day10.js"></script>
-<script src="data/exams/day11.js"></script>
-<script src="data/exams/day12.js"></script>
-<script src="data/exams/day13.js"></script>
-<script src="data/exams/day14.js"></script>
-<script src="data/exams/day15.js"></script>
-<script src="data/exams/day16.js"></script>
-<script src="data/exams/day17.js"></script>
-<script src="data/exams/day18.js"></script>
-<script src="data/exams/day19.js"></script>
-<script src="data/exams/day20.js"></script>
-<script src="data/exams/day21.js"></script>
-<script src="data/exams/day22.js"></script>
-<script src="data/exams/day23.js"></script>
-<script src="data/exams/day24.js"></script>
 
 <!-- Exam engine -->
 <script src="js/exam-engine.js"></script>
@@ -3179,54 +3229,53 @@ if(seoL) seoL.style.display = 'none';
 if(typeof currentExam !== 'undefined') switchExam(currentExam);
 </script>
 
-<script src="data/videos.js"></script>
 <script>
 /* ============ THƯ VIỆN VIDEO — dữ liệu từ catalog video hằng ngày ============
    VIDEO_LIBRARY được trích nguyên văn từ catalog.json của thư viện video
    (tình huống JP/VI/EN, lời thoại 3 thứ tiếng, từ vựng kèm cách đọc).
    File phát là bản ngang 1280x720 tại assets/video-<slug>.mp4. */
 var VID_SPEAKERS = {
-  boss_male: 'Sếp · nam',
-  staff_female: 'Nhân viên · nữ',
-  customer_male: 'Khách hàng · nam',
-  support_female: 'Hỗ trợ khách hàng · nữ',
-  colleague_male: 'Đồng nghiệp · nam',
-  colleague_female: 'Đồng nghiệp · nữ',
-  visitor_male: 'Khách đến thăm · nam',
-  staff_male: 'Nhân viên · nam',
-  boss_female: 'Sếp · nữ',
+  boss_male: '上司 · 男性',
+  staff_female: '社員 · 女性',
+  customer_male: 'お客様 · 男性',
+  support_female: 'カスタマーサポート · 女性',
+  colleague_male: '同僚 · 男性',
+  colleague_female: '同僚 · 女性',
+  visitor_male: '来客 · 男性',
+  staff_male: '社員 · 男性',
+  boss_female: '上司 · 女性',
   sales_male: 'Kinh doanh · nam',
-  sales_female: 'Nhân viên kinh doanh Sato · nữ',
-  client_male: 'Khách hàng · nam',
-  manager_female: 'Trưởng phòng · nữ',
-  chief_female: 'Trưởng phòng · nữ',
-  employee_male: 'Nhân viên · nam',
-  employee_female: 'Nhân viên · nữ',
-  manager_male: 'Trưởng phòng · nam',
-  new_employee_female: 'Nhân viên mới Yamada · nữ',
-  caller_female: 'Người gọi · nữ',
-  other_female: 'Người nghe máy Suzuki · nữ',
-  client_female: 'Khách hàng · nữ',
-  buyer_male: 'Người mua Sato · nam',
-  supplier_male: 'Nhân viên bán hàng Suzuki · nam',
-  soumu_female: 'Tổng vụ · nữ',
-  accounting_female: 'Kế toán · nữ',
-  training_manager_male: 'Quản lý đào tạo · nam',
-  junior_female: 'Nhân viên mới Misaki · nữ',
-  senior_female: 'Đồng nghiệp lớn tuổi Yuki · nữ',
-  senpai_female: 'Tiền bối Tanaka · nữ',
-  reception_male: 'Tiếp nhận Watanabe · nam',
-  sales_suzuki_female: 'Nhân viên kinh doanh Suzuki · nữ',
-  manager_takahashi_male: 'Trưởng phòng Takahashi · nam',
-  staff_sato_female: 'Nhân viên Sato · nữ',
-  client_kobayashi_male: 'Đối tác Kobayashi · nam',
-  client_hamamoto_female: 'Đối tác Hamamoto · nữ',
-  staff_aoki_female: 'Nhân viên Aoki · nữ',
-  staff_nakamura_female: 'Nhân viên Nakamura · nữ',
-  tanaka: 'Nhân viên Tanaka · nam',
-  yamamoto: 'Trưởng phòng Yamamoto · nam',
-  watanabe: 'Tiền bối Watanabe · nữ',
-  kobayashi: 'Nhân viên Kobayashi · nam'
+  sales_female: '営業担当 Sato · 女性',
+  client_male: 'お客様 · 男性',
+  manager_female: '部長 · 女性',
+  chief_female: '部長 · 女性',
+  employee_male: '社員 · 男性',
+  employee_female: '社員 · 女性',
+  manager_male: '部長 · 男性',
+  new_employee_female: '新入社員 Yamada · 女性',
+  caller_female: '電話の相手 · 女性',
+  other_female: '電話を受けた Suzuki · 女性',
+  client_female: 'お客様 · 女性',
+  buyer_male: '購買担当 Sato · 男性',
+  supplier_male: '販売担当 Suzuki · 男性',
+  soumu_female: '総務 · 女性',
+  accounting_female: '経理 · 女性',
+  training_manager_male: '研修管理者 · 男性',
+  junior_female: '新入社員 Misaki · 女性',
+  senior_female: '年上の同僚 Yuki · 女性',
+  senpai_female: '先輩 Tanaka · 女性',
+  reception_male: '受付 Watanabe · 男性',
+  sales_suzuki_female: '営業担当 Suzuki · 女性',
+  manager_takahashi_male: 'Takahashi 部長 · 男性',
+  staff_sato_female: '社員 Sato · 女性',
+  client_kobayashi_male: '取引先 Kobayashi · 男性',
+  client_hamamoto_female: '取引先 Hamamoto · 女性',
+  staff_aoki_female: '社員 Aoki · 女性',
+  staff_nakamura_female: '社員 Nakamura · 女性',
+  tanaka: '社員 Tanaka · 男性',
+  yamamoto: 'Yamamoto 部長 · 男性',
+  watanabe: '先輩 Watanabe · 女性',
+  kobayashi: '社員 Kobayashi · 男性'
 };
 function vidEsc(s){
   return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
@@ -3287,11 +3336,11 @@ function vidArmPlayer(p){
   function fallbackBlob(){
     if(state !== 'direct') return;
     state = 'loading';
-    say('Đang tải video…');
+    say('動画を読み込み中…');
     if(typeof bjtFetchBlob !== 'function'){ state = 'direct'; say(''); return; }
     bjtFetchBlob(url, function(bu){
-      if(bu){ p.src = bu; state = 'ready'; say('Đã tải xong video — bấm nút Phát trên trình phát để xem.'); }
-      else { state = 'direct'; say('Không tải được video — kiểm tra mạng rồi thử lại.'); }
+      if(bu){ p.src = bu; state = 'ready'; say('動画の読み込みが完了しました — プレーヤーの再生ボタンを押してご覧ください。'); }
+      else { state = 'direct'; say('動画を読み込めませんでした — ネットワークを確認してもう一度お試しください。'); }
     }, true);
   }
   /* Chỉ dự phòng khi đường trực tiếp chết TRƯỚC KHI có hình (readyState
@@ -3327,16 +3376,16 @@ function renderVideoLibrary(){
   vids.forEach(function(v){ (byCat[v.category] = byCat[v.category] || []).push(v); });
   var present = cats.filter(function(c){ return byCat[c.id] && byCat[c.id].length; });
   /* filter chips */
-  var fh = '<button class="vid-chip active" type="button" data-vfilter="all">Tất cả · <span class="n">' + vids.length + ' video</span></button>';
+  var fh = '<button class="vid-chip active" type="button" data-vfilter="all">すべて · <span class="n">' + vids.length + ' video</span></button>';
   present.forEach(function(c){
-    fh += '<button class="vid-chip" type="button" data-vfilter="' + vidEsc(c.id) + '">' + vidEsc(c.vi) + ' · <span class="n">' + byCat[c.id].length + '</span></button>';
+    fh += '<button class="vid-chip" type="button" data-vfilter="' + vidEsc(c.id) + '">' + vidEsc(c.jp) + ' · <span class="n">' + byCat[c.id].length + '</span></button>';
   });
   if(filt) filt.innerHTML = fh;
   /* category sections + cards */
   var html = '';
   present.forEach(function(c){
     html += '<section class="vid-cat" data-vcat="' + vidEsc(c.id) + '">'
-      + '<div class="vid-cat-head"><h2>' + vidEsc(c.vi) + '</h2><span class="jp">' + vidEsc(c.jp) + '</span>'
+      + '<div class="vid-cat-head"><h2>' + vidEsc(c.jp) + '</h2><span class="jp">' + vidEsc(c.vi) + '</span>'
       + '<span class="cnt">' + byCat[c.id].length + ' video</span></div>'
       + '<div class="vid-grid">';
     byCat[c.id].forEach(function(v){
@@ -3346,26 +3395,26 @@ function renderVideoLibrary(){
       var icoClose = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="M6 6l12 12"/></svg>';
       html += '<article class="vid-card">'
         + '<div class="vid-zoombar"><span class="vid-zoom-title jp">' + vidEsc(v.situation.jp) + '</span>'
-        + '<button class="vid-tool" type="button" data-vidunzoom aria-label="Thu nhỏ video — ' + vidEsc(v.situation.vi) + '">' + icoClose + 'Thu nhỏ</button></div>'
+        + '<button class="vid-tool" type="button" data-vidunzoom aria-label="ビデオを縮小 — ' + vidEsc(v.situation.vi) + '">' + icoClose + '縮小</button></div>'
         + '<video controls preload="none" playsinline data-vsrc="' + vfile + '" aria-label="' + vidEsc(v.situation.vi) + '"></video>'
         + '<div class="vid-tools">'
-        + '<button class="vid-tool" type="button" data-vidzoom aria-label="Phóng to video — ' + vidEsc(v.situation.vi) + '">' + icoZoom + 'Phóng to</button>'
+        + '<button class="vid-tool" type="button" data-vidzoom aria-label="ビデオを拡大 — ' + vidEsc(v.situation.vi) + '">' + icoZoom + '拡大</button>'
         + '<span class="vid-status" data-vidstatus aria-live="polite"></span>'
         + '</div>'
         + '<div class="vid-body">'
         + '<div class="vid-jp jp">' + vidEsc(v.situation.jp) + '</div>'
         + '<div class="vid-vi">' + vidEsc(v.situation.vi) + '</div>'
         + '<div class="vid-en">' + vidEsc(v.situation.en) + '</div>'
-        + '<div class="vid-meta"><span>⏱ ' + vidDur(v.duration_sec) + '</span><span>' + vidDate(v.date) + '</span><span>' + dlg.length + ' câu thoại</span><span>' + voc.length + ' từ vựng</span></div>'
-        + '<details class="vid-details"><summary>Lời thoại 3 thứ tiếng &amp; từ vựng</summary>';
+        + '<div class="vid-meta"><span>⏱ ' + vidDur(v.duration_sec) + '</span><span>' + vidDate(v.date) + '</span><span>' + dlg.length + ' セリフ</span><span>' + voc.length + ' 単語</span></div>'
+        + '<details class="vid-details"><summary>セリフ（3言語）＆単語</summary>';
       dlg.forEach(function(l){
         html += '<div class="vid-line"><span class="vid-spk">' + vidEsc(VID_SPEAKERS[l.speaker] || l.speaker) + '</span>'
           + '<div class="l-jp jp">' + vidEsc(l.jp) + '</div>'
           + '<div class="l-vi">' + vidEsc(l.vi) + '</div>'
           + '<div class="l-en">' + vidEsc(l.en) + '</div></div>';
       });
-      html += '<div class="vid-vocab-title">Từ vựng trong video</div>'
-        + '<table class="vid-vocab" aria-label="Từ vựng — ' + vidEsc(v.situation.vi) + '"><thead><tr><th>Từ vựng</th><th>Nghĩa tiếng Việt</th><th>English</th></tr></thead><tbody>';
+      html += '<div class="vid-vocab-title">動画の単語</div>'
+        + '<table class="vid-vocab" aria-label="単語 — ' + vidEsc(v.situation.vi) + '"><thead><tr><th>単語</th><th>ベトナム語の意味</th><th>English</th></tr></thead><tbody>';
       voc.forEach(function(w){
         html += '<tr><td><span class="w jp">' + vidEsc(w.jp) + '</span><span class="r jp">' + vidEsc(w.reading) + '</span></td><td>' + vidEsc(w.vi) + '</td><td>' + vidEsc(w.en) + '</td></tr>';
       });
@@ -3452,18 +3501,18 @@ if(vidTab) vidTab.addEventListener('click', function(){ try{ userPickedExam = tr
    hàm dừng cũ đã gỡ trình phát khỏi biến toàn cục trước khi pause. */
 (function(){
   var CFGS = [
-    {p:'d1Player',  s:'d1Speaking',  id:'d1AudioSeg',  plays:'d1Plays',  stop:'stopD1Audio',  ui:'refreshPlayUI',   msg:'setPlayState',   noun:'đoạn'},
-    {p:'d3Player',  s:'d3Speaking',  id:'d3AudioSeg',  plays:'d3Plays',  stop:'stopD3Audio',  ui:'refreshPlayUI3',  msg:'setPlayState3',  noun:'đoạn'},
-    {p:'d4Player',  s:'d4Speaking',  id:'d4AudioSeg',  plays:'d4Plays',  stop:'stopD4Audio',  ui:'refreshPlayUI4',  msg:'setPlayState4',  noun:'đoạn'},
-    {p:'d5Player',  s:'d5Speaking',  id:'d5AudioSeg',  plays:'d5Plays',  stop:'stopD5Audio',  ui:'refreshPlayUI5',  msg:'setPlayState5',  noun:'đoạn'},
-    {p:'d7Player',  s:'d7Speaking',  id:'d7AudioSeg',  plays:'d7Plays',  stop:'stopD7Audio',  ui:'refreshPlayUI7',  msg:'setPlayState7',  noun:'đoạn'},
-    {p:'d8Player',  s:'d8Speaking',  id:'d8AudioSeg',  plays:'d8Plays',  stop:'stopD8Audio',  ui:'refreshPlayUI8',  msg:'setPlayState8',  noun:'đoạn'},
-    {p:'d10Player', s:'d10Speaking', id:'d10AudioSeg', plays:'d10Plays', stop:'stopD10Audio', ui:'refreshPlayUI10', msg:'setPlayState10', noun:'đoạn'},
-    {p:'d11Player', s:'d11Speaking', id:'d11AudioSeg', plays:'d11Plays', stop:'stopD11Audio', ui:'refreshPlayUI11', msg:'setPlayState11', noun:'đoạn'},
-    {p:'d14Player', s:'d14Speaking', id:'d14AudioSeg', plays:'d14Plays', stop:'stopD14Audio', ui:'refreshPlayUI14', msg:'setPlayState14', noun:'bộ'},
-    {p:'d16Player', s:'d16Speaking', id:'d16AudioSeg', plays:'d16Plays', stop:'stopD16Audio', ui:'refreshPlayUI16', msg:'setPlayState16', noun:'đoạn'},
-    {p:'d17Player', s:'d17Speaking', id:'d17AudioSeg', plays:'d17Plays', stop:'stopD17Audio', ui:'refreshPlayUI17', msg:'setPlayState17', noun:'bộ'},
-    {p:'mkPlayer',  s:'mkSpeaking',  id:'mkAudioId',   plays:'mkPlays',  stop:'mkStopAudio',  ui:'mkRefreshPlayUI', msg:'mkSetPlayState', noun:'bộ'}
+    {p:'d1Player',  s:'d1Speaking',  id:'d1AudioSeg',  plays:'d1Plays',  stop:'stopD1Audio',  ui:'refreshPlayUI',   msg:'setPlayState',   noun:'音声'},
+    {p:'d3Player',  s:'d3Speaking',  id:'d3AudioSeg',  plays:'d3Plays',  stop:'stopD3Audio',  ui:'refreshPlayUI3',  msg:'setPlayState3',  noun:'音声'},
+    {p:'d4Player',  s:'d4Speaking',  id:'d4AudioSeg',  plays:'d4Plays',  stop:'stopD4Audio',  ui:'refreshPlayUI4',  msg:'setPlayState4',  noun:'音声'},
+    {p:'d5Player',  s:'d5Speaking',  id:'d5AudioSeg',  plays:'d5Plays',  stop:'stopD5Audio',  ui:'refreshPlayUI5',  msg:'setPlayState5',  noun:'音声'},
+    {p:'d7Player',  s:'d7Speaking',  id:'d7AudioSeg',  plays:'d7Plays',  stop:'stopD7Audio',  ui:'refreshPlayUI7',  msg:'setPlayState7',  noun:'音声'},
+    {p:'d8Player',  s:'d8Speaking',  id:'d8AudioSeg',  plays:'d8Plays',  stop:'stopD8Audio',  ui:'refreshPlayUI8',  msg:'setPlayState8',  noun:'音声'},
+    {p:'d10Player', s:'d10Speaking', id:'d10AudioSeg', plays:'d10Plays', stop:'stopD10Audio', ui:'refreshPlayUI10', msg:'setPlayState10', noun:'音声'},
+    {p:'d11Player', s:'d11Speaking', id:'d11AudioSeg', plays:'d11Plays', stop:'stopD11Audio', ui:'refreshPlayUI11', msg:'setPlayState11', noun:'音声'},
+    {p:'d14Player', s:'d14Speaking', id:'d14AudioSeg', plays:'d14Plays', stop:'stopD14Audio', ui:'refreshPlayUI14', msg:'setPlayState14', noun:'セット'},
+    {p:'d16Player', s:'d16Speaking', id:'d16AudioSeg', plays:'d16Plays', stop:'stopD16Audio', ui:'refreshPlayUI16', msg:'setPlayState16', noun:'音声'},
+    {p:'d17Player', s:'d17Speaking', id:'d17AudioSeg', plays:'d17Plays', stop:'stopD17Audio', ui:'refreshPlayUI17', msg:'setPlayState17', noun:'セット'},
+    {p:'mkPlayer',  s:'mkSpeaking',  id:'mkAudioId',   plays:'mkPlays',  stop:'mkStopAudio',  ui:'mkRefreshPlayUI', msg:'mkSetPlayState', noun:'セット'}
   ];
   function cfgOf(t){
     for(var i=0;i<CFGS.length;i++){ if(window[CFGS[i].p]===t) return CFGS[i]; }
@@ -3487,10 +3536,10 @@ if(vidTab) vidTab.addEventListener('click', function(){ try{ userPickedExam = tr
     try{ window[cfg.stop](); }catch(e){}
     try{ window[cfg.ui](); }catch(e){}
     if(reason==='end') return;
-    var why = reason==='error' ? 'bị lỗi giữa chừng'
-            : reason==='stall' ? 'bị đứng do mạng chậm'
-            : 'bị trình duyệt ngắt giữa chừng';
-    try{ window[cfg.msg](id, 'Audio ' + cfg.noun + ' ' + id + ' ' + why + ' — lượt nghe này không tính, bấm lại nút Phát ' + cfg.noun + ' ' + id + ' để nghe lại.'); }catch(e){}
+    var why = reason==='error' ? '途中でエラーが発生しました'
+            : reason==='stall' ? 'ネットワークが遅くて止まりました'
+            : 'ブラウザに途中で遮断されました';
+    try{ window[cfg.msg](id, 'Audio ' + cfg.noun + ' ' + id + ' ' + why + ' — この再生はカウントされません。もう一度「再生」ボタンを押して' + cfg.noun + ' ' + id + ' を聞き直してください。'); }catch(e){}
   }
   document.addEventListener('playing', function(e){
     var t = e.target;
@@ -3538,7 +3587,6 @@ if(vidTab) vidTab.addEventListener('click', function(){ try{ userPickedExam = tr
   }, true);
 })();
 </script>
-<script src="data/vocab.js"></script>
 <script>
 
 /* ============ THẺ TỪ VỰNG — 884 TỪ THEO NGÀY (mục độc lập) ============
@@ -3559,8 +3607,8 @@ function renderVocabDays(){
     var b = document.createElement('button');
     b.type = 'button';
     b.className = 'vid-chip' + (i === vocabDayIdx ? ' active' : '');
-    b.innerHTML = g.day + ' <span class="n">' + g.cards.length + ' từ</span>';
-    b.setAttribute('aria-label', 'Xem thẻ ' + g.day + ' (' + g.cards.length + ' từ)');
+    b.innerHTML = g.day + ' <span class="n">' + g.cards.length + ' 語</span>';
+    b.setAttribute('aria-label', 'カードを見る：' + g.day + ' (' + g.cards.length + ' 語）');
     b.addEventListener('click', function(){ vocabDayIdx = i; renderVocabDays(); renderVocabCards(); });
     host.appendChild(b);
   });
@@ -3571,17 +3619,17 @@ function renderVocabCards(){
   var title = document.getElementById('vocabGroupTitle');
   var sub = document.getElementById('vocabGroupSub');
   if(!g || !grid) return;
-  if(title) title.textContent = g.day + ' — ' + g.cards.length + ' thẻ';
-  if(sub) sub.textContent = g.note + ' · Bấm vào thẻ để lật xem cách đọc + nghĩa + cụm từ đi kèm.';
+  if(title) title.textContent = g.day + ' — ' + g.cards.length + ' 枚';
+  if(sub) sub.textContent = g.note + ' · カードをクリックしてめくり、読み方 + 意味 + 一緒に使う表現を見ましょう。';
   grid.innerHTML = '';
   g.cards.forEach(function(c, i){
     var b = document.createElement('button');
     b.type = 'button';
     b.className = 'fc';
-    b.setAttribute('aria-label', 'Thẻ từ vựng ' + c[0]);
+    b.setAttribute('aria-label', '単語カード ' + c[0]);
     b.innerHTML = '<span class="fc-inner">'
-      + '<span class="fc-face fc-front"><span class="tag">Thẻ ' + (i+1) + ' / ' + g.cards.length + '</span><span class="word jp">' + c[0] + '</span><span class="hint">Bấm để lật thẻ</span></span>'
-      + '<span class="fc-face fc-back"><span class="tag jp">' + c[1] + '</span><span class="mean">' + c[2] + '</span><span class="col">Cụm đi kèm: <b class="jp">「' + c[3] + '」</b></span></span>'
+      + '<span class="fc-face fc-front"><span class="tag">カード ' + (i+1) + ' / ' + g.cards.length + '</span><span class="word jp">' + c[0] + '</span><span class="hint">クリックでめくる</span></span>'
+      + '<span class="fc-face fc-back"><span class="tag jp">' + c[1] + '</span><span class="mean">' + c[2] + '</span><span class="col">一緒に使う表現：<b class="jp">「' + c[3] + '」</b></span></span>'
       + '</span>';
     b.addEventListener('click', function(){ b.classList.toggle('flipped'); });
     grid.appendChild(b);
