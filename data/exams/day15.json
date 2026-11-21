@@ -1,0 +1,265 @@
+{
+  "id": "day15",
+  "type": "dokkai",
+  "title": "第15回 — 練習 <span class=\"jp\">読解</span>",
+  "subtitle": "4セット · 12問 · 読解のみ、音声なし · 2026年11月10日（火）",
+  "timeSeconds": 2400,
+  "questionCount": 12,
+  "segmentCount": 4,
+  "segLabel": "セット",
+  "segments": {
+    "1": {
+      "title": "第1問 — 語彙・文法：社内連絡 — 新オフィスへの移転について",
+      "desc": "問題1–3 · 新オフィスへの移転についての社内通知 — （　　1　　）〜（　　3　　）に入る最も正しい語句を選びましょう：〜にあたって、何とぞ、謙譲語の お知らせいたします。",
+      "subject": "社内連絡：新オフィスへの移転について",
+      "body": "来月1日から、新オフィスへ移転することになりました。移転に（　　1　　）、業務を一時停止させていただきます。ご不便をおかけしますが、（　　2　　）ご理解のほどお願い申し上げます。なお、移転後の住所は、来週、社内メールで（　　3　　）いたします。",
+      "vi": [
+        "Từ ngày 1 tháng sau, công ty sẽ chuyển sang văn phòng mới. Nhân dịp chuyển văn phòng, chúng tôi xin phép tạm dừng hoạt động. Chúng tôi thành thật xin lỗi vì sự bất tiện này và rất mong nhận được sự thông cảm của quý vị.",
+        "Ngoài ra, địa chỉ sau khi chuyển văn phòng sẽ được thông báo qua email nội bộ vào tuần tới."
+      ]
+    },
+    "2": {
+      "title": "第2問 — 短文読解：社内メール — 10月度 売上報告",
+      "desc": "問題4–6 · 3支店の10月の売上報告と11月の予測 — 数字ごとに項目名（10月の実績／11月の予測）をメモに書いてから加減しましょう。札幌の計画は まだ社内承認を得ていない ので、予測には入れません。",
+      "subject": "件名：10月度 売上報告",
+      "body": "10月の売上は、東京支店520万円、大阪支店410万円、名古屋支店360万円、合計1,290万円で、前月比70万円の増加となりました。\n11月の売上見込みは、東京支店550万円、大阪支店430万円、名古屋支店380万円、合計1,360万円です。なお、札幌の新規出店計画は、まだ社内承認を得ていないため、11月の見込みには含めていません。",
+      "vi": [
+        "Doanh số tháng 10: chi nhánh Tokyo 520 vạn yên, chi nhánh Osaka 410 vạn yên, chi nhánh Nagoya 360 vạn yên, tổng cộng 1.290 vạn yên, tăng 70 vạn yên so với tháng trước.",
+        "Dự báo doanh số tháng 11: chi nhánh Tokyo 550 vạn yên, chi nhánh Osaka 430 vạn yên, chi nhánh Nagoya 380 vạn yên, tổng cộng 1.360 vạn yên. Xin lưu ý, kế hoạch mở cửa hàng mới ở Sapporo vẫn chưa được phê duyệt nội bộ nên chưa tính vào dự báo tháng 11."
+      ]
+    },
+    "3": {
+      "title": "第3問 — 短文読解：報告書 — 新規事業報告書（オンライン相談窓口）",
+      "desc": "問題7–9 · オンライン相談窓口の第3四半期報告書：420件は3か月の合計です（月ごとではありません）。受付時間は次期から延長され、土曜日は引き続き受け付けません。",
+      "subject": "2026年度第3四半期　新規事業報告書（抜粋）",
+      "body": "10月から開始したオンライン相談窓口の利用件数は、3か月で合計420件でした。利用者の満足度は高く、来期も継続することになりました。\nなお、窓口の受付時間は、現在、平日の午前9時から午後5時までですが、来期からは午前9時から午後7時までに延長します。土曜日の受付は、来期も行いません。\n利用者の声として、「夜間の相談を希望する」という意見が多かったため、延長の判断に至りました。",
+      "vi": [
+        "Số lượt sử dụng cửa sổ tư vấn trực tuyến bắt đầu từ tháng 10 là tổng cộng 420 lượt trong 3 tháng. Mức độ hài lòng của người dùng cao, nên cửa sổ này sẽ được tiếp tục trong kỳ tới.",
+        "Ngoài ra, giờ tiếp nhận của cửa sổ hiện là các ngày trong tuần từ 9 giờ sáng đến 5 giờ chiều, nhưng từ kỳ tới sẽ kéo dài đến 7 giờ tối. Việc tiếp nhận vào thứ Bảy, kỳ tới cũng sẽ không thực hiện.",
+        "Vì có nhiều ý kiến của người dùng mong muốn được tư vấn vào buổi tối, nên đã đi đến quyết định kéo dài giờ tiếp nhận."
+      ]
+    },
+    "4": {
+      "title": "第4問 — 社内規定：テレワークの利用について",
+      "desc": "問題10–12 · 在宅勤務についての社内規則 — ただし（繁忙期の例外）の文、申請期限 前日の午後5時まで、連絡手段 社内チャット（電話は緊急時のみ）に注意しましょう。",
+      "subject": "社内規定：テレワークの利用について（抜粋）",
+      "body": "1．テレワークは、週2日まで利用できます。ただし、プロジェクトの繁忙期は、週1日までとします。\n2．テレワークを利用する場合は、前日の午後5時までに上司に申請してください。申請が遅れた場合は、テレワークは利用できません。\n3．テレワーク中の連絡は、社内チャットで行ってください。電話での連絡は、緊急の場合に限ります。",
+      "vi": [
+        "1. Làm việc từ xa có thể sử dụng tối đa 2 ngày mỗi tuần. Tuy nhiên, trong mùa bận rộn của dự án thì tối đa 1 ngày mỗi tuần.",
+        "2. Khi muốn sử dụng làm việc từ xa, vui lòng đăng ký với cấp trên trước 5 giờ chiều ngày hôm trước. Nếu đăng ký trễ, sẽ không được sử dụng làm việc từ xa.",
+        "3. Việc liên lạc trong khi làm việc từ xa, vui lòng thực hiện qua chat nội bộ. Liên lạc bằng điện thoại chỉ giới hạn trong trường hợp khẩn cấp."
+      ]
+    }
+  },
+  "segNames": {
+    "1": "語彙・文法",
+    "2": "短文読解 — 売上報告",
+    "3": "短文読解 — 報告書",
+    "4": "社内規定 — テレワーク"
+  },
+  "questions": [
+    {
+      "n": 1,
+      "seg": 1,
+      "q": "移転に（　　）、業務を一時停止させていただきます。",
+      "opts": [
+        "あたり",
+        "あたっては",
+        "あたって",
+        "あたりに"
+      ],
+      "ans": "C",
+      "trap": "「〜にあたって」= nhân dịp, khi tiến hành việc gì; 「あたり」 là \"mỗi/khoảng\", không đi với に theo nghĩa này",
+      "explain": "「〜にあたって」= nhân dịp, khi tiến hành việc gì (移転にあたって); 「あたり」 là \"mỗi/khoảng\" (1人あたり), không đi với に theo nghĩa này; 「あたっては」 mang nghĩa điều kiện \"khi nói đến…\" (sai ngữ cảnh); 「あたりに」 không phải dạng đúng."
+    },
+    {
+      "n": 2,
+      "seg": 1,
+      "q": "ご不便をおかけしますが、（　　）ご理解のほどお願い申し上げます。",
+      "opts": [
+        "何とぞ",
+        "どうぞ",
+        "ぜひ",
+        "どうか"
+      ],
+      "ans": "A",
+      "trap": "「何とぞご理解のほどお願い申し上げます」 là cụm cố định trong văn bản trang trọng",
+      "explain": "「何とぞご理解のほどお願い申し上げます」 là cụm cố định trong văn bản trang trọng; 「どうぞ」 dùng với lời nhờ cụ thể (どうぞお越しください), 「ぜひ」 diễn tả mong muốn mạnh chứ không phải cụm xin thông cảm trang trọng, 「どうか」 không đi với お願い申し上げます theo dạng này."
+    },
+    {
+      "n": 3,
+      "seg": 1,
+      "q": "移転後の住所は、来週、社内メールで（　　）いたします。",
+      "opts": [
+        "お知らせして",
+        "知らせ",
+        "お知らせになっ",
+        "お知らせ"
+      ],
+      "ans": "D",
+      "trap": "「お知らせいたします」 là khiêm nhường ngữ chuẩn; 「お〜になる」 là tôn kính ngữ, sai hướng",
+      "explain": "「お知らせいたします」 là dạng khiêm nhường ngữ chuẩn; A 「お知らせして…いたします」 sai ngữ pháp; B 「知らせ」 là thể thường, sai văn phong trang trọng; C 「お知らせになっ」 là dạng tôn kính ngữ dở dang, sai hướng."
+    },
+    {
+      "n": 4,
+      "seg": 2,
+      "q": "10月の売上合計はいくらですか。",
+      "opts": [
+        "1,220万円",
+        "1,290万円",
+        "1,360万円",
+        "1,320万円"
+      ],
+      "ans": "B",
+      "trap": "Cộng 3 chi nhánh tháng 10 (520+410+360); 1,360 là dự báo tháng 11, 1,220 là doanh số tháng 9 suy ra",
+      "explain": "520+410+360=1,290万円; 1,220万円 là doanh số tháng 9 suy ra (1,290−70), 1,360万円 là dự báo tháng 11, 1,320万円 là cộng nhầm tháng (550+410+360 — lấy số tháng 11 của東京)."
+    },
+    {
+      "n": 5,
+      "seg": 2,
+      "q": "11月の見込みは、10月の実績と比べてどうなりますか。",
+      "opts": [
+        "70万円増える",
+        "70万円減る",
+        "140万円増える",
+        "変わらない"
+      ],
+      "ans": "A",
+      "trap": "1,360−1,290=70万円の増加; 140 là cộng gấp đôi mức tăng (70+70) — bẫy nhân đôi",
+      "explain": "1,360−1,290=70万円の増加; 140万円 là cộng gấp đôi mức tăng (70+70), bẫy nhân đôi."
+    },
+    {
+      "n": 6,
+      "seg": 2,
+      "q": "札幌の新規出店計画について正しいものはどれですか。",
+      "opts": [
+        "11月の見込みに含めている",
+        "すでに社内承認を得ている",
+        "11月の見込みに含めていない（まだ社内承認を得ていないため）",
+        "10月の売上に含めている"
+      ],
+      "ans": "C",
+      "trap": "「まだ社内承認を得ていないため、見込みには含めていない」— chưa duyệt = không tính vào dự báo",
+      "explain": "札幌の新規出店計画はまだ社内承認を得ていないため、11月の見込みには含めていない — bẫy \"chưa duyệt = không tính vào dự báo\"."
+    },
+    {
+      "n": 7,
+      "seg": 3,
+      "q": "オンライン相談窓口について正しいものはどれですか。",
+      "opts": [
+        "来期は中止する",
+        "来期も継続する",
+        "利用件数は月420件",
+        "利用者の満足度は低い"
+      ],
+      "ans": "B",
+      "trap": "420件 là tổng 3 tháng (trung bình 140件/tháng), không phải 420件/tháng; 満足度は高い",
+      "explain": "窓口は来期も継続する; 420件 là tổng 3 tháng (trung bình 140件/tháng), không phải 420件/tháng; 満足度は高い."
+    },
+    {
+      "n": 8,
+      "seg": 3,
+      "q": "来期からの受付時間はどうなりますか。",
+      "opts": [
+        "午前9時から午後5時まで",
+        "土曜日も受付する",
+        "24時間受付する",
+        "午前9時から午後7時まで"
+      ],
+      "ans": "D",
+      "trap": "来期からは午前9時から午後7時まで延長; 午後5時まで là giờ hiện tại, thứ Bảy vẫn không tiếp nhận",
+      "explain": "来期からは午前9時から午後7時までに延長; 午後5時まで là giờ hiện tại, 土曜日の受付は来期も行わない."
+    },
+    {
+      "n": 9,
+      "seg": 3,
+      "q": "受付時間を延長した理由は何ですか。",
+      "opts": [
+        "「夜間の相談を希望する」という利用者の声が多かったから",
+        "利用件数が少ないから",
+        "満足度が低いから",
+        "土曜日の受付を始めるため"
+      ],
+      "ans": "A",
+      "trap": "Lý do nêu thẳng trong bài: nhiều ý kiến muốn tư vấn buổi tối — không suy diễn từ件数 hay満足度",
+      "explain": "利用者の声として「夜間の相談を希望する」という意見が多かったため、延長の判断に至った — phải giữ đúng lý do được nêu (nhu cầu buổi tối), không suy diễn từ件数 hay満足度."
+    },
+    {
+      "n": 10,
+      "seg": 4,
+      "q": "テレワークは週に何日まで利用できますか。",
+      "opts": [
+        "週1日まで",
+        "週3日まで",
+        "週2日まで（ただし繁忙期は週1日まで）",
+        "制限はない"
+      ],
+      "ans": "C",
+      "trap": "Nguyên tắc 週2日まで + ngoại lệ ただし繁忙期は週1日まで — phải giữ cả hai vế, không tuyệt đối hóa vế nào",
+      "explain": "テレワークは週2日まで、ただし繁忙期は週1日まで — phải giữ cả hai vế (nguyên tắc + ngoại lệ), không tuyệt đối hóa vế nào; 週1日 chỉ là ngoại lệ繁忙期."
+    },
+    {
+      "n": 11,
+      "seg": 4,
+      "q": "テレワークの申請について正しいものはどれですか。",
+      "opts": [
+        "当日の朝までに申請する",
+        "前日の午後5時までに上司に申請する",
+        "申請は不要",
+        "申請が遅れても利用できる"
+      ],
+      "ans": "B",
+      "trap": "Hạn đăng ký là 前日の午後5時まで; 申請が遅れた場合は利用できない",
+      "explain": "前日の午後5時までに上司に申請する; 申請が遅れた場合は利用できない."
+    },
+    {
+      "n": 12,
+      "seg": 4,
+      "q": "テレワーク中の連絡について正しいものはどれですか。",
+      "opts": [
+        "電話で連絡する",
+        "メールで連絡する",
+        "連絡は不要",
+        "社内チャットで行い、電話は緊急の場合に限る"
+      ],
+      "ans": "D",
+      "trap": "Kênh liên lạc chính là 社内チャット; 電話は緊急の場合に限る",
+      "explain": "連絡は社内チャットで行い、電話は緊急の場合に限る."
+    }
+  ],
+  "instructions": "<li>読解12問で <strong>約40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>4セット</strong> で、各セットはテキスト1つ + 問題3問です。<strong>セットの3問はすべて一緒に</strong>、そのテキストのすぐ下に、CBT試験室形式の解答画面で表示されます — 読んだら3問まとめて答えましょう。1問ずつ行き来する必要はありません。<strong>音声はありません</strong> — 今回は読解の練習だけです。</li>\n          <li>セット1は <span class=\"jp\">語彙・文法</span> — 新オフィスへの移転についての <span class=\"jp\">社内連絡</span> の穴埋め（<span class=\"jp\">〜にあたって</span>、<span class=\"jp\">何とぞ</span>、謙譲語の <span class=\"jp\">お知らせいたします</span>）。セット2は <span class=\"jp\">短文読解</span> — 3支店の10月の売上報告と11月の予測のメール。<span class=\"jp\">札幌</span> の出店計画は <span class=\"jp\">まだ社内承認を得ていない</span> ので予測に入れないことに注意。セット3は <span class=\"jp\">短文読解</span> — オンライン相談窓口の報告書（420件は3か月の合計、受付時間は次期から延長）。セット4は在宅勤務についての <span class=\"jp\">社内規定</span> — <span class=\"jp\">ただし</span>（例外）の文、申請期限、連絡手段に注意。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。答え、ベトナム語の解説、<strong>各テキストの参考訳</strong> は、ミスノートと一緒に、提出後にのみ表示されます。</li>",
+  "candidateInfo": {
+    "subject": "BJT 読解 — 第15回 練習",
+    "questionInfo": "12問 · 4セット",
+    "time": "約40分",
+    "format": "語彙・文法 · 短文読解（メール・報告書） · 社内規定"
+  },
+  "tips": "セット2では、数字ごとに項目名（9月は推定／10月の実績／11月の予測）をメモに書いてから加減しましょう。<span class=\"jp\">まだ〜ていない</span>が出たら、それに伴う結果を覚えておきましょう — 未承認なら予測に入れません。セット4では、<span class=\"jp\">ただし</span>の両面を押さえましょう：原則と繁忙期の例外です。",
+  "footerNote": "第15回 — 練習 読解：オフィス移転の社内通知、10月の売上報告メール、オンライン相談窓口の報告書、在宅勤務の規則。音声はありません。",
+  "scoreMessages": [
+    {
+      "min": 12,
+      "text": "優秀 — 第15回の読解12問すべて正解！"
+    },
+    {
+      "min": 10,
+      "text": "とても良い — 文法、数値、規則が安定しています"
+    },
+    {
+      "min": 8,
+      "text": "まずまず安定 — 照合が必要な箇所がまだいくつかあります"
+    },
+    {
+      "min": 5,
+      "text": "調子が出てきました — 数値、条件、敬語に注意しましょう"
+    },
+    {
+      "min": 1,
+      "text": "もう少し練習が必要です — 解説と一緒にセットを1つずつ読み直しましょう"
+    },
+    {
+      "min": 0,
+      "text": "数値の読み方と条件文を復習しましょう — 下の各問題の解説をご覧ください"
+    }
+  ]
+}

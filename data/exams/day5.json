@@ -1,0 +1,290 @@
+{
+  "id": "day5",
+  "type": "choukai",
+  "title": "第5回 — 練習 <span class=\"jp\">聴解</span>",
+  "subtitle": "4セット · 12問 · 会話3セット + <span class=\"jp\">説明・案内</span>のお知らせ1セット（新形式） · 2026年10月29日（木）",
+  "timeSeconds": 2400,
+  "questionCount": 12,
+  "segmentCount": 4,
+  "segLabel": "セット",
+  "segments": {
+    "1": {
+      "title": "第1問 — 明日の会議の資料印刷",
+      "mp3": "assets/ngay5-doan1.mp3",
+      "desc": "問題1–3 · 会話を聞いて、このセットの3問すべてに答えてください。注意：人数×1人あたりの部数。",
+      "lines": [
+        "部長、明日の会議の資料ですが、印刷部数を確認させてください。",
+        "ああ、参加者は12名だね。資料は1人2部ずつ必要だ。",
+        "承知しました。24部ですね。ただ、経理部から、予算の承認がまだ来ていませんので、カラー印刷は控えたほうがよろしいでしょうか。",
+        "そうだね。承認が来るまでは、白黒で印刷しておいてくれ。カラーは承認が来てからでいい。",
+        "分かりました。白黒24部で準備いたします。"
+      ],
+      "vi": [
+        "Thưa Trưởng phòng, về tài liệu cho cuộc họp ngày mai, cho phép tôi xác nhận số bản in ạ.",
+        "À, số người tham dự là 12 người nhé. Tài liệu cần mỗi người 2 bộ.",
+        "Vâng, tôi đã rõ. Vậy là 24 bộ ạ. Tuy nhiên, phê duyệt ngân sách từ phòng Kế toán vẫn chưa về, vậy có nên tạm tránh in màu không ạ?",
+        "Đúng vậy. Trong lúc chờ phê duyệt, cứ in đen trắng trước giúp tôi. In màu thì để sau khi có phê duyệt cũng được.",
+        "Vâng, tôi hiểu rồi. Tôi sẽ chuẩn bị 24 bộ đen trắng ạ."
+      ]
+    },
+    "2": {
+      "title": "第2問 — 名古屋出張の日程変更",
+      "mp3": "assets/ngay5-doan2.mp3",
+      "desc": "問題4–6 · 注意：古い日程は新しい日程に置き換わりました — 新しい日程を基準にしてください。",
+      "lines": [
+        "来週の名古屋出張だけど、訪問先の都合で日程が変わったよ。",
+        "はい。もともとは火曜日の午前11時でしたね。",
+        "そう。新しい日程は水曜日の午後3時になった。ホテルは火曜日の夜から1泊で取ってあったよね。",
+        "はい。その場合、ホテルは水曜日の夜に変更する必要がありますね。",
+        "そのとおり。あと、資料は月曜日までに完成させておいてくれ。先方から依頼された売上データは、まだ経理部から届いていないそうだ。",
+        "承知しました。経理部に今日中に確認いたします。"
+      ],
+      "vi": [
+        "Về chuyến công tác Nagoya tuần tới, do lịch phía nơi đến thay đổi nên lịch trình đã thay đổi rồi đấy.",
+        "Vâng. Ban đầu là 11 giờ sáng thứ Ba đúng không ạ.",
+        "Đúng vậy. Lịch mới chuyển thành 3 giờ chiều thứ Tư. Khách sạn đã đặt 1 đêm từ tối thứ Ba rồi đúng không?",
+        "Vâng. Trong trường hợp đó, khách sạn cần đổi sang đêm thứ Tư ạ.",
+        "Đúng vậy. Ngoài ra, hoàn thành tài liệu trước thứ Hai giúp tôi nhé. Nghe nói dữ liệu doanh số mà phía đối tác yêu cầu vẫn chưa được phòng Kế toán gửi tới.",
+        "Vâng, tôi đã rõ. Tôi sẽ xác nhận với phòng Kế toán ngay trong hôm nay ạ."
+      ]
+    },
+    "3": {
+      "title": "第3問 — A社の注文と在庫",
+      "mp3": "assets/ngay5-doan3.mp3",
+      "desc": "問題7–9 · 数字を正しく結びつけましょう：注文、在庫、不足分、B社の注文。",
+      "lines": [
+        "課長、A社からの注文についてご報告します。注文は800個です。",
+        "在庫は足りているかな。",
+        "現在の在庫は500個で、300個不足しています。追加で300個、来週月曜日までに入荷する予定です。",
+        "分かった。では、納期は来週火曜日でA社に連絡しておいてくれ。",
+        "はい。なお、B社からの注文200個は、別途対応いたしますので、今回の不足には含めておりません。",
+        "了解した。"
+      ],
+      "vi": [
+        "Thưa Tổ trưởng, tôi xin báo cáo về đơn hàng từ Công ty A. Đơn hàng là 800 cái ạ.",
+        "Tồn kho có đủ không?",
+        "Tồn kho hiện tại là 500 cái, đang thiếu 300 cái ạ. Dự kiến 300 cái bổ sung sẽ nhập kho trước thứ Hai tuần tới ạ.",
+        "Được rồi. Vậy hãy liên lạc với Công ty A rằng thời hạn giao hàng là thứ Ba tuần tới nhé.",
+        "Vâng. Ngoài ra, đơn hàng 200 cái của Công ty B chúng tôi sẽ xử lý riêng, nên không tính vào số thiếu lần này ạ.",
+        "Rõ rồi."
+      ]
+    },
+    "4": {
+      "title": "第4問 — 食堂の営業時間のお知らせ（説明・案内）",
+      "mp3": "assets/ngay5-doan4.mp3",
+      "desc": "問題10–12 · 新形式 説明・案内：1人がお知らせを読み上げます。適用日11月1日と金曜日の例外に注意しましょう。",
+      "lines": [
+        "総務部から、食堂の営業時間についてお知らせします。11月1日から、お昼の営業時間は11時半から13時半までとなります。なお、金曜日は清掃のため、13時で閉店いたしますので、ご注意ください。また、水曜日の日替わり定食は、アプリからの事前予約のみとなり、当日の予約はできません。朝食の営業時間に変更はありません。ご協力をお願いいたします。"
+      ],
+      "vi": [
+        "Phòng Hành chính tổng hợp xin thông báo về giờ mở cửa của nhà ăn. Từ ngày 1 tháng 11, giờ mở cửa buổi trưa sẽ là từ 11 giờ 30 đến 13 giờ 30. Lưu ý, vào thứ Sáu, do dọn dẹp nên nhà ăn sẽ đóng cửa lúc 13 giờ. Ngoài ra, suất ăn thay đổi theo ngày (định thực) vào thứ Tư chỉ nhận đặt trước qua ứng dụng, không thể đặt trong ngày. Giờ mở cửa bữa sáng không thay đổi. Rất mong nhận được sự hợp tác của mọi người."
+      ]
+    }
+  },
+  "segNames": null,
+  "questions": [
+    {
+      "n": 1,
+      "seg": 1,
+      "q": "資料は何部印刷することになりましたか。",
+      "opts": [
+        "12部",
+        "24部",
+        "36部",
+        "48部"
+      ],
+      "ans": "B",
+      "trap": "Số người vs số bản in",
+      "explain": "12名 × 1人2部 = 24部；12部 là số người, không phải số bản in."
+    },
+    {
+      "n": 2,
+      "seg": 1,
+      "q": "カラー印刷について正しいものはどれですか。",
+      "opts": [
+        "承認が来たのでカラーで印刷する",
+        "カラー印刷は中止になった",
+        "承認がまだ来ていないので白黒で印刷する",
+        "経理部がカラー印刷を担当する"
+      ],
+      "ans": "C",
+      "trap": "「承認がまだ来ていない」— chưa được duyệt",
+      "explain": "予算の承認がまだ来ていないので、白黒で印刷し、カラーは承認が来てから。"
+    },
+    {
+      "n": 3,
+      "seg": 1,
+      "q": "参加者は何名ですか。",
+      "opts": [
+        "24名",
+        "10名",
+        "2名",
+        "12名"
+      ],
+      "ans": "D",
+      "trap": "Gắn đúng số với đúng đối tượng",
+      "explain": "参加者は12名；24 là số bản in, 2 là số bản mỗi người."
+    },
+    {
+      "n": 4,
+      "seg": 2,
+      "q": "訪問は何曜日の何時に変更になりましたか。",
+      "opts": [
+        "水曜日の午後3時",
+        "火曜日の午前11時",
+        "木曜日の午後3時",
+        "水曜日の午前11時"
+      ],
+      "ans": "A",
+      "trap": "Lịch cũ vs lịch mới đã thay đổi",
+      "explain": "Lịch mới là 水曜日午後3時；火曜日11時 là lịch cũ đã bị thay."
+    },
+    {
+      "n": 5,
+      "seg": 2,
+      "q": "ホテルは何曜日の夜に変更する必要がありますか。",
+      "opts": [
+        "火曜日の夜",
+        "木曜日の夜",
+        "水曜日の夜",
+        "月曜日の夜"
+      ],
+      "ans": "C",
+      "trap": "Đêm khách sạn đổi theo lịch thăm",
+      "explain": "Vì lịch thăm đổi sang thứ Tư nên khách sạn đổi từ đêm thứ Ba sang đêm thứ Tư."
+    },
+    {
+      "n": 6,
+      "seg": 2,
+      "q": "売上データについて正しいものはどれですか。",
+      "opts": [
+        "すでに届いている",
+        "月曜日までに届く予定だ",
+        "先方が送る必要はない",
+        "まだ経理部から届いていない"
+      ],
+      "ans": "D",
+      "trap": "「まだ届いていない」— chưa đến",
+      "explain": "先方から依頼された売上データは、まだ経理部から届いていない；cần xác nhận với 経理部 trong hôm nay."
+    },
+    {
+      "n": 7,
+      "seg": 3,
+      "q": "A社の注文は何個ですか。",
+      "opts": [
+        "500個",
+        "200個",
+        "800個",
+        "300個"
+      ],
+      "ans": "C",
+      "trap": "Phân biệt số của A社 / B社 / tồn kho",
+      "explain": "注文は800個；500 là tồn kho, 300 là số thiếu, 200 là đơn B社 riêng."
+    },
+    {
+      "n": 8,
+      "seg": 3,
+      "q": "不足しているのは何個ですか。",
+      "opts": [
+        "300個",
+        "200個",
+        "500個",
+        "800個"
+      ],
+      "ans": "A",
+      "trap": "Số thiếu = đơn hàng − tồn kho",
+      "explain": "在庫500個に対して注文800個なので不足300個；300個追加 sẽ nhập về trước thứ Hai tuần sau."
+    },
+    {
+      "n": 9,
+      "seg": 3,
+      "q": "A社への納期はいつですか。",
+      "opts": [
+        "来週月曜日",
+        "来週水曜日",
+        "今週金曜日",
+        "来週火曜日"
+      ],
+      "ans": "D",
+      "trap": "Ngày nhập hàng vs ngày giao hàng",
+      "explain": "納期は来週火曜日；thứ Hai là hạn nhập hàng bổ sung, không phải ngày giao."
+    },
+    {
+      "n": 10,
+      "seg": 4,
+      "q": "このお知らせの目的は何ですか。",
+      "opts": [
+        "食堂の営業時間の変更を知らせる",
+        "新しいメニューを紹介する",
+        "アプリの使い方を説明する",
+        "清掃の担当者を募集する"
+      ],
+      "ans": "A",
+      "trap": "Mục đích chính của thông báo",
+      "explain": "Thông báo nhằm báo thay đổi giờ mở cửa nhà ăn từ 1/11."
+    },
+    {
+      "n": 11,
+      "seg": 4,
+      "q": "金曜日の昼食は何時までですか。",
+      "opts": [
+        "13時半",
+        "13時",
+        "11時半",
+        "14時"
+      ],
+      "ans": "B",
+      "trap": "Giờ đóng cửa riêng ngày thứ Sáu",
+      "explain": "Thứ Sáu đóng cửa 13:00 để dọn dẹp; 13時半 là giờ đóng cửa ngày thường — bẫy nghe nhầm."
+    },
+    {
+      "n": 12,
+      "seg": 4,
+      "q": "水曜日の日替わり定食について正しいものはどれですか。",
+      "opts": [
+        "当日でも予約できる",
+        "アプリで前もって予約する必要がある",
+        "水曜日は食べられない",
+        "金曜日だけ予約できる"
+      ],
+      "ans": "B",
+      "trap": "「事前予約のみ」— chỉ đặt trước qua app",
+      "explain": "Suất đặc biệt thứ Tư chỉ nhận đặt trước qua ứng dụng, không đặt trong ngày."
+    }
+  ],
+  "instructions": "<li>聴解12問で <strong>約40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>聴解4セット</strong> で、各セットに問題が3問あり、<strong>セットの3問はすべて一緒に</strong>、そのセットの再生ボタンのすぐ下に、CBT試験室形式の解答画面で表示されます — 聞いたら3問まとめて答えましょう。1問ずつ行き来する必要はありません。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li>セット1–3は業務の会話です（印刷部数、出張日程の変更、注文と在庫）— <strong>数字を正しい対象に結びつける</strong> ことと、<strong>置き換わった古い情報</strong> と新しい情報を区別することに注意しましょう。セット4は新形式の <strong><span class=\"jp\">説明・案内</span></strong>：1人が食堂の営業時間のお知らせを読み上げます — 適用日と曜日ごとの例外に注意しましょう。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、トランスクリプト、ミスノートが表示されます。</li>",
+  "candidateInfo": {
+    "subject": "BJT 聴解 — 第5回 練習",
+    "questionInfo": "12問 · 4セット",
+    "time": "約40分",
+    "format": "説明・案内 — 1人によるアナウンス"
+  },
+  "tips": "",
+  "footerNote": "第5回 — 練習 聴解：会話3セット + 説明・案内のお知らせ1セット。音声は録音済みのMP3ファイルで、話者の名前は読み上げません。",
+  "scoreMessages": [
+    {
+      "min": 12,
+      "text": "優秀 — 新形式のお知らせを含め、12問すべて正解！"
+    },
+    {
+      "min": 10,
+      "text": "とても良い — 注意点をほぼ回避できています"
+    },
+    {
+      "min": 8,
+      "text": "まずまず安定 — 細部の注意点がまだいくつかあります"
+    },
+    {
+      "min": 5,
+      "text": "調子が出てきました — 数値の問題と変更された日程に注意しましょう"
+    },
+    {
+      "min": 1,
+      "text": "もう少し練習が必要です — 数字の結びつけミスにまだ負けています"
+    },
+    {
+      "min": 0,
+      "text": "聞き取りの基礎に穴があります — セットごとにトランスクリプトを聞き直しましょう"
+    }
+  ]
+}

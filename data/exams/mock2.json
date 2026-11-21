@@ -1,0 +1,1753 @@
+{
+  "parts": [
+    {
+      "num": 1,
+      "jp": "聴解",
+      "name": "パート1 — 聴解",
+      "time": 2700,
+      "from": 1,
+      "to": 25
+    },
+    {
+      "num": 2,
+      "jp": "聴読解",
+      "name": "パート2 — 聴読解",
+      "time": 1800,
+      "from": 26,
+      "to": 50
+    },
+    {
+      "num": 3,
+      "jp": "読解",
+      "name": "パート3 — 読解",
+      "time": 1800,
+      "from": 51,
+      "to": 80
+    }
+  ],
+  "groups": [
+    {
+      "id": "L1a",
+      "part": 1,
+      "audio": "assets/mock2-L1a.mp3",
+      "title": "セット L1a — 場面把握（会議室でのプレゼン）",
+      "desc": "問題1 · 下の絵を見て、4つの発言を聞き、絵に合う発言を選びましょう。",
+      "qs": [
+        1
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L1a-scene.jpg\" alt=\"場面の絵：会議室でホワイトボードのグラフを指して説明する男性\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>",
+      "lines": [
+        "1番。",
+        "1。",
+        "男の人が電話で話をしています。",
+        "2。",
+        "男の人がホワイトボードのグラフを指して説明をしています。",
+        "3。",
+        "女の人がパソコンで資料を作っています。",
+        "4。",
+        "男の人が会議室のドアを開けています。"
+      ],
+      "vi": [
+        "Câu 1.",
+        "1.",
+        "Người đàn ông đang nói chuyện điện thoại.",
+        "2.",
+        "Người đàn ông đang chỉ vào biểu đồ trên bảng trắng để giải thích.",
+        "3.",
+        "Người phụ nữ đang làm tài liệu trên máy tính.",
+        "4.",
+        "Người đàn ông đang mở cửa phòng họp."
+      ]
+    },
+    {
+      "id": "L1b",
+      "part": 1,
+      "audio": "assets/mock2-L1b.mp3",
+      "title": "セット L1b — 場面把握（空港チェックイン）",
+      "desc": "問題2 · 下の絵を見て、4つの発言を聞き、絵に合う発言を選びましょう。",
+      "qs": [
+        2
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L1b-scene.jpg\" alt=\"場面の絵：空港のチェックインカウンターでパスポートを渡す男性\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>",
+      "lines": [
+        "2番。",
+        "1。",
+        "男の人が電車の切符を買っています。",
+        "2。",
+        "女の人が荷物を運んでいます。",
+        "3。",
+        "男の人がホテルの部屋に入っています。",
+        "4。",
+        "男の人が空港でチェックインをしています。"
+      ],
+      "vi": [
+        "Câu 2.",
+        "1.",
+        "Người đàn ông đang mua vé tàu điện.",
+        "2.",
+        "Người phụ nữ đang mang hành lý.",
+        "3.",
+        "Người đàn ông đang bước vào phòng khách sạn.",
+        "4.",
+        "Người đàn ông đang làm thủ tục check-in ở sân bay."
+      ]
+    },
+    {
+      "id": "L1c",
+      "part": 1,
+      "audio": "assets/mock2-L1c.mp3",
+      "title": "セット L1c — 場面把握（電話応対・取次ぎ）",
+      "desc": "問題3 · 下の絵を見て、4つの発言を聞き、絵に合う発言を選びましょう。",
+      "qs": [
+        3
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L1c-scene.jpg\" alt=\"場面の絵：オフィスで電話をしながらメモを取る女性\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>",
+      "lines": [
+        "3番。",
+        "1。",
+        "女の人が電話で話しながらメモを取っています。",
+        "2。",
+        "女の人がパソコンでメールを書いています。",
+        "3。",
+        "男の人が女の人に書類を渡しています。",
+        "4。",
+        "女の人が会議室で発表をしています。"
+      ],
+      "vi": [
+        "Câu 3.",
+        "1.",
+        "Người phụ nữ đang vừa nói chuyện điện thoại vừa ghi chép.",
+        "2.",
+        "Người phụ nữ đang viết email trên máy tính.",
+        "3.",
+        "Người đàn ông đang đưa tài liệu cho người phụ nữ.",
+        "4.",
+        "Người phụ nữ đang thuyết trình trong phòng họp."
+      ]
+    },
+    {
+      "id": "L1d",
+      "part": 1,
+      "audio": "assets/mock2-L1d.mp3",
+      "title": "セット L1d — 場面把握（倉庫での検品）",
+      "desc": "問題4 · 下の絵を見て、4つの発言を聞き、絵に合う発言を選びましょう。",
+      "qs": [
+        4
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L1d-scene.jpg\" alt=\"場面の絵：倉庫でクリップボードを持って箱の数を数える男性\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>",
+      "lines": [
+        "4番。",
+        "1。",
+        "男の人がトラックに荷物を積んでいます。",
+        "2。",
+        "女の人が箱を開けて中身を確認しています。",
+        "3。",
+        "男の人が倉庫で商品の数を数えています。",
+        "4。",
+        "男の人がパソコンで注文をしています。"
+      ],
+      "vi": [
+        "Câu 4.",
+        "1.",
+        "Người đàn ông đang chất hàng lên xe tải.",
+        "2.",
+        "Người phụ nữ đang mở thùng để kiểm tra đồ bên trong.",
+        "3.",
+        "Người đàn ông đang đếm số lượng hàng hóa trong kho.",
+        "4.",
+        "Người đàn ông đang đặt hàng trên máy tính."
+      ]
+    },
+    {
+      "id": "L1e",
+      "part": 1,
+      "audio": "assets/mock2-L1e.mp3",
+      "title": "セット L1e — 場面把握（契約書へのサイン）",
+      "desc": "問題5 · 下の絵を見て、4つの発言を聞き、絵に合う発言を選びましょう。",
+      "qs": [
+        5
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L1e-scene.jpg\" alt=\"場面の絵：契約書にサインをする女性と見ている男性\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>",
+      "lines": [
+        "5番。",
+        "1。",
+        "男の人が契約書にサインをしています。",
+        "2。",
+        "女の人が契約書にサインをしています。",
+        "3。",
+        "女の人が書類をコピーしています。",
+        "4。",
+        "男の人が電話をかけています。"
+      ],
+      "vi": [
+        "Câu 5.",
+        "1.",
+        "Người đàn ông đang ký vào hợp đồng.",
+        "2.",
+        "Người phụ nữ đang ký vào hợp đồng.",
+        "3.",
+        "Người phụ nữ đang photocopy tài liệu.",
+        "4.",
+        "Người đàn ông đang gọi điện thoại."
+      ]
+    },
+    {
+      "id": "L2a",
+      "part": 1,
+      "audio": "assets/mock2-L2a.mp3",
+      "title": "セット L2a — 発言聴解（面接・人事）",
+      "desc": "問題6 · 面接での発言を聞いて、最も適切な応答を選びましょう。",
+      "qs": [
+        6
+      ],
+      "lines": [
+        "当社を志望した理由を教えてください。"
+      ],
+      "vi": [
+        "Anh hãy cho tôi biết lý do anh ứng tuyển vào công ty chúng tôi."
+      ]
+    },
+    {
+      "id": "L2b",
+      "part": 1,
+      "audio": "assets/mock2-L2b.mp3",
+      "title": "セット L2b — 発言聴解（展示会）",
+      "desc": "問題7 · 展示会での発言を聞いて、最も適切な応答を選びましょう。",
+      "qs": [
+        7
+      ],
+      "lines": [
+        "展示会のブースの場所を教えていただけますか。"
+      ],
+      "vi": [
+        "Chị có thể chỉ giúp tôi vị trí gian hàng ở triển lãm được không?"
+      ]
+    },
+    {
+      "id": "L2c",
+      "part": 1,
+      "audio": "assets/mock2-L2c.mp3",
+      "title": "セット L2c — 発言聴解（融資相談）",
+      "desc": "問題8 · 融資相談での発言を聞いて、最も適切な応答を選びましょう。",
+      "qs": [
+        8
+      ],
+      "lines": [
+        "融資の審査には、決算書が3期分必要です。"
+      ],
+      "vi": [
+        "Để xét duyệt khoản vay cần báo cáo quyết toán của 3 kỳ."
+      ]
+    },
+    {
+      "id": "L2d",
+      "part": 1,
+      "audio": "assets/mock2-L2d.mp3",
+      "title": "セット L2d — 発言聴解（設備修理依頼）",
+      "desc": "問題9 · 設備修理の依頼での発言を聞いて、最も適切な応答を選びましょう。",
+      "qs": [
+        9
+      ],
+      "lines": [
+        "会議室のエアコンが動かなくなってしまったのですが。"
+      ],
+      "vi": [
+        "Điều hòa ở phòng họp đã không chạy nữa rồi."
+      ]
+    },
+    {
+      "id": "L2e",
+      "part": 1,
+      "audio": "assets/mock2-L2e.mp3",
+      "title": "セット L2e — 発言聴解（在庫発注）",
+      "desc": "問題10 · 追加注文での発言を聞いて、最も適切な応答を選びましょう。",
+      "qs": [
+        10
+      ],
+      "lines": [
+        "部品の在庫が残りわずかです。発注をお願いできますか。"
+      ],
+      "vi": [
+        "Tồn kho linh kiện chỉ còn rất ít. Anh có thể đặt hàng giúp tôi được không?"
+      ]
+    },
+    {
+      "id": "L2f",
+      "part": 1,
+      "audio": "assets/mock2-L2f.mp3",
+      "title": "セット L2f — 発言聴解（プレゼン提案）",
+      "desc": "問題11 · アイデアの提案での発言を聞いて、最も適切な応答を選びましょう。",
+      "qs": [
+        11
+      ],
+      "lines": [
+        "新製品の提案ですが、来週の会議で発表してもよろしいでしょうか。"
+      ],
+      "vi": [
+        "Về đề xuất sản phẩm mới, tôi có thể trình bày ở cuộc họp tuần sau được không ạ?"
+      ]
+    },
+    {
+      "id": "L2g",
+      "part": 1,
+      "audio": "assets/mock2-L2g.mp3",
+      "title": "セット L2g — 発言聴解（慣用表現「手が回らない」）",
+      "desc": "問題12 · 短い発言を聞いて、慣用表現の正しい意味を選びましょう。",
+      "qs": [
+        12
+      ],
+      "lines": [
+        "今月は注文が多くて、手が回らないんだ。"
+      ],
+      "vi": [
+        "Tháng này đơn hàng nhiều nên tôi không xoay xở kịp."
+      ]
+    },
+    {
+      "id": "L2h",
+      "part": 1,
+      "audio": "assets/mock2-L2h.mp3",
+      "title": "セット L2h — 発言聴解（慣用表現「話がまとまる」）",
+      "desc": "問題13 · 短い発言を聞いて、慣用表現の正しい意味を選びましょう。",
+      "qs": [
+        13
+      ],
+      "lines": [
+        "ようやく先方と話がまとまりました。"
+      ],
+      "vi": [
+        "Cuối cùng tôi cũng đã thống nhất được với bên đối tác."
+      ]
+    },
+    {
+      "id": "L2i",
+      "part": 1,
+      "audio": "assets/mock2-L2i.mp3",
+      "title": "セット L2i — 発言聴解（謝罪・依頼）",
+      "desc": "問題14 · 謝罪と依頼の発言を聞いて、最も適切な応答を選びましょう。",
+      "qs": [
+        14
+      ],
+      "lines": [
+        "先日の納品の遅れについて、お詫び申し上げます。"
+      ],
+      "vi": [
+        "Tôi xin lỗi về việc giao hàng chậm lần trước."
+      ]
+    },
+    {
+      "id": "L2j",
+      "part": 1,
+      "audio": "assets/mock2-L2j.mp3",
+      "title": "セット L2j — 発言聴解（日程調整）",
+      "desc": "問題15 · アポイント調整での発言を聞いて、最も適切な応答を選びましょう。",
+      "qs": [
+        15
+      ],
+      "lines": [
+        "来週の打ち合わせですが、火曜日から水曜日に変更していただけますか。"
+      ],
+      "vi": [
+        "Về buổi họp tuần sau, chị có thể đổi từ thứ Ba sang thứ Tư được không ạ?"
+      ]
+    },
+    {
+      "id": "L3a",
+      "part": 1,
+      "audio": "assets/mock2-L3a.mp3",
+      "title": "セット L3a — 総合聴解（新製品プレゼン準備の会議）",
+      "desc": "問題16–18 · 新製品プレゼンの準備会議を聞いて、このセットの3問すべてに答えてください。",
+      "qs": [
+        16,
+        17,
+        18
+      ],
+      "lines": [
+        "新製品のプレゼン準備について確認します。発表は木曜日の午後2時からです。",
+        "会場は第3会議室でいいですか。",
+        "はい、第3会議室です。資料はもうできていますか。",
+        "スライドは明日までに完成させます。ただ、マーケティング部からのデータは、まだ届いていません。",
+        "そうですか。では、マーケティング部には今日中に催促しておいてください。",
+        "かしこまりました。サンプル品は水曜日に届く予定です。"
+      ],
+      "vi": [
+        "Tôi xin xác nhận việc chuẩn bị cho buổi thuyết trình sản phẩm mới. Buổi trình bày bắt đầu lúc 2 giờ chiều thứ Năm.",
+        "Hội trường là phòng họp số 3 có được không?",
+        "Vâng, phòng họp số 3. Tài liệu đã làm xong chưa ạ?",
+        "Slide tôi sẽ hoàn thành trước ngày mai. Tuy nhiên, dữ liệu từ phòng Marketing vẫn chưa gửi tới.",
+        "Vậy sao. Vậy anh hãy nhắc phòng Marketing trong hôm nay giúp tôi.",
+        "Tôi hiểu rồi. Hàng mẫu dự kiến sẽ đến vào thứ Tư."
+      ]
+    },
+    {
+      "id": "L3b",
+      "part": 1,
+      "audio": "assets/mock2-L3b.mp3",
+      "title": "セット L3b — 総合聴解（展示会出展の案内）",
+      "desc": "問題19–21 · 展示会についてのお知らせを聞いて、このセットの3問すべてに答えてください。",
+      "qs": [
+        19,
+        20,
+        21
+      ],
+      "lines": [
+        "営業部の皆さん、来月の展示会についてお知らせします。展示会は来月10日から12日まで、東京ビッグサイトで行います。当社のブース番号はA-12です。設営は前日の9日、午後3時から行いますので、担当者は2時半に現地に集合してください。来場者の登録は、事前にオンラインで行ってください。当日受付での登録はできません。"
+      ],
+      "vi": [
+        "Mọi người trong phòng Kinh doanh, tôi xin thông báo về triển lãm tháng sau. Triển lãm diễn ra từ ngày 10 đến ngày 12 tháng sau tại Tokyo Big Sight. Số gian hàng của công ty chúng ta là A-12. Việc dựng gian hàng sẽ làm từ 3 giờ chiều ngày 9, ngày hôm trước, vì vậy người phụ trách hãy tập trung tại hiện trường lúc 2 giờ rưỡi. Việc đăng ký của khách tham quan hãy làm trước qua mạng. Không thể đăng ký tại quầy tiếp đón trong ngày diễn ra."
+      ]
+    },
+    {
+      "id": "L3c",
+      "part": 1,
+      "audio": "assets/mock2-L3c.mp3",
+      "title": "セット L3c — 総合聴解（品質検査結果の報告会議）",
+      "desc": "問題22–25 · 品質検査結果の報告会議を聞いて、このセットの4問すべてに答えてください。",
+      "qs": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "lines": [
+        "今回の品質検査の結果を報告します。検査した1,000個のうち、不良品は25個でした。",
+        "不良率は2.5%ですね。原因は何でしたか。",
+        "部品Aの寸法に問題がありました。仕入先に連絡して、部品の交換をお願いします。",
+        "出荷はどうしますか。",
+        "検査に合格した分だけ先に出荷します。不良品は出荷しません。再検査は来週の月曜日に行います。"
+      ],
+      "vi": [
+        "Tôi xin báo cáo kết quả kiểm tra chất lượng lần này. Trong 1.000 sản phẩm đã kiểm tra, có 25 sản phẩm lỗi.",
+        "Tỉ lệ lỗi là 2,5% nhỉ. Nguyên nhân là gì vậy?",
+        "Linh kiện A có vấn đề về kích thước. Tôi sẽ liên hệ với nhà cung cấp để nhờ đổi linh kiện.",
+        "Còn việc xuất hàng thì sao ạ?",
+        "Chỉ xuất trước phần đã đạt kiểm tra. Hàng lỗi sẽ không xuất. Việc kiểm tra lại sẽ làm vào thứ Hai tuần sau."
+      ]
+    },
+    {
+      "id": "LR1a",
+      "part": 2,
+      "audio": "assets/mock2-LR1a.mp3",
+      "title": "セット LR1a — 状況把握（顧客訪問アポイント変更）",
+      "desc": "問題26–27 · 下の顧客訪問スケジュールを読みながら変更のお知らせを聞いてください — 音声と資料が異なる場合は、音声を基準にします。",
+      "qs": [
+        26,
+        27
+      ],
+      "mat": "<div class=\"read-passage jp\"><span class=\"subj\">顧客訪問の予定</span>\\n\\n日時：来週火曜日 10:00\\n訪問先：取引先の本社\\n担当：営業部\\n目的：新製品の紹介</div>",
+      "lines": [
+        "来週の顧客訪問ですが、火曜日から水曜日に変更になりました。",
+        "時間はどうなりますか。",
+        "午後2時からです。訪問先は本社のままで、変更はありません。"
+      ],
+      "vi": [
+        "Về chuyến thăm khách hàng tuần sau, đã đổi từ thứ Ba sang thứ Tư.",
+        "Giờ thì sao ạ?",
+        "Bắt đầu lúc 2 giờ chiều. Nơi đến thăm vẫn là trụ sở chính, không thay đổi."
+      ]
+    },
+    {
+      "id": "LR1b",
+      "part": 2,
+      "audio": "assets/mock2-LR1b.mp3",
+      "title": "セット LR1b — 状況把握（オフィス移転のお知らせ）",
+      "desc": "問題28–30 · 下のオフィス移転のお知らせを読みながら変更のお知らせを聞いてください — 音声と資料が異なる場合は、音声を基準にします。",
+      "qs": [
+        28,
+        29,
+        30
+      ],
+      "mat": "<div class=\"read-passage jp\"><span class=\"subj\">オフィス移転のお知らせ</span>\\n\\n移転日：来月1日\\n新住所：東京都新宿区西新宿1-2-3\\n電話番号：03-1234-5678（変更なし）\\n最寄り駅：新宿駅から徒歩5分</div>",
+      "lines": [
+        "オフィス移転についてお知らせします。移転日は来月1日から8日に延期になりました。",
+        "電話番号は変わりますか。",
+        "電話番号は変わりません。住所と最寄り駅も、お知らせのとおりです。"
+      ],
+      "vi": [
+        "Tôi xin thông báo về việc chuyển văn phòng. Ngày chuyển đã lùi từ ngày 1 sang ngày 8 tháng sau.",
+        "Số điện thoại có thay đổi không ạ?",
+        "Số điện thoại không thay đổi. Địa chỉ và ga gần nhất cũng như trong thông báo."
+      ]
+    },
+    {
+      "id": "LR2a",
+      "part": 2,
+      "audio": "assets/mock2-LR2a.mp3",
+      "title": "セット LR2a — 資料聴読解（グラフ：新製品の月別売上）",
+      "desc": "問題31–33 · 下の棒グラフを見ながらプレゼンを聞いてください — 数字を正しい月に結びつけることに注意し、3か月の合計は自分で計算しましょう。",
+      "qs": [
+        31,
+        32,
+        33
+      ],
+      "mat": "<div class=\"price-box\"><div class=\"price-title jp\">新製品の月別売上</div><div class=\"chart-wrap\" role=\"img\" aria-label=\"新製品の4月から9月までの売上の棒グラフ：4月は80万円、5月は95万円、6月は110万円、7月は105万円、8月は130万円、9月は150万円\"><svg viewBox=\"0 0 640 330\"><g stroke=\"var(--line)\" stroke-width=\"1\"><line x1=\"70\" y1=\"60\" x2=\"620\" y2=\"60\"/><line x1=\"70\" y1=\"130\" x2=\"620\" y2=\"130\"/><line x1=\"70\" y1=\"200\" x2=\"620\" y2=\"200\"/><line x1=\"70\" y1=\"270\" x2=\"620\" y2=\"270\" stroke=\"var(--muted)\"/></g><g fill=\"var(--muted)\" font-size=\"12\" text-anchor=\"end\" font-family=\"sans-serif\"><text x=\"62\" y=\"64\">150</text><text x=\"62\" y=\"134\">100</text><text x=\"62\" y=\"204\">50</text><text x=\"62\" y=\"274\">0</text></g><text x=\"70\" y=\"24\" fill=\"var(--muted)\" font-size=\"12.5\">単位：万円</text><g fill=\"#2563eb\"><rect x=\"92\" y=\"158\" width=\"58\" height=\"112\"/><rect x=\"182\" y=\"137\" width=\"58\" height=\"133\"/><rect x=\"272\" y=\"116\" width=\"58\" height=\"154\"/><rect x=\"362\" y=\"123\" width=\"58\" height=\"147\"/><rect x=\"452\" y=\"88\" width=\"58\" height=\"182\"/><rect x=\"542\" y=\"60\" width=\"58\" height=\"210\"/></g><g fill=\"var(--ink)\" font-size=\"13.5\" font-weight=\"700\" text-anchor=\"middle\"><text x=\"121\" y=\"148\">80</text><text x=\"211\" y=\"127\">95</text><text x=\"301\" y=\"106\">110</text><text x=\"391\" y=\"113\">105</text><text x=\"481\" y=\"78\">130</text><text x=\"571\" y=\"50\">150</text></g><g fill=\"var(--ink)\" font-size=\"13.5\" text-anchor=\"middle\" font-weight=\"600\"><text x=\"121\" y=\"294\">4月</text><text x=\"211\" y=\"294\">5月</text><text x=\"301\" y=\"294\">6月</text><text x=\"391\" y=\"294\">7月</text><text x=\"481\" y=\"294\">8月</text><text x=\"571\" y=\"294\">9月</text></g></svg></div><table class=\"data\"><tr><th>月</th><th>4月</th><th>5月</th><th>6月</th><th>7月</th><th>8月</th><th>9月</th></tr><tr><td>売上（万円）</td><td>80</td><td>95</td><td>110</td><td>105</td><td>130</td><td>150</td></tr></table></div>",
+      "lines": [
+        "このグラフは、4月から9月までの新製品の売上を示したものです。4月は80万円でしたが、5月は95万円に増えました。6月は110万円まで増えています。",
+        "7月はどうでしたか。",
+        "7月は105万円と少し減りましたが、8月は130万円、9月は150万円と、9月が最も多くなりました。"
+      ],
+      "vi": [
+        "Biểu đồ này cho thấy doanh số sản phẩm mới từ tháng 4 đến tháng 9. Tháng 4 là 800.000 yên, tháng 5 tăng lên 950.000 yên, tháng 6 tăng lên 1.100.000 yên.",
+        "Tháng 7 thì sao ạ?",
+        "Tháng 7 giảm nhẹ xuống 1.050.000 yên, nhưng tháng 8 là 1.300.000 yên, tháng 9 là 1.500.000 yên — tháng 9 là nhiều nhất."
+      ]
+    },
+    {
+      "id": "LR2b",
+      "part": 2,
+      "audio": "assets/mock2-LR2b.mp3",
+      "title": "セット LR2b — 資料聴読解（メール：商品のご注文）",
+      "desc": "問題34–36 · 下の注文メールを読みながら内容修正の電話を聞いてください — 音声とメールが異なる場合は、音声を基準にします。",
+      "qs": [
+        34,
+        35,
+        36
+      ],
+      "mat": "<div class=\"read-passage jp\"><span class=\"subj\">件名：商品のご注文について</span>\\n\\n差出人：山田商事 営業部 佐藤\\n宛先：営業部\\n\\nいつもお世話になっております。\\n次のとおり、商品をご注文いたします。\\n商品A：100個（単価 2,000円）\\n商品B：50個（単価 3,000円）\\n納期：来週金曜日\\n合計：350,000円\\nよろしくお願いいたします。</div>",
+      "lines": [
+        "先日お送りした注文のメールについて、お電話しました。商品Aの数量を、100個から120個に変更していただけますか。",
+        "かしこまりました。120個に変更いたします。納期は来週金曜日のままでよろしいでしょうか。",
+        "納期も変更をお願いします。金曜日ではなく、木曜日にお届けいただけますか。商品Bは50個のまま、変更はありません。",
+        "承知いたしました。商品Aは120個、商品Bは50個、納期は来週木曜日に変更いたします。"
+      ],
+      "vi": [
+        "Tôi gọi điện về email đặt hàng tôi đã gửi hôm trước. Về số lượng của sản phẩm A, có thể đổi từ 100 cái thành 120 cái được không ạ?",
+        "Vâng, tôi đã rõ. Tôi sẽ đổi thành 120 cái. Thời gian giao hàng vẫn giữ thứ Sáu tuần sau có được không ạ?",
+        "Thời gian giao hàng cũng xin đổi giúp tôi. Không phải thứ Sáu mà giao vào thứ Năm được không ạ? Sản phẩm B vẫn giữ 50 cái, không thay đổi.",
+        "Vâng, tôi đã rõ. Sản phẩm A đổi thành 120 cái, sản phẩm B giữ 50 cái, thời gian giao hàng đổi sang thứ Năm tuần sau ạ."
+      ]
+    },
+    {
+      "id": "LR2c",
+      "part": 2,
+      "audio": "assets/mock2-LR2c.mp3",
+      "title": "セット LR2c — 資料聴読解（広告：新型プリンター発売キャンペーン）",
+      "desc": "問題37–40 · 下の広告を見ながら紹介を聞いてください — 割引後の価格は価格表から自分で計算しましょう。",
+      "qs": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "mat": "<div class=\"price-box\"><div class=\"price-title jp\">新型プリンター発売キャンペーン</div><table class=\"data\"><tr><th>モデル</th><th>価格</th></tr><tr><td>モデルX</td><td>29,800円</td></tr><tr><td>モデルY</td><td>49,800円</td></tr></table><p class=\"price-note\">期間：今月末まで ／ 割引：20%引き（オンラインでのご注文のみ）</p></div>",
+      "lines": [
+        "新型プリンターの発売キャンペーンのご案内です。モデルXは29,800円、モデルYは49,800円です。",
+        "割引はありますか。",
+        "はい。今月末までのご注文で、20%引きになります。オンラインでのご注文のみが対象です。",
+        "モデルYをオンラインで注文すると、いくらになりますか。",
+        "39,840円になります。"
+      ],
+      "vi": [
+        "Tôi xin giới thiệu chương trình khuyến mãi ra mắt máy in mới. Mẫu X là 29.800 yên, mẫu Y là 49.800 yên.",
+        "Có giảm giá không ạ?",
+        "Vâng. Đơn hàng đặt trước cuối tháng này sẽ được giảm 20%. Chỉ áp dụng cho đơn đặt qua mạng.",
+        "Nếu đặt mẫu Y qua mạng thì giá là bao nhiêu ạ?",
+        "Là 39.840 yên ạ."
+      ]
+    },
+    {
+      "id": "LR3a",
+      "part": 2,
+      "audio": "assets/mock2-LR3a.mp3",
+      "title": "セット LR3a — 総合聴読解（銀行融資のメール）",
+      "desc": "問題41–43 · 下の銀行のメールを読みながら内容修正の電話を聞いてください — 音声とメールが異なる場合は、音声を基準にします。",
+      "qs": [
+        41,
+        42,
+        43
+      ],
+      "mat": "<div class=\"read-passage jp\"><span class=\"subj\">件名：融資のご案内</span>\\n\\n融資金額：500万円\\n返済期間：5年\\n金利：年2.5%\\n返済方法：毎月均等返済</div>",
+      "lines": [
+        "融資の件でご連絡します。融資金額ですが、500万円から600万円に変更できます。",
+        "金利はどうなりますか。",
+        "金利は年2.0%になります。返済期間は5年のままです。"
+      ],
+      "vi": [
+        "Tôi xin liên hệ về khoản vay. Số tiền vay có thể đổi từ 5 triệu yên lên 6 triệu yên.",
+        "Lãi suất thì sao ạ?",
+        "Lãi suất sẽ là 2,0% một năm. Thời gian trả nợ vẫn là 5 năm."
+      ]
+    },
+    {
+      "id": "LR3b",
+      "part": 2,
+      "audio": "assets/mock2-LR3b.mp3",
+      "title": "セット LR3b — 総合聴読解（品質検査レポート）",
+      "desc": "問題44–46 · 下の品質検査レポートを読みながら追加の報告を聞いてください — 最終的な数値は自分で計算しましょう。",
+      "qs": [
+        44,
+        45,
+        46
+      ],
+      "mat": "<div class=\"price-box\"><div class=\"price-title jp\">品質検査レポート</div><table class=\"data\"><tr><th>項目</th><th>数</th></tr><tr><td>検査数</td><td>500個</td></tr><tr><td>不良品</td><td>10個</td></tr><tr><td>合格数</td><td>490個</td></tr><tr><td>合格率</td><td>98%</td></tr></table></div>",
+      "lines": [
+        "品質検査レポートについて報告します。最初の検査では不良品が10個でしたが、再検査でさらに5個見つかりました。",
+        "ということは、不良品は全部で15個ですね。",
+        "はい。合格数は485個、不良率は3%になります。"
+      ],
+      "vi": [
+        "Tôi xin báo cáo về biên bản kiểm tra chất lượng. Trong lần kiểm tra đầu tiên có 10 sản phẩm lỗi, nhưng khi kiểm tra lại đã phát hiện thêm 5 sản phẩm nữa.",
+        "Như vậy tổng cộng có 15 sản phẩm lỗi phải không?",
+        "Vâng. Số sản phẩm đạt là 485, tỉ lệ lỗi là 3%."
+      ]
+    },
+    {
+      "id": "LR3c",
+      "part": 2,
+      "audio": "assets/mock2-LR3c.mp3",
+      "title": "セット LR3c — 総合聴読解（在庫・発注フォーム）",
+      "desc": "問題47–50 · 下の注文書を読みながら内容修正の電話を聞いてください — 音声と注文書が異なる場合は、音声を基準にします。",
+      "qs": [
+        47,
+        48,
+        49,
+        50
+      ],
+      "mat": "<div class=\"price-box\"><div class=\"price-title jp\">発注フォーム</div><table class=\"data\"><tr><th>商品</th><th>在庫</th><th>発注数</th><th>納期</th></tr><tr><td>商品P</td><td>120個</td><td>200個</td><td>来週月曜日</td></tr><tr><td>商品Q</td><td>30個</td><td>100個</td><td>来週月曜日</td></tr></table></div>",
+      "lines": [
+        "発注フォームの件で連絡します。商品Pの発注数ですが、200個から250個に変更をお願いします。",
+        "かしこまりました。商品Qは予定どおりですか。",
+        "商品Qの発注数は100個のままです。ただ、納期は在庫不足のため、水曜日に延期になりました。"
+      ],
+      "vi": [
+        "Tôi xin liên hệ về phiếu đặt hàng. Về số lượng đặt hàng của sản phẩm P, xin đổi từ 200 lên 250 sản phẩm.",
+        "Tôi hiểu rồi. Còn sản phẩm Q vẫn như kế hoạch phải không ạ?",
+        "Số lượng đặt hàng của sản phẩm Q vẫn là 100. Tuy nhiên, do thiếu hàng tồn kho nên ngày giao đã lùi sang thứ Tư."
+      ]
+    },
+    {
+      "id": "R1a",
+      "part": 3,
+      "title": "セット R1a — 語彙",
+      "desc": "問題51–55 · 文の文脈に最も合う語を選びましょう。",
+      "qs": [
+        51,
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    {
+      "id": "R1b",
+      "part": 3,
+      "title": "セット R1b — 文法・表現（メール）",
+      "desc": "問題56–60 · 下のメールを読んで、空欄 ( 56 )–( 60 ) に入る語句を選びましょう。",
+      "qs": [
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "mat": "<div class=\"read-passage jp\">取引先の皆様\\n\\n平素よりお世話になっております。来月開催の展示会のご案内（ 56 ）。\\n展示会の詳細は、（ 57 ）のとおりです。皆様のご来場を心よりお待ちしております。\\nご都合が（ 58 ）場合は、お手数ですが、事前にご連絡ください。\\nお忙しいところ恐れ入りますが、ご返信（ 59 ）ますと幸いです。\\n皆様のご来場を心よりお待ち（ 60 ）おります。</div>"
+    },
+    {
+      "id": "R2a",
+      "part": 3,
+      "title": "セット R2a — 表現読解（上司への報告メール）",
+      "desc": "問題61–65 · 下の上司への報告メールを読んで、空欄 ( 61 )–( 65 ) に入る語句を選びましょう。",
+      "qs": [
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mat": "<div class=\"read-passage jp\">課長\\n\\nお忙しいところ（ 61 ）が、来週の会議の資料についてご報告いたします。\\n資料をご確認（ 62 ）でしょうか。ご指摘の点は、早速（ 63 ）いたします。\\n明日の会議は、都合により（ 64 ）させていただきます。\\nお手数をおかけしますが、よろしくお願い（ 65 ）します。</div>"
+    },
+    {
+      "id": "R2b",
+      "part": 3,
+      "title": "セット R2b — 表現読解（取引先への連絡メール）",
+      "desc": "問題66–70 · 下の取引先への連絡メールを読んで、空欄 ( 66 )–( 70 ) に入る語句を選びましょう。",
+      "qs": [
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "mat": "<div class=\"read-passage jp\">先日はお時間を（ 66 ）、ありがとうございました。ご提案の件、社内で（ 67 ）いたしました。\\n恐れ入りますが、もう少しお時間を（ 68 ）いただけますでしょうか。\\nご不明な点がございましたら、お気軽に（ 69 ）ください。\\n今後ともよろしくお願い（ 70 ）します。</div>"
+    },
+    {
+      "id": "R3a",
+      "part": 3,
+      "title": "セット R3a — 総合読解（掲示：展示会の案内）",
+      "desc": "問題71–73 · 下の展示会のお知らせを読んで答えてください。",
+      "qs": [
+        71,
+        72,
+        73
+      ],
+      "mat": "<div class=\"read-passage jp\"><span class=\"subj\">新製品展示会のお知らせ</span>\\n\\n日時：来月10日（土）10:00〜17:00\\n会場：東京ビッグサイト 東展示棟\\n入場料：無料（事前登録が必要です）\\n内容：新製品の実演、個別相談会、特別セミナー\\n申し込み：当社のウェブサイトから事前登録をお願いします。当日受付での登録はできません。</div>"
+    },
+    {
+      "id": "R3b",
+      "part": 3,
+      "title": "セット R3b — 総合読解（新聞記事：市場動向）",
+      "desc": "問題74–76 · 下の市場についての新聞記事を読んで答えてください。",
+      "qs": [
+        74,
+        75,
+        76
+      ],
+      "mat": "<div class=\"read-passage jp\">国内の家電市場は、今年に入って拡大が続いている。特に、省エネ性能の高い製品の売れ行きが好調で、前年同期比で12%増加した。一方で、原材料価格の高騰により、各社の利益率は低下している。業界関係者は、「今後も省エネ製品への需要は続くが、価格競争がさらに激しくなるだろう」と見ている。</div>"
+    },
+    {
+      "id": "R3c",
+      "part": 3,
+      "title": "セット R3c — 総合読解（議事録：新製品開発会議）",
+      "desc": "問題77–80 · 下の議事録を読んで答えてください。",
+      "qs": [
+        77,
+        78,
+        79,
+        80
+      ],
+      "mat": "<div class=\"read-passage jp\"><span class=\"subj\">新製品開発会議 議事録（11月15日）</span>\\n\\n出席：開発部、営業部、品質管理部\\n\\n1. 新製品の発売時期は、来年4月に決定した。発売に向け、3月までに最終検査を終えること。\\n2. 価格については、まだ決まっていない。営業部が来週までに競合他社の価格を調査し、開発部と協議すること。\\n3. 販売目標は、初年度で1万個とした。販売地域は、まず首都圏から開始し、順次全国に広げること。\\n4. 担当は、開発部が製品の最終調整、営業部が販売計画の作成、品質管理部が検査体制の整備をそれぞれ行うこと。</div>"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "g": "L1a",
+      "q": "写真の内容と合っているものはどれですか。",
+      "opts": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "ans": "B",
+      "explain": "Trong hình, người đàn ông đứng trước bảng trắng, tay chỉ vào biểu đồ để thuyết trình; không ai nói điện thoại hay mở cửa, người phụ nữ ngồi nghe chứ không làm tài liệu trên máy tính."
+    },
+    {
+      "n": 2,
+      "g": "L1b",
+      "q": "写真の内容と合っているものはどれですか。",
+      "opts": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "ans": "D",
+      "explain": "Trong hình, người đàn ông đang ở quầy làm thủ tục sân bay, đưa hộ chiếu cho nhân viên, bên cạnh có vali; không phải mua vé tàu hay vào phòng khách sạn, nhân viên cũng không mang hành lý."
+    },
+    {
+      "n": 3,
+      "g": "L1c",
+      "q": "写真の内容と合っているものはどれですか。",
+      "opts": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "ans": "A",
+      "explain": "Trong hình, người phụ nữ vừa nghe điện thoại vừa viết vào sổ ghi chép; máy tính xách tay đang đóng, không có ai đưa tài liệu, cô ấy cũng không thuyết trình."
+    },
+    {
+      "n": 4,
+      "g": "L1d",
+      "q": "写真の内容と合っているものはどれですか。",
+      "opts": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "ans": "C",
+      "explain": "Trong hình, người công nhân cầm bảng ghi chép, đang đếm các thùng hàng trên kệ kho; không chất hàng lên xe tải, không mở thùng, cũng không đặt hàng trên máy tính."
+    },
+    {
+      "n": 5,
+      "g": "L1e",
+      "q": "写真の内容と合っているものはどれですか。",
+      "opts": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "ans": "B",
+      "explain": "Trong hình, người phụ nữ đang ký vào giấy tờ trên bàn, người đàn ông ngồi đối diện chỉ nhìn; không phải người đàn ông ký, cũng không ai photocopy hay gọi điện."
+    },
+    {
+      "n": 6,
+      "g": "L2a",
+      "q": "志望者の返事として最も適切なものはどれですか。",
+      "opts": [
+        "給料が高いからです。",
+        "家から近いからです。",
+        "御社の海外展開に魅力を感じ、自分の語学力を生かしたいと考えたからです。",
+        "特に理由はありません。"
+      ],
+      "ans": "C",
+      "explain": "Trả lời phỏng vấn phải nêu lý do gắn với công ty và năng lực bản thân; A/B/D đều thiếu nghiêm túc hoặc không liên quan đến công việc."
+    },
+    {
+      "n": 7,
+      "g": "L2b",
+      "q": "係員の返事として最も適切なものはどれですか。",
+      "opts": [
+        "自分で探してください。",
+        "知りません。",
+        "後で来てください。",
+        "かしこまりました。会場図でご案内いたします。"
+      ],
+      "ans": "D",
+      "explain": "Với khách phải dùng kính ngữ và chủ động hướng dẫn bằng sơ đồ hội trường; A/B/C đều thô lỗ hoặc từ chối."
+    },
+    {
+      "n": 8,
+      "g": "L2c",
+      "q": "顧客の返事として最も適切なものはどれですか。",
+      "opts": [
+        "決算書は出しません。",
+        "かしこまりました。来週までにご用意いたします。",
+        "審査はやめてください。",
+        "1期分だけでいいですか。"
+      ],
+      "ans": "B",
+      "explain": "Khách phải chấp nhận yêu cầu và hẹn thời gian chuẩn bị cụ thể; A/C từ chối, D mặc cả điều kiện審査."
+    },
+    {
+      "n": 9,
+      "g": "L2d",
+      "q": "担当者の返事として最も適切なものはどれですか。",
+      "opts": [
+        "申し訳ございません。すぐに担当者を手配いたします。",
+        "暑いのを我慢してください。",
+        "エアコンは自分で直してください。",
+        "来月になったら直します。"
+      ],
+      "ans": "A",
+      "explain": "Thiết bị hỏng phải xin lỗi và bố trí người sửa ngay; B/C đổ cho người báo, D trì hoãn vô lý."
+    },
+    {
+      "n": 10,
+      "g": "L2e",
+      "q": "担当者の返事として最も適切なものはどれですか。",
+      "opts": [
+        "在庫がなくなるまで待ちましょう。",
+        "発注は来月にしましょう。",
+        "自分で発注してください。",
+        "かしこまりました。すぐに発注いたします。"
+      ],
+      "ans": "D",
+      "explain": "Tồn kho sắp hết thì phải đặt hàng ngay và xác nhận bằng kính ngữ; A/B trì hoãn gây rủi ro hết hàng, C từ chối việc của mình."
+    },
+    {
+      "n": 11,
+      "g": "L2f",
+      "q": "上司の返事として最も適切なものはどれですか。",
+      "opts": [
+        "発表しなくていいです。",
+        "もちろんです。ぜひお願いします。",
+        "会議には出なくていいです。",
+        "提案はやめてください。"
+      ],
+      "ans": "B",
+      "explain": "Cấp trên đồng ý và khuyến khích là phù hợp nhất; A/C/D đều từ chối đề xuất mà không có lý do."
+    },
+    {
+      "n": 12,
+      "g": "L2g",
+      "q": "「手が回らない」の意味として正しいものはどれですか。",
+      "opts": [
+        "手が痛い",
+        "手伝いが要らない",
+        "忙しくて対応しきれない",
+        "手順が分からない"
+      ],
+      "ans": "C",
+      "explain": "手が回らない là thành ngữ chỉ bận đến mức không xử lý xuể mọi việc."
+    },
+    {
+      "n": 13,
+      "g": "L2h",
+      "q": "「話がまとまる」の意味として正しいものはどれですか。",
+      "opts": [
+        "合意に達した",
+        "話が長くなった",
+        "話をやめた",
+        "話を聞かなかった"
+      ],
+      "ans": "A",
+      "explain": "話がまとまる nghĩa là cuộc bàn bạc đi đến thống nhất/thỏa thuận."
+    },
+    {
+      "n": 14,
+      "g": "L2i",
+      "q": "取引先の返事として最も適切なものはどれですか。",
+      "opts": [
+        "もう取引しません。",
+        "謝っても許しません。",
+        "遅れたのは当然です。",
+        "いいえ、お気になさらないでください。次回よろしくお願いします。"
+      ],
+      "ans": "D",
+      "explain": "Đáp lại lời xin lỗi phải tỏ ý thông cảm và hướng tới lần sau; A/B/C đều cắt đứt quan hệ hoặc đổ lỗi gay gắt."
+    },
+    {
+      "n": 15,
+      "g": "L2j",
+      "q": "相手の返事として最も適切なものはどれですか。",
+      "opts": [
+        "変更できません。",
+        "かしこまりました。水曜日の午後でよろしいでしょうか。",
+        "火曜日のままでお願いします。",
+        "打ち合わせはやめましょう。"
+      ],
+      "ans": "B",
+      "explain": "Đồng ý đổi lịch và xác nhận lại khung giờ mới là cách đáp phù hợp; A/C/D đều từ chối yêu cầu đổi lịch."
+    },
+    {
+      "n": 16,
+      "g": "L3a",
+      "q": "プレゼンはいつですか。",
+      "opts": [
+        "水曜日の午後2時",
+        "木曜日の午前中",
+        "木曜日の午後2時",
+        "金曜日の午後2時"
+      ],
+      "ans": "C",
+      "explain": "Buổi trình bày là木曜日午後2時; thứ Tư chỉ là ngày hàng mẫu đến, thứ Tư 14:00 là bẫy gắn sai ngày."
+    },
+    {
+      "n": 17,
+      "g": "L3a",
+      "q": "まだできていないことは何ですか。",
+      "opts": [
+        "マーケティング部からのデータの受け取り",
+        "スライドの作成",
+        "会場の予約",
+        "サンプル品の注文"
+      ],
+      "ans": "A",
+      "explain": "Bẫy まだ〜ていない: dữ liệu của phòng Marketing vẫn chưa đến; slide sẽ xong trước ngày mai, hội trường đã chốt phòng 3, hàng mẫu đã đặt."
+    },
+    {
+      "n": 18,
+      "g": "L3a",
+      "q": "サンプル品はいつ届きますか。",
+      "opts": [
+        "月曜日",
+        "火曜日",
+        "木曜日",
+        "水曜日"
+      ],
+      "ans": "D",
+      "explain": "Hàng mẫu dự kiến đến thứ Tư (水曜日に届く予定です)."
+    },
+    {
+      "n": 19,
+      "g": "L3b",
+      "q": "展示会はいつから始まりますか。",
+      "opts": [
+        "来月9日",
+        "来月10日",
+        "来月12日",
+        "今月10日"
+      ],
+      "ans": "B",
+      "explain": "Triển lãm từ ngày 10 đến 12; ngày 9 chỉ là ngày dựng gian hàng (設営) — bẫy gắn sai ngày."
+    },
+    {
+      "n": 20,
+      "g": "L3b",
+      "q": "ブース番号は何番ですか。",
+      "opts": [
+        "A-11",
+        "A-21",
+        "A-12",
+        "B-12"
+      ],
+      "ans": "C",
+      "explain": "Thông báo nói rõブース番号はA-12; A-11/B-12 là nhiễu gần đúng."
+    },
+    {
+      "n": 21,
+      "g": "L3b",
+      "q": "設営は何時からですか。",
+      "opts": [
+        "9日の午後3時",
+        "9日の午前3時",
+        "10日の午後3時",
+        "10日の午前9時"
+      ],
+      "ans": "A",
+      "explain": "Dựng gian hàng từ 15:00 ngày 9; 14:30 chỉ là giờ tập trung, ngày 10 là ngày khai mạc."
+    },
+    {
+      "n": 22,
+      "g": "L3c",
+      "q": "不良品はいくつでしたか。",
+      "opts": [
+        "10個",
+        "15個",
+        "20個",
+        "25個"
+      ],
+      "ans": "D",
+      "explain": "Đã kiểm 1.000 cái, lỗi 25 cái (2,5%); 10/15/20 là số nhiễu."
+    },
+    {
+      "n": 23,
+      "g": "L3c",
+      "q": "不良の原因は何ですか。",
+      "opts": [
+        "検査方法の間違い",
+        "部品Aの寸法の問題",
+        "作業員のミス",
+        "機械の故障"
+      ],
+      "ans": "B",
+      "explain": "Nguyên nhân là寸法 của linh kiện A; các lựa chọn khác không được nhắc đến."
+    },
+    {
+      "n": 24,
+      "g": "L3c",
+      "q": "出荷について正しいものはどれですか。",
+      "opts": [
+        "全て出荷する",
+        "出荷を全て中止する",
+        "合格した分だけ先に出荷する",
+        "不良品も一緒に出荷する"
+      ],
+      "ans": "C",
+      "explain": "Chỉ xuất trước phần đạt kiểm tra, hàng lỗi không xuất — không phải xuất hết hay dừng hết."
+    },
+    {
+      "n": 25,
+      "g": "L3c",
+      "q": "再検査はいつ行いますか。",
+      "opts": [
+        "来週の月曜日",
+        "今週の金曜日",
+        "来週の水曜日",
+        "まだ決まっていない"
+      ],
+      "ans": "A",
+      "explain": "Kiểm tra lại vào thứ Hai tuần sau; thứ Sáu/thứ Tư là bẫy gắn sai ngày."
+    },
+    {
+      "n": 26,
+      "g": "LR1a",
+      "q": "訪問はいつに変更になりましたか。",
+      "opts": [
+        "火曜日の午前10時",
+        "水曜日の午後2時",
+        "水曜日の午前10時",
+        "木曜日の午後2時"
+      ],
+      "ans": "B",
+      "explain": "Audio ghi đè tài liệu: đổi sang thứ Tư 14:00; thứ Ba 10:00 là lịch cũ trong tài liệu."
+    },
+    {
+      "n": 27,
+      "g": "LR1a",
+      "q": "訪問先について正しいものはどれですか。",
+      "opts": [
+        "支社に変更になった",
+        "営業所に変更になった",
+        "オンラインに変更になった",
+        "本社のままで変更はない"
+      ],
+      "ans": "D",
+      "explain": "Chỉ đổi ngày/giờ; nơi thăm vẫn là本社, không thay đổi."
+    },
+    {
+      "n": 28,
+      "g": "LR1b",
+      "q": "移転日はいつになりましたか。",
+      "opts": [
+        "来月8日",
+        "来月1日",
+        "今月8日",
+        "来月15日"
+      ],
+      "ans": "A",
+      "explain": "Audio ghi đè thông báo: ngày chuyển lùi sang mùng 8 tháng sau; mùng 1 là ngày cũ."
+    },
+    {
+      "n": 29,
+      "g": "LR1b",
+      "q": "電話番号について正しいものはどれですか。",
+      "opts": [
+        "新しい番号になる",
+        "まだ決まっていない",
+        "変わらない",
+        "来月に変わる"
+      ],
+      "ans": "C",
+      "explain": "Audio xác nhận電話番号は変わりません, khớp với ghi chú (変更なし) trong thông báo."
+    },
+    {
+      "n": 30,
+      "g": "LR1b",
+      "q": "新オフィスの最寄り駅について正しいものはどれですか。",
+      "opts": [
+        "東京駅から徒歩5分",
+        "新宿駅から徒歩5分",
+        "新宿駅から徒歩10分",
+        "まだ決まっていない"
+      ],
+      "ans": "B",
+      "explain": "Thông báo ghi新宿駅から徒歩5分 và audio xác nhận \"お知らせのとおり\"; 東京駅 và 10 phút là nhiễu."
+    },
+    {
+      "n": 31,
+      "g": "LR2a",
+      "q": "売上が最も多かった月はどれですか。",
+      "opts": [
+        "6月",
+        "7月",
+        "8月",
+        "9月"
+      ],
+      "ans": "D",
+      "explain": "Biểu đồ và audio đều cho thấy tháng 9 cao nhất: 150万円; 8月 130万円 là cao thứ hai."
+    },
+    {
+      "n": 32,
+      "g": "LR2a",
+      "q": "7月から9月までの売上の合計はいくらですか。",
+      "opts": [
+        "360万円",
+        "385万円",
+        "395万円",
+        "410万円"
+      ],
+      "ans": "B",
+      "explain": "Tự tính: 105 + 130 + 150 = 385万円. 360万円 là tổng khi đọc sai 9月 thành 125万円, 395万円 là khi đọc sai 7月 thành 115万円."
+    },
+    {
+      "n": 33,
+      "g": "LR2a",
+      "q": "6月について正しいものはどれですか。",
+      "opts": [
+        "前の月より減った",
+        "上半期で最も多かった",
+        "100万円以下だった",
+        "前の月より増えた"
+      ],
+      "ans": "D",
+      "explain": "5月 95万円から6月 110万円へ増えた (audio: 6月は110万円まで増えています). Tháng cao nhất là 9月 chứ không phải 6月."
+    },
+    {
+      "n": 34,
+      "g": "LR2b",
+      "q": "商品Aの数量は最終的にいくつですか。",
+      "opts": [
+        "50個",
+        "100個",
+        "120個",
+        "150個"
+      ],
+      "ans": "C",
+      "explain": "Email ghi 100個 nhưng audio sửa thành 120個 — lấy audio làm chuẩn; 50個 là số lượng của商品B."
+    },
+    {
+      "n": 35,
+      "g": "LR2b",
+      "q": "納期はいつですか。",
+      "opts": [
+        "今週金曜日",
+        "来週月曜日",
+        "来週金曜日",
+        "来週木曜日"
+      ],
+      "ans": "D",
+      "explain": "Email ghi来週金曜日 nhưng audio đổi sang来週木曜日 — lấy audio làm chuẩn."
+    },
+    {
+      "n": 36,
+      "g": "LR2b",
+      "q": "商品Bについて正しいものはどれですか。",
+      "opts": [
+        "数量が100個に変更になった",
+        "納期が変更になった",
+        "数量も納期も変更されていない",
+        "注文がキャンセルになった"
+      ],
+      "ans": "C",
+      "explain": "Audio nói rõ商品Bは50個のまま、変更はありません; chỉ商品Aの数量と納期 thay đổi."
+    },
+    {
+      "n": 37,
+      "g": "LR2c",
+      "q": "キャンペーン期間はいつまでですか。",
+      "opts": [
+        "今週末まで",
+        "今月末まで",
+        "来月末まで",
+        "今月15日まで"
+      ],
+      "ans": "B",
+      "explain": "Quảng cáo và audio đều nói今月末までのご注文で20%引き; 来月末 là quá hạn, 今週末 thì quá sớm."
+    },
+    {
+      "n": 38,
+      "g": "LR2c",
+      "q": "モデルYをオンラインで注文する場合、割引後の価格はいくらですか。",
+      "opts": [
+        "29,840円",
+        "39,840円",
+        "49,800円",
+        "59,800円"
+      ],
+      "ans": "B",
+      "explain": "Tự tính: 49,800 × 0,8 = 39,840円, khớp audio; 49,800 là giá chưa giảm, 29,840 không phải giá nào trong quảng cáo."
+    },
+    {
+      "n": 39,
+      "g": "LR2c",
+      "q": "割引が適用される条件は何ですか。",
+      "opts": [
+        "店頭で購入すること",
+        "電話で注文すること",
+        "オンラインで注文すること",
+        "2台以上購入すること"
+      ],
+      "ans": "C",
+      "explain": "Quảng cáo ghi rõオンラインでのご注文のみが対象です; không có điều kiện số lượng hay mua tại cửa hàng."
+    },
+    {
+      "n": 40,
+      "g": "LR2c",
+      "q": "広告で紹介されていないものはどれですか。",
+      "opts": [
+        "モデルXの価格",
+        "キャンペーン期間",
+        "割引率",
+        "送料"
+      ],
+      "ans": "D",
+      "explain": "Quảng cáo chỉ nêu giá 2 mẫu, thời hạn và tỉ lệ giảm giá; không hề nhắc đến送料."
+    },
+    {
+      "n": 41,
+      "g": "LR3a",
+      "q": "最終的な融資金額はいくらですか。",
+      "opts": [
+        "400万円",
+        "500万円",
+        "600万円",
+        "700万円"
+      ],
+      "ans": "C",
+      "explain": "Audio sửa email: số tiền vay đổi từ 500万円 thành 600万円."
+    },
+    {
+      "n": 42,
+      "g": "LR3a",
+      "q": "金利はいくらになりますか。",
+      "opts": [
+        "年1.5%",
+        "年2.0%",
+        "年2.5%",
+        "年3.0%"
+      ],
+      "ans": "B",
+      "explain": "Audio nói金利は年2.0%になります; 2,5% là lãi suất cũ trong email."
+    },
+    {
+      "n": 43,
+      "g": "LR3a",
+      "q": "返済期間について正しいものはどれですか。",
+      "opts": [
+        "3年に変更になった",
+        "7年に変更になった",
+        "10年に変更になった",
+        "5年のままで変更はない"
+      ],
+      "ans": "D",
+      "explain": "Audio xác nhận返済期間は5年のままです; chỉ tiền vay và lãi suất thay đổi."
+    },
+    {
+      "n": 44,
+      "g": "LR3b",
+      "q": "最終的な不良品の数はいくつですか。",
+      "opts": [
+        "15個",
+        "10個",
+        "5個",
+        "20個"
+      ],
+      "ans": "A",
+      "explain": "Kiểm tra lại phát hiện thêm 5 cái: 10 + 5 = 15個; 10 là số ban đầu trong báo cáo."
+    },
+    {
+      "n": 45,
+      "g": "LR3b",
+      "q": "合格数はいくつですか。",
+      "opts": [
+        "490個",
+        "495個",
+        "485個",
+        "480個"
+      ],
+      "ans": "C",
+      "explain": "500 − 15 = 485個, khớp audio; 490 là số đạt ban đầu trước khi kiểm tra lại."
+    },
+    {
+      "n": 46,
+      "g": "LR3b",
+      "q": "不良率は何%ですか。",
+      "opts": [
+        "2%",
+        "3%",
+        "5%",
+        "10%"
+      ],
+      "ans": "B",
+      "explain": "15/500 = 3%; 2% là tỉ lệ ban đầu (10/500)."
+    },
+    {
+      "n": 47,
+      "g": "LR3c",
+      "q": "商品Pの最終的な発注数はいくつですか。",
+      "opts": [
+        "100個",
+        "120個",
+        "200個",
+        "250個"
+      ],
+      "ans": "D",
+      "explain": "Audio sửa form: P đổi từ 200 thành 250個."
+    },
+    {
+      "n": 48,
+      "g": "LR3c",
+      "q": "商品Qの納期はいつになりましたか。",
+      "opts": [
+        "水曜日",
+        "月曜日",
+        "金曜日",
+        "木曜日"
+      ],
+      "ans": "A",
+      "explain": "Q lùi ngày giao sang thứ Tư vì thiếu tồn kho; thứ Hai là ngày giao cũ trong form."
+    },
+    {
+      "n": 49,
+      "g": "LR3c",
+      "q": "商品Pの在庫はいくつですか。",
+      "opts": [
+        "30個",
+        "100個",
+        "120個",
+        "250個"
+      ],
+      "ans": "C",
+      "explain": "Form ghi商品Pの在庫は120個; 250 là số đặt hàng mới, không phải tồn kho."
+    },
+    {
+      "n": 50,
+      "g": "LR3c",
+      "q": "商品Qの発注数について正しいものはどれですか。",
+      "opts": [
+        "150個に変更になった",
+        "100個のままで変更はない",
+        "200個に変更になった",
+        "50個に変更になった"
+      ],
+      "ans": "B",
+      "explain": "Audio nói Qの発注数は100個のままです; chỉ ngày giao thay đổi, số lượng không đổi."
+    },
+    {
+      "n": 51,
+      "g": "R1a",
+      "q": "契約書の内容をよく（　）上で、署名してください。",
+      "opts": [
+        "見て",
+        "読んで",
+        "確かめて",
+        "確認して"
+      ],
+      "ans": "D",
+      "explain": "Cụm cố định確認した上で = sau khi đã xác nhận kỹ; 確かめて không đi với上で trong văn phong này, 見て/読んで thiếu nghĩa xác nhận nội dung hợp đồng."
+    },
+    {
+      "n": 52,
+      "g": "R1a",
+      "q": "予算を（　）ように、支出を抑えている。",
+      "opts": [
+        "超えない",
+        "超える",
+        "超えた",
+        "超えて"
+      ],
+      "ans": "A",
+      "explain": "Cần dạng phủ định vớiように: 予算を超えないように (để không vượt ngân sách); B/C/D sai thì/thể."
+    },
+    {
+      "n": 53,
+      "g": "R1a",
+      "q": "お客様のご要望に（　）、対応いたします。",
+      "opts": [
+        "応えて",
+        "応じ",
+        "沿って",
+        "合わせて"
+      ],
+      "ans": "C",
+      "explain": "Cụmご要望に沿って = theo đúng yêu cầu của khách; 応じる đi vớiに nhưng dạng 応じて mới đúng, 応えて không dùng với要望."
+    },
+    {
+      "n": 54,
+      "g": "R1a",
+      "q": "会議の資料には、事前に目を（　）おいてください。",
+      "opts": [
+        "配って",
+        "通して",
+        "渡して",
+        "読ませて"
+      ],
+      "ans": "B",
+      "explain": "Thành ngữ目を通す = xem qua tài liệu; 配る là phát, 渡す là đưa, 読ませる là bắt người khác đọc."
+    },
+    {
+      "n": 55,
+      "g": "R1a",
+      "q": "新製品の発売を来月に（　）した。",
+      "opts": [
+        "延ばす",
+        "伸ばす",
+        "遅らせる",
+        "延期する"
+      ],
+      "ans": "D",
+      "explain": "発売を延期する là cụm đúng (hoãn ngày phát hành); 延ばす dùng cho thời gian/kỳ hạn nói chung, 伸ばす là kéo dài vật thể, 遅らせる không đi với発売 theo cách này."
+    },
+    {
+      "n": 56,
+      "g": "R1b",
+      "q": "（ 56 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "申し上げます",
+        "なさいます",
+        "されます",
+        "ございます"
+      ],
+      "ans": "A",
+      "explain": "Người viết tự thông báo — khiêm nhượng ngữご案内申し上げます; B/C là tôn kính ngữ cho hành động của đối phương."
+    },
+    {
+      "n": 57,
+      "g": "R1b",
+      "q": "（ 57 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "別紙",
+        "添付",
+        "下記",
+        "同封"
+      ],
+      "ans": "C",
+      "explain": "Chi tiết ghi ngay bên dưới trong cùng email là下記のとおり; 別紙 là tờ riêng, 添付 là file đính kèm, 同封 dùng cho thư giấy."
+    },
+    {
+      "n": 58,
+      "g": "R1b",
+      "q": "（ 58 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "よろしければ",
+        "合わない",
+        "悪い",
+        "つかない"
+      ],
+      "ans": "B",
+      "explain": "Cụmご都合が合わない場合は = trong trường hợp không tiện; よろしければ không đi vớiご都合が."
+    },
+    {
+      "n": 59,
+      "g": "R1b",
+      "q": "（ 59 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "する",
+        "される",
+        "なさる",
+        "いただける"
+      ],
+      "ans": "D",
+      "explain": "Cụm lịch sựご返信いただけますと幸いです (nhờ đối phương trả lời); する/される/なさる đều sai kính ngữ ở đây."
+    },
+    {
+      "n": 60,
+      "g": "R1b",
+      "q": "（ 60 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "申し上げて",
+        "して",
+        "いたして",
+        "なさって"
+      ],
+      "ans": "A",
+      "explain": "Cụm cố địnhお待ち申し上げております; して/いたして không đủ mức kính ngữ, なさって là tôn kính ngữ cho đối phương."
+    },
+    {
+      "n": 61,
+      "g": "R2a",
+      "q": "（ 61 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "申し訳ありません",
+        "恐れ入ります",
+        "失礼します",
+        "ご苦労さまです"
+      ],
+      "ans": "B",
+      "explain": "Cụm mở đầu chuẩnお忙しいところ恐れ入りますが; ご苦労さまです chỉ nói với cấp dưới."
+    },
+    {
+      "n": 62,
+      "g": "R2a",
+      "q": "（ 62 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "できます",
+        "くださいます",
+        "されます",
+        "いただけます"
+      ],
+      "ans": "D",
+      "explain": "Nhờ cấp trên xem tài liệu: ご確認いただけますでしょうか; できます thiếu kính ngữ, されます sai hướng."
+    },
+    {
+      "n": 63,
+      "g": "R2a",
+      "q": "（ 63 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "修正",
+        "訂正して",
+        "直して",
+        "変えて"
+      ],
+      "ans": "A",
+      "explain": "Cụm khiêm nhượng早速修正いたします; 直して/変えて không đủ trang trọng trong mail báo cáo cấp trên."
+    },
+    {
+      "n": 64,
+      "g": "R2a",
+      "q": "（ 64 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "休んで",
+        "行かずに",
+        "欠席",
+        "遅れて"
+      ],
+      "ans": "C",
+      "explain": "Cụm欠席させていただきます = xin phép vắng mặt; 休んで/遅れて không đi vớiさせていただきます theo nghĩa này."
+    },
+    {
+      "n": 65,
+      "g": "R2a",
+      "q": "（ 65 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "します",
+        "いたします",
+        "なさいます",
+        "されます"
+      ],
+      "ans": "B",
+      "explain": "Người viết tự nhờ vả — khiêm nhượng ngữよろしくお願いいたします; C/D là tôn kính ngữ cho đối phương."
+    },
+    {
+      "n": 66,
+      "g": "R2b",
+      "q": "（ 66 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "もらい",
+        "取り",
+        "かけ",
+        "いただき"
+      ],
+      "ans": "D",
+      "explain": "Cụmお時間をいただき、ありがとうございました; もらい/取り không đủ kính ngữ."
+    },
+    {
+      "n": 67,
+      "g": "R2b",
+      "q": "（ 67 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "検討",
+        "考えて",
+        "見て",
+        "話して"
+      ],
+      "ans": "A",
+      "explain": "Cụm社内で検討いたしました = đã xem xét nội bộ; 考えて/見て/話して không tạo thành cụm trang trọng này."
+    },
+    {
+      "n": 68,
+      "g": "R2b",
+      "q": "（ 68 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "もらって",
+        "ください",
+        "いただけ",
+        "なさい"
+      ],
+      "ans": "C",
+      "explain": "Cụmお時間をいただけますでしょうか (xin thêm thời gian); もらって thiếu kính ngữ, ください không đi sauお時間を."
+    },
+    {
+      "n": 69,
+      "g": "R2b",
+      "q": "（ 69 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "聞いて",
+        "お問い合わせ",
+        "電話して",
+        "連絡なさって"
+      ],
+      "ans": "B",
+      "explain": "Cụm cố địnhお気軽にお問い合わせください; 聞いて/電話して thiếu mức lịch sự với khách hàng."
+    },
+    {
+      "n": 70,
+      "g": "R2b",
+      "q": "（ 70 ）に入る最も適切なものはどれですか。",
+      "opts": [
+        "します",
+        "いたします",
+        "なさいます",
+        "申し上げます"
+      ],
+      "ans": "D",
+      "explain": "Cụm kết thưよろしくお願い申し上げます (お願い + 申し上げます); chọn B sẽ thànhお願いいたしますします (thừa します), chọn A/C sai thể kính ngữ."
+    },
+    {
+      "n": 71,
+      "g": "R3a",
+      "q": "展示会はどこで行われますか。",
+      "opts": [
+        "東京ビッグサイト 東展示棟",
+        "大阪展示場",
+        "本社ビル",
+        "オンライン"
+      ],
+      "ans": "A",
+      "explain": "Văn bản ghi rõ会場は東京ビッグサイト東展示棟; các lựa chọn khác không được nhắc đến."
+    },
+    {
+      "n": 72,
+      "g": "R3a",
+      "q": "入場料について正しいものはどれですか。",
+      "opts": [
+        "1,000円",
+        "5,000円",
+        "無料だが事前登録が必要",
+        "無料で登録も不要"
+      ],
+      "ans": "C",
+      "explain": "入場料は無料 nhưng事前登録が必要です; D sai vì vẫn cần đăng ký trước."
+    },
+    {
+      "n": 73,
+      "g": "R3a",
+      "q": "申し込み方法として正しいものはどれですか。",
+      "opts": [
+        "電話で申し込む",
+        "ウェブサイトから事前登録する",
+        "当日受付で登録する",
+        "申し込みは不要"
+      ],
+      "ans": "B",
+      "explain": "Văn bản nóiウェブサイトから事前登録をお願いします và当日受付での登録はできません — bẫy gắn sai phương thức."
+    },
+    {
+      "n": 74,
+      "g": "R3b",
+      "q": "国内の家電市場について正しいものはどれですか。",
+      "opts": [
+        "縮小している",
+        "横ばいである",
+        "前年より減少した",
+        "今年に入って拡大が続いている"
+      ],
+      "ans": "D",
+      "explain": "Bài báo mở đầu国内の家電市場は、今年に入って拡大が続いている; A/B/C ngược với văn bản."
+    },
+    {
+      "n": 75,
+      "g": "R3b",
+      "q": "売れ行きが好調な製品は何ですか。",
+      "opts": [
+        "価格の安い製品",
+        "デザインの新しい製品",
+        "省エネ性能の高い製品",
+        "輸入製品"
+      ],
+      "ans": "C",
+      "explain": "Văn bản ghi省エネ性能の高い製品の売れ行きが好調で、前年同期比12%増."
+    },
+    {
+      "n": 76,
+      "g": "R3b",
+      "q": "業界関係者の見通しとして正しいものはどれですか。",
+      "opts": [
+        "省エネ製品への需要は続き、価格競争がさらに激しくなる",
+        "省エネ製品への需要はなくなる",
+        "価格競争はおさまる",
+        "原材料価格は下がる"
+      ],
+      "ans": "A",
+      "explain": "Trích dẫn cuối bài: 需要は続くが、価格競争がさらに激しくなるだろう; B/C/D ngược với nhận định này."
+    },
+    {
+      "n": 77,
+      "g": "R3c",
+      "q": "新製品の発売時期について決まったことは何ですか。",
+      "opts": [
+        "今年12月",
+        "来年4月",
+        "来年3月",
+        "まだ決まっていない"
+      ],
+      "ans": "B",
+      "explain": "議事録 ghi発売時期は来年4月に決定した; tháng 3 chỉ là hạn hoàn thành検査 cuối cùng — bẫy gắn sai tháng."
+    },
+    {
+      "n": 78,
+      "g": "R3c",
+      "q": "価格について正しいものはどれですか。",
+      "opts": [
+        "5万円に決まった",
+        "3万円に決まった",
+        "競合他社より安くすると決まった",
+        "まだ決まっておらず、営業部が競合他社の価格を調査する"
+      ],
+      "ans": "D",
+      "explain": "Văn bản ghi価格については、まだ決まっていない và営業部が調査すること; A/B/C đều là thông tin không có trong議事録."
+    },
+    {
+      "n": 79,
+      "g": "R3c",
+      "q": "販売目標について正しいものはどれですか。",
+      "opts": [
+        "初年度で5千個",
+        "初年度で2万個",
+        "初年度で1万個",
+        "3年間で1万個"
+      ],
+      "ans": "C",
+      "explain": "販売目標は初年度で1万個; 5千/2万 và \"3年間\" là nhiễu."
+    },
+    {
+      "n": 80,
+      "g": "R3c",
+      "q": "この議事録の主な内容はどれですか。",
+      "opts": [
+        "新製品の発売時期・価格の検討状況・販売目標と担当の決定",
+        "新製品の価格の最終決定",
+        "既存製品の販売実績",
+        "会社の決算報告"
+      ],
+      "ans": "A",
+      "explain": "Toàn văn gồm 4 mục: thời gian phát hành, tình hình xét giá, mục tiêu bán hàng và phân công — B chỉ là một phần chưa quyết, C/D không có trong văn bản."
+    }
+  ]
+}

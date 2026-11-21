@@ -1,0 +1,302 @@
+{
+  "id": "day1",
+  "type": "choukai",
+  "title": "第1回 — 診断テスト <span class=\"jp\">聴解</span>",
+  "subtitle": "会話3セット · 9問 · 重点ポイント：「まだ〜ていない」— 未確認・未承認",
+  "timeSeconds": 2100,
+  "questionCount": 9,
+  "segmentCount": 3,
+  "segLabel": "セット",
+  "segments": {
+    "1": {
+      "title": "第1問 — お客様とのアポイント",
+      "mp3": "assets/day1-seg1.mp3",
+      "desc": "問題1–3 · 会話を聞いて、このセットの3問すべてに答えてください。",
+      "lines": [
+        {
+          "who": "boss",
+          "text": "明日の会議の件だが、会議室はもう決まったのかね。"
+        },
+        {
+          "who": "staff",
+          "text": "申し訳ございません。会議室につきましては、まだ決まっておらず、現在、総務部に確認中でございます。"
+        },
+        {
+          "who": "boss",
+          "text": "そうか。では、先方の担当者の到着は、午前10時で間違いないのかね。"
+        },
+        {
+          "who": "staff",
+          "text": "午前10時の予定ではございますが、先方から最終確認がまだ取れておりません。"
+        },
+        {
+          "who": "boss",
+          "text": "分かった。確認が取れたら、すぐに私に連絡してくれ。"
+        },
+        {
+          "who": "staff",
+          "text": "かしこまりました。確認が取れ次第、すぐにご連絡いたします。"
+        }
+      ],
+      "vi": [
+        "Về cuộc họp ngày mai, phòng họp đã chốt chưa nhỉ?",
+        "Tôi rất xin lỗi. Về phòng họp, hiện vẫn chưa chốt được, chúng tôi đang xác nhận với phòng Hành chính tổng hợp ạ.",
+        "Vậy à. Thế người phụ trách phía đối tác đến lúc 10 giờ sáng, có chắc chắn không?",
+        "Dự kiến là 10 giờ sáng ạ, nhưng chúng tôi vẫn chưa nhận được xác nhận cuối cùng từ phía đối tác.",
+        "Được rồi. Khi nào có xác nhận thì báo ngay cho tôi nhé.",
+        "Vâng, tôi hiểu rồi ạ. Ngay khi có xác nhận, tôi sẽ liên lạc lại ngay ạ."
+      ]
+    },
+    "2": {
+      "title": "第2問 — 注文と在庫",
+      "mp3": "assets/day1-seg2.mp3",
+      "desc": "問題4–6 · 数字に注意：注文数、在庫数、不足分。",
+      "lines": [
+        {
+          "who": "boss",
+          "text": "A社からの注文は、全部でいくつだったかね。"
+        },
+        {
+          "who": "staff",
+          "text": "A社からのご注文は、全部で千二百個でございます。ただ、現在の在庫は八百五十個しかございません。"
+        },
+        {
+          "who": "boss",
+          "text": "では、今週の金曜日には、いくつ出せるんだ。"
+        },
+        {
+          "who": "staff",
+          "text": "在庫の八百五十個は、今週の金曜日に全て出荷いたします。"
+        },
+        {
+          "who": "boss",
+          "text": "残りの三百五十個は、どうするんだ。"
+        },
+        {
+          "who": "staff",
+          "text": "不足分の三百五十個の納期につきましては、まだ決まっておらず、仕入先の正式な回答を待っているところでございます。"
+        },
+        {
+          "who": "boss",
+          "text": "分かった。回答が来たら、教えてくれ。"
+        }
+      ],
+      "vi": [
+        "Đơn hàng từ Công ty A tổng cộng là bao nhiêu cái nhỉ?",
+        "Đơn hàng của Công ty A tổng cộng là 1.200 cái ạ. Tuy nhiên, tồn kho hiện tại chỉ có 850 cái thôi ạ.",
+        "Vậy thứ Sáu tuần này xuất được bao nhiêu cái?",
+        "850 cái đang có trong kho, chúng tôi sẽ xuất toàn bộ vào thứ Sáu tuần này ạ.",
+        "Còn 350 cái còn lại thì sao?",
+        "Về thời hạn giao 350 cái còn thiếu, hiện vẫn chưa chốt được, chúng tôi đang chờ trả lời chính thức từ nhà cung cấp ạ.",
+        "Được rồi. Khi nào có trả lời thì cho tôi biết nhé."
+      ]
+    },
+    "3": {
+      "title": "第3問 — 出張と経費の承認",
+      "mp3": "assets/day1-seg3.mp3",
+      "desc": "問題7–9 · ここでの注意点は「承認がまだ下りていない」と「見込みだが確実ではない」です。",
+      "lines": [
+        {
+          "who": "staff",
+          "text": "部長、出張の航空券の件ですが、まだ予約できておりません。"
+        },
+        {
+          "who": "boss",
+          "text": "なぜだね。日程は決まっているだろう。"
+        },
+        {
+          "who": "staff",
+          "text": "はい、日程は決まっておりますが、経理部の承認がまだ下りていないため、予約に進めない状況でございます。"
+        },
+        {
+          "who": "boss",
+          "text": "承認は、いつ出そうかね。"
+        },
+        {
+          "who": "staff",
+          "text": "明日の午後の見込みではございますが、確実ではございません。"
+        },
+        {
+          "who": "boss",
+          "text": "そうか。承認が下りたら、すぐに航空券を予約して、ホテルも押さえてくれ。"
+        },
+        {
+          "who": "staff",
+          "text": "承知いたしました。そのようにいたします。"
+        }
+      ],
+      "vi": [
+        "Thưa Trưởng phòng, về vé máy bay cho chuyến công tác, tôi vẫn chưa đặt được ạ.",
+        "Sao vậy? Lịch trình đã chốt rồi mà.",
+        "Vâng, lịch trình đã chốt rồi ạ, nhưng vì phê duyệt của phòng Kế toán vẫn chưa được cấp xuống nên chưa thể tiến hành đặt vé được ạ.",
+        "Phê duyệt thì khoảng khi nào mới có?",
+        "Dự kiến là chiều mai ạ, nhưng chưa chắc chắn ạ.",
+        "Vậy à. Khi nào được phê duyệt thì đặt vé máy bay ngay, và giữ luôn khách sạn giúp tôi nhé.",
+        "Vâng, tôi đã rõ ạ. Tôi sẽ làm như vậy ạ."
+      ]
+    }
+  },
+  "segNames": null,
+  "questions": [
+    {
+      "n": 1,
+      "seg": 1,
+      "q": "会議室について、正しいものはどれですか。",
+      "opts": [
+        "すでに決まっている",
+        "まだ決まっておらず、総務部に確認中である",
+        "決める必要がない",
+        "来週の月曜日に決まる"
+      ],
+      "ans": "B",
+      "trap": "「まだ〜ていない」— chưa xác nhận",
+      "explain": "Hội thoại nói rõ「まだ決まっておらず、総務部に確認中」— phòng họp CHƯA chốt. A là bẫy kinh điển: nghe thấy nhắc tới “phòng họp” liền tưởng đã quyết định."
+    },
+    {
+      "n": 2,
+      "seg": 1,
+      "q": "先方の担当者の到着時間について、正しいものはどれですか。",
+      "opts": [
+        "午前10時で確定している",
+        "午前10時の予定だが、最終確認が取れていない",
+        "午後に変更になった",
+        "まだ何も決まっていない"
+      ],
+      "ans": "B",
+      "trap": "Dự kiến ≠ xác định (予定だが未確認)",
+      "explain": "「午前10時の予定だが、最終確認が取れていない」— 10 giờ mới là dự kiến. A sai ở chữ「確定」; D cũng sai vì đã có giờ dự kiến rồi, không phải “chưa có gì”."
+    },
+    {
+      "n": 3,
+      "seg": 1,
+      "q": "上司が社員に求めたことは何ですか。",
+      "opts": [
+        "会議室を自分で決めること",
+        "確認が取れたらすぐに連絡すること",
+        "資料を作り直すこと",
+        "先方の担当者に直接電話すること"
+      ],
+      "ans": "B",
+      "trap": "Nghe đúng yêu cầu của sếp",
+      "explain": "Sếp chốt bằng câu「確認が取れたら、すぐに私に連絡してくれ」— việc cần làm là báo ngay khi có xác nhận, không phải tự quyết phòng họp hay làm lại tài liệu."
+    },
+    {
+      "n": 4,
+      "seg": 2,
+      "q": "在庫はいくつですか。",
+      "opts": [
+        "350個",
+        "850個",
+        "1,200個",
+        "1,550個"
+      ],
+      "ans": "B",
+      "trap": "Số đơn hàng vs số tồn kho",
+      "explain": "1,200 là lượng ĐƠN HÀNG của A社（注文は全部で1,200個）, còn tồn kho chỉ có「在庫は850個しかない」. C (1,200) là bẫy kinh điển: nghe số to nhất liền chọn. Ghi nhãn ngay khi nghe: 注文1,200・在庫850・不足350."
+    },
+    {
+      "n": 5,
+      "seg": 2,
+      "q": "今週の金曜日に出荷するのは何個ですか。",
+      "opts": [
+        "350個",
+        "850個",
+        "1,200個",
+        "出荷しない"
+      ],
+      "ans": "B",
+      "trap": "Gắn đúng số với đúng mốc thời gian",
+      "explain": "「在庫の850個は今週の金曜日に全て出荷」— thứ Sáu xuất toàn bộ 850 đang có trong kho. 350 là phần còn THIẾU chưa có hàng; 1,200 là tổng đơn hàng."
+    },
+    {
+      "n": 6,
+      "seg": 2,
+      "q": "残りの350個の納期について、正しいものはどれですか。",
+      "opts": [
+        "来週の金曜日に決まっている",
+        "まだ決まっておらず、仕入先の正式な回答を待っている",
+        "キャンセルになった",
+        "今週の金曜日に一緒に出荷する"
+      ],
+      "ans": "B",
+      "trap": "「正式な回答を待っている」= chưa chốt",
+      "explain": "Phần thiếu 350 (1,200 − 850)「まだ決まっておらず、仕入先の正式な回答を待っている」— chưa có hạn giao. A và D đều gán cho nó một ngày cụ thể mà hội thoại không hề nói."
+    },
+    {
+      "n": 7,
+      "seg": 3,
+      "q": "社員が航空券を予約できない理由は何ですか。",
+      "opts": [
+        "ホテルが決まっていない",
+        "経理部の承認がまだ下りていない",
+        "出張の日程が決まっていない",
+        "上司が許可していない"
+      ],
+      "ans": "B",
+      "trap": "「承認がまだ下りていない」",
+      "explain": "Lịch trình ĐÃ chốt (日程は決まっている), vướng duy nhất là「経理部の承認がまだ下りていない」. C là bẫy phủ định ngược; người chưa duyệt là phòng kế toán, không phải sếp."
+    },
+    {
+      "n": 8,
+      "seg": 3,
+      "q": "承認が出る見込みについて、正しいものはどれですか。",
+      "opts": [
+        "明日の午後の見込みだが、確実ではない",
+        "今日中に出ることが確定している",
+        "来週になることが確定している",
+        "すでに出ている"
+      ],
+      "ans": "A",
+      "trap": "「見込みだが確実ではない」",
+      "explain": "Nguyên văn:「明日の午後の見込みではございますが、確実ではございません」. Mọi đáp án có chữ「確定」đều là bẫy — “dự kiến” không bao giờ bằng “chắc chắn”."
+    },
+    {
+      "n": 9,
+      "seg": 3,
+      "q": "承認が下りたら、社員は何をしますか。",
+      "opts": [
+        "出張を中止する",
+        "すぐに航空券を予約し、ホテルも予約する",
+        "上司に報告だけする",
+        "見積書を作り直す"
+      ],
+      "ans": "B",
+      "trap": "Nghe trọn chỉ thị ở cuối đoạn",
+      "explain": "Sếp dặn「承認が下りたら、すぐに航空券を予約して、ホテルも押さえてくれ」— gồm CẢ vé máy bay VÀ khách sạn. Chỉ “báo cáo thôi” (C) là thiếu một nửa chỉ thị."
+    }
+  ],
+  "instructions": "<li>聴解9問で <strong>35分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>各会話に問題が3問あり、<strong>セットの3問はすべて一緒に</strong>、そのセットの再生ボタンのすぐ下に、CBT試験室形式の解答画面で表示されます — 聞いたら3問まとめて答えましょう。もう1問ずつ行き来する必要はありません。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、2つの異なる声（低い声＝指示を出す上司、もう一方＝敬語を使う社員）が使われ、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、トランスクリプト、ミスノートが表示されます。</li>",
+  "candidateInfo": {
+    "subject": "BJT 聴解 — 第1回 診断テスト",
+    "questionInfo": "9問 · 3セット",
+    "time": "35分"
+  },
+  "tips": "「まだ…ていない」「確認中」「回答を待っている」「見込みだが確実ではない」が聞こえたら、それは<em>未確定</em>のサインです — 「確定した／決定した」と書かれた選択肢はたいてい注意点です。",
+  "footerNote": "第1回 — 診断テスト 聴解。音声は録音済みのMP3ファイルで、2つの異なる声が使われ、話者の名前は読み上げません。",
+  "scoreMessages": [
+    {
+      "min": 9,
+      "text": "優秀 — 9問すべて正解、診断テストらしい結果です！"
+    },
+    {
+      "min": 7,
+      "text": "とても良い — 注意点をほぼ回避できています"
+    },
+    {
+      "min": 5,
+      "text": "まずまず安定 — 細部の注意点がまだいくつかあります"
+    },
+    {
+      "min": 3,
+      "text": "調子が出てきました — 数値の問題に注意しましょう"
+    },
+    {
+      "min": 1,
+      "text": "もう少し練習が必要です — 「未確認」の注意点にまだ負けています"
+    },
+    {
+      "min": 0,
+      "text": "聞き取りの基礎に穴があります — セットごとにトランスクリプトを聞き直しましょう"
+    }
+  ]
+}

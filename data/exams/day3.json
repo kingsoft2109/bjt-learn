@@ -1,0 +1,283 @@
+{
+  "id": "day3",
+  "type": "choudokkai",
+  "title": "第3回 — 診断テスト <span class=\"jp\">聴読解</span>",
+  "subtitle": "3セット · 9問 · 音声を聞きながら表を読み、聞いた数値と表の数値を照らし合わせる",
+  "timeSeconds": 2100,
+  "questionCount": 9,
+  "segmentCount": 3,
+  "segLabel": "セット",
+  "segments": {
+    "1": {
+      "title": "第1問 — 月次売上表",
+      "mp3": "assets/day3-seg1.mp3",
+      "desc": "問題1–3 · A店・B店の売上表（単位：万円）を見ながら会話を聞いてください。",
+      "lines": [
+        {
+          "who": "male",
+          "text": "来週の会議では、第3四半期の売上を報告してもらう。A店とB店、それぞれ準備しておいてくれ。"
+        },
+        {
+          "who": "female",
+          "text": "わかりました。第3四半期は7月から9月ですね。"
+        },
+        {
+          "who": "male",
+          "text": "それから、B店は月によって差が大きいから、一番低かった月も確認しておいてくれ。"
+        },
+        {
+          "who": "female",
+          "text": "はい。あと、8月は両店の差が目立っていたと思います。そのあたりも見ておきます。"
+        },
+        {
+          "who": "male",
+          "text": "頼むよ。"
+        }
+      ],
+      "vi": [
+        "Tại cuộc họp tuần tới, hãy báo cáo doanh số quý 3 giúp tôi. Cửa hàng A và cửa hàng B, mỗi bên chuẩn bị sẵn nhé.",
+        "Vâng, tôi hiểu rồi. Quý 3 là từ tháng 7 đến tháng 9 đúng không ạ.",
+        "Ngoài ra, cửa hàng B chênh lệch theo tháng khá lớn, nên hãy xác nhận cả tháng thấp nhất nữa nhé.",
+        "Vâng. Ngoài ra, tôi nghĩ tháng 8 chênh lệch giữa hai cửa hàng khá rõ rệt. Tôi sẽ xem cả phần đó ạ.",
+        "Nhờ em nhé."
+      ]
+    },
+    "2": {
+      "title": "第2問 — 週間会議スケジュール",
+      "mp3": "assets/day3-seg2.mp3",
+      "desc": "問題4–6 · 週間会議スケジュールを見ながら変更のお知らせを聞いてください — 音声が表を上書きします。",
+      "lines": [
+        {
+          "who": "female",
+          "text": "総務部の担当者です。来週の会議スケジュールについて、2点変更があります。"
+        },
+        {
+          "who": "male",
+          "text": "はい、お願いします。"
+        },
+        {
+          "who": "female",
+          "text": "まず、水曜日の全社会議ですが、社長の出張のため、木曜日の13時からに変更します。場所も大会議室から第2会議室に変わります。"
+        },
+        {
+          "who": "male",
+          "text": "わかりました。もう1点は？"
+        },
+        {
+          "who": "female",
+          "text": "月曜日の営業会議は、時間は同じですが、場所が第1会議室から第3会議室への変更です。"
+        },
+        {
+          "who": "male",
+          "text": "了解しました。他の会議は変更なしですね。"
+        },
+        {
+          "who": "female",
+          "text": "はい、その他は表の通りです。"
+        }
+      ],
+      "vi": [
+        "Tôi là nhân viên phòng Hành chính tổng hợp. Về lịch họp tuần tới, có 2 điểm thay đổi.",
+        "Vâng, xin anh nói ạ.",
+        "Trước hết, cuộc họp toàn công ty vào thứ Tư, do Giám đốc đi công tác nên sẽ đổi sang thứ Năm, bắt đầu lúc 13 giờ. Địa điểm cũng đổi từ Phòng họp lớn sang Phòng họp số 2.",
+        "Vâng, tôi đã rõ. Điểm còn lại là gì ạ?",
+        "Cuộc họp kinh doanh vào thứ Hai, giờ vẫn giữ nguyên, nhưng địa điểm đổi từ Phòng họp số 1 sang Phòng họp số 3.",
+        "Tôi đã nắm được ạ. Các cuộc họp khác không thay đổi đúng không ạ.",
+        "Đúng vậy, các cuộc họp còn lại theo đúng bảng."
+      ]
+    },
+    "3": {
+      "title": "第3問 — 研修室の料金表",
+      "mp3": "assets/day3-seg3.mp3",
+      "desc": "問題7–9 · 部屋の料金表を見ながら予約の会話を聞いてください — ※の行の割引条件に注意しましょう。",
+      "lines": [
+        {
+          "who": "female",
+          "text": "来週の研修の件ですが、参加者は18名になりました。"
+        },
+        {
+          "who": "male",
+          "text": "18名なら会議室Bだな。午前9時から12時までで予約してくれ。プロジェクターも使うよ。"
+        },
+        {
+          "who": "female",
+          "text": "かしこまりました。会議室Bを3時間ですね。3時間の利用なので、室料は1割引になります。"
+        },
+        {
+          "who": "male",
+          "text": "頼む。"
+        }
+      ],
+      "vi": [
+        "Về buổi đào tạo tuần tới, số người tham dự đã thành 18 người.",
+        "18 người thì là Phòng họp B nhỉ. Đặt phòng từ 9 giờ sáng đến 12 giờ giúp tôi. Có dùng máy chiếu nữa đấy.",
+        "Vâng, tôi đã rõ. Phòng họp B trong 3 giờ ạ. Vì sử dụng 3 giờ nên phí phòng được giảm 10% ạ.",
+        "Nhờ em nhé."
+      ]
+    }
+  },
+  "segNames": null,
+  "questions": [
+    {
+      "n": 1,
+      "seg": 1,
+      "q": "第3四半期（7月から9月）のA店の売上の合計はいくらですか。",
+      "opts": [
+        "1,210万円",
+        "1,150万円",
+        "1,180万円",
+        "1,090万円"
+      ],
+      "ans": "C",
+      "trap": "Cộng đúng 3 tháng của quý 3 (7–9月)",
+      "explain": "380+410+390 = 1.180万円."
+    },
+    {
+      "n": 2,
+      "seg": 1,
+      "q": "B店の売上が最も低かったのは何月ですか。",
+      "opts": [
+        "4月",
+        "5月",
+        "6月",
+        "8月"
+      ],
+      "ans": "B",
+      "trap": "Tìm tháng thấp nhất của B店 trong bảng",
+      "explain": "B店 thấp nhất là tháng 5, 260万円."
+    },
+    {
+      "n": 3,
+      "seg": 1,
+      "q": "8月には、A店とB店の売上の差はいくらありましたか。",
+      "opts": [
+        "100万円",
+        "80万円",
+        "110万円",
+        "90万円"
+      ],
+      "ans": "A",
+      "trap": "Hiệu số tháng 8 giữa hai cửa hàng",
+      "explain": "410 − 310 = 100万円."
+    },
+    {
+      "n": 4,
+      "seg": 2,
+      "q": "全社会議は、変更後いつどこで開かれますか。",
+      "opts": [
+        "水曜日15時・大会議室",
+        "木曜日13時・第2会議室",
+        "木曜日15時・大会議室",
+        "水曜日13時・第2会議室"
+      ],
+      "ans": "B",
+      "trap": "Audio ghi đè bảng — lịch đã thay đổi",
+      "explain": "audio ghi đè bảng — dời sang thứ Năm 13 giờ, phòng họp số 2."
+    },
+    {
+      "n": 5,
+      "seg": 2,
+      "q": "営業会議の場所は、変更後どこですか。",
+      "opts": [
+        "第3会議室",
+        "第1会議室",
+        "第2会議室",
+        "大会議室"
+      ],
+      "ans": "A",
+      "trap": "Chỉ đổi địa điểm, giờ giữ nguyên",
+      "explain": "chỉ đổi địa điểm sang phòng họp số 3, giờ giữ nguyên."
+    },
+    {
+      "n": 6,
+      "seg": 2,
+      "q": "金曜日の週報会議について正しいものはどれですか。",
+      "opts": [
+        "時間が変更になった",
+        "場所が変更になった",
+        "変更はない",
+        "中止になった"
+      ],
+      "ans": "C",
+      "trap": "「その他は表の通り」= không thay đổi",
+      "explain": "「その他は表の通り」— không thay đổi."
+    },
+    {
+      "n": 7,
+      "seg": 3,
+      "q": "予約する部屋と時間の組み合わせとして正しいものはどれですか。",
+      "opts": [
+        "会議室B・3時間",
+        "会議室A・3時間",
+        "会議室B・2時間",
+        "会議室A・2時間"
+      ],
+      "ans": "A",
+      "trap": "Sức chứa phòng A (10名) nhỏ hơn 18名",
+      "explain": "18 người vượt sức chứa phòng A (10 người); 9 giờ đến 12 giờ là 3 tiếng."
+    },
+    {
+      "n": 8,
+      "seg": 3,
+      "q": "割引後の室料はいくらですか。",
+      "opts": [
+        "9,000円",
+        "8,100円",
+        "7,200円",
+        "8,000円"
+      ],
+      "ans": "B",
+      "trap": "Giảm 1割 chỉ tính trên tiền phòng",
+      "explain": "3.000 × 3 = 9.000, giảm 1割 còn 8.100円."
+    },
+    {
+      "n": 9,
+      "seg": 3,
+      "q": "プロジェクターも含めた合計はいくらですか。",
+      "opts": [
+        "10,000円",
+        "9,000円",
+        "8,100円",
+        "9,100円"
+      ],
+      "ans": "D",
+      "trap": "Thiết bị không thuộc diện giảm giá",
+      "explain": "8.100 + 1.000 = 9.100円. B là khi giảm giá cả thiết bị; A là quên giảm giá; C là quên tiền máy chiếu."
+    }
+  ],
+  "instructions": "<li>聴読解9問で <strong>35分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>3セット</strong> で、各セットは <strong>音声1つ + 表1つ + 問題3問</strong> です。セット全体が1画面に一緒に、CBT試験室形式の解答画面で表示されます — 表を見ながら聞いて照合しましょう。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、男女2つの異なる声が使われ、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>注意：<strong>音声が表を上書きする</strong> ことがあります（日程や場所の変更など）— 音声と表が異なり、問題が変更後の内容について聞いている場合は、音声を基準にしてください。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、トランスクリプトが表示されます。</li>",
+  "candidateInfo": {
+    "subject": "BJT 聴読解 — 第3回 診断テスト",
+    "questionInfo": "9問 · 3セット",
+    "time": "35分",
+    "format": "売上表 · 週間会議スケジュール · 研修室の料金表"
+  },
+  "tips": "数字を聞いたら、すぐ表の該当セルと照合してその場で暗算しましょう（四半期の合計、差額、割引）— セットを全部聞き終わってから計算に戻らないこと。月や店舗を取り違えやすくなります。",
+  "footerNote": "第3回 — 診断テスト 聴読解。音声は録音済みのMP3ファイルで、男女2つの異なる声が使われ、話者の名前は読み上げません。",
+  "scoreMessages": [
+    {
+      "min": 9,
+      "text": "優秀 — 聴読解9問すべて正解！"
+    },
+    {
+      "min": 7,
+      "text": "とても良い — 音声と表の照合が安定しています"
+    },
+    {
+      "min": 5,
+      "text": "まずまず安定 — 計算で注意が必要な箇所がまだあります"
+    },
+    {
+      "min": 3,
+      "text": "調子が出てきました — 音声が表を上書きする部分に注意しましょう"
+    },
+    {
+      "min": 1,
+      "text": "もう少し練習が必要です — トランスクリプトと一緒にセットを1つずつ聞き直しましょう"
+    },
+    {
+      "min": 0,
+      "text": "数値の照合方法を復習しましょう — 下の各問題の解説をご覧ください"
+    }
+  ]
+}

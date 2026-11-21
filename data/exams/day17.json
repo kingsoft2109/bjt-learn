@@ -1,0 +1,294 @@
+{
+  "id": "day17",
+  "type": "choukai",
+  "title": "第17回 — 練習 <span class=\"jp\">聴解</span>",
+  "subtitle": "4セット · 12問 · 電話：入荷 + <span class=\"jp\">契約書</span> · 日程変更：<span class=\"jp\">商談</span> + 同じ日の予定 · 会議資料の準備 · <span class=\"jp\">新製品発表会</span>の準備会議（セット4はローテーション） · 2026年11月12日（木）",
+  "timeSeconds": 2400,
+  "questionCount": 12,
+  "segmentCount": 4,
+  "segLabel": "セット",
+  "segments": {
+    "1": {
+      "title": "第1問 — 電話：入荷 + 契約書",
+      "mp3": "assets/ngay17-doan1.mp3",
+      "desc": "問題1–3 · 会話を聞いて、このセットの3問すべてに答えてください。注意：数字ごとに項目名を結びつけましょう — 合計300個／入荷済み180個／残り120個。契約書はまだ締結されていません。",
+      "lines": [
+        "入荷の件でご連絡します。全300個のうち、180個はすでに入荷しました。残りは120個です。",
+        "残りの120個は、11月26日木曜日までに入荷しますか。",
+        "はい。11月26日木曜日までに入荷する予定です。なお、契約書はまだ結んでいませんので、金額が決まり次第、契約を結びます。",
+        "分かりました。金額が決まったら、ご連絡します。"
+      ],
+      "vi": [
+        "Tôi gọi điện về việc nhập hàng. Trong tổng số 300 sản phẩm, 180 sản phẩm đã nhập rồi. Còn lại 120 sản phẩm.",
+        "120 sản phẩm còn lại có nhập về kịp trước thứ Năm ngày 26 tháng 11 không?",
+        "Vâng, dự kiến sẽ nhập về trước thứ Năm ngày 26 tháng 11. Ngoài ra, hợp đồng vẫn chưa được ký, nên ngay khi số tiền được quyết định chúng tôi sẽ ký hợp đồng.",
+        "Tôi hiểu rồi. Khi số tiền được quyết định, tôi sẽ liên lạc."
+      ]
+    },
+    "2": {
+      "title": "第2問 — 日程変更：A社との商談 + 社内研修",
+      "mp3": "assets/ngay17-doan2.mp3",
+      "desc": "問題4–6 · 商談は11/19の午後に移り、社内研修は11/19の午前のままです — 時刻を取り違えないこと。研修の資料はまだ承認されていないので、その日は概要だけを説明します。",
+      "lines": [
+        "11月の予定について、変更があるよ。",
+        "はい。A社との商談は、11月17日火曜日の午前10時でしたね。",
+        "そうだったんだけど、先方の都合で11月19日木曜日の午後3時に変更になった。社内研修は11月19日木曜日の午前11時のままだから、午前と午後で両方できるね。",
+        "分かりました。研修の資料ですが、まだ承認を得ていないので、当日は概要のみの説明になりますね。",
+        "そのとおり。資料は承認が下りてから送ることにしよう。"
+      ],
+      "vi": [
+        "Về lịch tháng 11, có thay đổi đấy.",
+        "Vâng. Buổi thương thảo với công ty A là 10 giờ sáng thứ Ba ngày 17 tháng 11 phải không ạ?",
+        "Đúng là vậy, nhưng vì lý do của đối tác nên đã đổi sang 3 giờ chiều thứ Năm ngày 19 tháng 11. Buổi đào tạo nội bộ vẫn giữ nguyên 11 giờ sáng thứ Năm ngày 19 tháng 11, nên sáng và chiều đều tham gia được cả hai.",
+        "Tôi đã rõ. Về tài liệu của buổi đào tạo, vì vẫn chưa được phê duyệt nên hôm đó chỉ giải thích phần tổng quan thôi phải không ạ?",
+        "Đúng vậy. Tài liệu sẽ gửi sau khi được phê duyệt."
+      ]
+    },
+    "3": {
+      "title": "第3問 — 会議資料の準備",
+      "mp3": "assets/ngay17-doan3.mp3",
+      "desc": "問題7–9 · 25名 × 1人2部 — 資料の部数を正しく掛けましょう。人数を部数にしないこと。発表会の案内はまだ取引先に送られていません。",
+      "lines": [
+        "課長、12月1日火曜日の会議の資料について、ご確認させてください。参加者は25名でよろしいでしょうか。",
+        "ああ、25名だ。資料は1人2部ずつ用意してくれ。",
+        "承知しました。50部ですね。なお、発表会の案内は、まだ取引先に送っていませんので、参加者が決まり次第、送ります。",
+        "分かった。では、その内容で進めてくれ。"
+      ],
+      "vi": [
+        "Trưởng phòng, xin cho tôi xác nhận về tài liệu của cuộc họp ngày thứ Ba 1 tháng 12. Số người tham gia là 25 người, có đúng không ạ?",
+        "Ừ, 25 người. Tài liệu chuẩn bị mỗi người 2 bản nhé.",
+        "Tôi đã rõ ạ. Là 50 bản phải không ạ. Ngoài ra, thông báo về buổi thuyết trình vẫn chưa gửi cho đối tác, nên sau khi chốt được người tham gia chúng tôi sẽ gửi.",
+        "Hiểu rồi. Vậy cứ tiến hành theo nội dung đó nhé."
+      ]
+    },
+    "4": {
+      "title": "第4問 — 会議：新製品発表会の準備（3人の会議、ローテーション形式）",
+      "mp3": "assets/ngay17-doan4.mp3",
+      "desc": "問題10–12 · ローテーション形式 — 新製品発表会の準備会議：40名 × 1人3部 = 120部。最終確認をまだ部長からいただいていないので、まだ印刷していません。案内もまだ送られていません。",
+      "lines": [
+        "新製品発表会について、確認します。日程はどうなっていますか。",
+        "はい。発表会は、11月27日金曜日の午後2時から、会議室Bで予約しております。参加者は40名の予定です。",
+        "分かった。資料はどうかな。",
+        "資料は、参加者40名分、1人3部で、合計120部用意いたします。なお、最終確認は、まだ部長からいただいていません。",
+        "そうか。確認が終わるまでは、印刷は控えてくれ。確認が終わり次第、印刷するように。",
+        "承知しました。なお、発表会の案内は、まだ取引先に送っていませんので、参加者が決まり次第、送ります。",
+        "分かった。では、その内容で進めてくれ。"
+      ],
+      "vi": [
+        "Về buổi giới thiệu sản phẩm mới, tôi muốn xác nhận. Lịch trình thế nào rồi?",
+        "Vâng. Buổi giới thiệu sẽ diễn ra từ 2 giờ chiều thứ Sáu ngày 27 tháng 11, tại phòng họp B. Dự kiến có 40 người tham gia.",
+        "Hiểu rồi. Còn tài liệu thì sao?",
+        "Tài liệu sẽ chuẩn bị cho 40 người tham gia, mỗi người 3 bản, tổng cộng 120 bản. Ngoài ra, việc xác nhận cuối cùng vẫn chưa nhận được từ trưởng bộ phận.",
+        "Vậy à. Cho đến khi xác nhận xong thì đừng in nhé. Ngay khi xác nhận xong thì in.",
+        "Tôi đã rõ ạ. Ngoài ra, thông báo về buổi giới thiệu vẫn chưa gửi cho đối tác, nên sau khi chốt được người tham gia chúng tôi sẽ gửi.",
+        "Hiểu rồi. Vậy cứ tiến hành theo nội dung đó nhé."
+      ]
+    }
+  },
+  "segNames": null,
+  "questions": [
+    {
+      "n": 1,
+      "seg": 1,
+      "q": "入荷済みは何個ですか。",
+      "opts": [
+        "300個",
+        "120個",
+        "180個",
+        "480個"
+      ],
+      "ans": "C",
+      "trap": "Đã nhập vs còn lại vs tổng số",
+      "explain": "全300個のうち入荷済み180個；120個 là số còn lại, 300個 là tổng số."
+    },
+    {
+      "n": 2,
+      "seg": 1,
+      "q": "残りの荷物はいつまでに入荷する予定ですか。",
+      "opts": [
+        "11月24日火曜日",
+        "11月26日木曜日",
+        "11月25日水曜日",
+        "まだ決まっていない"
+      ],
+      "ans": "B",
+      "trap": "Hạn nhập phần còn lại",
+      "explain": "残り120個は11月26日木曜日までに入荷する予定."
+    },
+    {
+      "n": 3,
+      "seg": 1,
+      "q": "契約書について正しいものはどれですか。",
+      "opts": [
+        "すでに結んだ",
+        "結ばないことになった",
+        "まだ結んでいないので、金額が決まり次第結ぶ",
+        "契約書はいらない"
+      ],
+      "ans": "C",
+      "trap": "「まだ結んでいない」— 契約書 chưa ký",
+      "explain": "契約書はまだ結んでいませんので、金額が決まり次第、契約を結びます — bẫy まだ〜ていない: nghe thấy まだ〜ていない thì ghi ngay \"CHƯA + hệ quả\"."
+    },
+    {
+      "n": 4,
+      "seg": 2,
+      "q": "A社との商談はいつになりましたか。",
+      "opts": [
+        "11月17日火曜日の午前10時",
+        "11月19日木曜日の午前11時",
+        "11月19日木曜日の午後3時",
+        "11月17日火曜日の午後3時"
+      ],
+      "ans": "C",
+      "trap": "Lịch cũ vs lịch mới + hai sự kiện cùng ngày",
+      "explain": "商談 đổi từ 11月17日火曜日午前10時 sang 11月19日木曜日午後3時；午前11時 cùng ngày là社内研修, không phải商談."
+    },
+    {
+      "n": 5,
+      "seg": 2,
+      "q": "研修の資料について正しいものはどれですか。",
+      "opts": [
+        "資料はすでに承認を得ている",
+        "当日は詳しく説明する",
+        "まだ承認を得ていないので当日は概要のみの説明になる",
+        "研修は中止になった"
+      ],
+      "ans": "C",
+      "trap": "「まだ承認を得ていない」— chưa được duyệt thì chỉ giải thích 概要",
+      "explain": "資料はまだ承認を得ていないので当日は概要のみ；資料 sẽ gửi sau khi承認が下りてから."
+    },
+    {
+      "n": 6,
+      "seg": 2,
+      "q": "社内研修はいつですか。",
+      "opts": [
+        "11月19日木曜日の午前11時",
+        "11月19日木曜日の午後3時",
+        "11月17日火曜日の午前10時",
+        "11月19日木曜日の午後1時"
+      ],
+      "ans": "A",
+      "trap": "Ghép chéo giờ của hai sự kiện cùng ngày",
+      "explain": "研修 giữ nguyên 11月19日木曜日午前11時；午後3時 cùng ngày là商談 đã dời tới. Ghi cặp \"sự kiện → giờ/ngày\" ra nháp ngay khi nghe （商談19日15時・研修19日11時), không giữ trong đầu."
+    },
+    {
+      "n": 7,
+      "seg": 3,
+      "q": "資料は何部用意することになりましたか。",
+      "opts": [
+        "25部",
+        "50部",
+        "2部",
+        "75部"
+      ],
+      "ans": "B",
+      "trap": "Số người × số bản mỗi người",
+      "explain": "25名 × 1人2部 = 50部；25部 là số người, 2部 là số bản mỗi người."
+    },
+    {
+      "n": 8,
+      "seg": 3,
+      "q": "会議はいつ、どこで開かれますか。",
+      "opts": [
+        "12月1日火曜日、本社3階会議室A",
+        "12月1日火曜日、本社3階会議室B",
+        "12月2日水曜日、本社3階会議室A",
+        "12月1日火曜日、本社5階会議室A"
+      ],
+      "ans": "A",
+      "trap": "Ghép đúng ngày + địa điểm của会議",
+      "explain": "会議は12月1日火曜日、本社3階会議室A；会議室B・12月2日・本社5階 không được nhắc tới."
+    },
+    {
+      "n": 9,
+      "seg": 3,
+      "q": "発表会の案内について正しいものはどれですか。",
+      "opts": [
+        "すでに取引先に送った",
+        "案内は送らないことになった",
+        "まだ取引先に送っていないので、参加者が決まり次第、送る",
+        "会場が決まってから送るかどうか決める"
+      ],
+      "ans": "C",
+      "trap": "「まだ送っていない」— 案内 chưa gửi",
+      "explain": "案内はまだ取引先に送っていないので、参加者が決まり次第送る — bẫy \"chưa làm\" gắn với điều kiện tiếp theo."
+    },
+    {
+      "n": 10,
+      "seg": 4,
+      "q": "発表会はいつ、どこで開かれますか。",
+      "opts": [
+        "11月27日金曜日の午後2時から、会議室B",
+        "11月27日金曜日の午後2時から、会議室A",
+        "11月26日木曜日の午後2時から、会議室B",
+        "11月27日金曜日の午前10時から、会議室B"
+      ],
+      "ans": "A",
+      "trap": "Ghép đúng ngày + giờ + phòng họp",
+      "explain": "発表会は11月27日金曜日午後2時から会議室B；11月26日 không xuất hiện trong audio, 会議室A không được nhắc tới."
+    },
+    {
+      "n": 11,
+      "seg": 4,
+      "q": "資料は何部用意することになりましたか。",
+      "opts": [
+        "40部",
+        "120部",
+        "3部",
+        "160部"
+      ],
+      "ans": "B",
+      "trap": "Số người × số bản mỗi người",
+      "explain": "参加者40名 × 1人3部 = 120部；40 là số người, 3 là số bản mỗi người."
+    },
+    {
+      "n": 12,
+      "seg": 4,
+      "q": "発表会の案内について正しいものはどれですか。",
+      "opts": [
+        "すでに取引先に送った",
+        "案内は送らないことになった",
+        "まだ取引先に送っていないので、参加者が決まり次第、送る",
+        "参加者が決まってから送るかどうか決める"
+      ],
+      "ans": "C",
+      "trap": "「まだ送っていない」— 案内 chưa gửi",
+      "explain": "案内はまだ取引先に送っていないので、参加者が決まり次第送る — bẫy \"chưa làm\" gắn với điều kiện tiếp theo."
+    }
+  ],
+  "instructions": "<li>聴解12問で <strong>40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>聴解4セット</strong> で、各セットに問題が3問あり、<strong>セットの3問はすべて1画面に一緒に</strong>、そのセットの再生ボタンのすぐ下に、CBT試験室形式の解答画面で表示されます — 聞いたら3問まとめて答えましょう。1問ずつ行き来する必要はありません。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li>セット1は <strong>入荷についての電話</strong>：聞いた瞬間に数字ごとに項目名を結びつけ（合計 <span class=\"jp\">300個</span>／入荷済み <span class=\"jp\">180個</span>／残り <span class=\"jp\">120個</span>）、残りの入荷期限は <span class=\"jp\">11月26日木曜日</span> で、<span class=\"jp\">契約書</span> は <span class=\"jp\">まだ結んでいない</span> — 金額が決まり次第締結します。セット2は <strong>日程変更</strong>：A社との <span class=\"jp\">商談</span> は <span class=\"jp\">11月17日火曜日午前10時</span> から <span class=\"jp\">11月19日木曜日午後3時</span> に移り、<span class=\"jp\">社内研修</span> は <span class=\"jp\">11月19日木曜日午前11時</span> のままです — 「イベント → 時刻」のペアをメモに書き、取り違えないこと。<span class=\"jp\">研修</span> の資料は <span class=\"jp\">まだ承認を得ていない</span> ので、その日は <span class=\"jp\">概要</span> だけを説明します。セット3は <span class=\"jp\">12月1日火曜日</span> の <strong>会議資料の準備</strong>：<span class=\"jp\">25名</span> × <span class=\"jp\">1人2部</span> = <span class=\"jp\">50部</span> — 正しく掛けましょう。人数を部数にしないこと。<span class=\"jp\">発表会の案内</span> は <span class=\"jp\">まだ取引先に送っていない</span> — 参加者が確定したら送ります。セット4は <strong>ローテーション形式</strong> — <span class=\"jp\">11月27日金曜日午後2時</span> に <span class=\"jp\">会議室B</span> で行う <span class=\"jp\">新製品発表会</span> の準備をする3人の会議：資料は <span class=\"jp\">40名</span> × <span class=\"jp\">1人3部</span> = <span class=\"jp\">120部</span>、<span class=\"jp\">最終確認</span> を <span class=\"jp\">まだ部長からいただいていない</span> のでまだ印刷しておらず、<span class=\"jp\">案内</span> もまだ送られていません。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです — 別の答えを選ぶと前の答えが置き換わります。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、ベトナム語訳付きのトランスクリプト、ミスノートが表示されます。</li>",
+  "candidateInfo": {
+    "subject": "BJT 聴解 — 第17回 練習",
+    "questionInfo": "12問 · 4セット",
+    "time": "40分",
+    "format": "会議 — 新製品発表会の準備（ローテーション）"
+  },
+  "tips": "",
+  "footerNote": "第17回 — 練習 聴解：入荷と契約の電話、商談の日程変更と同じ日の予定、会議資料の準備、新製品発表会の準備会議。音声は録音済みのMP3ファイルで、話者の名前は読み上げません。",
+  "scoreMessages": [
+    {
+      "min": 12,
+      "text": "優秀 — 第17回の聴解12問すべて正解！"
+    },
+    {
+      "min": 10,
+      "text": "とても良い — 注意点をほぼ回避できています"
+    },
+    {
+      "min": 8,
+      "text": "まずまず安定 — 細部の注意点がまだいくつかあります"
+    },
+    {
+      "min": 5,
+      "text": "調子が出てきました — 数値の問題、変更された日程、未完了の件に注意しましょう"
+    },
+    {
+      "min": 1,
+      "text": "もう少し練習が必要です — 数字の結びつけミスと未完了の件にまだ負けています"
+    },
+    {
+      "min": 0,
+      "text": "聞き取りの基礎に穴があります — セットごとにトランスクリプトを聞き直しましょう"
+    }
+  ]
+}
