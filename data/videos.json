@@ -7214,6 +7214,135 @@
      "en": "to bear (a cost)"
     }
    ]
+  },
+  {
+   "slug": "shiryo-no-seikyu",
+   "date": "2026-11-23",
+   "duration_sec": 66,
+   "category": "houkoku-renraku",
+   "situation": {
+    "jp": "資料の請求 ― 製品資料と価格表のお願い",
+    "vi": "Xin tài liệu: catalog, thông số kỹ thuật & bảng giá",
+    "en": "Requesting product materials: catalog, specs & price list"
+   },
+   "dialogue": [
+    {
+     "speaker": "nakamura",
+     "jp": "田中部長、お忙しいところお時間をいただき、ありがとうございます。",
+     "vi": "Trưởng phòng Tanaka, cảm ơn ông đã dành thời gian dù đang bận ạ.",
+     "en": "Director Tanaka, thank you for making time for me despite your busy schedule."
+    },
+    {
+     "speaker": "tanaka",
+     "jp": "いえいえ、こちらこそ。今日はどのようなご用件でしょうか。",
+     "vi": "Không có gì đâu, bên tôi cũng vậy. Hôm nay anh có việc gì vậy?",
+     "en": "Not at all, likewise. What brings you here today?"
+    },
+    {
+     "speaker": "nakamura",
+     "jp": "はい。実は、来週のご提案にあたり、御社の製品資料をいただけますでしょうか。",
+     "vi": "Dạ. Thực ra, để chuẩn bị cho buổi trình bày đề xuất tuần sau, tôi có thể xin tài liệu về sản phẩm của quý công ty được không ạ?",
+     "en": "Yes. Actually, for next week's proposal, may I have your product materials?"
+    },
+    {
+     "speaker": "tanaka",
+     "jp": "もちろんです。具体的には、どんな資料ですか。",
+     "vi": "Tất nhiên rồi. Cụ thể thì anh cần tài liệu nào?",
+     "en": "Of course. Specifically, which materials do you need?"
+    },
+    {
+     "speaker": "nakamura",
+     "jp": "ええ。まず、最新のカタログと仕様書をお願いしたいのですが。",
+     "vi": "Dạ. Trước hết, tôi muốn xin catalog mới nhất và bản thông số kỹ thuật ạ.",
+     "en": "Yes. First, I'd like the latest catalog and the specifications, please."
+    },
+    {
+     "speaker": "tanaka",
+     "jp": "分かりました。カタログは最新版を、仕様書はPDFでお送りしますよ。",
+     "vi": "Được rồi. Catalog tôi sẽ gửi bản mới nhất, còn thông số kỹ thuật tôi gửi file PDF nhé.",
+     "en": "Understood. I'll send the latest catalog, and the specifications as a PDF."
+    },
+    {
+     "speaker": "nakamura",
+     "jp": "はい、ありがとうございます。あと、価格表もあわせていただけますか。",
+     "vi": "Dạ, cảm ơn ông ạ. Thêm nữa, ông gửi kèm cả bảng giá giúp tôi được không ạ?",
+     "en": "Yes, thank you. Also, could you include the price list as well?"
+    },
+    {
+     "speaker": "tanaka",
+     "jp": "うん、大丈夫ですよ。ただ、価格は来月から改定されますので、ご注意ください。",
+     "vi": "Ừ, không sao đâu. Chỉ là giá sẽ được điều chỉnh từ tháng sau, nên anh lưu ý nhé.",
+     "en": "Sure, no problem. Just note that prices will be revised from next month."
+    },
+    {
+     "speaker": "nakamura",
+     "jp": "はい、承知いたしました。金曜日までにお願いします。",
+     "vi": "Dạ, tôi đã rõ ạ. Nhờ ông gửi trước thứ Sáu nhé.",
+     "en": "Yes, understood. Could I ask you to send them by Friday?"
+    },
+    {
+     "speaker": "tanaka",
+     "jp": "ええ、金曜日の午前中にメールでお送りします。遠慮なくご連絡ください。",
+     "vi": "Vâng, sáng thứ Sáu tôi sẽ gửi qua email. Có gì thì cứ liên lạc với tôi, đừng ngại nhé.",
+     "en": "Yes, I'll email them Friday morning. Please don't hesitate to contact me."
+    }
+   ],
+   "vocabulary": [
+    {
+     "jp": "資料",
+     "reading": "しりょう",
+     "vi": "tài liệu",
+     "en": "materials; documents"
+    },
+    {
+     "jp": "提案",
+     "reading": "ていあん",
+     "vi": "đề xuất",
+     "en": "proposal"
+    },
+    {
+     "jp": "カタログ",
+     "reading": "かたろぐ",
+     "vi": "catalog",
+     "en": "catalogue"
+    },
+    {
+     "jp": "仕様書",
+     "reading": "しようしょ",
+     "vi": "bản thông số kỹ thuật",
+     "en": "specifications"
+    },
+    {
+     "jp": "価格表",
+     "reading": "かかくひょう",
+     "vi": "bảng giá",
+     "en": "price list"
+    },
+    {
+     "jp": "改定",
+     "reading": "かいてい",
+     "vi": "điều chỉnh (giá/quy định)",
+     "en": "revision"
+    },
+    {
+     "jp": "承知",
+     "reading": "しょうち",
+     "vi": "đã rõ, tiếp nhận",
+     "en": "understood"
+    },
+    {
+     "jp": "お送りする",
+     "reading": "おおくりする",
+     "vi": "gửi",
+     "en": "to send"
+    },
+    {
+     "jp": "ご用件",
+     "reading": "ごようけん",
+     "vi": "việc cần trao đổi",
+     "en": "business; matter"
+    }
+   ]
   }
  ]
 }
