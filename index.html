@@ -9,7 +9,7 @@
      crossorigin="anonymous"></script>
 <link rel="icon" href="data:,">
 <title>BJT問題 — 無料オンラインBJT対策 | コンピューター試験室</title>
-<meta name="description" content="無料オンラインBJT（Business Japanese Proficiency Test）対策。日別の練習問題22セット、40問の模擬テスト、状況ビデオ58本、単語カード884枚。聴解、読解、聴読解。">
+<meta name="description" content="無料オンラインBJT（Business Japanese Proficiency Test）対策。日別の練習問題25セット、40問の模擬テスト、状況ビデオ58本、単語カード884枚。聴解、読解、聴読解。">
 <meta name="keywords" content="BJT, BJT対策, BJT問題, Business Japanese, 聴解, 読解, 聴読解, ビジネス日本語, JLPT, BJT online">
 <link rel="canonical" href="https://kingsoft2109.github.io/bjt-learn/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -501,6 +501,8 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <option value="mock1">BJT模擬テスト01 — 40問 · 3パート</option>
       <option value="mock2">BJT模擬テスト02 — 80問 · 3パート</option>
       <option value="mock3">模擬試験 BJT 03 — 80問 · 3部</option>
+      <option value="mock4">模擬試験 BJT 04 — 80問 · 3部</option>
+      <option value="mock5">模擬試験 BJT 05 — 80問 · 3部</option>
       <option value="demo">サンプル問題01 — 3パート · 3問</option>
       <option value="videos">動画ライブラリ — テーマ別状況ビデオ58本</option>
       <option value="vocab">単語カード — 日別884語</option>
@@ -535,6 +537,8 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <button class="tab" id="tabMock1" onclick="switchExam('mock1')">BJT模擬テスト01 — 40問 · 3パート</button>
     <button class="tab" id="tabMock2" onclick="switchExam('mock2')">BJT模擬テスト02 — 80問 · 3パート</button>
     <button class="tab" id="tabMock3" onclick="switchExam('mock3')">模擬試験 BJT 03 — 80問 · 3部</button>
+    <button class="tab" id="tabMock4" onclick="switchExam('mock4')">模擬試験 BJT 04 — 80問 · 3部</button>
+    <button class="tab" id="tabMock5" onclick="switchExam('mock5')">模擬試験 BJT 05 — 80問 · 3部</button>
     <button class="tab" id="tabDemo" onclick="switchExam('demo')">サンプル問題01 — 3パート · 3問</button>
     <button class="tab" id="tabVideos" onclick="switchExam('videos')">動画ライブラリ — 状況ビデオ58本</button>
     <button class="tab" id="tabVocab" onclick="switchExam('vocab')">単語カード — 日別884語</button>
@@ -879,6 +883,206 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 
   <p class="footer-note">模擬試験 BJT 03 — 本番と同じ形式の80問（3部連続、時間切れで部をロック）。音声は録音済みのMP3ファイルで、話者の名前は読み上げません。/800の点数は正答率からの推定換算であり、正式な採点方法ではありません。</p>
 </main>
+<main class="wrap hidden" id="examMock4">
+  <div class="cbt-head">
+    <div>
+      <h1>模擬試験 BJT 04 — 80問の完全模擬試験</h1>
+      <div class="sub">本番と同じ形式：80問 · 3部連続 · 合計約105分</div>
+      <div class="mode-row">
+        <span class="lbl">モード：</span>
+        <button class="mode-btn active" id="mk4ModeReal" onclick="setModeMk4('real')">本番モード — 音声は1回のみ</button>
+        <button class="mode-btn" id="mk4ModePrac" onclick="setModeMk4('practice')">練習モード — 音声をくり返し聞ける</button>
+      </div>
+    </div>
+    <div class="cbt-timer">
+      <div class="t" id="mk4Timer">45:00</div>
+      <div class="lbl">現在の部の残り時間</div>
+    </div>
+  </div>
+
+  <div class="mk-stepper" id="mk4Stepper" aria-label="3部の進み具合">
+    <div class="mk-step" id="mk4Step1"><b class="jp">第1部 — 聴解</b>25問 · 45分<span class="st" id="mk4StepSt1">未開始</span></div>
+    <div class="mk-step" id="mk4Step2"><b class="jp">第2部 — 聴読解</b>25問 · 30分<span class="st" id="mk4StepSt2">未開始</span></div>
+    <div class="mk-step" id="mk4Step3"><b class="jp">第3部 — 読解</b>30問 · 30分<span class="st" id="mk4StepSt3">未開始</span></div>
+  </div>
+
+  <section class="start-panel" id="mk4Start">
+    <h2>模擬試験の説明 — 始める前にルールをよく読んでください</h2>
+    <div class="start-grid">
+      <div>
+        <ul>
+          <li>本番と同じ順序で<strong>80問</strong>を<strong>3部</strong>続けて解きます。合計時間は約<strong>105分</strong>です。</li>
+          <li><strong>部のロック（本番と同じ）：</strong>各部にそれぞれ制限時間があります。<strong>時間切れ</strong>になるか、<strong>部を提出</strong>すると、その部は<strong>すぐにロック</strong>され、次の部へ進みます — <strong>前の部には戻れません</strong>。答えを見直すこともできません。</li>
+          <li>各部では、同じセット（同じ音声・資料）の問題が<strong>1つの画面にまとめて</strong>表示されます。<strong>問題一覧</strong>から問題へ移動したり、<strong>← 前の問題 / 次の問題 →</strong>ボタンや<kbd>←</kbd> <kbd>→</kbd>キーで移動したり、<kbd>A</kbd>–<kbd>D</kbd>キーで答えを選んだりできます。各問題は<strong>1つ</strong>だけ選んでください。自信がない問題は<strong>⚑ 印を付ける</strong>を押してください。</li>
+          <li>音声は録音済みのMP3ファイルで、<strong>話者の名前は読み上げません</strong>。<strong>本番モード</strong>では、各音声は<strong>1回のみ</strong>再生できます。<strong>練習モード</strong>ではくり返し聞けます。</li>
+          <li><strong>答え、解説、トランスクリプトは第3部を提出した後に表示されます。</strong>結果には各部の点数、全問の点数（/80）と、800点満点への<strong>推定</strong>換算点と目安のレベルが表示されます。</li>
+        </ul>
+        <div class="mk-partcards">
+          <div class="mk-partcard"><b class="jp">第1部 — 聴解</b><p>25問 · 45分<br>場面把握 · 発言聴解 · 総合聴解（会話・お知らせ）</p></div>
+          <div class="mk-partcard"><b class="jp">第2部 — 聴読解</b><p>25問 · 30分<br>見積書・グラフ・メールを見ながら聞く</p></div>
+          <div class="mk-partcard"><b class="jp">第3部 — 読解</b><p>30問 · 30分<br>語彙・文法 · 表現読解 · 手紙・お知らせ・社内規則を読む</p></div>
+        </div>
+        <p style="margin-top:14px"><button class="btn btn-primary" id="mk4StartBtn" type="button" style="font-size:16px" onclick="startMock4()">第1部 — 聴解を始める</button></p>
+        <p class="start-status" id="mk4StartStatus" role="status" aria-live="polite"></p>
+        <p class="note js-warn" id="mk4JsWarn">読み込み中です。「<strong>始める</strong>」ボタンが反応しない場合は、数秒待ってページの読み込みが終わるのを待つか、Chrome / Safariでこのページを開いてもう一度押してください。</p>
+      </div>
+      <div>
+        <div class="candidate" aria-label="模擬試験 BJT 04の情報">
+          <div><span>試験</span><b class="jp">BJT — 模擬試験 04</b></div>
+          <div><span>問題数</span><b>80問 · 3部</b></div>
+          <div><span>時間</span><b>約105分（45 + 30 + 30）</b></div>
+          <div><span>構成</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
+          <div><span>ルール</span><b>時間切れ／部の提出 → 部をロック、戻れません</b></div>
+        </div>
+        <div class="note" style="margin-top:14px"><strong>注意：</strong>始める前に約105分の静かな時間を確保してください。途中で他の試験のタブに切り替えても、現在の部のタイマーは進み続けます。</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mk-partbanner hidden" id="mk4PartBanner" role="status"></div>
+
+  <section id="mk4Exam" class="hidden">
+    <div class="cbt-layout">
+      <aside class="palette" aria-label="現在の部の問題一覧">
+        <h3 id="mk4PalTitle">問題一覧 — 第1部</h3>
+        <div class="count" id="mk4PalCount">回答済み 0 / 25</div>
+        <div class="pal-grid" id="mk4PalGrid"></div>
+        <div class="legend">
+          <span><i style="background:var(--card)"></i>未回答</span>
+          <span><i style="background:var(--ok);border-color:var(--ok)"></i>回答済み</span>
+          <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>開いている問題</span>
+          <span>⚑ 印付き</span>
+        </div>
+        <button class="btn btn-primary submit-wide" id="mk4SubmitBtnSide" type="button" onclick="mk4AskSubmitPart()">この部を提出する</button>
+        <div class="kbd-hint">ショートカット：<kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd>で答えを選ぶ · <kbd>←</kbd> <kbd>→</kbd>で問題を移動する（現在の部のみ）</div>
+      </aside>
+      <div class="cbt-main">
+        <div id="mk4Groups" aria-label="現在の部のセットと問題"></div>
+        <div class="cbt-footnav">
+          <button class="nav-btn" id="mk4PrevBtn" type="button" onclick="mk4PrevQ()">← 前の問題</button>
+          <span class="foot-status" id="mk4FootStatus">第1問 / 80</span>
+          <button class="nav-btn primary" id="mk4NextBtn" type="button" onclick="mk4NextQ()">次の問題 →</button>
+        </div>
+      </div>
+    </div>
+    <div class="d1-submitbar">
+      <p id="mk4SubmitHint">この部は 0 / 25問に回答しました。</p>
+      <button class="btn btn-primary" id="mk4SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk4AskSubmitPart()">この部を提出する</button>
+    </div>
+  </section>
+
+  <section class="result-panel" id="mk4Result">
+    <div class="big" id="mk4ScoreBig">0 / 80</div>
+    <h2 id="mk4ScoreTitle">模擬試験 BJT 04の結果</h2>
+    <div class="mk-scoregrid" id="mk4ScoreGrid"></div>
+    <p id="mk4ScoreDetail"></p>
+    <p style="font-size:14px">答え、解説、トランスクリプトと各問題の訳はすぐ下にあります。</p>
+    <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mk4Reset()">↺ 模擬試験 04をもう一度解く</button>
+  </section>
+  <div id="mk4Review"></div>
+
+  <p class="footer-note">模擬試験 BJT 04 — 本番と同じ形式の80問（3部連続、時間切れで部をロック）。音声は録音済みのMP3ファイルで、話者の名前は読み上げません。/800の点数は正答率からの推定換算であり、正式な採点方法ではありません。</p>
+</main>
+<main class="wrap hidden" id="examMock5">
+  <div class="cbt-head">
+    <div>
+      <h1>模擬試験 BJT 05 — 80問の完全模擬試験</h1>
+      <div class="sub">本番と同じ形式：80問 · 3部連続 · 合計約105分</div>
+      <div class="mode-row">
+        <span class="lbl">モード：</span>
+        <button class="mode-btn active" id="mk5ModeReal" onclick="setModeMk5('real')">本番モード — 音声は1回のみ</button>
+        <button class="mode-btn" id="mk5ModePrac" onclick="setModeMk5('practice')">練習モード — 音声をくり返し聞ける</button>
+      </div>
+    </div>
+    <div class="cbt-timer">
+      <div class="t" id="mk5Timer">45:00</div>
+      <div class="lbl">現在の部の残り時間</div>
+    </div>
+  </div>
+
+  <div class="mk-stepper" id="mk5Stepper" aria-label="3部の進み具合">
+    <div class="mk-step" id="mk5Step1"><b class="jp">第1部 — 聴解</b>25問 · 45分<span class="st" id="mk5StepSt1">未開始</span></div>
+    <div class="mk-step" id="mk5Step2"><b class="jp">第2部 — 聴読解</b>25問 · 30分<span class="st" id="mk5StepSt2">未開始</span></div>
+    <div class="mk-step" id="mk5Step3"><b class="jp">第3部 — 読解</b>30問 · 30分<span class="st" id="mk5StepSt3">未開始</span></div>
+  </div>
+
+  <section class="start-panel" id="mk5Start">
+    <h2>模擬試験の説明 — 始める前にルールをよく読んでください</h2>
+    <div class="start-grid">
+      <div>
+        <ul>
+          <li>本番と同じ順序で<strong>80問</strong>を<strong>3部</strong>続けて解きます。合計時間は約<strong>105分</strong>です。</li>
+          <li><strong>部のロック（本番と同じ）：</strong>各部にそれぞれ制限時間があります。<strong>時間切れ</strong>になるか、<strong>部を提出</strong>すると、その部は<strong>すぐにロック</strong>され、次の部へ進みます — <strong>前の部には戻れません</strong>。答えを見直すこともできません。</li>
+          <li>各部では、同じセット（同じ音声・資料）の問題が<strong>1つの画面にまとめて</strong>表示されます。<strong>問題一覧</strong>から問題へ移動したり、<strong>← 前の問題 / 次の問題 →</strong>ボタンや<kbd>←</kbd> <kbd>→</kbd>キーで移動したり、<kbd>A</kbd>–<kbd>D</kbd>キーで答えを選んだりできます。各問題は<strong>1つ</strong>だけ選んでください。自信がない問題は<strong>⚑ 印を付ける</strong>を押してください。</li>
+          <li>音声は録音済みのMP3ファイルで、<strong>話者の名前は読み上げません</strong>。<strong>本番モード</strong>では、各音声は<strong>1回のみ</strong>再生できます。<strong>練習モード</strong>ではくり返し聞けます。</li>
+          <li><strong>答え、解説、トランスクリプトは第3部を提出した後に表示されます。</strong>結果には各部の点数、全問の点数（/80）と、800点満点への<strong>推定</strong>換算点と目安のレベルが表示されます。</li>
+        </ul>
+        <div class="mk-partcards">
+          <div class="mk-partcard"><b class="jp">第1部 — 聴解</b><p>25問 · 45分<br>場面把握 · 発言聴解 · 総合聴解（会話・お知らせ）</p></div>
+          <div class="mk-partcard"><b class="jp">第2部 — 聴読解</b><p>25問 · 30分<br>グラフ・メール・スケジュール表を見ながら聞く</p></div>
+          <div class="mk-partcard"><b class="jp">第3部 — 読解</b><p>30問 · 30分<br>語彙・文法 · 表現読解 · 新聞記事・掲示・議事録を読む</p></div>
+        </div>
+        <p style="margin-top:14px"><button class="btn btn-primary" id="mk5StartBtn" type="button" style="font-size:16px" onclick="startMock5()">第1部 — 聴解を始める</button></p>
+        <p class="start-status" id="mk5StartStatus" role="status" aria-live="polite"></p>
+        <p class="note js-warn" id="mk5JsWarn">読み込み中です。「<strong>始める</strong>」ボタンが反応しない場合は、数秒待ってページの読み込みが終わるのを待つか、Chrome / Safariでこのページを開いてもう一度押してください。</p>
+      </div>
+      <div>
+        <div class="candidate" aria-label="模擬試験 BJT 05の情報">
+          <div><span>試験</span><b class="jp">BJT — 模擬試験 05</b></div>
+          <div><span>問題数</span><b>80問 · 3部</b></div>
+          <div><span>時間</span><b>約105分（45 + 30 + 30）</b></div>
+          <div><span>構成</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
+          <div><span>ルール</span><b>時間切れ／部の提出 → 部をロック、戻れません</b></div>
+        </div>
+        <div class="note" style="margin-top:14px"><strong>注意：</strong>始める前に約105分の静かな時間を確保してください。途中で他の試験のタブに切り替えても、現在の部のタイマーは進み続けます。</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mk-partbanner hidden" id="mk5PartBanner" role="status"></div>
+
+  <section id="mk5Exam" class="hidden">
+    <div class="cbt-layout">
+      <aside class="palette" aria-label="現在の部の問題一覧">
+        <h3 id="mk5PalTitle">問題一覧 — 第1部</h3>
+        <div class="count" id="mk5PalCount">回答済み 0 / 25</div>
+        <div class="pal-grid" id="mk5PalGrid"></div>
+        <div class="legend">
+          <span><i style="background:var(--card)"></i>未回答</span>
+          <span><i style="background:var(--ok);border-color:var(--ok)"></i>回答済み</span>
+          <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>開いている問題</span>
+          <span>⚑ 印付き</span>
+        </div>
+        <button class="btn btn-primary submit-wide" id="mk5SubmitBtnSide" type="button" onclick="mk5AskSubmitPart()">この部を提出する</button>
+        <div class="kbd-hint">ショートカット：<kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd>で答えを選ぶ · <kbd>←</kbd> <kbd>→</kbd>で問題を移動する（現在の部のみ）</div>
+      </aside>
+      <div class="cbt-main">
+        <div id="mk5Groups" aria-label="現在の部のセットと問題"></div>
+        <div class="cbt-footnav">
+          <button class="nav-btn" id="mk5PrevBtn" type="button" onclick="mk5PrevQ()">← 前の問題</button>
+          <span class="foot-status" id="mk5FootStatus">第1問 / 80</span>
+          <button class="nav-btn primary" id="mk5NextBtn" type="button" onclick="mk5NextQ()">次の問題 →</button>
+        </div>
+      </div>
+    </div>
+    <div class="d1-submitbar">
+      <p id="mk5SubmitHint">この部は 0 / 25問に回答しました。</p>
+      <button class="btn btn-primary" id="mk5SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk5AskSubmitPart()">この部を提出する</button>
+    </div>
+  </section>
+
+  <section class="result-panel" id="mk5Result">
+    <div class="big" id="mk5ScoreBig">0 / 80</div>
+    <h2 id="mk5ScoreTitle">模擬試験 BJT 05の結果</h2>
+    <div class="mk-scoregrid" id="mk5ScoreGrid"></div>
+    <p id="mk5ScoreDetail"></p>
+    <p style="font-size:14px">答え、解説、トランスクリプトと各問題の訳はすぐ下にあります。</p>
+    <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mk5Reset()">↺ 模擬試験 05をもう一度解く</button>
+  </section>
+  <div id="mk5Review"></div>
+
+  <p class="footer-note">模擬試験 BJT 05 — 本番と同じ形式の80問（3部連続、時間切れで部をロック）。音声は録音済みのMP3ファイルで、話者の名前は読み上げません。/800の点数は正答率からの推定換算であり、正式な採点方法ではありません。</p>
+</main>
 <main class="wrap wrap-narrow hidden" id="examDemo">
   <div class="hero">
     <h1>BJT模擬テスト — 3問、全3パート</h1>
@@ -1036,17 +1240,37 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     </div>
   </div>
 </div>
+<div class="modal-overlay" id="mk4Modal" role="dialog" aria-modal="true" aria-labelledby="mk4ModalTitle">
+  <div class="modal">
+    <h3 id="mk4ModalTitle">この部を提出しますか？</h3>
+    <p id="mk4ModalText">この部を提出すると部がロックされ、次の部へ進みます — 戻ることはできません。</p>
+    <div class="row">
+      <button class="btn btn-ghost" id="mk4ModalCancel" type="button" onclick="mk4CloseModal()">続けて解く</button>
+      <button class="btn btn-primary" id="mk4ModalConfirm" type="button" onclick="mk4ConfirmSubmitPart()">部を提出する</button>
+    </div>
+  </div>
+</div>
+<div class="modal-overlay" id="mk5Modal" role="dialog" aria-modal="true" aria-labelledby="mk5ModalTitle">
+  <div class="modal">
+    <h3 id="mk5ModalTitle">この部を提出しますか？</h3>
+    <p id="mk5ModalText">この部を提出すると部がロックされ、次の部へ進みます — 戻ることはできません。</p>
+    <div class="row">
+      <button class="btn btn-ghost" id="mk5ModalCancel" type="button" onclick="mk5CloseModal()">続けて解く</button>
+      <button class="btn btn-primary" id="mk5ModalConfirm" type="button" onclick="mk5ConfirmSubmitPart()">部を提出する</button>
+    </div>
+  </div>
+</div>
 
 <script>
 /* ============ TAB SWITCH + URL TAG (deep link) ============
    Each exam has its own link tag so a shared link opens exactly that exam:
-     ngay-1 … ngay-14 · de-thi-thu (Đề thi thử BJT 01) · de-thi-thu-2 (Đề thi thử BJT 02) · de-thi-thu-3 (Đề thi thử BJT 03) · de-mau (Đề mẫu 01)
+     ngay-1 … ngay-14 · de-thi-thu (Đề thi thử BJT 01) · de-thi-thu-2 (Đề thi thử BJT 02) · de-thi-thu-3 (Đề thi thử BJT 03) · de-thi-thu-4 (模擬試験 BJT 04) · de-thi-thu-5 (模擬試験 BJT 05) · de-mau (Đề mẫu 01)
    Supported deep-link forms on the public URL:
      ?de=ngay-4   (query parameter — primary form; ?exam=ngay-4 also works)
      #ngay-4      (hash — kept for in-app use)
    A valid tag in the URL wins over the default (newest exam, Ngày 22);
    switching exams on the page updates the hash to match. */
-var EXAM_TAGS = { day25:'ngay-25', day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', mock3:'de-thi-thu-3', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
+var EXAM_TAGS = { day25:'ngay-25', day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', mock3:'de-thi-thu-3', mock4:'de-thi-thu-4', mock5:'de-thi-thu-5', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
 var TAG_EXAMS = {};
 Object.keys(EXAM_TAGS).forEach(function(k){ TAG_EXAMS[EXAM_TAGS[k]] = k; });
 /* The published page is displayed inside the Muse shell, and the #tag
@@ -1155,6 +1379,8 @@ function anyExamStarted(){
   try{ if(window.mkStarted) return true; }catch(e){}
   try{ if(window.mk2Started) return true; }catch(e){}
   try{ if(window.mk3Started) return true; }catch(e){}
+  try{ if(window.mk4Started) return true; }catch(e){}
+  try{ if(window.mk5Started) return true; }catch(e){}
   try{ if(window.demoTimerStarted) return true; }catch(e){}
   return false;
 }
@@ -1189,6 +1415,10 @@ function switchExam(which){
   if(exM2) exM2.classList.toggle('hidden', which !== 'mock2');
   var exM3 = document.getElementById('examMock3');
   if(exM3) exM3.classList.toggle('hidden', which !== 'mock3');
+  var exM4 = document.getElementById('examMock4');
+  if(exM4) exM4.classList.toggle('hidden', which !== 'mock4');
+  var exM5 = document.getElementById('examMock5');
+  if(exM5) exM5.classList.toggle('hidden', which !== 'mock5');
   document.getElementById('examDemo').classList.toggle('hidden', which !== 'demo');
   var exV = document.getElementById('videoLibrary');
   if(exV) exV.classList.toggle('hidden', which !== 'videos');
@@ -1200,6 +1430,10 @@ function switchExam(which){
   if(tbM2) tbM2.classList.toggle('active', which === 'mock2');
   var tbM3 = document.getElementById('tabMock3');
   if(tbM3) tbM3.classList.toggle('active', which === 'mock3');
+  var tbM4 = document.getElementById('tabMock4');
+  if(tbM4) tbM4.classList.toggle('active', which === 'mock4');
+  var tbM5 = document.getElementById('tabMock5');
+  if(tbM5) tbM5.classList.toggle('active', which === 'mock5');
   document.getElementById('tabDemo').classList.toggle('active', which === 'demo');
   var tbV = document.getElementById('tabVideos');
   if(tbV) tbV.classList.toggle('active', which === 'videos');
@@ -1210,6 +1444,8 @@ function switchExam(which){
   if(which !== 'mock1'){ try{ mkStopAudio(); }catch(e){} }
   if(which !== 'mock2'){ try{ mk2StopAudio(); }catch(e){} }
   if(which !== 'mock3'){ try{ mk3StopAudio(); }catch(e){} }
+  if(which !== 'mock4'){ try{ mk4StopAudio(); }catch(e){} }
+  if(which !== 'mock5'){ try{ mk5StopAudio(); }catch(e){} }
   try{ bjtWarmExam(which); }catch(e){}
   window.scrollTo({top:0, behavior:'smooth'});
 }
@@ -1321,6 +1557,14 @@ function bjtWarmExam(which){
     try{ if(typeof mk3Groups !== 'undefined' && mk3Groups) mk3Groups.forEach(function(g){ if(g && g.audio) bjtWarmAudio(g.audio); }); }catch(e){}
     return;
   }
+  if(which === 'mock4'){
+    try{ if(typeof mk4Groups !== 'undefined' && mk4Groups) mk4Groups.forEach(function(g){ if(g && g.audio) bjtWarmAudio(g.audio); }); }catch(e){}
+    return;
+  }
+  if(which === 'mock5'){
+    try{ if(typeof mk5Groups !== 'undefined' && mk5Groups) mk5Groups.forEach(function(g){ if(g && g.audio) bjtWarmAudio(g.audio); }); }catch(e){}
+    return;
+  }
   if(which === 'demo'){
     ['assets/listening1.mp3', 'assets/listening2.mp3'].forEach(function(u){
       bjtFetchBlob(u, function(bu){
@@ -1418,11 +1662,13 @@ window.EXAM_DAYS = window.EXAM_DAYS || {};
 window.mkParts = []; window.mkGroups = []; window.mkQuestions = [];
 window.mk2Parts = []; window.mk2Groups = []; window.mk2Questions = [];
 window.mk3Parts = []; window.mk3Groups = []; window.mk3Questions = [];
+window.mk4Parts = []; window.mk4Groups = []; window.mk4Questions = [];
+window.mk5Parts = []; window.mk5Groups = []; window.mk5Questions = [];
 window.VIDEO_LIBRARY = null;
 window.VOCAB_DAYS = [];
 (function(){
   var DAY_FILES = ["day1","day2","day3","day4","day5","day6","day7","day8","day9","day10","day11","day12","day13","day14","day15","day16","day17","day18","day19","day20","day21","day22","day23","day24","day25"];
-  var MOCK_FILES = ["mock1","mock2","mock3"];
+  var MOCK_FILES = ["mock1","mock2","mock3","mock4","mock5"];
   function loadJSON(url){
     return fetch(url).then(function(r){
       if(!r.ok) throw new Error('HTTP ' + r.status + ' - ' + url);
@@ -1452,7 +1698,7 @@ window.VOCAB_DAYS = [];
     Promise.all(jobs).then(function(){
       /* mock group lookups are built at parse time from (then-empty)
          arrays, so rebuild them now that the data has arrived. */
-      [['mkGroups', 'mkGroupById'], ['mk2Groups', 'mk2GroupById'], ['mk3Groups', 'mk3GroupById']].forEach(function(pair){
+      [['mkGroups', 'mkGroupById'], ['mk2Groups', 'mk2GroupById'], ['mk3Groups', 'mk3GroupById'], ['mk4Groups', 'mk4GroupById'], ['mk5Groups', 'mk5GroupById']].forEach(function(pair){
         var arr = window[pair[0]], map = window[pair[1]];
         if(arr && map){ arr.forEach(function(g){ map[g.id] = g; }); }
       });
@@ -2235,7 +2481,7 @@ window.resetDay21 = resetDay21;
 window.cbtPrev21 = cbtPrev21;
 window.cbtNext21 = cbtNext21;
 (function wireTabs(){
-  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabDay23:'day23', tabDay24:'day24', tabDay25:'day25', tabMock1:'mock1', tabMock2:'mock2', tabMock3:'mock3', tabDemo:'demo' };
+  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabDay23:'day23', tabDay24:'day24', tabDay25:'day25', tabMock1:'mock1', tabMock2:'mock2', tabMock3:'mock3', tabMock4:'mock4', tabMock5:'mock5', tabDemo:'demo' };
   Object.keys(map).forEach(function(id){
     var el = document.getElementById(id);
     if(el) el.addEventListener('click', function(){ userPickedExam = true; switchExam(map[id]); });
@@ -3211,6 +3457,948 @@ function mk3Reset(){
   if(jw) jw.style.display = 'none';
 })();
 </script>
+<script>
+var mk4GroupById = {};
+mk4Groups.forEach(function(g){ mk4GroupById[g.id] = g; });
+var mk4Sel = {}, mk4Flag = {}, mk4Plays = {};
+var mk4Part = 0, mk4Started = false, mk4Finished = false, mk4Mode = 'real';
+var mk4Current = 1, mk4Remain = 0, mk4TimerId = null;
+var mk4PartScore = {1:null, 2:null, 3:null};
+var mk4Player = null, mk4Speaking = false, mk4AudioId = null, mk4Watchdog = null;
+function mk4PartOf(n){ for(var i=0;i<mk4Parts.length;i++){ if(n>=mk4Parts[i].from && n<=mk4Parts[i].to) return mk4Parts[i]; } return mk4Parts[0]; }
+function mk4PartScoreCalc(p){
+  var part = mk4Parts[p-1], c = 0;
+  for(var n=part.from;n<=part.to;n++){ if(mk4Sel[n]===mk4Questions[n-1].ans) c++; }
+  return c;
+}
+function setModeMk4(m){
+  if(mk4Started && !mk4Finished) return;
+  mk4Mode = m;
+  document.getElementById('mk4ModeReal').classList.toggle('active', m==='real');
+  document.getElementById('mk4ModePrac').classList.toggle('active', m==='practice');
+}
+function mk4RenderStepper(){
+  for(var p=1;p<=3;p++){
+    var step = document.getElementById('mk4Step'+p), st = document.getElementById('mk4StepSt'+p);
+    if(!step || !st) continue;
+    step.classList.toggle('done', mk4PartScore[p]!==null);
+    step.classList.toggle('now', mk4Part===p && mk4PartScore[p]===null);
+    var part = mk4Parts[p-1], total = part.to - part.from + 1;
+    st.textContent = mk4PartScore[p]!==null
+      ? ('✓ ロック済み — 正解 ' + mk4PartScore[p] + ' / ' + total)
+      : (mk4Part===p ? '解答中…' : '未開始');
+  }
+}
+function startMock4(){
+  if(mk4Started) return;
+  var status = document.getElementById('mk4StartStatus');
+  if(status) status.textContent = '第1部を開いています…';
+  mk4Started = true;
+  var sp = document.getElementById('mk4Start');
+  if(sp){ sp.classList.add('hidden'); sp.style.display = 'none'; }
+  mk4BeginPart(1, false);
+  if(status) status.textContent = '';
+}
+function mk4BeginPart(p, auto){
+  mk4Part = p;
+  var part = mk4Parts[p-1];
+  mk4Current = part.from;
+  mk4Remain = part.time;
+  var t = document.getElementById('mk4Timer');
+  t.textContent = fmtT(mk4Remain); t.classList.remove('warn');
+  var banner = document.getElementById('mk4PartBanner');
+  if(banner){
+    if(p>1){
+      var prev = mk4Parts[p-2], pTotal = prev.to - prev.from + 1;
+      banner.textContent = (auto ? '⏱ 時間切れ ' : '提出済み ') + prev.name + ' — この部はロックされました（正解 ' + mk4PartScore[p-1] + ' / ' + pTotal + '）。戻ることはできません。現在は' + part.name + 'を解いています。';
+      banner.classList.remove('hidden');
+    } else {
+      banner.textContent = '現在は' + part.name + 'を解いています — タイマー ' + fmtT(part.time) + 'が進んでいます。時間切れになるか部を提出すると、この部がロックされ、次の部へ進みます。';
+      banner.classList.remove('hidden');
+    }
+  }
+  var ex = document.getElementById('mk4Exam');
+  ex.classList.remove('hidden'); ex.style.display = '';
+  document.getElementById('mk4PalTitle').textContent = '問題一覧 — 第' + p + '部（' + part.jp + '）';
+  mk4BuildGroups();
+  mk4RenderPalette();
+  mk4UpdateHint();
+  mk4RenderStepper();
+  clearInterval(mk4TimerId);
+  mk4TimerId = setInterval(function(){
+    if(mk4Remain<=0){ clearInterval(mk4TimerId); var tt = document.getElementById('mk4Timer'); tt.textContent = '00:00'; mk4LockPart(true); return; }
+    mk4Remain--;
+    var el = document.getElementById('mk4Timer');
+    el.textContent = fmtT(mk4Remain);
+    if(mk4Remain<=60) el.classList.add('warn');
+  }, 1000);
+  safeScrollToEl(document.getElementById('mk4Exam'));
+}
+function mk4BuildGroups(){
+  var wrap = document.getElementById('mk4Groups');
+  if(!wrap) return;
+  wrap.innerHTML = '';
+  mk4Groups.forEach(function(g){
+    if(g.part !== mk4Part) return;
+    var group = document.createElement('div');
+    group.className = 'seg-group'; group.id = 'mk4SegGroup' + g.id;
+    var banner = document.createElement('div'); banner.className = 'seg-banner';
+    var st = document.createElement('div'); st.className = 'seg-title jp'; st.textContent = g.title;
+    var sd = document.createElement('div'); sd.className = 'seg-desc';
+    sd.textContent = g.desc + (g.audio ? (mk4Mode==='real' ? ' · 本番モード：このセットの音声は1回のみ再生できます。' : ' · 練習モード：くり返し聞けます。') : '');
+    banner.appendChild(st); banner.appendChild(sd);
+    if(g.audio){
+      var arow = document.createElement('div'); arow.className = 'audio-row';
+      var pb = document.createElement('button');
+      pb.type = 'button'; pb.className = 'play-btn'; pb.id = 'mk4PlayBtn' + g.id;
+      pb.innerHTML = '<span class="tri">▶</span><span>セット' + g.id + 'の音声を再生</span>';
+      (function(gid){ pb.addEventListener('click', function(){ mk4Play(gid); }); })(g.id);
+      var ps = document.createElement('span'); ps.className = 'play-state'; ps.id = 'mk4PlayState' + g.id;
+      arow.appendChild(pb); arow.appendChild(ps);
+      banner.appendChild(arow);
+    }
+    group.appendChild(banner);
+    if(g.mat){
+      var matWrap = document.createElement('div');
+      matWrap.innerHTML = g.mat;
+      while(matWrap.firstChild) group.appendChild(matWrap.firstChild);
+    }
+    g.qs.forEach(function(n){
+      var item = mk4Questions[n-1];
+      var card = document.createElement('div');
+      card.className = 'qcard'; card.id = 'mkqcard-' + n;
+      var meta = document.createElement('div'); meta.className = 'q-meta';
+      var qn = document.createElement('span'); qn.className = 'q-num';
+      qn.textContent = '第' + n + '問 / 80 · セット' + g.id;
+      var fb = document.createElement('button');
+      fb.type = 'button'; fb.className = 'flag-btn'; fb.id = 'mkflagBtn' + n;
+      (function(nn){ fb.addEventListener('click', function(){ mk4ToggleFlag(nn); }); })(n);
+      meta.appendChild(qn); meta.appendChild(fb);
+      var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = item.q;
+      var opts = document.createElement('div');
+      opts.className = 'options'; opts.id = 'mkqOptions' + n;
+      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','第' + n + '問の答え');
+      card.appendChild(meta); card.appendChild(qt); card.appendChild(opts);
+      (function(nn){ card.addEventListener('click', function(){ mk4SetActive(nn, false); }); })(n);
+      group.appendChild(card);
+    });
+    wrap.appendChild(group);
+  });
+  var part = mk4Parts[mk4Part-1];
+  for(var n=part.from;n<=part.to;n++) mk4UpdateQuestion(n);
+  mk4MarkActive();
+  mk4RefreshPlayUI();
+}
+function mk4MarkActive(){
+  var part = mk4Parts[mk4Part-1];
+  for(var n=part.from;n<=part.to;n++){
+    var c = document.getElementById('mkqcard-' + n);
+    if(c) c.classList.toggle('current', n === mk4Current);
+  }
+}
+function mk4SetActive(n, scroll){
+  mk4Current = n;
+  mk4MarkActive();
+  mk4RenderPalette();
+  if(scroll){
+    var el = document.getElementById('mkqcard-' + n);
+    if(el) safeScrollToEl(el);
+  }
+}
+function mk4UpdateQuestion(n){
+  var item = mk4Questions[n-1];
+  var fb = document.getElementById('mkflagBtn' + n);
+  if(fb){
+    fb.classList.toggle('on', !!mk4Flag[n]);
+    fb.textContent = mk4Flag[n] ? '⚑ 印付き — 押して外す' : '⚑ この問題に印を付ける';
+  }
+  var box = document.getElementById('mkqOptions' + n);
+  if(!box) return;
+  box.innerHTML = '';
+  var letters = ['A','B','C','D'];
+  item.opts.forEach(function(opt, idx){
+    var b = document.createElement('button');
+    b.className = 'd1opt'; b.type = 'button';
+    if(mk4Sel[n] === letters[idx]) b.classList.add('selected');
+    b.innerHTML = '<span class="letter">' + letters[idx] + '</span><span class="jp"></span>';
+    b.querySelector('.jp').textContent = opt;
+    (function(nn, v){ b.addEventListener('click', function(){ mk4Pick(nn, v); }); })(n, letters[idx]);
+    box.appendChild(b);
+  });
+}
+function mk4RenderPalette(){
+  var g = document.getElementById('mk4PalGrid'); if(!g) return;
+  var part = mk4Parts[mk4Part-1];
+  g.innerHTML = '';
+  for(var n=part.from;n<=part.to;n++){
+    var item = mk4Questions[n-1];
+    var b = document.createElement('button');
+    b.className = 'pal-btn'; b.setAttribute('aria-label','第' + n + '問');
+    b.innerHTML = '<span class="pnum">' + n + '</span><span class="plabel"></span><span class="pstat"></span>';
+    b.querySelector('.plabel').textContent = 'セット' + item.g + ' · ' + part.jp;
+    var st = b.querySelector('.pstat');
+    if(mk4Sel[n]) b.classList.add('answered');
+    if(mk4Sel[n]) st.textContent = '✓';
+    if(mk4Flag[n]) st.textContent = '⚑' + (st.textContent ? ' ✓' : '');
+    if(n===mk4Current) b.classList.add('current');
+    (function(nn){ b.addEventListener('click', function(){ mk4SetActive(nn, true); }); })(n);
+    g.appendChild(b);
+  }
+  var done = 0;
+  for(var m=part.from;m<=part.to;m++){ if(mk4Sel[m]) done++; }
+  document.getElementById('mk4PalCount').textContent = '回答済み ' + done + ' / ' + (part.to - part.from + 1) + '（第' + mk4Part + '部）';
+  var fs = document.getElementById('mk4FootStatus');
+  if(fs) fs.textContent = '第' + mk4Current + '問を表示中 / 80 · 第' + mk4Part + '部：回答済み ' + done + ' / ' + (part.to - part.from + 1);
+  var prev = document.getElementById('mk4PrevBtn'), next = document.getElementById('mk4NextBtn');
+  if(prev) prev.disabled = (mk4Current <= part.from);
+  if(next) next.disabled = (mk4Current >= part.to);
+}
+function mk4UpdateHint(){
+  var part = mk4Parts[mk4Part-1];
+  var done = 0, total = part.to - part.from + 1;
+  for(var m=part.from;m<=part.to;m++){ if(mk4Sel[m]) done++; }
+  var el = document.getElementById('mk4SubmitHint');
+  if(el) el.textContent = done === total
+    ? 'この部の' + done + ' / ' + total + '問すべてに回答しました —「この部を提出する」を押して部をロックし、次へ進んでください。'
+    : 'この部は' + done + ' / ' + total + '問に回答しました — あと' + (total - done) + '問未回答です。提出することもできます（未回答は不正解になります）。提出すると部がロックされます。';
+  var lbl = mk4Part===3 ? '第3部を提出 — 結果を見る' : ('第' + mk4Part + '部を提出 — 第' + (mk4Part+1) + '部へ');
+  var s1 = document.getElementById('mk4SubmitBtnSide'), s2 = document.getElementById('mk4SubmitBtnBottom');
+  if(s1) s1.textContent = lbl;
+  if(s2) s2.textContent = lbl;
+}
+function mk4Pick(n, v){
+  if(mk4Finished || mk4PartScore[mk4Part]!==null) return;
+  var part = mk4Parts[mk4Part-1];
+  if(n < part.from || n > part.to) return;
+  mk4Sel[n] = v;
+  mk4Current = n;
+  mk4UpdateQuestion(n);
+  mk4MarkActive();
+  mk4RenderPalette();
+  mk4UpdateHint();
+}
+function mk4ToggleFlag(n){
+  if(mk4Finished || mk4PartScore[mk4Part]!==null) return;
+  mk4Flag[n] = !mk4Flag[n];
+  mk4Current = n;
+  mk4UpdateQuestion(n);
+  mk4MarkActive();
+  mk4RenderPalette();
+}
+function mk4PrevQ(){ var part = mk4Parts[mk4Part-1]; if(mk4Current > part.from) mk4SetActive(mk4Current-1, true); }
+function mk4NextQ(){ var part = mk4Parts[mk4Part-1]; if(mk4Current < part.to) mk4SetActive(mk4Current+1, true); }
+/* Playback mirrors Day 4: fresh Audio per press, play counted only once
+   audio actually starts, watchdog unwedges a stuck button. */
+function mk4RefreshPlayUI(){
+  mk4Groups.forEach(function(g){ if(g.audio && g.part===mk4Part) mk4RefreshOnePlayUI(g.id); });
+}
+function mk4RefreshOnePlayUI(gid){
+  var btn = document.getElementById('mk4PlayBtn' + gid), st = document.getElementById('mk4PlayState' + gid);
+  if(!btn || !st) return;
+  var plays = mk4Plays[gid] || 0;
+  if(mk4Speaking && mk4AudioId===gid){ btn.disabled = true; st.textContent = 'セット' + gid + 'の音声を再生中です… よく聞いて、このセットの問題に答えてください。'; return; }
+  if(mk4Mode==='real' && plays>=1){ btn.disabled = true; st.textContent = 'セット' + gid + 'の音声は1/1回再生済みです（本番モード）。'; return; }
+  btn.disabled = false;
+  if(mk4Speaking){ st.textContent = 'セット' + mk4AudioId + 'の音声を再生中です — このボタンを押すとその音声を止めて、セット' + gid + 'の音声を再生します。'; return; }
+  st.textContent = plays>0 ? ('再生済み ' + plays + '回' + (mk4Mode==='practice' ? ' — くり返し聞けます。' : '')) : '未再生 — 押してセット' + gid + 'の音声を聞く。';
+}
+function mk4SetPlayState(gid, msg){
+  var st = document.getElementById('mk4PlayState' + gid);
+  if(st) st.textContent = msg;
+}
+function mk4StopAudio(){
+  if(mk4Watchdog){ clearTimeout(mk4Watchdog); mk4Watchdog = null; }
+  if(mk4Player){
+    var old = mk4Player; mk4Player = null;
+    try{ old.onended = null; old.onerror = null; old.onplaying = null; old.pause(); old.removeAttribute('src'); old.load(); }catch(e){}
+  }
+  mk4Speaking = false;
+}
+function mk4Play(gid){
+  if(mk4Finished || mk4PartScore[mk4Part]!==null) return;
+  if(mk4Speaking && mk4AudioId===gid) return;
+  if(mk4Mode==='real' && (mk4Plays[gid]||0)>=1) return;
+  mk4StopAudio();
+  var a = new Audio();
+  mk4Player = a;
+  mk4AudioId = gid;
+  mk4Speaking = true; mk4RefreshPlayUI();
+  var counted = false;
+  a.onplaying = function(){
+    if(mk4Player!==a) return;
+    if(mk4Watchdog){ clearTimeout(mk4Watchdog); mk4Watchdog = null; }
+    if(!counted){ counted = true; mk4Plays[gid] = (mk4Plays[gid]||0) + 1; }
+  };
+  a.onended = function(){
+    if(mk4Player!==a) return;
+    mk4Player = null; mk4Speaking = false;
+    mk4RefreshPlayUI();
+  };
+  a.onerror = function(){
+    if(mk4Player!==a || counted) return;
+    if(mk4Watchdog){ clearTimeout(mk4Watchdog); mk4Watchdog = null; }
+    mk4Player = null; mk4Speaking = false;
+    mk4RefreshPlayUI();
+    mk4SetPlayState(gid, 'セット' + gid + 'の音声ファイルを読み込めませんでした — ネット接続を確認して、もう一度再生してください。');
+  };
+  var wdWaits = 0;
+  function armStartWatchdog(){
+    mk4Watchdog = setTimeout(function(){
+      mk4Watchdog = null;
+      if(mk4Player!==a || !mk4Speaking || counted) return;
+      wdWaits++;
+      var loading = false;
+      try{ loading = (a.readyState > 0) || (a.networkState === 2) || (a.buffered && a.buffered.length > 0); }catch(e){}
+      if(loading && wdWaits < 5){
+        mk4SetPlayState(gid, 'セット' + gid + 'の音声を読み込んでいます… ネットが少し遅いようです。もう少し待ってください — もう一度押さないでください。');
+        armStartWatchdog();
+        return;
+      }
+      if(!loading && wdWaits === 1 && typeof bjtAutoRetryOnce === 'function' && bjtAutoRetryOnce('mk-' + gid)){
+        mk4StopAudio();
+        mk4Play(gid);
+        mk4SetPlayState(gid, '最初の再生が止まりました — セット' + gid + 'の音声を自動でもう一度再生しています…');
+        return;
+      }
+      mk4StopAudio();
+      mk4RefreshPlayUI();
+      mk4SetPlayState(gid, 'セット' + gid + 'の音声を再生できませんでした（ネットが遅いか、ブラウザーの調子が悪いためです）—「セット' + gid + 'の音声を再生」ボタンをもう一度押してください。');
+    }, 8000);
+  }
+  bjtStartAudio(a, mk4GroupById[gid].audio, {
+    isCurrent: function(){ return mk4Player===a; },
+    arm: armStartWatchdog,
+    onLoading: function(){ mk4SetPlayState(gid, 'セット' + gid + 'の音声をダウンロードしています… ダウンロードが終わると自動で再生します。もう一度押さないでください。'); },
+    onBlocked: function(){
+      if(mk4Player!==a || counted) return;
+      if(mk4Watchdog){ clearTimeout(mk4Watchdog); mk4Watchdog = null; }
+      mk4Player = null; mk4Speaking = false;
+      mk4RefreshPlayUI();
+      mk4SetPlayState(gid, 'ブラウザーが音声の再生をブロックしました —「セット' + gid + 'の音声を再生」ボタンをもう一度押してください。');
+    }
+  });
+}
+document.addEventListener('keydown', function(e){
+  if(currentExam!=='mock4' || !mk4Started || mk4Finished || mk4PartScore[mk4Part]!==null) return;
+  var modal = document.getElementById('mk4Modal');
+  if(modal && (modal.classList.contains('show') || modal.style.display==='flex')) return;
+  var k = e.key.toLowerCase();
+  if(['a','b','c','d'].indexOf(k)>=0){ mk4Pick(mk4Current, k.toUpperCase()); }
+  else if(e.key==='ArrowRight'){ mk4NextQ(); }
+  else if(e.key==='ArrowLeft'){ mk4PrevQ(); }
+});
+var mk4ModalPart = 0;
+function mk4AskSubmitPart(){
+  if(!mk4Started || mk4Finished || mk4PartScore[mk4Part]!==null) return;
+  mk4ModalPart = mk4Part;
+  var part = mk4Parts[mk4Part-1];
+  var done = 0, missing = [];
+  for(var n=part.from;n<=part.to;n++){ if(mk4Sel[n]) done++; else missing.push(n); }
+  var total = part.to - part.from + 1;
+  var tail = mk4Part===3
+    ? 'これが最後の部です — 提出すると全問の結果、答え、解説、トランスクリプトと訳が表示されます。'
+    : '提出すると、この部はロックされ、' + mk4Parts[mk4Part].name + 'へ進みます — 戻ることはできません。';
+  document.getElementById('mk4ModalTitle').textContent = part.name + 'を提出しますか？';
+  document.getElementById('mk4ModalText').textContent = (done===total
+    ? 'この部の' + done + '/' + total + '問すべてに回答しました。'
+    : 'この部は' + done + '/' + total + '問に回答しました。未回答の問題：' + missing.join(', ') + '（未回答は不正解になります）。') + tail;
+  var cf = document.getElementById('mk4ModalConfirm');
+  if(cf) cf.textContent = mk4Part===3 ? '部を提出 — 結果を見る' : '部を提出 — ロックして次へ進む';
+  var modal = document.getElementById('mk4Modal');
+  modal.classList.add('show');
+  modal.style.display = 'flex';
+  if(cf){ try{ cf.focus(); }catch(e){} }
+}
+function mk4CloseModal(){
+  var modal = document.getElementById('mk4Modal');
+  modal.classList.remove('show');
+  modal.style.display = '';
+}
+function mk4ConfirmSubmitPart(){
+  /* The confirm button carries both an inline onclick and a direct
+     addEventListener binding (same pattern as the day exams), so one click
+     can reach this handler twice. The first call locks the part and moves
+     on; the duplicate must not lock the NEXT part too — it is recognised
+     because mk4Part no longer matches the part the modal was opened for. */
+  if(mk4ModalPart && mk4Part !== mk4ModalPart){ mk4CloseModal(); return; }
+  mk4CloseModal(); mk4LockPart(false);
+}
+function mk4LockPart(auto){
+  if(mk4Finished || mk4PartScore[mk4Part]!==null) return;
+  clearInterval(mk4TimerId);
+  mk4StopAudio();
+  mk4PartScore[mk4Part] = mk4PartScoreCalc(mk4Part);
+  mk4RenderStepper();
+  if(mk4Part < 3){
+    mk4BeginPart(mk4Part + 1, auto);
+  } else {
+    mk4Finish(auto);
+  }
+}
+function mk4Finish(auto){
+  mk4Finished = true;
+  document.getElementById('mk4Exam').classList.add('hidden');
+  var banner = document.getElementById('mk4PartBanner');
+  if(banner) banner.classList.add('hidden');
+  var totals = [0,0,0], grand = 0;
+  for(var p=1;p<=3;p++){ totals[p-1] = mk4PartScore[p] || 0; grand += totals[p-1]; }
+  var pct = Math.round(grand / 80 * 100);
+  var est = grand * 10;
+  var level = pct>=66 ? '≈ J1レベル（530点以上）' : pct>=54 ? '≈ J2レベル' : pct>=45 ? '≈ J3レベル' : 'J3レベル未満 — 練習を続けましょう';
+  var box = document.getElementById('mk4Result');
+  box.classList.add('show');
+  document.getElementById('mk4ScoreBig').textContent = grand + ' / 80';
+  document.getElementById('mk4ScoreTitle').textContent =
+    pct>=66 ? '模擬試験 BJT 04の結果 — J1レベルに到達（推定）' :
+    pct>=54 ? '模擬試験 BJT 04の結果 — J2レベル（推定）' :
+    pct>=45 ? '模擬試験 BJT 04の結果 — J3レベル（推定）' :
+               '模擬試験 BJT 04の結果 — もっと練習しましょう';
+  var cells = '';
+  for(var q=1;q<=3;q++){
+    var pp = mk4Parts[q-1], tt = pp.to - pp.from + 1;
+    cells += '<div class="mk-scorecell"><div class="v">' + totals[q-1] + ' / ' + tt + '</div><div class="k">' + pp.name + ' · ' + Math.round(totals[q-1]/tt*100) + '%</div></div>';
+  }
+  cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">正答率からの推定換算（' + pct + '%）· 目安のレベル：' + level + '</div></div>';
+  document.getElementById('mk4ScoreGrid').innerHTML = cells;
+  document.getElementById('mk4ScoreDetail').textContent = (auto ? '⏱ 第3部の時間切れ — 自動で提出されました。' : '')
+    + '全問：正解 ' + grand + '/80（' + pct + '%）。上の/800の点数は、正答率からの推定換算にすぎません — 本番の点数は主催者の独自の方法で計算され、単純な比例換算ではありません。';
+  var rv = document.getElementById('mk4Review'); rv.innerHTML = '';
+  var shownTr = {};
+  var lastPart = 0;
+  mk4Questions.forEach(function(item){
+    var part = mk4PartOf(item.n);
+    if(part.num !== lastPart){
+      lastPart = part.num;
+      var h = document.createElement('h3');
+      h.className = 'section-title';
+      h.textContent = part.name + ' — 正解 ' + (mk4PartScore[part.num]||0) + ' / ' + (part.to - part.from + 1);
+      rv.appendChild(h);
+    }
+    var card = document.createElement('div'); card.className = 'review-card';
+    var isOk = mk4Sel[item.n] === item.ans;
+    var html = '<div class="q-num">第' + item.n + '問 · セット' + item.g + '</div>';
+    html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
+    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk4Sel[item.n] ? mk4Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk4Sel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mk4Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">正解：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ 不正解') + '</div>';
+    html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
+    var grp = mk4GroupById[item.g];
+    if(grp && grp.lines && !shownTr[item.g]){
+      shownTr[item.g] = true;
+      var tr = grp.lines.join('\n');
+      html += reviewAudioHtml(grp.audio, 'セット' + item.g + 'の音声をもう一度聞く');
+      html += '<div class="transcript jp"><strong>セット' + item.g + 'のトランスクリプト：</strong>\n' + tr + '</div>';
+      html += viTrHtml(grp.vi, 'セット' + item.g + 'の訳');
+    }
+    card.innerHTML = html;
+    rv.appendChild(card);
+  });
+  box.scrollIntoView({behavior:'smooth', block:'center'});
+}
+function mk4Reset(){
+  mk4Sel = {}; mk4Flag = {}; mk4Plays = {};
+  mk4Part = 0; mk4Started = false; mk4Finished = false; mk4Current = 1; mk4Speaking = false; mk4ModalPart = 0;
+  mk4PartScore = {1:null, 2:null, 3:null};
+  clearInterval(mk4TimerId);
+  mk4StopAudio();
+  var t = document.getElementById('mk4Timer'); t.textContent = '45:00'; t.classList.remove('warn');
+  document.getElementById('mk4Result').classList.remove('show');
+  document.getElementById('mk4Review').innerHTML = '';
+  var ex = document.getElementById('mk4Exam'); ex.classList.add('hidden'); ex.style.display = '';
+  var gr = document.getElementById('mk4Groups'); if(gr) gr.innerHTML = '';
+  var bn = document.getElementById('mk4PartBanner'); if(bn){ bn.classList.add('hidden'); bn.textContent = ''; }
+  var sp = document.getElementById('mk4Start'); sp.classList.remove('hidden'); sp.style.display = '';
+  var st = document.getElementById('mk4StartStatus'); if(st) st.textContent = '';
+  mk4RenderStepper();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+(function(){
+  var b = document.getElementById('mk4StartBtn');
+  if(b) b.addEventListener('click', function(){ startMock4(); });
+  var sb = document.getElementById('mk4SubmitBtnSide');
+  if(sb) sb.addEventListener('click', function(){ mk4AskSubmitPart(); });
+  var bb = document.getElementById('mk4SubmitBtnBottom');
+  if(bb) bb.addEventListener('click', function(){ mk4AskSubmitPart(); });
+  var mc = document.getElementById('mk4ModalConfirm');
+  if(mc) mc.addEventListener('click', function(){ mk4ConfirmSubmitPart(); });
+  var mx = document.getElementById('mk4ModalCancel');
+  if(mx) mx.addEventListener('click', function(){ mk4CloseModal(); });
+  var jw = document.getElementById('mk4JsWarn');
+  if(jw) jw.style.display = 'none';
+})();
+</script>
+<script>
+var mk5GroupById = {};
+mk5Groups.forEach(function(g){ mk5GroupById[g.id] = g; });
+var mk5Sel = {}, mk5Flag = {}, mk5Plays = {};
+var mk5Part = 0, mk5Started = false, mk5Finished = false, mk5Mode = 'real';
+var mk5Current = 1, mk5Remain = 0, mk5TimerId = null;
+var mk5PartScore = {1:null, 2:null, 3:null};
+var mk5Player = null, mk5Speaking = false, mk5AudioId = null, mk5Watchdog = null;
+function mk5PartOf(n){ for(var i=0;i<mk5Parts.length;i++){ if(n>=mk5Parts[i].from && n<=mk5Parts[i].to) return mk5Parts[i]; } return mk5Parts[0]; }
+function mk5PartScoreCalc(p){
+  var part = mk5Parts[p-1], c = 0;
+  for(var n=part.from;n<=part.to;n++){ if(mk5Sel[n]===mk5Questions[n-1].ans) c++; }
+  return c;
+}
+function setModeMk5(m){
+  if(mk5Started && !mk5Finished) return;
+  mk5Mode = m;
+  document.getElementById('mk5ModeReal').classList.toggle('active', m==='real');
+  document.getElementById('mk5ModePrac').classList.toggle('active', m==='practice');
+}
+function mk5RenderStepper(){
+  for(var p=1;p<=3;p++){
+    var step = document.getElementById('mk5Step'+p), st = document.getElementById('mk5StepSt'+p);
+    if(!step || !st) continue;
+    step.classList.toggle('done', mk5PartScore[p]!==null);
+    step.classList.toggle('now', mk5Part===p && mk5PartScore[p]===null);
+    var part = mk5Parts[p-1], total = part.to - part.from + 1;
+    st.textContent = mk5PartScore[p]!==null
+      ? ('✓ ロック済み — 正解 ' + mk5PartScore[p] + ' / ' + total)
+      : (mk5Part===p ? '解答中…' : '未開始');
+  }
+}
+function startMock5(){
+  if(mk5Started) return;
+  var status = document.getElementById('mk5StartStatus');
+  if(status) status.textContent = '第1部を開いています…';
+  mk5Started = true;
+  var sp = document.getElementById('mk5Start');
+  if(sp){ sp.classList.add('hidden'); sp.style.display = 'none'; }
+  mk5BeginPart(1, false);
+  if(status) status.textContent = '';
+}
+function mk5BeginPart(p, auto){
+  mk5Part = p;
+  var part = mk5Parts[p-1];
+  mk5Current = part.from;
+  mk5Remain = part.time;
+  var t = document.getElementById('mk5Timer');
+  t.textContent = fmtT(mk5Remain); t.classList.remove('warn');
+  var banner = document.getElementById('mk5PartBanner');
+  if(banner){
+    if(p>1){
+      var prev = mk5Parts[p-2], pTotal = prev.to - prev.from + 1;
+      banner.textContent = (auto ? '⏱ 時間切れ ' : '提出済み ') + prev.name + ' — この部はロックされました（正解 ' + mk5PartScore[p-1] + ' / ' + pTotal + '）。戻ることはできません。現在は' + part.name + 'を解いています。';
+      banner.classList.remove('hidden');
+    } else {
+      banner.textContent = '現在は' + part.name + 'を解いています — タイマー ' + fmtT(part.time) + 'が進んでいます。時間切れになるか部を提出すると、この部がロックされ、次の部へ進みます。';
+      banner.classList.remove('hidden');
+    }
+  }
+  var ex = document.getElementById('mk5Exam');
+  ex.classList.remove('hidden'); ex.style.display = '';
+  document.getElementById('mk5PalTitle').textContent = '問題一覧 — 第' + p + '部（' + part.jp + '）';
+  mk5BuildGroups();
+  mk5RenderPalette();
+  mk5UpdateHint();
+  mk5RenderStepper();
+  clearInterval(mk5TimerId);
+  mk5TimerId = setInterval(function(){
+    if(mk5Remain<=0){ clearInterval(mk5TimerId); var tt = document.getElementById('mk5Timer'); tt.textContent = '00:00'; mk5LockPart(true); return; }
+    mk5Remain--;
+    var el = document.getElementById('mk5Timer');
+    el.textContent = fmtT(mk5Remain);
+    if(mk5Remain<=60) el.classList.add('warn');
+  }, 1000);
+  safeScrollToEl(document.getElementById('mk5Exam'));
+}
+function mk5BuildGroups(){
+  var wrap = document.getElementById('mk5Groups');
+  if(!wrap) return;
+  wrap.innerHTML = '';
+  mk5Groups.forEach(function(g){
+    if(g.part !== mk5Part) return;
+    var group = document.createElement('div');
+    group.className = 'seg-group'; group.id = 'mk5SegGroup' + g.id;
+    var banner = document.createElement('div'); banner.className = 'seg-banner';
+    var st = document.createElement('div'); st.className = 'seg-title jp'; st.textContent = g.title;
+    var sd = document.createElement('div'); sd.className = 'seg-desc';
+    sd.textContent = g.desc + (g.audio ? (mk5Mode==='real' ? ' · 本番モード：このセットの音声は1回のみ再生できます。' : ' · 練習モード：くり返し聞けます。') : '');
+    banner.appendChild(st); banner.appendChild(sd);
+    if(g.audio){
+      var arow = document.createElement('div'); arow.className = 'audio-row';
+      var pb = document.createElement('button');
+      pb.type = 'button'; pb.className = 'play-btn'; pb.id = 'mk5PlayBtn' + g.id;
+      pb.innerHTML = '<span class="tri">▶</span><span>セット' + g.id + 'の音声を再生</span>';
+      (function(gid){ pb.addEventListener('click', function(){ mk5Play(gid); }); })(g.id);
+      var ps = document.createElement('span'); ps.className = 'play-state'; ps.id = 'mk5PlayState' + g.id;
+      arow.appendChild(pb); arow.appendChild(ps);
+      banner.appendChild(arow);
+    }
+    group.appendChild(banner);
+    if(g.mat){
+      var matWrap = document.createElement('div');
+      matWrap.innerHTML = g.mat;
+      while(matWrap.firstChild) group.appendChild(matWrap.firstChild);
+    }
+    g.qs.forEach(function(n){
+      var item = mk5Questions[n-1];
+      var card = document.createElement('div');
+      card.className = 'qcard'; card.id = 'mkqcard-' + n;
+      var meta = document.createElement('div'); meta.className = 'q-meta';
+      var qn = document.createElement('span'); qn.className = 'q-num';
+      qn.textContent = '第' + n + '問 / 80 · セット' + g.id;
+      var fb = document.createElement('button');
+      fb.type = 'button'; fb.className = 'flag-btn'; fb.id = 'mkflagBtn' + n;
+      (function(nn){ fb.addEventListener('click', function(){ mk5ToggleFlag(nn); }); })(n);
+      meta.appendChild(qn); meta.appendChild(fb);
+      var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = item.q;
+      var opts = document.createElement('div');
+      opts.className = 'options'; opts.id = 'mkqOptions' + n;
+      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','第' + n + '問の答え');
+      card.appendChild(meta); card.appendChild(qt); card.appendChild(opts);
+      (function(nn){ card.addEventListener('click', function(){ mk5SetActive(nn, false); }); })(n);
+      group.appendChild(card);
+    });
+    wrap.appendChild(group);
+  });
+  var part = mk5Parts[mk5Part-1];
+  for(var n=part.from;n<=part.to;n++) mk5UpdateQuestion(n);
+  mk5MarkActive();
+  mk5RefreshPlayUI();
+}
+function mk5MarkActive(){
+  var part = mk5Parts[mk5Part-1];
+  for(var n=part.from;n<=part.to;n++){
+    var c = document.getElementById('mkqcard-' + n);
+    if(c) c.classList.toggle('current', n === mk5Current);
+  }
+}
+function mk5SetActive(n, scroll){
+  mk5Current = n;
+  mk5MarkActive();
+  mk5RenderPalette();
+  if(scroll){
+    var el = document.getElementById('mkqcard-' + n);
+    if(el) safeScrollToEl(el);
+  }
+}
+function mk5UpdateQuestion(n){
+  var item = mk5Questions[n-1];
+  var fb = document.getElementById('mkflagBtn' + n);
+  if(fb){
+    fb.classList.toggle('on', !!mk5Flag[n]);
+    fb.textContent = mk5Flag[n] ? '⚑ 印付き — 押して外す' : '⚑ この問題に印を付ける';
+  }
+  var box = document.getElementById('mkqOptions' + n);
+  if(!box) return;
+  box.innerHTML = '';
+  var letters = ['A','B','C','D'];
+  item.opts.forEach(function(opt, idx){
+    var b = document.createElement('button');
+    b.className = 'd1opt'; b.type = 'button';
+    if(mk5Sel[n] === letters[idx]) b.classList.add('selected');
+    b.innerHTML = '<span class="letter">' + letters[idx] + '</span><span class="jp"></span>';
+    b.querySelector('.jp').textContent = opt;
+    (function(nn, v){ b.addEventListener('click', function(){ mk5Pick(nn, v); }); })(n, letters[idx]);
+    box.appendChild(b);
+  });
+}
+function mk5RenderPalette(){
+  var g = document.getElementById('mk5PalGrid'); if(!g) return;
+  var part = mk5Parts[mk5Part-1];
+  g.innerHTML = '';
+  for(var n=part.from;n<=part.to;n++){
+    var item = mk5Questions[n-1];
+    var b = document.createElement('button');
+    b.className = 'pal-btn'; b.setAttribute('aria-label','第' + n + '問');
+    b.innerHTML = '<span class="pnum">' + n + '</span><span class="plabel"></span><span class="pstat"></span>';
+    b.querySelector('.plabel').textContent = 'セット' + item.g + ' · ' + part.jp;
+    var st = b.querySelector('.pstat');
+    if(mk5Sel[n]) b.classList.add('answered');
+    if(mk5Sel[n]) st.textContent = '✓';
+    if(mk5Flag[n]) st.textContent = '⚑' + (st.textContent ? ' ✓' : '');
+    if(n===mk5Current) b.classList.add('current');
+    (function(nn){ b.addEventListener('click', function(){ mk5SetActive(nn, true); }); })(n);
+    g.appendChild(b);
+  }
+  var done = 0;
+  for(var m=part.from;m<=part.to;m++){ if(mk5Sel[m]) done++; }
+  document.getElementById('mk5PalCount').textContent = '回答済み ' + done + ' / ' + (part.to - part.from + 1) + '（第' + mk5Part + '部）';
+  var fs = document.getElementById('mk5FootStatus');
+  if(fs) fs.textContent = '第' + mk5Current + '問を表示中 / 80 · 第' + mk5Part + '部：回答済み ' + done + ' / ' + (part.to - part.from + 1);
+  var prev = document.getElementById('mk5PrevBtn'), next = document.getElementById('mk5NextBtn');
+  if(prev) prev.disabled = (mk5Current <= part.from);
+  if(next) next.disabled = (mk5Current >= part.to);
+}
+function mk5UpdateHint(){
+  var part = mk5Parts[mk5Part-1];
+  var done = 0, total = part.to - part.from + 1;
+  for(var m=part.from;m<=part.to;m++){ if(mk5Sel[m]) done++; }
+  var el = document.getElementById('mk5SubmitHint');
+  if(el) el.textContent = done === total
+    ? 'この部の' + done + ' / ' + total + '問すべてに回答しました —「この部を提出する」を押して部をロックし、次へ進んでください。'
+    : 'この部は' + done + ' / ' + total + '問に回答しました — あと' + (total - done) + '問未回答です。提出することもできます（未回答は不正解になります）。提出すると部がロックされます。';
+  var lbl = mk5Part===3 ? '第3部を提出 — 結果を見る' : ('第' + mk5Part + '部を提出 — 第' + (mk5Part+1) + '部へ');
+  var s1 = document.getElementById('mk5SubmitBtnSide'), s2 = document.getElementById('mk5SubmitBtnBottom');
+  if(s1) s1.textContent = lbl;
+  if(s2) s2.textContent = lbl;
+}
+function mk5Pick(n, v){
+  if(mk5Finished || mk5PartScore[mk5Part]!==null) return;
+  var part = mk5Parts[mk5Part-1];
+  if(n < part.from || n > part.to) return;
+  mk5Sel[n] = v;
+  mk5Current = n;
+  mk5UpdateQuestion(n);
+  mk5MarkActive();
+  mk5RenderPalette();
+  mk5UpdateHint();
+}
+function mk5ToggleFlag(n){
+  if(mk5Finished || mk5PartScore[mk5Part]!==null) return;
+  mk5Flag[n] = !mk5Flag[n];
+  mk5Current = n;
+  mk5UpdateQuestion(n);
+  mk5MarkActive();
+  mk5RenderPalette();
+}
+function mk5PrevQ(){ var part = mk5Parts[mk5Part-1]; if(mk5Current > part.from) mk5SetActive(mk5Current-1, true); }
+function mk5NextQ(){ var part = mk5Parts[mk5Part-1]; if(mk5Current < part.to) mk5SetActive(mk5Current+1, true); }
+/* Playback mirrors Day 4: fresh Audio per press, play counted only once
+   audio actually starts, watchdog unwedges a stuck button. */
+function mk5RefreshPlayUI(){
+  mk5Groups.forEach(function(g){ if(g.audio && g.part===mk5Part) mk5RefreshOnePlayUI(g.id); });
+}
+function mk5RefreshOnePlayUI(gid){
+  var btn = document.getElementById('mk5PlayBtn' + gid), st = document.getElementById('mk5PlayState' + gid);
+  if(!btn || !st) return;
+  var plays = mk5Plays[gid] || 0;
+  if(mk5Speaking && mk5AudioId===gid){ btn.disabled = true; st.textContent = 'セット' + gid + 'の音声を再生中です… よく聞いて、このセットの問題に答えてください。'; return; }
+  if(mk5Mode==='real' && plays>=1){ btn.disabled = true; st.textContent = 'セット' + gid + 'の音声は1/1回再生済みです（本番モード）。'; return; }
+  btn.disabled = false;
+  if(mk5Speaking){ st.textContent = 'セット' + mk5AudioId + 'の音声を再生中です — このボタンを押すとその音声を止めて、セット' + gid + 'の音声を再生します。'; return; }
+  st.textContent = plays>0 ? ('再生済み ' + plays + '回' + (mk5Mode==='practice' ? ' — くり返し聞けます。' : '')) : '未再生 — 押してセット' + gid + 'の音声を聞く。';
+}
+function mk5SetPlayState(gid, msg){
+  var st = document.getElementById('mk5PlayState' + gid);
+  if(st) st.textContent = msg;
+}
+function mk5StopAudio(){
+  if(mk5Watchdog){ clearTimeout(mk5Watchdog); mk5Watchdog = null; }
+  if(mk5Player){
+    var old = mk5Player; mk5Player = null;
+    try{ old.onended = null; old.onerror = null; old.onplaying = null; old.pause(); old.removeAttribute('src'); old.load(); }catch(e){}
+  }
+  mk5Speaking = false;
+}
+function mk5Play(gid){
+  if(mk5Finished || mk5PartScore[mk5Part]!==null) return;
+  if(mk5Speaking && mk5AudioId===gid) return;
+  if(mk5Mode==='real' && (mk5Plays[gid]||0)>=1) return;
+  mk5StopAudio();
+  var a = new Audio();
+  mk5Player = a;
+  mk5AudioId = gid;
+  mk5Speaking = true; mk5RefreshPlayUI();
+  var counted = false;
+  a.onplaying = function(){
+    if(mk5Player!==a) return;
+    if(mk5Watchdog){ clearTimeout(mk5Watchdog); mk5Watchdog = null; }
+    if(!counted){ counted = true; mk5Plays[gid] = (mk5Plays[gid]||0) + 1; }
+  };
+  a.onended = function(){
+    if(mk5Player!==a) return;
+    mk5Player = null; mk5Speaking = false;
+    mk5RefreshPlayUI();
+  };
+  a.onerror = function(){
+    if(mk5Player!==a || counted) return;
+    if(mk5Watchdog){ clearTimeout(mk5Watchdog); mk5Watchdog = null; }
+    mk5Player = null; mk5Speaking = false;
+    mk5RefreshPlayUI();
+    mk5SetPlayState(gid, 'セット' + gid + 'の音声ファイルを読み込めませんでした — ネット接続を確認して、もう一度再生してください。');
+  };
+  var wdWaits = 0;
+  function armStartWatchdog(){
+    mk5Watchdog = setTimeout(function(){
+      mk5Watchdog = null;
+      if(mk5Player!==a || !mk5Speaking || counted) return;
+      wdWaits++;
+      var loading = false;
+      try{ loading = (a.readyState > 0) || (a.networkState === 2) || (a.buffered && a.buffered.length > 0); }catch(e){}
+      if(loading && wdWaits < 5){
+        mk5SetPlayState(gid, 'セット' + gid + 'の音声を読み込んでいます… ネットが少し遅いようです。もう少し待ってください — もう一度押さないでください。');
+        armStartWatchdog();
+        return;
+      }
+      if(!loading && wdWaits === 1 && typeof bjtAutoRetryOnce === 'function' && bjtAutoRetryOnce('mk-' + gid)){
+        mk5StopAudio();
+        mk5Play(gid);
+        mk5SetPlayState(gid, '最初の再生が止まりました — セット' + gid + 'の音声を自動でもう一度再生しています…');
+        return;
+      }
+      mk5StopAudio();
+      mk5RefreshPlayUI();
+      mk5SetPlayState(gid, 'セット' + gid + 'の音声を再生できませんでした（ネットが遅いか、ブラウザーの調子が悪いためです）—「セット' + gid + 'の音声を再生」ボタンをもう一度押してください。');
+    }, 8000);
+  }
+  bjtStartAudio(a, mk5GroupById[gid].audio, {
+    isCurrent: function(){ return mk5Player===a; },
+    arm: armStartWatchdog,
+    onLoading: function(){ mk5SetPlayState(gid, 'セット' + gid + 'の音声をダウンロードしています… ダウンロードが終わると自動で再生します。もう一度押さないでください。'); },
+    onBlocked: function(){
+      if(mk5Player!==a || counted) return;
+      if(mk5Watchdog){ clearTimeout(mk5Watchdog); mk5Watchdog = null; }
+      mk5Player = null; mk5Speaking = false;
+      mk5RefreshPlayUI();
+      mk5SetPlayState(gid, 'ブラウザーが音声の再生をブロックしました —「セット' + gid + 'の音声を再生」ボタンをもう一度押してください。');
+    }
+  });
+}
+document.addEventListener('keydown', function(e){
+  if(currentExam!=='mock5' || !mk5Started || mk5Finished || mk5PartScore[mk5Part]!==null) return;
+  var modal = document.getElementById('mk5Modal');
+  if(modal && (modal.classList.contains('show') || modal.style.display==='flex')) return;
+  var k = e.key.toLowerCase();
+  if(['a','b','c','d'].indexOf(k)>=0){ mk5Pick(mk5Current, k.toUpperCase()); }
+  else if(e.key==='ArrowRight'){ mk5NextQ(); }
+  else if(e.key==='ArrowLeft'){ mk5PrevQ(); }
+});
+var mk5ModalPart = 0;
+function mk5AskSubmitPart(){
+  if(!mk5Started || mk5Finished || mk5PartScore[mk5Part]!==null) return;
+  mk5ModalPart = mk5Part;
+  var part = mk5Parts[mk5Part-1];
+  var done = 0, missing = [];
+  for(var n=part.from;n<=part.to;n++){ if(mk5Sel[n]) done++; else missing.push(n); }
+  var total = part.to - part.from + 1;
+  var tail = mk5Part===3
+    ? 'これが最後の部です — 提出すると全問の結果、答え、解説、トランスクリプトと訳が表示されます。'
+    : '提出すると、この部はロックされ、' + mk5Parts[mk5Part].name + 'へ進みます — 戻ることはできません。';
+  document.getElementById('mk5ModalTitle').textContent = part.name + 'を提出しますか？';
+  document.getElementById('mk5ModalText').textContent = (done===total
+    ? 'この部の' + done + '/' + total + '問すべてに回答しました。'
+    : 'この部は' + done + '/' + total + '問に回答しました。未回答の問題：' + missing.join(', ') + '（未回答は不正解になります）。') + tail;
+  var cf = document.getElementById('mk5ModalConfirm');
+  if(cf) cf.textContent = mk5Part===3 ? '部を提出 — 結果を見る' : '部を提出 — ロックして次へ進む';
+  var modal = document.getElementById('mk5Modal');
+  modal.classList.add('show');
+  modal.style.display = 'flex';
+  if(cf){ try{ cf.focus(); }catch(e){} }
+}
+function mk5CloseModal(){
+  var modal = document.getElementById('mk5Modal');
+  modal.classList.remove('show');
+  modal.style.display = '';
+}
+function mk5ConfirmSubmitPart(){
+  /* The confirm button carries both an inline onclick and a direct
+     addEventListener binding (same pattern as the day exams), so one click
+     can reach this handler twice. The first call locks the part and moves
+     on; the duplicate must not lock the NEXT part too — it is recognised
+     because mk5Part no longer matches the part the modal was opened for. */
+  if(mk5ModalPart && mk5Part !== mk5ModalPart){ mk5CloseModal(); return; }
+  mk5CloseModal(); mk5LockPart(false);
+}
+function mk5LockPart(auto){
+  if(mk5Finished || mk5PartScore[mk5Part]!==null) return;
+  clearInterval(mk5TimerId);
+  mk5StopAudio();
+  mk5PartScore[mk5Part] = mk5PartScoreCalc(mk5Part);
+  mk5RenderStepper();
+  if(mk5Part < 3){
+    mk5BeginPart(mk5Part + 1, auto);
+  } else {
+    mk5Finish(auto);
+  }
+}
+function mk5Finish(auto){
+  mk5Finished = true;
+  document.getElementById('mk5Exam').classList.add('hidden');
+  var banner = document.getElementById('mk5PartBanner');
+  if(banner) banner.classList.add('hidden');
+  var totals = [0,0,0], grand = 0;
+  for(var p=1;p<=3;p++){ totals[p-1] = mk5PartScore[p] || 0; grand += totals[p-1]; }
+  var pct = Math.round(grand / 80 * 100);
+  var est = grand * 10;
+  var level = pct>=66 ? '≈ J1レベル（530点以上）' : pct>=54 ? '≈ J2レベル' : pct>=45 ? '≈ J3レベル' : 'J3レベル未満 — 練習を続けましょう';
+  var box = document.getElementById('mk5Result');
+  box.classList.add('show');
+  document.getElementById('mk5ScoreBig').textContent = grand + ' / 80';
+  document.getElementById('mk5ScoreTitle').textContent =
+    pct>=66 ? '模擬試験 BJT 05の結果 — J1レベルに到達（推定）' :
+    pct>=54 ? '模擬試験 BJT 05の結果 — J2レベル（推定）' :
+    pct>=45 ? '模擬試験 BJT 05の結果 — J3レベル（推定）' :
+               '模擬試験 BJT 05の結果 — もっと練習しましょう';
+  var cells = '';
+  for(var q=1;q<=3;q++){
+    var pp = mk5Parts[q-1], tt = pp.to - pp.from + 1;
+    cells += '<div class="mk-scorecell"><div class="v">' + totals[q-1] + ' / ' + tt + '</div><div class="k">' + pp.name + ' · ' + Math.round(totals[q-1]/tt*100) + '%</div></div>';
+  }
+  cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">正答率からの推定換算（' + pct + '%）· 目安のレベル：' + level + '</div></div>';
+  document.getElementById('mk5ScoreGrid').innerHTML = cells;
+  document.getElementById('mk5ScoreDetail').textContent = (auto ? '⏱ 第3部の時間切れ — 自動で提出されました。' : '')
+    + '全問：正解 ' + grand + '/80（' + pct + '%）。上の/800の点数は、正答率からの推定換算にすぎません — 本番の点数は主催者の独自の方法で計算され、単純な比例換算ではありません。';
+  var rv = document.getElementById('mk5Review'); rv.innerHTML = '';
+  var shownTr = {};
+  var lastPart = 0;
+  mk5Questions.forEach(function(item){
+    var part = mk5PartOf(item.n);
+    if(part.num !== lastPart){
+      lastPart = part.num;
+      var h = document.createElement('h3');
+      h.className = 'section-title';
+      h.textContent = part.name + ' — 正解 ' + (mk5PartScore[part.num]||0) + ' / ' + (part.to - part.from + 1);
+      rv.appendChild(h);
+    }
+    var card = document.createElement('div'); card.className = 'review-card';
+    var isOk = mk5Sel[item.n] === item.ans;
+    var html = '<div class="q-num">第' + item.n + '問 · セット' + item.g + '</div>';
+    html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
+    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk5Sel[item.n] ? mk5Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk5Sel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mk5Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">正解：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ 不正解') + '</div>';
+    html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
+    var grp = mk5GroupById[item.g];
+    if(grp && grp.lines && !shownTr[item.g]){
+      shownTr[item.g] = true;
+      var tr = grp.lines.join('\n');
+      html += reviewAudioHtml(grp.audio, 'セット' + item.g + 'の音声をもう一度聞く');
+      html += '<div class="transcript jp"><strong>セット' + item.g + 'のトランスクリプト：</strong>\n' + tr + '</div>';
+      html += viTrHtml(grp.vi, 'セット' + item.g + 'の訳');
+    }
+    card.innerHTML = html;
+    rv.appendChild(card);
+  });
+  box.scrollIntoView({behavior:'smooth', block:'center'});
+}
+function mk5Reset(){
+  mk5Sel = {}; mk5Flag = {}; mk5Plays = {};
+  mk5Part = 0; mk5Started = false; mk5Finished = false; mk5Current = 1; mk5Speaking = false; mk5ModalPart = 0;
+  mk5PartScore = {1:null, 2:null, 3:null};
+  clearInterval(mk5TimerId);
+  mk5StopAudio();
+  var t = document.getElementById('mk5Timer'); t.textContent = '45:00'; t.classList.remove('warn');
+  document.getElementById('mk5Result').classList.remove('show');
+  document.getElementById('mk5Review').innerHTML = '';
+  var ex = document.getElementById('mk5Exam'); ex.classList.add('hidden'); ex.style.display = '';
+  var gr = document.getElementById('mk5Groups'); if(gr) gr.innerHTML = '';
+  var bn = document.getElementById('mk5PartBanner'); if(bn){ bn.classList.add('hidden'); bn.textContent = ''; }
+  var sp = document.getElementById('mk5Start'); sp.classList.remove('hidden'); sp.style.display = '';
+  var st = document.getElementById('mk5StartStatus'); if(st) st.textContent = '';
+  mk5RenderStepper();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+(function(){
+  var b = document.getElementById('mk5StartBtn');
+  if(b) b.addEventListener('click', function(){ startMock5(); });
+  var sb = document.getElementById('mk5SubmitBtnSide');
+  if(sb) sb.addEventListener('click', function(){ mk5AskSubmitPart(); });
+  var bb = document.getElementById('mk5SubmitBtnBottom');
+  if(bb) bb.addEventListener('click', function(){ mk5AskSubmitPart(); });
+  var mc = document.getElementById('mk5ModalConfirm');
+  if(mc) mc.addEventListener('click', function(){ mk5ConfirmSubmitPart(); });
+  var mx = document.getElementById('mk5ModalCancel');
+  if(mx) mx.addEventListener('click', function(){ mk5CloseModal(); });
+  var jw = document.getElementById('mk5JsWarn');
+  if(jw) jw.style.display = 'none';
+})();
+</script>
+
+
 
 <!-- Exam day data files -->
 
