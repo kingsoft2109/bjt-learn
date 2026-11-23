@@ -7343,6 +7343,145 @@
      "en": "business; matter"
     }
    ]
+  },
+  {
+   "slug": "henko-no-oshirase",
+   "date": "2026-11-24",
+   "situation": {
+    "jp": "変更のお知らせ ― 担当者と会議の場所の変更",
+    "vi": "Thông báo thay đổi: người phụ trách & địa điểm họp",
+    "en": "Notice of change: person in charge & meeting venue"
+   },
+   "bjt_type": "Listening - business conversation (in-person notice at the client's office: sales rep informs the client that the person in charge changes next month and next week's meeting moves from head office to Meeting Room 2 at the branch office)",
+   "duration_sec": 66,
+   "file": "files/bjt-henko-no-oshirase.mp4",
+   "preview_gif": "files/bjt-henko-no-oshirase-preview.gif",
+   "tiktok_file": "bjt-henko-no-oshirase-tiktok.mp4",
+   "dialogue": [
+    {
+     "speaker": "sasaki",
+     "jp": "村上部長、お忙しいところお時間をいただき、ありがとうございます。",
+     "vi": "Trưởng phòng Murakami, cảm ơn bà đã dành thời gian dù đang bận ạ.",
+     "en": "Director Murakami, thank you for making time for me despite your busy schedule."
+    },
+    {
+     "speaker": "murakami",
+     "jp": "いえいえ、こちらこそ。今日はどのようなご用件でしょうか。",
+     "vi": "Không có gì đâu, bên tôi cũng vậy. Hôm nay chị có việc gì vậy?",
+     "en": "Not at all, likewise. What brings you here today?"
+    },
+    {
+     "speaker": "sasaki",
+     "jp": "はい。実は、担当者の変更について、お知らせがございます。",
+     "vi": "Dạ. Thực ra, tôi có thông báo về việc thay đổi người phụ trách ạ.",
+     "en": "Yes. Actually, I have a notice about a change in the person in charge."
+    },
+    {
+     "speaker": "murakami",
+     "jp": "ああ、そうですか。来月から、担当が変わるのですね。",
+     "vi": "À, ra vậy. Từ tháng sau, người phụ trách sẽ thay đổi đúng không?",
+     "en": "I see. So from next month, the person in charge will change."
+    },
+    {
+     "speaker": "sasaki",
+     "jp": "ええ。来月から、田中さんに代わりまして、鈴木が担当させていただきます。",
+     "vi": "Vâng. Từ tháng sau, thay cho anh Tanaka, chị Suzuki sẽ phụ trách ạ.",
+     "en": "Yes. From next month, Ms. Suzuki will take over from Mr. Tanaka."
+    },
+    {
+     "speaker": "murakami",
+     "jp": "分かりました。鈴木さんとは、以前お会いしています。",
+     "vi": "Tôi rõ rồi. Tôi cũng đã từng gặp chị Suzuki trước đây.",
+     "en": "Understood. I have met Ms. Suzuki before, actually."
+    },
+    {
+     "speaker": "sasaki",
+     "jp": "はい、ありがとうございます。あと、来週の会議の場所も変更になります。",
+     "vi": "Dạ, cảm ơn bà ạ. Thêm nữa, địa điểm cuộc họp tuần sau cũng sẽ thay đổi.",
+     "en": "Yes, thank you. Also, the venue of next week's meeting will change."
+    },
+    {
+     "speaker": "murakami",
+     "jp": "うん、そうなんですね。新しい場所は、どちらになりますか。",
+     "vi": "Ừ, ra vậy. Địa điểm mới là ở đâu vậy?",
+     "en": "I see. Where will the new venue be?"
+    },
+    {
+     "speaker": "sasaki",
+     "jp": "はい、来週の会議は、本社から支社の第2会議室に変更になります。",
+     "vi": "Dạ, cuộc họp tuần sau sẽ chuyển từ trụ sở chính sang phòng họp số 2 của chi nhánh ạ.",
+     "en": "Yes, next week's meeting will move from head office to Meeting Room 2 at the branch office."
+    },
+    {
+     "speaker": "murakami",
+     "jp": "ええ、分かりました。地図をメールでお送りいただけますか。",
+     "vi": "Vâng, tôi rõ rồi. Chị có thể gửi bản đồ qua email cho tôi được không?",
+     "en": "Yes, understood. Could you send me the map by email?"
+    }
+   ],
+   "vocabulary": [
+    {
+     "jp": "担当者",
+     "reading": "たんとうしゃ",
+     "vi": "người phụ trách",
+     "en": "person in charge"
+    },
+    {
+     "jp": "変更",
+     "reading": "へんこう",
+     "vi": "thay đổi",
+     "en": "change"
+    },
+    {
+     "jp": "お知らせ",
+     "reading": "おしらせ",
+     "vi": "thông báo",
+     "en": "notice"
+    },
+    {
+     "jp": "代わる",
+     "reading": "かわる",
+     "vi": "được thay thế",
+     "en": "to be replaced"
+    },
+    {
+     "jp": "会議室",
+     "reading": "かいぎしつ",
+     "vi": "phòng họp",
+     "en": "meeting room"
+    },
+    {
+     "jp": "場所",
+     "reading": "ばしょ",
+     "vi": "địa điểm",
+     "en": "venue; place"
+    },
+    {
+     "jp": "支社",
+     "reading": "ししゃ",
+     "vi": "chi nhánh",
+     "en": "branch office"
+    },
+    {
+     "jp": "ご用件",
+     "reading": "ごようけん",
+     "vi": "việc cần trao đổi",
+     "en": "business; matter"
+    },
+    {
+     "jp": "お送りする",
+     "reading": "おおくりする",
+     "vi": "gửi",
+     "en": "to send"
+    }
+   ],
+   "voice": "native video-generation voices (method 2); per-video cast; documentary observational style: characters never look at the camera; burned-in JP/VI/EN subtitles",
+   "category": "annai-oshirase",
+   "category_names": {
+    "jp": "案内・お知らせ",
+    "vi": "Thông báo & hướng dẫn",
+    "en": "Announcements & Guidance"
+   }
   }
  ]
 }
