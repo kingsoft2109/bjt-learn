@@ -1661,11 +1661,11 @@ function cycleFontSize(){
    work exactly as before. Loading starts after parsing, so
    initAllExams / renderVideoLibrary / renderVocabDays all exist. */
 window.EXAM_DAYS = window.EXAM_DAYS || {};
-window.mkParts = []; window.mkGroups = []; window.mkQuestions = [];
-window.mk2Parts = []; window.mk2Groups = []; window.mk2Questions = [];
-window.mk3Parts = []; window.mk3Groups = []; window.mk3Questions = [];
-window.mk4Parts = []; window.mk4Groups = []; window.mk4Questions = [];
-window.mk5Parts = []; window.mk5Groups = []; window.mk5Questions = [];
+window.mkParts = []; window.mkGroups = []; window.mkQuestions = []; window.mkPractice = [];
+window.mk2Parts = []; window.mk2Groups = []; window.mk2Questions = []; window.mk2Practice = [];
+window.mk3Parts = []; window.mk3Groups = []; window.mk3Questions = []; window.mk3Practice = [];
+window.mk4Parts = []; window.mk4Groups = []; window.mk4Questions = []; window.mk4Practice = [];
+window.mk5Parts = []; window.mk5Groups = []; window.mk5Questions = []; window.mk5Practice = [];
 window.VIDEO_LIBRARY = null;
 window.VOCAB_DAYS = [];
 (function(){
@@ -1682,6 +1682,7 @@ window.VOCAB_DAYS = [];
       window[pfx + 'Parts'] = d.parts;
       window[pfx + 'Groups'] = d.groups;
       window[pfx + 'Questions'] = d.questions;
+      window[pfx + 'Practice'] = d.practice || [];
     });
   }
   function start(){
@@ -1806,12 +1807,109 @@ function mkBeginPart(p, auto){
   }, 1000);
   safeScrollToEl(document.getElementById('mkExam'));
 }
+
+var mkPracPlayer = null;
+function mkStopPracticeAudio(){
+  if(mkPracPlayer){ var old = mkPracPlayer; mkPracPlayer = null; try{ old.pause(); old.removeAttribute('src'); old.load(); }catch(e){} }
+}
+function mkBuildPracticeCard(p){
+  var card = document.createElement('div');
+  card.className = 'seg-group practice-card';
+  card.style.cssText = 'border:2px dashed var(--navy, #2b4c7e);border-radius:12px;padding:2px 0 10px;margin:0 0 18px';
+  var banner = document.createElement('div'); banner.className = 'seg-banner';
+  var st = document.createElement('div'); st.className = 'seg-title jp';
+  st.innerHTML = '<span style="display:inline-block;background:#b8860b;color:#fff;border-radius:6px;padding:1px 10px;margin-right:8px;font-size:13px">練習</span>';
+  var stx = document.createElement('span'); stx.textContent = p.title; st.appendChild(stx);
+  var sd = document.createElement('div'); sd.className = 'seg-desc';
+  sd.textContent = (p.label ? p.label + ' · ' : '') + (p.desc || '') + '（この練習問題は採点されません）';
+  banner.appendChild(st); banner.appendChild(sd);
+  if(p.audio){
+    var arow = document.createElement('div'); arow.className = 'audio-row';
+    var pb = document.createElement('button'); pb.type = 'button'; pb.className = 'play-btn';
+    pb.innerHTML = '<span class="tri">▶</span><span>音声 練習</span>';
+    var state = document.createElement('span'); state.className = 'play-state';
+    state.textContent = '未再生 — 押して練習問題の音声を聞きましょう。何回でも聞き直せます。';
+    (function(stateEl){
+      pb.addEventListener('click', function(){
+        mkStopPracticeAudio();
+        var a = new Audio(); mkPracPlayer = a;
+        stateEl.textContent = '再生中：練習の音声…';
+        a.onended = function(){ if(mkPracPlayer===a){ mkPracPlayer = null; stateEl.textContent = '再生済み — もう一度聞くこともできます。'; } };
+        bjtStartAudio(a, p.audio, {
+          isCurrent: function(){ return mkPracPlayer===a; },
+          onBlocked: function(){ if(mkPracPlayer===a){ mkPracPlayer = null; stateEl.textContent = 'ブラウザが再生をブロックしました — もう一度押してください。'; } }
+        });
+      });
+    })(state);
+    arow.appendChild(pb); arow.appendChild(state);
+    banner.appendChild(arow);
+  }
+  card.appendChild(banner);
+  if(p.img){
+    var iw = document.createElement('div');
+    iw.style.cssText = 'margin:18px 22px 2px;text-align:center';
+    var im = document.createElement('img'); im.src = p.img; im.alt = '練習問題の絵';
+    im.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
+    iw.appendChild(im); card.appendChild(iw);
+  }
+  if(p.mat){
+    var mw = document.createElement('div'); mw.innerHTML = p.mat;
+    while(mw.firstChild) card.appendChild(mw.firstChild);
+  }
+  var body = document.createElement('div'); body.style.cssText = 'padding:4px 22px 6px';
+  var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = p.question;
+  body.appendChild(qt);
+  var opts = document.createElement('div'); opts.className = 'options';
+  var letters = ['1','2','3','4']; var sel = null; var revealed = false; var btns = [];
+  p.options.forEach(function(opt, idx){
+    var b = document.createElement('button'); b.className = 'd1opt'; b.type = 'button';
+    b.innerHTML = '<span class="letter">' + letters[idx] + '</span><span class="jp"></span>';
+    b.querySelector('.jp').textContent = opt;
+    (function(bb, ii){
+      bb.addEventListener('click', function(){
+        if(revealed) return;
+        sel = letters[ii];
+        btns.forEach(function(x, xi){ x.classList.toggle('selected', xi===ii); });
+      });
+    })(b, idx);
+    btns.push(b); opts.appendChild(b);
+  });
+  body.appendChild(opts);
+  var crow = document.createElement('div'); crow.style.cssText = 'margin-top:12px';
+  var cb = document.createElement('button'); cb.type = 'button'; cb.className = 'play-btn';
+  cb.innerHTML = '<span>答えを確認</span>';
+  var res = document.createElement('div'); res.className = 'hidden'; res.style.cssText = 'margin-top:10px';
+  cb.addEventListener('click', function(){
+    if(!sel){ res.classList.remove('hidden'); res.innerHTML = '<p style="margin:0">まず、1〜4の中から1つ選んでください。</p>'; return; }
+    revealed = true;
+    btns.forEach(function(x, xi){ if(letters[xi] === p.answer){ x.style.outline = '2px solid #2e7d32'; } });
+    var ok = (sel === p.answer);
+    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? '✓ 正解です。' : '✗ 不正解です。') + ' 正しい答えは ' + p.answer + '：</strong><span class="jp"></span></p>';
+    res.querySelector('.jp').textContent = p.answerText || p.options[parseInt(p.answer, 10) - 1] || '';
+    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = p.explain; res.appendChild(ex); }
+    if(p.lines && p.lines.length){
+      var tr = document.createElement('div'); tr.className = 'transcript jp';
+      tr.innerHTML = '<strong>トランスクリプト（練習）：</strong>\n' + p.lines.map(function(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }).join('\n');
+      res.appendChild(tr);
+    }
+    if(p.vi && p.vi.length){
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, 'ベトナム語訳');
+      while(vt.firstChild) res.appendChild(vt.firstChild);
+    }
+    res.classList.remove('hidden');
+  });
+  crow.appendChild(cb); crow.appendChild(res);
+  body.appendChild(crow);
+  card.appendChild(body);
+  return card;
+}
 function mkBuildGroups(){
   var wrap = document.getElementById('mkGroups');
   if(!wrap) return;
   wrap.innerHTML = '';
   mkGroups.forEach(function(g){
     if(g.part !== mkPart) return;
+    (mkPractice || []).forEach(function(p){ if(p.beforeGroup === g.id) wrap.appendChild(mkBuildPracticeCard(p)); });
     var group = document.createElement('div');
     group.className = 'seg-group'; group.id = 'mkSegGroup' + g.id;
     var banner = document.createElement('div'); banner.className = 'seg-banner';
@@ -2605,12 +2703,109 @@ function mk2BeginPart(p, auto){
   }, 1000);
   safeScrollToEl(document.getElementById('mk2Exam'));
 }
+
+var mk2PracPlayer = null;
+function mk2StopPracticeAudio(){
+  if(mk2PracPlayer){ var old = mk2PracPlayer; mk2PracPlayer = null; try{ old.pause(); old.removeAttribute('src'); old.load(); }catch(e){} }
+}
+function mk2BuildPracticeCard(p){
+  var card = document.createElement('div');
+  card.className = 'seg-group practice-card';
+  card.style.cssText = 'border:2px dashed var(--navy, #2b4c7e);border-radius:12px;padding:2px 0 10px;margin:0 0 18px';
+  var banner = document.createElement('div'); banner.className = 'seg-banner';
+  var st = document.createElement('div'); st.className = 'seg-title jp';
+  st.innerHTML = '<span style="display:inline-block;background:#b8860b;color:#fff;border-radius:6px;padding:1px 10px;margin-right:8px;font-size:13px">練習</span>';
+  var stx = document.createElement('span'); stx.textContent = p.title; st.appendChild(stx);
+  var sd = document.createElement('div'); sd.className = 'seg-desc';
+  sd.textContent = (p.label ? p.label + ' · ' : '') + (p.desc || '') + '（この練習問題は採点されません）';
+  banner.appendChild(st); banner.appendChild(sd);
+  if(p.audio){
+    var arow = document.createElement('div'); arow.className = 'audio-row';
+    var pb = document.createElement('button'); pb.type = 'button'; pb.className = 'play-btn';
+    pb.innerHTML = '<span class="tri">▶</span><span>音声 練習</span>';
+    var state = document.createElement('span'); state.className = 'play-state';
+    state.textContent = '未再生 — 押して練習問題の音声を聞きましょう。何回でも聞き直せます。';
+    (function(stateEl){
+      pb.addEventListener('click', function(){
+        mk2StopPracticeAudio();
+        var a = new Audio(); mk2PracPlayer = a;
+        stateEl.textContent = '再生中：練習の音声…';
+        a.onended = function(){ if(mk2PracPlayer===a){ mk2PracPlayer = null; stateEl.textContent = '再生済み — もう一度聞くこともできます。'; } };
+        bjtStartAudio(a, p.audio, {
+          isCurrent: function(){ return mk2PracPlayer===a; },
+          onBlocked: function(){ if(mk2PracPlayer===a){ mk2PracPlayer = null; stateEl.textContent = 'ブラウザが再生をブロックしました — もう一度押してください。'; } }
+        });
+      });
+    })(state);
+    arow.appendChild(pb); arow.appendChild(state);
+    banner.appendChild(arow);
+  }
+  card.appendChild(banner);
+  if(p.img){
+    var iw = document.createElement('div');
+    iw.style.cssText = 'margin:18px 22px 2px;text-align:center';
+    var im = document.createElement('img'); im.src = p.img; im.alt = '練習問題の絵';
+    im.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
+    iw.appendChild(im); card.appendChild(iw);
+  }
+  if(p.mat){
+    var mw = document.createElement('div'); mw.innerHTML = p.mat;
+    while(mw.firstChild) card.appendChild(mw.firstChild);
+  }
+  var body = document.createElement('div'); body.style.cssText = 'padding:4px 22px 6px';
+  var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = p.question;
+  body.appendChild(qt);
+  var opts = document.createElement('div'); opts.className = 'options';
+  var letters = ['1','2','3','4']; var sel = null; var revealed = false; var btns = [];
+  p.options.forEach(function(opt, idx){
+    var b = document.createElement('button'); b.className = 'd1opt'; b.type = 'button';
+    b.innerHTML = '<span class="letter">' + letters[idx] + '</span><span class="jp"></span>';
+    b.querySelector('.jp').textContent = opt;
+    (function(bb, ii){
+      bb.addEventListener('click', function(){
+        if(revealed) return;
+        sel = letters[ii];
+        btns.forEach(function(x, xi){ x.classList.toggle('selected', xi===ii); });
+      });
+    })(b, idx);
+    btns.push(b); opts.appendChild(b);
+  });
+  body.appendChild(opts);
+  var crow = document.createElement('div'); crow.style.cssText = 'margin-top:12px';
+  var cb = document.createElement('button'); cb.type = 'button'; cb.className = 'play-btn';
+  cb.innerHTML = '<span>答えを確認</span>';
+  var res = document.createElement('div'); res.className = 'hidden'; res.style.cssText = 'margin-top:10px';
+  cb.addEventListener('click', function(){
+    if(!sel){ res.classList.remove('hidden'); res.innerHTML = '<p style="margin:0">まず、1〜4の中から1つ選んでください。</p>'; return; }
+    revealed = true;
+    btns.forEach(function(x, xi){ if(letters[xi] === p.answer){ x.style.outline = '2px solid #2e7d32'; } });
+    var ok = (sel === p.answer);
+    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? '✓ 正解です。' : '✗ 不正解です。') + ' 正しい答えは ' + p.answer + '：</strong><span class="jp"></span></p>';
+    res.querySelector('.jp').textContent = p.answerText || p.options[parseInt(p.answer, 10) - 1] || '';
+    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = p.explain; res.appendChild(ex); }
+    if(p.lines && p.lines.length){
+      var tr = document.createElement('div'); tr.className = 'transcript jp';
+      tr.innerHTML = '<strong>トランスクリプト（練習）：</strong>\n' + p.lines.map(function(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }).join('\n');
+      res.appendChild(tr);
+    }
+    if(p.vi && p.vi.length){
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, 'ベトナム語訳');
+      while(vt.firstChild) res.appendChild(vt.firstChild);
+    }
+    res.classList.remove('hidden');
+  });
+  crow.appendChild(cb); crow.appendChild(res);
+  body.appendChild(crow);
+  card.appendChild(body);
+  return card;
+}
 function mk2BuildGroups(){
   var wrap = document.getElementById('mk2Groups');
   if(!wrap) return;
   wrap.innerHTML = '';
   mk2Groups.forEach(function(g){
     if(g.part !== mk2Part) return;
+    (mk2Practice || []).forEach(function(p){ if(p.beforeGroup === g.id) wrap.appendChild(mk2BuildPracticeCard(p)); });
     var group = document.createElement('div');
     group.className = 'seg-group'; group.id = 'mk2SegGroup' + g.id;
     var banner = document.createElement('div'); banner.className = 'seg-banner';
@@ -3084,12 +3279,109 @@ function mk3BeginPart(p, auto){
   }, 1000);
   safeScrollToEl(document.getElementById('mk3Exam'));
 }
+
+var mk3PracPlayer = null;
+function mk3StopPracticeAudio(){
+  if(mk3PracPlayer){ var old = mk3PracPlayer; mk3PracPlayer = null; try{ old.pause(); old.removeAttribute('src'); old.load(); }catch(e){} }
+}
+function mk3BuildPracticeCard(p){
+  var card = document.createElement('div');
+  card.className = 'seg-group practice-card';
+  card.style.cssText = 'border:2px dashed var(--navy, #2b4c7e);border-radius:12px;padding:2px 0 10px;margin:0 0 18px';
+  var banner = document.createElement('div'); banner.className = 'seg-banner';
+  var st = document.createElement('div'); st.className = 'seg-title jp';
+  st.innerHTML = '<span style="display:inline-block;background:#b8860b;color:#fff;border-radius:6px;padding:1px 10px;margin-right:8px;font-size:13px">練習</span>';
+  var stx = document.createElement('span'); stx.textContent = p.title; st.appendChild(stx);
+  var sd = document.createElement('div'); sd.className = 'seg-desc';
+  sd.textContent = (p.label ? p.label + ' · ' : '') + (p.desc || '') + '（この練習問題は採点されません）';
+  banner.appendChild(st); banner.appendChild(sd);
+  if(p.audio){
+    var arow = document.createElement('div'); arow.className = 'audio-row';
+    var pb = document.createElement('button'); pb.type = 'button'; pb.className = 'play-btn';
+    pb.innerHTML = '<span class="tri">▶</span><span>音声 練習</span>';
+    var state = document.createElement('span'); state.className = 'play-state';
+    state.textContent = '未再生 — 押して練習問題の音声を聞きましょう。何回でも聞き直せます。';
+    (function(stateEl){
+      pb.addEventListener('click', function(){
+        mk3StopPracticeAudio();
+        var a = new Audio(); mk3PracPlayer = a;
+        stateEl.textContent = '再生中：練習の音声…';
+        a.onended = function(){ if(mk3PracPlayer===a){ mk3PracPlayer = null; stateEl.textContent = '再生済み — もう一度聞くこともできます。'; } };
+        bjtStartAudio(a, p.audio, {
+          isCurrent: function(){ return mk3PracPlayer===a; },
+          onBlocked: function(){ if(mk3PracPlayer===a){ mk3PracPlayer = null; stateEl.textContent = 'ブラウザが再生をブロックしました — もう一度押してください。'; } }
+        });
+      });
+    })(state);
+    arow.appendChild(pb); arow.appendChild(state);
+    banner.appendChild(arow);
+  }
+  card.appendChild(banner);
+  if(p.img){
+    var iw = document.createElement('div');
+    iw.style.cssText = 'margin:18px 22px 2px;text-align:center';
+    var im = document.createElement('img'); im.src = p.img; im.alt = '練習問題の絵';
+    im.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
+    iw.appendChild(im); card.appendChild(iw);
+  }
+  if(p.mat){
+    var mw = document.createElement('div'); mw.innerHTML = p.mat;
+    while(mw.firstChild) card.appendChild(mw.firstChild);
+  }
+  var body = document.createElement('div'); body.style.cssText = 'padding:4px 22px 6px';
+  var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = p.question;
+  body.appendChild(qt);
+  var opts = document.createElement('div'); opts.className = 'options';
+  var letters = ['1','2','3','4']; var sel = null; var revealed = false; var btns = [];
+  p.options.forEach(function(opt, idx){
+    var b = document.createElement('button'); b.className = 'd1opt'; b.type = 'button';
+    b.innerHTML = '<span class="letter">' + letters[idx] + '</span><span class="jp"></span>';
+    b.querySelector('.jp').textContent = opt;
+    (function(bb, ii){
+      bb.addEventListener('click', function(){
+        if(revealed) return;
+        sel = letters[ii];
+        btns.forEach(function(x, xi){ x.classList.toggle('selected', xi===ii); });
+      });
+    })(b, idx);
+    btns.push(b); opts.appendChild(b);
+  });
+  body.appendChild(opts);
+  var crow = document.createElement('div'); crow.style.cssText = 'margin-top:12px';
+  var cb = document.createElement('button'); cb.type = 'button'; cb.className = 'play-btn';
+  cb.innerHTML = '<span>答えを確認</span>';
+  var res = document.createElement('div'); res.className = 'hidden'; res.style.cssText = 'margin-top:10px';
+  cb.addEventListener('click', function(){
+    if(!sel){ res.classList.remove('hidden'); res.innerHTML = '<p style="margin:0">まず、1〜4の中から1つ選んでください。</p>'; return; }
+    revealed = true;
+    btns.forEach(function(x, xi){ if(letters[xi] === p.answer){ x.style.outline = '2px solid #2e7d32'; } });
+    var ok = (sel === p.answer);
+    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? '✓ 正解です。' : '✗ 不正解です。') + ' 正しい答えは ' + p.answer + '：</strong><span class="jp"></span></p>';
+    res.querySelector('.jp').textContent = p.answerText || p.options[parseInt(p.answer, 10) - 1] || '';
+    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = p.explain; res.appendChild(ex); }
+    if(p.lines && p.lines.length){
+      var tr = document.createElement('div'); tr.className = 'transcript jp';
+      tr.innerHTML = '<strong>トランスクリプト（練習）：</strong>\n' + p.lines.map(function(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }).join('\n');
+      res.appendChild(tr);
+    }
+    if(p.vi && p.vi.length){
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, 'ベトナム語訳');
+      while(vt.firstChild) res.appendChild(vt.firstChild);
+    }
+    res.classList.remove('hidden');
+  });
+  crow.appendChild(cb); crow.appendChild(res);
+  body.appendChild(crow);
+  card.appendChild(body);
+  return card;
+}
 function mk3BuildGroups(){
   var wrap = document.getElementById('mk3Groups');
   if(!wrap) return;
   wrap.innerHTML = '';
   mk3Groups.forEach(function(g){
     if(g.part !== mk3Part) return;
+    (mk3Practice || []).forEach(function(p){ if(p.beforeGroup === g.id) wrap.appendChild(mk3BuildPracticeCard(p)); });
     var group = document.createElement('div');
     group.className = 'seg-group'; group.id = 'mk3SegGroup' + g.id;
     var banner = document.createElement('div'); banner.className = 'seg-banner';
@@ -3563,12 +3855,109 @@ function mk4BeginPart(p, auto){
   }, 1000);
   safeScrollToEl(document.getElementById('mk4Exam'));
 }
+
+var mk4PracPlayer = null;
+function mk4StopPracticeAudio(){
+  if(mk4PracPlayer){ var old = mk4PracPlayer; mk4PracPlayer = null; try{ old.pause(); old.removeAttribute('src'); old.load(); }catch(e){} }
+}
+function mk4BuildPracticeCard(p){
+  var card = document.createElement('div');
+  card.className = 'seg-group practice-card';
+  card.style.cssText = 'border:2px dashed var(--navy, #2b4c7e);border-radius:12px;padding:2px 0 10px;margin:0 0 18px';
+  var banner = document.createElement('div'); banner.className = 'seg-banner';
+  var st = document.createElement('div'); st.className = 'seg-title jp';
+  st.innerHTML = '<span style="display:inline-block;background:#b8860b;color:#fff;border-radius:6px;padding:1px 10px;margin-right:8px;font-size:13px">練習</span>';
+  var stx = document.createElement('span'); stx.textContent = p.title; st.appendChild(stx);
+  var sd = document.createElement('div'); sd.className = 'seg-desc';
+  sd.textContent = (p.label ? p.label + ' · ' : '') + (p.desc || '') + '（この練習問題は採点されません）';
+  banner.appendChild(st); banner.appendChild(sd);
+  if(p.audio){
+    var arow = document.createElement('div'); arow.className = 'audio-row';
+    var pb = document.createElement('button'); pb.type = 'button'; pb.className = 'play-btn';
+    pb.innerHTML = '<span class="tri">▶</span><span>音声 練習</span>';
+    var state = document.createElement('span'); state.className = 'play-state';
+    state.textContent = '未再生 — 押して練習問題の音声を聞きましょう。何回でも聞き直せます。';
+    (function(stateEl){
+      pb.addEventListener('click', function(){
+        mk4StopPracticeAudio();
+        var a = new Audio(); mk4PracPlayer = a;
+        stateEl.textContent = '再生中：練習の音声…';
+        a.onended = function(){ if(mk4PracPlayer===a){ mk4PracPlayer = null; stateEl.textContent = '再生済み — もう一度聞くこともできます。'; } };
+        bjtStartAudio(a, p.audio, {
+          isCurrent: function(){ return mk4PracPlayer===a; },
+          onBlocked: function(){ if(mk4PracPlayer===a){ mk4PracPlayer = null; stateEl.textContent = 'ブラウザが再生をブロックしました — もう一度押してください。'; } }
+        });
+      });
+    })(state);
+    arow.appendChild(pb); arow.appendChild(state);
+    banner.appendChild(arow);
+  }
+  card.appendChild(banner);
+  if(p.img){
+    var iw = document.createElement('div');
+    iw.style.cssText = 'margin:18px 22px 2px;text-align:center';
+    var im = document.createElement('img'); im.src = p.img; im.alt = '練習問題の絵';
+    im.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
+    iw.appendChild(im); card.appendChild(iw);
+  }
+  if(p.mat){
+    var mw = document.createElement('div'); mw.innerHTML = p.mat;
+    while(mw.firstChild) card.appendChild(mw.firstChild);
+  }
+  var body = document.createElement('div'); body.style.cssText = 'padding:4px 22px 6px';
+  var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = p.question;
+  body.appendChild(qt);
+  var opts = document.createElement('div'); opts.className = 'options';
+  var letters = ['1','2','3','4']; var sel = null; var revealed = false; var btns = [];
+  p.options.forEach(function(opt, idx){
+    var b = document.createElement('button'); b.className = 'd1opt'; b.type = 'button';
+    b.innerHTML = '<span class="letter">' + letters[idx] + '</span><span class="jp"></span>';
+    b.querySelector('.jp').textContent = opt;
+    (function(bb, ii){
+      bb.addEventListener('click', function(){
+        if(revealed) return;
+        sel = letters[ii];
+        btns.forEach(function(x, xi){ x.classList.toggle('selected', xi===ii); });
+      });
+    })(b, idx);
+    btns.push(b); opts.appendChild(b);
+  });
+  body.appendChild(opts);
+  var crow = document.createElement('div'); crow.style.cssText = 'margin-top:12px';
+  var cb = document.createElement('button'); cb.type = 'button'; cb.className = 'play-btn';
+  cb.innerHTML = '<span>答えを確認</span>';
+  var res = document.createElement('div'); res.className = 'hidden'; res.style.cssText = 'margin-top:10px';
+  cb.addEventListener('click', function(){
+    if(!sel){ res.classList.remove('hidden'); res.innerHTML = '<p style="margin:0">まず、1〜4の中から1つ選んでください。</p>'; return; }
+    revealed = true;
+    btns.forEach(function(x, xi){ if(letters[xi] === p.answer){ x.style.outline = '2px solid #2e7d32'; } });
+    var ok = (sel === p.answer);
+    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? '✓ 正解です。' : '✗ 不正解です。') + ' 正しい答えは ' + p.answer + '：</strong><span class="jp"></span></p>';
+    res.querySelector('.jp').textContent = p.answerText || p.options[parseInt(p.answer, 10) - 1] || '';
+    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = p.explain; res.appendChild(ex); }
+    if(p.lines && p.lines.length){
+      var tr = document.createElement('div'); tr.className = 'transcript jp';
+      tr.innerHTML = '<strong>トランスクリプト（練習）：</strong>\n' + p.lines.map(function(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }).join('\n');
+      res.appendChild(tr);
+    }
+    if(p.vi && p.vi.length){
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, 'ベトナム語訳');
+      while(vt.firstChild) res.appendChild(vt.firstChild);
+    }
+    res.classList.remove('hidden');
+  });
+  crow.appendChild(cb); crow.appendChild(res);
+  body.appendChild(crow);
+  card.appendChild(body);
+  return card;
+}
 function mk4BuildGroups(){
   var wrap = document.getElementById('mk4Groups');
   if(!wrap) return;
   wrap.innerHTML = '';
   mk4Groups.forEach(function(g){
     if(g.part !== mk4Part) return;
+    (mk4Practice || []).forEach(function(p){ if(p.beforeGroup === g.id) wrap.appendChild(mk4BuildPracticeCard(p)); });
     var group = document.createElement('div');
     group.className = 'seg-group'; group.id = 'mk4SegGroup' + g.id;
     var banner = document.createElement('div'); banner.className = 'seg-banner';
@@ -4042,12 +4431,109 @@ function mk5BeginPart(p, auto){
   }, 1000);
   safeScrollToEl(document.getElementById('mk5Exam'));
 }
+
+var mk5PracPlayer = null;
+function mk5StopPracticeAudio(){
+  if(mk5PracPlayer){ var old = mk5PracPlayer; mk5PracPlayer = null; try{ old.pause(); old.removeAttribute('src'); old.load(); }catch(e){} }
+}
+function mk5BuildPracticeCard(p){
+  var card = document.createElement('div');
+  card.className = 'seg-group practice-card';
+  card.style.cssText = 'border:2px dashed var(--navy, #2b4c7e);border-radius:12px;padding:2px 0 10px;margin:0 0 18px';
+  var banner = document.createElement('div'); banner.className = 'seg-banner';
+  var st = document.createElement('div'); st.className = 'seg-title jp';
+  st.innerHTML = '<span style="display:inline-block;background:#b8860b;color:#fff;border-radius:6px;padding:1px 10px;margin-right:8px;font-size:13px">練習</span>';
+  var stx = document.createElement('span'); stx.textContent = p.title; st.appendChild(stx);
+  var sd = document.createElement('div'); sd.className = 'seg-desc';
+  sd.textContent = (p.label ? p.label + ' · ' : '') + (p.desc || '') + '（この練習問題は採点されません）';
+  banner.appendChild(st); banner.appendChild(sd);
+  if(p.audio){
+    var arow = document.createElement('div'); arow.className = 'audio-row';
+    var pb = document.createElement('button'); pb.type = 'button'; pb.className = 'play-btn';
+    pb.innerHTML = '<span class="tri">▶</span><span>音声 練習</span>';
+    var state = document.createElement('span'); state.className = 'play-state';
+    state.textContent = '未再生 — 押して練習問題の音声を聞きましょう。何回でも聞き直せます。';
+    (function(stateEl){
+      pb.addEventListener('click', function(){
+        mk5StopPracticeAudio();
+        var a = new Audio(); mk5PracPlayer = a;
+        stateEl.textContent = '再生中：練習の音声…';
+        a.onended = function(){ if(mk5PracPlayer===a){ mk5PracPlayer = null; stateEl.textContent = '再生済み — もう一度聞くこともできます。'; } };
+        bjtStartAudio(a, p.audio, {
+          isCurrent: function(){ return mk5PracPlayer===a; },
+          onBlocked: function(){ if(mk5PracPlayer===a){ mk5PracPlayer = null; stateEl.textContent = 'ブラウザが再生をブロックしました — もう一度押してください。'; } }
+        });
+      });
+    })(state);
+    arow.appendChild(pb); arow.appendChild(state);
+    banner.appendChild(arow);
+  }
+  card.appendChild(banner);
+  if(p.img){
+    var iw = document.createElement('div');
+    iw.style.cssText = 'margin:18px 22px 2px;text-align:center';
+    var im = document.createElement('img'); im.src = p.img; im.alt = '練習問題の絵';
+    im.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
+    iw.appendChild(im); card.appendChild(iw);
+  }
+  if(p.mat){
+    var mw = document.createElement('div'); mw.innerHTML = p.mat;
+    while(mw.firstChild) card.appendChild(mw.firstChild);
+  }
+  var body = document.createElement('div'); body.style.cssText = 'padding:4px 22px 6px';
+  var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = p.question;
+  body.appendChild(qt);
+  var opts = document.createElement('div'); opts.className = 'options';
+  var letters = ['1','2','3','4']; var sel = null; var revealed = false; var btns = [];
+  p.options.forEach(function(opt, idx){
+    var b = document.createElement('button'); b.className = 'd1opt'; b.type = 'button';
+    b.innerHTML = '<span class="letter">' + letters[idx] + '</span><span class="jp"></span>';
+    b.querySelector('.jp').textContent = opt;
+    (function(bb, ii){
+      bb.addEventListener('click', function(){
+        if(revealed) return;
+        sel = letters[ii];
+        btns.forEach(function(x, xi){ x.classList.toggle('selected', xi===ii); });
+      });
+    })(b, idx);
+    btns.push(b); opts.appendChild(b);
+  });
+  body.appendChild(opts);
+  var crow = document.createElement('div'); crow.style.cssText = 'margin-top:12px';
+  var cb = document.createElement('button'); cb.type = 'button'; cb.className = 'play-btn';
+  cb.innerHTML = '<span>答えを確認</span>';
+  var res = document.createElement('div'); res.className = 'hidden'; res.style.cssText = 'margin-top:10px';
+  cb.addEventListener('click', function(){
+    if(!sel){ res.classList.remove('hidden'); res.innerHTML = '<p style="margin:0">まず、1〜4の中から1つ選んでください。</p>'; return; }
+    revealed = true;
+    btns.forEach(function(x, xi){ if(letters[xi] === p.answer){ x.style.outline = '2px solid #2e7d32'; } });
+    var ok = (sel === p.answer);
+    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? '✓ 正解です。' : '✗ 不正解です。') + ' 正しい答えは ' + p.answer + '：</strong><span class="jp"></span></p>';
+    res.querySelector('.jp').textContent = p.answerText || p.options[parseInt(p.answer, 10) - 1] || '';
+    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = p.explain; res.appendChild(ex); }
+    if(p.lines && p.lines.length){
+      var tr = document.createElement('div'); tr.className = 'transcript jp';
+      tr.innerHTML = '<strong>トランスクリプト（練習）：</strong>\n' + p.lines.map(function(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }).join('\n');
+      res.appendChild(tr);
+    }
+    if(p.vi && p.vi.length){
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, 'ベトナム語訳');
+      while(vt.firstChild) res.appendChild(vt.firstChild);
+    }
+    res.classList.remove('hidden');
+  });
+  crow.appendChild(cb); crow.appendChild(res);
+  body.appendChild(crow);
+  card.appendChild(body);
+  return card;
+}
 function mk5BuildGroups(){
   var wrap = document.getElementById('mk5Groups');
   if(!wrap) return;
   wrap.innerHTML = '';
   mk5Groups.forEach(function(g){
     if(g.part !== mk5Part) return;
+    (mk5Practice || []).forEach(function(p){ if(p.beforeGroup === g.id) wrap.appendChild(mk5BuildPracticeCard(p)); });
     var group = document.createElement('div');
     group.className = 'seg-group'; group.id = 'mk5SegGroup' + g.id;
     var banner = document.createElement('div'); banner.className = 'seg-banner';
