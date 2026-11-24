@@ -34,8 +34,10 @@ function ExamEngine(cfg){
   if(this.hasAudio){
     this.plays = {};
     this.segNums.forEach(function(s){ this.plays[s] = 0; }.bind(this));
+    this.qPlays = {};
     this.speaking = false;
     this.audioSeg = 0;
+    this.audioQ = 0;
     this.player = null;
     this.playWatchdog = null;
   }
@@ -179,6 +181,16 @@ ExamEngine.prototype.buildGroups = function(){
         qim.src = item.img; qim.alt = '場面の絵';
         qim.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
         qimg.appendChild(qim); card.appendChild(qimg);
+      }
+      if(self.hasAudio && item.audio){
+        var qarow = document.createElement('div'); qarow.className = 'audio-row';
+        var qpb = document.createElement('button');
+        qpb.type = 'button'; qpb.className = 'play-btn'; qpb.id = self.p + 'qPlayBtn' + item.n;
+        qpb.innerHTML = '<span class="tri">▶</span><span>音声（問題 ' + item.n + '）</span>';
+        (function(n){ qpb.addEventListener('click', function(){ self.playQuestion(n); }); })(item.n);
+        var qps = document.createElement('span'); qps.className = 'play-state'; qps.id = self.p + 'qPlayState' + item.n;
+        qarow.appendChild(qpb); qarow.appendChild(qps);
+        card.appendChild(qarow);
       }
       card.appendChild(qt); card.appendChild(opts);
       (function(n){ card.addEventListener('click', function(){ self.setActiveQ(n, false); }); })(item.n);
@@ -417,6 +429,10 @@ ExamEngine.prototype.grade = function(auto){
       }
     }
 
+    if(!isReading && item.audio){
+      html += reviewAudioHtml(item.audio, '聞き直し 問題 ' + item.n + ' の音声');
+    }
+
     card.innerHTML = html;
     card.querySelector('.q-text').textContent = item.q;
     var spans = card.querySelectorAll('span.jp');
@@ -456,6 +472,8 @@ ExamEngine.prototype.reset = function(){
   if(this.hasAudio){
     this.plays = {};
     this.segNums.forEach(function(s){ this.plays[s] = 0; }.bind(this));
+    this.qPlays = {};
+    this.audioQ = 0;
     this.speaking = false;
     this.stopAudio();
   }
@@ -477,20 +495,41 @@ ExamEngine.prototype.refreshPlayUI = function(){
   if(!this.hasAudio) return;
   var self = this;
   this.segNums.forEach(function(s){ self.refreshOnePlayUI(s); });
+  this.cfg.questions.forEach(function(q){ if(q.audio) self.refreshOneQPlayUI(q.n); });
+};
+
+ExamEngine.prototype.currentAudioLabel = function(){
+  if(this.audioQ) return '問題 ' + this.audioQ + ' の音声';
+  return '音声 ' + this.audioSeg;
 };
 
 ExamEngine.prototype.refreshOnePlayUI = function(seg){
   var btn = el(this.p + 'playBtn' + seg), st = el(this.p + 'playState' + seg);
   if(!btn || !st) return;
-  if(this.speaking && this.audioSeg===seg){ btn.disabled = true; st.textContent = '音声 ' + seg + '…'; return; }
+  if(this.speaking && this.audioSeg===seg && !this.audioQ){ btn.disabled = true; st.textContent = '音声 ' + seg + '…'; return; }
   if(this.mode==='real' && this.plays[seg]>=1){ btn.disabled = true; st.textContent = '音声 ' + seg + ' は1/1回再生済みです（本番モード）。'; return; }
   btn.disabled = false;
-  if(this.speaking){ st.textContent = '音声 ' + this.audioSeg + ' を再生中 — このボタンを押すと停止し、代わりに音声 ' + seg + '.'; return; }
+  if(this.speaking){ st.textContent = this.currentAudioLabel() + ' を再生中 — このボタンを押すと停止し、代わりに音声 ' + seg + '.'; return; }
   st.textContent = this.plays[seg]>0 ? ('再生済み ' + this.plays[seg] + ' 回' + (this.mode==='practice' ? ' — 聞き直しできます。' : '')) : '未再生 — 押して音声 ' + seg + '.';
+};
+
+ExamEngine.prototype.refreshOneQPlayUI = function(n){
+  var btn = el(this.p + 'qPlayBtn' + n), st = el(this.p + 'qPlayState' + n);
+  if(!btn || !st) return;
+  if(this.speaking && this.audioQ===n){ btn.disabled = true; st.textContent = '問題 ' + n + ' の音声を再生中…'; return; }
+  if(this.mode==='real' && (this.qPlays[n]||0)>=1){ btn.disabled = true; st.textContent = 'この音声は1/1回再生済みです（本番モード）。'; return; }
+  btn.disabled = false;
+  if(this.speaking){ st.textContent = this.currentAudioLabel() + ' を再生中 — このボタンを押すと停止し、代わりにこの音声を再生します。'; return; }
+  st.textContent = (this.qPlays[n]||0)>0 ? ('再生済み ' + this.qPlays[n] + ' 回' + (this.mode==='practice' ? ' — 聞き直しできます。' : '')) : '未再生 — 押してこの問題の音声を聞きましょう。';
 };
 
 ExamEngine.prototype.setPlayState = function(seg, msg){
   var st = el(this.p + 'playState' + seg);
+  if(st) st.textContent = msg;
+};
+
+ExamEngine.prototype.setQPlayState = function(n, msg){
+  var st = el(this.p + 'qPlayState' + n);
   if(st) st.textContent = msg;
 };
 
@@ -505,23 +544,55 @@ ExamEngine.prototype.stopAudio = function(){
 
 ExamEngine.prototype.playSegment = function(seg){
   if(typeof seg !== 'number') seg = this.cfg.questions[this.current-1].seg;
-  if(this.speaking && this.audioSeg===seg) return;
+  if(this.speaking && this.audioSeg===seg && !this.audioQ) return;
   if(this.mode==='real' && this.plays[seg]>=1) return;
+  this.audioSeg = seg;
+  this.audioQ = 0;
+  var self = this;
+  this._play({
+    url: this.cfg.segments[seg].mp3,
+    retryKey: this.id + '-' + seg,
+    loadingLabel: '音声 ' + seg,
+    count: function(){ self.plays[seg]++; },
+    setState: function(m){ self.setPlayState(seg, m); }
+  });
+};
+
+ExamEngine.prototype.playQuestion = function(n){
+  var item = this.cfg.questions[n-1];
+  if(!item || !item.audio) return;
+  if(this.speaking && this.audioQ===n) return;
+  if(this.mode==='real' && (this.qPlays[n]||0)>=1) return;
+  this.audioQ = n;
+  this.audioSeg = 0;
+  var self = this;
+  this._play({
+    url: item.audio,
+    retryKey: this.id + '-q' + n,
+    loadingLabel: '問題 ' + n + ' の音声',
+    count: function(){ self.qPlays[n] = (self.qPlays[n]||0)+1; },
+    setState: function(m){ self.setQPlayState(n, m); }
+  });
+};
+
+// Shared playback core for segment audio and per-question audio.
+// o = {url, retryKey, loadingLabel, count(), setState(msg)}
+ExamEngine.prototype._play = function(o){
   this.stopAudio();
   var a = new Audio();
   this.player = a;
-  this.audioSeg = seg;
   this.speaking = true; this.refreshPlayUI();
   var self = this;
   var counted = false;
   a.onplaying = function(){
     if(self.player!==a) return;
     if(self.playWatchdog){ clearTimeout(self.playWatchdog); self.playWatchdog = null; }
-    if(!counted){ counted = true; self.plays[seg]++; }
+    if(!counted){ counted = true; o.count(); }
   };
   a.onended = function(){
     if(self.player!==a) return;
     self.player = null; self.speaking = false;
+    self.audioQ = 0;
     self.refreshPlayUI();
   };
   a.onerror = function(){
@@ -529,7 +600,7 @@ ExamEngine.prototype.playSegment = function(seg){
     if(self.playWatchdog){ clearTimeout(self.playWatchdog); self.playWatchdog = null; }
     self.player = null; self.speaking = false;
     self.refreshPlayUI();
-    self.setPlayState(seg, '音声ファイルを読み込めませんでした — ネットワーク接続を確認して、もう一度再生してください。');
+    o.setState('音声ファイルを読み込めませんでした — ネットワーク接続を確認して、もう一度再生してください。');
   };
   var wdWaits = 0;
   function armStartWatchdog(){
@@ -540,31 +611,31 @@ ExamEngine.prototype.playSegment = function(seg){
       var loading = false;
       try{ loading = (a.readyState > 0) || (a.networkState === 2) || (a.buffered && a.buffered.length > 0); }catch(e){}
       if(loading && wdWaits < 5){
-        self.setPlayState(seg, '読み込み中：音声 ' + seg + '… ネットワークが少し遅いです。もう少しお待ちください。');
+        o.setState('読み込み中：' + o.loadingLabel + '… ネットワークが少し遅いです。もう少しお待ちください。');
         armStartWatchdog();
         return;
       }
-      if(!loading && wdWaits === 1 && typeof bjtAutoRetryOnce === 'function' && bjtAutoRetryOnce(self.id + '-' + seg)){
+      if(!loading && wdWaits === 1 && typeof bjtAutoRetryOnce === 'function' && bjtAutoRetryOnce(o.retryKey)){
         self.stopAudio();
-        self.playSegment(seg);
-        self.setPlayState(seg, '最初の再生が止まりました — 自動でもう一度再生を試みています…');
+        self._play(o);
+        o.setState('最初の再生が止まりました — 自動でもう一度再生を試みています…');
         return;
       }
       self.stopAudio();
       self.refreshPlayUI();
-      self.setPlayState(seg, '音声がまだ再生できません — もう一度再生ボタンを押してください。');
+      o.setState('音声がまだ再生できません — もう一度再生ボタンを押してください。');
     }, 8000);
   }
-  bjtStartAudio(a, this.cfg.segments[seg].mp3, {
+  bjtStartAudio(a, o.url, {
     isCurrent: function(){ return self.player===a; },
     arm: armStartWatchdog,
-    onLoading: function(){ self.setPlayState(seg, '読み込み中：音声 ' + seg + '…'); },
+    onLoading: function(){ o.setState('読み込み中：' + o.loadingLabel + '…'); },
     onBlocked: function(){
       if(self.player!==a || counted) return;
       if(self.playWatchdog){ clearTimeout(self.playWatchdog); self.playWatchdog = null; }
       self.player = null; self.speaking = false;
       self.refreshPlayUI();
-      self.setPlayState(seg, 'ブラウザが音声の再生をブロックしました — もう一度再生ボタンを押してください。');
+      o.setState('ブラウザが音声の再生をブロックしました — もう一度再生ボタンを押してください。');
     }
   });
 };
