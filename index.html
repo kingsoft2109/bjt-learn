@@ -1545,6 +1545,9 @@ function bjtWarmExam(which){
     if(cfg.segments){
       for(var k in cfg.segments){ if(cfg.segments[k] && cfg.segments[k].mp3) bjtWarmAudio(cfg.segments[k].mp3); }
     }
+    if(cfg.questions){
+      cfg.questions.forEach(function(q){ if(q && q.audio) bjtWarmAudio(q.audio); });
+    }
     return;
   }
   if(which === 'mock1'){
