@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <meta name="google-adsense-account" content="ca-pub-1771607040249447">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1771607040249447"
-     crossorigin="anonymous"></script>
+<!-- AdSense loader is NOT loaded here unconditionally: it is injected by
+     bjtAdsOnHomeView() only while the home/content view is displayed, and
+     permanently disabled for the session once any exam/library/card view
+     is opened (ads must never appear on exam or navigation screens). -->
 <link rel="icon" href="data:,">
 <title>BJT問題 — 無料オンラインBJT対策 | コンピューター試験室</title>
 <meta name="description" content="無料オンラインBJT（Business Japanese Proficiency Test）対策。日別の練習問題25セット、40問の模擬テスト、状況ビデオ60本、単語カード884枚。聴解、読解、聴読解。">
@@ -461,6 +463,23 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
   .submit-bar{position:static}
 }
 </style>
+<style>
+/* ===== home guide content + footer (publisher content for the home view) ===== */
+.guide-nav{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 4px}
+.guide-nav a{display:inline-block;background:var(--chip);color:var(--navy);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13.5px;font-weight:700;text-decoration:none}
+.guide-nav a:hover{border-color:var(--navy)}
+.guide-sec{scroll-margin-top:76px}
+.guide-sec h2{margin-top:2px}
+.level-table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.level-table th,.level-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.level-table th{background:var(--chip);white-space:nowrap}
+.faq-list dt{font-weight:700;margin-top:16px}
+.faq-list dd{margin:4px 0 0}
+.site-footer{margin-top:30px;border-top:1px solid var(--line);padding:18px 2px 6px;font-size:13.5px;color:var(--muted)}
+.site-footer nav{margin-bottom:8px}
+.site-footer nav a{color:var(--navy);font-weight:700;text-decoration:none}
+.site-footer nav a:hover{text-decoration:underline}
+</style>
 </head>
 <body>
 
@@ -470,6 +489,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
   <button class="fs-btn" id="fsBtn" type="button" onclick="cycleFontSize()" title="解答エリアの文字サイズを変更">A＋ 文字サイズ</button>
   <button class="fs-btn" id="videoLibBtn" type="button" title="状況ビデオライブラリを開いて復習">▶ 動画ライブラリ</button>
   <button class="fs-btn" id="vocabBtn" type="button" title="単語カードを開く — 884語を日別に分類">🃏 単語カード</button>
+  <button class="fs-btn" id="homeBtn" type="button" onclick="try{userPickedExam=true;}catch(e){} showHome()" title="ホーム（トップページ）に戻る">🏠 ホーム</button>
   <div class="exam-picker">
     <label for="examSelect">問題を選ぶ</label>
     <select id="examSelect" aria-label="問題を選ぶ" onchange="switchExam(this.value)">
@@ -580,6 +600,101 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <li>本番モード（音声は1回だけ再生）と練習モード（聞き直し可能）</li>
     <li>完全無料、登録不要、すべての端末で動作</li>
   </ul>
+
+  <nav class="guide-nav" aria-label="ガイド目次">
+    <a href="#guide-about-bjt">BJTとは</a>
+    <a href="#guide-structure">試験の構成</a>
+    <a href="#guide-score">スコアとレベル</a>
+    <a href="#guide-study">対策の進め方</a>
+    <a href="#guide-howto">このサイトの使い方</a>
+    <a href="#guide-faq">よくある質問</a>
+  </nav>
+
+  <section class="card guide-sec" id="guide-about-bjt">
+    <h2>BJTビジネス日本語能力テストとは</h2>
+    <p>BJTビジネス日本語能力テスト（Business Japanese Proficiency Test）は、日本語を使うビジネス場面で、どの程度コミュニケーションができるかを測る試験です。公益財団法人 日本漢字能力検定協会が実施しており、文法や語彙の知識そのものではなく、会議、電話応対、メール、交渉といった実際の仕事の場面で「何ができるか」を評価する点に特徴があります。</p>
+    <p>受験者は、日本企業への就職や転職を目指す外国人材、日本企業と取引する海外のビジネスパーソン、日本で働く留学生などさまざまです。スコアは履歴書に記載でき、採用や配属の判断材料として使う企業も増えています。</p>
+    <p>試験はコンピューターで受験するCBT方式で、実施はPearson VUE（ピアソンVUE）のテストセンターです。受験料は8,000円（税込）で、試験日の前日まで申し込みができます。結果は受験後すぐに画面で確認でき、後日スコアレポートが発行されます。</p>
+  </section>
+
+  <section class="card guide-sec" id="guide-structure">
+    <h2>試験の構成</h2>
+    <p>BJTは3つのパート、合計100問で構成され、制限時間は約120分です。聞く力と読む力を組み合わせて、ビジネス場面への対応力を測ります。</p>
+    <table class="level-table">
+      <tr><th>パート</th><th>セクションと内容</th><th>問題数</th></tr>
+      <tr><td>第1部 聴解</td><td>場面把握（写真を見て、場面に合う発言を選ぶ）／発言聴解（短い発言を聞いて、適切な応答を選ぶ）／総合聴解（会話や説明を聞いて、内容について答える）</td><td>35問（10・10・15）</td></tr>
+      <tr><td>第2部 聴読解</td><td>描写問題（写真や図表などの資料について、音声の説明と合うものを選ぶ）／聴読解問題（資料を読みながら音声を聞き、両方の情報を合わせて答える）</td><td>30問（15・15）</td></tr>
+      <tr><td>第3部 読解</td><td>語彙・文法／表現読解（文の意味や働きに合う表現を選ぶ）／総合読解（メールやお知らせ、記事などの文章を読んで答える）</td><td>35問（10・10・15）</td></tr>
+    </table>
+    <p>なお、各セクションの最初には、採点対象外の練習問題が1問あり、問題の形式を確認してから本番の問題に進めます。このサイトの模擬テストでも、本番と同じこの流れを再現しています。</p>
+  </section>
+
+  <section class="card guide-sec" id="guide-score">
+    <h2>スコアとレベルの目安</h2>
+    <p>スコアは0〜800点で示され、6段階のレベルに分かれます。合否で判定するのではなく、現在の実力を細かく把握できるのが特徴です。</p>
+    <table class="level-table">
+      <tr><th>レベル</th><th>スコア</th><th>目安</th></tr>
+      <tr><td>J1+</td><td>600点以上</td><td>あらゆるビジネス場面で十分なコミュニケーションができます。交渉や折衝など、高度な場面にも対応できる水準です。</td></tr>
+      <tr><td>J1</td><td>530〜599点</td><td>多くのビジネス場面で適切なコミュニケーションができます。業務の遂行にほぼ支障がない水準です。</td></tr>
+      <tr><td>J2</td><td>420〜529点</td><td>限られたビジネス場面では適切なコミュニケーションができます。日常業務にはおおむね対応可能です。</td></tr>
+      <tr><td>J3</td><td>320〜419点</td><td>限られたビジネス場面で、ある程度のコミュニケーションができます。基本的な業務連絡に対応できる水準です。</td></tr>
+      <tr><td>J4</td><td>200〜319点</td><td>基本的な日本語で、簡単な意思疎通ができます。定型的な場面が中心です。</td></tr>
+      <tr><td>J5</td><td>0〜199点</td><td>文字や短い言葉による、ごく基本的なコミュニケーションができる段階です。</td></tr>
+    </table>
+    <p>就職活動では、J2以上で「業務対応が可能」と見なされることが多く、J1は日本語を武器に仕事を選べる水準です。まず自分の現在地を知り、目標レベルまでの差を埋める計画を立てることが大切です。</p>
+  </section>
+
+  <section class="card guide-sec" id="guide-study">
+    <h2>対策の進め方</h2>
+    <p>BJTは知識の暗記だけでは伸びません。実際のビジネス場面を「聞いて、読んで、判断する」練習を、毎日少しずつ積み重ねることが近道です。このサイトでは、次のような進め方をおすすめしています。</p>
+    <ol>
+      <li><strong>毎日1セットの短い練習</strong> — 聴解・読解・聴読解を日替わりで解き、聞く力と読む力をバランスよく鍛えます。1日12問程度でも、続けることで場面のパターンに慣れていきます。</li>
+      <li><strong>語彙は文脈で覚える</strong> — 単語カードでビジネス語彙を確認し、実際のコロケーション（結びつきの強い表現）と一緒に覚えます。単語だけを丸暗記するより、会話の中で使える形で身につきます。</li>
+      <li><strong>間違いは「情報の結びつけ」で見直す</strong> — BJTで失点しやすいのは、日時・場所・担当者などの情報を取り違えるミスです。「誰が・いつ・何を」という情報を項目ごとに整理して聞く／読む習慣をつけると、正答率が安定します。</li>
+      <li><strong>定期的に模擬テストで時間配分を確認</strong> — 本番と同じ問題数・流れの模擬テストを通して解き、時間配分と集中力の持続を確かめます。各セクションの練習問題で形式に慣れておくと、本番で慌てません。</li>
+    </ol>
+    <p>状況ビデオで実際の会話の流れをつかみ、単語カードで語彙を固め、日別の問題と模擬テストで実力を測る。この循環を繰り返すことが、スコアアップへの確実な道です。</p>
+  </section>
+
+  <section class="card guide-sec" id="guide-howto">
+    <h2>このサイトの使い方</h2>
+    <ul>
+      <li><strong>日別の練習問題</strong> — 画面上部のメニューから問題を選びます。同じ資料に属する問題は1つの画面にまとめて表示され、本番と同じように資料を見ながら解けます。聴解では各セクションの初めに練習問題があり、各問題には場面の写真やイラストと、問題ごとの音声が付いています。</li>
+      <li><strong>模擬テスト</strong> — 第1部から第3部までを通して解く、本番形式のテストです。パートごとに提出してロックされる流れも、本番同様に再現しています。</li>
+      <li><strong>状況ビデオ</strong> — 動画ライブラリでは、ビジネスの場面ごとの短い会話ビデオを、日本語・ベトナム語・英語の字幕と単語解説付きで見られます。聞き取れなかった表現は、セリフと単語で確認できます。</li>
+      <li><strong>単語カード</strong> — 884語のカードを学習日ごとにまとめています。カードをめくると、読み方、意味、一緒に使う表現が表示されます。すき間時間の復習に最適です。</li>
+    </ul>
+    <p>すべてのコンテンツは無料で、登録も不要です。スマートフォンでもパソコンでも、そのままブラウザで使えます。</p>
+  </section>
+
+  <section class="card guide-sec" id="guide-faq">
+    <h2>よくある質問</h2>
+    <dl class="faq-list">
+      <dt>Q. BJTとJLPT（日本語能力試験）はどう違いますか。</dt>
+      <dd>A. JLPTは日本語の知識（文字・語彙・文法）と読解・聴解を測る試験で、BJTはビジネス場面での実際の運用力を測ります。就職や仕事での使用を目的とする場合は、BJTのスコアが実務能力の目安として使われます。</dd>
+      <dt>Q. どのくらいの期間、準備が必要ですか。</dt>
+      <dd>A. 現在のレベルと目標によりますが、毎日1時間程度の学習を2〜3か月続けることで、1レベル分の伸びを目指す方が多いです。まずは模擬テストで現在地を測ることから始めてください。</dd>
+      <dt>Q. J1を取ると就職にどう役立ちますか。</dt>
+      <dd>A. J1（530点以上）は「多くのビジネス場面で適切なコミュニケーションができる」水準で、日本企業への応募書類に記載できる強いアピールになります。日本語を使う業務への配属や、顧客対応の担当を任される際の判断材料にもなります。</dd>
+      <dt>Q. 試験はどこで、どうやって申し込みますか。</dt>
+      <dd>A. Pearson VUEのテストセンターで受験します。受験料は8,000円で、試験日の前日まで申し込みが可能です。会場と日時は地域によって異なるため、早めの確認をおすすめします。</dd>
+      <dt>Q. このサイトの問題は本番と同じ形式ですか。</dt>
+      <dd>A. はい。各セクションの練習問題、問題ごとの写真・音声、パートごとの提出の流れなど、本番の形式に沿って作っています。ただし、本サイトは学習用の無料教材であり、公式試験そのものではありません。</dd>
+      <dt>Q. 費用はかかりますか。登録は必要ですか。</dt>
+      <dd>A. いいえ。練習問題、模擬テスト、ビデオ、単語カードはすべて無料で、登録なしで使えます。</dd>
+    </dl>
+  </section>
+
+  <footer class="site-footer">
+    <nav aria-label="サイト情報">
+      <a href="about.html">このサイトについて</a> ·
+      <a href="privacy.html">プライバシーポリシー</a> ·
+      <a href="#guide-about-bjt">BJTとは</a> ·
+      <a href="#guide-structure">試験の構成</a> ·
+      <a href="#guide-faq">よくある質問</a>
+    </nav>
+    <p>© BJT - 15 Phút Mỗi Ngày Đạt J1 — ビジネス日本語を学ぶベトナム人学習者のコミュニティによる無料学習サイトです。</p>
+  </footer>
 </main>
 
 <!-- ===== EXAM DAYS (generated by exam-engine.js) ===== -->
@@ -1369,6 +1484,11 @@ function syncExamHash(which){
   }
 }
 var currentExam = 'day27';
+/* Captured now, before wireTabs writes the default exam's tag into the
+   URL: true only when the reader arrived with an explicit exam tag/link
+   (deep link). A plain visit lands on the home/content view instead. */
+var bjtLandedWithTag = false;
+try{ bjtLandedWithTag = !!examFromHash(); }catch(e){}
 /* Set when the reader picks an exam themselves (tab or dropdown): a tag
    that only becomes readable a moment after load must never override a
    choice already made, nor interrupt an exam already started. */
@@ -1386,7 +1506,80 @@ function anyExamStarted(){
   try{ if(window.demoTimerStarted) return true; }catch(e){}
   return false;
 }
+/* ============ AdSense: home/content view ONLY ============
+   Policy fix ("ads on screens without publisher-content"): the
+   adsbygoogle.js loader is injected ONLY while the home/content view
+   is displayed. The first time the reader enters any app view (a day
+   exam, a mock, the sample, the video library, the flashcards) after
+   ads were loaded, every ad element is removed, a hiding stylesheet
+   is installed so nothing can reappear, and ads stay OFF for the rest
+   of the session — they return only on the next full page load that
+   lands on the home view. If the loader was never injected (e.g. the
+   page was opened directly into an exam via a URL tag), entering an
+   app view is a no-op and a later visit to Home may still load ads
+   there. The google-adsense-account meta tag always stays in <head>. */
+var bjtAdsLoaded = false;
+var bjtAdsDead = false;
+var bjtAdsSel = 'ins.adsbygoogle, iframe[src*="googlesyndication.com"], iframe[src*="googleads.g.doubleclick.net"], iframe[id^="aswift_"], [id^="google_ads_iframe"], .google-auto-placed, [id^="google-anno"], [data-google-query-id]';
+function bjtAdsOnHomeView(){
+  if(bjtAdsLoaded || bjtAdsDead) return;
+  bjtAdsLoaded = true;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1771607040249447';
+  s.setAttribute('crossorigin', 'anonymous');
+  document.head.appendChild(s);
+}
+function bjtAdsOnAppView(){
+  if(!bjtAdsLoaded) return; /* loader never injected: nothing to remove */
+  bjtAdsDead = true;
+  try{
+    var els = document.querySelectorAll(bjtAdsSel);
+    for(var i = 0; i < els.length; i++){ if(els[i].parentNode) els[i].parentNode.removeChild(els[i]); }
+  }catch(e){}
+  if(!document.getElementById('bjtAdsOffCss')){
+    var st = document.createElement('style');
+    st.id = 'bjtAdsOffCss';
+    st.textContent = bjtAdsSel + '{display:none !important;}';
+    document.head.appendChild(st);
+  }
+}
+/* ============ Home (content) view ============ */
+var bjtHomeActive = false;
+function showHome(){
+  bjtHomeActive = true;
+  try{ window.history.replaceState(null, '', window.location.pathname + window.location.search); }catch(e){}
+  var seoL = document.getElementById('seoLanding');
+  if(seoL) seoL.style.display = '';
+  if(typeof window.examEngines !== 'undefined'){
+    var eng = window.examEngines;
+    for(var id in eng){
+      var dayNum = id.replace('day','');
+      var mainEl = document.getElementById('examDay' + dayNum);
+      if(mainEl) mainEl.classList.add('hidden');
+      var modalEl = document.getElementById(eng[id].p + 'Modal');
+      if(modalEl){ modalEl.classList.remove('show'); modalEl.style.display = ''; }
+      var tabEl = document.getElementById('tabDay' + dayNum);
+      if(tabEl) tabEl.classList.remove('active');
+      if(eng[id].hasAudio){ try{ eng[id].stopAudio(); }catch(e){} }
+    }
+  }
+  var mains = ['examMock1','examMock2','examMock3','examMock4','examMock5','examDemo','videoLibrary','vocabCards'];
+  for(var m = 0; m < mains.length; m++){ var mel = document.getElementById(mains[m]); if(mel) mel.classList.add('hidden'); }
+  var tabs = ['tabMock1','tabMock2','tabMock3','tabMock4','tabMock5','tabDemo','tabVideos','tabVocab'];
+  for(var t = 0; t < tabs.length; t++){ var tel = document.getElementById(tabs[t]); if(tel) tel.classList.remove('active'); }
+  try{ pauseLibraryVideos(); }catch(e){}
+  try{ mkStopAudio(); }catch(e){}
+  try{ mk2StopAudio(); }catch(e){}
+  try{ mk3StopAudio(); }catch(e){}
+  try{ mk4StopAudio(); }catch(e){}
+  try{ mk5StopAudio(); }catch(e){}
+  try{ bjtAdsOnHomeView(); }catch(e){}
+  window.scrollTo({top:0, behavior:'smooth'});
+}
 function switchExam(which){
+  bjtHomeActive = false;
+  try{ bjtAdsOnAppView(); }catch(e){}
   if(!EXAM_TAGS[which]) which = 'day27';
   currentExam = which;
   syncExamHash(which);
@@ -4948,9 +5141,17 @@ initAllExams();
   var ec = document.getElementById('seoExamCount');
   if(ec && window.EXAM_DAYS) ec.textContent = Object.keys(window.EXAM_DAYS).length;
 })();
-var seoL = document.getElementById('seoLanding');
-if(seoL) seoL.style.display = 'none';
-if(typeof currentExam !== 'undefined') switchExam(currentExam);
+if(window.bjtLandedWithTag){
+  /* Deep link straight into an exam: classic behavior (the AdSense
+     loader is not injected on this path; see bjtAdsOnAppView). */
+  var seoL = document.getElementById('seoLanding');
+  if(seoL) seoL.style.display = 'none';
+  if(typeof currentExam !== 'undefined') switchExam(currentExam);
+} else {
+  /* Plain visit: land on the home/content view (guide + exam selector);
+     the reader picks an exam from the menu when ready. */
+  showHome();
+}
 </script>
 
 <script>
