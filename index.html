@@ -1107,10 +1107,10 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <audio controls preload="metadata" src="assets/listening1.mp3"></audio>
     <p class="q-text jp" style="font-size:18px">会議はいつに変更になりましたか。</p>
     <div class="options" role="radiogroup" aria-label="問題1">
-      <button class="opt" data-q="1" data-v="A"><span class="letter">A</span><span class="jp">金曜日</span></button>
-      <button class="opt" data-q="1" data-v="B"><span class="letter">B</span><span class="jp">木曜日</span></button>
-      <button class="opt" data-q="1" data-v="C"><span class="letter">C</span><span class="jp">水曜日</span></button>
-      <button class="opt" data-q="1" data-v="D"><span class="letter">D</span><span class="jp">火曜日</span></button>
+      <button class="opt" data-q="1" data-v="1"><span class="letter">1</span><span class="jp">金曜日</span></button>
+      <button class="opt" data-q="1" data-v="2"><span class="letter">2</span><span class="jp">木曜日</span></button>
+      <button class="opt" data-q="1" data-v="3"><span class="letter">3</span><span class="jp">水曜日</span></button>
+      <button class="opt" data-q="1" data-v="4"><span class="letter">4</span><span class="jp">火曜日</span></button>
     </div>
     <div class="feedback" id="fb1"></div>
   </div>
@@ -1147,10 +1147,10 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     </div>
     <p class="q-text jp" style="margin-top:16px;font-size:18px">グラフと会話から分かることはどれですか。</p>
     <div class="options" role="radiogroup" aria-label="問題2">
-      <button class="opt" data-q="2" data-v="A"><span class="letter">A</span><span class="jp">製品Aは9月が一番売れた</span></button>
-      <button class="opt" data-q="2" data-v="B"><span class="letter">B</span><span class="jp">9月の合計売上は279で、4月より約3割多い</span></button>
-      <button class="opt" data-q="2" data-v="C"><span class="letter">C</span><span class="jp">製品Bは8月がピークだった</span></button>
-      <button class="opt" data-q="2" data-v="D"><span class="letter">D</span><span class="jp">4月の合計が一番多い</span></button>
+      <button class="opt" data-q="2" data-v="1"><span class="letter">1</span><span class="jp">製品Aは9月が一番売れた</span></button>
+      <button class="opt" data-q="2" data-v="2"><span class="letter">2</span><span class="jp">9月の合計売上は279で、4月より約3割多い</span></button>
+      <button class="opt" data-q="2" data-v="3"><span class="letter">3</span><span class="jp">製品Bは8月がピークだった</span></button>
+      <button class="opt" data-q="2" data-v="4"><span class="letter">4</span><span class="jp">4月の合計が一番多い</span></button>
     </div>
     <div class="feedback" id="fb2"></div>
   </div>
@@ -1167,10 +1167,10 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 ご不明な点がございましたら、生産部までお問い合わせください。</div>
     <p class="q-text jp" style="margin-top:14px;font-size:18px">このメールについて、正しいものはどれですか。</p>
     <div class="options" role="radiogroup" aria-label="問題3">
-      <button class="opt" data-q="3" data-v="A"><span class="letter">A</span><span class="jp">出荷日は11月16日で確定している</span></button>
-      <button class="opt" data-q="3" data-v="B"><span class="letter">B</span><span class="jp">納品は予定より前倒しされた</span></button>
-      <button class="opt" data-q="3" data-v="C"><span class="letter">C</span><span class="jp">組み立ては11月12日から始まる</span></button>
-      <button class="opt" data-q="3" data-v="D"><span class="letter">D</span><span class="jp">取引先がすでに正式に回答した</span></button>
+      <button class="opt" data-q="3" data-v="1"><span class="letter">1</span><span class="jp">出荷日は11月16日で確定している</span></button>
+      <button class="opt" data-q="3" data-v="2"><span class="letter">2</span><span class="jp">納品は予定より前倒しされた</span></button>
+      <button class="opt" data-q="3" data-v="3"><span class="letter">3</span><span class="jp">組み立ては11月12日から始まる</span></button>
+      <button class="opt" data-q="3" data-v="4"><span class="letter">4</span><span class="jp">取引先がすでに正式に回答した</span></button>
     </div>
     <div class="feedback" id="fb3"></div>
   </div>
@@ -1887,7 +1887,7 @@ function mkUpdateQuestion(n){
   var box = document.getElementById('mkqOptions' + n);
   if(!box) return;
   box.innerHTML = '';
-  var letters = ['A','B','C','D'];
+  var letters = ['1','2','3','4'];
   item.opts.forEach(function(opt, idx){
     var b = document.createElement('button');
     b.className = 'd1opt'; b.type = 'button';
@@ -2150,8 +2150,8 @@ function mkFinish(auto){
     var isOk = mkSel[item.n] === item.ans;
     var html = '<div class="q-num">問題 ' + item.n + ' · セット ' + item.g + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
-    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mkSel[item.n] ? mkSel[item.n] + ' — ' : '未選択') + '</strong>' + (mkSel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mkSel[item.n])] + '</span>' : '') + '</p>';
-    html += '<p style="margin:0 0 6px">正しい答え：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
+    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mkSel[item.n] ? mkSel[item.n] + ' — ' : '未選択') + '</strong>' + (mkSel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mkSel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">正しい答え：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['1234'.indexOf(item.ans)] + '</span></p>';
     html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ Sai') + '</div>';
     html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
     var grp = mkGroupById[item.g];
@@ -2224,14 +2224,14 @@ var flashcards = [
 })();
 
 /* ============ DEMO EXAM (3 câu — giữ nguyên từ đề mẫu 01) ============ */
-var answers = {1:'B', 2:'B', 3:'C'};
+var answers = {1:'2', 2:'2', 3:'3'};
 var selected = {1:null, 2:null, 3:null};
 var submitted = false;
 var totalSec = 12*60, remain = totalSec, timerId = null, demoTimerStarted = false;
 var explanations = {
-  1: { okText:'Đúng — cuộc họp đổi từ thứ Sáu sang thứ Năm.', ngText:'Chưa đúng. Đáp án đúng là B（木曜日）.', body:'Bẫy ở đây là thứ Tư（水曜日）— đó là hạn chót chuẩn bị tài liệu, không phải ngày họp. Nghe kỹ mẫu 「金曜日から木曜日に変更」 và phân biệt <em>ngày họp</em> với <em>deadline tài liệu</em>.', transcript:'— 来週の定例会議ですが、クライアントの都合で、金曜日から木曜日に変更になりました。資料は水曜日までに準備してもらえますか。\n— かしこまりました。水曜日の午前中までにご用意いたします。会議室の予約も変更しておきましょうか。\n— お願いします。あと、営業部の担当者にも、変更を連絡しておいてください。\n— 承知いたしました。すぐに連絡いたします。', transcriptVi:['— Về cuộc họp định kỳ tuần tới, do phía khách hàng nên đã đổi từ thứ Sáu sang thứ Năm. Anh/chị chuẩn bị tài liệu trước thứ Tư giúp tôi được không.', '— Vâng, tôi hiểu rồi ạ. Tôi sẽ chuẩn bị xong trước sáng thứ Tư ạ. Tôi có cần đổi cả đặt phòng họp không ạ?', '— Nhờ anh/chị nhé. Ngoài ra, hãy liên lạc thông báo thay đổi cho người phụ trách của phòng Kinh doanh nữa nhé.', '— Vâng, tôi đã rõ ạ. Tôi sẽ liên lạc ngay ạ.'] },
-  2: { okText:'Đúng — bạn đã cộng số kiểm tra thay vì chọn theo cảm tính.', ngText:'Chưa đúng. Đáp án đúng là B.', body:'Tổng 9月 = 158 + 121 = <strong>279</strong>. Tổng 4月 = 120 + 90 = <strong>210</strong>. Tăng 69, tức khoảng 33% ≈ 約3割 — khớp hội thoại. A sai vì A đạt đỉnh tháng 8 (165) rồi giảm xuống 158 ở tháng 9. C sai vì B tăng đều, đỉnh là tháng 9 (121), không phải tháng 8. Lưu ý: gặp câu tổng hợp 2 mốc thời gian, hãy <strong>cộng số trước khi chọn</strong>.', transcript:'— このグラフは、4月から9月までの製品Aと製品Bの売上を示したものです。製品Bは9月に初めて120を超えましたね。\n— はい。9月の合計は279で、4月と比べるとおよそ3割増えています。製品Aは8月がピークで、9月は少し下がりました。\n— そうですね。来月の会議では、製品Bの販売強化策を提案しましょう。', transcriptVi:['— Biểu đồ này cho thấy doanh số của sản phẩm A và sản phẩm B từ tháng 4 đến tháng 9. Sản phẩm B vào tháng 9 lần đầu tiên vượt qua 120 nhỉ.', '— Vâng. Tổng tháng 9 là 279, so với tháng 4 tăng khoảng 30%. Sản phẩm A đạt đỉnh vào tháng 8, tháng 9 giảm nhẹ.', '— Đúng vậy. Tại cuộc họp tháng tới, chúng ta hãy đề xuất biện pháp tăng cường bán hàng cho sản phẩm B nhé.'] },
-  3: { okText:'Đúng — bạn đọc kỹ ngày và tránh được bẫy từ vựng.', ngText:'Chưa đúng. Đáp án đúng là C（組み立ては11月12日から始まる）.', body:'B là bẫy từ vựng kinh điển: <strong>前倒し</strong> nghĩa là <em>đẩy sớm lên</em>, trong khi email nói dời từ 6/11 → 11/11, tức là <em>trễ hơn</em> (ずれ込む). A sai vì ngày xuất hàng ghi rõ 「正式な回答を待って決定」 — chưa chốt. D sai vì đối tác <em>chưa</em> trả lời chính thức.', transcript:null }
+  1: { okText:'Đúng — cuộc họp đổi từ thứ Sáu sang thứ Năm.', ngText:'Chưa đúng. Đáp án đúng là 2（木曜日）.', body:'Bẫy ở đây là thứ Tư（水曜日）— đó là hạn chót chuẩn bị tài liệu, không phải ngày họp. Nghe kỹ mẫu 「金曜日から木曜日に変更」 và phân biệt <em>ngày họp</em> với <em>deadline tài liệu</em>.', transcript:'— 来週の定例会議ですが、クライアントの都合で、金曜日から木曜日に変更になりました。資料は水曜日までに準備してもらえますか。\n— かしこまりました。水曜日の午前中までにご用意いたします。会議室の予約も変更しておきましょうか。\n— お願いします。あと、営業部の担当者にも、変更を連絡しておいてください。\n— 承知いたしました。すぐに連絡いたします。', transcriptVi:['— Về cuộc họp định kỳ tuần tới, do phía khách hàng nên đã đổi từ thứ Sáu sang thứ Năm. Anh/chị chuẩn bị tài liệu trước thứ Tư giúp tôi được không.', '— Vâng, tôi hiểu rồi ạ. Tôi sẽ chuẩn bị xong trước sáng thứ Tư ạ. Tôi có cần đổi cả đặt phòng họp không ạ?', '— Nhờ anh/chị nhé. Ngoài ra, hãy liên lạc thông báo thay đổi cho người phụ trách của phòng Kinh doanh nữa nhé.', '— Vâng, tôi đã rõ ạ. Tôi sẽ liên lạc ngay ạ.'] },
+  2: { okText:'Đúng — bạn đã cộng số kiểm tra thay vì chọn theo cảm tính.', ngText:'Chưa đúng. Đáp án đúng là 2.', body:'Tổng 9月 = 158 + 121 = <strong>279</strong>. Tổng 4月 = 120 + 90 = <strong>210</strong>. Tăng 69, tức khoảng 33% ≈ 約3割 — khớp hội thoại. 1 sai vì sản phẩm A đạt đỉnh tháng 8 (165) rồi giảm xuống 158 ở tháng 9. 3 sai vì sản phẩm B tăng đều, đỉnh là tháng 9 (121), không phải tháng 8. Lưu ý: gặp câu tổng hợp 2 mốc thời gian, hãy <strong>cộng số trước khi chọn</strong>.', transcript:'— このグラフは、4月から9月までの製品Aと製品Bの売上を示したものです。製品Bは9月に初めて120を超えましたね。\n— はい。9月の合計は279で、4月と比べるとおよそ3割増えています。製品Aは8月がピークで、9月は少し下がりました。\n— そうですね。来月の会議では、製品Bの販売強化策を提案しましょう。', transcriptVi:['— Biểu đồ này cho thấy doanh số của sản phẩm A và sản phẩm B từ tháng 4 đến tháng 9. Sản phẩm B vào tháng 9 lần đầu tiên vượt qua 120 nhỉ.', '— Vâng. Tổng tháng 9 là 279, so với tháng 4 tăng khoảng 30%. Sản phẩm A đạt đỉnh vào tháng 8, tháng 9 giảm nhẹ.', '— Đúng vậy. Tại cuộc họp tháng tới, chúng ta hãy đề xuất biện pháp tăng cường bán hàng cho sản phẩm B nhé.'] },
+  3: { okText:'Đúng — bạn đọc kỹ ngày và tránh được bẫy từ vựng.', ngText:'Chưa đúng. Đáp án đúng là 3（組み立ては11月12日から始まる）.', body:'2 là bẫy từ vựng kinh điển: <strong>前倒し</strong> nghĩa là <em>đẩy sớm lên</em>, trong khi email nói dời từ 6/11 → 11/11, tức là <em>trễ hơn</em> (ずれ込む). 1 sai vì ngày xuất hàng ghi rõ 「正式な回答を待って決定」 — chưa chốt. 4 sai vì đối tác <em>chưa</em> trả lời chính thức.', transcript:null }
 };
 function updateProgress(){
   var n = Object.keys(selected).filter(function(k){return selected[k]}).length;
@@ -2677,7 +2677,7 @@ function mk2UpdateQuestion(n){
   var box = document.getElementById('mkqOptions' + n);
   if(!box) return;
   box.innerHTML = '';
-  var letters = ['A','B','C','D'];
+  var letters = ['1','2','3','4'];
   item.opts.forEach(function(opt, idx){
     var b = document.createElement('button');
     b.className = 'd1opt'; b.type = 'button';
@@ -2940,8 +2940,8 @@ function mk2Finish(auto){
     var isOk = mk2Sel[item.n] === item.ans;
     var html = '<div class="q-num">問題 ' + item.n + ' · セット ' + item.g + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
-    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk2Sel[item.n] ? mk2Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk2Sel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mk2Sel[item.n])] + '</span>' : '') + '</p>';
-    html += '<p style="margin:0 0 6px">正しい答え：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
+    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk2Sel[item.n] ? mk2Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk2Sel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mk2Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">正しい答え：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['1234'.indexOf(item.ans)] + '</span></p>';
     html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ Sai') + '</div>';
     html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
     var grp = mk2GroupById[item.g];
@@ -3147,7 +3147,7 @@ function mk3UpdateQuestion(n){
   var box = document.getElementById('mkqOptions' + n);
   if(!box) return;
   box.innerHTML = '';
-  var letters = ['A','B','C','D'];
+  var letters = ['1','2','3','4'];
   item.opts.forEach(function(opt, idx){
     var b = document.createElement('button');
     b.className = 'd1opt'; b.type = 'button';
@@ -3410,8 +3410,8 @@ function mk3Finish(auto){
     var isOk = mk3Sel[item.n] === item.ans;
     var html = '<div class="q-num">第' + item.n + '問 · セット' + item.g + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
-    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk3Sel[item.n] ? mk3Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk3Sel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mk3Sel[item.n])] + '</span>' : '') + '</p>';
-    html += '<p style="margin:0 0 6px">正解：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
+    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk3Sel[item.n] ? mk3Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk3Sel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mk3Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">正解：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['1234'.indexOf(item.ans)] + '</span></p>';
     html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ 不正解') + '</div>';
     html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
     var grp = mk3GroupById[item.g];
@@ -3617,7 +3617,7 @@ function mk4UpdateQuestion(n){
   var box = document.getElementById('mkqOptions' + n);
   if(!box) return;
   box.innerHTML = '';
-  var letters = ['A','B','C','D'];
+  var letters = ['1','2','3','4'];
   item.opts.forEach(function(opt, idx){
     var b = document.createElement('button');
     b.className = 'd1opt'; b.type = 'button';
@@ -3880,8 +3880,8 @@ function mk4Finish(auto){
     var isOk = mk4Sel[item.n] === item.ans;
     var html = '<div class="q-num">第' + item.n + '問 · セット' + item.g + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
-    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk4Sel[item.n] ? mk4Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk4Sel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mk4Sel[item.n])] + '</span>' : '') + '</p>';
-    html += '<p style="margin:0 0 6px">正解：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
+    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk4Sel[item.n] ? mk4Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk4Sel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mk4Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">正解：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['1234'.indexOf(item.ans)] + '</span></p>';
     html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ 不正解') + '</div>';
     html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
     var grp = mk4GroupById[item.g];
@@ -4087,7 +4087,7 @@ function mk5UpdateQuestion(n){
   var box = document.getElementById('mkqOptions' + n);
   if(!box) return;
   box.innerHTML = '';
-  var letters = ['A','B','C','D'];
+  var letters = ['1','2','3','4'];
   item.opts.forEach(function(opt, idx){
     var b = document.createElement('button');
     b.className = 'd1opt'; b.type = 'button';
@@ -4350,8 +4350,8 @@ function mk5Finish(auto){
     var isOk = mk5Sel[item.n] === item.ans;
     var html = '<div class="q-num">第' + item.n + '問 · セット' + item.g + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
-    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk5Sel[item.n] ? mk5Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk5Sel[item.n] ? '<span class="jp">' + item.opts['ABCD'.indexOf(mk5Sel[item.n])] + '</span>' : '') + '</p>';
-    html += '<p style="margin:0 0 6px">正解：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['ABCD'.indexOf(item.ans)] + '</span></p>';
+    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk5Sel[item.n] ? mk5Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk5Sel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mk5Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">正解：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['1234'.indexOf(item.ans)] + '</span></p>';
     html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ 不正解') + '</div>';
     html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
     var grp = mk5GroupById[item.g];
