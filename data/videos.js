@@ -7482,6 +7482,145 @@ var VIDEO_LIBRARY = {
     "vi": "Thông báo & hướng dẫn",
     "en": "Announcements & Guidance"
    }
+  },
+  {
+   "slug": "soudan-suru",
+   "date": "2026-11-25",
+   "situation": {
+    "jp": "相談する ― 難しいお客様への対応を上司に相談する",
+    "vi": "Tham khảo ý kiến cấp trên: cách xử lý yêu cầu khó của khách hàng",
+    "en": "Consulting a superior: how to handle a difficult client request"
+   },
+   "bjt_type": "Listening - business conversation (consulting a superior about a difficult client request)",
+   "duration_sec": 66,
+   "file": "assets/video-soudan-suru.mp4",
+   "preview_gif": "files/bjt-soudan-suru-preview.gif",
+   "tiktok_file": "bjt-soudan-suru-tiktok.mp4",
+   "dialogue": [
+    {
+     "speaker": "sato",
+     "jp": "課長、今よろしいですか。取引先の件で、ご相談があるのですが。",
+     "vi": "Trưởng phòng, giờ anh có tiện không ạ? Em có việc muốn hỏi ý kiến anh về đối tác ạ.",
+     "en": "Manager, do you have a moment? I'd like your advice on a client matter."
+    },
+    {
+     "speaker": "tanaka",
+     "jp": "ああ、いいよ。鈴木商事の件か。",
+     "vi": "À, được chứ. Chuyện của công ty Suzuki Shoji à?",
+     "en": "Sure. Is it about Suzuki Shoji?"
+    },
+    {
+     "speaker": "sato",
+     "jp": "はい。納期を一週間早めてほしいと、急に申し出がありまして……。",
+     "vi": "Dạ. Họ đột nhiên đề nghị muốn rút ngắn hạn giao hàng một tuần ạ……",
+     "en": "Yes. They suddenly asked us to move the delivery deadline a week earlier..."
+    },
+    {
+     "speaker": "tanaka",
+     "jp": "そうか。値引きの話も出ているんだろう？",
+     "vi": "Ra vậy. Thế chắc cũng có chuyện giảm giá nữa phải không?",
+     "en": "I see. And I suppose they also brought up a discount?"
+    },
+    {
+     "speaker": "sato",
+     "jp": "ええ。10％の値引きもご希望でして、対応に迷っています。",
+     "vi": "Vâng. Họ cũng muốn được giảm giá 10% nên em đang băn khoăn không biết xử lý thế nào.",
+     "en": "Yes. They also want a 10% discount, so I'm not sure how to handle it."
+    },
+    {
+     "speaker": "tanaka",
+     "jp": "うん。まず相手の事情を聞くことだ。なぜ急ぐのか、理由を確認しないと。",
+     "vi": "Ừ, trước hết phải nghe hoàn cảnh của họ đã. Phải xác nhận lý do họ vội chứ.",
+     "en": "First, listen to their situation. We need to find out why they're in a hurry."
+    },
+    {
+     "speaker": "sato",
+     "jp": "はい。理由によっては、一部だけ先に納品する方法もありますよね。",
+     "vi": "Dạ. Tùy lý do mà mình cũng có thể giao trước một phần, đúng không ạ?",
+     "en": "Yes. Depending on the reason, we could deliver part of the order first, couldn't we?"
+    },
+    {
+     "speaker": "tanaka",
+     "jp": "そうだな。分割納品なら、工場と調整できる。",
+     "vi": "Đúng vậy. Giao chia đợt thì có thể điều chỉnh được với nhà máy.",
+     "en": "Right. A split delivery is something we can arrange with the factory."
+    },
+    {
+     "speaker": "sato",
+     "jp": "かしこまりました。まず先方に連絡して、事情を伺ってみます。",
+     "vi": "Dạ vâng. Trước hết em sẽ liên lạc với họ để hỏi rõ hoàn cảnh ạ.",
+     "en": "Understood. I'll contact them first and ask about their situation."
+    },
+    {
+     "speaker": "tanaka",
+     "jp": "そうしてくれ。値引きは、検討してから折り返しで返事すればいい。",
+     "vi": "Cứ làm vậy nhé. Về giảm giá thì cứ xem xét đã rồi trả lời lại sau.",
+     "en": "Do that. For the discount, consider it first and reply later."
+    }
+   ],
+   "vocabulary": [
+    {
+     "jp": "相談",
+     "reading": "そうだん",
+     "vi": "tham khảo ý kiến",
+     "en": "consultation"
+    },
+    {
+     "jp": "取引先",
+     "reading": "とりひきさき",
+     "vi": "đối tác",
+     "en": "business partner, client"
+    },
+    {
+     "jp": "納期",
+     "reading": "のうき",
+     "vi": "hạn giao hàng",
+     "en": "delivery deadline"
+    },
+    {
+     "jp": "申し出",
+     "reading": "もうしで",
+     "vi": "đề nghị",
+     "en": "request, proposal"
+    },
+    {
+     "jp": "値引き",
+     "reading": "ねびき",
+     "vi": "giảm giá",
+     "en": "discount"
+    },
+    {
+     "jp": "対応",
+     "reading": "たいおう",
+     "vi": "cách xử lý",
+     "en": "handling, response"
+    },
+    {
+     "jp": "分割納品",
+     "reading": "ぶんかつ のうひん",
+     "vi": "giao hàng chia đợt",
+     "en": "split delivery"
+    },
+    {
+     "jp": "検討",
+     "reading": "けんとう",
+     "vi": "xem xét",
+     "en": "consideration, review"
+    },
+    {
+     "jp": "折り返し",
+     "reading": "おりかえし",
+     "vi": "liên lạc lại",
+     "en": "callback, reply"
+    }
+   ],
+   "voice": "native video-generation voices (method 2); per-video cast; documentary observational style: characters never look at the camera; burned-in JP/VI/EN subtitles",
+   "category": "iken-kokan",
+   "category_names": {
+    "jp": "意見交換",
+    "vi": "Trao đổi ý kiến",
+    "en": "Exchanging Opinions"
+   }
   }
  ]
 };
