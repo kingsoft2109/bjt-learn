@@ -12,7 +12,6 @@
       "title": "第1問 — 場面把握（デパートの1階・レジ前）",
       "mp3": "assets/ngay25-doan1.mp3",
       "desc": "問題1–3 · 下の絵を見て、4つの発言を聞き、絵に合う発言を選びましょう。1番は店員の行動、2番はポスターの文字、3番は時計の時刻についてです。音声は、問題番号（1番・2番・3番）のあと、4つの発言（1・2・3・4）を読みます。",
-      "visual": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/day25-L1a-scene.jpg\" alt=\"場面の絵：デパートの1階のレジ前で、店員がお客様に紙袋を渡している\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>",
       "lines": [
         "1番。",
         "1。",
@@ -150,7 +149,8 @@
       ],
       "ans": "1",
       "trap": "店員の行動 — 他の人の行動と取り違えないこと",
-      "explain": "Trong hình, nhân viên (áo xanh sau quầy レジ) đang đưa túi giấy cho khách; 2 là hành động của vị khách KHÁC đang xếp hàng với giỏ mua hàng (bẫy gắn nhầm người ↔ hành động); 3 và 4 không có ai làm trong ảnh."
+      "explain": "Trong hình, nhân viên (áo xanh sau quầy レジ) đang đưa túi giấy cho khách; 2 là hành động của vị khách KHÁC đang xếp hàng với giỏ mua hàng (bẫy gắn nhầm người ↔ hành động); 3 và 4 không có ai làm trong ảnh.",
+      "img": "assets/day25-L1a-scene.jpg"
     },
     {
       "n": 2,
@@ -164,7 +164,8 @@
       ],
       "ans": "2",
       "trap": "ポスターの文字 — 絵の文字を正確に読むこと",
-      "explain": "Poster đỏ trên tường ghi lớn 「セール」(kèm 全品20%オフ); các lựa chọn còn lại đều là chữ thường thấy trên poster nhưng không có trong ảnh này."
+      "explain": "Poster đỏ trên tường ghi lớn 「セール」(kèm 全品20%オフ); các lựa chọn còn lại đều là chữ thường thấy trên poster nhưng không có trong ảnh này.",
+      "img": "assets/day25-L1b-scene.jpg"
     },
     {
       "n": 3,
@@ -178,7 +179,8 @@
       ],
       "ans": "2",
       "trap": "時計の時刻 — 長針と短針を読み分けること",
-      "explain": "Kim giờ chỉ số 3, kim phút chỉ số 12 → 午後3時; 1/3/4 là các giờ hay gặp trong đề nghe, không khớp đồng hồ trong ảnh."
+      "explain": "Kim giờ chỉ số 3, kim phút chỉ số 12 → 午後3時; 1/3/4 là các giờ hay gặp trong đề nghe, không khớp đồng hồ trong ảnh.",
+      "img": "assets/day25-L1c-scene.jpg"
     },
     {
       "n": 4,
@@ -192,7 +194,8 @@
       ],
       "ans": "1",
       "trap": "田中は午後4時ごろ戻る — 待つのは自分から電話すること",
-      "explain": "Nhân viên đã nói 田中 sẽ về khoảng 4 giờ → người gọi hẹn gọi lại lúc đó là phù hợp nhất; 2 sai hướng (bảo NHÂN VIÊN chờ — người chờ phải là người gọi); 3 hỏi lại điều vừa được trả lời; 4 bịa thêm 出張 (không được nhắc tới)."
+      "explain": "Nhân viên đã nói 田中 sẽ về khoảng 4 giờ → người gọi hẹn gọi lại lúc đó là phù hợp nhất; 2 sai hướng (bảo NHÂN VIÊN chờ — người chờ phải là người gọi); 3 hỏi lại điều vừa được trả lời; 4 bịa thêm 出張 (không được nhắc tới).",
+      "img": "assets/day25-seg2-q4.jpg"
     },
     {
       "n": 5,
@@ -206,7 +209,8 @@
       ],
       "ans": "1",
       "trap": "新しい時間は午後3時",
-      "explain": "Giờ mới là 午後3時 (đổi từ 午後2時 sang 午後3時) → xác nhận lại giờ mới + cảm ơn; 2 và 4 giữ giờ cũ 午後2時; 3 bịa thành hủy họp."
+      "explain": "Giờ mới là 午後3時 (đổi từ 午後2時 sang 午後3時) → xác nhận lại giờ mới + cảm ơn; 2 và 4 giữ giờ cũ 午後2時; 3 bịa thành hủy họp.",
+      "img": "assets/day25-seg2-q5.jpg"
     },
     {
       "n": 6,
@@ -220,7 +224,8 @@
       ],
       "ans": "1",
       "trap": "メールアドレスをもらったあとの行動",
-      "explain": "Đã nhận được địa chỉ email → cảm ơn + hẹn gửi trong hôm nay; 2 quá mơ hồ (không nói sẽ làm gì); 3 là câu của phía nhân viên, người gọi nói thì vô nghĩa; 4 mâu thuẫn với việc gửi qua email vừa thống nhất."
+      "explain": "Đã nhận được địa chỉ email → cảm ơn + hẹn gửi trong hôm nay; 2 quá mơ hồ (không nói sẽ làm gì); 3 là câu của phía nhân viên, người gọi nói thì vô nghĩa; 4 mâu thuẫn với việc gửi qua email vừa thống nhất.",
+      "img": "assets/day25-seg2-q6.jpg"
     },
     {
       "n": 7,
@@ -234,7 +239,8 @@
       ],
       "ans": "1",
       "trap": "支払い期限は今月末",
-      "explain": "Hạn thanh toán là 今月末 → xác nhận trả trong tháng này; 2 và 4 dời sang 来月 (sai hạn); 3 nói về việc gửi hóa đơn, không liên quan tới hạn trả."
+      "explain": "Hạn thanh toán là 今月末 → xác nhận trả trong tháng này; 2 và 4 dời sang 来月 (sai hạn); 3 nói về việc gửi hóa đơn, không liên quan tới hạn trả.",
+      "img": "assets/day25-seg3-q7.jpg"
     },
     {
       "n": 8,
@@ -248,7 +254,8 @@
       ],
       "ans": "1",
       "trap": "支払い条件は月末締め翌月末払い",
-      "explain": "Đối phương đã đồng ý điều kiện 月末締め翌月末払い → tiến hành soạn hợp đồng theo đúng điều kiện đó; 2 đổi thành 当月末払い (sai điều kiện); 3/4 mâu thuẫn với việc vừa thống nhất."
+      "explain": "Đối phương đã đồng ý điều kiện 月末締め翌月末払い → tiến hành soạn hợp đồng theo đúng điều kiện đó; 2 đổi thành 当月末払い (sai điều kiện); 3/4 mâu thuẫn với việc vừa thống nhất.",
+      "img": "assets/day25-seg3-q8.jpg"
     },
     {
       "n": 9,
@@ -262,7 +269,8 @@
       ],
       "ans": "1",
       "trap": "すぐに再発行する — その場でお礼を言うこと",
-      "explain": "Nhân viên đã nhận lời phát hành lại ngay → cảm ơn + nhờ vả; 2 mâu thuẫn với câu vừa nghe (すぐに再発行いたします); 3 không liên quan; 4 dời việc sang 来週 trong khi nhân viên nói làm ngay."
+      "explain": "Nhân viên đã nhận lời phát hành lại ngay → cảm ơn + nhờ vả; 2 mâu thuẫn với câu vừa nghe (すぐに再発行いたします); 3 không liên quan; 4 dời việc sang 来週 trong khi nhân viên nói làm ngay.",
+      "img": "assets/day25-seg3-q9.jpg"
     },
     {
       "n": 10,
@@ -276,7 +284,8 @@
       ],
       "ans": "2",
       "trap": "総数・間違い・正しいの項目名を付けること",
-      "explain": "全部500件のうち120件が間違って表示されている; 500件 là tổng số; 380件 = 500−120 (số đúng); 620件 = 500+120 (cộng nhầm tổng với số sai — cùng họ lỗi Ngày 23 Câu 7: tổng / đã xong / còn lại)."
+      "explain": "全部500件のうち120件が間違って表示されている; 500件 là tổng số; 380件 = 500−120 (số đúng); 620件 = 500+120 (cộng nhầm tổng với số sai — cùng họ lỗi Ngày 23 Câu 7: tổng / đã xong / còn lại).",
+      "img": "assets/day25-seg4-q10.jpg"
     },
     {
       "n": 11,
@@ -290,7 +299,8 @@
       ],
       "ans": "2",
       "trap": "原因はデータの移行のミス",
-      "explain": "原因はデータの移行のミス; 1/3 là nguyên nhân plausible nhưng không được nêu; 4 mâu thuẫn (nguyên nhân đã rõ)."
+      "explain": "原因はデータの移行のミス; 1/3 là nguyên nhân plausible nhưng không được nêu; 4 mâu thuẫn (nguyên nhân đã rõ).",
+      "img": "assets/day25-seg4-q11.jpg"
     },
     {
       "n": 12,
@@ -304,7 +314,8 @@
       ],
       "ans": "2",
       "trap": "まだ〜ていない（未＋結果）",
-      "explain": "修正の最終確認はまだ部長からいただいていません — bẫy まだ〜ていない (dạng Nghe, sạch từ Ngày 14); hệ quả: 確認が終わり次第、ご報告いたします. 1 là bẫy \"đã xong rồi\" mặc định."
+      "explain": "修正の最終確認はまだ部長からいただいていません — bẫy まだ〜ていない (dạng Nghe, sạch từ Ngày 14); hệ quả: 確認が終わり次第、ご報告いたします. 1 là bẫy \"đã xong rồi\" mặc định.",
+      "img": "assets/day25-seg4-q12.jpg"
     }
   ],
   "instructions": "<li>聴解12問で <strong>40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>聴解4セット</strong> で、各セットに問題が3問あり、<strong>セットの3問はすべて1画面に一緒に</strong>、そのセットの再生ボタンのすぐ下に、CBT試験室形式の解答画面で表示されます — 聞いたら3問まとめて答えましょう。1問ずつ行き来する必要はありません。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、<strong>話者の名前は読み上げません</strong>。試験室と同じです。各セットの音声は、本番と同じ <strong>合図音（チャイム）</strong> から始まります。</li>\n          <li>セット1は <strong><span class=\"jp\">場面把握</span></strong>：デパートの1階・レジ前の絵 — 1番は店員の行動、2番はポスターの文字、3番は時計の時刻について、4つの発言を聞いて絵に合うものを選びます。絵をよく見てから聞きましょう。セット2は <strong><span class=\"jp\">発言聴解</span>（電話応対）</strong>：田中課長の外出、打ち合わせの時間変更、メールアドレス — 会話のあと、次に言うのに最もふさわしい発言を選びます。セット3は <strong><span class=\"jp\">発言聴解</span>（契約・請求）</strong>：支払い期限は今月末、支払い条件は月末締め翌月末払い、請求書の再発行 — 会話の内容と敬語の方向に注意しましょう。セット4は <strong><span class=\"jp\">総合聴解</span></strong>：新しい販売管理システムのトラブル — 在庫数：全部で500件のデータのうち、120件が間違って表示されています。数字ごとに項目名（総数・間違い・正しい）を結びつけましょう。</li>\n          <li>セット4に <strong><span class=\"jp\">まだ〜ていない</span></strong> の注意点の問題が1問あります — この表現が聞こえたら、4つの選択肢を見る前に「未＋結果」をすぐメモしましょう。「もう終わった」というタイプの選択肢は、最初に除外すべき定番の引っかけです。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです — 別の答えを選ぶと前の答えが置き換わります。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、ベトナム語訳付きのトランスクリプト、ミスノートが表示されます。</li>",

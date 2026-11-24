@@ -205,7 +205,8 @@
       ],
       "vi": [
         "Sản phẩm có lỗi, chúng tôi đã gây phiền phức lớn cho quý khách."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock3-L2a-scene.jpg\" alt=\"場面の絵：クレーム対応・謝罪の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2b",
@@ -221,7 +222,8 @@
       ],
       "vi": [
         "Anh hãy nộp bảng quyết toán chi phí trước ngày 25 tháng này."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock3-L2b-scene.jpg\" alt=\"場面の絵：経費精算の締め切りの場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2c",
@@ -237,7 +239,8 @@
       ],
       "vi": [
         "Hạn thanh toán của hóa đơn là ngày 10 tháng sau."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock3-L2c-scene.jpg\" alt=\"場面の絵：請求書の支払い期限の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2d",
@@ -253,7 +256,8 @@
       ],
       "vi": [
         "Tôi xin lỗi vì việc giao hàng đã bị chậm."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock3-L2d-scene.jpg\" alt=\"場面の絵：配送遅れの連絡の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2e",
@@ -269,7 +273,8 @@
       ],
       "vi": [
         "Khi kiểm hàng, tôi thấy số lượng ít hơn đơn đặt hàng 10 cái."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock3-L2e-scene.jpg\" alt=\"場面の絵：検品で数量不足の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2f",
@@ -285,7 +290,8 @@
       ],
       "vi": [
         "Về chiến dịch quảng cáo sản phẩm mới, tôi có thể bắt đầu từ tháng sau được không ạ?"
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock3-L2f-scene.jpg\" alt=\"場面の絵：キャンペーン提案の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2g",
@@ -911,7 +917,8 @@
         "15件"
       ],
       "ans": "2",
-      "explain": "Tháng này nhận 12 khiếu nại; 8 là số của tháng trước — bẫy gắn sai tháng."
+      "explain": "Tháng này nhận 12 khiếu nại; 8 là số của tháng trước — bẫy gắn sai tháng.",
+      "img": "assets/mock3-L3-q16.jpg"
     },
     {
       "n": 17,
@@ -924,7 +931,8 @@
         "部品Aの不具合"
       ],
       "ans": "3",
-      "explain": "Nguyên nhân là lỗi của linh kiện B, bắt đầu dùng từ tháng trước; linh kiện A không được nhắc đến."
+      "explain": "Nguyên nhân là lỗi của linh kiện B, bắt đầu dùng từ tháng trước; linh kiện A không được nhắc đến.",
+      "img": "assets/mock3-L3-q17.jpg"
     },
     {
       "n": 18,
@@ -937,7 +945,8 @@
         "まだ決まっていない"
       ],
       "ans": "1",
-      "explain": "Họ nóiお客様には来週の火曜日までに連絡します; thứ Sáu/thứ Hai là bẫy gắn sai ngày."
+      "explain": "Họ nóiお客様には来週の火曜日までに連絡します; thứ Sáu/thứ Hai là bẫy gắn sai ngày.",
+      "img": "assets/mock3-L3-q18.jpg"
     },
     {
       "n": 19,
@@ -950,7 +959,8 @@
         "月曜日から水曜日まで"
       ],
       "ans": "4",
-      "explain": "Chuyến công tác từ thứ Hai đến thứ Tư; 2泊3日 khớp với lịch này, các khoảng khác là nhiễu."
+      "explain": "Chuyến công tác từ thứ Hai đến thứ Tư; 2泊3日 khớp với lịch này, các khoảng khác là nhiễu.",
+      "img": "assets/mock3-L3-q19.jpg"
     },
     {
       "n": 20,
@@ -963,7 +973,8 @@
         "水曜日の午後1時"
       ],
       "ans": "2",
-      "explain": "Buổi họp 13:00 thứ Ba ở trụ sở đối tác; 8:00 thứ Hai chỉ là giờ tàu Shinkansen."
+      "explain": "Buổi họp 13:00 thứ Ba ở trụ sở đối tác; 8:00 thứ Hai chỉ là giờ tàu Shinkansen.",
+      "img": "assets/mock3-L3-q20.jpg"
     },
     {
       "n": 21,
@@ -976,7 +987,8 @@
         "まだ決まっていない"
       ],
       "ans": "3",
-      "explain": "Thông báo nói帰社後1週間以内に提出してください; trước chuyến đi và 1 tháng là bẫy."
+      "explain": "Thông báo nói帰社後1週間以内に提出してください; trước chuyến đi và 1 tháng là bẫy.",
+      "img": "assets/mock3-L3-q21.jpg"
     },
     {
       "n": 22,
@@ -989,7 +1001,8 @@
         "まだ決まっていない"
       ],
       "ans": "1",
-      "explain": "Hợp đồng hiện tại終わります vào cuối tháng sau; cuối tháng này là bẫy gắn sai tháng."
+      "explain": "Hợp đồng hiện tại終わります vào cuối tháng sau; cuối tháng này là bẫy gắn sai tháng.",
+      "img": "assets/mock3-L3-q22.jpg"
     },
     {
       "n": 23,
@@ -1002,7 +1015,8 @@
         "翌月10日に変更"
       ],
       "ans": "4",
-      "explain": "Hạn thanh toán đổi từ月末 sang翌月10日; giữ nguyên cuối tháng là thông tin cũ."
+      "explain": "Hạn thanh toán đổi từ月末 sang翌月10日; giữ nguyên cuối tháng là thông tin cũ.",
+      "img": "assets/mock3-L3-q23.jpg"
     },
     {
       "n": 24,
@@ -1015,7 +1029,8 @@
         "150万円"
       ],
       "ans": "2",
-      "explain": "Tự tính khớp audio: 12万円×12か月=144万円; giảm 5% → 144×0,95=136,8万円. 144万円 là tổng chưa giảm."
+      "explain": "Tự tính khớp audio: 12万円×12か月=144万円; giảm 5% → 144×0,95=136,8万円. 144万円 là tổng chưa giảm.",
+      "img": "assets/mock3-L3-q24.jpg"
     },
     {
       "n": 25,
@@ -1028,7 +1043,8 @@
         "まだ決まっていない"
       ],
       "ans": "3",
-      "explain": "Họ nói契約書は今週の金曜日までに用意します; tuần sau là bẫy gắn sai tuần."
+      "explain": "Họ nói契約書は今週の金曜日までに用意します; tuần sau là bẫy gắn sai tuần.",
+      "img": "assets/mock3-L3-q25.jpg"
     },
     {
       "n": 26,

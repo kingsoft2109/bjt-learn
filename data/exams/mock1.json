@@ -102,7 +102,8 @@
       ],
       "vi": [
         "Phiền em một chút, bản kế hoạch này, sửa lại trước sáng thứ Sáu giúp anh được không?"
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock1-L2a-scene.jpg\" alt=\"場面の絵：上司の指示の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2b",
@@ -118,7 +119,8 @@
       ],
       "vi": [
         "Sản phẩm tôi mua hôm trước, ngay từ khi nhận hàng đã không hoạt động. Tôi phải làm thế nào đây?"
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock1-L2b-scene.jpg\" alt=\"場面の絵：お客様の相談の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2c",
@@ -134,7 +136,8 @@
       ],
       "vi": [
         "Tháng này sản phẩm mới bán rất chạy, đúng là đang vào mùa đắt hàng nhất (kakiire-doki) nhỉ."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock1-L2c-scene.jpg\" alt=\"場面の絵：慣用表現の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L3",
@@ -418,7 +421,8 @@
         "来週の金曜日"
       ],
       "ans": "2",
-      "explain": "Họp là thứ Tư 14:00; thứ Ba chỉ di chuyển."
+      "explain": "Họp là thứ Tư 14:00; thứ Ba chỉ di chuyển.",
+      "img": "assets/mock1-L3-q7.jpg"
     },
     {
       "n": 8,
@@ -431,7 +435,8 @@
         "水曜日の夜から1泊予約した"
       ],
       "ans": "3",
-      "explain": "Khách sạn đã đặt 1 đêm từ tối thứ Ba."
+      "explain": "Khách sạn đã đặt 1 đêm từ tối thứ Ba.",
+      "img": "assets/mock1-L3-q8.jpg"
     },
     {
       "n": 9,
@@ -444,7 +449,8 @@
         "資料の印刷"
       ],
       "ans": "1",
-      "explain": "Bẫy まだ〜ていない: dữ liệu doanh số vẫn chưa được phòng kế toán gửi tới; vé tàu và khách sạn đều đã đặt xong."
+      "explain": "Bẫy まだ〜ていない: dữ liệu doanh số vẫn chưa được phòng kế toán gửi tới; vé tàu và khách sạn đều đã đặt xong.",
+      "img": "assets/mock1-L3-q9.jpg"
     },
     {
       "n": 10,

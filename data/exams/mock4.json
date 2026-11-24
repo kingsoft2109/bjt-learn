@@ -205,7 +205,8 @@
       ],
       "vi": [
         "Kết quả phỏng vấn chúng tôi sẽ thông báo trước thứ Sáu tuần sau."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock4-L2a-scene.jpg\" alt=\"場面の絵：採用・面接の結果連絡の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2b",
@@ -221,7 +222,8 @@
       ],
       "vi": [
         "Trong cuộc họp tuần sau, anh có thể thuyết trình về sản phẩm mới được không?"
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock4-L2b-scene.jpg\" alt=\"場面の絵：新製品の発表依頼の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2c",
@@ -237,7 +239,8 @@
       ],
       "vi": [
         "Tôi xin phép đến thăm quý công ty lúc 10 giờ sáng thứ Ba tuần sau."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock4-L2c-scene.jpg\" alt=\"場面の絵：顧客訪問のあいさつの場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2d",
@@ -253,7 +256,8 @@
       ],
       "vi": [
         "Tại triển lãm tháng sau, chúng tôi dự định chuẩn bị 500 cuốn tờ rơi."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock4-L2d-scene.jpg\" alt=\"場面の絵：展示会のパンフレットの場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2e",
@@ -269,7 +273,8 @@
       ],
       "vi": [
         "Để xét duyệt khoản vay, anh hãy nộp hồ sơ trước tuần sau."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock4-L2e-scene.jpg\" alt=\"場面の絵：融資の審査書類の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2f",
@@ -285,7 +290,8 @@
       ],
       "vi": [
         "Máy in ở văn phòng mới đã bị hỏng."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock4-L2f-scene.jpg\" alt=\"場面の絵：プリンターの故障の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2g",
@@ -301,7 +307,8 @@
       ],
       "vi": [
         "Anh hãy xem qua tài liệu này giúp tôi."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock4-L2g-scene.jpg\" alt=\"場面の絵：慣用表現「目を通す」の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2h",
@@ -317,7 +324,8 @@
       ],
       "vi": [
         "Cô ấy là nhân viên chu đáo nhỉ."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock4-L2h-scene.jpg\" alt=\"場面の絵：慣用表現「気が利く」の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2i",
@@ -333,7 +341,8 @@
       ],
       "vi": [
         "Vì đã quyết định tuyển dụng chính thức nên anh hãy đi làm từ ngày 1 tháng sau."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock4-L2i-scene.jpg\" alt=\"場面の絵：内定の連絡の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2j",
@@ -349,7 +358,8 @@
       ],
       "vi": [
         "Về lịch họp, đã đổi thành từ 10 giờ sáng ngày kia."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock4-L2j-scene.jpg\" alt=\"場面の絵：会議の日程変更の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L3a",
@@ -909,7 +919,8 @@
         "20名"
       ],
       "ans": "3",
-      "explain": "Vòng xét hồ sơ có 12 người qua; 30 là tổng số ứng viên — bẫy gắn sai con số."
+      "explain": "Vòng xét hồ sơ có 12 người qua; 30 là tổng số ứng viên — bẫy gắn sai con số.",
+      "img": "assets/mock4-L3-q16.jpg"
     },
     {
       "n": 17,
@@ -922,7 +933,8 @@
         "まだ決まっていない"
       ],
       "ans": "1",
-      "explain": "Phỏng vấn vào thứ Hai và thứ Ba tuần sau; tuần này và thứ Tư/thứ Năm là nhiễu."
+      "explain": "Phỏng vấn vào thứ Hai và thứ Ba tuần sau; tuần này và thứ Tư/thứ Năm là nhiễu.",
+      "img": "assets/mock4-L3-q17.jpg"
     },
     {
       "n": 18,
@@ -935,7 +947,8 @@
         "面接の1週間後"
       ],
       "ans": "4",
-      "explain": "Họ nói結果は面接の1週間後にお知らせします; ngay trong ngày, hôm sau và 2 tuần sau là nhiễu."
+      "explain": "Họ nói結果は面接の1週間後にお知らせします; ngay trong ngày, hôm sau và 2 tuần sau là nhiễu.",
+      "img": "assets/mock4-L3-q18.jpg"
     },
     {
       "n": 19,
@@ -948,7 +961,8 @@
         "来月17日から19日まで"
       ],
       "ans": "2",
-      "explain": "Triển lãm từ ngày 15 đến ngày 17 tháng sau; các khoảng khác là nhiễu."
+      "explain": "Triển lãm từ ngày 15 đến ngày 17 tháng sau; các khoảng khác là nhiễu.",
+      "img": "assets/mock4-L3-q19.jpg"
     },
     {
       "n": 20,
@@ -961,7 +975,8 @@
         "2階のA-12"
       ],
       "ans": "4",
-      "explain": "Gian hàng ở tầng 2, khu A-12; tầng 1/tầng 3 và khu B-12 là bẫy gắn sai nhãn."
+      "explain": "Gian hàng ở tầng 2, khu A-12; tầng 1/tầng 3 và khu B-12 là bẫy gắn sai nhãn.",
+      "img": "assets/mock4-L3-q20.jpg"
     },
     {
       "n": 21,
@@ -974,7 +989,8 @@
         "まだ決まっていない"
       ],
       "ans": "1",
-      "explain": "Thông báo nói入場料は無料です; 1.000 yên và 500 yên là nhiễu."
+      "explain": "Thông báo nói入場料は無料です; 1.000 yên và 500 yên là nhiễu.",
+      "img": "assets/mock4-L3-q21.jpg"
     },
     {
       "n": 22,
@@ -987,7 +1003,8 @@
         "2,000万円"
       ],
       "ans": "3",
-      "explain": "Khoản vay là 1,000万円; 500万円 và 800万円 là nhiễu, 2,000万円 là số gấp đôi."
+      "explain": "Khoản vay là 1,000万円; 500万円 và 800万円 là nhiễu, 2,000万円 là số gấp đôi.",
+      "img": "assets/mock4-L3-q22.jpg"
     },
     {
       "n": 23,
@@ -1000,7 +1017,8 @@
         "年5%"
       ],
       "ans": "2",
-      "explain": "Lãi suất là年2.5%; các mức khác là nhiễu gần đúng."
+      "explain": "Lãi suất là年2.5%; các mức khác là nhiễu gần đúng.",
+      "img": "assets/mock4-L3-q23.jpg"
     },
     {
       "n": 24,
@@ -1013,7 +1031,8 @@
         "来月の22日"
       ],
       "ans": "4",
-      "explain": "Ngày trả thường là 20 hằng tháng nhưng tháng sau ngày 20 rơi vào thứ Bảy nên lần đầu lùi sang thứ Hai 22; ngày 20 tháng sau là bẫy gắn sai ngày."
+      "explain": "Ngày trả thường là 20 hằng tháng nhưng tháng sau ngày 20 rơi vào thứ Bảy nên lần đầu lùi sang thứ Hai 22; ngày 20 tháng sau là bẫy gắn sai ngày.",
+      "img": "assets/mock4-L3-q24.jpg"
     },
     {
       "n": 25,
@@ -1026,7 +1045,8 @@
         "まだ決まっていない"
       ],
       "ans": "1",
-      "explain": "Họ nói必要書類は今週の金曜日までに銀行へ提出します; tuần sau là bẫy gắn sai tuần."
+      "explain": "Họ nói必要書類は今週の金曜日までに銀行へ提出します; tuần sau là bẫy gắn sai tuần.",
+      "img": "assets/mock4-L3-q25.jpg"
     },
     {
       "n": 26,

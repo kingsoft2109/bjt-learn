@@ -205,7 +205,8 @@
       ],
       "vi": [
         "Lần này, do sản phẩm có lỗi nên chúng tôi đã gây phiền hà lớn cho quý khách."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock5-L2a-scene.jpg\" alt=\"場面の絵：クレームの謝罪の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2b",
@@ -221,7 +222,8 @@
       ],
       "vi": [
         "Khách sạn cho chuyến công tác tôi đã đặt trước khách sạn gần nhà ga rồi."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock5-L2b-scene.jpg\" alt=\"場面の絵：出張のホテルの手配の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2c",
@@ -237,7 +239,8 @@
       ],
       "vi": [
         "Vì hàng tồn kho của sản phẩm A sắp hết nên anh hãy đặt thêm 100 sản phẩm."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock5-L2c-scene.jpg\" alt=\"場面の絵：在庫の発注依頼の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2d",
@@ -253,7 +256,8 @@
       ],
       "vi": [
         "Hệ thống quản lý bán hàng đang gặp sự cố nên số lượng tồn kho không hiển thị đúng."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock5-L2d-scene.jpg\" alt=\"場面の絵：システムの不具合の報告の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2e",
@@ -913,7 +917,8 @@
         "50件"
       ],
       "ans": "4",
-      "explain": "Họ nóiクレームが今月50件寄せられています; 30件/40件/60件 là nhiễu gần đúng."
+      "explain": "Họ nóiクレームが今月50件寄せられています; 30件/40件/60件 là nhiễu gần đúng.",
+      "img": "assets/mock5-L3-q16.jpg"
     },
     {
       "n": 17,
@@ -926,7 +931,8 @@
         "まだ分かっていない"
       ],
       "ans": "2",
-      "explain": "Họ nói原因は部品の不具合です; giao hàng trễ, vấn đề giá và \"chưa rõ\" đều không có trong hội thoại."
+      "explain": "Họ nói原因は部品の不具合です; giao hàng trễ, vấn đề giá và \"chưa rõ\" đều không có trong hội thoại.",
+      "img": "assets/mock5-L3-q17.jpg"
     },
     {
       "n": 18,
@@ -939,7 +945,8 @@
         "対応しない"
       ],
       "ans": "3",
-      "explain": "Họ nói不具合のある商品は無償で交換します; sửa có phí, chỉ nhận trả hàng và không xử lý đều ngược với hội thoại."
+      "explain": "Họ nói不具合のある商品は無償で交換します; sửa có phí, chỉ nhận trả hàng và không xử lý đều ngược với hội thoại.",
+      "img": "assets/mock5-L3-q18.jpg"
     },
     {
       "n": 19,
@@ -952,7 +959,8 @@
         "来月7日から9日まで"
       ],
       "ans": "1",
-      "explain": "Thông báo nói出張は来月5日から7日まで; các khoảng khác là nhiễu."
+      "explain": "Thông báo nói出張は来月5日から7日まで; các khoảng khác là nhiễu.",
+      "img": "assets/mock5-L3-q19.jpg"
     },
     {
       "n": 20,
@@ -965,7 +973,8 @@
         "新幹線"
       ],
       "ans": "4",
-      "explain": "Thông báo nói移動は新幹線を使います; máy bay, xe buýt và ô tô là nhiễu."
+      "explain": "Thông báo nói移動は新幹線を使います; máy bay, xe buýt và ô tô là nhiễu.",
+      "img": "assets/mock5-L3-q20.jpg"
     },
     {
       "n": 21,
@@ -978,7 +987,8 @@
         "まだ決まっていない"
       ],
       "ans": "3",
-      "explain": "Thông báo nói5日の午前10時に東京駅に集合してください; 9 giờ sáng là bẫy gắn sai giờ, ga Osaka là bẫy gắn sai địa điểm."
+      "explain": "Thông báo nói5日の午前10時に東京駅に集合してください; 9 giờ sáng là bẫy gắn sai giờ, ga Osaka là bẫy gắn sai địa điểm.",
+      "img": "assets/mock5-L3-q21.jpg"
     },
     {
       "n": 22,
@@ -991,7 +1001,8 @@
         "800個"
       ],
       "ans": "2",
-      "explain": "Họ nói現在の在庫は300個です; 500 là dự kiến bán trong tháng, 800 là số lượng đặt hàng — bẫy gắn sai con số."
+      "explain": "Họ nói現在の在庫は300個です; 500 là dự kiến bán trong tháng, 800 là số lượng đặt hàng — bẫy gắn sai con số.",
+      "img": "assets/mock5-L3-q22.jpg"
     },
     {
       "n": 23,
@@ -1004,7 +1015,8 @@
         "300個"
       ],
       "ans": "1",
-      "explain": "Họ nói800個発注します; 500 là dự kiến bán, 300 là tồn kho hiện tại — bẫy gắn sai con số."
+      "explain": "Họ nói800個発注します; 500 là dự kiến bán, 300 là tồn kho hiện tại — bẫy gắn sai con số.",
+      "img": "assets/mock5-L3-q23.jpg"
     },
     {
       "n": 24,
@@ -1017,7 +1029,8 @@
         "来週の金曜日"
       ],
       "ans": "4",
-      "explain": "Họ nói納品は来週の金曜日です; tuần này và thứ Hai/thứ Tư tuần sau là nhiễu."
+      "explain": "Họ nói納品は来週の金曜日です; tuần này và thứ Hai/thứ Tư tuần sau là nhiễu.",
+      "img": "assets/mock5-L3-q24.jpg"
     },
     {
       "n": 25,
@@ -1030,7 +1043,8 @@
         "納品の1週間後"
       ],
       "ans": "3",
-      "explain": "Họ nói検品は納品の翌日の土曜日に行います (giao thứ Sáu nên hôm sau là thứ Bảy); ngày giao hàng, thứ Sáu hôm sau và 1 tuần sau là nhiễu."
+      "explain": "Họ nói検品は納品の翌日の土曜日に行います (giao thứ Sáu nên hôm sau là thứ Bảy); ngày giao hàng, thứ Sáu hôm sau và 1 tuần sau là nhiễu.",
+      "img": "assets/mock5-L3-q25.jpg"
     },
     {
       "n": 26,

@@ -205,7 +205,8 @@
       ],
       "vi": [
         "Anh hãy cho tôi biết lý do anh ứng tuyển vào công ty chúng tôi."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2a-scene.jpg\" alt=\"場面の絵：面接・人事の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2b",
@@ -221,7 +222,8 @@
       ],
       "vi": [
         "Chị có thể chỉ giúp tôi vị trí gian hàng ở triển lãm được không?"
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2b-scene.jpg\" alt=\"場面の絵：展示会の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2c",
@@ -237,7 +239,8 @@
       ],
       "vi": [
         "Để xét duyệt khoản vay cần báo cáo quyết toán của 3 kỳ."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2c-scene.jpg\" alt=\"場面の絵：融資相談の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2d",
@@ -253,7 +256,8 @@
       ],
       "vi": [
         "Điều hòa ở phòng họp đã không chạy nữa rồi."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2d-scene.jpg\" alt=\"場面の絵：設備修理依頼の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2e",
@@ -269,7 +273,8 @@
       ],
       "vi": [
         "Tồn kho linh kiện chỉ còn rất ít. Anh có thể đặt hàng giúp tôi được không?"
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2e-scene.jpg\" alt=\"場面の絵：在庫発注の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2f",
@@ -285,7 +290,8 @@
       ],
       "vi": [
         "Về đề xuất sản phẩm mới, tôi có thể trình bày ở cuộc họp tuần sau được không ạ?"
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2f-scene.jpg\" alt=\"場面の絵：プレゼン提案の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2g",
@@ -301,7 +307,8 @@
       ],
       "vi": [
         "Tháng này đơn hàng nhiều nên tôi không xoay xở kịp."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2g-scene.jpg\" alt=\"場面の絵：慣用表現「手が回らない」の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2h",
@@ -317,7 +324,8 @@
       ],
       "vi": [
         "Cuối cùng tôi cũng đã thống nhất được với bên đối tác."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2h-scene.jpg\" alt=\"場面の絵：慣用表現「話がまとまる」の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2i",
@@ -333,7 +341,8 @@
       ],
       "vi": [
         "Tôi xin lỗi về việc giao hàng chậm lần trước."
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2i-scene.jpg\" alt=\"場面の絵：謝罪・依頼の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L2j",
@@ -349,7 +358,8 @@
       ],
       "vi": [
         "Về buổi họp tuần sau, chị có thể đổi từ thứ Ba sang thứ Tư được không ạ?"
-      ]
+      ],
+      "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2j-scene.jpg\" alt=\"場面の絵：日程調整の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
       "id": "L3a",
@@ -954,7 +964,8 @@
         "今月10日"
       ],
       "ans": "2",
-      "explain": "Triển lãm từ ngày 10 đến 12; ngày 9 chỉ là ngày dựng gian hàng (設営) — bẫy gắn sai ngày."
+      "explain": "Triển lãm từ ngày 10 đến 12; ngày 9 chỉ là ngày dựng gian hàng (設営) — bẫy gắn sai ngày.",
+      "img": "assets/mock2-L3-q19.jpg"
     },
     {
       "n": 20,
@@ -967,7 +978,8 @@
         "B-12"
       ],
       "ans": "3",
-      "explain": "Thông báo nói rõブース番号はA-12; A-11/B-12 là nhiễu gần đúng."
+      "explain": "Thông báo nói rõブース番号はA-12; A-11/B-12 là nhiễu gần đúng.",
+      "img": "assets/mock2-L3-q20.jpg"
     },
     {
       "n": 21,
@@ -980,7 +992,8 @@
         "10日の午前9時"
       ],
       "ans": "1",
-      "explain": "Dựng gian hàng từ 15:00 ngày 9; 14:30 chỉ là giờ tập trung, ngày 10 là ngày khai mạc."
+      "explain": "Dựng gian hàng từ 15:00 ngày 9; 14:30 chỉ là giờ tập trung, ngày 10 là ngày khai mạc.",
+      "img": "assets/mock2-L3-q21.jpg"
     },
     {
       "n": 22,
@@ -993,7 +1006,8 @@
         "25個"
       ],
       "ans": "4",
-      "explain": "Đã kiểm 1.000 cái, lỗi 25 cái (2,5%); 10/15/20 là số nhiễu."
+      "explain": "Đã kiểm 1.000 cái, lỗi 25 cái (2,5%); 10/15/20 là số nhiễu.",
+      "img": "assets/mock2-L3-q22.jpg"
     },
     {
       "n": 23,
@@ -1006,7 +1020,8 @@
         "機械の故障"
       ],
       "ans": "2",
-      "explain": "Nguyên nhân là寸法 của linh kiện A; các lựa chọn khác không được nhắc đến."
+      "explain": "Nguyên nhân là寸法 của linh kiện A; các lựa chọn khác không được nhắc đến.",
+      "img": "assets/mock2-L3-q23.jpg"
     },
     {
       "n": 24,
@@ -1019,7 +1034,8 @@
         "不良品も一緒に出荷する"
       ],
       "ans": "3",
-      "explain": "Chỉ xuất trước phần đạt kiểm tra, hàng lỗi không xuất — không phải xuất hết hay dừng hết."
+      "explain": "Chỉ xuất trước phần đạt kiểm tra, hàng lỗi không xuất — không phải xuất hết hay dừng hết.",
+      "img": "assets/mock2-L3-q24.jpg"
     },
     {
       "n": 25,
@@ -1032,7 +1048,8 @@
         "まだ決まっていない"
       ],
       "ans": "1",
-      "explain": "Kiểm tra lại vào thứ Hai tuần sau; thứ Sáu/thứ Tư là bẫy gắn sai ngày."
+      "explain": "Kiểm tra lại vào thứ Hai tuần sau; thứ Sáu/thứ Tư là bẫy gắn sai ngày.",
+      "img": "assets/mock2-L3-q25.jpg"
     },
     {
       "n": 26,
