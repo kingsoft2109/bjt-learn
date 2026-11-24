@@ -251,7 +251,7 @@ ExamEngine.prototype.updateQuestion = function(n){
   var box = el(this.p + 'qOptions' + n);
   if(!box) return;
   box.innerHTML = '';
-  var letters = ['A','B','C','D'];
+  var letters = ['1','2','3','4'];
   var self = this;
   item.opts.forEach(function(opt, idx){
     var b = document.createElement('button');
@@ -411,9 +411,9 @@ ExamEngine.prototype.grade = function(auto){
     card.innerHTML = html;
     card.querySelector('.q-text').textContent = item.q;
     var spans = card.querySelectorAll('span.jp');
-    if(self.sel[item.n] && spans[0]) spans[0].textContent = item.opts['ABCD'.indexOf(self.sel[item.n])];
+    if(self.sel[item.n] && spans[0]) spans[0].textContent = item.opts['1234'.indexOf(self.sel[item.n])];
     var ansSpan = spans[self.sel[item.n] ? 1 : 0];
-    if(ansSpan) ansSpan.textContent = item.opts['ABCD'.indexOf(item.ans)];
+    if(ansSpan) ansSpan.textContent = item.opts['1234'.indexOf(item.ans)];
     var ps = card.querySelectorAll('p');
     ps[ps.length-1].textContent = item.explain;
     rv.appendChild(card);
