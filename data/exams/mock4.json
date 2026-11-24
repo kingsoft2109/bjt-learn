@@ -713,7 +713,7 @@
         "3",
         "4"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Trong hình, người phụ nữ đang trao đổi với nhân viên ở quầy giao dịch ngân hàng, tay cầm sổ ngân hàng; không ai mua hàng ở quầy thu ngân, chuyển hàng hay thuyết trình."
     },
     {
@@ -726,7 +726,7 @@
         "3",
         "4"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Trong hình, người đàn ông đang giới thiệu sản phẩm tại gian hàng triển lãm; không ai viết email, nói điện thoại hay đóng gói sản phẩm."
     },
     {
@@ -739,7 +739,7 @@
         "3",
         "4"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Trong hình, người đàn ông đang mở thùng các-tông trong văn phòng mới; không ai dùng máy photocopy, thuyết trình hay nghe điện thoại ở quầy lễ tân."
     },
     {
@@ -752,7 +752,7 @@
         "3",
         "4"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Trong hình, người phụ nữ vừa nói chuyện điện thoại vừa ghi chép vào sổ; không ai soạn tài liệu trên máy tính, dùng máy photocopy hay thuyết trình."
     },
     {
@@ -765,7 +765,7 @@
         "3",
         "4"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Trong hình, người đàn ông đang trao đổi danh thiếp với khách hàng ở sảnh tiếp khách; không ai dùng máy tính một mình, nói điện thoại hay chuyển hàng."
     },
     {
@@ -778,8 +778,8 @@
         "知りませんでした。",
         "面接はやめます。"
       ],
-      "ans": "A",
-      "explain": "Đáp lại thông báo về kết quả phỏng vấn, ứng viên cảm ơn và nhờ cậy một cách lịch sự là phù hợp nhất; B/C/D đều phủ nhận hoặc từ chối."
+      "ans": "1",
+      "explain": "Đáp lại thông báo về kết quả phỏng vấn, ứng viên cảm ơn và nhờ cậy một cách lịch sự là phù hợp nhất; 2/3/4 đều phủ nhận hoặc từ chối."
     },
     {
       "n": 7,
@@ -791,8 +791,8 @@
         "はい、かしこまりました。準備いたします。",
         "発表は嫌です。"
       ],
-      "ans": "C",
-      "explain": "Nhân viên nhận lời và xác nhận sẽ chuẩn bị là phù hợp nhất; A/B/D đều từ chối yêu cầu của cấp trên."
+      "ans": "3",
+      "explain": "Nhân viên nhận lời và xác nhận sẽ chuẩn bị là phù hợp nhất; 1/2/4 đều từ chối yêu cầu của cấp trên."
     },
     {
       "n": 8,
@@ -804,8 +804,8 @@
         "時間は決まっていません。",
         "訪問はできません。"
       ],
-      "ans": "A",
-      "explain": "Khách đáp lại lời hẹn thăm một cách lịch sự, hoan nghênh chuyến thăm là phù hợp nhất; B/C/D đều từ chối hoặc phủ nhận lịch hẹn."
+      "ans": "1",
+      "explain": "Khách đáp lại lời hẹn thăm một cách lịch sự, hoan nghênh chuyến thăm là phù hợp nhất; 2/3/4 đều từ chối hoặc phủ nhận lịch hẹn."
     },
     {
       "n": 9,
@@ -817,8 +817,8 @@
         "展示会は中止です。",
         "パンフレットはいりません。"
       ],
-      "ans": "B",
-      "explain": "Nhân viên xác nhận và nhận việc đặt in tờ rơi là phù hợp; A/C/D đều phản đối hoặc phủ nhận kế hoạch."
+      "ans": "2",
+      "explain": "Nhân viên xác nhận và nhận việc đặt in tờ rơi là phù hợp; 1/3/4 đều phản đối hoặc phủ nhận kế hoạch."
     },
     {
       "n": 10,
@@ -830,8 +830,8 @@
         "審査は不要です。",
         "融資はいりません。"
       ],
-      "ans": "A",
-      "explain": "Nhân viên xác nhận sẽ nộp hồ sơ đúng hạn bằng kính ngữ là phù hợp nhất; B/C/D đều từ chối hoặc phủ nhận."
+      "ans": "1",
+      "explain": "Nhân viên xác nhận sẽ nộp hồ sơ đúng hạn bằng kính ngữ là phù hợp nhất; 2/3/4 đều từ chối hoặc phủ nhận."
     },
     {
       "n": 11,
@@ -843,8 +843,8 @@
         "新しいオフィスに引っ越しません。",
         "すぐに修理を手配します。"
       ],
-      "ans": "D",
-      "explain": "Máy in hỏng thì phải thu xếp sửa ngay; A coi nhẹ sự cố, B/C đều tránh né vấn đề."
+      "ans": "4",
+      "explain": "Máy in hỏng thì phải thu xếp sửa ngay; 1 coi nhẹ sự cố, 2/3 đều tránh né vấn đề."
     },
     {
       "n": 12,
@@ -856,8 +856,8 @@
         "目を閉じて休む",
         "資料をコピーする"
       ],
-      "ans": "B",
-      "explain": "目を通す là thành ngữ chỉ đọc lướt qua để kiểm tra nội dung; A/C/D đều hiểu theo nghĩa đen hoặc sai hẳn."
+      "ans": "2",
+      "explain": "目を通す là thành ngữ chỉ đọc lướt qua để kiểm tra nội dung; 1/3/4 đều hiểu theo nghĩa đen hoặc sai hẳn."
     },
     {
       "n": 13,
@@ -869,8 +869,8 @@
         "周りに気を配ることができる",
         "気を使いすぎる"
       ],
-      "ans": "C",
-      "explain": "気が利く là thành ngữ chỉ chu đáo, biết quan tâm đến xung quanh; A là tâm trạng xấu, B là nóng tính, D là lo lắng quá mức."
+      "ans": "3",
+      "explain": "気が利く là thành ngữ chỉ chu đáo, biết quan tâm đến xung quanh; 1 là tâm trạng xấu, 2 là nóng tính, 4 là lo lắng quá mức."
     },
     {
       "n": 14,
@@ -882,8 +882,8 @@
         "1日は都合が悪いです。",
         "ありがとうございます。1日から出社いたします。"
       ],
-      "ans": "D",
-      "explain": "Ứng viên cảm ơn và xác nhận sẽ đi làm từ ngày 1 là phù hợp nhất; A/B từ chối nhận việc, C từ chối ngày đi làm."
+      "ans": "4",
+      "explain": "Ứng viên cảm ơn và xác nhận sẽ đi làm từ ngày 1 là phù hợp nhất; 1/2 từ chối nhận việc, 3 từ chối ngày đi làm."
     },
     {
       "n": 15,
@@ -895,8 +895,8 @@
         "変更できません。",
         "会議には出ません。"
       ],
-      "ans": "B",
-      "explain": "Xác nhận lại giờ mới 10 giờ sáng ngày kia là cách đáp phù hợp; A/C/D đều từ chối việc đổi lịch."
+      "ans": "2",
+      "explain": "Xác nhận lại giờ mới 10 giờ sáng ngày kia là cách đáp phù hợp; 1/3/4 đều từ chối việc đổi lịch."
     },
     {
       "n": 16,
@@ -908,7 +908,7 @@
         "12名",
         "20名"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Vòng xét hồ sơ có 12 người qua; 30 là tổng số ứng viên — bẫy gắn sai con số."
     },
     {
@@ -921,7 +921,7 @@
         "来週の水曜日と木曜日",
         "まだ決まっていない"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Phỏng vấn vào thứ Hai và thứ Ba tuần sau; tuần này và thứ Tư/thứ Năm là nhiễu."
     },
     {
@@ -934,7 +934,7 @@
         "面接の2週間後",
         "面接の1週間後"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Họ nói結果は面接の1週間後にお知らせします; ngay trong ngày, hôm sau và 2 tuần sau là nhiễu."
     },
     {
@@ -947,7 +947,7 @@
         "今月15日から17日まで",
         "来月17日から19日まで"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Triển lãm từ ngày 15 đến ngày 17 tháng sau; các khoảng khác là nhiễu."
     },
     {
@@ -960,7 +960,7 @@
         "3階のA-12",
         "2階のA-12"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Gian hàng ở tầng 2, khu A-12; tầng 1/tầng 3 và khu B-12 là bẫy gắn sai nhãn."
     },
     {
@@ -973,7 +973,7 @@
         "500円です",
         "まだ決まっていない"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Thông báo nói入場料は無料です; 1.000 yên và 500 yên là nhiễu."
     },
     {
@@ -986,7 +986,7 @@
         "1,000万円",
         "2,000万円"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Khoản vay là 1,000万円; 500万円 và 800万円 là nhiễu, 2,000万円 là số gấp đôi."
     },
     {
@@ -999,7 +999,7 @@
         "年3.5%",
         "年5%"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Lãi suất là年2.5%; các mức khác là nhiễu gần đúng."
     },
     {
@@ -1012,7 +1012,7 @@
         "来月の21日",
         "来月の22日"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Ngày trả thường là 20 hằng tháng nhưng tháng sau ngày 20 rơi vào thứ Bảy nên lần đầu lùi sang thứ Hai 22; ngày 20 tháng sau là bẫy gắn sai ngày."
     },
     {
@@ -1025,7 +1025,7 @@
         "来月まで",
         "まだ決まっていない"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Họ nói必要書類は今週の金曜日までに銀行へ提出します; tuần sau là bẫy gắn sai tuần."
     },
     {
@@ -1038,7 +1038,7 @@
         "木曜日の午後2時",
         "木曜日の午後3時"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Audio ghi đè tài liệu: đổi sang thứ Năm 15:00; thứ Tư 14:00 là lịch cũ, thứ Năm 14:00 là bẫy gắn sai giờ."
     },
     {
@@ -1051,7 +1051,7 @@
         "オンラインに変更になった",
         "まだ決まっていない"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Chỉ đổi ngày/giờ; điểm đến vẫn là A社本社, không thay đổi."
     },
     {
@@ -1064,7 +1064,7 @@
         "今月15日",
         "来月20日"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Audio ghi đè thông báo: ngày chuyển lùi sang ngày 15 tháng sau; ngày 10 là ngày cũ."
     },
     {
@@ -1077,7 +1077,7 @@
         "変更はない",
         "新しい番号は来月お知らせする"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Audio xác nhận電話番号は変更ありません; đã đổi và \"tháng sau mới báo\" là nhiễu."
     },
     {
@@ -1090,7 +1090,7 @@
         "移転日の1週間後",
         "まだ決まっていない"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Thông báo và audio đều nói業務開始は移転日の翌日; ngày chuyển và 1 tuần sau là nhiễu."
     },
     {
@@ -1103,7 +1103,7 @@
         "209,000円",
         "219,000円"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Tự tính khớp audio: 小計190,000 + 消費税10% (19,000) = 209,000円. 190,000 là小計 chưa cộng thuế."
     },
     {
@@ -1116,7 +1116,7 @@
         "来月末",
         "今月15日"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Audio ghi đè báo giá: thời hạn gia hạn sang ngày 15 tháng sau; cuối tháng này là hạn cũ."
     },
     {
@@ -1129,7 +1129,7 @@
         "送料はかからない",
         "送料は別途かかる"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Audio và báo giá đều nói送料は別途かかります; miễn phí và \"đã gồm trong tổng\" ngược với tài liệu."
     },
     {
@@ -1142,7 +1142,7 @@
         "25%",
         "20%"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Biểu đồ và audio đều nói製品Aは35%で最も多い; 30% là số cũ của sản phẩm B, 25% là số mới của sản phẩm B, 20% là của sản phẩm C."
     },
     {
@@ -1155,7 +1155,7 @@
         "20%",
         "25%"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Audio sửa biểu đồ: sản phẩm B từ 30% thành 25%; 30% là số cũ trong biểu đồ, 20% là số của sản phẩm C và của その他 sau khi sửa."
     },
     {
@@ -1168,7 +1168,7 @@
         "製品Cが製品Bより多い",
         "その他が最も多い"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Sau khi sửa, thị phần là A 35% > B 25% > C 20% = その他 20%; sản phẩm A cao nhất, sản phẩm C không hơn sản phẩm B."
     },
     {
@@ -1181,7 +1181,7 @@
         "35万円",
         "40万円"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Audio sửa email: phí tham gia đổi từ 30万円 thành 35万円; 30万円 là phí ghi trong email, 25万円 và 40万円 là nhiễu."
     },
     {
@@ -1194,7 +1194,7 @@
         "今月15日から17日まで",
         "来月17日から19日まで"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Email và audio đều nói会期は来月15日から17日まで; các khoảng khác là nhiễu."
     },
     {
@@ -1207,7 +1207,7 @@
         "来月15日",
         "まだ決まっていない"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Audio xác nhận申込締切は今月末のままです; cuối tháng sau là nhiễu, ngày 15 tháng sau là ngày bắt đầu triển lãm."
     },
     {
@@ -1220,7 +1220,7 @@
         "幕張メッセに変更になった",
         "東京ビッグサイトのまま"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Audio nói会場は東京ビッグサイトのままです; Osaka và Makuhari Messe là nhiễu."
     },
     {
@@ -1233,7 +1233,7 @@
         "220名",
         "190名"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Audio sửa email: số hài lòng tăng từ 180 lên 200名; 180 là số cũ trong email."
     },
     {
@@ -1246,7 +1246,7 @@
         "90名",
         "30名"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Audio xác nhận不満は30名のままです; 70 là số \"bình thường\" mới, 90 là số \"bình thường\" cũ."
     },
     {
@@ -1259,7 +1259,7 @@
         "100名",
         "30名"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Tự tính khớp audio: 300 − 200 − 30 = 70名; 90 là số cũ trong email, 30 là số không hài lòng."
     },
     {
@@ -1272,7 +1272,7 @@
         "470個",
         "450個"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Audio sửa email: số đạt đổi từ 480 thành 470個; 480 là số cũ, 500 là tổng số kiểm tra."
     },
     {
@@ -1285,7 +1285,7 @@
         "40個",
         "10個"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Audio nói不合格が30個になりました; 20 là số cũ trong email."
     },
     {
@@ -1298,7 +1298,7 @@
         "5%",
         "3%"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Tự tính khớp audio: 30 ÷ 500 = 6%; 4% là tỉ lệ cũ trong email (20 ÷ 500)."
     },
     {
@@ -1311,7 +1311,7 @@
         "110名",
         "120名"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Audio sửa phiếu: số người tham gia đổi từ 100 thành 120名; 100 là số cũ trong phiếu."
     },
     {
@@ -1324,7 +1324,7 @@
         "会議室C",
         "オンライン"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Audio nói会場は会議室Aから会議室Bに変更になりました; phòng A là địa điểm cũ."
     },
     {
@@ -1337,7 +1337,7 @@
         "来月5日の午後2時",
         "来月6日の午後2時"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Phiếu và audio đều nói来月5日の午後2時から; buổi sáng và tháng này/ngày 6 là nhiễu."
     },
     {
@@ -1350,7 +1350,7 @@
         "4,000円",
         "無料"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Audio xác nhận参加費も5,000円のままです; 6,000円 và 4,000円 là nhiễu."
     },
     {
@@ -1363,7 +1363,7 @@
         "し",
         "した"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Cần dạng て形: 配布してください = hãy phát tài liệu; 配布する/配布し/配布した đều sai dạng khi đi với ください."
     },
     {
@@ -1376,7 +1376,7 @@
         "し",
         "して"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Muốn nói \"muốn xem xét\" phải dùng ます-stem + たい: 検討し + たい = 検討したい; 検討する/検討した/検討して đều không đi với たい."
     },
     {
@@ -1389,7 +1389,7 @@
         "お答えする",
         "答え"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Cụm khiêm nhượng ngữ お答えいたします = chúng tôi xin trả lời; お答えして/お答えする không đi với いたします, 答え thiếu お."
     },
     {
@@ -1402,7 +1402,7 @@
         "出した",
         "出して"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Cần dạng て形: 発注を出してください = hãy đặt hàng; 出し/出す/出した đều không tạo thành câu yêu cầu với ください."
     },
     {
@@ -1415,7 +1415,7 @@
         "ください",
         "なさいます"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Cụm cố định お問い合わせください; します/いたします là hành động của người viết (sai hướng), なさいます không đi với お問い合わせ ở đây."
     },
     {
@@ -1428,7 +1428,7 @@
         "されます",
         "ございます"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Người viết tự thông báo — khiêm nhượng ngữ ご連絡いたします; なさいます/されます là tôn kính ngữ cho hành động của đối phương, ございます không đi với ご連絡."
     },
     {
@@ -1441,7 +1441,7 @@
         "いたします",
         "ください"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Câu yêu cầu lịch sự: お越しください = xin mời đến; なさいます/されます/いたします đều không tạo thành câu yêu cầu ở đây."
     },
     {
@@ -1454,7 +1454,7 @@
         "お持ち",
         "お持ちする"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Cụm お持ちください = xin mang theo; お持ちして/お持ちし/お持ちする đều sai dạng khi đi với ください."
     },
     {
@@ -1467,7 +1467,7 @@
         "なさいます",
         "されます"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Cụm cố định お問い合わせください; いただきます/なさいます/されます đều không đi với お問い合わせ ở cuối thư."
     },
     {
@@ -1480,7 +1480,7 @@
         "する",
         "した"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Cần dạng て形 với おります: お待ちしております; お待ちし/お待ちする/お待ちした đều sai dạng."
     },
     {
@@ -1493,7 +1493,7 @@
         "ございました",
         "あります"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Chuyến thăm đã diễn ra 先日 nên dùng quá khứ ありがとうございました; ございます là hiện tại, いたします/あります không đi với ありがとう."
     },
     {
@@ -1506,7 +1506,7 @@
         "いただいた",
         "いただいて"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "ご覧いただきました = quý khách đã xem (khiêm nhượng ngữ + ました); いただく/いただいた/いただいて đều sai dạng khi đi với ました."
     },
     {
@@ -1519,7 +1519,7 @@
         "努めた",
         "努めて"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Cần dạng て形 với まいります: 努めてまいります; 努め/努める/努めた đều không đi với まいります."
     },
     {
@@ -1532,7 +1532,7 @@
         "いただける",
         "いただけれ"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Cụm lịch sự ご連絡いただけます (nhờ đối phương liên hệ); くださいます là câu trần thuật tôn kính, không phải câu nhờ vả; いただける/いただけれ sai dạng với ます."
     },
     {
@@ -1545,7 +1545,7 @@
         "して",
         "しております"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Cần dạng て形: お待ちしております; いたし/いたしま không đi với お待ち, しております lặp lại おります."
     },
     {
@@ -1558,7 +1558,7 @@
         "ご案内",
         "ご連絡"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Cụm ご連絡します = tôi xin thông báo (khiêm nhượng ngữ); 連絡します thiếu お, お知らせ/ご案内 không đi với について〜します theo cách này."
     },
     {
@@ -1571,7 +1571,7 @@
         "されます",
         "ございます"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Người viết tự thông báo — khiêm nhượng ngữ ご連絡いたします; なさいます/されます là tôn kính ngữ cho đối phương, ございます không đi với ご連絡."
     },
     {
@@ -1584,7 +1584,7 @@
         "なさいます",
         "されます"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Cụm cố định ご確認ください; いただきます/なさいます/されます đều không đi với ご確認 ở đây."
     },
     {
@@ -1597,7 +1597,7 @@
         "お問い合わせ",
         "連絡なさって"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Cụm cố định お気軽にお問い合わせください; 聞いて/電話して thiếu mức lịch sự, 連絡なさって sai hướng kính ngữ."
     },
     {
@@ -1610,7 +1610,7 @@
         "なさいます",
         "申し上げます"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Cụm kết thư よろしくお願い申し上げます; chọn いたします sẽ thành お願いいたしますします (thừa します), します/なさいます sai thể kính ngữ."
     },
     {
@@ -1623,7 +1623,7 @@
         "来月10日",
         "今月11日"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Thư ghi来月10日に再度訪問させていただきたく存じます; tháng này và ngày 11 là bẫy gắn sai tháng/ngày."
     },
     {
@@ -1636,7 +1636,7 @@
         "午後2時から3時まで",
         "午前10時から11時まで"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Thư ghi訪問の時間は午前10時から11時まで; các khung giờ khác là nhiễu gần đúng."
     },
     {
@@ -1649,7 +1649,7 @@
         "何もしない",
         "まだ決まっていない"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Thư ghiご都合が悪い場合は、営業部までご連絡ください; hủy chuyến thăm và \"không làm gì\" ngược với thư."
     },
     {
@@ -1662,8 +1662,8 @@
         "午前9時から午後7時まで",
         "午前10時から午後7時まで"
       ],
-      "ans": "C",
-      "explain": "Thông báo ghi変更後：午前9時から午後7時まで; A là giờ cũ, B/D là bẫy gắn sai giờ mở cửa/đóng cửa."
+      "ans": "3",
+      "explain": "Thông báo ghi変更後：午前9時から午後7時まで; 1 là giờ cũ, 2/4 là bẫy gắn sai giờ mở cửa/đóng cửa."
     },
     {
       "n": 75,
@@ -1675,7 +1675,7 @@
         "来月末から",
         "今月末から"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Thông báo ghi来月1日より変更いたします; tháng này và cuối tháng là nhiễu."
     },
     {
@@ -1688,7 +1688,7 @@
         "なくなった",
         "火曜日のままで変更はない"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Thông báo ghi定休日は火曜日のまま変更ございません; đổi sang thứ Hai/thứ Tư và \"bỏ ngày nghỉ\" đều ngược với văn bản."
     },
     {
@@ -1701,8 +1701,8 @@
         "自宅に持ち帰ってよい",
         "家族も使ってよい"
       ],
-      "ans": "B",
-      "explain": "Quy định第1条 ghi会社のパソコンを業務以外に使用してはなりません; A ngược hoàn toàn, C/D không có trong văn bản."
+      "ans": "2",
+      "explain": "Quy định第1条 ghi会社のパソコンを業務以外に使用してはなりません; 1 ngược hoàn toàn, 3/4 không có trong văn bản."
     },
     {
       "n": 78,
@@ -1714,7 +1714,7 @@
         "3か月に1回変更しなければならない",
         "他の人に教えてもよい"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Quy định第2条 ghiパスワードは3か月に1回変更しなければなりません; 1 năm một lần là nhiễu, \"không cần đổi\" và \"được cho người khác biết\" đều ngược với văn bản."
     },
     {
@@ -1727,7 +1727,7 @@
         "誰にも言わずに持ち出す",
         "事前に上司の許可を得なければならない"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Quy định第3条 ghi事前に上司の許可を得なければなりません; mang tự do, báo cáo sau và mang lén đều ngược với văn bản."
     },
     {
@@ -1740,7 +1740,7 @@
         "開かずに情報システム部へ連絡する",
         "削除して誰にも言わない"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Quy định第4条 ghi開かずに情報システム部へ連絡しなければなりません; mở ngay và trả lời ngược với quy định, xóa lặng lẽ cũng không đúng quy trình."
     }
   ]

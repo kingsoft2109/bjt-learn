@@ -339,7 +339,7 @@
         "受付で荷物を預ける",
         "一度会社に戻る"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Người phụ nữ đến sớm; lễ tân bảo chờ ở sảnh (ロビーでお待ちください), đến giờ sẽ gọi — nên cô ấy chờ ở sảnh."
     },
     {
@@ -352,7 +352,7 @@
         "今日の午前中",
         "来週の月曜日"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Chuyến xe hôm nay đã xuất phát nên không đổi được; hàng giữ nguyên lịch sáng mai."
     },
     {
@@ -365,7 +365,7 @@
         "詰まった紙を取り除いた",
         "コピーをあきらめた"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Cô ấy mở nắp bên hông và lấy tờ giấy bị kẹt ra (取れました)."
     },
     {
@@ -378,8 +378,8 @@
         "直しておくので、見ておいてください。",
         "かしこまりました。金曜日の午前中までに修正いたします。"
       ],
-      "ans": "D",
-      "explain": "Đáp lại cấp trên phải dùng kính ngữ và nhắc lại hạn chót. A có 心配しないでください (mất lịch sự với sếp), B đổi hạn, C sai kính ngữ."
+      "ans": "4",
+      "explain": "Đáp lại cấp trên phải dùng kính ngữ và nhắc lại hạn chót. 1 có 心配しないでください (mất lịch sự với sếp), 2 đổi hạn, 3 sai kính ngữ."
     },
     {
       "n": 5,
@@ -391,8 +391,8 @@
         "申し訳ございません。すぐに新しいものとお取り替えいたします。",
         "返品は受け付けておりません。"
       ],
-      "ans": "C",
-      "explain": "Sản phẩm lỗi ngay khi nhận — phải xin lỗi và đề xuất đổi mới ngay. A/B đổ lỗi cho khách, D từ chối thẳng đều không phù hợp."
+      "ans": "3",
+      "explain": "Sản phẩm lỗi ngay khi nhận — phải xin lỗi và đề xuất đổi mới ngay. 1/2 đổ lỗi cho khách, 4 từ chối thẳng đều không phù hợp."
     },
     {
       "n": 6,
@@ -404,7 +404,7 @@
         "在庫を処分する時期",
         "決算の時期"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "かき入れ時 là thời kỳ buôn bán phát đạt, bận rộn nhất vì khách đông."
     },
     {
@@ -417,7 +417,7 @@
         "水曜日の午前中",
         "来週の金曜日"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Họp là thứ Tư 14:00; thứ Ba chỉ di chuyển."
     },
     {
@@ -430,7 +430,7 @@
         "火曜日の夜から1泊予約した",
         "水曜日の夜から1泊予約した"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Khách sạn đã đặt 1 đêm từ tối thứ Ba."
     },
     {
@@ -443,7 +443,7 @@
         "ホテルの予約",
         "資料の印刷"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Bẫy まだ〜ていない: dữ liệu doanh số vẫn chưa được phòng kế toán gửi tới; vé tàu và khách sạn đều đã đặt xong."
     },
     {
@@ -456,7 +456,7 @@
         "勤務時間",
         "経費の申請方法"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Từ ngày 1 tháng sau, cách quyết toán chi phí chuyển từ giấy sang hệ thống trên máy tính/điện thoại."
     },
     {
@@ -469,7 +469,7 @@
         "紙の申請書に貼って提出する",
         "毎月、総務部に持っていく"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Phải giữ hóa đơn gốc cho đến khi đăng ký xong (登録が終わるまで捨てないでください)."
     },
     {
@@ -482,7 +482,7 @@
         "翌月の10日",
         "翌月の25日"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "25日 là hạn nộp申請, không phải ngày trả tiền; tiền chuyển vào ngày 10 tháng sau."
     },
     {
@@ -495,7 +495,7 @@
         "第1会議室",
         "オンライン"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Audio ghi đè memo: phòng 2 đang sửa nên chuyển sang phòng họp số 5."
     },
     {
@@ -508,7 +508,7 @@
         "会議の後で受け取る",
         "印刷しなくてよい"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Audio nói không cần in, sẽ chia sẻ qua tablet — khác với memo."
     },
     {
@@ -521,7 +521,7 @@
         "30分早くなった",
         "まだ決まっていない"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Chỉ đổi địa điểm; giờ vẫn 10:00 như cũ."
     },
     {
@@ -534,7 +534,7 @@
         "8月",
         "9月"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Tháng 9 cao nhất: 210件."
     },
     {
@@ -547,7 +547,7 @@
         "555件",
         "585件"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "180 + 165 + 210 = 555件. (405 là tổng 4–6月 — bẫy nhầm kỳ.)"
     },
     {
@@ -560,7 +560,7 @@
         "キャンペーンを行った",
         "前の月より減った"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "Tháng 6 giảm so với tháng 5 (150 → 135件); chiến dịch là của tháng 9."
     },
     {
@@ -573,7 +573,7 @@
         "1,500円",
         "400円"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Đọc đúng hàng 〜10kg trong bảng: 1,100円."
     },
     {
@@ -586,7 +586,7 @@
         "1,500円",
         "1,900円"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "1,100 + 400（速達）= 1,500円."
     },
     {
@@ -599,7 +599,7 @@
         "3,000円",
         "2,900円"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Thùng tốc hành 1,500 + thùng thường 1,100 = 2,600円."
     },
     {
@@ -612,7 +612,7 @@
         "60個",
         "80個"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Audio sửa email: A đổi từ 50 thành 60個."
     },
     {
@@ -625,7 +625,7 @@
         "来週金曜日",
         "来週月曜日"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "B giữ nguyên lịch trong email: thứ Hai tuần sau."
     },
     {
@@ -638,7 +638,7 @@
         "数量の変更",
         "住所の間違い"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Email ghi rõ B chậm vì thiếu hàng tồn kho."
     },
     {
@@ -651,7 +651,7 @@
         "お祝い",
         "お見舞い"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Giao hàng chậm thì gửi mail xin lỗi（お詫び）; お礼 là cảm ơn, お祝い là chúc mừng, お見舞い dùng khi thăm người ốm/bị nạn."
     },
     {
@@ -664,7 +664,7 @@
         "見積",
         "請求"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Bên mua đặt hàng thêm là 発注； 受注 là phía nhận đơn, 見積 là báo giá, 請求 là yêu cầu thanh toán."
     },
     {
@@ -677,7 +677,7 @@
         "踏まえて",
         "越えて"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "〜を踏まえて = dựa trên/căn cứ vào (ý kiến trong cuộc họp) để xem lại kế hoạch."
     },
     {
@@ -690,7 +690,7 @@
         "増加した",
         "上昇した"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "～を上回る là cụm đúng cho \"vượt (mốc so sánh)\"; 増加した・上昇した không đi với を, 超過 thường dùng cho giới hạn/số cho phép."
     },
     {
@@ -703,8 +703,8 @@
         "なさいます",
         "ございます"
       ],
-      "ans": "A",
-      "explain": "Người viết tự liên hệ — khiêm nhượng ngữ ご連絡いたします. B/C là tôn kính ngữ dùng cho hành động của đối phương."
+      "ans": "1",
+      "explain": "Người viết tự liên hệ — khiêm nhượng ngữ ご連絡いたします. 2/3 là tôn kính ngữ dùng cho hành động của đối phương."
     },
     {
       "n": 30,
@@ -716,7 +716,7 @@
         "別紙",
         "参考"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "File đính kèm email là 添付ファイル; 同封 dùng cho vật bỏ chung trong phong bì thư giấy."
     },
     {
@@ -729,7 +729,7 @@
         "ございましたら",
         "なさいましたら"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Cụm cố định lịch sự ご不明な点がございましたら."
     },
     {
@@ -742,7 +742,7 @@
         "ご苦労さまです",
         "恐れ入ります"
       ],
-      "ans": "D",
+      "ans": "4",
       "explain": "お忙しいところ恐れ入りますが là cụm mở đầu chuẩn khi nhờ việc lúc đối phương bận; ご苦労さまです dùng nói với cấp dưới."
     },
     {
@@ -755,7 +755,7 @@
         "1階ロビー",
         "4階の会議室"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Văn bản ghi rõ tầng 3（会議室 và 食堂）không dùng được trong thời gian thi công."
     },
     {
@@ -768,7 +768,7 @@
         "予約は不要",
         "3階を予約する"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Cần phòng họp thì đặt phòng tầng 2 hoặc 4 qua hệ thống đặt phòng."
     },
     {
@@ -781,7 +781,7 @@
         "休憩はできるが食事はできない",
         "工事期間中は使えない"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Sảnh tầng 1 chỉ để nghỉ tạm, không được ăn uống ở đó."
     },
     {
@@ -794,7 +794,7 @@
         "来月1日だけ",
         "まだ決まっていない"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "工事期間中（来月1日〜末日）."
     },
     {
@@ -807,7 +807,7 @@
         "計画より5%下回った",
         "既存製品が伸びを支えた"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "前年同期比で8%増加; phần tăng do sản phẩm mới, và vượt kế hoạch 5% (không phải dưới)."
     },
     {
@@ -820,7 +820,7 @@
         "価格競争の激化",
         "サポート体制の不足"
       ],
-      "ans": "C",
+      "ans": "3",
       "explain": "Văn bản ghi nguyên nhân là cạnh tranh giá ngày càng gay gắt."
     },
     {
@@ -833,7 +833,7 @@
         "新製品の販売地域を3地域に絞る",
         "新製品の販売を終了する"
       ],
-      "ans": "A",
+      "ans": "1",
       "explain": "Q4 mở rộng vùng bán sản phẩm mới từ 3 lên 5 vùng; sản phẩm cũ không giảm giá mà tăng cường hỗ trợ để khác biệt hóa."
     },
     {
@@ -846,7 +846,7 @@
         "販売地域の一覧",
         "価格競争への抗議"
       ],
-      "ans": "B",
+      "ans": "2",
       "explain": "Toàn văn gồm hai nửa: kết quả quý 3 và phương hướng quý 4."
     }
   ]
