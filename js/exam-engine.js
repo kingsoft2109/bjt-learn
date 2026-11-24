@@ -171,7 +171,16 @@ ExamEngine.prototype.buildGroups = function(){
       opts.className = 'options'; opts.id = self.p + 'qOptions' + item.n;
       opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','問題の答え ' + item.n);
 
-      card.appendChild(meta); card.appendChild(qt); card.appendChild(opts);
+      card.appendChild(meta);
+      if(item.img){
+        var qimg = document.createElement('div');
+        qimg.style.cssText = 'margin:18px 22px 2px;text-align:center';
+        var qim = document.createElement('img');
+        qim.src = item.img; qim.alt = '場面の絵';
+        qim.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
+        qimg.appendChild(qim); card.appendChild(qimg);
+      }
+      card.appendChild(qt); card.appendChild(opts);
       (function(n){ card.addEventListener('click', function(){ self.setActiveQ(n, false); }); })(item.n);
       group.appendChild(card);
     });
