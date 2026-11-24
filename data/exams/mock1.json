@@ -463,7 +463,8 @@
     "経費の申請方法"
    ],
    "ans": "4",
-   "explain": "Từ ngày 1 tháng sau, cách quyết toán chi phí chuyển từ giấy sang hệ thống trên máy tính/điện thoại."
+   "explain": "Từ ngày 1 tháng sau, cách quyết toán chi phí chuyển từ giấy sang hệ thống trên máy tính/điện thoại.",
+   "img": "assets/mock1-L4-q10.jpg"
   },
   {
    "n": 11,
@@ -476,7 +477,8 @@
     "毎月、総務部に持っていく"
    ],
    "ans": "2",
-   "explain": "Phải giữ hóa đơn gốc cho đến khi đăng ký xong (登録が終わるまで捨てないでください)."
+   "explain": "Phải giữ hóa đơn gốc cho đến khi đăng ký xong (登録が終わるまで捨てないでください).",
+   "img": "assets/mock1-L4-q11.jpg"
   },
   {
    "n": 12,
@@ -489,7 +491,8 @@
     "翌月の25日"
    ],
    "ans": "3",
-   "explain": "25日 là hạn nộp申請, không phải ngày trả tiền; tiền chuyển vào ngày 10 tháng sau."
+   "explain": "25日 là hạn nộp申請, không phải ngày trả tiền; tiền chuyển vào ngày 10 tháng sau.",
+   "img": "assets/mock1-L4-q12.jpg"
   },
   {
    "n": 13,

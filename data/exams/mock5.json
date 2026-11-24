@@ -273,7 +273,8 @@
    ],
    "vi": [
     "Ngày phát hành sản phẩm mới đã được quyết định là ngày 20 tháng sau."
-   ]
+   ],
+   "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock5-L2e-scene.jpg\" alt=\"場面の絵：クレームの謝罪の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
   },
   {
    "id": "L2f",
@@ -289,7 +290,8 @@
    ],
    "vi": [
     "Xin mời anh nhất định hãy đến dự buổi giới thiệu tuần sau."
-   ]
+   ],
+   "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock5-L2f-scene.jpg\" alt=\"場面の絵：クレームの謝罪の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
   },
   {
    "id": "L2g",
@@ -305,7 +307,8 @@
    ],
    "vi": [
     "Vì tôi đang bận chuẩn bị chuyển nhà nên anh có thể giúp tôi một tay được không?"
-   ]
+   ],
+   "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock5-L2g-scene.jpg\" alt=\"場面の絵：クレームの謝罪の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
   },
   {
    "id": "L2h",
@@ -321,7 +324,8 @@
    ],
    "vi": [
     "Vì là sản phẩm bán chạy nên hiện tại sản phẩm B đã hết hàng."
-   ]
+   ],
+   "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock5-L2h-scene.jpg\" alt=\"場面の絵：クレームの謝罪の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
   },
   {
    "id": "L2i",
@@ -337,7 +341,8 @@
    ],
    "vi": [
     "Sản phẩm quý khách đang tìm ở quầy hàng tầng 3 ạ."
-   ]
+   ],
+   "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock5-L2i-scene.jpg\" alt=\"場面の絵：クレームの謝罪の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
   },
   {
    "id": "L2j",
@@ -353,7 +358,8 @@
    ],
    "vi": [
     "Buổi giới thiệu về hệ thống mới sẽ diễn ra từ 2 giờ chiều thứ Tư tuần sau."
-   ]
+   ],
+   "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock5-L2j-scene.jpg\" alt=\"場面の絵：クレームの謝罪の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
   },
   {
    "id": "L3a",

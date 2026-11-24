@@ -925,7 +925,8 @@
     "金曜日の午後2時"
    ],
    "ans": "3",
-   "explain": "Buổi trình bày là木曜日午後2時; thứ Tư chỉ là ngày hàng mẫu đến, thứ Tư 14:00 là bẫy gắn sai ngày."
+   "explain": "Buổi trình bày là木曜日午後2時; thứ Tư chỉ là ngày hàng mẫu đến, thứ Tư 14:00 là bẫy gắn sai ngày.",
+   "img": "assets/mock2-L3-q16.jpg"
   },
   {
    "n": 17,
@@ -938,7 +939,8 @@
     "サンプル品の注文"
    ],
    "ans": "1",
-   "explain": "Bẫy まだ〜ていない: dữ liệu của phòng Marketing vẫn chưa đến; slide sẽ xong trước ngày mai, hội trường đã chốt phòng 3, hàng mẫu đã đặt."
+   "explain": "Bẫy まだ〜ていない: dữ liệu của phòng Marketing vẫn chưa đến; slide sẽ xong trước ngày mai, hội trường đã chốt phòng 3, hàng mẫu đã đặt.",
+   "img": "assets/mock2-L3-q17.jpg"
   },
   {
    "n": 18,
@@ -951,7 +953,8 @@
     "水曜日"
    ],
    "ans": "4",
-   "explain": "Hàng mẫu dự kiến đến thứ Tư (水曜日に届く予定です)."
+   "explain": "Hàng mẫu dự kiến đến thứ Tư (水曜日に届く予定です).",
+   "img": "assets/mock2-L3-q18.jpg"
   },
   {
    "n": 19,
