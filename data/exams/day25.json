@@ -10,8 +10,7 @@
   "segments": {
     "1": {
       "title": "第1問 — 場面把握（デパートの1階・レジ前）",
-      "mp3": "assets/ngay25-doan1.mp3",
-      "desc": "問題1–3 · 下の絵を見て、4つの発言を聞き、絵に合う発言を選びましょう。1番は店員の行動、2番はポスターの文字、3番は時計の時刻についてです。音声は、問題番号（1番・2番・3番）のあと、4つの発言（1・2・3・4）を読みます。",
+      "desc": "問題1–3 · 下の絵を見て、4つの発言を聞き、絵に合う発言を選びましょう。1番は店員の行動、2番はポスターの文字、3番は時計の時刻についてです。音声は問題ごとに分かれています。各問題カードの音声ボタンを押すと、その問題番号のあと、4つの発言（1・2・3・4）を読みます。",
       "lines": [
         "1番。",
         "1。",
@@ -150,7 +149,8 @@
       "ans": "1",
       "trap": "店員の行動 — 他の人の行動と取り違えないこと",
       "explain": "Trong hình, nhân viên (áo xanh sau quầy レジ) đang đưa túi giấy cho khách; 2 là hành động của vị khách KHÁC đang xếp hàng với giỏ mua hàng (bẫy gắn nhầm người ↔ hành động); 3 và 4 không có ai làm trong ảnh.",
-      "img": "assets/day25-L1a-scene.jpg"
+      "img": "assets/day25-L1a-scene.jpg",
+      "audio": "assets/day25-L1-q1.mp3"
     },
     {
       "n": 2,
@@ -165,7 +165,8 @@
       "ans": "2",
       "trap": "ポスターの文字 — 絵の文字を正確に読むこと",
       "explain": "Poster đỏ trên tường ghi lớn 「セール」(kèm 全品20%オフ); các lựa chọn còn lại đều là chữ thường thấy trên poster nhưng không có trong ảnh này.",
-      "img": "assets/day25-L1b-scene.jpg"
+      "img": "assets/day25-L1b-scene.jpg",
+      "audio": "assets/day25-L1-q2.mp3"
     },
     {
       "n": 3,
@@ -180,7 +181,8 @@
       "ans": "2",
       "trap": "時計の時刻 — 長針と短針を読み分けること",
       "explain": "Kim giờ chỉ số 3, kim phút chỉ số 12 → 午後3時; 1/3/4 là các giờ hay gặp trong đề nghe, không khớp đồng hồ trong ảnh.",
-      "img": "assets/day25-L1c-scene.jpg"
+      "img": "assets/day25-L1c-scene.jpg",
+      "audio": "assets/day25-L1-q3.mp3"
     },
     {
       "n": 4,
