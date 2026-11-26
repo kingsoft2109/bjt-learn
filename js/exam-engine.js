@@ -27,6 +27,7 @@ function ExamEngine(cfg){
   this.started = false;
   this.submitted = false;
   this.mode = 'real';
+  this.singleQ = (cfg.singleQ === true);
   this.remain = cfg.timeSeconds;
   this.timerId = null;
 
@@ -250,6 +251,17 @@ ExamEngine.prototype.markActiveCard = function(){
     var c = el(this.p + 'qcard-' + i);
     if(c) c.classList.toggle('current', i === this.current);
   }
+  if(this.singleQ){
+    for(var j=1;j<=this.qCount;j++){
+      var cj = el(this.p + 'qcard-' + j);
+      if(cj) cj.style.display = (j === this.current) ? '' : 'none';
+    }
+    var curSeg = this.cfg.questions[this.current-1] ? this.cfg.questions[this.current-1].seg : null;
+    this.segNums.forEach(function(s){
+      var g = el(this.p + 'SegGroup' + s);
+      if(g) g.style.display = (s === curSeg) ? '' : 'none';
+    }.bind(this));
+  }
 };
 
 ExamEngine.prototype.setActiveQ = function(n, scroll){
@@ -314,8 +326,13 @@ ExamEngine.prototype.toggleFlag = function(n){
 };
 
 ExamEngine.prototype.gotoQ = function(n){
-  if(n>this.qCount) n = 1;
-  if(n<1) n = 1;
+  if(this.singleQ){
+    if(n>this.qCount) n = this.qCount;
+    if(n<1) n = 1;
+  } else {
+    if(n>this.qCount) n = 1;
+    if(n<1) n = 1;
+  }
   this.setActiveQ(n, true);
 };
 
@@ -649,6 +666,15 @@ ExamEngine.prototype.generateHTML = function(){
   var suffix = this.idSuffix();
 
   var html = '';
+  if(cfg.singleQ){
+    html += '<style>'
+      + '#examDay' + dayNum + ' .qcard{max-width:1020px;margin-left:auto;margin-right:auto}'
+      + '#examDay' + dayNum + ' .seg-banner{max-width:1020px;margin-left:auto;margin-right:auto}'
+      + '#examDay' + dayNum + ' .q-text{font-size:21px;line-height:1.75}'
+      + '#examDay' + dayNum + ' .d1opt{font-size:17px;padding:16px 18px}'
+      + '#examDay' + dayNum + ' .qcard img{max-height:54vh;width:auto;max-width:100%}'
+      + '</style>';
+  }
   html += '<main class="wrap hidden" id="examDay' + dayNum + '">';
 
   html += '<div class="cbt-head"><div>';
