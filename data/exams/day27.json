@@ -72,8 +72,7 @@
     },
     "2": {
       "title": "第2問 — 発言聴解（顧客訪問・アポイント）",
-      "mp3": "assets/ngay27-doan2.mp3",
-      "desc": "問題4–6 · 顧客訪問・アポイント — 2人の会話を聞き、次に言うのに最もふさわしい発言を選びましょう。受付での来訪、11月24日の訪問の時間変更、初対面のあいさつの3つの場面です。",
+      "desc": "問題4–6 · 顧客訪問・アポイント — 2人の会話を聞き、次に言うのに最もふさわしい発言を選びましょう。受付での来訪、11月24日の訪問の時間変更、初対面のあいさつの3つの場面です。 音声は問題ごとに分かれています。各問題カードの音声ボタンを押すと、その場面の会話のあと、質問と4つの発言（1・2・3・4）を読みます。",
       "lines": [
         "ABC商事でございます。どのようなご用件でしょうか。",
         "ABC商事の佐藤さんと、午前11時にお約束をしております。鈴木と申します。",
@@ -197,6 +196,7 @@
         "かしこまりました。鈴木はただいま会議中です。"
       ],
       "ans": "1",
+      "audio": "assets/day27-L2-q4.mp3",
       "trap": "佐藤は11時に戻る — 11時は戻る時間",
       "explain": "Khách đã hẹn 11 giờ với 佐藤 → lễ tân báo 佐藤 đang họp, khoảng 11 giờ về là phù hợp nhất (câu trả lời phải mở ra bước tiếp theo: chờ/gọi lại); 2 đảo ngược (11 giờ là giờ VỀ, không phải giờ đi); 3 bịa thêm nghỉ làm; 4 gắn nhầm tên (鈴木 là khách, không phải người đang họp).",
       "img": "assets/day27-seg2-q4.jpg"
@@ -212,6 +212,7 @@
         "はい、午後2時に変更します。"
       ],
       "ans": "1",
+      "audio": "assets/day27-L2-q5.mp3",
       "trap": "新しい時間は午後2時",
       "explain": "Giờ mới là 午後2時 (đổi từ 午前10時 sang 午後2時 ngày 11月24日) → xác nhận lại giờ mới + cảm ơn; 2 giữ giờ cũ 午前10時; 3 bịa thành hủy thăm; 4 nói \"tôi sẽ đổi\" trong khi nhân viên đã xác nhận xong — sai vai.",
       "img": "assets/day27-seg2-q5.jpg"
@@ -227,6 +228,7 @@
         "はい、分かりました。"
       ],
       "ans": "1",
+      "audio": "assets/day27-L2-q6.mp3",
       "trap": "はじめましてのあいさつ — こちらこそ",
       "explain": "Sau khi đối tác tự giới thiệu đáp lại lời chào lần đầu gặp, khách đáp bằng câu chào tương xứng (こちらこそ… + よろしくお願いいたします) là phù hợp nhất; 2 là câu mở đầu của phía gọi điện/thăm hỏi, không phải câu đáp chào lần đầu; 3 là câu xin lỗi, không khớp ngữ cảnh chào hỏi; 4 quá mơ hồ, không phải câu chào.",
       "img": "assets/day27-seg2-q6.jpg"
