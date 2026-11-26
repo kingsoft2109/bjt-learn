@@ -480,6 +480,13 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 .site-footer nav a{color:var(--navy);font-weight:700;text-decoration:none}
 .site-footer nav a:hover{text-decoration:underline}
 </style>
+<style>
+/* Single-question display sizing for full mocks 1-5 (pilot 2026-11-26) */
+#examMock1 .q-text,#examMock2 .q-text,#examMock3 .q-text,#examMock4 .q-text,#examMock5 .q-text{font-size:21px;line-height:1.75}
+#examMock1 .d1opt,#examMock2 .d1opt,#examMock3 .d1opt,#examMock4 .d1opt,#examMock5 .d1opt{font-size:17px;padding:16px 18px}
+#examMock1 .seg-group,#examMock2 .seg-group,#examMock3 .seg-group,#examMock4 .seg-group,#examMock5 .seg-group{max-width:1020px;margin-left:auto;margin-right:auto}
+#examMock1 .qcard img,#examMock2 .qcard img,#examMock3 .qcard img,#examMock4 .qcard img,#examMock5 .qcard img{max-height:54vh}
+</style>
 </head>
 <body>
 
@@ -2115,7 +2122,7 @@ function mkBuildGroups(){
   wrap.innerHTML = '';
   mkGroups.forEach(function(g){
     if(g.part !== mkPart) return;
-    (mkPractice || []).forEach(function(p){ if(p.beforeGroup === g.id) wrap.appendChild(mkBuildPracticeCard(p)); });
+    (mkPractice || []).forEach(function(p){ if(p.beforeGroup === g.id){ var pc = mkBuildPracticeCard(p); pc.setAttribute('data-pfor', g.id); wrap.appendChild(pc); } });
     var group = document.createElement('div');
     group.className = 'seg-group'; group.id = 'mkSegGroup' + g.id;
     var banner = document.createElement('div'); banner.className = 'seg-banner';
@@ -2179,6 +2186,27 @@ function mkMarkActive(){
   for(var n=part.from;n<=part.to;n++){
     var c = document.getElementById('mkqcard-' + n);
     if(c) c.classList.toggle('current', n === mkCurrent);
+  }
+  // Single-question display (2026-11-26, same pilot as Mock 6): only the
+  // current question's card and its group are shown; a section's practice
+  // card stays visible while the current question is in its first group.
+  var curItem = mkQuestions[mkCurrent-1];
+  var curGid = curItem ? curItem.g : null;
+  var wrap = document.getElementById('mkGroups');
+  if(wrap){
+    var cards = wrap.querySelectorAll('.qcard');
+    for(var ci=0;ci<cards.length;ci++){
+      cards[ci].style.display = (cards[ci].id === 'mkqcard-' + mkCurrent) ? '' : 'none';
+    }
+    for(var i=0;i<wrap.children.length;i++){
+      var ch = wrap.children[i];
+      if(!ch.classList) continue;
+      if(ch.classList.contains('practice-card')){
+        ch.style.display = (ch.getAttribute('data-pfor') === curGid) ? '' : 'none';
+      } else if(ch.classList.contains('seg-group')){
+        ch.style.display = (ch.id === 'mkSegGroup' + curGid) ? '' : 'none';
+      }
+    }
   }
 }
 function mkSetActive(n, scroll){
@@ -3011,7 +3039,7 @@ function mk2BuildGroups(){
   wrap.innerHTML = '';
   mk2Groups.forEach(function(g){
     if(g.part !== mk2Part) return;
-    (mk2Practice || []).forEach(function(p){ if(p.beforeGroup === g.id) wrap.appendChild(mk2BuildPracticeCard(p)); });
+    (mk2Practice || []).forEach(function(p){ if(p.beforeGroup === g.id){ var pc = mk2BuildPracticeCard(p); pc.setAttribute('data-pfor', g.id); wrap.appendChild(pc); } });
     var group = document.createElement('div');
     group.className = 'seg-group'; group.id = 'mk2SegGroup' + g.id;
     var banner = document.createElement('div'); banner.className = 'seg-banner';
@@ -3075,6 +3103,27 @@ function mk2MarkActive(){
   for(var n=part.from;n<=part.to;n++){
     var c = document.getElementById('mkqcard-' + n);
     if(c) c.classList.toggle('current', n === mk2Current);
+  }
+  // Single-question display (2026-11-26, same pilot as Mock 6): only the
+  // current question's card and its group are shown; a section's practice
+  // card stays visible while the current question is in its first group.
+  var curItem = mk2Questions[mk2Current-1];
+  var curGid = curItem ? curItem.g : null;
+  var wrap = document.getElementById('mk2Groups');
+  if(wrap){
+    var cards = wrap.querySelectorAll('.qcard');
+    for(var ci=0;ci<cards.length;ci++){
+      cards[ci].style.display = (cards[ci].id === 'mkqcard-' + mk2Current) ? '' : 'none';
+    }
+    for(var i=0;i<wrap.children.length;i++){
+      var ch = wrap.children[i];
+      if(!ch.classList) continue;
+      if(ch.classList.contains('practice-card')){
+        ch.style.display = (ch.getAttribute('data-pfor') === curGid) ? '' : 'none';
+      } else if(ch.classList.contains('seg-group')){
+        ch.style.display = (ch.id === 'mk2SegGroup' + curGid) ? '' : 'none';
+      }
+    }
   }
 }
 function mk2SetActive(n, scroll){
@@ -3587,7 +3636,7 @@ function mk3BuildGroups(){
   wrap.innerHTML = '';
   mk3Groups.forEach(function(g){
     if(g.part !== mk3Part) return;
-    (mk3Practice || []).forEach(function(p){ if(p.beforeGroup === g.id) wrap.appendChild(mk3BuildPracticeCard(p)); });
+    (mk3Practice || []).forEach(function(p){ if(p.beforeGroup === g.id){ var pc = mk3BuildPracticeCard(p); pc.setAttribute('data-pfor', g.id); wrap.appendChild(pc); } });
     var group = document.createElement('div');
     group.className = 'seg-group'; group.id = 'mk3SegGroup' + g.id;
     var banner = document.createElement('div'); banner.className = 'seg-banner';
@@ -3651,6 +3700,27 @@ function mk3MarkActive(){
   for(var n=part.from;n<=part.to;n++){
     var c = document.getElementById('mkqcard-' + n);
     if(c) c.classList.toggle('current', n === mk3Current);
+  }
+  // Single-question display (2026-11-26, same pilot as Mock 6): only the
+  // current question's card and its group are shown; a section's practice
+  // card stays visible while the current question is in its first group.
+  var curItem = mk3Questions[mk3Current-1];
+  var curGid = curItem ? curItem.g : null;
+  var wrap = document.getElementById('mk3Groups');
+  if(wrap){
+    var cards = wrap.querySelectorAll('.qcard');
+    for(var ci=0;ci<cards.length;ci++){
+      cards[ci].style.display = (cards[ci].id === 'mkqcard-' + mk3Current) ? '' : 'none';
+    }
+    for(var i=0;i<wrap.children.length;i++){
+      var ch = wrap.children[i];
+      if(!ch.classList) continue;
+      if(ch.classList.contains('practice-card')){
+        ch.style.display = (ch.getAttribute('data-pfor') === curGid) ? '' : 'none';
+      } else if(ch.classList.contains('seg-group')){
+        ch.style.display = (ch.id === 'mk3SegGroup' + curGid) ? '' : 'none';
+      }
+    }
   }
 }
 function mk3SetActive(n, scroll){
@@ -4163,7 +4233,7 @@ function mk4BuildGroups(){
   wrap.innerHTML = '';
   mk4Groups.forEach(function(g){
     if(g.part !== mk4Part) return;
-    (mk4Practice || []).forEach(function(p){ if(p.beforeGroup === g.id) wrap.appendChild(mk4BuildPracticeCard(p)); });
+    (mk4Practice || []).forEach(function(p){ if(p.beforeGroup === g.id){ var pc = mk4BuildPracticeCard(p); pc.setAttribute('data-pfor', g.id); wrap.appendChild(pc); } });
     var group = document.createElement('div');
     group.className = 'seg-group'; group.id = 'mk4SegGroup' + g.id;
     var banner = document.createElement('div'); banner.className = 'seg-banner';
@@ -4227,6 +4297,27 @@ function mk4MarkActive(){
   for(var n=part.from;n<=part.to;n++){
     var c = document.getElementById('mkqcard-' + n);
     if(c) c.classList.toggle('current', n === mk4Current);
+  }
+  // Single-question display (2026-11-26, same pilot as Mock 6): only the
+  // current question's card and its group are shown; a section's practice
+  // card stays visible while the current question is in its first group.
+  var curItem = mk4Questions[mk4Current-1];
+  var curGid = curItem ? curItem.g : null;
+  var wrap = document.getElementById('mk4Groups');
+  if(wrap){
+    var cards = wrap.querySelectorAll('.qcard');
+    for(var ci=0;ci<cards.length;ci++){
+      cards[ci].style.display = (cards[ci].id === 'mkqcard-' + mk4Current) ? '' : 'none';
+    }
+    for(var i=0;i<wrap.children.length;i++){
+      var ch = wrap.children[i];
+      if(!ch.classList) continue;
+      if(ch.classList.contains('practice-card')){
+        ch.style.display = (ch.getAttribute('data-pfor') === curGid) ? '' : 'none';
+      } else if(ch.classList.contains('seg-group')){
+        ch.style.display = (ch.id === 'mk4SegGroup' + curGid) ? '' : 'none';
+      }
+    }
   }
 }
 function mk4SetActive(n, scroll){
@@ -4739,7 +4830,7 @@ function mk5BuildGroups(){
   wrap.innerHTML = '';
   mk5Groups.forEach(function(g){
     if(g.part !== mk5Part) return;
-    (mk5Practice || []).forEach(function(p){ if(p.beforeGroup === g.id) wrap.appendChild(mk5BuildPracticeCard(p)); });
+    (mk5Practice || []).forEach(function(p){ if(p.beforeGroup === g.id){ var pc = mk5BuildPracticeCard(p); pc.setAttribute('data-pfor', g.id); wrap.appendChild(pc); } });
     var group = document.createElement('div');
     group.className = 'seg-group'; group.id = 'mk5SegGroup' + g.id;
     var banner = document.createElement('div'); banner.className = 'seg-banner';
@@ -4803,6 +4894,27 @@ function mk5MarkActive(){
   for(var n=part.from;n<=part.to;n++){
     var c = document.getElementById('mkqcard-' + n);
     if(c) c.classList.toggle('current', n === mk5Current);
+  }
+  // Single-question display (2026-11-26, same pilot as Mock 6): only the
+  // current question's card and its group are shown; a section's practice
+  // card stays visible while the current question is in its first group.
+  var curItem = mk5Questions[mk5Current-1];
+  var curGid = curItem ? curItem.g : null;
+  var wrap = document.getElementById('mk5Groups');
+  if(wrap){
+    var cards = wrap.querySelectorAll('.qcard');
+    for(var ci=0;ci<cards.length;ci++){
+      cards[ci].style.display = (cards[ci].id === 'mkqcard-' + mk5Current) ? '' : 'none';
+    }
+    for(var i=0;i<wrap.children.length;i++){
+      var ch = wrap.children[i];
+      if(!ch.classList) continue;
+      if(ch.classList.contains('practice-card')){
+        ch.style.display = (ch.getAttribute('data-pfor') === curGid) ? '' : 'none';
+      } else if(ch.classList.contains('seg-group')){
+        ch.style.display = (ch.id === 'mk5SegGroup' + curGid) ? '' : 'none';
+      }
+    }
   }
 }
 function mk5SetActive(n, scroll){
