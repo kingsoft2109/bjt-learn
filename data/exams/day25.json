@@ -72,8 +72,7 @@
     },
     "2": {
       "title": "第2問 — 発言聴解（電話応対・取次ぎ）",
-      "mp3": "assets/ngay25-doan2.mp3",
-      "desc": "問題4–6 · 電話応対 — 2人の会話を聞き、次に言うのに最もふさわしい発言を選びましょう。田中課長の外出、打ち合わせの時間変更、メールアドレスの3つの場面です。",
+      "desc": "問題4–6 · 電話応対 — 2人の会話を聞き、次に言うのに最もふさわしい発言を選びましょう。田中課長の外出、打ち合わせの時間変更、メールアドレスの3つの場面です。 音声は問題ごとに分かれています。各問題カードの音声ボタンを押すと、その場面の会話のあと、質問と4つの発言（1・2・3・4）を読みます。",
       "lines": [
         "お世話になっております。ABC商事の鈴木と申します。田中課長はいらっしゃいますか。",
         "申し訳ございません。田中はただいま外出しております。午後4時ごろ戻る予定です。",
@@ -93,8 +92,7 @@
     },
     "3": {
       "title": "第3問 — 発言聴解（契約・請求・支払い条件）",
-      "mp3": "assets/ngay25-doan3.mp3",
-      "desc": "問題7–9 · 契約・請求・支払い条件 — 2人の会話を聞き、次に言うのに最もふさわしい発言を選びましょう。支払い期限、支払い条件、請求書の再発行の3つの場面です。",
+      "desc": "問題7–9 · 契約・請求・支払い条件 — 2人の会話を聞き、次に言うのに最もふさわしい発言を選びましょう。支払い期限、支払い条件、請求書の再発行の3つの場面です。 音声は問題ごとに分かれています。各問題カードの音声ボタンを押すと、その場面の会話のあと、質問と4つの発言（1・2・3・4）を読みます。",
       "lines": [
         "今月の請求書ですが、支払い期限はいつまででしょうか。",
         "今月末までにお支払いいただけますと幸いです。",
@@ -195,6 +193,7 @@
         "そうですか。では、田中が出張から戻りましたら、ご連絡ください。"
       ],
       "ans": "1",
+      "audio": "assets/day25-L2-q4.mp3",
       "trap": "田中は午後4時ごろ戻る — 待つのは自分から電話すること",
       "explain": "Nhân viên đã nói 田中 sẽ về khoảng 4 giờ → người gọi hẹn gọi lại lúc đó là phù hợp nhất; 2 sai hướng (bảo NHÂN VIÊN chờ — người chờ phải là người gọi); 3 hỏi lại điều vừa được trả lời; 4 bịa thêm 出張 (không được nhắc tới).",
       "img": "assets/day25-seg2-q4.jpg"
@@ -210,6 +209,7 @@
         "はい、午後2時に変更します。"
       ],
       "ans": "1",
+      "audio": "assets/day25-L2-q5.mp3",
       "trap": "新しい時間は午後3時",
       "explain": "Giờ mới là 午後3時 (đổi từ 午後2時 sang 午後3時) → xác nhận lại giờ mới + cảm ơn; 2 và 4 giữ giờ cũ 午後2時; 3 bịa thành hủy họp.",
       "img": "assets/day25-seg2-q5.jpg"
@@ -225,6 +225,7 @@
         "はい、資料は郵送いたします。"
       ],
       "ans": "1",
+      "audio": "assets/day25-L2-q6.mp3",
       "trap": "メールアドレスをもらったあとの行動",
       "explain": "Đã nhận được địa chỉ email → cảm ơn + hẹn gửi trong hôm nay; 2 quá mơ hồ (không nói sẽ làm gì); 3 là câu của phía nhân viên, người gọi nói thì vô nghĩa; 4 mâu thuẫn với việc gửi qua email vừa thống nhất.",
       "img": "assets/day25-seg2-q6.jpg"
@@ -240,6 +241,7 @@
         "分かりました。支払いは来月でお願いします。"
       ],
       "ans": "1",
+      "audio": "assets/day25-L3-q7.mp3",
       "trap": "支払い期限は今月末",
       "explain": "Hạn thanh toán là 今月末 → xác nhận trả trong tháng này; 2 và 4 dời sang 来月 (sai hạn); 3 nói về việc gửi hóa đơn, không liên quan tới hạn trả.",
       "img": "assets/day25-seg3-q7.jpg"
@@ -255,6 +257,7 @@
         "はい、分かりました。契約書は不要です。"
       ],
       "ans": "1",
+      "audio": "assets/day25-L3-q8.mp3",
       "trap": "支払い条件は月末締め翌月末払い",
       "explain": "Đối phương đã đồng ý điều kiện 月末締め翌月末払い → tiến hành soạn hợp đồng theo đúng điều kiện đó; 2 đổi thành 当月末払い (sai điều kiện); 3/4 mâu thuẫn với việc vừa thống nhất.",
       "img": "assets/day25-seg3-q8.jpg"
@@ -270,6 +273,7 @@
         "ありがとうございます。来週、再発行してください。"
       ],
       "ans": "1",
+      "audio": "assets/day25-L3-q9.mp3",
       "trap": "すぐに再発行する — その場でお礼を言うこと",
       "explain": "Nhân viên đã nhận lời phát hành lại ngay → cảm ơn + nhờ vả; 2 mâu thuẫn với câu vừa nghe (すぐに再発行いたします); 3 không liên quan; 4 dời việc sang 来週 trong khi nhân viên nói làm ngay.",
       "img": "assets/day25-seg3-q9.jpg"
