@@ -11,7 +11,7 @@
      is opened (ads must never appear on exam or navigation screens). -->
 <link rel="icon" href="data:,">
 <title>BJT問題 — 無料オンラインBJT対策 | コンピューター試験室</title>
-<meta name="description" content="無料オンラインBJT（Business Japanese Proficiency Test）対策。日別の練習問題25セット、40問の模擬テスト、状況ビデオ62本、単語カード884枚。聴解、読解、聴読解。">
+<meta name="description" content="無料オンラインBJT（Business Japanese Proficiency Test）対策。日別の練習問題27セット、40問の模擬テスト、状況ビデオ62本、単語カード884枚。聴解、読解、聴読解。">
 <meta name="keywords" content="BJT, BJT対策, BJT問題, Business Japanese, 聴解, 読解, 聴読解, ビジネス日本語, JLPT, BJT online">
 <link rel="canonical" href="https://kingsoft2109.github.io/bjt-learn/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -493,7 +493,8 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
   <div class="exam-picker">
     <label for="examSelect">問題を選ぶ</label>
     <select id="examSelect" aria-label="問題を選ぶ" onchange="switchExam(this.value)">
-      <option value="day27" selected>第27回 — 聴解 練習 · 12問 · 最新</option>
+      <option value="day28" selected>第28回 — 読解 練習 · 12問 · 最新</option>
+      <option value="day27">第27回 — 聴解 練習 · 12問</option>
       <option value="day25">第25回 — 聴解 練習 · 12問</option>
       <option value="day24">第24回 — 読解 練習 · 12問</option>
       <option value="day23">第23回 — 聴解 練習 · 12問</option>
@@ -530,7 +531,8 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     </select>
   </div>
   <div class="tabs" role="tablist" aria-label="問題を選ぶ">
-    <button class="tab active" id="tabDay27" onclick="switchExam('day27')">第27回 — 聴解 練習 · 12問<span class="new-badge">最新</span></button>
+    <button class="tab active" id="tabDay28" onclick="switchExam('day28')">第28回 — 読解 練習 · 12問<span class="new-badge">最新</span></button>
+    <button class="tab" id="tabDay27" onclick="switchExam('day27')">第27回 — 聴解 練習 · 12問</button>
     <button class="tab" id="tabDay25" onclick="switchExam('day25')">第25回 — 聴解 練習 · 12問</button>
     <button class="tab" id="tabDay24" onclick="switchExam('day24')">第24回 — 読解 練習 · 12問</button>
     <button class="tab" id="tabDay23" onclick="switchExam('day23')">第23回 — 聴解 練習 · 12問</button>
@@ -1387,7 +1389,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
      #ngay-4      (hash — kept for in-app use)
    A valid tag in the URL wins over the default (newest exam, Ngày 22);
    switching exams on the page updates the hash to match. */
-var EXAM_TAGS = { day27:'ngay-27', day25:'ngay-25', day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', mock3:'de-thi-thu-3', mock4:'de-thi-thu-4', mock5:'de-thi-thu-5', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
+var EXAM_TAGS = { day28:'ngay-28', day27:'ngay-27', day25:'ngay-25', day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', mock3:'de-thi-thu-3', mock4:'de-thi-thu-4', mock5:'de-thi-thu-5', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
 var TAG_EXAMS = {};
 Object.keys(EXAM_TAGS).forEach(function(k){ TAG_EXAMS[EXAM_TAGS[k]] = k; });
 /* The published page is displayed inside the Muse shell, and the #tag
@@ -1483,7 +1485,7 @@ function syncExamHash(which){
     try{ window.location.hash = tag; }catch(e2){}
   }
 }
-var currentExam = 'day27';
+var currentExam = 'day28';
 /* Captured now, before wireTabs writes the default exam's tag into the
    URL: true only when the reader arrived with an explicit exam tag/link
    (deep link). A plain visit lands on the home/content view instead. */
@@ -1580,7 +1582,7 @@ function showHome(){
 function switchExam(which){
   bjtHomeActive = false;
   try{ bjtAdsOnAppView(); }catch(e){}
-  if(!EXAM_TAGS[which]) which = 'day27';
+  if(!EXAM_TAGS[which]) which = 'day28';
   currentExam = which;
   syncExamHash(which);
   var seoL = document.getElementById('seoLanding');
@@ -1865,7 +1867,7 @@ window.mk5Parts = []; window.mk5Groups = []; window.mk5Questions = []; window.mk
 window.VIDEO_LIBRARY = null;
 window.VOCAB_DAYS = [];
 (function(){
-  var DAY_FILES = ["day1","day2","day3","day4","day5","day6","day7","day8","day9","day10","day11","day12","day13","day14","day15","day16","day17","day18","day19","day20","day21","day22","day23","day24","day25","day27"];
+  var DAY_FILES = ["day1","day2","day3","day4","day5","day6","day7","day8","day9","day10","day11","day12","day13","day14","day15","day16","day17","day18","day19","day20","day21","day22","day23","day24","day25","day27","day28"];
   var MOCK_FILES = ["mock1","mock2","mock3","mock4","mock5"];
   function loadJSON(url){
     return fetch(url).then(function(r){
@@ -2786,7 +2788,7 @@ window.resetDay21 = resetDay21;
 window.cbtPrev21 = cbtPrev21;
 window.cbtNext21 = cbtNext21;
 (function wireTabs(){
-  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabDay23:'day23', tabDay24:'day24', tabDay25:'day25', tabDay27:'day27', tabMock1:'mock1', tabMock2:'mock2', tabMock3:'mock3', tabMock4:'mock4', tabMock5:'mock5', tabDemo:'demo' };
+  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabDay23:'day23', tabDay24:'day24', tabDay25:'day25', tabDay28:'day28', tabDay27:'day27', tabMock1:'mock1', tabMock2:'mock2', tabMock3:'mock3', tabMock4:'mock4', tabMock5:'mock5', tabDemo:'demo' };
   Object.keys(map).forEach(function(id){
     var el = document.getElementById(id);
     if(el) el.addEventListener('click', function(){ userPickedExam = true; switchExam(map[id]); });
