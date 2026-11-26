@@ -1,0 +1,7 @@
+/* iPad font */
+body * {
+  display: none;
+}
+#printContainer {
+  display: block;
+}

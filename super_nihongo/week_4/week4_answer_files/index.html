@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<!-- saved from url=(0129)https://nihongo.incul.com/vc/lplayer/index.cfm?assign_no=6991&unit_contents_no=484&isCoursework=true&coursework_no=63&land=123800 -->
+<html lang="ja" class="mac chrome chrome7 webkit webkit5"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="base-built" src="../../_shared/base-built.js"></script><!--<base href="https://nihongo.incul.com/vc/playerjs/">--><base href="."> 
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <title>スーパー日本語</title>
+
+
+
+
+    <link rel="stylesheet" href="../../_shared/bootstrap(1).css" type="text/css">
+
+
+    <link href="../../_shared/font-awesome(1).css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../_shared/main(1).css" type="text/css">
+    <link rel="stylesheet" href="../../_shared/print.css" type="text/css" media="print">
+
+    <link rel="stylesheet" href="../../_shared/jquery.fancybox.css" type="text/css" media="screen">
+
+<!--[if IE]>
+    <link rel="stylesheet" href="../playerjs/css/main_ie.css?var=2.2.2" type="text/css" >
+<![endif]-->
+
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+
+    <script type="text/javascript">
+    (function(){
+
+        window.isDebug = false;
+        if(typeof console === "undefined") {
+            //IEはログはを出力しない
+            console = {
+                log: function() { },
+                error : function() { }
+            };
+        }else{
+            //
+        }
+
+        var config={
+
+				/* サーバーから問題集を取得するためのキー */
+
+                playerName : "スーパー日本語",
+
+
+				au_token :'au_token20190303003800',
+				
+				isCoursework : true,
+				unit_contents_no : 484,
+				
+				coursework_no : 63,
+				
+				course_no  : 0,
+				question_no  : 0,
+				comprehension_no  : 0,
+				assign_no  : 6991,
+				/* プレビューモードかどうか */
+				isPreview : false,
+				/*
+				 * 	プレビューモードの場合に必要
+				 *
+				 *  combination 		問題プレビュー（複合１問のみのプレビュー）
+				 *  single 				問題プレビュー（単品１問のみのプレビュー）
+				 *  book 	 			 ブックプレビュー（ブックプレビューはドリルモードでプレビューする）
+				 *  assign 	 			アサインプレビュー（アサイン時のテストタイプでプレビューする）
+				 *
+				 */
+
+				previewType : "assign",
+
+                /*
+                 bookType
+
+                 1:テスト／ドリル（PC限定）
+                 2:テスト／ドリル（PC、スマフォ）
+                 3:アンケート
+                 4:レポート
+                 5:自己採点
+
+                 */
+				
+				bookType  : 1,
+				
+					cfc_method : 'bookXml',
+					save_answer_url : '../flash/data_manipulate.cfc',
+					isContinue : false,
+				
+				/*hideBookCoverOption:true,*/
+				/* 言語設定 */
+				culture : "ja"
+			};
+            window.config = config;
+
+            var require = {
+                urlArgs: "bust=v2.2.2"
+            };
+            window.require = require;
+
+    })()
+
+
+        </script>
+
+        <script data-main="./base-built" type="text/javascript" src="../../_shared/require.js"></script>
+<style>#loadingContainer{display:none!important}</style></head>
+<body orient="portrait" style="background-color: rgb(255, 255, 255);">
+
+
+
+<!-- 問題画面 -->
+<div id="container" style="display: block;">
+    <div id="header"><div class="inner">
+    <div class="row-fluid">
+        <div class="span5" style="overflow: hidden;text-overflow:ellipsis;">
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn" id="closeWindowButton" style="display:none"><i class="icon-remove"></i></a>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="jampButton" style="display: none;">
+                <i class="icon-list icon-white"></i>
+            </a>
+            <div class="title">BJT Standard Vol.2 Week4-2</div>
+        </div>
+        <div class="span2" style="position: relative;z-index: 2;">
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="startButton" style="display: none;"><i class="icon-play-circle"></i> スタート</a>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="prevButton" style="display: none;"><i class="icon-arrow-left"></i> 戻る</a>
+            <div id="questionNumberView" style="display: none;"> 13 / 13</div>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2 disabled" id="nextButton" style="display: none;">次へ <i class="icon-arrow-right"></i></a>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="reTryButton" style=""><i class="icon-refresh"></i> 再挑戦</a>
+        </div>
+        <div class="span5" style="text-align: right;">
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn" id="draftButton" style="display:none;">一時保存</a>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="confirmButton" style="display: none;"><i class="icon-check"></i> 採点</a>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="quitButton" style="display:none;">終了</a>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="fullScreenButton"><i class="icon-resize-full"></i></a>
+        </div>
+    </div>
+</div>
+<div id="timer"></div></div>
+    <div id="main" style="display: block; height: 554px;"><div class="questionBox">
+    <div class="answerComment"></div>
+    <div class="answerScore">0<span>点</span></div>
+<div class="descriptionBox"><table>
+    <tbody><tr>
+        <th>No</th>
+        <th>タイトル</th>
+        <th>正誤</th>
+        <th>配点</th>
+        <th>解答・解説</th>
+    </tr>
+    <tr>
+        <td style="text-align:center;">1</td>
+        <td>第１部 セクション１ 描写問題<span class="headphone_icon"></span></td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/7</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_1" target="_self" class="btn btn-vc2 goDescriptionButton" ref="1"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">2</td>
+        <td>第１部 セクション２ 表現力問題<span class="headphone_icon"></span></td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/7</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_2" target="_self" class="btn btn-vc2 goDescriptionButton" ref="2"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">3</td>
+        <td>第１部 セクション３ 聴解問題<span class="headphone_icon"></span></td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/7</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_3" target="_self" class="btn btn-vc2 goDescriptionButton" ref="3"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">4</td>
+        <td>第１部 セクション３ 聴解問題<span class="headphone_icon"></span></td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/7</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_4" target="_self" class="btn btn-vc2 goDescriptionButton" ref="4"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">5</td>
+        <td>第２部 セクション１ 描写問題<span class="headphone_icon"></span></td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/8</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_5" target="_self" class="btn btn-vc2 goDescriptionButton" ref="5"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">6</td>
+        <td>第２部 セクション１ 描写問題<span class="headphone_icon"></span></td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/8</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_6" target="_self" class="btn btn-vc2 goDescriptionButton" ref="6"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">7</td>
+        <td>第２部 セクション２ 聴読解問題<span class="headphone_icon"></span></td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/8</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_7" target="_self" class="btn btn-vc2 goDescriptionButton" ref="7"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">8</td>
+        <td>第２部 セクション２ 聴読解問題<span class="headphone_icon"></span></td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/8</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_8" target="_self" class="btn btn-vc2 goDescriptionButton" ref="8"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">9</td>
+        <td>第３部 セクション１ 文法・語彙問題</td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/8</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_9" target="_self" class="btn btn-vc2 goDescriptionButton" ref="9"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">10</td>
+        <td>第３部 セクション１ 文法・語彙問題</td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/8</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_10" target="_self" class="btn btn-vc2 goDescriptionButton" ref="10"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">11</td>
+        <td>第３部 セクション２ 表現力問題</td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/8</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_11" target="_self" class="btn btn-vc2 goDescriptionButton" ref="11"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">12</td>
+        <td>第３部 セクション３ 短文読解問題</td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/8</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_12" target="_self" class="btn btn-vc2 goDescriptionButton" ref="12"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:center;">13</td>
+        <td>第３部 セクション３ 短文読解問題</td>
+        <td style="text-align:center">
+            <span class="batu"><img src="./batu_icon_s.png"></span>
+        </td>
+        <td style="text-align:center">0/8</td>
+        <td>
+            <a href="https://nihongo.incul.com/vc/playerjs/#inlink_13" target="_self" class="btn btn-vc2 goDescriptionButton" ref="13"><i class="icon-arrow-down icon-white"></i> 解答・解説を見る</a>
+        </td>
+    </tr>
+    </tbody></table><table>
+    <tbody><tr>
+        <th>No</th>
+        <th>正誤</th>
+        <th>解答・解説</th>
+    </tr>
+    <tr>
+    <td style="text-align:center">1</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_1" name="inlink_1"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">1</span>: 第１部 セクション１ 描写問題</div>
+<div class="direction">【第１部　セクション１】</div>
+<div class="question lang-ja" lang="ja">最も正しく表している文はどれですか。１～４の中から１つ選んでください。</div>
+<div class="sound" id="audioplayer_1" ref="../week4_1.mp3">
+    <audio controls="" autobuffer="" src="../week4_1.mp3"></audio>
+</div>
+<div><img src="./20141121124348831.jpg"></div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja" lang="ja">１</li>
+        <li ref="2" class="lang-ja" lang="ja">２</li>
+        <li ref="3" class="lang-ja" lang="ja">３</li>
+        <li ref="4" class="lang-ja rightAnswer" lang="ja">４<span class="lang-ja" lang="ja">(正解)</span></li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">１．電話をかけています。<br>２．電話を切っています。<br>３．電話を交換しています。<br>４．電話をとりついでいます。</div>
+    </td>
+</tr><tr>
+    <td style="text-align:center">2</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_2" name="inlink_2"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">2</span>: 第１部 セクション２ 表現力問題</div>
+<div class="direction">【第１部　セクション２】</div>
+<div class="question lang-ja" lang="ja">質問のあと、４つの文を読みます。<br>１～４の中から、正しい答えを１つだけ選んでください。</div>
+<div class="sound" id="audioplayer_2" ref="../week4_2.mp3">
+    <audio controls="" autobuffer="" src="../week4_2.mp3"></audio>
+</div>
+<div><img src="./20141121132605424.jpg"></div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja" lang="ja">１</li>
+        <li ref="2" class="lang-ja rightAnswer" lang="ja">２<span class="lang-ja" lang="ja">(正解)</span></li>
+        <li ref="3" class="lang-ja" lang="ja">３</li>
+        <li ref="4" class="lang-ja" lang="ja">４</li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">部下が上司に急ぎの仕事を頼まれて、引き受けました。部下は何と答えますか。<br><br>１．了解。明日までにね。<br>２．わかりました。明日までにですね。<br>３．かしこまりました。明日までにやればいいんでしょ。<br>４．承知いたしました。明日までにさせていただければと存じます。<br><br>【解説】<br>フォーマルな場面で目上に対しては、簡潔で丁寧な表現の２番が正解。１番は、同僚もしくは目下に対して使うカジュアルな表現。３番の「かしこまりました」は適切だが、「～ばいいんでしょ」は怒って言う時の表現で不適切。４番は社内で使うには丁寧すぎる。</div>
+    </td>
+</tr><tr>
+    <td style="text-align:center">3</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_3" name="inlink_3"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">3</span>: 第１部 セクション３ 聴解問題</div>
+<div class="direction">【第１部　セクション３】</div>
+<div class="question lang-ja" lang="ja">質問のあと、４つの文を読みます。<br>１～４の中から、正しい答えを１つだけ選んでください。</div>
+<div class="sound" id="audioplayer_3" ref="../week4_3.mp3">
+    <audio controls="" autobuffer="" src="../week4_3.mp3"></audio>
+</div>
+<div><img src="./20141209223843049.jpg"></div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja" lang="ja">１</li>
+        <li ref="2" class="lang-ja" lang="ja">２</li>
+        <li ref="3" class="lang-ja" lang="ja">３</li>
+        <li ref="4" class="lang-ja rightAnswer" lang="ja">４<span class="lang-ja" lang="ja">(正解)</span></li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">パーティーで男の人がスピーチしています。<br>何のスピーチですか。<br><br>男：皆様のご指導、お力添えがなければ、本日このように<u>弊社の記念すべき日に、</u><br>　　<u>皆様の前でお話しできるなどということはなかったと思っております</u>。<br>　　<u>創業以来、バブルの崩壊、不況、天災などさまざまな局面がございましたが、</u><br>　　<u>何とか乗り越えることができました</u>。<br>　　ここ数年、経済が上向きになり、この業界にも光が差し、昨年海外はシンガポールと<br>　　ベトナムに支社を開設することができました。<br>　　常に初心を忘れずに、これからも社員一丸で精進すべく邁進していく所存でございます。<br>　　今後ともよろしくお願い申し上げます。<br><br>何のスピーチですか。<br><br>１．海外進出のあいさつ<br>２．支社開設のあいさつ<br>３．社長就任のあいさつ<br>４．創立記念日のあいさつ<br><br>【解説】<br>「弊社の記念すべき日に、皆様の前でお話しできるなどということはなかったと思っております」「創業以来・・・何とか乗り越えることができました」ということから４番。</div>
+    </td>
+</tr><tr>
+    <td style="text-align:center">4</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_4" name="inlink_4"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">4</span>: 第１部 セクション３ 聴解問題</div>
+<div class="direction">【第１部　セクション３】</div>
+<div class="question lang-ja" lang="ja">質問のあと、４つの文を読みます。<br>１～４の中から、正しい答えを１つだけ選んでください。</div>
+<div class="sound" id="audioplayer_4" ref="../week4_4.mp3">
+    <audio controls="" autobuffer="" src="../week4_4.mp3"></audio>
+</div>
+<div><img src="./20141209223918299.jpg"></div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja" lang="ja">１</li>
+        <li ref="2" class="lang-ja rightAnswer" lang="ja">２<span class="lang-ja" lang="ja">(正解)</span></li>
+        <li ref="3" class="lang-ja" lang="ja">３</li>
+        <li ref="4" class="lang-ja" lang="ja">４</li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">上司と部下が社内回覧について話しています。<br>部下は部内会議で何をしますか。<br><br>男：ちょっと今よろしいでしょうか。<br>女：どうぞ。<br>男：<u>この社員旅行の回覧についてなのですが</u>、これはいつもこの紙で<br>　　出欠を確認しているんでしょうか。<br>女：そうね。いつも紙で出欠とっているわよ。各部署ごとにね。<br>男：なるほど。<br>　　<u>各部署ごとに紙ですと、出欠の確認に結構時間がかかりますよね</u>。<br>女：かかるわね。現に営業部は各課でまだ集まっていないようだけど。<br>男：<u>この出欠表、紙じゃなくて電子化するのはどうでしょうか</u>。<br>女：んー、パソコン苦手な人もまだいるし、どうなんだろう。<br>　　これからパソコン教室を開くのもちょっとね・・・。<br>男：そういう人にはプリントアウトして渡すということにしたらいいんじゃ<br>　　ないでしょうか。<br>　　出欠の確認が一気にできますし、紙の節約にもなるんじゃないかな。<br>女：うーん、確かにそうね。<br>　　その他の回覧ついても同様のことが言えるわね。<br>　　わかりました。<u>今度の部内会議で出してみて</u>。<br>男：はい。<br><br>部下は部内会議で何をしますか。<br><br>１．パソコン教室開催についての提案。<br>２．回覧の電子化についての提案。<br>３．回覧の印刷廃止についての提案。<br>４．社員旅行の出欠をとる。<br><br>【解説】<br>「この社員旅行の回覧についてなのですが」「各部署ごとに紙ですと、出欠の確認に結構時間がかかりますよね」「この出欠表、紙じゃなくて電子化するのはどうでしょうか」「今度の部内会議で出してみて」ということから２番。</div>
+    </td>
+</tr><tr>
+    <td style="text-align:center">5</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_5" name="inlink_5"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">5</span>: 第２部 セクション１ 描写問題</div>
+<div class="direction">【第２部　セクション１】</div>
+<div class="question lang-ja" lang="ja">質問をよく聴いて、１～４の中から正しい答えを１つだけ選んでください。</div>
+<div class="sound" id="audioplayer_5" ref="../week4_5.mp3">
+    <audio controls="" autobuffer="" src="../week4_5.mp3"></audio>
+</div>
+<div><img src="./20140606172738218.JPG"></div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja rightAnswer" lang="ja">１．ゆる～り温泉パック<span class="lang-ja" lang="ja">(正解)</span></li>
+        <li ref="2" class="lang-ja" lang="ja">２．大自然体験プラン</li>
+        <li ref="3" class="lang-ja" lang="ja">３．大阪食いしんぼうプラン</li>
+        <li ref="4" class="lang-ja" lang="ja">４．神戸異国情緒プラン</li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">社内旅行の計画を立てています。社員にアンケートをしたところ、自然豊かな場所でのんびり過ごしたいという人が多くいました。どのプランがいいですか。<br><br>１．ゆる～り温泉パック<br>２．大自然体験プラン<br>３．大阪食いしんぼうプラン<br>４．神戸異国情緒プラン<br><br>【解説】<br>「のんびり過ごしたい」に合うのは「山里の静かな温泉地」「思い思いの時間を・・・」と書かれた１番。</div>
+    </td>
+</tr><tr>
+    <td style="text-align:center">6</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_6" name="inlink_6"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">6</span>: 第２部 セクション１ 描写問題</div>
+<div class="direction">【第２部　セクション１】</div>
+<div class="question lang-ja" lang="ja">質問をよく聴いて、１～４の中から正しい答えを１つだけ選んでください。</div>
+<div class="sound" id="audioplayer_6" ref="../week4_6.mp3">
+    <audio controls="" autobuffer="" src="../week4_6.mp3"></audio>
+</div>
+<div><img src="./20140606172802953.JPG"></div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja" lang="ja">１．全体の売上は増えているが、A店の売上は伸びていない。</li>
+        <li ref="2" class="lang-ja" lang="ja">２．全体の売上は減っているが、A店の売上は伸びている。</li>
+        <li ref="3" class="lang-ja rightAnswer" lang="ja">３．全体の売上は増えているが、C店の売上は伸びていない。<span class="lang-ja" lang="ja">(正解)</span></li>
+        <li ref="4" class="lang-ja" lang="ja">４．すべての店の売上が伸びてきている。</li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">これはある会社の営業店３店の売上をグラフにしたものです。どんなことがわかりますか。<br><br>１．全体の売上は増えているが、A店の売上は伸びていない。<br>２．全体の売上は減っているが、A店の売上は伸びている。<br>３．全体の売上は増えているが、C店の売上は伸びていない。<br>４．すべての店の売上が伸びてきている。<br><br>【解説】<br>グラフを見ると、「３店全体」では伸びているが、C店の売り上げは落ちてきている。３番。</div>
+    </td>
+</tr><tr>
+    <td style="text-align:center">7</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_7" name="inlink_7"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">7</span>: 第２部 セクション２ 聴読解問題</div>
+<div class="direction">【第２部　セクション２】</div>
+<div class="question lang-ja" lang="ja">質問をよく聴いて、１～４の中から正しい答えを１つだけ選んでください。</div>
+<div class="sound" id="audioplayer_7" ref="../week4_7.mp3">
+    <audio controls="" autobuffer="" src="../week4_7.mp3"></audio>
+</div>
+<div><img src="./20140608202302453.JPG"></div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja" lang="ja">１</li>
+        <li ref="2" class="lang-ja" lang="ja">２</li>
+        <li ref="3" class="lang-ja rightAnswer" lang="ja">３<span class="lang-ja" lang="ja">(正解)</span></li>
+        <li ref="4" class="lang-ja" lang="ja">４</li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">取引先の女の人から、電話がかかってきました。<br>男の人がメモに書くことは、どれですか。<br><br>男：はい、東洋インテリア営業１課です。<br>女：わたくし、サクラ商事の島田と申します。<br>　　佐藤さんいらっしゃいますでしょうか。<br>男：申し訳ありません。佐藤はただいま席をはずしております。<br>　　よろしければわたくしがご用件をうけたまわりますが。<br>女：ああ、そうですか。<br>　　それでは、佐藤さんにお伝えください。<br>　　実は、先日、キャビネットを２０台、注文したんですが。<br>男：ありがとうございます。<br>女：事務所の移転が来月の３日に変更になったので、納品日を少し早めて、<br>　　<u>３日当日に納品していただきたい</u>んです。<br>男：はい。<br>女：それで、それが可能かどうか、<u>至急ご返事をいただきたい</u>んですが。<br>男：ご注文の商品を３日必着でお納めできるかということですね。<br>女：はい。<br>男：承知いたしました。佐藤が戻り次第、お返事するように伝えます。<br>女：はい、では、よろしくお願いいたします。<br><br>男の人がメモに書くことは、どれですか。<br><br>【解説】<br>女の人が「３日当日に納品していただきたい」、「至急ご返事をいただきたい」と言っているので、正解は３番。</div>
+    </td>
+</tr><tr>
+    <td style="text-align:center">8</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_8" name="inlink_8"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">8</span>: 第２部 セクション２ 聴読解問題</div>
+<div class="direction">【第２部　セクション２】</div>
+<div class="question lang-ja" lang="ja">質問をよく聴いて、１～４の中から正しい答えを１つだけ選んでください。</div>
+<div class="sound" id="audioplayer_8" ref="../week4_8.mp3">
+    <audio controls="" autobuffer="" src="../week4_8.mp3"></audio>
+</div>
+<div><img src="./20140608202312984.JPG"></div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja" lang="ja">１</li>
+        <li ref="2" class="lang-ja" lang="ja">２</li>
+        <li ref="3" class="lang-ja" lang="ja">３</li>
+        <li ref="4" class="lang-ja rightAnswer" lang="ja">４<span class="lang-ja" lang="ja">(正解)</span></li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">男の人と女の人が話しています。<br>女の人は仕事をするために何を持っていきますか。<br><br>女：係長、今から倉庫へ行って、在庫の確認作業をしてきます。<br>男：ああ、今日だったね。<br>　　初めてだけど、手順わかってる？<br>女：先輩に聞きました。<br>　　<u>在庫台帳を持って行って</u>、実物と照合すればいいんですよね？<br>男：そう。数とか違っていたら、訂正しておいて。<br>　　<u>あとで確認リストを作る</u>ときに必要だから。<br>女：わかりました。<br>男：あ、それから中にサンプルがあるはずだけど、それには<u>「見本品」って</u><br>　　<u>大きいシールが貼ってある</u>から。<br>　　そしたら、その品名と数も台帳に書き込んどいて。<br>女：はい。<br>男：じゃ、頼むね。<br>女:はい。<br><br>女の人は、何を持っていきますか。<br><br>【解説】<br>女の人が「在庫台帳を持って行って」と言っているので、持ち物は在庫台帳。男の人が「あとで確認リストを作る」、「『見本品』って大きいシールが貼ってある」と言っているので、確認リストと見本品のシールは今の持ち物ではない。正解は４番。</div>
+    </td>
+</tr><tr>
+    <td style="text-align:center">9</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_9" name="inlink_9"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">9</span>: 第３部 セクション１ 文法・語彙問題</div>
+<div class="direction">【第３部　セクション１】<br>次の文の＿＿＿＿＿＿＿に入る正しいことばを１，２，３，４の中から１つ選んでください。</div>
+<div class="question lang-ja" lang="ja">難航すると思われた交渉は意外にも＿＿＿＿＿＿＿運んだ。</div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja rightAnswer" lang="ja">１．すんなり<span class="lang-ja" lang="ja">(正解)</span></li>
+        <li ref="2" class="lang-ja" lang="ja">２．とっくに</li>
+        <li ref="3" class="lang-ja" lang="ja">３．ようやく</li>
+        <li ref="4" class="lang-ja" lang="ja">４．ただちに</li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">【解説】<br>正解は１番。<br>「すんなり」は物事が滞ることなく、なめらかに進む様子を表す。</div>
+    </td>
+</tr><tr>
+    <td style="text-align:center">10</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_10" name="inlink_10"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">10</span>: 第３部 セクション１ 文法・語彙問題</div>
+<div class="direction">【第３部　セクション１】<br>次の文の＿＿＿＿＿＿＿に入る正しいことばを１，２，３，４の中から１つ選んでください。</div>
+<div class="question lang-ja" lang="ja">海外での事業展開が必ずしも企業の利益につながる＿＿＿＿＿＿＿。</div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja" lang="ja">１．はずがない</li>
+        <li ref="2" class="lang-ja" lang="ja">２．までもない</li>
+        <li ref="3" class="lang-ja rightAnswer" lang="ja">３．わけではない<span class="lang-ja" lang="ja">(正解)</span></li>
+        <li ref="4" class="lang-ja" lang="ja">４．どころではない</li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">【解説】<br>正解は３番。<br>「必ずしも」は後に「わけではない、とは限らない」などの打ち消しの言葉を伴って、全部がそうだとは断定できないという気持ちを表す。</div>
+    </td>
+</tr><tr>
+    <td style="text-align:center">11</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_11" name="inlink_11"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">11</span>: 第３部 セクション２ 表現力問題</div>
+<div class="direction">【第３部　セクション２】<br>次の文の＿＿＿＿＿＿＿に入る正しいことばを１，２，３，４の中から１つ選んでください。</div>
+<div class="question lang-ja" lang="ja">Ａ：今度のプロジェクトのリーダーを引き受けてくれないか。<br>Ｂ：＿＿＿＿＿＿＿お話ですが、私には荷が重すぎます。</div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja" lang="ja">１．あんまりな</li>
+        <li ref="2" class="lang-ja" lang="ja">２．あいにくの</li>
+        <li ref="3" class="lang-ja rightAnswer" lang="ja">３．せっかくの<span class="lang-ja" lang="ja">(正解)</span></li>
+        <li ref="4" class="lang-ja" lang="ja">４．ご丁寧な</li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">【解説】<br>正解は３番。<br>「せっかくの」は「せっかくの～だが」という形で相手の申し出を断る時に使う。</div>
+    </td>
+</tr><tr>
+    <td colspan="3">
+        <div class="questionBox">
+            <div class="combinationHeader">
+                12 第３部 セクション３ 短文読解問題 
+            </div>
+            <div class="descriptionArea">
+                <div class="imageWraper"><img src="./20140606114908312.JPG"></div>
+                </div>
+        </div>
+    </td>
+</tr><tr>
+    <td style="text-align:center">12</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_12" name="inlink_12"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">12</span>: 第３部 セクション３ 短文読解問題</div>
+<div class="direction">【第３部　セクション３】<br>次の文章を読んで、質問に答えてください。<br>答えは、１，２，３，４の中から１つ選んでください。</div>
+<div class="question lang-ja" lang="ja">ある会社が発表した業績予想の一部です。増収の主な理由は何だと言っていますか。</div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja" lang="ja">１．二輪車、RV事業などでの既存商品売上の好調</li>
+        <li ref="2" class="lang-ja rightAnswer" lang="ja">２．二輪車、RV事業などでの新商品投入<span class="lang-ja" lang="ja">(正解)</span></li>
+        <li ref="3" class="lang-ja" lang="ja">３．研究会や販売費の増加</li>
+        <li ref="4" class="lang-ja" lang="ja">４．コストダウン</li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">【解説】<br>「二輪車、RV事業などで積極的に新商品を投入することによる増収を見込んでいる」ということから、２番。</div>
+    </td>
+</tr><tr>
+    <td colspan="3">
+        <div class="questionBox">
+            <div class="combinationHeader">
+                13 第３部 セクション３ 短文読解問題 
+            </div>
+            <div class="descriptionArea">
+                <div class="imageWraper"><img src="./20140606115007265.JPG"></div>
+                </div>
+        </div>
+    </td>
+</tr><tr>
+    <td style="text-align:center">13</td>
+    <td style="text-align:center"><span class="batu"><img src="./batu_icon.png"></span></td>
+    <td>
+        <a id="inlink_13" name="inlink_13"></a>
+        <div class="questionBox"><div class="questionTitle"><span class="questionNumber">13</span>: 第３部 セクション３ 短文読解問題</div>
+<div class="direction">【第３部　セクション３】<br>次の文章を読んで、質問に答えてください。<br>答えは、１，２，３，４の中から１つ選んでください。</div>
+<div class="question lang-ja" lang="ja">勤続２年の男性社員が勤続８カ月のパートの女性と結婚します。規定によると、二人の結婚祝い金はいくらですか。</div>
+<div class="choices">
+    <ul>
+        <li ref="1" class="lang-ja" lang="ja">１．１万円</li>
+        <li ref="2" class="lang-ja rightAnswer" lang="ja">２．２万円<span class="lang-ja" lang="ja">(正解)</span></li>
+        <li ref="3" class="lang-ja" lang="ja">３．３万円</li>
+        <li ref="4" class="lang-ja" lang="ja">４．４万円</li>
+        </ul>
+</div><div class="noAnswer lang-ja" lang="ja">（未解答）</div></div><div class="description">【解説】<br>第４条（受給資格）に「パートタイマーおよびアルバイトには適用しない」とあるので妻の分の祝い金の支給はない。勤続２年の夫については第５条の（２）に該当するので２万円。正解は２番。</div>
+    </td>
+</tr>
+</tbody></table></div></div></div>
+    <div id="footer"><!-- 空 --></div>
+<div style="display:none;"><div id="bookIndexView" class="bookindex"><div><div class="indexHeader"></div>
+<div class="wrapper">
+    <div id="scroller">
+        <ul>
+            <li ref="1" style="cursor: pointer;">
+    <span class="questionNumber">1</span>第１部 セクション１ 描写問題<i class="icon-headphones"></i></li>
+            <li ref="2" style="cursor: pointer;">
+    <span class="questionNumber">2</span>第１部 セクション２ 表現力問題<i class="icon-headphones"></i></li>
+            <li ref="3" style="cursor: pointer;">
+    <span class="questionNumber">3</span>第１部 セクション３ 聴解問題<i class="icon-headphones"></i></li>
+            <li ref="4" style="cursor: pointer;">
+    <span class="questionNumber">4</span>第１部 セクション３ 聴解問題<i class="icon-headphones"></i></li>
+            <li ref="5" style="cursor: pointer;">
+    <span class="questionNumber">5</span>第２部 セクション１ 描写問題<i class="icon-headphones"></i></li>
+            <li ref="6" style="cursor: pointer;">
+    <span class="questionNumber">6</span>第２部 セクション１ 描写問題<i class="icon-headphones"></i></li>
+            <li ref="7" style="cursor: pointer;">
+    <span class="questionNumber">7</span>第２部 セクション２ 聴読解問題<i class="icon-headphones"></i></li>
+            <li ref="8" style="cursor: pointer;">
+    <span class="questionNumber">8</span>第２部 セクション２ 聴読解問題<i class="icon-headphones"></i></li>
+            <li ref="9" style="cursor: pointer;">
+    <span class="questionNumber">9</span>第３部 セクション１ 文法・語彙問題</li>
+            <li ref="10" style="cursor: pointer;">
+    <span class="questionNumber">10</span>第３部 セクション１ 文法・語彙問題</li>
+            <li ref="11" style="cursor: pointer;">
+    <span class="questionNumber">11</span>第３部 セクション２ 表現力問題</li>
+            <li class="combination">
+    <p><span>12</span>第３部 セクション３ 短文読解問題</p>
+    <ul>
+        <li ref="12" style="cursor: pointer;"><span class="questionNumber">12</span>第３部 セクション３ 短文読解問題</li>
+        </ul>
+</li>
+            <li class="combination">
+    <p><span>13</span>第３部 セクション３ 短文読解問題</p>
+    <ul>
+        <li ref="13" style="cursor: pointer;"><span class="questionNumber">13</span>第３部 セクション３ 短文読解問題</li>
+        </ul>
+</li>
+            </ul>
+    </div>
+</div></div></div></div></div>
+
+<!-- タイムアップ画面 -->
+<div class="timeUpContainer">
+    <div class="timeUpImageBox">
+        <p>タイムアウト</p>
+    </div>
+</div><div id="printContainer">印刷はできません。</div>
+<script id="local-choice-handler">
+(function(){
+  function enableChoices() {
+    var spans = document.querySelectorAll('.choices li span.choice, .choices li span[ref]');
+    for (var i = 0; i < spans.length; i++) {
+      spans[i].style.cursor = 'pointer';
+      spans[i].addEventListener('click', function(e) {
+        var parent = this.closest('.choices');
+        if (!parent) return;
+        var siblings = parent.querySelectorAll('li span.choice, li span[ref]');
+        for (var j = 0; j < siblings.length; j++) {
+          siblings[j].classList.remove('select');
+        }
+        this.classList.add('select');
+      });
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', enableChoices);
+  } else {
+    enableChoices();
+  }
+  setTimeout(enableChoices, 1000);
+  setTimeout(enableChoices, 3000);
+})();
+</script>
+
+
+
+<style id="local-answer-style">
+  .rightAnswer { color: #15803d !important; font-weight: 700 !important; }
+  .rightAnswer span { color: #15803d !important; }
+  .descriptionBox table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+  .descriptionBox th { background: #14365e; color: #fff; padding: 8px 12px; text-align: center; }
+  .descriptionBox td { padding: 8px 12px; border-bottom: 1px solid #e5e7eb; }
+  .descriptionBox .questionBox { background: #f9fafb; border-radius: 8px; padding: 16px; margin: 8px 0; }
+  .descriptionBox .questionTitle { font-weight: 700; font-size: 15px; margin-bottom: 8px; color: #14365e; }
+  .goDescriptionButton { display: inline-block; background: #14365e; color: #fff !important; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-size: 13px; }
+  .goDescriptionButton:hover { background: #1e4d8a; }
+  @media(prefers-color-scheme:dark) {
+    .rightAnswer, .rightAnswer span { color: #4ade80 !important; }
+    .descriptionBox th { background: #1e3a5f; }
+    .descriptionBox td { border-color: #2e3834; }
+    .descriptionBox .questionBox { background: #1b211f; }
+    .descriptionBox .questionTitle { color: #7fb0e6; }
+    .goDescriptionButton { background: #1e3a5f; }
+  }
+</style>
+
+
+<script id="local-grade-answer">
+(function(){
+  var path = window.location.pathname || window.location.href;
+  var m = path.match(/(week|test)(\d+)_ans?we?r_files/);
+  var prefix = m ? m[1] : null;
+  var num = m ? m[2] : null;
+
+  function gradeAnswers() {
+    if (!prefix || !num) return;
+
+    var totalScore = 0;
+    var totalMax = 0;
+    var correct = 0;
+    var total = 0;
+
+    // Find all answer detail sections (inlink_1, inlink_2, ...)
+    var sections = document.querySelectorAll('a[id^="inlink_"]');
+
+    for (var i = 0; i < sections.length; i++) {
+      var qNum = sections[i].id.replace('inlink_', '');
+      var storageKey = 'sn_' + prefix + '_' + num + '_q' + qNum;
+      var userAnswer = localStorage.getItem(storageKey);
+
+      // Find the questionBox for this section
+      var container = sections[i].closest('td');
+      if (!container) continue;
+
+      var questionBox = container.querySelector('.questionBox');
+      if (!questionBox) continue;
+
+      // Find correct answer
+      var rightEl = questionBox.querySelector('.rightAnswer');
+      var rightRef = rightEl ? rightEl.getAttribute('ref') : null;
+
+      // Find point value from summary table
+      var summaryRows = document.querySelectorAll('.descriptionBox > table:first-child tr');
+      var points = 11; // default
+      if (summaryRows[parseInt(qNum)]) {
+        var pointCell = summaryRows[parseInt(qNum)].querySelectorAll('td')[2];
+        if (pointCell) {
+          var pm = pointCell.textContent.match(/(\d+)\/(\d+)/);
+          if (pm) points = parseInt(pm[2]);
+        }
+      }
+      totalMax += points;
+      total++;
+
+      // Update noAnswer / show user's choice
+      var noAns = questionBox.querySelector('.noAnswer');
+      var choices = questionBox.querySelectorAll('.choices li');
+
+      if (userAnswer) {
+        // Highlight user's selection
+        for (var c = 0; c < choices.length; c++) {
+          var ref = choices[c].getAttribute('ref');
+          if (ref === userAnswer) {
+            if (ref === rightRef) {
+              choices[c].style.background = '#dcfce7';
+              choices[c].style.borderRadius = '6px';
+              choices[c].style.padding = '4px 8px';
+            } else {
+              choices[c].style.background = '#fee2e2';
+              choices[c].style.borderRadius = '6px';
+              choices[c].style.padding = '4px 8px';
+              choices[c].style.textDecoration = 'line-through';
+            }
+          }
+        }
+
+        var isCorrect = (userAnswer === rightRef);
+        if (isCorrect) {
+          correct++;
+          totalScore += points;
+        }
+
+        if (noAns) {
+          noAns.style.display = 'block';
+          noAns.style.marginTop = '8px';
+          if (isCorrect) {
+            noAns.innerHTML = '✅ 正解！（あなたの解答: ' + userAnswer + '）';
+            noAns.style.color = '#15803d';
+            noAns.style.fontWeight = '700';
+          } else {
+            noAns.innerHTML = '❌ 不正解（あなたの解答: ' + userAnswer + ' → 正解: ' + rightRef + '）';
+            noAns.style.color = '#b91c1c';
+            noAns.style.fontWeight = '700';
+          }
+        }
+      } else {
+        if (noAns) {
+          noAns.style.display = 'block';
+          noAns.innerHTML = '⚠️ 未解答';
+          noAns.style.color = '#9ca3af';
+        }
+      }
+
+      // Update summary table row icon
+      var summaryRow = summaryRows[parseInt(qNum)];
+      if (summaryRow) {
+        var iconCell = summaryRow.querySelectorAll('td')[1];
+        var scoreCell = summaryRow.querySelectorAll('td')[2];
+        if (iconCell) {
+          if (!userAnswer) {
+            iconCell.innerHTML = '<span style="color:#9ca3af;font-size:1.2em">—</span>';
+          } else if (userAnswer === rightRef) {
+            iconCell.innerHTML = '<span style="color:#15803d;font-size:1.3em">✅</span>';
+            if (scoreCell) scoreCell.textContent = points + '/' + points;
+          } else {
+            iconCell.innerHTML = '<span style="color:#b91c1c;font-size:1.3em">❌</span>';
+            if (scoreCell) scoreCell.textContent = '0/' + points;
+          }
+        }
+      }
+    }
+
+    // Update total score
+    var scoreEl = document.querySelector('.answerScore');
+    if (scoreEl) {
+      scoreEl.style.display = 'block';
+      scoreEl.style.fontSize = '24px';
+      scoreEl.style.fontWeight = '800';
+      scoreEl.style.margin = '12px 0';
+      scoreEl.innerHTML = '<span style="color:#14365e">' + totalScore + '</span><span style="font-size:16px;color:#5c6862"> / ' + totalMax + ' 点　(' + correct + '/' + total + ' 問正解)</span>';
+    }
+
+    var comment = document.querySelector('.answerComment');
+    if (comment) {
+      var pct = totalMax > 0 ? Math.round(totalScore / totalMax * 100) : 0;
+      var msg = pct >= 80 ? '素晴らしい！🎉' : pct >= 60 ? 'よくできました！👍' : pct >= 40 ? 'もう少し頑張りましょう！💪' : '復習しましょう！📚';
+      comment.innerHTML = '<strong style="font-size:18px;">' + msg + '</strong>';
+      comment.style.marginBottom = '8px';
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', gradeAnswers);
+  } else {
+    gradeAnswers();
+  }
+  setTimeout(gradeAnswers, 500);
+  setTimeout(gradeAnswers, 2000);
+})();
+</script>
+
+
+<script id="local-retry-handler">
+(function(){
+  function hookRetry() {
+    var btn = document.getElementById('reTryButton');
+    if (!btn) return;
+    btn.style.display = 'inline-block';
+
+    var path = window.location.pathname || window.location.href;
+    var m = path.match(/(week|test)(\d+)_ans?we?r_files/);
+    if (!m) return;
+    var prefix = m[1];
+    var num = m[2];
+
+    btn.onclick = function(e) {
+      e.preventDefault();
+      // Clear all answers for this week/test
+      for (var i = 0; i < localStorage.length; i++) {
+        var key = localStorage.key(i);
+        if (key && key.indexOf('sn_' + prefix + '_' + num + '_q') === 0) {
+          localStorage.removeItem(key);
+          i--;
+        }
+      }
+      // Navigate to first question
+      var firstFile = prefix + num + '_1.htm';
+      if (window.parent && window.parent !== window) {
+        window.parent.location.href = '../' + firstFile;
+      } else {
+        window.location.href = '../' + firstFile;
+      }
+    };
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', hookRetry);
+  } else {
+    hookRetry();
+  }
+  setTimeout(hookRetry, 500);
+})();
+</script>
+
+</body></html>

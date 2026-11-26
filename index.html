@@ -525,6 +525,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <option value="mock3">模擬試験 BJT 03 — 80問 · 3部</option>
       <option value="mock4">模擬試験 BJT 04 — 80問 · 3部</option>
       <option value="mock5">模擬試験 BJT 05 — 80問 · 3部</option>
+      <option value="mock6">模擬試験 BJT 06 — 35問 · 総合</option>
       <option value="demo">サンプル問題01 — 3パート · 3問</option>
       <option value="videos">動画ライブラリ — テーマ別状況ビデオ62本</option>
       <option value="vocab">単語カード — 日別884語</option>
@@ -1389,7 +1390,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
      #ngay-4      (hash — kept for in-app use)
    A valid tag in the URL wins over the default (newest exam, Ngày 22);
    switching exams on the page updates the hash to match. */
-var EXAM_TAGS = { day28:'ngay-28', day27:'ngay-27', day25:'ngay-25', day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', mock3:'de-thi-thu-3', mock4:'de-thi-thu-4', mock5:'de-thi-thu-5', demo:'de-mau', videos:'thu-vien-video', vocab:'the-tu-vung' };
+var EXAM_TAGS = { day28:'ngay-28', day27:'ngay-27', day25:'ngay-25', day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', mock3:'de-thi-thu-3', mock4:'de-thi-thu-4', mock5:'de-thi-thu-5', demo:'de-mau', mock6:'de-thi-thu-6',videos:'thu-vien-video', vocab:'the-tu-vung' };
 var TAG_EXAMS = {};
 Object.keys(EXAM_TAGS).forEach(function(k){ TAG_EXAMS[EXAM_TAGS[k]] = k; });
 /* The published page is displayed inside the Muse shell, and the #tag
@@ -1920,8 +1921,15 @@ window.VOCAB_DAYS = [];
       if(typeof currentExam !== 'undefined') switchExam(currentExam);
     }).catch(function(err){
       try{ console.error('[bjt] data load failed:', err); }catch(e){}
-      var c = document.getElementById('examContainer');
-      if(c) c.innerHTML = '<p style="padding:24px">\u554f\u984c\u30c7\u30fc\u30bf\u3092\u8aad\u307f\u8fbc\u3081\u307e\u305b\u3093\u3067\u3057\u305f\u3002\u30da\u30fc\u30b8\u3092\u518d\u8aad\u307f\u8fbc\u307f\u3057\u3066\u304f\u3060\u3055\u3044\u3002</p>';
+      /* If inline exams exist, render what we have */
+      if(Object.keys(window.EXAM_DAYS).length > 0){
+        var c2 = document.getElementById('examContainer');
+        if(c2) c2.innerHTML = '';
+        initAllExams();
+      } else {
+        var c = document.getElementById('examContainer');
+        if(c) c.innerHTML = '<p style="padding:24px">\u554f\u984c\u30c7\u30fc\u30bf\u3092\u8aad\u307f\u8fbc\u3081\u307e\u305b\u3093\u3067\u3057\u305f\u3002\u30da\u30fc\u30b8\u3092\u518d\u8aad\u307f\u8fbc\u307f\u3057\u3066\u304f\u3060\u3055\u3044\u3002</p>';
+      }
     });
   }
   if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', start); }
@@ -5134,6 +5142,7 @@ function mk5Reset(){
 <!-- Exam day data files -->
 
 <!-- Exam engine -->
+<script src="data/exams/mock6-inline.js"></script>
 <script src="js/exam-engine.js"></script>
 
 <!-- Initialize all exams after data + engine are loaded -->

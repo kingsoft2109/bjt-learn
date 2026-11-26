@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!-- saved from url=(0129)https://nihongo.incul.com/vc/lplayer/index.cfm?assign_no=6991&unit_contents_no=504&isCoursework=true&coursework_no=63&land=064735 -->
+<html lang="ja" class="mac chrome chrome7 webkit webkit5"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="base-built" src="../../_shared/base-built.js"></script><!--<base href="https://nihongo.incul.com/vc/playerjs/">--><base href="."> 
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <title>スーパー日本語</title>
+
+
+
+
+    <link rel="stylesheet" href="../../_shared/bootstrap(1).css" type="text/css">
+
+
+    <link href="../../_shared/font-awesome(1).css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../_shared/main(1).css" type="text/css">
+    <link rel="stylesheet" href="../../_shared/print.css" type="text/css" media="print">
+
+    <link rel="stylesheet" href="../../_shared/jquery.fancybox.css" type="text/css" media="screen">
+
+<!--[if IE]>
+    <link rel="stylesheet" href="../playerjs/css/main_ie.css?var=2.2.2" type="text/css" >
+<![endif]-->
+
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+
+    <script type="text/javascript">
+    (function(){
+
+        window.isDebug = false;
+        if(typeof console === "undefined") {
+            //IEはログはを出力しない
+            console = {
+                log: function() { },
+                error : function() { }
+            };
+        }else{
+            //
+        }
+
+        var config={
+
+				/* サーバーから問題集を取得するためのキー */
+
+                playerName : "スーパー日本語",
+
+
+				au_token :'au_token20190303184735',
+				
+				isCoursework : true,
+				unit_contents_no : 504,
+				
+				coursework_no : 63,
+				
+				course_no  : 0,
+				question_no  : 0,
+				comprehension_no  : 0,
+				assign_no  : 6991,
+				/* プレビューモードかどうか */
+				isPreview : false,
+				/*
+				 * 	プレビューモードの場合に必要
+				 *
+				 *  combination 		問題プレビュー（複合１問のみのプレビュー）
+				 *  single 				問題プレビュー（単品１問のみのプレビュー）
+				 *  book 	 			 ブックプレビュー（ブックプレビューはドリルモードでプレビューする）
+				 *  assign 	 			アサインプレビュー（アサイン時のテストタイプでプレビューする）
+				 *
+				 */
+
+				previewType : "assign",
+
+                /*
+                 bookType
+
+                 1:テスト／ドリル（PC限定）
+                 2:テスト／ドリル（PC、スマフォ）
+                 3:アンケート
+                 4:レポート
+                 5:自己採点
+
+                 */
+				
+				bookType  : 1,
+				
+					cfc_method : 'bookXml',
+					save_answer_url : '../flash/data_manipulate.cfc',
+					isContinue : false,
+				
+				/*hideBookCoverOption:true,*/
+				/* 言語設定 */
+				culture : "ja"
+			};
+            window.config = config;
+
+            var require = {
+                urlArgs: "bust=v2.2.2"
+            };
+            window.require = require;
+
+    })()
+
+
+        </script>
+
+        <script data-main="./base-built" type="text/javascript" src="../../_shared/require.js"></script>
+<style>#loadingContainer{display:none!important}</style></head>
+<body orient="portrait" style="background-color: rgb(255, 255, 255);">
+
+
+
+<!-- 問題画面 -->
+<div id="container" style="display: block;">
+    <div id="header"><div class="inner">
+    <div class="row-fluid">
+        <div class="span5" style="overflow: hidden;text-overflow:ellipsis;">
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn" id="closeWindowButton" style="display:none"><i class="icon-remove"></i></a>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="jampButton" style="">
+                <i class="icon-list icon-white"></i>
+            </a>
+            <div class="title">BJT Standard Vol.2 確認テスト3(Week1-12)</div>
+        </div>
+        <div class="span2" style="position: relative;z-index: 2;">
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="startButton" style="display: none;"><i class="icon-play-circle"></i> スタート</a>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="prevButton" style=""><i class="icon-arrow-left"></i> 戻る</a>
+            <div id="questionNumberView"> 23 / 24</div>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="nextButton" style="">次へ <i class="icon-arrow-right"></i></a>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="reTryButton" style="display:none;"><i class="icon-refresh"></i> 再挑戦</a>
+        </div>
+        <div class="span5" style="text-align: right;">
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn" id="draftButton" style="display:none;">一時保存</a>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2 disabled" id="confirmButton" style=""><i class="icon-check"></i> 採点</a>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="quitButton" style="display:none;">終了</a>
+            <a href="https://nihongo.incul.com/vc/playerjs/#" class="btn btn-vc2" id="fullScreenButton"><i class="icon-resize-full"></i></a>
+        </div>
+    </div>
+</div>
+<div id="timer">制限時間：25:16</div></div>
+    <div id="main" style="display: block; height: 554px;"><div class="combinationConterner"><div class="combinationHeader">
+    23 第３部 セクション３ 短文読解問題<br>
+    
+</div>
+<div class="combinationQuestion">
+    <div class="innerQuestionBox" style="display: block;"><div class="questionBox">
+    <div class="questionTitle">
+  <span class="questionNumber">23</span>: 第３部 セクション３ 短文読解問題</div>
+    <div class="direction">【第３部　セクション３】<br>次の文章を読んで、質問に答えてください。<br>答えは、１，２，３，４の中から１つ選んでください。</div>
+    
+    <div class="question lang-ja" lang="ja">次のようなEメールが来ました。佐藤さんはこの後どうしたらいいですか。</div>
+    <div class="choices">
+        <ul>
+            <li>
+                <span class="choice lang-ja" lang="ja" ref="1"><span class="chackmarkicon"></span>１．カタログを送る。</span>
+            </li>
+            <li>
+                <span class="choice lang-ja" lang="ja" ref="2"><span class="chackmarkicon"></span>２．注文通り手配中である旨のメールを送る。</span>
+            </li>
+            <li>
+                <span class="choice lang-ja" lang="ja" ref="3"><span class="chackmarkicon"></span>３．注文のあった商品を至急発送する。</span>
+            </li>
+            <li>
+                <span class="choice lang-ja" lang="ja" ref="4"><span class="chackmarkicon"></span>４．電話で商品を注文する。</span>
+            </li>
+            </ul>
+    </div>
+</div></div>
+</div>
+<div class="combinationMain">
+    <div class="imageWraper"><img src="./20140606115201140.JPG"></div>
+    </div></div></div>
+    <div id="footer"><!-- 空 --></div>
+<div style="display:none;"><div id="bookIndexView" class="bookindex"><div><div class="indexHeader"></div>
+<div class="wrapper">
+    <div id="scroller">
+        <ul>
+            <li ref="1" style="cursor: pointer;">
+    <span class="questionNumber">1</span>第１部 セクション１ 描写問題<i class="icon-headphones"></i></li>
+            <li ref="2" style="cursor: pointer;">
+    <span class="questionNumber">2</span>第１部 セクション１ 描写問題<i class="icon-headphones"></i></li>
+            <li ref="3" style="cursor: pointer;">
+    <span class="questionNumber">3</span>第１部 セクション１ 描写問題<i class="icon-headphones"></i></li>
+            <li ref="4" style="cursor: pointer;">
+    <span class="questionNumber">4</span>第１部 セクション２ 表現力問題<i class="icon-headphones"></i></li>
+            <li ref="5" style="cursor: pointer;">
+    <span class="questionNumber">5</span>第１部 セクション２ 表現力問題<i class="icon-headphones"></i></li>
+            <li ref="6" style="cursor: pointer;">
+    <span class="questionNumber">6</span>第１部 セクション２ 表現力問題<i class="icon-headphones"></i></li>
+            <li ref="7" style="cursor: pointer;">
+    <span class="questionNumber">7</span>第１部 セクション３ 聴解問題<i class="icon-headphones"></i></li>
+            <li ref="8" style="cursor: pointer;">
+    <span class="questionNumber">8</span>第１部 セクション３ 聴解問題<i class="icon-headphones"></i></li>
+            <li ref="9" style="cursor: pointer;">
+    <span class="questionNumber">9</span>第１部 セクション３ 聴解問題<i class="icon-headphones"></i></li>
+            <li ref="10" style="cursor: pointer;">
+    <span class="questionNumber">10</span>第２部 セクション１ 描写問題<i class="icon-headphones"></i></li>
+            <li ref="11" style="cursor: pointer;">
+    <span class="questionNumber">11</span>第２部 セクション１ 描写問題<i class="icon-headphones"></i></li>
+            <li ref="12" style="cursor: pointer;">
+    <span class="questionNumber">12</span>第２部 セクション１ 描写問題<i class="icon-headphones"></i></li>
+            <li ref="13" style="cursor: pointer;">
+    <span class="questionNumber">13</span>第２部 セクション２ 聴読解問題<i class="icon-headphones"></i></li>
+            <li ref="14" style="cursor: pointer;">
+    <span class="questionNumber">14</span>第２部 セクション２ 聴読解問題<i class="icon-headphones"></i></li>
+            <li ref="15" style="cursor: pointer;">
+    <span class="questionNumber">15</span>第２部 セクション２ 聴読解問題<i class="icon-headphones"></i></li>
+            <li ref="16" style="cursor: pointer;">
+    <span class="questionNumber">16</span>第３部 セクション１ 文法・語彙問題</li>
+            <li ref="17" style="cursor: pointer;">
+    <span class="questionNumber">17</span>第３部 セクション１ 文法・語彙問題</li>
+            <li ref="18" style="cursor: pointer;">
+    <span class="questionNumber">18</span>第３部 セクション１ 文法・語彙問題</li>
+            <li ref="19" style="cursor: pointer;">
+    <span class="questionNumber">19</span>第３部 セクション２ 表現力問題</li>
+            <li ref="20" style="cursor: pointer;">
+    <span class="questionNumber">20</span>第３部 セクション２ 表現力問題</li>
+            <li ref="21" style="cursor: pointer;">
+    <span class="questionNumber">21</span>第３部 セクション２ 表現力問題</li>
+            <li class="combination">
+    <p><span>22</span>第３部 セクション３ 短文読解問題</p>
+    <ul>
+        <li ref="22" style="cursor: pointer;"><span class="questionNumber">22</span>第３部 セクション３ 短文読解問題</li>
+        </ul>
+</li>
+            <li class="combination">
+    <p><span>23</span>第３部 セクション３ 短文読解問題</p>
+    <ul>
+        <li ref="23" style="cursor: pointer;"><span class="questionNumber">23</span>第３部 セクション３ 短文読解問題</li>
+        </ul>
+</li>
+            <li class="combination">
+    <p><span>24</span>第３部 セクション３ 短文読解問題</p>
+    <ul>
+        <li ref="24" style="cursor: pointer;"><span class="questionNumber">24</span>第３部 セクション３ 短文読解問題</li>
+        </ul>
+</li>
+            </ul>
+    </div>
+</div></div></div></div></div>
+
+<!-- タイムアップ画面 -->
+<div class="timeUpContainer">
+    <div class="timeUpImageBox">
+        <p>タイムアウト</p>
+    </div>
+</div><div id="printContainer">印刷はできません。</div>
+<script id="local-iframe-nav">
+(function(){
+  var prevFile = "test3_22.htm";
+  var nextFile = "test3_24.htm";
+  var answerFile = "";
+
+  function navTo(file) {
+    if (!file) return;
+    if (window.parent && window.parent !== window) {
+      window.parent.location.href = "../" + file;
+    } else {
+      window.location.href = "../" + file;
+    }
+  }
+
+  function override() {
+    var prev = document.getElementById('prevButton');
+    var next = document.getElementById('nextButton');
+    var confirm = document.getElementById('confirmButton');
+    var retry = document.getElementById('reTryButton');
+
+    if (prev) {
+      prev.onclick = function(e) { e.preventDefault(); navTo(prevFile); };
+      prev.href = 'javascript:void(0)';
+      if (!prevFile) prev.classList.add('disabled');
+      else prev.classList.remove('disabled');
+    }
+    if (next) {
+      next.onclick = function(e) { e.preventDefault(); navTo(nextFile); };
+      next.href = 'javascript:void(0)';
+      if (!nextFile) next.classList.add('disabled');
+      else next.classList.remove('disabled');
+    }
+    if (confirm) {
+      confirm.onclick = function(e) { e.preventDefault(); navTo(answerFile); };
+      confirm.href = 'javascript:void(0)';
+      confirm.classList.remove('disabled');
+      confirm.innerHTML = '<i class="icon-check"></i> 解答を見る';
+    }
+    if (retry) {
+      retry.style.display = 'none';
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', override);
+  } else {
+    override();
+  }
+  setTimeout(override, 500);
+  setTimeout(override, 1500);
+})();
+</script>
+
+
+<script id="local-choice-handler">
+(function(){
+  function enableChoices() {
+    var spans = document.querySelectorAll('.choices li span.choice, .choices li span[ref]');
+    for (var i = 0; i < spans.length; i++) {
+      spans[i].style.cursor = 'pointer';
+      spans[i].addEventListener('click', function(e) {
+        var parent = this.closest('.choices');
+        if (!parent) return;
+        var siblings = parent.querySelectorAll('li span.choice, li span[ref]');
+        for (var j = 0; j < siblings.length; j++) {
+          siblings[j].classList.remove('select');
+        }
+        this.classList.add('select');
+      });
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', enableChoices);
+  } else {
+    enableChoices();
+  }
+  setTimeout(enableChoices, 1000);
+  setTimeout(enableChoices, 3000);
+})();
+</script>
+
+
+<script id="local-save-answer">
+(function(){
+  // Derive a storage key from the page path, e.g. "sn_week_1_1"
+  var path = window.location.pathname || window.location.href;
+  var m = path.match(/(week|test)(\d+)_(\d+)_files/);
+  var storageKey = m ? 'sn_' + m[1] + '_' + m[2] + '_q' + m[3] : null;
+
+  function hookChoices() {
+    if (!storageKey) return;
+    var spans = document.querySelectorAll('.choices li span.choice, .choices li span[ref]');
+    for (var i = 0; i < spans.length; i++) {
+      spans[i].addEventListener('click', function() {
+        var ref = this.getAttribute('ref');
+        if (ref) {
+          localStorage.setItem(storageKey, ref);
+        }
+      });
+    }
+    // Restore previous selection
+    var saved = localStorage.getItem(storageKey);
+    if (saved) {
+      var target = document.querySelector('.choices li span[ref="' + saved + '"]');
+      if (target) target.classList.add('select');
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', hookChoices);
+  } else {
+    hookChoices();
+  }
+  setTimeout(hookChoices, 1000);
+})();
+</script>
+
+</body></html>

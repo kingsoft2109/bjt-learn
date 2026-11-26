@@ -30,7 +30,7 @@ function ExamEngine(cfg){
   this.remain = cfg.timeSeconds;
   this.timerId = null;
 
-  this.hasAudio = (cfg.type === 'choukai' || cfg.type === 'choudokkai');
+  this.hasAudio = (cfg.type === 'choukai' || cfg.type === 'choudokkai' || cfg.type === 'mixed');
   if(this.hasAudio){
     this.plays = {};
     this.segNums.forEach(function(s){ this.plays[s] = 0; }.bind(this));
