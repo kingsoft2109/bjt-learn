@@ -93,7 +93,9 @@
       ],
       "ans": "B",
       "trap": "Số người vs số bản in",
-      "explain": "18名 × 1人2部 = 36部；18部 là số người, không phải số bản in."
+      "explain": "18名 × 1人2部 = 36部；18部 là số người, không phải số bản in.",
+      "explain_en": "18名 × 1人2部 = 36部; 18部 is the number of people, not the number of copies to print.",
+      "explain_ja": "18名 × 1人2部 = 36部です。18部は人数であり、印刷部数ではありません。"
     },
     {
       "n": 2,
@@ -107,7 +109,9 @@
       ],
       "ans": "C",
       "trap": "「確認が終わるまで印刷を控える」— chưa xác nhận xong thì chưa in",
-      "explain": "最終確認をまだいただいていないので、確認が終わるまでは印刷を控える；確認が終わり次第印刷する."
+      "explain": "最終確認をまだいただいていないので、確認が終わるまでは印刷を控える；確認が終わり次第印刷する.",
+      "explain_en": "最終確認をまだいただいていないので、確認が終わるまでは印刷を控える；確認が終わり次第印刷する。 — We have not yet received the final confirmation, so refrain from printing until confirmation is complete; print as soon as it is complete.",
+      "explain_ja": "最終確認をまだいただいていないので、確認が終わるまでは印刷を控える；確認が終わり次第印刷する。"
     },
     {
       "n": 3,
@@ -121,7 +125,9 @@
       ],
       "ans": "B",
       "trap": "Gắn đúng số với đúng đối tượng",
-      "explain": "参加者は18名；36 là số bản in, 2 là số bản mỗi người."
+      "explain": "参加者は18名；36 là số bản in, 2 là số bản mỗi người.",
+      "explain_en": "There are 18名 participants; 36 is the number of printed copies, 2 is the number of copies per person.",
+      "explain_ja": "参加者は18名です。36は印刷部数、2は1人あたりの部数です。"
     },
     {
       "n": 4,
@@ -135,7 +141,9 @@
       ],
       "ans": "A",
       "trap": "Lịch cũ vs lịch mới đã thay đổi",
-      "explain": "Lịch mới là 11月11日水曜日午後2時；11月10日午前10時 là lịch cũ."
+      "explain": "Lịch mới là 11月11日水曜日午後2時；11月10日午前10時 là lịch cũ.",
+      "explain_en": "The new schedule is 11月11日, Wednesday, at 2 p.m.; 11月10日 at 10 a.m. is the old schedule.",
+      "explain_ja": "新しい予定は11月11日水曜日午後2時です。11月10日午前10時は古い予定です。"
     },
     {
       "n": 5,
@@ -149,7 +157,9 @@
       ],
       "ans": "C",
       "trap": "Gửi hôm nay nhưng phải qua xác nhận trước",
-      "explain": "資料は今日中に送るが、送る前に課長に確認する."
+      "explain": "資料は今日中に送るが、送る前に課長に確認する.",
+      "explain_en": "資料は今日中に送るが、送る前に課長に確認する。 — The materials will be sent within today, but before sending them, check with the section chief.",
+      "explain_ja": "資料は今日中に送るが、送る前に課長に確認する。"
     },
     {
       "n": 6,
@@ -163,7 +173,9 @@
       ],
       "ans": "B",
       "trap": "Nghe đúng tên công ty gọi đến",
-      "explain": "A社からお電話があった."
+      "explain": "A社からお電話があった.",
+      "explain_en": "A社からお電話があった。 — There was a phone call from A社.",
+      "explain_ja": "A社からお電話があった。"
     },
     {
       "n": 7,
@@ -177,7 +189,9 @@
       ],
       "ans": "D",
       "trap": "Đã xong vs còn lại vs tổng số",
-      "explain": "全20件のうち完了14件；6 là số còn lại, 20 là tổng số."
+      "explain": "全20件のうち完了14件；6 là số còn lại, 20 là tổng số.",
+      "explain_en": "全20件のうち完了14件; 6 is the remaining number, 20 is the total.",
+      "explain_ja": "全20件のうち完了は14件です。6は残りの件数、20は総数です。"
     },
     {
       "n": 8,
@@ -191,7 +205,9 @@
       ],
       "ans": "A",
       "trap": "Hạn hoàn thành phần còn lại",
-      "explain": "残り6件は11月13日金曜日までに完了する予定."
+      "explain": "残り6件は11月13日金曜日までに完了する予定.",
+      "explain_en": "残り6件は11月13日金曜日までに完了する予定。 — The remaining 6件 are scheduled to be completed by Friday, 11月13日.",
+      "explain_ja": "残り6件は11月13日金曜日までに完了する予定。"
     },
     {
       "n": 9,
@@ -205,7 +221,9 @@
       ],
       "ans": "D",
       "trap": "「まだ承認を得ていない」— chưa được duyệt",
-      "explain": "追加の予算はまだ承認を得ていないので、承認が得られ次第発注する."
+      "explain": "追加の予算はまだ承認を得ていないので、承認が得られ次第発注する.",
+      "explain_en": "追加の予算はまだ承認を得ていないので、承認が得られ次第発注する。 — The additional budget has not yet received approval, so the order will be placed as soon as approval is obtained.",
+      "explain_ja": "追加の予算はまだ承認を得ていないので、承認が得られ次第発注する。"
     },
     {
       "n": 10,
@@ -219,7 +237,9 @@
       ],
       "ans": "A",
       "trap": "Ghép chéo tầng và tên phòng",
-      "explain": "会議室が3階の会議室Aから5階の会議室Cに変更；phải lấy cả tầng lẫn tên phòng mới, không ghép chéo."
+      "explain": "会議室が3階の会議室Aから5階の会議室Cに変更；phải lấy cả tầng lẫn tên phòng mới, không ghép chéo.",
+      "explain_en": "会議室が3階の会議室Aから5階の会議室Cに変更; you must take both the new floor and the new room name together, without mixing them up.",
+      "explain_ja": "会議室が3階の会議室Aから5階の会議室Cに変更されました。新しい階と会議室名をセットで覚え、組み合わせを間違えないようにしてください。"
     },
     {
       "n": 11,
@@ -233,7 +253,9 @@
       ],
       "ans": "C",
       "trap": "Giờ bắt đầu vs hạn gửi tài liệu",
-      "explain": "開始時間は午前10時のまま；午前9時 là hạn gửi tài liệu, không phải giờ bắt đầu."
+      "explain": "開始時間は午前10時のまま；午前9時 là hạn gửi tài liệu, không phải giờ bắt đầu.",
+      "explain_en": "開始時間は午前10時のまま; 午前9時 is the deadline for sending the materials, not the start time.",
+      "explain_ja": "開始時間は午前10時のままです。午前9時は資料の送付期限であり、開始時刻ではありません。"
     },
     {
       "n": 12,
@@ -247,7 +269,9 @@
       ],
       "ans": "C",
       "trap": "Hạn gửi tài liệu vs giờ họp",
-      "explain": "資料は明日午前9時までにメールで送る；午前10時 là giờ họp."
+      "explain": "資料は明日午前9時までにメールで送る；午前10時 là giờ họp.",
+      "explain_en": "資料は明日午前9時までにメールで送る; 午前10時 is the meeting time.",
+      "explain_ja": "資料は明日午前9時までにメールで送ります。午前10時は会議の時刻です。"
     }
   ],
   "instructions": "<li>聴解12問で <strong>約40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>聴解4セット</strong> で、各セットに問題が3問あり、<strong>セットの3問はすべて一緒に</strong>、そのセットの再生ボタンのすぐ下に、CBT試験室形式の解答画面で表示されます — 聞いたら3問まとめて答えましょう。1問ずつ行き来する必要はありません。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li>第2週のテーマは <strong>仕事での敬語</strong> です：セット1は会議資料の準備（人数×1人あたりの部数、最終確認がなければ印刷しない）、セット2はお客様からの電話（古い日程は新しい日程に変わり、資料の送付はまず上司の確認が必要）、セット3は進捗報告（完了／残り／合計、予算の承認後に注文）、セット4は <strong><span class=\"jp\">留守番電話</span></strong> — 1人が会議室変更の伝言を残します：新しい部屋の階と名前の両方を正確に取り、開始時刻と資料の送付期限を区別することに注意しましょう。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです — 別の答えを選ぶと前の答えが置き換わります。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、トランスクリプト、ミスノートが表示されます。</li>",

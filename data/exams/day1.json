@@ -150,7 +150,9 @@
       ],
       "ans": "B",
       "trap": "「まだ〜ていない」— chưa xác nhận",
-      "explain": "Hội thoại nói rõ「まだ決まっておらず、総務部に確認中」— phòng họp CHƯA chốt. A là bẫy kinh điển: nghe thấy nhắc tới “phòng họp” liền tưởng đã quyết định."
+      "explain": "Hội thoại nói rõ「まだ決まっておらず、総務部に確認中」— phòng họp CHƯA chốt. A là bẫy kinh điển: nghe thấy nhắc tới “phòng họp” liền tưởng đã quyết định.",
+      "explain_en": "The dialogue clearly says 「まだ決まっておらず、総務部に確認中」 — the meeting room has NOT been decided yet. A is a classic trap: you hear “meeting room” mentioned and assume it has already been decided.",
+      "explain_ja": "会話では「まだ決まっておらず、総務部に確認中」とはっきり言っています。つまり、会議室はまだ決まっていません。Aは典型的な引っかけで、「会議室」という言葉が出てきただけで、すでに決まったと思い込んでしまいます。"
     },
     {
       "n": 2,
@@ -164,7 +166,9 @@
       ],
       "ans": "B",
       "trap": "Dự kiến ≠ xác định (予定だが未確認)",
-      "explain": "「午前10時の予定だが、最終確認が取れていない」— 10 giờ mới là dự kiến. A sai ở chữ「確定」; D cũng sai vì đã có giờ dự kiến rồi, không phải “chưa có gì”."
+      "explain": "「午前10時の予定だが、最終確認が取れていない」— 10 giờ mới là dự kiến. A sai ở chữ「確定」; D cũng sai vì đã có giờ dự kiến rồi, không phải “chưa có gì”.",
+      "explain_en": "「午前10時の予定だが、最終確認が取れていない」 — 10 o'clock is only the planned time. A is wrong because of the word 「確定」; D is also wrong because there is already a planned time, so it is not “nothing has been decided.”",
+      "explain_ja": "「午前10時の予定だが、最終確認が取れていない」のですから、10時はあくまで予定です。Aは「確定」という言葉の点で誤りです。Dも、すでに予定の時刻があるので「何も決まっていない」わけではなく、誤りです。"
     },
     {
       "n": 3,
@@ -178,7 +182,9 @@
       ],
       "ans": "B",
       "trap": "Nghe đúng yêu cầu của sếp",
-      "explain": "Sếp chốt bằng câu「確認が取れたら、すぐに私に連絡してくれ」— việc cần làm là báo ngay khi có xác nhận, không phải tự quyết phòng họp hay làm lại tài liệu."
+      "explain": "Sếp chốt bằng câu「確認が取れたら、すぐに私に連絡してくれ」— việc cần làm là báo ngay khi có xác nhận, không phải tự quyết phòng họp hay làm lại tài liệu.",
+      "explain_en": "The boss concludes with 「確認が取れたら、すぐに私に連絡してくれ」 — what needs to be done is to report immediately once confirmation is obtained, not to decide the meeting room yourself or redo the documents.",
+      "explain_ja": "上司は最後に「確認が取れたら、すぐに私に連絡してくれ」と言っています。すべきことは、確認が取れたらすぐに連絡することであり、自分で会議室を決めたり、資料を作り直したりすることではありません。"
     },
     {
       "n": 4,
@@ -192,7 +198,9 @@
       ],
       "ans": "B",
       "trap": "Số đơn hàng vs số tồn kho",
-      "explain": "1,200 là lượng ĐƠN HÀNG của A社（注文は全部で1,200個）, còn tồn kho chỉ có「在庫は850個しかない」. C (1,200) là bẫy kinh điển: nghe số to nhất liền chọn. Ghi nhãn ngay khi nghe: 注文1,200・在庫850・不足350."
+      "explain": "1,200 là lượng ĐƠN HÀNG của A社（注文は全部で1,200個）, còn tồn kho chỉ có「在庫は850個しかない」. C (1,200) là bẫy kinh điển: nghe số to nhất liền chọn. Ghi nhãn ngay khi nghe: 注文1,200・在庫850・不足350.",
+      "explain_en": "1,200 is the ORDER quantity from A社 (注文は全部で1,200個), while stock is only 「在庫は850個しかない」. C (1,200) is a classic trap: you hear the biggest number and pick it. Label the numbers as you hear them: 注文1,200・在庫850・不足350.",
+      "explain_ja": "1,200はA社の注文の数量です（注文は全部で1,200個）。在庫は「在庫は850個しかない」だけです。C（1,200）は典型的な引っかけで、最も大きな数字を聞いて選んでしまいます。聞きながら数字にラベルを付けましょう：注文1,200・在庫850・不足350。"
     },
     {
       "n": 5,
@@ -206,7 +214,9 @@
       ],
       "ans": "B",
       "trap": "Gắn đúng số với đúng mốc thời gian",
-      "explain": "「在庫の850個は今週の金曜日に全て出荷」— thứ Sáu xuất toàn bộ 850 đang có trong kho. 350 là phần còn THIẾU chưa có hàng; 1,200 là tổng đơn hàng."
+      "explain": "「在庫の850個は今週の金曜日に全て出荷」— thứ Sáu xuất toàn bộ 850 đang có trong kho. 350 là phần còn THIẾU chưa có hàng; 1,200 là tổng đơn hàng.",
+      "explain_en": "「在庫の850個は今週の金曜日に全て出荷」 — on Friday, all 850 currently in stock will be shipped. 350 is the SHORTAGE still without stock; 1,200 is the total order.",
+      "explain_ja": "「在庫の850個は今週の金曜日に全て出荷」です。金曜日に、現在在庫にある850個をすべて出荷します。350はまだ在庫がない不足分で、1,200は注文の合計です。"
     },
     {
       "n": 6,
@@ -220,7 +230,9 @@
       ],
       "ans": "B",
       "trap": "「正式な回答を待っている」= chưa chốt",
-      "explain": "Phần thiếu 350 (1,200 − 850)「まだ決まっておらず、仕入先の正式な回答を待っている」— chưa có hạn giao. A và D đều gán cho nó một ngày cụ thể mà hội thoại không hề nói."
+      "explain": "Phần thiếu 350 (1,200 − 850)「まだ決まっておらず、仕入先の正式な回答を待っている」— chưa có hạn giao. A và D đều gán cho nó một ngày cụ thể mà hội thoại không hề nói.",
+      "explain_en": "For the shortage of 350 (1,200 − 850), 「まだ決まっておらず、仕入先の正式な回答を待っている」 — there is no delivery deadline yet. Both A and D assign it a specific date that the dialogue never mentions.",
+      "explain_ja": "不足分の350（1,200 − 850）については「まだ決まっておらず、仕入先の正式な回答を待っている」状態で、納期はまだ決まっていません。AもDも、会話では一切言われていない具体的な日付を当てはめているので誤りです。"
     },
     {
       "n": 7,
@@ -234,7 +246,9 @@
       ],
       "ans": "B",
       "trap": "「承認がまだ下りていない」",
-      "explain": "Lịch trình ĐÃ chốt (日程は決まっている), vướng duy nhất là「経理部の承認がまだ下りていない」. C là bẫy phủ định ngược; người chưa duyệt là phòng kế toán, không phải sếp."
+      "explain": "Lịch trình ĐÃ chốt (日程は決まっている), vướng duy nhất là「経理部の承認がまだ下りていない」. C là bẫy phủ định ngược; người chưa duyệt là phòng kế toán, không phải sếp.",
+      "explain_en": "The schedule HAS been decided (日程は決まっている); the only hold-up is 「経理部の承認がまだ下りていない」. C is a reversed-negation trap; the one who has not approved it is the accounting department, not the boss.",
+      "explain_ja": "日程はすでに決まっています（日程は決まっている）。唯一の問題は「経理部の承認がまだ下りていない」ことです。Cは否定を逆にした引っかけです。まだ承認していないのは上司ではなく経理部です。"
     },
     {
       "n": 8,
@@ -248,7 +262,9 @@
       ],
       "ans": "A",
       "trap": "「見込みだが確実ではない」",
-      "explain": "Nguyên văn:「明日の午後の見込みではございますが、確実ではございません」. Mọi đáp án có chữ「確定」đều là bẫy — “dự kiến” không bao giờ bằng “chắc chắn”."
+      "explain": "Nguyên văn:「明日の午後の見込みではございますが、確実ではございません」. Mọi đáp án có chữ「確定」đều là bẫy — “dự kiến” không bao giờ bằng “chắc chắn”.",
+      "explain_en": "Verbatim: 「明日の午後の見込みではございますが、確実ではございません」. Every answer containing the word 「確定」 is a trap — a “forecast/expectation” never equals “certainty.”",
+      "explain_ja": "原文は「明日の午後の見込みではございますが、確実ではございません」です。「確定」という言葉を含む選択肢はすべて引っかけです。「見込み」は決して「確実」と同じではありません。"
     },
     {
       "n": 9,
@@ -262,7 +278,9 @@
       ],
       "ans": "B",
       "trap": "Nghe trọn chỉ thị ở cuối đoạn",
-      "explain": "Sếp dặn「承認が下りたら、すぐに航空券を予約して、ホテルも押さえてくれ」— gồm CẢ vé máy bay VÀ khách sạn. Chỉ “báo cáo thôi” (C) là thiếu một nửa chỉ thị."
+      "explain": "Sếp dặn「承認が下りたら、すぐに航空券を予約して、ホテルも押さえてくれ」— gồm CẢ vé máy bay VÀ khách sạn. Chỉ “báo cáo thôi” (C) là thiếu một nửa chỉ thị.",
+      "explain_en": "The boss instructs 「承認が下りたら、すぐに航空券を予約して、ホテルも押さえてくれ」 — that includes BOTH the plane ticket AND the hotel. Just “reporting” (C) is only half the instruction.",
+      "explain_ja": "上司の指示は「承認が下りたら、すぐに航空券を予約して、ホテルも押さえてくれ」です。航空券とホテルの両方が含まれます。「報告するだけ」（C）では指示の半分しか満たしていません。"
     }
   ],
   "instructions": "<li>聴解9問で <strong>35分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>各会話に問題が3問あり、<strong>セットの3問はすべて一緒に</strong>、そのセットの再生ボタンのすぐ下に、CBT試験室形式の解答画面で表示されます — 聞いたら3問まとめて答えましょう。もう1問ずつ行き来する必要はありません。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、2つの異なる声（低い声＝指示を出す上司、もう一方＝敬語を使う社員）が使われ、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、トランスクリプト、ミスノートが表示されます。</li>",

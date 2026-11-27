@@ -99,7 +99,9 @@
       ],
       "ans": "B",
       "trap": "Cộng đúng quý — tháng 10 thuộc quý 4",
-      "explain": "240+260+300=800万円； 720万円 là quý trước, 1,140万円 là cộng nhầm cả tháng 10 (quý 4)."
+      "explain": "240+260+300=800万円； 720万円 là quý trước, 1,140万円 là cộng nhầm cả tháng 10 (quý 4).",
+      "explain_en": "240+260+300=800万円; 720万円 is the previous quarter, and 1,140万円 is the mistaken total that also includes October (Q4).",
+      "explain_ja": "240+260+300=800万円です。720万円は前四半期で、1,140万円は10月（第4四半期）まで誤って合計したものです。"
     },
     {
       "n": 2,
@@ -113,7 +115,9 @@
       ],
       "ans": "D",
       "trap": "Cao nhất trong quý 3 — không tính tháng 10",
-      "explain": "Trong quý 3, cao nhất là 9月 300万円； 10月 340万円 cao hơn nhưng thuộc quý 4, không tính."
+      "explain": "Trong quý 3, cao nhất là 9月 300万円； 10月 340万円 cao hơn nhưng thuộc quý 4, không tính.",
+      "explain_en": "In Q3, the highest is 9月 at 300万円; 10月 at 340万円 is higher but belongs to Q4, so it does not count.",
+      "explain_ja": "第3四半期では、9月300万円が最も高いです。10月340万円の方が高いですが、第4四半期に属するため、対象外です。"
     },
     {
       "n": 3,
@@ -127,7 +131,9 @@
       ],
       "ans": "A",
       "trap": "Mức tăng = quý này − quý trước",
-      "explain": "800−720=80万円増加； 340万円 là doanh số tháng 10, không phải mức tăng."
+      "explain": "800−720=80万円増加； 340万円 là doanh số tháng 10, không phải mức tăng.",
+      "explain_en": "800−720=80万円増加; 340万円 is October sales, not the amount of the increase.",
+      "explain_ja": "800−720=80万円増加です。340万円は10月の売上であり、増加額ではありません。"
     },
     {
       "n": 4,
@@ -141,7 +147,9 @@
       ],
       "ans": "B",
       "trap": "Tính lại tổng sau khi đổi số lượng",
-      "explain": "D 180,000円 + E 180×1,200=216,000円 = 396,000円； 360,000円 là tổng trước khi đổi."
+      "explain": "D 180,000円 + E 180×1,200=216,000円 = 396,000円； 360,000円 là tổng trước khi đổi.",
+      "explain_en": "D 180,000円 + E 180×1,200=216,000円 = 396,000円; 360,000円 is the total before the change.",
+      "explain_ja": "D 180,000円 + E 180×1,200=216,000円 = 396,000円です。360,000円は変更前の合計です。"
     },
     {
       "n": 5,
@@ -155,7 +163,9 @@
       ],
       "ans": "B",
       "trap": "Ngày giao cũ trong email vs ngày giao mới",
-      "explain": "納期 đổi từ 11月12日 sang 11月16日."
+      "explain": "納期 đổi từ 11月12日 sang 11月16日.",
+      "explain_en": "納期 changed from 11月12日 to 11月16日.",
+      "explain_ja": "納期は11月12日から11月16日に変更されました。"
     },
     {
       "n": 6,
@@ -169,7 +179,9 @@
       ],
       "ans": "C",
       "trap": "「まだ発行していない」— chưa phát hành",
-      "explain": "請求書はまだ発行していない、納品後に発行."
+      "explain": "請求書はまだ発行していない、納品後に発行.",
+      "explain_en": "請求書はまだ発行していない、納品後に発行.",
+      "explain_ja": "請求書はまだ発行していない、納品後に発行."
     },
     {
       "n": 7,
@@ -183,7 +195,9 @@
       ],
       "ans": "C",
       "trap": "Lịch cũ trong bảng vs lịch mới trong hội thoại",
-      "explain": "Lịch mới là 11月18日水曜日午後2時； 11月17日午後3時 là lịch cũ, 午前11時 cùng ngày là 社内会議."
+      "explain": "Lịch mới là 11月18日水曜日午後2時； 11月17日午後3時 là lịch cũ, 午前11時 cùng ngày là 社内会議.",
+      "explain_en": "The new schedule is 11月18日水曜日午後2時; 11月17日午後3時 is the old schedule, and 午前11時 on the same day is the 社内会議.",
+      "explain_ja": "新しい予定は11月18日水曜日午後2時です。11月17日午後3時は古い予定で、同日の午前11時は社内会議です。"
     },
     {
       "n": 8,
@@ -197,7 +211,9 @@
       ],
       "ans": "C",
       "trap": "「まだ承認を得ていない」— chưa được duyệt",
-      "explain": "資料はまだ承認を得ていないので当日は口頭のみ； 資料 sẽ gửi sau khi 承認が下りてから."
+      "explain": "資料はまだ承認を得ていないので当日は口頭のみ； 資料 sẽ gửi sau khi 承認が下りてから.",
+      "explain_en": "資料はまだ承認を得ていないので当日は口頭のみ; 資料 will be sent after 承認が下りてから.",
+      "explain_ja": "資料はまだ承認を得ていないので当日は口頭のみです。資料は承認が下りてから送ります。"
     },
     {
       "n": 9,
@@ -211,7 +227,9 @@
       ],
       "ans": "A",
       "trap": "Mục không đổi vs mục đã dời trong cùng ngày",
-      "explain": "社内会議 giữ nguyên 11月18日水曜日午前11時； 午後2時 cùng ngày là 研修 đã dời tới."
+      "explain": "社内会議 giữ nguyên 11月18日水曜日午前11時； 午後2時 cùng ngày là 研修 đã dời tới.",
+      "explain_en": "社内会議 remains unchanged at 11月18日水曜日午前11時; 午後2時 on the same day is the 研修 that was moved there.",
+      "explain_ja": "社内会議は11月18日水曜日午前11時のままです。同日の午後2時は、そこへ移された研修です。"
     },
     {
       "n": 10,
@@ -225,7 +243,9 @@
       ],
       "ans": "B",
       "trap": "Không ghép chéo giờ bắt đầu cũ với giờ kết thúc mới",
-      "explain": "時間 đổi từ 午後2時〜午後4時 sang 午後3時〜午後5時； không ghép chéo giờ bắt đầu cũ với giờ kết thúc mới."
+      "explain": "時間 đổi từ 午後2時〜午後4時 sang 午後3時〜午後5時； không ghép chéo giờ bắt đầu cũ với giờ kết thúc mới.",
+      "explain_en": "時間 changed from 午後2時〜午後4時 to 午後3時〜午後5時; do not cross-combine the old start time with the new end time.",
+      "explain_ja": "時間は午後2時〜午後4時から午後3時〜午後5時に変更されました。古い開始時刻と新しい終了時刻を組み合わせてはいけません。"
     },
     {
       "n": 11,
@@ -239,7 +259,9 @@
       ],
       "ans": "A",
       "trap": "Phải lấy cả hai vế mới — không ghép chéo cũ–mới",
-      "explain": "会議室 B→C và 参加者 10名→15名, phải lấy cả hai vế mới, không ghép chéo cũ–mới."
+      "explain": "会議室 B→C và 参加者 10名→15名, phải lấy cả hai vế mới, không ghép chéo cũ–mới.",
+      "explain_en": "会議室 B→C and 参加者 10名→15名 — you must take both new parts; do not cross-combine old and new.",
+      "explain_ja": "会議室 B→C、参加者 10名→15名で、両方とも新しい方を取る必要があります。旧と新を組み合わせてはいけません。"
     },
     {
       "n": 12,
@@ -253,7 +275,9 @@
       ],
       "ans": "B",
       "trap": "「まだ承認を得ていない」— chưa được duyệt",
-      "explain": "プロジェクターはまだ承認を得ていないため、承認が得られ次第手配する."
+      "explain": "プロジェクターはまだ承認を得ていないため、承認が得られ次第手配する.",
+      "explain_en": "プロジェクターはまだ承認を得ていないため、承認が得られ次第手配する.",
+      "explain_ja": "プロジェクターはまだ承認を得ていないため、承認が得られ次第手配する."
     }
   ],
   "instructions": "<li>聴読解12問で <strong>約40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>4セット</strong> で、各セットには読む資料（棒グラフ／メール／スケジュール表／フォーム）と <strong>会話の音声</strong> があり、<strong>セットの3問はすべて一緒に</strong>、その資料のすぐ下に、CBT試験室形式の解答画面で表示されます。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li>セット1は <strong>月次売上の棒グラフ</strong> — 注意点は四半期の境界にあります：10月は第4四半期です。セット2は <strong>注文メール</strong> — <span class=\"jp\">商品E</span> の数量と <span class=\"jp\">納期</span> はどちらもメールから変更されています。セット3は <strong>11月のスケジュール表</strong> — <span class=\"jp\">研修</span> は会話の中で日時が移っています。セット4は <strong>会議室予約フォーム</strong> — 時刻、会議室、参加人数はすべてフォームから変わり、<span class=\"jp\">プロジェクター</span> はまだ承認されていません。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、翻訳付きのトランスクリプト、ミスノートが表示されます。</li>",

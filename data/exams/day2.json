@@ -38,7 +38,9 @@
         "参加者が増えたため"
       ],
       "ans": "A",
-      "explain": "文中「社長の出張のため」. Phòng họp và báo cáo đều được nhắc tới nhưng không phải lý do đổi lịch."
+      "explain": "文中「社長の出張のため」. Phòng họp và báo cáo đều được nhắc tới nhưng không phải lý do đổi lịch.",
+      "explain_en": "In the text: 「社長の出張のため」. The meeting room and the report are both mentioned, but neither is the reason for the schedule change.",
+      "explain_ja": "文中には「社長の出張のため」とあります。会議室も報告書も出てきますが、どちらも日程変更の理由ではありません。"
     },
     {
       "n": 2,
@@ -51,7 +53,9 @@
         "会議の前日まで"
       ],
       "ans": "B",
-      "explain": "「月曜日の17時までに…提出してください」. 10時 và 14時 là giờ họp cũ/mới, không phải hạn nộp."
+      "explain": "「月曜日の17時までに…提出してください」. 10時 và 14時 là giờ họp cũ/mới, không phải hạn nộp.",
+      "explain_en": "「月曜日の17時までに…提出してください」. 10時 and 14時 are the old/new meeting times, not the submission deadline.",
+      "explain_ja": "「月曜日の17時までに…提出してください」が正解です。10時と14時は会議の旧・新の時刻で、提出期限ではありません。"
     },
     {
       "n": 3,
@@ -64,7 +68,9 @@
         "総務部へ連絡すること"
       ],
       "ans": "A",
-      "explain": "「資料を印刷して持参する必要はありません」. Vẫn phải xem tài liệu bằng máy tính cá nhân."
+      "explain": "「資料を印刷して持参する必要はありません」. Vẫn phải xem tài liệu bằng máy tính cá nhân.",
+      "explain_en": "「資料を印刷して持参する必要はありません」. You still have to view the materials on your personal computer.",
+      "explain_ja": "「資料を印刷して持参する必要はありません」。ただし、資料はパソコンで確認する必要があります。"
     },
     {
       "n": 4,
@@ -77,7 +83,9 @@
         "5,000円"
       ],
       "ans": "B",
-      "explain": "150 × 50 = 7.500円； từ 100枚 trở lên giảm 1割 (10%) → 6.750円. Đáp án A là khi quên giảm giá."
+      "explain": "150 × 50 = 7.500円； từ 100枚 trở lên giảm 1割 (10%) → 6.750円. Đáp án A là khi quên giảm giá.",
+      "explain_en": "150 × 50 = 7.500円; from 100枚 upwards there is a 1割 (10%) discount → 6.750円. Answer A is what you get if you forget the discount.",
+      "explain_ja": "150 × 50 = 7.500円で、100枚以上は1割（10％）引きになるため、6.750円になります。Aは割引を忘れた場合の金額です。"
     },
     {
       "n": 5,
@@ -90,7 +98,9 @@
         "19,750円"
       ],
       "ans": "C",
-      "explain": "in 6.750 + đóng sách 150 × 100 = 15.000 → 21.750円. A là quên giảm giá; B là giảm giá cả tiền đóng sách, trong khi bảng ghi rõ đóng sách không thuộc diện giảm."
+      "explain": "in 6.750 + đóng sách 150 × 100 = 15.000 → 21.750円. A là quên giảm giá; B là giảm giá cả tiền đóng sách, trong khi bảng ghi rõ đóng sách không thuộc diện giảm.",
+      "explain_en": "Printing 6.750 + binding 150 × 100 = 15.000 → 21.750円. A is forgetting the discount; B is discounting the binding fee as well, while the table clearly states binding is not eligible for the discount.",
+      "explain_ja": "印刷6.750＋製本150 × 100 = 15.000で、合計21.750円です。Aは割引を忘れた場合、Bは製本代まで割り引いた場合です。表には製本は割引対象外とはっきり書かれています。"
     },
     {
       "n": 6,
@@ -103,7 +113,9 @@
         "100枚未満の場合に割引が適用される"
       ],
       "ans": "A",
-      "explain": "đúng nguyên văn điều kiện ※ trong bảng."
+      "explain": "đúng nguyên văn điều kiện ※ trong bảng.",
+      "explain_en": "Exactly as stated in the ※ condition in the table, verbatim.",
+      "explain_ja": "表の※の条件に書かれている通りの内容です。"
     },
     {
       "n": 7,
@@ -116,7 +128,9 @@
         "納期は11月10日に決まった"
       ],
       "ans": "C",
-      "explain": "「発注は部長の承認を得てから」「正式な発注はその後」— đơn hàng chưa được phát hành."
+      "explain": "「発注は部長の承認を得てから」「正式な発注はその後」— đơn hàng chưa được phát hành.",
+      "explain_en": "「発注は部長の承認を得てから」「正式な発注はその後」 — the order has not yet been issued.",
+      "explain_ja": "「発注は部長の承認を得てから」「正式な発注はその後」ですから、発注はまだ行われていません。"
     },
     {
       "n": 8,
@@ -129,7 +143,9 @@
         "11月末"
       ],
       "ans": "C",
-      "explain": "10日 là ngày giao mong muốn của bên mình; 15日 mới là ngày đối tác trả lời."
+      "explain": "10日 là ngày giao mong muốn của bên mình; 15日 mới là ngày đối tác trả lời.",
+      "explain_en": "10日 is our side's desired delivery date; 15日 is the date the other party replied with.",
+      "explain_ja": "10日はこちらの希望納期で、15日は先方が回答した日付です。"
     },
     {
       "n": 9,
@@ -142,7 +158,9 @@
         "納期の調整は不要である"
       ],
       "ans": "B",
-      "explain": "「承認が出次第、先方と納期を調整いたします」."
+      "explain": "「承認が出次第、先方と納期を調整いたします」.",
+      "explain_en": "「承認が出次第、先方と納期を調整いたします」 — As soon as approval is given, we will coordinate the delivery date with the other party.",
+      "explain_ja": "「承認が出次第、先方と納期を調整いたします」。"
     }
   ],
   "instructions": "<li>読解9問で <strong>30分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>3テキスト</strong> で、各テキストに問題が3問あり、<strong>テキストの3問はすべて一緒に</strong>、そのテキストのすぐ下に、CBT試験室形式の解答画面で表示されます — 読んだら3問まとめて答えましょう。1問ずつ行き来する必要はありません。</li>\n          <li>音声はありません。テキスト2は <strong>価格表</strong> — ※の行に書かれた割引条件に注意し、選ぶ前に注意深く計算しましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。答えとベトナム語の解説は提出後にのみ表示されます。</li>",

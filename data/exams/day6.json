@@ -47,7 +47,9 @@
       ],
       "ans": "B",
       "trap": "Ngày mới vs ngày cũ đã đổi",
-      "explain": "Lịch mới là 11月17日（火）10時；11月10日 là lịch cũ đã đổi, 11月13日 là hạn liên hệ khi không tham dự."
+      "explain": "Lịch mới là 11月17日（火）10時；11月10日 là lịch cũ đã đổi, 11月13日 là hạn liên hệ khi không tham dự.",
+      "explain_en": "The new schedule is 11月17日（火）10時; 11月10日 is the old schedule that was changed, 11月13日 is the deadline to contact them if you cannot attend.",
+      "explain_ja": "新しい予定は11月17日（火）10時です。11月10日は変更された古い予定、11月13日は参加できない場合の連絡期限です。"
     },
     {
       "n": 2,
@@ -61,7 +63,9 @@
       ],
       "ans": "D",
       "trap": "Hạn nộp = 3 ngày trước ngày mới",
-      "explain": "資料は研修の3日前までに人事部へ提出；資料 đã nộp cho lịch cũ vẫn dùng được, không phải nộp lại."
+      "explain": "資料は研修の3日前までに人事部へ提出；資料 đã nộp cho lịch cũ vẫn dùng được, không phải nộp lại.",
+      "explain_en": "資料は研修の3日前までに人事部へ提出; the materials submitted for the old schedule can still be used, they do not need to be submitted again.",
+      "explain_ja": "資料は研修の3日前までに人事部へ提出します。古い予定のために提出した資料はそのまま使えるので、提出し直す必要はありません。"
     },
     {
       "n": 3,
@@ -75,7 +79,9 @@
       ],
       "ans": "A",
       "trap": "Không tham dự → liên hệ人事部 trước 11月13日",
-      "explain": "参加できない方は11月13日（金）までに人事部まで連絡."
+      "explain": "参加できない方は11月13日（金）までに人事部まで連絡.",
+      "explain_en": "参加できない方は11月13日（金）までに人事部まで連絡 — Anyone who cannot attend should contact the HR department by 11月13日（金）.",
+      "explain_ja": "参加できない方は11月13日（金）までに人事部まで連絡。"
     },
     {
       "n": 4,
@@ -89,7 +95,9 @@
       ],
       "ans": "C",
       "trap": "Taxi cần申請 trước (ただし)",
-      "explain": "タクシーは事前の申請が必要；交通費 nói chung mới là 実費精算."
+      "explain": "タクシーは事前の申請が必要；交通費 nói chung mới là 実費精算.",
+      "explain_en": "タクシーは事前の申請が必要; general transportation expenses are the ones settled at actual cost (実費精算).",
+      "explain_ja": "タクシーは事前の申請が必要です。交通費全般が対象なのは実費精算の方です。"
     },
     {
       "n": 5,
@@ -103,7 +111,9 @@
       ],
       "ans": "A",
       "trap": "Vượt 5,000円 → cần cả hai giấy tờ",
-      "explain": "5,000円を超える飲食費は領収書と参加者名簿の両方が必要；6,000円 đã vượt ngưỡng."
+      "explain": "5,000円を超える飲食費は領収書と参加者名簿の両方が必要；6,000円 đã vượt ngưỡng.",
+      "explain_en": "5,000円を超える飲食費は領収書と参加者名簿の両方が必要; 6,000円 has already exceeded the threshold.",
+      "explain_ja": "5,000円を超える飲食費は領収書と参加者名簿の両方が必要です。6,000円はすでにその基準を超えています。"
     },
     {
       "n": 6,
@@ -117,7 +127,9 @@
       ],
       "ans": "D",
       "trap": "Hạn nộp精算書 = 2 tuần sau chuyến đi",
-      "explain": "精算書は出張終了後2週間以内に経理部へ提出；không có領収書 thì không được精算."
+      "explain": "精算書は出張終了後2週間以内に経理部へ提出；không có領収書 thì không được精算.",
+      "explain_en": "精算書は出張終了後2週間以内に経理部へ提出; without a 領収書, expenses cannot be reimbursed (精算).",
+      "explain_ja": "精算書は出張終了後2週間以内に経理部へ提出します。領収書がない場合は精算できません。"
     },
     {
       "n": 7,
@@ -131,7 +143,9 @@
       ],
       "ans": "B",
       "trap": "Ngày họp vs ngày phát hành",
-      "explain": "発売日は12月1日を予定；10月28日 là ngày họp, 来年1月 là thời điểm検討関西."
+      "explain": "発売日は12月1日を予定；10月28日 là ngày họp, 来年1月 là thời điểm検討関西.",
+      "explain_en": "発売日は12月1日を予定; 10月28日 is the meeting date, 来年1月 is when 関西 will be considered.",
+      "explain_ja": "発売日は12月1日を予定しています。10月28日は会議の日、来年1月は関西について検討する時期です。"
     },
     {
       "n": 8,
@@ -145,7 +159,9 @@
       ],
       "ans": "C",
       "trap": "「まだ〜ていない」— chưa được duyệt cuối",
-      "explain": "パッケージデザインはまだ最終承認を受けていない；chỉ khi承認が得られ次第広報部 mới作成発表資料."
+      "explain": "パッケージデザインはまだ最終承認を受けていない；chỉ khi承認が得られ次第広報部 mới作成発表資料.",
+      "explain_en": "パッケージデザインはまだ最終承認を受けていない; only 承認が得られ次第 will 広報部 create the announcement materials.",
+      "explain_ja": "パッケージデザインはまだ最終承認を受けていません。承認が得られ次第、広報部が発表資料を作成します。"
     },
     {
       "n": 9,
@@ -159,7 +175,9 @@
       ],
       "ans": "A",
       "trap": "Trước mắt chỉ関東；関西 mới là検討",
-      "explain": "まず関東のみ；関西は来年1月以降に検討, không phải bán đồng thời."
+      "explain": "まず関東のみ；関西は来年1月以降に検討, không phải bán đồng thời.",
+      "explain_en": "まず関東のみ; 関西は来年1月以降に検討 — it will not be sold at the same time.",
+      "explain_ja": "まず関東のみです。関西は来年1月以降に検討されるため、同時発売ではありません。"
     },
     {
       "n": 10,
@@ -173,7 +191,9 @@
       ],
       "ans": "D",
       "trap": "Cộng 3 tháng của quý 3 (420+380+460)",
-      "explain": "420 + 380 + 460 = 1,260万円；1,150万円 là quý trước, không phải quý 3."
+      "explain": "420 + 380 + 460 = 1,260万円；1,150万円 là quý trước, không phải quý 3.",
+      "explain_en": "420 + 380 + 460 = 1,260万円; 1,150万円 is the previous quarter, not Q3.",
+      "explain_ja": "420 + 380 + 460 = 1,260万円です。1,150万円は前四半期であり、第3四半期ではありません。"
     },
     {
       "n": 11,
@@ -187,7 +207,9 @@
       ],
       "ans": "B",
       "trap": "Gắn đúng số với đúng khu vực",
-      "explain": "九州 tăng 50万円 so với quý trước；lớn nhất là関東580万円, 300万円 là九州."
+      "explain": "九州 tăng 50万円 so với quý trước；lớn nhất là関東580万円, 300万円 là九州.",
+      "explain_en": "九州 increased by 50万円 compared with the previous quarter; the largest is 関東 at 580万円, and 300万円 is 九州.",
+      "explain_ja": "九州は前四半期より50万円増えました。最も大きいのは関東の580万円で、300万円は九州です。"
     },
     {
       "n": 12,
@@ -201,7 +223,9 @@
       ],
       "ans": "C",
       "trap": "「まだ承認を得ていないため含めていない」",
-      "explain": "関西の新店舗計画はまだ社内承認を得ていないため見込みに含めていない；営業担当追加 là九州, 重点 gồm九州の新規開拓."
+      "explain": "関西の新店舗計画はまだ社内承認を得ていないため見込みに含めていない；営業担当追加 là九州, 重点 gồm九州の新規開拓.",
+      "explain_en": "関西の新店舗計画はまだ社内承認を得ていないため見込みに含めていない; the additional sales staff is for 九州, and the focus includes 九州の新規開拓.",
+      "explain_ja": "関西の新店舗計画はまだ社内承認を得ていないため見込みに含めていません。営業担当の追加は九州であり、重点には九州の新規開拓が含まれます。"
     }
   ],
   "instructions": "<li>読解12問で <strong>約40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>4テキスト</strong> で、各テキストに問題が3問あり、<strong>テキストの3問はすべて一緒に</strong>、そのテキストのすぐ下に、CBT試験室形式の解答画面で表示されます — 読んだら3問まとめて答えましょう。1問ずつ行き来する必要はありません。<strong>音声はありません</strong> — 今回は読解の練習だけです。</li>\n          <li>セット1は <span class=\"jp\">研修</span> の日程変更のメール、セット2は新しい <span class=\"jp\">経費精算</span> ルールのお知らせ、セット3は新製品の発売日についての <span class=\"jp\">議事録</span>、セット4はローテーション形式：<span class=\"jp\">長文報告書</span> — 加算と照合が必要な数字の多い第3四半期の売上報告書です。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。答えとベトナム語の解説は、ミスノートと一緒に、提出後にのみ表示されます。</li>",

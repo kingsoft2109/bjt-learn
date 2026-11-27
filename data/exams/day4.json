@@ -140,7 +140,9 @@
       ],
       "ans": "B",
       "trap": "Cộng đúng 3 tháng của quý 3 (7–9月) — viết số hạng ra nháp theo hàng–cột",
-      "explain": "260+250+270 = 780万円. Bẫy C (770) là khi lấy nhầm 240 của tháng 5 thay cho 250 của tháng 8."
+      "explain": "260+250+270 = 780万円. Bẫy C (770) là khi lấy nhầm 240 của tháng 5 thay cho 250 của tháng 8.",
+      "explain_en": "260+250+270 = 780万円. Trap C (770) comes from mistakenly using May's 240 instead of August's 250.",
+      "explain_ja": "260+250+270 = 780万円です。C（770）は引っかけで、8月の250ではなく5月の240を使ってしまった場合です。"
     },
     {
       "n": 2,
@@ -154,7 +156,9 @@
       ],
       "ans": "A",
       "trap": "Tìm tháng thấp nhất của Q店 trong bảng",
-      "explain": "Q店 thấp nhất là tháng 4, 180万円 — audio cũng xác nhận 「上半期では一番低かった」."
+      "explain": "Q店 thấp nhất là tháng 4, 180万円 — audio cũng xác nhận 「上半期では一番低かった」.",
+      "explain_en": "Store Q's lowest month is April, at 180万円 — the audio also confirms 「上半期では一番低かった」.",
+      "explain_ja": "Q店が最も低いのは4月で、180万円です。音声でも「上半期では一番低かった」と確認されています。"
     },
     {
       "n": 3,
@@ -168,7 +172,9 @@
       ],
       "ans": "C",
       "trap": "Hiệu số tháng 9 giữa hai cửa hàng",
-      "explain": "270 − 225 = 45万円."
+      "explain": "270 − 225 = 45万円.",
+      "explain_en": "270 − 225 = 45万円.",
+      "explain_ja": "270 − 225 = 45万円です。"
     },
     {
       "n": 4,
@@ -182,7 +188,9 @@
       ],
       "ans": "B",
       "trap": "Audio ghi đè bảng — lịch đã thay đổi",
-      "explain": "Audio ghi đè bảng: C倉庫 dời từ thứ Tư sang thứ Năm, giờ giữ nguyên 9:30. Bẫy C (thứ Năm 11:00) là lịch của D倉庫."
+      "explain": "Audio ghi đè bảng: C倉庫 dời từ thứ Tư sang thứ Năm, giờ giữ nguyên 9:30. Bẫy C (thứ Năm 11:00) là lịch của D倉庫.",
+      "explain_en": "The audio overrides the table: C倉庫 moves from Wednesday to Thursday, with the time unchanged at 9:30. Trap C (Thursday 11:00) is D倉庫's schedule.",
+      "explain_ja": "音声が表より優先されます。C倉庫は水曜日から木曜日に変更され、時刻は9:30のままです。C（木曜日11:00）は引っかけで、それはD倉庫の予定です。"
     },
     {
       "n": 5,
@@ -196,7 +204,9 @@
       ],
       "ans": "B",
       "trap": "「今週は中止して、来週月曜日に延期」— hủy tuần này nhưng có ngày thay thế",
-      "explain": "Vì thiếu hàng tồn, chuyến E倉庫 tuần này hủy và dời sang thứ Hai tuần sau, 10:30."
+      "explain": "Vì thiếu hàng tồn, chuyến E倉庫 tuần này hủy và dời sang thứ Hai tuần sau, 10:30.",
+      "explain_en": "Because of a stock shortage, this week's E倉庫 trip is cancelled and moved to Monday next week, at 10:30.",
+      "explain_ja": "在庫不足のため、今週のE倉庫への便は中止となり、来週月曜日の10:30に変更されました。"
     },
     {
       "n": 6,
@@ -210,7 +220,9 @@
       ],
       "ans": "D",
       "trap": "Audio mở đầu nói rõ 「変更が2件」— đếm đủ 2 thay đổi",
-      "explain": "Hai thay đổi là C倉庫 và E倉庫. D倉庫 chỉ được nhắc để xác nhận (vẫn thứ Năm 11:00), không đổi."
+      "explain": "Hai thay đổi là C倉庫 và E倉庫. D倉庫 chỉ được nhắc để xác nhận (vẫn thứ Năm 11:00), không đổi.",
+      "explain_en": "The two changes are C倉庫 and E倉庫. D倉庫 is only mentioned for confirmation (still Thursday 11:00) and does not change.",
+      "explain_ja": "変更されるのはC倉庫とE倉庫の2つです。D倉庫は確認のために触れられているだけで（木曜日11:00のまま）、変更はありません。"
     },
     {
       "n": 7,
@@ -224,7 +236,9 @@
       ],
       "ans": "B",
       "trap": "Nhân đơn giá × số máy × số ngày rồi mới trừ 1割",
-      "explain": "3.000 × 2台 × 3日 = 18.000円, thuê 3 ngày nên giảm 1割 còn 16.200円. A là khi quên giảm giá."
+      "explain": "3.000 × 2台 × 3日 = 18.000円, thuê 3 ngày nên giảm 1割 còn 16.200円. A là khi quên giảm giá.",
+      "explain_en": "3.000 × 2台 × 3日 = 18.000円, and since it is a 3-day rental there is a 1割 discount, giving 16.200円. A is what you get if you forget the discount.",
+      "explain_ja": "3.000 × 2台 × 3日 = 18.000円で、3日間のレンタルなので1割引きとなり、16.200円になります。Aは割引を忘れた場合です。"
     },
     {
       "n": 8,
@@ -238,7 +252,9 @@
       ],
       "ans": "C",
       "trap": "Tính riêng từng thiết bị sau giảm giá rồi cộng",
-      "explain": "プロジェクター 2.000×3日 = 6.000 → giảm còn 5.400円; スピーカー 1.000×3日 = 3.000 → giảm còn 2.700円. Tổng 5.400+2.700 = 8.100円."
+      "explain": "プロジェクター 2.000×3日 = 6.000 → giảm còn 5.400円; スピーカー 1.000×3日 = 3.000 → giảm còn 2.700円. Tổng 5.400+2.700 = 8.100円.",
+      "explain_en": "プロジェクター 2.000×3日 = 6.000 → discounted to 5.400円; スピーカー 1.000×3日 = 3.000 → discounted to 2.700円. Total 5.400+2.700 = 8.100円.",
+      "explain_ja": "プロジェクター 2.000×3日 = 6.000 → 割引後5.400円、スピーカー 1.000×3日 = 3.000 → 割引後2.700円です。合計は5.400+2.700 = 8.100円です。"
     },
     {
       "n": 9,
@@ -252,7 +268,9 @@
       ],
       "ans": "B",
       "trap": "Cộng 3 khoản đã giảm giá của cả bộ thiết bị",
-      "explain": "16.200 + 5.400 + 2.700 = 24.300円. A (27.000) là tổng trước giảm giá."
+      "explain": "16.200 + 5.400 + 2.700 = 24.300円. A (27.000) là tổng trước giảm giá.",
+      "explain_en": "16.200 + 5.400 + 2.700 = 24.300円. A (27.000) is the total before the discount.",
+      "explain_ja": "16.200 + 5.400 + 2.700 = 24.300円です。A（27.000）は割引前の合計です。"
     }
   ],
   "instructions": "<li>聴読解ドリル9問で <strong>35分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li><strong>今回のテクニック</strong>：音声が計算する期間に触れたら、<strong>項を行・列どおりにすぐメモに書き</strong>、ペアごとに加算してから答えを見ましょう — 聞き続けながら列全体を暗算しないこと。</li>\n          <li>全体は <strong>3セット</strong> で、各セットは <strong>音声1つ + 表1つ + 問題3問</strong> です。セット全体が1画面に一緒に、CBT試験室形式の解答画面で表示されます — 表を見ながら聞いて照合しましょう。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、男女2つの異なる声が使われ、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>注意：セット2では、<strong>音声が表を上書きします</strong>（納品日の変更、出張の延期）— 音声と表が異なる場合は、音声を基準にしてください。セット3では、音声は <strong>結果を読み上げません</strong> — 価格表、数量、日数から自分で計算しなければなりません。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、トランスクリプトが表示されます。</li>",

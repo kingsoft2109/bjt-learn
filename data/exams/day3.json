@@ -130,7 +130,9 @@
       ],
       "ans": "C",
       "trap": "Cộng đúng 3 tháng của quý 3 (7–9月)",
-      "explain": "380+410+390 = 1.180万円."
+      "explain": "380+410+390 = 1.180万円.",
+      "explain_en": "380+410+390 = 1.180万円.",
+      "explain_ja": "380+410+390 = 1.180万円です。"
     },
     {
       "n": 2,
@@ -144,7 +146,9 @@
       ],
       "ans": "B",
       "trap": "Tìm tháng thấp nhất của B店 trong bảng",
-      "explain": "B店 thấp nhất là tháng 5, 260万円."
+      "explain": "B店 thấp nhất là tháng 5, 260万円.",
+      "explain_en": "Store B's lowest month is May, at 260万円.",
+      "explain_ja": "B店が最も低いのは5月で、260万円です。"
     },
     {
       "n": 3,
@@ -158,7 +162,9 @@
       ],
       "ans": "A",
       "trap": "Hiệu số tháng 8 giữa hai cửa hàng",
-      "explain": "410 − 310 = 100万円."
+      "explain": "410 − 310 = 100万円.",
+      "explain_en": "410 − 310 = 100万円.",
+      "explain_ja": "410 − 310 = 100万円です。"
     },
     {
       "n": 4,
@@ -172,7 +178,9 @@
       ],
       "ans": "B",
       "trap": "Audio ghi đè bảng — lịch đã thay đổi",
-      "explain": "audio ghi đè bảng — dời sang thứ Năm 13 giờ, phòng họp số 2."
+      "explain": "audio ghi đè bảng — dời sang thứ Năm 13 giờ, phòng họp số 2.",
+      "explain_en": "The audio overrides the table — moved to Thursday at 13:00, Meeting Room 2.",
+      "explain_ja": "音声が表より優先されます。木曜日の13時、第2会議室に変更されました。"
     },
     {
       "n": 5,
@@ -186,7 +194,9 @@
       ],
       "ans": "A",
       "trap": "Chỉ đổi địa điểm, giờ giữ nguyên",
-      "explain": "chỉ đổi địa điểm sang phòng họp số 3, giờ giữ nguyên."
+      "explain": "chỉ đổi địa điểm sang phòng họp số 3, giờ giữ nguyên.",
+      "explain_en": "Only the location changes to Meeting Room 3; the time stays the same.",
+      "explain_ja": "場所が第3会議室に変更されるだけで、時刻は変わりません。"
     },
     {
       "n": 6,
@@ -200,7 +210,9 @@
       ],
       "ans": "C",
       "trap": "「その他は表の通り」= không thay đổi",
-      "explain": "「その他は表の通り」— không thay đổi."
+      "explain": "「その他は表の通り」— không thay đổi.",
+      "explain_en": "「その他は表の通り」 — no changes.",
+      "explain_ja": "「その他は表の通り」で、変更はありません。"
     },
     {
       "n": 7,
@@ -214,7 +226,9 @@
       ],
       "ans": "A",
       "trap": "Sức chứa phòng A (10名) nhỏ hơn 18名",
-      "explain": "18 người vượt sức chứa phòng A (10 người); 9 giờ đến 12 giờ là 3 tiếng."
+      "explain": "18 người vượt sức chứa phòng A (10 người); 9 giờ đến 12 giờ là 3 tiếng.",
+      "explain_en": "18 people exceeds Room A's capacity (10 people); 9:00 to 12:00 is 3 hours.",
+      "explain_ja": "18名ではA室の定員（10名）を超えます。9時から12時までは3時間です。"
     },
     {
       "n": 8,
@@ -228,7 +242,9 @@
       ],
       "ans": "B",
       "trap": "Giảm 1割 chỉ tính trên tiền phòng",
-      "explain": "3.000 × 3 = 9.000, giảm 1割 còn 8.100円."
+      "explain": "3.000 × 3 = 9.000, giảm 1割 còn 8.100円.",
+      "explain_en": "3.000 × 3 = 9.000, with a 1割 discount it becomes 8.100円.",
+      "explain_ja": "3.000 × 3 = 9.000で、1割引きで8.100円になります。"
     },
     {
       "n": 9,
@@ -242,7 +258,9 @@
       ],
       "ans": "D",
       "trap": "Thiết bị không thuộc diện giảm giá",
-      "explain": "8.100 + 1.000 = 9.100円. B là khi giảm giá cả thiết bị; A là quên giảm giá; C là quên tiền máy chiếu."
+      "explain": "8.100 + 1.000 = 9.100円. B là khi giảm giá cả thiết bị; A là quên giảm giá; C là quên tiền máy chiếu.",
+      "explain_en": "8.100 + 1.000 = 9.100円. B is discounting the equipment as well; A is forgetting the discount; C is forgetting the projector fee.",
+      "explain_ja": "8.100 + 1.000 = 9.100円です。Bは設備まで割り引いた場合、Aは割引を忘れた場合、Cはプロジェクター代を忘れた場合です。"
     }
   ],
   "instructions": "<li>聴読解9問で <strong>35分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>3セット</strong> で、各セットは <strong>音声1つ + 表1つ + 問題3問</strong> です。セット全体が1画面に一緒に、CBT試験室形式の解答画面で表示されます — 表を見ながら聞いて照合しましょう。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、男女2つの異なる声が使われ、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>注意：<strong>音声が表を上書きする</strong> ことがあります（日程や場所の変更など）— 音声と表が異なり、問題が変更後の内容について聞いている場合は、音声を基準にしてください。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、トランスクリプトが表示されます。</li>",

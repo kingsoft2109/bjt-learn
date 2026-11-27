@@ -99,7 +99,9 @@
       ],
       "ans": "B",
       "trap": "Cộng đúng quý — tháng 10 thuộc quý 4",
-      "explain": "320+280+350=950万円； 860万円 là quý trước, 1,360万円 là cộng nhầm cả tháng 10 (quý 4)."
+      "explain": "320+280+350=950万円； 860万円 là quý trước, 1,360万円 là cộng nhầm cả tháng 10 (quý 4).",
+      "explain_en": "320+280+350=950万円; 860万円 is the previous quarter, 1,360万円 is mistakenly adding October (Q4) as well.",
+      "explain_ja": "320+280+350=950万円です。860万円は前四半期、1,360万円は10月（第4四半期）まで誤って加えた場合です。"
     },
     {
       "n": 2,
@@ -113,7 +115,9 @@
       ],
       "ans": "D",
       "trap": "Cao nhất trong quý 3 — không tính tháng 10",
-      "explain": "Trong quý 3, cao nhất là 9月 350万円； 10月 410万円 cao hơn nhưng thuộc quý 4, không tính."
+      "explain": "Trong quý 3, cao nhất là 9月 350万円； 10月 410万円 cao hơn nhưng thuộc quý 4, không tính.",
+      "explain_en": "In Q3, the highest is September at 350万円; October at 410万円 is higher but belongs to Q4, so it does not count.",
+      "explain_ja": "第3四半期で最も高いのは9月の350万円です。10月の410万円の方が高いですが、第4四半期に属するため含めません。"
     },
     {
       "n": 3,
@@ -127,7 +131,9 @@
       ],
       "ans": "A",
       "trap": "Mức tăng = quý này − quý trước",
-      "explain": "950−860=90万円増加； 410万円 là doanh số tháng 10, không phải mức tăng."
+      "explain": "950−860=90万円増加； 410万円 là doanh số tháng 10, không phải mức tăng.",
+      "explain_en": "950−860=90万円 increase; 410万円 is October's sales, not the increase.",
+      "explain_ja": "950−860=90万円の増加です。410万円は10月の売上であり、増加額ではありません。"
     },
     {
       "n": 4,
@@ -141,7 +147,9 @@
       ],
       "ans": "C",
       "trap": "Lịch cũ trong bảng vs lịch mới trong hội thoại",
-      "explain": "Lịch mới là 水曜日午後3時； 火曜日午後2時 là lịch cũ trong bảng, 午前9時 thứ Tư là 工場見学."
+      "explain": "Lịch mới là 水曜日午後3時； 火曜日午後2時 là lịch cũ trong bảng, 午前9時 thứ Tư là 工場見学.",
+      "explain_en": "The new schedule is Wednesday at 3 p.m.; Tuesday at 2 p.m. is the old schedule in the table, and Wednesday at 9 a.m. is the factory tour (工場見学).",
+      "explain_ja": "新しい予定は水曜日午後3時です。火曜日午後2時は表にあった古い予定、水曜日午前9時は工場見学です。"
     },
     {
       "n": 5,
@@ -155,7 +163,9 @@
       ],
       "ans": "D",
       "trap": "「まだ承認を得ていない」— chưa được duyệt",
-      "explain": "資料はまだ承認を得ていないので当日は口頭のみ； tài liệu sẽ gửi sau khi 承認が下りてから."
+      "explain": "資料はまだ承認を得ていないので当日は口頭のみ； tài liệu sẽ gửi sau khi 承認が下りてから.",
+      "explain_en": "資料はまだ承認を得ていないので当日は口頭のみ; the materials will be sent after approval is granted — 承認が下りてから.",
+      "explain_ja": "資料はまだ承認を得ていないので当日は口頭のみです。資料は承認が下りてから送られます。"
     },
     {
       "n": 6,
@@ -169,7 +179,9 @@
       ],
       "ans": "A",
       "trap": "Mục không đổi vs mục đã dời trong cùng ngày",
-      "explain": "工場見学 giữ nguyên 水曜日午前9時； 午後3時 cùng ngày là 会議 với B社 đã dời tới."
+      "explain": "工場見学 giữ nguyên 水曜日午前9時； 午後3時 cùng ngày là 会議 với B社 đã dời tới.",
+      "explain_en": "工場見学 stays unchanged on Wednesday at 9 a.m.; 3 p.m. the same day is the meeting with B社 that was moved there.",
+      "explain_ja": "工場見学は水曜日午前9時のまま変わりません。同じ日の午後3時は、移されたB社との会議です。"
     },
     {
       "n": 7,
@@ -183,7 +195,9 @@
       ],
       "ans": "C",
       "trap": "Tính lại tổng sau khi đổi số lượng",
-      "explain": "A 120,000円 + B 100×1,500=150,000円 = 270,000円； 240,000円 là tổng trong email trước khi đổi."
+      "explain": "A 120,000円 + B 100×1,500=150,000円 = 270,000円； 240,000円 là tổng trong email trước khi đổi.",
+      "explain_en": "A 120,000円 + B 100×1,500=150,000円 = 270,000円; 240,000円 was the total in the email before the change.",
+      "explain_ja": "A 120,000円 + B 100×1,500=150,000円 = 270,000円です。240,000円は変更前のメールにあった合計です。"
     },
     {
       "n": 8,
@@ -197,7 +211,9 @@
       ],
       "ans": "B",
       "trap": "Ngày giao cũ trong email vs ngày giao mới",
-      "explain": "納期 đổi từ 11月5日 (trong email) sang 11月7日."
+      "explain": "納期 đổi từ 11月5日 (trong email) sang 11月7日.",
+      "explain_en": "納期 changes from 11月5日 (in the email) to 11月7日.",
+      "explain_ja": "納期は11月5日（メールにあった日付）から11月7日に変更されました。"
     },
     {
       "n": 9,
@@ -211,7 +227,9 @@
       ],
       "ans": "D",
       "trap": "「まだ発行していない」— chưa phát hành",
-      "explain": "請求書はまだ発行していないので、納品後に発行する."
+      "explain": "請求書はまだ発行していないので、納品後に発行する.",
+      "explain_en": "請求書はまだ発行していないので、納品後に発行する。 — The invoice has not yet been issued, so it will be issued after delivery.",
+      "explain_ja": "請求書はまだ発行していないので、納品後に発行する。"
     },
     {
       "n": 10,
@@ -225,7 +243,9 @@
       ],
       "ans": "A",
       "trap": "Giá cũ trong memo vs giá mới",
-      "explain": "価格 đổi từ 3,000円 (trong memo) sang 2,800円 vì 競合の価格."
+      "explain": "価格 đổi từ 3,000円 (trong memo) sang 2,800円 vì 競合の価格.",
+      "explain_en": "価格 changes from 3,000円 (in the memo) to 2,800円 because of 競合の価格.",
+      "explain_ja": "価格は3,000円（メモにあった金額）から、競合の価格のため2,800円に変更されました。"
     },
     {
       "n": 11,
@@ -239,7 +259,9 @@
       ],
       "ans": "C",
       "trap": "Bán đồng thời vs bán theo giai đoạn",
-      "explain": "まず関東のみ； 関西は来年1月以降に検討 — không bán đồng thời như memo ghi."
+      "explain": "まず関東のみ； 関西は来年1月以降に検討 — không bán đồng thời như memo ghi.",
+      "explain_en": "まず関東のみ; 関西は来年1月以降に検討 — not sold simultaneously as the memo states.",
+      "explain_ja": "まず関東のみです。関西は来年1月以降に検討されるため、メモにあるような同時発売ではありません。"
     },
     {
       "n": 12,
@@ -253,7 +275,9 @@
       ],
       "ans": "B",
       "trap": "「まだ承認を得ていない」— chưa được duyệt",
-      "explain": "広告資料はまだ承認を得ていないため、承認が得られ次第発表する."
+      "explain": "広告資料はまだ承認を得ていないため、承認が得られ次第発表する.",
+      "explain_en": "広告資料はまだ承認を得ていないため、承認が得られ次第発表する。 — The advertising materials have not yet received approval, so they will be announced as soon as approval is obtained.",
+      "explain_ja": "広告資料はまだ承認を得ていないため、承認が得られ次第発表する。"
     }
   ],
   "instructions": "<li>これは <strong>時間測定テスト</strong> です：目安のタイマーは12問で <strong>40分</strong>、試験室と同じように <strong>通しで解き、一時停止しません</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>4セット</strong> で、各セットには読む資料（棒グラフ／スケジュール表／メール／メモ）と <strong>会話の音声</strong> があり、<strong>セットの3問はすべて一緒に</strong>、その資料のすぐ下に、CBT試験室形式の解答画面で表示されます。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li>セット1は <strong>月次売上の棒グラフ</strong> — 注意点は四半期の境界にあります：10月は第4四半期です。セット2は <strong>出張スケジュール表</strong> — 1項目が会話の中で時刻が移っています。セット3は <strong>注文メール</strong> — 数量と <span class=\"jp\">納期</span> はどちらもメールから変更されています。セット4は新製品の発売日についての <strong><span class=\"jp\">議事録</span> メモ</strong> — メモの価格と販売エリアは古い情報です。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、トランスクリプト、ミスノートが表示されます。</li>",

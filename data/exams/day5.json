@@ -95,7 +95,9 @@
       ],
       "ans": "B",
       "trap": "Số người vs số bản in",
-      "explain": "12名 × 1人2部 = 24部；12部 là số người, không phải số bản in."
+      "explain": "12名 × 1人2部 = 24部；12部 là số người, không phải số bản in.",
+      "explain_en": "12名 × 1人2部 = 24部; 12部 is the number of people, not the number of copies to print.",
+      "explain_ja": "12名 × 1人2部 = 24部です。12部は人数であり、印刷部数ではありません。"
     },
     {
       "n": 2,
@@ -109,7 +111,9 @@
       ],
       "ans": "C",
       "trap": "「承認がまだ来ていない」— chưa được duyệt",
-      "explain": "予算の承認がまだ来ていないので、白黒で印刷し、カラーは承認が来てから。"
+      "explain": "予算の承認がまだ来ていないので、白黒で印刷し、カラーは承認が来てから。",
+      "explain_en": "予算の承認がまだ来ていないので、白黒で印刷し、カラーは承認が来てから。 — Because the budget approval has not come yet, print in black and white, and do colour only after the approval comes.",
+      "explain_ja": "予算の承認がまだ来ていないので、白黒で印刷し、カラーは承認が来てから。"
     },
     {
       "n": 3,
@@ -123,7 +127,9 @@
       ],
       "ans": "D",
       "trap": "Gắn đúng số với đúng đối tượng",
-      "explain": "参加者は12名；24 là số bản in, 2 là số bản mỗi người."
+      "explain": "参加者は12名；24 là số bản in, 2 là số bản mỗi người.",
+      "explain_en": "There are 12名 participants; 24 is the number of printed copies, 2 is the number of copies per person.",
+      "explain_ja": "参加者は12名です。24は印刷部数、2は1人あたりの部数です。"
     },
     {
       "n": 4,
@@ -137,7 +143,9 @@
       ],
       "ans": "A",
       "trap": "Lịch cũ vs lịch mới đã thay đổi",
-      "explain": "Lịch mới là 水曜日午後3時；火曜日11時 là lịch cũ đã bị thay."
+      "explain": "Lịch mới là 水曜日午後3時；火曜日11時 là lịch cũ đã bị thay.",
+      "explain_en": "The new schedule is Wednesday at 3 p.m.; Tuesday at 11 is the old schedule that was replaced.",
+      "explain_ja": "新しい予定は水曜日午後3時です。火曜日11時は、変更された古い予定です。"
     },
     {
       "n": 5,
@@ -151,7 +159,9 @@
       ],
       "ans": "C",
       "trap": "Đêm khách sạn đổi theo lịch thăm",
-      "explain": "Vì lịch thăm đổi sang thứ Tư nên khách sạn đổi từ đêm thứ Ba sang đêm thứ Tư."
+      "explain": "Vì lịch thăm đổi sang thứ Tư nên khách sạn đổi từ đêm thứ Ba sang đêm thứ Tư.",
+      "explain_en": "Because the visit was moved to Wednesday, the hotel changes from Tuesday night to Wednesday night.",
+      "explain_ja": "訪問が水曜日に変更されたため、ホテルも火曜日の夜から水曜日の夜に変更されます。"
     },
     {
       "n": 6,
@@ -165,7 +175,9 @@
       ],
       "ans": "D",
       "trap": "「まだ届いていない」— chưa đến",
-      "explain": "先方から依頼された売上データは、まだ経理部から届いていない；cần xác nhận với 経理部 trong hôm nay."
+      "explain": "先方から依頼された売上データは、まだ経理部から届いていない；cần xác nhận với 経理部 trong hôm nay.",
+      "explain_en": "先方から依頼された売上データは、まだ経理部から届いていない; it needs to be confirmed with 経理部 today.",
+      "explain_ja": "先方から依頼された売上データは、まだ経理部から届いていないため、今日中に経理部へ確認する必要があります。"
     },
     {
       "n": 7,
@@ -179,7 +191,9 @@
       ],
       "ans": "C",
       "trap": "Phân biệt số của A社 / B社 / tồn kho",
-      "explain": "注文は800個；500 là tồn kho, 300 là số thiếu, 200 là đơn B社 riêng."
+      "explain": "注文は800個；500 là tồn kho, 300 là số thiếu, 200 là đơn B社 riêng.",
+      "explain_en": "注文は800個; 500 is the stock, 300 is the shortage, 200 is B社's separate order.",
+      "explain_ja": "注文は800個です。500は在庫、300は不足分、200はB社の別の注文です。"
     },
     {
       "n": 8,
@@ -193,7 +207,9 @@
       ],
       "ans": "A",
       "trap": "Số thiếu = đơn hàng − tồn kho",
-      "explain": "在庫500個に対して注文800個なので不足300個；300個追加 sẽ nhập về trước thứ Hai tuần sau."
+      "explain": "在庫500個に対して注文800個なので不足300個；300個追加 sẽ nhập về trước thứ Hai tuần sau.",
+      "explain_en": "在庫500個に対して注文800個なので不足300個; the additional 300個 will arrive before Monday next week.",
+      "explain_ja": "在庫500個に対して注文800個なので不足300個です。追加の300個は来週月曜日までに入荷します。"
     },
     {
       "n": 9,
@@ -207,7 +223,9 @@
       ],
       "ans": "D",
       "trap": "Ngày nhập hàng vs ngày giao hàng",
-      "explain": "納期は来週火曜日；thứ Hai là hạn nhập hàng bổ sung, không phải ngày giao."
+      "explain": "納期は来週火曜日；thứ Hai là hạn nhập hàng bổ sung, không phải ngày giao.",
+      "explain_en": "納期は来週火曜日; Monday is the deadline for the supplementary stock to arrive, not the delivery date.",
+      "explain_ja": "納期は来週火曜日です。月曜日は追加分の入荷期限であり、納期ではありません。"
     },
     {
       "n": 10,
@@ -221,7 +239,9 @@
       ],
       "ans": "A",
       "trap": "Mục đích chính của thông báo",
-      "explain": "Thông báo nhằm báo thay đổi giờ mở cửa nhà ăn từ 1/11."
+      "explain": "Thông báo nhằm báo thay đổi giờ mở cửa nhà ăn từ 1/11.",
+      "explain_en": "The notice is to announce a change to the cafeteria's opening hours from 1/11.",
+      "explain_ja": "このお知らせは、1/11から食堂の開館時間が変更されることを知らせるものです。"
     },
     {
       "n": 11,
@@ -235,7 +255,9 @@
       ],
       "ans": "B",
       "trap": "Giờ đóng cửa riêng ngày thứ Sáu",
-      "explain": "Thứ Sáu đóng cửa 13:00 để dọn dẹp; 13時半 là giờ đóng cửa ngày thường — bẫy nghe nhầm."
+      "explain": "Thứ Sáu đóng cửa 13:00 để dọn dẹp; 13時半 là giờ đóng cửa ngày thường — bẫy nghe nhầm.",
+      "explain_en": "On Friday it closes at 13:00 for cleaning; 13時半 is the usual closing time on weekdays — a mishearing trap.",
+      "explain_ja": "金曜日は清掃のため13:00に閉まります。13時半は平日の通常の閉館時刻で、聞き間違いを誘う引っかけです。"
     },
     {
       "n": 12,
@@ -249,7 +271,9 @@
       ],
       "ans": "B",
       "trap": "「事前予約のみ」— chỉ đặt trước qua app",
-      "explain": "Suất đặc biệt thứ Tư chỉ nhận đặt trước qua ứng dụng, không đặt trong ngày."
+      "explain": "Suất đặc biệt thứ Tư chỉ nhận đặt trước qua ứng dụng, không đặt trong ngày.",
+      "explain_en": "Wednesday's special set meal can only be reserved in advance via the app; same-day orders are not accepted.",
+      "explain_ja": "水曜日の特別定食はアプリからの事前予約のみで、当日の注文は受け付けていません。"
     }
   ],
   "instructions": "<li>聴解12問で <strong>約40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>聴解4セット</strong> で、各セットに問題が3問あり、<strong>セットの3問はすべて一緒に</strong>、そのセットの再生ボタンのすぐ下に、CBT試験室形式の解答画面で表示されます — 聞いたら3問まとめて答えましょう。1問ずつ行き来する必要はありません。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li>セット1–3は業務の会話です（印刷部数、出張日程の変更、注文と在庫）— <strong>数字を正しい対象に結びつける</strong> ことと、<strong>置き換わった古い情報</strong> と新しい情報を区別することに注意しましょう。セット4は新形式の <strong><span class=\"jp\">説明・案内</span></strong>：1人が食堂の営業時間のお知らせを読み上げます — 適用日と曜日ごとの例外に注意しましょう。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、トランスクリプト、ミスノートが表示されます。</li>",
