@@ -509,6 +509,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <option value="day29" selected>第29回 — 聴読解 練習 · 12問 · 最新</option>
       <option value="day28">第28回 — 読解 練習 · 12問</option>
       <option value="day27">第27回 — 聴解 練習 · 12問</option>
+      <option value="day26">第26回 — 総合復習 練習 · 12問</option>
       <option value="day25">第25回 — 聴解 練習 · 12問</option>
       <option value="day24">第24回 — 読解 練習 · 12問</option>
       <option value="day23">第23回 — 聴解 練習 · 12問</option>
@@ -549,6 +550,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <button class="tab active" id="tabDay29" onclick="switchExam('day29')">第29回 — 聴読解 練習 · 12問<span class="new-badge">最新</span></button>
     <button class="tab" id="tabDay28" onclick="switchExam('day28')">第28回 — 読解 練習 · 12問</button>
     <button class="tab" id="tabDay27" onclick="switchExam('day27')">第27回 — 聴解 練習 · 12問</button>
+    <button class="tab" id="tabDay26" onclick="switchExam('day26')">第26回 — 総合復習 練習 · 12問</button>
     <button class="tab" id="tabDay25" onclick="switchExam('day25')">第25回 — 聴解 練習 · 12問</button>
     <button class="tab" id="tabDay24" onclick="switchExam('day24')">第24回 — 読解 練習 · 12問</button>
     <button class="tab" id="tabDay23" onclick="switchExam('day23')">第23回 — 聴解 練習 · 12問</button>
@@ -1405,7 +1407,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
      #ngay-4      (hash — kept for in-app use)
    A valid tag in the URL wins over the default (newest exam, Ngày 22);
    switching exams on the page updates the hash to match. */
-var EXAM_TAGS = { day29:'ngay-29', day28:'ngay-28', day27:'ngay-27', day25:'ngay-25', day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', mock3:'de-thi-thu-3', mock4:'de-thi-thu-4', mock5:'de-thi-thu-5', demo:'de-mau', mock6:'de-thi-thu-6',videos:'thu-vien-video', vocab:'the-tu-vung' };
+var EXAM_TAGS = { day29:'ngay-29', day28:'ngay-28', day27:'ngay-27', day26:'ngay-26', day25:'ngay-25', day24:'ngay-24', day23:'ngay-23', day22:'ngay-22', day21:'ngay-21', day20:'ngay-20', day19:'ngay-19', day18:'ngay-18', day17:'ngay-17', day1:'ngay-1', day2:'ngay-2', day3:'ngay-3', day4:'ngay-4', day5:'ngay-5', day6:'ngay-6', day7:'ngay-7', day8:'ngay-8', day9:'ngay-9', day10:'ngay-10', day11:'ngay-11', day12:'ngay-12', day13:'ngay-13', day14:'ngay-14', day15:'ngay-15', day16:'ngay-16', mock1:'de-thi-thu', mock2:'de-thi-thu-2', mock3:'de-thi-thu-3', mock4:'de-thi-thu-4', mock5:'de-thi-thu-5', demo:'de-mau', mock6:'de-thi-thu-6',videos:'thu-vien-video', vocab:'the-tu-vung' };
 var TAG_EXAMS = {};
 Object.keys(EXAM_TAGS).forEach(function(k){ TAG_EXAMS[EXAM_TAGS[k]] = k; });
 /* The published page is displayed inside the Muse shell, and the #tag
@@ -1822,13 +1824,28 @@ function bjtAutoRetryOnce(key){
 }
 
 /* ============ BẢN DỊCH TRANSCRIPT PHẦN NGHE ============
-   Mỗi segment/group nghe có mảng vi[] dịch tiếng Việt, căn theo đúng từng
-   dòng của transcript gốc. viTrHtml chỉ được các hàm chấm điểm gọi khi dựng
-   khối xem lại SAU KHI NỘP BÀI — trước khi nộp, bản dịch không xuất hiện ở
-   bất cứ đâu, giống như transcript. */
-function viTrHtml(viLines, label){
-  if(!viLines || !viLines.length) return '';
-  return '<div class="transcript transcript-vi"><strong>' + label + ':</strong>\n' + viLines.join('\n') + '</div>';
+   Mỗi segment/group nghe có các mảng vi/en/ja dịch theo ngôn ngữ giao diện,
+   căn theo đúng từng dòng của transcript gốc. viTrHtml nhận cả object chứa
+   các mảng dịch và tự chọn bản theo ngôn ngữ hiện tại qua pickTr (i18n.js),
+   đồng thời đăng ký vào registry để khối dịch tự đổi khi người dùng chuyển
+   ngôn ngữ sau khi nộp bài. Các hàm chấm điểm chỉ gọi khi dựng khối xem lại
+   SAU KHI NỘP BÀI — trước khi nộp, bản dịch không xuất hiện ở bất cứ đâu,
+   giống như transcript. */
+function viTrHtml(obj, label){
+  if(!obj) return '';
+  var lines = (typeof pickTr === 'function') ? pickTr(obj) : obj.vi;
+  if(!lines || !lines.length) return '';
+  var idx = (typeof regTr === 'function') ? regTr({obj: obj, base: null, label: label}) : -1;
+  return '<div class="transcript transcript-vi"' + (idx >= 0 ? ' data-tr-idx="' + idx + '"' : '') + '><strong>' + label + ':</strong>\n' + lines.join('\n') + '</div>';
+}
+/* Biến thể cho object lưu bản dịch dạng trường rời <base>Vi/<base>En/<base>Ja
+   (ví dụ transcriptVi của đề demo) — chọn qua pickTrField. */
+function viTrFieldHtml(obj, base, label){
+  if(!obj) return '';
+  var lines = (typeof pickTrField === 'function') ? pickTrField(obj, base) : obj[base + 'Vi'];
+  if(!lines || !lines.length) return '';
+  var idx = (typeof regTr === 'function') ? regTr({obj: obj, base: base, label: label}) : -1;
+  return '<div class="transcript transcript-vi"' + (idx >= 0 ? ' data-tr-idx="' + idx + '"' : '') + '><strong>' + label + ':</strong>\n' + lines.join('\n') + '</div>';
 }
 
 /* ============ NGHE LẠI KHI XEM ĐÁP ÁN ============
@@ -1884,7 +1901,7 @@ window.mk5Parts = []; window.mk5Groups = []; window.mk5Questions = []; window.mk
 window.VIDEO_LIBRARY = null;
 window.VOCAB_DAYS = [];
 (function(){
-  var DAY_FILES = ["day1","day2","day3","day4","day5","day6","day7","day8","day9","day10","day11","day12","day13","day14","day15","day16","day17","day18","day19","day20","day21","day22","day23","day24","day25","day27","day28","day29"];
+  var DAY_FILES = ["day1","day2","day3","day4","day5","day6","day7","day8","day9","day10","day11","day12","day13","day14","day15","day16","day17","day18","day19","day20","day21","day22","day23","day24","day25","day26","day27","day28","day29"];
   var MOCK_FILES = ["mock1","mock2","mock3","mock4","mock5"];
   function loadJSON(url){
     return fetch(url).then(function(r){
@@ -2115,7 +2132,7 @@ function mkBuildPracticeCard(p){
       res.appendChild(tr);
     }
     if(p.vi && p.vi.length){
-      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, t('vietTranslation'));
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p, t('vietTranslation'));
       while(vt.firstChild) res.appendChild(vt.firstChild);
     }
     res.classList.remove('hidden');
@@ -2510,7 +2527,7 @@ function mkFinish(auto){
       var tr = grp.lines.join('\n');
       html += reviewAudioHtml(grp.audio, t('replaySet') + item.g);
       html += '<div class="transcript jp"><strong>トランスクリプト：セット ' + item.g + ':</strong>\n' + tr + '</div>';
-      html += viTrHtml(grp.vi, t('translationSet') + item.g);
+      html += viTrHtml(grp, t('translationSet') + item.g);
     }
     card.innerHTML = html;
     rv.appendChild(card);
@@ -2579,8 +2596,8 @@ var selected = {1:null, 2:null, 3:null};
 var submitted = false;
 var totalSec = 12*60, remain = totalSec, timerId = null, demoTimerStarted = false;
 var explanations = {
-  1: { okText:'Đúng — cuộc họp đổi từ thứ Sáu sang thứ Năm.', ngText:'Chưa đúng. Đáp án đúng là 2（木曜日）.', body:'Bẫy ở đây là thứ Tư（水曜日）— đó là hạn chót chuẩn bị tài liệu, không phải ngày họp. Nghe kỹ mẫu 「金曜日から木曜日に変更」 và phân biệt <em>ngày họp</em> với <em>deadline tài liệu</em>.', transcript:'— 来週の定例会議ですが、クライアントの都合で、金曜日から木曜日に変更になりました。資料は水曜日までに準備してもらえますか。\n— かしこまりました。水曜日の午前中までにご用意いたします。会議室の予約も変更しておきましょうか。\n— お願いします。あと、営業部の担当者にも、変更を連絡しておいてください。\n— 承知いたしました。すぐに連絡いたします。', transcriptVi:['— Về cuộc họp định kỳ tuần tới, do phía khách hàng nên đã đổi từ thứ Sáu sang thứ Năm. Anh/chị chuẩn bị tài liệu trước thứ Tư giúp tôi được không.', '— Vâng, tôi hiểu rồi ạ. Tôi sẽ chuẩn bị xong trước sáng thứ Tư ạ. Tôi có cần đổi cả đặt phòng họp không ạ?', '— Nhờ anh/chị nhé. Ngoài ra, hãy liên lạc thông báo thay đổi cho người phụ trách của phòng Kinh doanh nữa nhé.', '— Vâng, tôi đã rõ ạ. Tôi sẽ liên lạc ngay ạ.'] },
-  2: { okText:'Đúng — bạn đã cộng số kiểm tra thay vì chọn theo cảm tính.', ngText:'Chưa đúng. Đáp án đúng là 2.', body:'Tổng 9月 = 158 + 121 = <strong>279</strong>. Tổng 4月 = 120 + 90 = <strong>210</strong>. Tăng 69, tức khoảng 33% ≈ 約3割 — khớp hội thoại. 1 sai vì sản phẩm A đạt đỉnh tháng 8 (165) rồi giảm xuống 158 ở tháng 9. 3 sai vì sản phẩm B tăng đều, đỉnh là tháng 9 (121), không phải tháng 8. Lưu ý: gặp câu tổng hợp 2 mốc thời gian, hãy <strong>cộng số trước khi chọn</strong>.', transcript:'— このグラフは、4月から9月までの製品Aと製品Bの売上を示したものです。製品Bは9月に初めて120を超えましたね。\n— はい。9月の合計は279で、4月と比べるとおよそ3割増えています。製品Aは8月がピークで、9月は少し下がりました。\n— そうですね。来月の会議では、製品Bの販売強化策を提案しましょう。', transcriptVi:['— Biểu đồ này cho thấy doanh số của sản phẩm A và sản phẩm B từ tháng 4 đến tháng 9. Sản phẩm B vào tháng 9 lần đầu tiên vượt qua 120 nhỉ.', '— Vâng. Tổng tháng 9 là 279, so với tháng 4 tăng khoảng 30%. Sản phẩm A đạt đỉnh vào tháng 8, tháng 9 giảm nhẹ.', '— Đúng vậy. Tại cuộc họp tháng tới, chúng ta hãy đề xuất biện pháp tăng cường bán hàng cho sản phẩm B nhé.'] },
+  1: { okText:'Đúng — cuộc họp đổi từ thứ Sáu sang thứ Năm.', ngText:'Chưa đúng. Đáp án đúng là 2（木曜日）.', body:'Bẫy ở đây là thứ Tư（水曜日）— đó là hạn chót chuẩn bị tài liệu, không phải ngày họp. Nghe kỹ mẫu 「金曜日から木曜日に変更」 và phân biệt <em>ngày họp</em> với <em>deadline tài liệu</em>.', transcript:'— 来週の定例会議ですが、クライアントの都合で、金曜日から木曜日に変更になりました。資料は水曜日までに準備してもらえますか。\n— かしこまりました。水曜日の午前中までにご用意いたします。会議室の予約も変更しておきましょうか。\n— お願いします。あと、営業部の担当者にも、変更を連絡しておいてください。\n— 承知いたしました。すぐに連絡いたします。', transcriptVi:['— Về cuộc họp định kỳ tuần tới, do phía khách hàng nên đã đổi từ thứ Sáu sang thứ Năm. Anh/chị chuẩn bị tài liệu trước thứ Tư giúp tôi được không.', '— Vâng, tôi hiểu rồi ạ. Tôi sẽ chuẩn bị xong trước sáng thứ Tư ạ. Tôi có cần đổi cả đặt phòng họp không ạ?', '— Nhờ anh/chị nhé. Ngoài ra, hãy liên lạc thông báo thay đổi cho người phụ trách của phòng Kinh doanh nữa nhé.', '— Vâng, tôi đã rõ ạ. Tôi sẽ liên lạc ngay ạ.'], transcriptEn:['— Regarding next week\'s regular meeting, due to circumstances on the client\'s side, it has been changed from Friday to Thursday. Could you please prepare the materials by Wednesday?', '— Yes, I understand. I will have them ready by Wednesday morning. Do I also need to change the meeting room reservation?', '— Thank you. Also, please contact the person in charge in the Sales Department to notify them of the change.', '— Yes, understood. I will contact them right away.'], transcriptJa:['— 来週の定例会議についてですが、お客様の都合により、金曜日から木曜日に変更になりました。水曜日までに資料を準備していただけますか。', '— はい、承知しました。水曜日の午前中までに準備いたします。会議室の予約も変更する必要がありますか。', '— お願いします。また、営業部の担当者にも変更の連絡をしてください。', '— はい、承知しました。すぐに連絡いたします。'] },
+  2: { okText:'Đúng — bạn đã cộng số kiểm tra thay vì chọn theo cảm tính.', ngText:'Chưa đúng. Đáp án đúng là 2.', body:'Tổng 9月 = 158 + 121 = <strong>279</strong>. Tổng 4月 = 120 + 90 = <strong>210</strong>. Tăng 69, tức khoảng 33% ≈ 約3割 — khớp hội thoại. 1 sai vì sản phẩm A đạt đỉnh tháng 8 (165) rồi giảm xuống 158 ở tháng 9. 3 sai vì sản phẩm B tăng đều, đỉnh là tháng 9 (121), không phải tháng 8. Lưu ý: gặp câu tổng hợp 2 mốc thời gian, hãy <strong>cộng số trước khi chọn</strong>.', transcript:'— このグラフは、4月から9月までの製品Aと製品Bの売上を示したものです。製品Bは9月に初めて120を超えましたね。\n— はい。9月の合計は279で、4月と比べるとおよそ3割増えています。製品Aは8月がピークで、9月は少し下がりました。\n— そうですね。来月の会議では、製品Bの販売強化策を提案しましょう。', transcriptVi:['— Biểu đồ này cho thấy doanh số của sản phẩm A và sản phẩm B từ tháng 4 đến tháng 9. Sản phẩm B vào tháng 9 lần đầu tiên vượt qua 120 nhỉ.', '— Vâng. Tổng tháng 9 là 279, so với tháng 4 tăng khoảng 30%. Sản phẩm A đạt đỉnh vào tháng 8, tháng 9 giảm nhẹ.', '— Đúng vậy. Tại cuộc họp tháng tới, chúng ta hãy đề xuất biện pháp tăng cường bán hàng cho sản phẩm B nhé.'], transcriptEn:['— This chart shows the sales of Product A and Product B from April to September. Product B exceeded 120 for the first time in September, didn\'t it?', '— Yes. The total for September is 279, an increase of about 30% compared to April. Product A peaked in August and declined slightly in September.', '— That\'s right. At next month\'s meeting, let\'s propose measures to strengthen sales of Product B.'], transcriptJa:['— このグラフは、4月から9月までの製品Aと製品Bの売上を示しています。製品Bは9月に初めて120を超えましたね。', '— はい。9月の合計は279で、4月と比べて約30％増加しました。製品Aは8月にピークを迎え、9月はやや減少しました。', '— その通りです。来月の会議で、製品Bの販売強化策を提案しましょう。'] },
   3: { okText:'Đúng — bạn đọc kỹ ngày và tránh được bẫy từ vựng.', ngText:'Chưa đúng. Đáp án đúng là 3（組み立ては11月12日から始まる）.', body:'2 là bẫy từ vựng kinh điển: <strong>前倒し</strong> nghĩa là <em>đẩy sớm lên</em>, trong khi email nói dời từ 6/11 → 11/11, tức là <em>trễ hơn</em> (ずれ込む). 1 sai vì ngày xuất hàng ghi rõ 「正式な回答を待って決定」 — chưa chốt. 4 sai vì đối tác <em>chưa</em> trả lời chính thức.', transcript:null }
 };
 function updateProgress(){
@@ -2632,7 +2649,7 @@ function submitExam(auto){
     var isOk = (chosen === correct);
     var html = '<div class="verdict '+(isOk?'ok':'ng')+'">'+(isOk?'✓ ':'✗ ')+(isOk?ex.okText:ex.ngText)+(chosen? '' : '（この問題はまだ選択していません）')+'</div>';
     html += '<p style="margin:8px 0 0">'+ex.body+'</p>';
-    if(ex.transcript){ html += '<div class="transcript jp"><strong>Transcript:</strong>\n'+ex.transcript+'</div>'; html += viTrHtml(ex.transcriptVi, '翻訳'); }
+    if(ex.transcript){ html += '<div class="transcript jp"><strong>Transcript:</strong>\n'+ex.transcript+'</div>'; html += viTrFieldHtml(ex, 'transcript', '翻訳'); }
     fb.innerHTML = html; fb.classList.add('show');
   });
   var box = document.getElementById('resultBox');
@@ -2833,7 +2850,7 @@ window.resetDay21 = resetDay21;
 window.cbtPrev21 = cbtPrev21;
 window.cbtNext21 = cbtNext21;
 (function wireTabs(){
-  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabDay23:'day23', tabDay24:'day24', tabDay25:'day25', tabDay29:'day29', tabDay28:'day28', tabDay27:'day27', tabMock1:'mock1', tabMock2:'mock2', tabMock3:'mock3', tabMock4:'mock4', tabMock5:'mock5', tabDemo:'demo' };
+  var map = { tabDay1:'day1', tabDay2:'day2', tabDay3:'day3', tabDay4:'day4', tabDay5:'day5', tabDay6:'day6', tabDay7:'day7', tabDay8:'day8', tabDay9:'day9', tabDay10:'day10', tabDay11:'day11', tabDay12:'day12', tabDay13:'day13', tabDay14:'day14', tabDay15:'day15', tabDay16:'day16', tabDay17:'day17', tabDay18:'day18', tabDay19:'day19', tabDay20:'day20', tabDay21:'day21', tabDay22:'day22', tabDay23:'day23', tabDay24:'day24', tabDay25:'day25', tabDay29:'day29', tabDay28:'day28', tabDay27:'day27', tabDay26:'day26', tabMock1:'mock1', tabMock2:'mock2', tabMock3:'mock3', tabMock4:'mock4', tabMock5:'mock5', tabDemo:'demo' };
   Object.keys(map).forEach(function(id){
     var el = document.getElementById(id);
     if(el) el.addEventListener('click', function(){ userPickedExam = true; switchExam(map[id]); });
@@ -3032,7 +3049,7 @@ function mk2BuildPracticeCard(p){
       res.appendChild(tr);
     }
     if(p.vi && p.vi.length){
-      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, t('vietTranslation'));
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p, t('vietTranslation'));
       while(vt.firstChild) res.appendChild(vt.firstChild);
     }
     res.classList.remove('hidden');
@@ -3427,7 +3444,7 @@ function mk2Finish(auto){
       var tr = grp.lines.join('\n');
       html += reviewAudioHtml(grp.audio, t('replaySet') + item.g);
       html += '<div class="transcript jp"><strong>トランスクリプト：セット ' + item.g + ':</strong>\n' + tr + '</div>';
-      html += viTrHtml(grp.vi, t('translationSet') + item.g);
+      html += viTrHtml(grp, t('translationSet') + item.g);
     }
     card.innerHTML = html;
     rv.appendChild(card);
@@ -3629,7 +3646,7 @@ function mk3BuildPracticeCard(p){
       res.appendChild(tr);
     }
     if(p.vi && p.vi.length){
-      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, t('vietTranslation'));
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p, t('vietTranslation'));
       while(vt.firstChild) res.appendChild(vt.firstChild);
     }
     res.classList.remove('hidden');
@@ -4024,7 +4041,7 @@ function mk3Finish(auto){
       var tr = grp.lines.join('\n');
       html += reviewAudioHtml(grp.audio, 'セット' + item.g + 'の音声をもう一度聞く');
       html += '<div class="transcript jp"><strong>セット' + item.g + 'のトランスクリプト：</strong>\n' + tr + '</div>';
-      html += viTrHtml(grp.vi, 'セット' + item.g + 'の訳');
+      html += viTrHtml(grp, 'セット' + item.g + 'の訳');
     }
     card.innerHTML = html;
     rv.appendChild(card);
@@ -4226,7 +4243,7 @@ function mk4BuildPracticeCard(p){
       res.appendChild(tr);
     }
     if(p.vi && p.vi.length){
-      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, t('vietTranslation'));
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p, t('vietTranslation'));
       while(vt.firstChild) res.appendChild(vt.firstChild);
     }
     res.classList.remove('hidden');
@@ -4621,7 +4638,7 @@ function mk4Finish(auto){
       var tr = grp.lines.join('\n');
       html += reviewAudioHtml(grp.audio, 'セット' + item.g + 'の音声をもう一度聞く');
       html += '<div class="transcript jp"><strong>セット' + item.g + 'のトランスクリプト：</strong>\n' + tr + '</div>';
-      html += viTrHtml(grp.vi, 'セット' + item.g + 'の訳');
+      html += viTrHtml(grp, 'セット' + item.g + 'の訳');
     }
     card.innerHTML = html;
     rv.appendChild(card);
@@ -4823,7 +4840,7 @@ function mk5BuildPracticeCard(p){
       res.appendChild(tr);
     }
     if(p.vi && p.vi.length){
-      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, t('vietTranslation'));
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p, t('vietTranslation'));
       while(vt.firstChild) res.appendChild(vt.firstChild);
     }
     res.classList.remove('hidden');
@@ -5218,7 +5235,7 @@ function mk5Finish(auto){
       var tr = grp.lines.join('\n');
       html += reviewAudioHtml(grp.audio, 'セット' + item.g + 'の音声をもう一度聞く');
       html += '<div class="transcript jp"><strong>セット' + item.g + 'のトランスクリプト：</strong>\n' + tr + '</div>';
-      html += viTrHtml(grp.vi, 'セット' + item.g + 'の訳');
+      html += viTrHtml(grp, 'セット' + item.g + 'の訳');
     }
     card.innerHTML = html;
     rv.appendChild(card);
