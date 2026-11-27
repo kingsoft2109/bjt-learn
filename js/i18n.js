@@ -207,6 +207,42 @@
     }
   }
 
+  /* Translation picker for segment/group/practice transcript translations.
+     Those data objects carry vi/en/ja line arrays side by side; fallback
+     mirrors pickExpl: selected -> English -> Vietnamese (never empty). */
+  window.pickTr = function(obj){
+    if(!obj) return null;
+    if(lang === 'ja') return obj.ja || obj.en || obj.vi || null;
+    if(lang === 'en') return obj.en || obj.vi || null;
+    return obj.vi || obj.en || null;
+  };
+  /* Field-based variant for objects that store translations as separate
+     <base>Vi/<base>En/<base>Ja fields (e.g. transcriptVi on the demo exam). */
+  window.pickTrField = function(obj, base){
+    if(!obj) return null;
+    if(lang === 'ja') return obj[base + 'Ja'] || obj[base + 'En'] || obj[base + 'Vi'] || null;
+    if(lang === 'en') return obj[base + 'En'] || obj[base + 'Vi'] || null;
+    return obj[base + 'Vi'] || obj[base + 'En'] || null;
+  };
+
+  /* Registry so already-rendered translation blocks re-render live on
+     language switch, mirroring regExpl. Entry: {obj, base|null, label}. */
+  var trRegistry = [];
+  window.regTr = function(entry){
+    trRegistry.push(entry);
+    return trRegistry.length - 1;
+  };
+  function refreshTranslations(){
+    var nodes = document.querySelectorAll('[data-tr-idx]');
+    for(var i=0;i<nodes.length;i++){
+      var e = trRegistry[+nodes[i].getAttribute('data-tr-idx')];
+      if(!e) continue;
+      var lines = e.base ? window.pickTrField(e.obj, e.base) : window.pickTr(e.obj);
+      if(!lines) continue;
+      nodes[i].innerHTML = '<strong>' + e.label + ':</strong>\n' + lines.join('\n');
+    }
+  }
+
   function applyI18n(){
     document.documentElement.lang = (lang === 'ja' ? 'ja' : (lang === 'vi' ? 'vi' : 'en'));
     var nodes = document.querySelectorAll('[data-i18n]');
@@ -222,6 +258,7 @@
     var sel = document.getElementById('langSelect');
     if(sel) sel.value = lang;
     refreshExplanations();
+    refreshTranslations();
   }
   window.applyI18n = applyI18n;
 

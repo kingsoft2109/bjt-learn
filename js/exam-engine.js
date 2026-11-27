@@ -415,7 +415,7 @@ ExamEngine.prototype.grade = function(auto){
       var segName = cfg.segNames ? cfg.segNames[item.seg] : '';
       var thtml = '<div class="q-num">' + segLabel + ' ' + item.seg + (segName ? ' — ' + segName : '') + '</div>';
       thtml += '<p class="q-text jp" style="font-size:16px;margin:6px 0 8px"></p>';
-      thtml += viTrHtml(seg.vi, t('refTranslation') + segLabel + ' ' + item.seg);
+      thtml += viTrHtml(seg, t('refTranslation') + segLabel + ' ' + item.seg);
       tcard.innerHTML = thtml;
       tcard.querySelector('.q-text').textContent = seg.subject || '';
       rv.appendChild(tcard);
@@ -442,7 +442,7 @@ ExamEngine.prototype.grade = function(auto){
           var tr = segData.lines.map(function(l){ return (typeof l === 'string') ? l : (l.text || ''); }).join('\n');
           html += '<div class="transcript jp"><strong>Transcript ' + segLabel.toLowerCase() + ' ' + item.seg + ':</strong>\n' + tr + '</div>';
         }
-        html += viTrHtml(segData.vi, t('translationWord') + ' ' + segLabel.toLowerCase() + ' ' + item.seg);
+        html += viTrHtml(segData, t('translationWord') + ' ' + segLabel.toLowerCase() + ' ' + item.seg);
       }
     }
 
