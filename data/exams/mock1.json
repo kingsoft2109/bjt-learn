@@ -44,6 +44,16 @@
         "Xin lỗi. Tôi là người của công ty logistics, có hẹn với Trưởng phòng kinh doanh lúc 3 giờ. Tôi đến hơi sớm một chút.",
         "Cảm ơn quý khách. Vậy xin quý khách chờ ở sảnh đằng kia. Khi đến giờ, chúng tôi sẽ gọi quý khách từ đây.",
         "Vâng, tôi hiểu rồi. Cảm ơn anh/chị."
+      ],
+      "en": [
+        "Excuse me. I am from the logistics company, and I have an appointment with the Sales Department Manager at 3 o'clock. I have arrived a little early.",
+        "Thank you. Then please wait in the lobby over there. When it is time, we will call you from here.",
+        "Yes, I understand. Thank you."
+      ],
+      "ja": [
+        "すみません。物流会社の者ですが、営業部長と3時にお約束があります。少し早く着いてしまいました。",
+        "ありがとうございます。では、そちらのロビーでお待ちください。時間になりましたら、こちらからお呼びします。",
+        "はい、分かりました。ありがとうございます。"
       ]
     },
     {
@@ -66,6 +76,18 @@
         "Chào anh/chị, lâu nay vẫn được anh/chị giúp đỡ. Về kiện hàng dự kiến đến vào sáng mai, có thể đổi sang chiều nay được không ạ?",
         "Tôi rất xin lỗi. Chuyến xe hôm nay đã xuất phát rồi nên không thể thay đổi được ạ.",
         "Vậy à. Thế thì cứ theo đúng dự kiến ngày mai giúp tôi nhé."
+      ],
+      "en": [
+        "Yes, this is the logistics center.",
+        "Hello, thank you for your continued support. Regarding the package scheduled to arrive tomorrow morning, could it be changed to this afternoon?",
+        "I am very sorry. Today's truck has already departed, so it cannot be changed.",
+        "I see. Then please keep it as scheduled for tomorrow."
+      ],
+      "ja": [
+        "はい、物流センターです。",
+        "お世話になっております。明日の午前中に到着予定の荷物について、今日の午後に変更できますでしょうか。",
+        "申し訳ございません。本日のトラックはすでに出発してしまったので、変更できません。",
+        "そうですか。では、予定どおり明日でお願いします。"
       ]
     },
     {
@@ -86,6 +108,16 @@
         "À… máy photocopy này bị kẹt giấy rồi ạ…",
         "À, chuyện này hay xảy ra lắm. Mở nắp ở bên hông ra, rồi kéo từ từ tờ giấy bị kẹt nhé.",
         "Như thế này ạ? Lấy ra được rồi. Cảm ơn anh/chị."
+      ],
+      "en": [
+        "Ah… this photocopier has a paper jam…",
+        "Ah, that happens often. Open the cover on the side, and slowly pull out the jammed paper.",
+        "Like this? I got it out. Thank you."
+      ],
+      "ja": [
+        "ああ…このコピー機、紙が詰まってしまいました…",
+        "ああ、それはよくありますよ。横のカバーを開けて、詰まった紙をゆっくり引いてください。",
+        "こうですか？取れました。ありがとうございます。"
       ]
     },
     {
@@ -102,6 +134,12 @@
       ],
       "vi": [
         "Phiền em một chút, bản kế hoạch này, sửa lại trước sáng thứ Sáu giúp anh được không?"
+      ],
+      "en": [
+        "Sorry to trouble you, but could you revise this plan by Friday morning for me?"
+      ],
+      "ja": [
+        "悪いけど、この企画書、金曜日の朝までに直してもらえるかな。"
       ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock1-L2a-scene.jpg\" alt=\"場面の絵：上司の指示の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
@@ -120,6 +158,12 @@
       "vi": [
         "Sản phẩm tôi mua hôm trước, ngay từ khi nhận hàng đã không hoạt động. Tôi phải làm thế nào đây?"
       ],
+      "en": [
+        "The product I bought the other day did not work right from the moment I received it. What should I do?"
+      ],
+      "ja": [
+        "先日買った製品が、受け取ったときから動きません。どうすればいいですか。"
+      ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock1-L2b-scene.jpg\" alt=\"場面の絵：お客様の相談の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
@@ -136,6 +180,12 @@
       ],
       "vi": [
         "Tháng này sản phẩm mới bán rất chạy, đúng là đang vào mùa đắt hàng nhất (kakiire-doki) nhỉ."
+      ],
+      "en": [
+        "This month the new product is selling very well — it really is the busiest sales season (kakiire-doki), isn't it?"
+      ],
+      "ja": [
+        "今月は新製品がよく売れていますね。本当に書き入れ時ですね。"
       ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock1-L2c-scene.jpg\" alt=\"場面の絵：慣用表現の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
@@ -167,6 +217,24 @@
         "Tài liệu tôi sẽ hoàn thành trước ngày mai ạ. Tuy nhiên, dữ liệu doanh số mà phía đối tác yêu cầu, vẫn chưa được phòng Kế toán gửi tới ạ.",
         "Vậy à. Thế thì nhắc phòng Kế toán ngay trong hôm nay giúp tôi nhé. Nếu tài liệu không kịp, sẽ phải đổi lịch họp đấy.",
         "Vâng, tôi đã rõ. Tôi sẽ xác nhận ngay trong hôm nay ạ."
+      ],
+      "en": [
+        "Regarding next week's business trip to Osaka, I have been able to book the Shinkansen for Tuesday.",
+        "Thank you. From what time is the meeting with the other party?",
+        "It is from 2 p.m. on Wednesday. Tuesday is just for travel, so the hotel has been booked for 1 night from Tuesday evening.",
+        "How are the materials for the meeting coming along?",
+        "I will finish the materials by tomorrow. However, the sales data requested by the other party has not yet been sent from the Accounting Department.",
+        "I see. Then please remind the Accounting Department within today. If the materials are not ready in time, we will have to change the meeting schedule.",
+        "Yes, I understand. I will confirm it within today."
+      ],
+      "ja": [
+        "来週の大阪出張について、火曜日の新幹線を予約できました。",
+        "ありがとう。先方との会議は何時からかな。",
+        "水曜日の午後2時からです。火曜日は移動だけなので、ホテルは火曜日の夜から1泊で予約しています。",
+        "会議の資料はどうなっていますか。",
+        "資料は明日までに仕上げます。ただ、先方から依頼された売上データが、まだ経理部から届いていません。",
+        "そうか。じゃあ、今日中に経理部に催促してください。資料が間に合わなければ、会議の日程を変更しなければなりません。",
+        "はい、分かりました。今日中に確認します。"
       ]
     },
     {
@@ -185,6 +253,12 @@
       ],
       "vi": [
         "Phòng Hành chính tổng hợp xin thông báo về hệ thống quyết toán chi phí mới. Từ ngày 1 tháng sau, thay cho đơn xin bằng giấy như trước đây, hệ thống mới cho phép nộp đơn qua máy tính hoặc điện thoại thông minh sẽ bắt đầu. Hãy hoàn tất việc nộp đơn trước ngày 25 của tháng phát sinh chi phí. Hóa đơn, sau khi chụp ảnh và đăng ký lên hệ thống, xin đừng vứt hóa đơn gốc cho đến khi việc đăng ký hoàn tất. Khi đơn được phê duyệt, tiền sẽ được chuyển vào tài khoản lương vào ngày 10 của tháng sau. Trong tháng này, vẫn có thể dùng đơn giấy như trước đây."
+      ],
+      "en": [
+        "The General Affairs Department announces the new expense settlement system. From the 1st of next month, in place of the paper applications used until now, a new system that allows applications to be submitted by computer or smartphone will begin. Please complete your application by the 25th of the month in which the expense was incurred. As for receipts, after photographing them and registering them in the system, please do not discard the original receipts until the registration is complete. When an application is approved, the money will be transferred to your salary account on the 10th of the following month. During this month, paper applications can still be used as before."
+      ],
+      "ja": [
+        "総務部より、新しい経費精算システムについてお知らせします。来月1日から、これまでの紙の申請書に代わり、パソコンやスマートフォンから申請できる新しいシステムが始まります。申請は、経費が発生した月の25日までに完了してください。領収書は、写真を撮ってシステムに登録した後、登録が完了するまで原本を捨てないでください。申請が承認されると、翌月10日に給与口座へ振り込まれます。今月中は、これまでどおり紙の申請書も使えます。"
       ]
     },
     {
@@ -210,6 +284,18 @@
         "Vâng, tôi hiểu rồi. Giờ có thay đổi không ạ?",
         "Giờ vẫn là 10 giờ như cũ. Ngoài ra, báo cáo doanh số không cần in cũng được. Sẽ chia sẻ qua máy tính bảng.",
         "Rõ rồi ạ. Tôi sẽ liên lạc với những người tham dự."
+      ],
+      "en": [
+        "Regarding Friday's business meeting, the venue has changed. As Meeting Room No. 2 is under construction, we will use Meeting Room No. 5.",
+        "Yes, I understand. Has the time changed?",
+        "The time remains 10 o'clock as before. Also, there is no need to print the sales report. It will be shared via tablet.",
+        "Understood. I will contact the attendees."
+      ],
+      "ja": [
+        "金曜日の商談について、場所が変更になりました。第2会議室は工事中のため、第5会議室を使います。",
+        "はい、承知しました。時間に変更はありますか。",
+        "時間は今まで通り10時です。それから、売上報告書は印刷しなくても結構です。タブレットで共有します。",
+        "承知しました。参加者に連絡します。"
       ]
     },
     {
@@ -229,6 +315,12 @@
       ],
       "vi": [
         "Đây là diễn biến số lượng yêu cầu tư vấn trong nửa đầu năm tài chính này. Tháng 4 là 120 vụ, nhưng tháng 5 đã tăng lên 150 vụ. Tháng 6 giảm nhẹ xuống 135 vụ, nhưng tháng 7 đã tăng lên 180 vụ. Tháng 8 ổn định ở mức 165 vụ, nhưng tháng 9 là 210 vụ, nhiều nhất trong nửa đầu năm. Điều này được cho là nhờ hiệu quả của chiến dịch đã thực hiện vào tháng 9."
+      ],
+      "en": [
+        "This shows the trend in the number of consultation requests in the first half of this fiscal year. In April there were 120 cases, but in May it increased to 150 cases. In June it decreased slightly to 135 cases, but in July it rose to 180 cases. In August it was stable at 165 cases, but in September it reached 210 cases, the highest in the first half of the year. This is believed to be thanks to the effect of the campaign carried out in September."
+      ],
+      "ja": [
+        "こちらは今年度上半期の相談依頼件数の推移です。4月は120件でしたが、5月には150件に増えました。6月は135件に少し減りましたが、7月には180件に増えました。8月は165件で落ち着いていましたが、9月は210件で、上半期で最も多くなりました。これは、9月に実施したキャンペーンの効果によるものと考えられます。"
       ]
     },
     {
@@ -254,6 +346,18 @@
         "Vâng, tôi đã rõ. Chuyển phát nhanh cộng thêm 400 yên cho mỗi thùng ạ.",
         "Tổng cộng là bao nhiêu tiền ạ?",
         "Xin quý khách chờ một chút ạ."
+      ],
+      "en": [
+        "I would like to send some goods. There are 2 boxes, each weighing 10 kg. Please send one box by express delivery and the other by regular delivery.",
+        "Yes, understood. Express delivery costs an additional 400 yen per box.",
+        "How much is the total?",
+        "Please wait a moment."
+      ],
+      "ja": [
+        "荷物を送りたいのですが、箱が2つあり、それぞれ10 kgです。1箱は速達で、もう1箱は普通郵便でお願いします。",
+        "はい、承知しました。速達は1箱につき400円追加になります。",
+        "合計はいくらですか。",
+        "少々お待ちください。"
       ]
     },
     {
@@ -277,6 +381,16 @@
         "Tôi gọi điện về việc đơn đặt hàng. Về số lượng của sản phẩm A, có thể đổi thành 60 cái thay vì 50 cái được không ạ? Hàng vẫn còn tồn kho nên giao vào thứ Sáu cũng được ạ.",
         "Vâng, tôi đã rõ. Tôi sẽ đổi thành 60 cái. Sản phẩm B vẫn theo đúng dự kiến là thứ Hai tuần tới, có đúng không ạ?",
         "Vâng, nhờ anh/chị nhé."
+      ],
+      "en": [
+        "I am calling about an order. Regarding the quantity of Product A, could it be changed to 60 units instead of 50? There is still stock, so delivery on Friday would be fine.",
+        "Yes, understood. I will change it to 60 units. Product B is still scheduled for next Monday as planned, is that correct?",
+        "Yes, please do so."
+      ],
+      "ja": [
+        "注文の件でお電話しました。商品Aの数量ですが、50個ではなく60個に変更できますか。在庫はまだありますので、金曜日の納品でも結構です。",
+        "はい、承知しました。60個に変更します。商品Bは予定通り来週の月曜日でよろしいですか。",
+        "はい、お願いします。"
       ]
     },
     {
@@ -986,6 +1100,32 @@
         "Người đàn ông đang đọc tài liệu trong phòng họp.",
         "Đáp án đúng là số 2.",
         "Phần luyện tập kết thúc ở đây."
+      ],
+      "en": [
+        "Practice. Look at the picture and listen to the 4 statements.",
+        "1.",
+        "The man is closing the meeting room window.",
+        "2.",
+        "The man is opening the meeting room window.",
+        "3.",
+        "The woman is opening the meeting room door.",
+        "4.",
+        "The man is reading documents in the meeting room.",
+        "The correct answer is number 2.",
+        "The practice section ends here."
+      ],
+      "ja": [
+        "練習。写真を見て、4つの文を聞いてください。",
+        "1.",
+        "男の人が会議室の窓を閉めています。",
+        "2.",
+        "男の人が会議室の窓を開けています。",
+        "3.",
+        "女の人が会議室のドアを開けています。",
+        "4.",
+        "男の人が会議室で資料を読んでいます。",
+        "正解は2番です。",
+        "練習はここまでです。"
       ]
     },
     {
@@ -1038,6 +1178,36 @@
         "Tài liệu thì anh Tanaka đang giữ đấy ạ.",
         "Đáp án đúng là số 3.",
         "Phần luyện tập kết thúc ở đây."
+      ],
+      "en": [
+        "Practice. Listen to the statement and answer the question.",
+        "Are the documents for tomorrow's meeting ready yet?",
+        "Which is the most appropriate response from the subordinate?",
+        "1.",
+        "Yes, I did it yesterday, so there is no need to look at it.",
+        "2.",
+        "Not yet, but I will do it by next week.",
+        "3.",
+        "Yes, they are ready. I have placed them on the desk.",
+        "4.",
+        "Mr. Tanaka has the documents.",
+        "The correct answer is number 3.",
+        "The practice section ends here."
+      ],
+      "ja": [
+        "練習。発言を聞いて、質問に答えてください。",
+        "明日の会議の資料はできましたか。",
+        "部下の返事として最も適切なのはどれですか。",
+        "1.",
+        "はい、昨日作りましたので、見る必要はありません。",
+        "2.",
+        "まだですが、来週までに作ります。",
+        "3.",
+        "はい、できました。机の上に置いておきました。",
+        "4.",
+        "資料は田中さんが持っています。",
+        "正解は3番です。",
+        "練習はここまでです。"
       ]
     },
     {
@@ -1094,6 +1264,40 @@
         "1 giờ.",
         "Đáp án đúng là số 1.",
         "Phần luyện tập kết thúc ở đây."
+      ],
+      "en": [
+        "Practice. Listen to the conversation and answer the question.",
+        "By 12 o'clock the cafeteria gets very crowded.",
+        "That's right. Shall we go a little earlier today?",
+        "Yes, let's go at 11:30.",
+        "What time will the two of them go for lunch?",
+        "1.",
+        "11:30.",
+        "2.",
+        "12 o'clock.",
+        "3.",
+        "12:30.",
+        "4.",
+        "1 o'clock.",
+        "The correct answer is number 1.",
+        "The practice section ends here."
+      ],
+      "ja": [
+        "練習。会話を聞いて、質問に答えてください。",
+        "12時になると食堂はとても混みますよ。",
+        "そうですね。今日は少し早めに行きませんか。",
+        "うん、11時半に行きましょう。",
+        "2人は何時に昼食に行きますか。",
+        "1.",
+        "11時半。",
+        "2.",
+        "12時。",
+        "3.",
+        "12時半。",
+        "4.",
+        "1時。",
+        "正解は1番です。",
+        "練習はここまでです。"
       ]
     },
     {
@@ -1132,6 +1336,22 @@
         "Cuộc họp bắt đầu lúc mấy giờ?",
         "Đáp án đúng là số 4.",
         "Phần luyện tập kết thúc ở đây."
+      ],
+      "en": [
+        "Practice. Listen to the audio while looking at the document.",
+        "Excuse me, regarding Friday's meeting, the time has been changed from 10 o'clock to 11 o'clock.",
+        "I understand. 11 o'clock, then.",
+        "What time does the meeting start?",
+        "The correct answer is number 4.",
+        "The practice section ends here."
+      ],
+      "ja": [
+        "練習。資料を見ながら音声を聞いてください。",
+        "すみません、金曜日の会議ですが、時間が10時から11時に変更になりました。",
+        "分かりました。11時ですね。",
+        "会議は何時に始まりますか。",
+        "正解は4番です。",
+        "練習はここまでです。"
       ]
     },
     {
@@ -1170,6 +1390,22 @@
         "Thứ Bảy, quầy mở đến mấy giờ?",
         "Đáp án đúng là số 2.",
         "Phần luyện tập kết thúc ở đây."
+      ],
+      "en": [
+        "Practice. Listen to the audio while looking at the document.",
+        "Excuse me, is the counter open on Saturday afternoon?",
+        "No, on Saturday it is only open until 12 o'clock.",
+        "On Saturday, until what time is the counter open?",
+        "The correct answer is number 2.",
+        "The practice section ends here."
+      ],
+      "ja": [
+        "練習。資料を見ながら音声を聞いてください。",
+        "すみません、土曜日の午後、窓口は開いていますか。",
+        "いいえ、土曜日は12時までしか開いていません。",
+        "土曜日、窓口は何時まで開いていますか。",
+        "正解は2番です。",
+        "練習はここまでです。"
       ]
     },
     {
@@ -1208,6 +1444,22 @@
         "Vở được đặt bao nhiêu cuốn?",
         "Đáp án đúng là số 3.",
         "Phần luyện tập kết thúc ở đây."
+      ],
+      "en": [
+        "Practice. Listen to the audio while looking at the document.",
+        "Regarding the email earlier, please change the notebooks to 80, not 50.",
+        "I understand. 80 notebooks, then.",
+        "How many notebooks were ordered?",
+        "The correct answer is number 3.",
+        "The practice section ends here."
+      ],
+      "ja": [
+        "練習。資料を見ながら音声を聞いてください。",
+        "先ほどのメールについて、ノートは50冊ではなく80冊に変更してください。",
+        "分かりました。80冊ですね。",
+        "ノートは何冊注文されましたか。",
+        "正解は3番です。",
+        "練習はここまでです。"
       ]
     },
     {
@@ -1236,6 +1488,12 @@
       "title": "練習 — 語彙・文法",
       "vi": [
         "Trong công việc, điều quan trọng là tuân thủ hạn chót và tiến hành đúng theo kế hoạch."
+      ],
+      "en": [
+        "In work, it is important to meet deadlines and proceed according to plan."
+      ],
+      "ja": [
+        "仕事では、締め切りを守り、計画通りに進めることが大切です。"
       ]
     },
     {
@@ -1268,6 +1526,16 @@
         "Cảm ơn anh/chị hôm trước đã gửi hàng cho tôi.",
         "Nhờ anh/chị mà hàng đã đến nơi an toàn.",
         "Từ nay về sau cũng mong tiếp tục được anh/chị giúp đỡ."
+      ],
+      "en": [
+        "Thank you for sending me the goods the other day.",
+        "Thanks to you, the goods arrived safely.",
+        "I look forward to your continued support in the future."
+      ],
+      "ja": [
+        "先日は荷物を送っていただき、ありがとうございました。",
+        "おかげさまで、荷物が無事に届きました。",
+        "今後ともよろしくお願いいたします。"
       ]
     },
     {
@@ -1298,6 +1566,14 @@
       "vi": [
         "Thứ Bảy tuần sau sẽ tiến hành dọn dẹp văn phòng.",
         "Ngày hôm đó không vào văn phòng được, nên hãy mang những đồ cần thiết về trước thứ Sáu."
+      ],
+      "en": [
+        "The office will be cleaned next Saturday.",
+        "You will not be able to enter the office that day, so please take the things you need home before Friday."
+      ],
+      "ja": [
+        "来週の土曜日にオフィスの清掃を行います。",
+        "その日はオフィスに入れませんので、必要な物は金曜日までに持ち帰ってください。"
       ]
     }
   ]

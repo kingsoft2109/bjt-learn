@@ -57,6 +57,28 @@
         "Người phụ nữ đang làm tài liệu trên máy tính.",
         "4.",
         "Người đàn ông đang mở cửa phòng họp."
+      ],
+      "en": [
+        "Question 1.",
+        "1.",
+        "The man is talking on the phone.",
+        "2.",
+        "The man is pointing at the chart on the whiteboard to explain.",
+        "3.",
+        "The woman is preparing documents on the computer.",
+        "4.",
+        "The man is opening the door of the meeting room."
+      ],
+      "ja": [
+        "第1問。",
+        "1.",
+        "男の人が電話で話しています。",
+        "2.",
+        "男の人はホワイトボードのグラフを指して説明しています。",
+        "3.",
+        "女の人はパソコンで資料を作成しています。",
+        "4.",
+        "男の人は会議室のドアを開けています。"
       ]
     },
     {
@@ -90,6 +112,28 @@
         "Người đàn ông đang bước vào phòng khách sạn.",
         "4.",
         "Người đàn ông đang làm thủ tục check-in ở sân bay."
+      ],
+      "en": [
+        "Question 2.",
+        "1.",
+        "The man is buying a train ticket.",
+        "2.",
+        "The woman is carrying luggage.",
+        "3.",
+        "The man is entering a hotel room.",
+        "4.",
+        "The man is checking in at the airport."
+      ],
+      "ja": [
+        "第2問。",
+        "1.",
+        "男の人は電車の切符を買っています。",
+        "2.",
+        "女の人は荷物を運んでいます。",
+        "3.",
+        "男の人はホテルの部屋に入っています。",
+        "4.",
+        "男の人は空港でチェックインの手続きをしています。"
       ]
     },
     {
@@ -123,6 +167,28 @@
         "Người đàn ông đang đưa tài liệu cho người phụ nữ.",
         "4.",
         "Người phụ nữ đang thuyết trình trong phòng họp."
+      ],
+      "en": [
+        "Question 3.",
+        "1.",
+        "The woman is talking on the phone while taking notes.",
+        "2.",
+        "The woman is writing an email on the computer.",
+        "3.",
+        "The man is handing documents to the woman.",
+        "4.",
+        "The woman is giving a presentation in the meeting room."
+      ],
+      "ja": [
+        "第3問。",
+        "1.",
+        "女の人は電話で話しながらメモを取っています。",
+        "2.",
+        "女の人はパソコンでメールを書いています。",
+        "3.",
+        "男の人は女の人に資料を渡しています。",
+        "4.",
+        "女の人は会議室でプレゼンテーションをしています。"
       ]
     },
     {
@@ -156,6 +222,28 @@
         "Người đàn ông đang đếm số lượng hàng hóa trong kho.",
         "4.",
         "Người đàn ông đang đặt hàng trên máy tính."
+      ],
+      "en": [
+        "Question 4.",
+        "1.",
+        "The man is loading goods onto a truck.",
+        "2.",
+        "The woman is opening a box to check the contents inside.",
+        "3.",
+        "The man is counting the quantity of goods in the warehouse.",
+        "4.",
+        "The man is placing an order on the computer."
+      ],
+      "ja": [
+        "4番。",
+        "1.",
+        "男の人はトラックに荷物を積んでいます。",
+        "2.",
+        "女の人は箱を開けて中身を確認しています。",
+        "3.",
+        "男の人は倉庫で商品の数量を数えています。",
+        "4.",
+        "男の人はパソコンで注文しています。"
       ]
     },
     {
@@ -189,6 +277,28 @@
         "Người phụ nữ đang photocopy tài liệu.",
         "4.",
         "Người đàn ông đang gọi điện thoại."
+      ],
+      "en": [
+        "Question 5.",
+        "1.",
+        "The man is signing a contract.",
+        "2.",
+        "The woman is signing a contract.",
+        "3.",
+        "The woman is photocopying documents.",
+        "4.",
+        "The man is making a phone call."
+      ],
+      "ja": [
+        "5番。",
+        "1.",
+        "男の人は契約書にサインしています。",
+        "2.",
+        "女の人は契約書にサインしています。",
+        "3.",
+        "女の人は資料をコピーしています。",
+        "4.",
+        "男の人は電話をかけています。"
       ]
     },
     {
@@ -205,6 +315,12 @@
       ],
       "vi": [
         "Anh hãy cho tôi biết lý do anh ứng tuyển vào công ty chúng tôi."
+      ],
+      "en": [
+        "Please tell me your reason for applying to our company."
+      ],
+      "ja": [
+        "当社に応募した理由を教えてください。"
       ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2a-scene.jpg\" alt=\"場面の絵：面接・人事の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
@@ -223,6 +339,12 @@
       "vi": [
         "Chị có thể chỉ giúp tôi vị trí gian hàng ở triển lãm được không?"
       ],
+      "en": [
+        "Could you please show me the location of the booth at the exhibition?"
+      ],
+      "ja": [
+        "展示会のブースの場所を教えていただけますか？"
+      ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2b-scene.jpg\" alt=\"場面の絵：展示会の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
@@ -239,6 +361,12 @@
       ],
       "vi": [
         "Để xét duyệt khoản vay cần báo cáo quyết toán của 3 kỳ."
+      ],
+      "en": [
+        "To review the loan, financial statements for 3 periods are required."
+      ],
+      "ja": [
+        "融資の審査には3期分の決算報告書が必要です。"
       ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2c-scene.jpg\" alt=\"場面の絵：融資相談の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
@@ -257,6 +385,12 @@
       "vi": [
         "Điều hòa ở phòng họp đã không chạy nữa rồi."
       ],
+      "en": [
+        "The air conditioner in the meeting room has stopped working."
+      ],
+      "ja": [
+        "会議室のエアコンが動かなくなってしまいました。"
+      ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2d-scene.jpg\" alt=\"場面の絵：設備修理依頼の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
@@ -273,6 +407,12 @@
       ],
       "vi": [
         "Tồn kho linh kiện chỉ còn rất ít. Anh có thể đặt hàng giúp tôi được không?"
+      ],
+      "en": [
+        "The inventory of components is running very low. Could you please place an order for me?"
+      ],
+      "ja": [
+        "部品の在庫がわずかしか残っていません。発注していただけますか？"
       ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2e-scene.jpg\" alt=\"場面の絵：在庫発注の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
@@ -291,6 +431,12 @@
       "vi": [
         "Về đề xuất sản phẩm mới, tôi có thể trình bày ở cuộc họp tuần sau được không ạ?"
       ],
+      "en": [
+        "Regarding the new product proposal, may I present it at next week's meeting?"
+      ],
+      "ja": [
+        "新製品の提案について、来週の会議で発表してもよろしいでしょうか？"
+      ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2f-scene.jpg\" alt=\"場面の絵：プレゼン提案の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
@@ -307,6 +453,12 @@
       ],
       "vi": [
         "Tháng này đơn hàng nhiều nên tôi không xoay xở kịp."
+      ],
+      "en": [
+        "There are many orders this month, so I cannot keep up."
+      ],
+      "ja": [
+        "今月は注文が多くて、対応が間に合いません。"
       ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2g-scene.jpg\" alt=\"場面の絵：慣用表現「手が回らない」の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
@@ -325,6 +477,12 @@
       "vi": [
         "Cuối cùng tôi cũng đã thống nhất được với bên đối tác."
       ],
+      "en": [
+        "I finally reached an agreement with the partner."
+      ],
+      "ja": [
+        "最終的に取引先と合意することができました。"
+      ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2h-scene.jpg\" alt=\"場面の絵：慣用表現「話がまとまる」の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
@@ -342,6 +500,12 @@
       "vi": [
         "Tôi xin lỗi về việc giao hàng chậm lần trước."
       ],
+      "en": [
+        "I apologize for the delay in delivery last time."
+      ],
+      "ja": [
+        "前回の納品が遅れたことをお詫び申し上げます。"
+      ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2i-scene.jpg\" alt=\"場面の絵：謝罪・依頼の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
     {
@@ -358,6 +522,12 @@
       ],
       "vi": [
         "Về buổi họp tuần sau, chị có thể đổi từ thứ Ba sang thứ Tư được không ạ?"
+      ],
+      "en": [
+        "Regarding next week's meeting, could you please change it from Tuesday to Wednesday?"
+      ],
+      "ja": [
+        "来週の会議について、火曜日から水曜日に変更していただけますか？"
       ],
       "mat": "<div style=\"margin:18px 22px 2px;text-align:center\"><img src=\"assets/mock2-L2j-scene.jpg\" alt=\"場面の絵：日程調整の場面\" style=\"max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px\"></div>"
     },
@@ -387,6 +557,22 @@
         "Slide tôi sẽ hoàn thành trước ngày mai. Tuy nhiên, dữ liệu từ phòng Marketing vẫn chưa gửi tới.",
         "Vậy sao. Vậy anh hãy nhắc phòng Marketing trong hôm nay giúp tôi.",
         "Tôi hiểu rồi. Hàng mẫu dự kiến sẽ đến vào thứ Tư."
+      ],
+      "en": [
+        "Let me confirm the preparations for the new product presentation. The presentation will start at 2 p.m. on Thursday.",
+        "Would Meeting Room No. 3 be all right as the venue?",
+        "Yes, Meeting Room No. 3. Have the documents been completed?",
+        "I will complete the slides by tomorrow. However, the data from the Marketing Department has not arrived yet.",
+        "I see. Then please remind the Marketing Department today.",
+        "Understood. The samples are scheduled to arrive on Wednesday."
+      ],
+      "ja": [
+        "新製品発表会の準備について確認させてください。発表は木曜日の午後2時に始まります。",
+        "会場は第3会議室でよろしいでしょうか？",
+        "はい、第3会議室です。資料はできましたか？",
+        "スライドは明日までに完成させます。ただし、マーケティング部からのデータがまだ届いていません。",
+        "そうですか。では、今日中にマーケティング部に催促してください。",
+        "分かりました。サンプルは水曜日に届く予定です。"
       ]
     },
     {
@@ -405,6 +591,12 @@
       ],
       "vi": [
         "Mọi người trong phòng Kinh doanh, tôi xin thông báo về triển lãm tháng sau. Triển lãm diễn ra từ ngày 10 đến ngày 12 tháng sau tại Tokyo Big Sight. Số gian hàng của công ty chúng ta là A-12. Việc dựng gian hàng sẽ làm từ 3 giờ chiều ngày 9, ngày hôm trước, vì vậy người phụ trách hãy tập trung tại hiện trường lúc 2 giờ rưỡi. Việc đăng ký của khách tham quan hãy làm trước qua mạng. Không thể đăng ký tại quầy tiếp đón trong ngày diễn ra."
+      ],
+      "en": [
+        "To everyone in the Sales Department, I would like to inform you about next month's exhibition. The exhibition will be held from the 10th to the 12th of next month at Tokyo Big Sight. Our company's booth number is A-12. Booth setup will be done from 3 p.m. on the 9th, the day before, so those in charge should gather at the site at 2:30. Visitor registration should be done in advance online. Registration cannot be done at the reception desk on the day of the event."
+      ],
+      "ja": [
+        "営業部の皆さん、来月の展示会についてお知らせします。展示会は来月10日から12日まで、東京ビッグサイトで開催されます。当社のブース番号はA-12です。ブースの設営は前日の9日午後3時から行いますので、担当者は午後2時30分に現地に集合してください。来場者の登録は事前にインターネットでお願いします。当日、受付では登録できません。"
       ]
     },
     {
@@ -432,6 +624,20 @@
         "Linh kiện A có vấn đề về kích thước. Tôi sẽ liên hệ với nhà cung cấp để nhờ đổi linh kiện.",
         "Còn việc xuất hàng thì sao ạ?",
         "Chỉ xuất trước phần đã đạt kiểm tra. Hàng lỗi sẽ không xuất. Việc kiểm tra lại sẽ làm vào thứ Hai tuần sau."
+      ],
+      "en": [
+        "I would like to report the results of this quality inspection. Out of 1.000 products inspected, there were 25 defective products.",
+        "The defect rate is 2,5%, isn't it? What is the cause?",
+        "Component A has a problem with its dimensions. I will contact the supplier to ask them to replace the component.",
+        "What about the shipment?",
+        "We will ship only the portion that passed the inspection first. Defective goods will not be shipped. The re-inspection will be done on Monday of next week."
+      ],
+      "ja": [
+        "今回の品質検査の結果をご報告します。検査した1.000製品のうち、25製品に不良がありました。",
+        "不良率は2,5％ですね。原因は何ですか？",
+        "部品Aに寸法の問題があります。仕入先に連絡して、部品の交換をお願いします。",
+        "出荷についてはどうですか？",
+        "検査に合格した分だけ先に出荷します。不良品は出荷しません。再検査は来週の月曜日に行います。"
       ]
     },
     {
@@ -454,6 +660,16 @@
         "Về chuyến thăm khách hàng tuần sau, đã đổi từ thứ Ba sang thứ Tư.",
         "Giờ thì sao ạ?",
         "Bắt đầu lúc 2 giờ chiều. Nơi đến thăm vẫn là trụ sở chính, không thay đổi."
+      ],
+      "en": [
+        "Regarding next week's customer visit, it has been changed from Tuesday to Wednesday.",
+        "What about the time?",
+        "It starts at 2 p.m. The place to visit remains the head office, unchanged."
+      ],
+      "ja": [
+        "来週の顧客訪問について、火曜日から水曜日に変更になりました。",
+        "時間はどうですか？",
+        "午後2時開始です。訪問先は本社のままで、変更ありません。"
       ]
     },
     {
@@ -477,6 +693,16 @@
         "Tôi xin thông báo về việc chuyển văn phòng. Ngày chuyển đã lùi từ ngày 1 sang ngày 8 tháng sau.",
         "Số điện thoại có thay đổi không ạ?",
         "Số điện thoại không thay đổi. Địa chỉ và ga gần nhất cũng như trong thông báo."
+      ],
+      "en": [
+        "I would like to inform you about the office relocation. The relocation date has been postponed from the 1st to the 8th of next month.",
+        "Will the phone number change?",
+        "The phone number will not change. The address and nearest station are also as stated in the notice."
+      ],
+      "ja": [
+        "オフィス移転についてお知らせします。移転日は来月1日から8日に延期になりました。",
+        "電話番号は変わりますか？",
+        "電話番号は変わりません。住所と最寄り駅もお知らせのとおりです。"
       ]
     },
     {
@@ -500,6 +726,16 @@
         "Biểu đồ này cho thấy doanh số sản phẩm mới từ tháng 4 đến tháng 9. Tháng 4 là 800.000 yên, tháng 5 tăng lên 950.000 yên, tháng 6 tăng lên 1.100.000 yên.",
         "Tháng 7 thì sao ạ?",
         "Tháng 7 giảm nhẹ xuống 1.050.000 yên, nhưng tháng 8 là 1.300.000 yên, tháng 9 là 1.500.000 yên — tháng 9 là nhiều nhất."
+      ],
+      "en": [
+        "This chart shows sales of the new product from April to September. In April it was 800.000 yen, in May it increased to 950.000 yen, and in June it increased to 1.100.000 yen.",
+        "What about July?",
+        "In July it decreased slightly to 1.050.000 yen, but in August it was 1.300.000 yen and in September it was 1.500.000 yen — September was the highest."
+      ],
+      "ja": [
+        "このグラフは4月から9月までの新製品の売上を示しています。4月は800.000円、5月は950.000円に増え、6月は1.100.000円に増えました。",
+        "7月はどうですか？",
+        "7月は1.050.000円に少し減りましたが、8月は1.300.000円、9月は1.500.000円で、9月が最も多くなりました。"
       ]
     },
     {
@@ -525,6 +761,18 @@
         "Vâng, tôi đã rõ. Tôi sẽ đổi thành 120 cái. Thời gian giao hàng vẫn giữ thứ Sáu tuần sau có được không ạ?",
         "Thời gian giao hàng cũng xin đổi giúp tôi. Không phải thứ Sáu mà giao vào thứ Năm được không ạ? Sản phẩm B vẫn giữ 50 cái, không thay đổi.",
         "Vâng, tôi đã rõ. Sản phẩm A đổi thành 120 cái, sản phẩm B giữ 50 cái, thời gian giao hàng đổi sang thứ Năm tuần sau ạ."
+      ],
+      "en": [
+        "I am calling about the order email I sent the other day. Regarding the quantity of Product A, could you please change it from 100 units to 120 units?",
+        "Yes, understood. I will change it to 120 units. Would it be all right to keep the delivery date as Friday of next week?",
+        "Please also change the delivery date for me. Could you deliver it on Thursday instead of Friday? Product B will remain at 50 units, unchanged.",
+        "Yes, understood. Product A is changed to 120 units, Product B stays at 50 units, and the delivery time is changed to next Thursday."
+      ],
+      "ja": [
+        "先日お送りした注文メールについてお電話しています。製品Aの数量について、100個から120個に変更していただけますか？",
+        "はい、承知しました。120個に変更します。納期は来週の金曜日のままでよろしいでしょうか？",
+        "納期も変更をお願いします。金曜日ではなく、木曜日に納品していただけますか？製品Bは50個のままで、変更ありません。",
+        "はい、承知しました。製品Aは120個に変更し、製品Bは50個のまま、納期は来週の木曜日に変更いたします。"
       ]
     },
     {
@@ -553,6 +801,20 @@
         "Vâng. Đơn hàng đặt trước cuối tháng này sẽ được giảm 20%. Chỉ áp dụng cho đơn đặt qua mạng.",
         "Nếu đặt mẫu Y qua mạng thì giá là bao nhiêu ạ?",
         "Là 39.840 yên ạ."
+      ],
+      "en": [
+        "Let me introduce the launch promotion for the new printer. Model X is 29,800 yen, and Model Y is 49,800 yen.",
+        "Is there a discount?",
+        "Yes. Orders placed by the end of this month will receive a 20% discount. This applies only to orders placed online.",
+        "If I order Model Y online, how much will it cost?",
+        "It will be 39,840 yen."
+      ],
+      "ja": [
+        "新しいプリンターの発売キャンペーンをご紹介します。Xモデルは29,800円、Yモデルは49,800円です。",
+        "割引はありますか。",
+        "はい。今月末までのご注文で20%割引になります。ネットでのご注文のみ対象です。",
+        "Yモデルをネットで注文すると、いくらになりますか。",
+        "39,840円になります。"
       ]
     },
     {
@@ -576,6 +838,16 @@
         "Tôi xin liên hệ về khoản vay. Số tiền vay có thể đổi từ 5 triệu yên lên 6 triệu yên.",
         "Lãi suất thì sao ạ?",
         "Lãi suất sẽ là 2,0% một năm. Thời gian trả nợ vẫn là 5 năm."
+      ],
+      "en": [
+        "I am contacting you about the loan. The loan amount can be changed from 5 million yen to 6 million yen.",
+        "What about the interest rate?",
+        "The interest rate will be 2.0% per year. The repayment period remains 5 years."
+      ],
+      "ja": [
+        "融資についてご連絡します。借入額は500万円から600万円に変更できます。",
+        "金利はどうなりますか。",
+        "金利は年2.0%になります。返済期間は5年のままです。"
       ]
     },
     {
@@ -599,6 +871,16 @@
         "Tôi xin báo cáo về biên bản kiểm tra chất lượng. Trong lần kiểm tra đầu tiên có 10 sản phẩm lỗi, nhưng khi kiểm tra lại đã phát hiện thêm 5 sản phẩm nữa.",
         "Như vậy tổng cộng có 15 sản phẩm lỗi phải không?",
         "Vâng. Số sản phẩm đạt là 485, tỉ lệ lỗi là 3%."
+      ],
+      "en": [
+        "I would like to report on the quality inspection record. In the first inspection there were 10 defective products, but upon re-inspection, 5 more products were found.",
+        "So there are 15 defective products in total, is that right?",
+        "Yes. The number of products that passed is 485, and the defect rate is 3%."
+      ],
+      "ja": [
+        "品質検査記録についてご報告します。最初の検査では不良品が10点ありましたが、再検査でさらに5点見つかりました。",
+        "では、不良品は合計15点ということですね。",
+        "はい。合格品は485点、不良率は3%です。"
       ]
     },
     {
@@ -623,6 +905,16 @@
         "Tôi xin liên hệ về phiếu đặt hàng. Về số lượng đặt hàng của sản phẩm P, xin đổi từ 200 lên 250 sản phẩm.",
         "Tôi hiểu rồi. Còn sản phẩm Q vẫn như kế hoạch phải không ạ?",
         "Số lượng đặt hàng của sản phẩm Q vẫn là 100. Tuy nhiên, do thiếu hàng tồn kho nên ngày giao đã lùi sang thứ Tư."
+      ],
+      "en": [
+        "I am contacting you about the order form. Regarding the order quantity for Product P, please change it from 200 to 250 products.",
+        "Understood. And Product Q remains as planned, correct?",
+        "The order quantity for Product Q remains 100. However, due to a shortage of stock, the delivery date has been moved to Wednesday."
+      ],
+      "ja": [
+        "注文書についてご連絡します。製品Pの注文数について、200点から250点に変更をお願いします。",
+        "承知しました。製品Qは計画どおりでよろしいですか。",
+        "製品Qの注文数は100点のままです。ただし、在庫不足のため、納品日は水曜日に延期されました。"
       ]
     },
     {
@@ -1977,6 +2269,32 @@
         "Đáp án đúng là số 2.",
         "Phần luyện tập kết thúc tại đây."
       ],
+      "en": [
+        "Practice. Look at the picture and listen to the 4 statements.",
+        "1.",
+        "The woman is opening a window.",
+        "2.",
+        "The woman is pressing an elevator button.",
+        "3.",
+        "The woman is talking on the phone.",
+        "4.",
+        "The woman is walking while carrying luggage.",
+        "The correct answer is number 2.",
+        "This is the end of the practice section."
+      ],
+      "ja": [
+        "練習です。絵を見て、4つの文を聞いてください。",
+        "1.",
+        "女性が窓を開けています。",
+        "2.",
+        "女性がエレベーターのボタンを押しています。",
+        "3.",
+        "女性が電話で話しています。",
+        "4.",
+        "女性が荷物を持って歩いています。",
+        "正解は2番です。",
+        "練習はここまでです。"
+      ],
       "audio": "assets/mock2-practice-l1.mp3"
     },
     {
@@ -2028,6 +2346,36 @@
         "Cuộc họp đã kết thúc rồi.",
         "Đáp án đúng là số 3.",
         "Phần luyện tập kết thúc tại đây."
+      ],
+      "en": [
+        "Practice. Listen to the statement and answer the question.",
+        "Excuse me, where is the meeting room?",
+        "What will the man say?",
+        "1.",
+        "The meeting room cannot be used at the moment.",
+        "2.",
+        "Excuse me, I don't know.",
+        "3.",
+        "The meeting room is on the 3rd floor. Take the elevator up; it is on the right-hand side.",
+        "4.",
+        "The meeting has already ended.",
+        "The correct answer is number 3.",
+        "This is the end of the practice section."
+      ],
+      "ja": [
+        "練習。発言を聞いて、質問に答えてください。",
+        "すみません、会議室はどこですか。",
+        "男性は何と言いますか。",
+        "1.",
+        "会議室は現在使えません。",
+        "2.",
+        "すみません、分かりません。",
+        "3.",
+        "会議室は3階です。エレベーターで上がって、右側にあります。",
+        "4.",
+        "会議はもう終わりました。",
+        "正解は3番です。",
+        "練習はここまでです。"
       ],
       "audio": "assets/mock2-practice-l2.mp3"
     },
@@ -2087,6 +2435,42 @@
         "Đáp án đúng là số 4.",
         "Phần luyện tập kết thúc tại đây."
       ],
+      "en": [
+        "Practice. Listen to the conversation and answer the question.",
+        "Excuse me, we are about to run out of copy paper. Could you order some for me?",
+        "Certainly. How many boxes should I order?",
+        "Three boxes, please.",
+        "Understood. I will arrange it by tomorrow.",
+        "What did the man ask her to do?",
+        "1.",
+        "Repair the printer",
+        "2.",
+        "Reserve a meeting room",
+        "3.",
+        "Order 5 boxes of copy paper",
+        "4.",
+        "Order 3 boxes of copy paper",
+        "The correct answer is number 4.",
+        "This is the end of the practice section."
+      ],
+      "ja": [
+        "練習です。会話を聞いて、質問に答えてください。",
+        "すみません、コピー用紙がなくなりそうです。注文してもらえますか。",
+        "分かりました。何箱注文しますか。",
+        "3箱お願いします。",
+        "承知しました。明日までに手配します。",
+        "男性は何を頼みましたか。",
+        "1.",
+        "プリンターを修理すること",
+        "2.",
+        "会議室を予約すること",
+        "3.",
+        "コピー用紙を5箱注文すること",
+        "4.",
+        "コピー用紙を3箱注文すること",
+        "正解は4番です。",
+        "練習はここまでです。"
+      ],
       "audio": "assets/mock2-practice-l3.mp3"
     },
     {
@@ -2123,6 +2507,20 @@
         "Đáp án đúng là số 1.",
         "Phần luyện tập kết thúc tại đây."
       ],
+      "en": [
+        "Practice. Look at the document while listening to the audio.",
+        "The place to visit has changed. Tomorrow, please go to Tanaka Bussan instead of Yamada Shoji. The time remains 10 a.m., unchanged.",
+        "Where will they go tomorrow?",
+        "The correct answer is number 1.",
+        "This is the end of the practice section."
+      ],
+      "ja": [
+        "練習です。資料を見ながら音声を聞いてください。",
+        "訪問先が変更になりました。明日は山田商事ではなく、田中物産に行ってください。時間は午前10時のまま、変更ありません。",
+        "明日はどこに行きますか。",
+        "正解は1番です。",
+        "練習はここまでです。"
+      ],
       "audio": "assets/mock2-practice-lr1.mp3"
     },
     {
@@ -2158,6 +2556,20 @@
         "Tháng nào có doanh số cao nhất?",
         "Đáp án đúng là số 3.",
         "Phần luyện tập kết thúc tại đây."
+      ],
+      "en": [
+        "Practice. Look at the document while listening to the audio.",
+        "Let me explain the sales figures. May was the highest, reaching 1.5 million yen. June decreased slightly compared to May, to 1.35 million yen.",
+        "Which month had the highest sales?",
+        "The correct answer is number 3.",
+        "This is the end of the practice section."
+      ],
+      "ja": [
+        "練習です。資料を見ながら音声を聞いてください。",
+        "売上についてご説明します。5月が最も高く、150万円に達しました。6月は5月に比べて少し減少し、135万円でした。",
+        "売上が最も高かったのは何月ですか。",
+        "正解は3番です。",
+        "練習はここまでです。"
       ],
       "audio": "assets/mock2-practice-lr2.mp3"
     },
@@ -2199,6 +2611,24 @@
         "Đáp án đúng là số 2.",
         "Phần luyện tập kết thúc tại đây."
       ],
+      "en": [
+        "Practice. Look at the document while listening to the audio.",
+        "Thank you for calling. Mr. Suzuki, I would like to confirm your registration. Your participation date is November 15, is that correct?",
+        "Yes, the 15th for me, please.",
+        "Understood. On that day, please come to the reception desk before 9:30.",
+        "On what day will Mr. Suzuki participate in the seminar?",
+        "The correct answer is number 2.",
+        "This is the end of the practice section."
+      ],
+      "ja": [
+        "練習です。資料を見ながら音声を聞いてください。",
+        "お電話ありがとうございます。鈴木様、登録を確認させていただきます。参加日は11月15日でよろしいですか。",
+        "はい、15日でお願いします。",
+        "承知しました。当日は9時半までに受付にお越しください。",
+        "鈴木様は何日にセミナーに参加しますか。",
+        "正解は2番です。",
+        "練習はここまでです。"
+      ],
       "audio": "assets/mock2-practice-lr3.mp3"
     },
     {
@@ -2226,6 +2656,12 @@
       ],
       "vi": [
         "Vào những ngày bận, có khi tôi phải tăng ca đến 9 giờ tối."
+      ],
+      "en": [
+        "On busy days, I sometimes have to work overtime until 9 p.m."
+      ],
+      "ja": [
+        "忙しい日は、夜9時まで残業しなければならないこともあります。"
       ],
       "audio": null
     },
@@ -2255,6 +2691,12 @@
       "vi": [
         "Cảm ơn anh/chị đã luôn hỗ trợ. Anh/chị có thể gửi cho tôi tài liệu cuộc họp hôm trước được không? Anh/chị đang bận mà tôi làm phiền, rất mong được anh/chị giúp đỡ."
       ],
+      "en": [
+        "Thank you for your continued support. Could you please send me the materials from the previous meeting? I apologize for troubling you while you are busy, and I would appreciate your help."
+      ],
+      "ja": [
+        "いつもお世話になっております。先日の会議の資料を送っていただけますか。お忙しいところ恐縮ですが、よろしくお願いいたします。"
+      ],
       "audio": null
     },
     {
@@ -2282,6 +2724,12 @@
       ],
       "vi": [
         "Giờ sử dụng phòng tài liệu: ngày thường từ 9 giờ sáng đến 6 giờ chiều. Thứ Bảy từ 9 giờ sáng đến 12 giờ trưa. Chủ nhật nghỉ, không sử dụng được."
+      ],
+      "en": [
+        "Hours for using the document room: on weekdays from 9 a.m. to 6 p.m. On Saturdays from 9 a.m. to 12 noon. Closed on Sundays; it cannot be used."
+      ],
+      "ja": [
+        "資料室の利用時間：平日は午前9時から午後6時まで。土曜日は午前9時から正午まで。日曜日は休みで、利用できません。"
       ],
       "audio": null
     }
