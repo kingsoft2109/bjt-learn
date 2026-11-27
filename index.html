@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="vi">
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -487,18 +487,24 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 #examMock1 .seg-group,#examMock2 .seg-group,#examMock3 .seg-group,#examMock4 .seg-group,#examMock5 .seg-group{max-width:1020px;margin-left:auto;margin-right:auto}
 #examMock1 .qcard img,#examMock2 .qcard img,#examMock3 .qcard img,#examMock4 .qcard img,#examMock5 .qcard img{max-height:54vh}
 </style>
+<script src="js/i18n.js"></script>
 </head>
 <body>
 
 <div class="topbar">
   <span class="cbt-badge">BJT CBT</span>
   <div class="brand">BJT <span>模擬テスト</span> · 試験室</div>
-  <button class="fs-btn" id="fsBtn" type="button" onclick="cycleFontSize()" title="解答エリアの文字サイズを変更">A＋ 文字サイズ</button>
-  <button class="fs-btn" id="videoLibBtn" type="button" title="状況ビデオライブラリを開いて復習">▶ 動画ライブラリ</button>
-  <button class="fs-btn" id="vocabBtn" type="button" title="単語カードを開く — 884語を日別に分類">🃏 単語カード</button>
-  <button class="fs-btn" id="homeBtn" type="button" onclick="try{userPickedExam=true;}catch(e){} showHome()" title="ホーム（トップページ）に戻る">🏠 ホーム</button>
+  <select id="langSelect" aria-label="Language / 言語" onchange="setUILang(this.value)" style="min-height:42px;border-radius:8px;border:1.5px solid rgba(255,255,255,.45);background:#fff;color:#14365e;font:inherit;font-size:13.5px;font-weight:700;padding:6px 8px;cursor:pointer">
+    <option value="ja">日本語</option>
+    <option value="vi">Tiếng Việt</option>
+    <option value="en">English</option>
+  </select>
+  <button class="fs-btn" id="fsBtn" type="button" onclick="cycleFontSize()" title="解答エリアの文字サイズを変更" data-i18n="fontSize">A＋ 文字サイズ</button>
+  <button class="fs-btn" id="videoLibBtn" type="button" title="状況ビデオライブラリを開いて復習" data-i18n="videoLibrary">▶ 動画ライブラリ</button>
+  <button class="fs-btn" id="vocabBtn" type="button" title="単語カードを開く — 884語を日別に分類" data-i18n="vocabCards">🃏 単語カード</button>
+  <button class="fs-btn" id="homeBtn" type="button" onclick="try{userPickedExam=true;}catch(e){} showHome()" title="ホーム（トップページ）に戻る" data-i18n="home">🏠 ホーム</button>
   <div class="exam-picker">
-    <label for="examSelect">問題を選ぶ</label>
+    <label for="examSelect" data-i18n="pickExam">問題を選ぶ</label>
     <select id="examSelect" aria-label="問題を選ぶ" onchange="switchExam(this.value)">
       <option value="day28" selected>第28回 — 読解 練習 · 12問 · 最新</option>
       <option value="day27">第27回 — 聴解 練習 · 12問</option>
@@ -579,10 +585,10 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 
 <!-- Static landing — visible to crawlers & before JS initializes; hidden once app loads -->
 <main class="wrap" id="seoLanding">
-  <h1>無料オンラインBJT対策 — コンピューター試験室</h1>
-  <p>対策ページ <strong>BJT (Business Japanese Proficiency Test)</strong> コンピューター上の実際の試験室を模したインターフェース（CBT）で。上のメニューから問題を選んで始めましょう。</p>
+  <h1 data-i18n="homeH1">無料オンラインBJT対策 — コンピューター試験室</h1>
+  <p data-i18n-html="homeIntro">対策ページ <strong>BJT (Business Japanese Proficiency Test)</strong> コンピューター上の実際の試験室を模したインターフェース（CBT）で。上のメニューから問題を選んで始めましょう。</p>
 
-  <h2>練習内容</h2>
+  <h2 data-i18n="practiceContent">練習内容</h2>
   <ul>
     <li><strong><span id="seoExamCount">22</span> 日別の練習問題</strong> — 毎日1つのスキルに集中：聴解、読解、または聴読解。各問題は9–12問、本番同様に時間を測ります。</li>
     <li><strong>BJT模擬テスト01</strong> — 40問、3パート連続（聴解 → 聴読解 → 読解）、合計約52分。公式試験と同じ形式で、半分に短縮。</li>
@@ -593,7 +599,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <li><strong><span id="seoVocabCount">884</span> 単語カード</strong> — BJT単語リスト全体を日別に分類。各カードには読み方、ベトナム語の意味、一緒に使う表現が付いています。</li>
   </ul>
 
-  <h2>BJTの出題形式</h2>
+  <h2 data-i18n="examFormats">BJTの出題形式</h2>
   <dl>
     <dt>聴解</dt>
     <dd>オフィス環境での会話やお知らせを聞いて、正しい答えを選びます。含まれる形式：場面把握、発言聴解、総合聴解。</dd>
@@ -603,7 +609,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <dd>音声を聞きながら資料（メモ、グラフ、価格表、メール）を読みます — 音声と資料が異なる場合は、音声を基準にします。</dd>
   </dl>
 
-  <h2>機能</h2>
+  <h2 data-i18n="features">機能</h2>
   <ul>
     <li>実際の試験室を模したCBTインターフェース、ダークモード対応</li>
     <li>カウントダウンタイマー、自動採点、各問題の詳しい解説</li>
@@ -612,23 +618,23 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
   </ul>
 
   <nav class="guide-nav" aria-label="ガイド目次">
-    <a href="#guide-about-bjt">BJTとは</a>
-    <a href="#guide-structure">試験の構成</a>
-    <a href="#guide-score">スコアとレベル</a>
-    <a href="#guide-study">対策の進め方</a>
-    <a href="#guide-howto">このサイトの使い方</a>
-    <a href="#guide-faq">よくある質問</a>
+    <a href="#guide-about-bjt" data-i18n="guideAbout">BJTとは</a>
+    <a href="#guide-structure" data-i18n="guideStructure">試験の構成</a>
+    <a href="#guide-score" data-i18n="guideScore">スコアとレベル</a>
+    <a href="#guide-study" data-i18n="guideStudy">対策の進め方</a>
+    <a href="#guide-howto" data-i18n="guideHowto">このサイトの使い方</a>
+    <a href="#guide-faq" data-i18n="guideFaq">よくある質問</a>
   </nav>
 
   <section class="card guide-sec" id="guide-about-bjt">
-    <h2>BJTビジネス日本語能力テストとは</h2>
+    <h2 data-i18n="guideAboutH">BJTビジネス日本語能力テストとは</h2>
     <p>BJTビジネス日本語能力テスト（Business Japanese Proficiency Test）は、日本語を使うビジネス場面で、どの程度コミュニケーションができるかを測る試験です。公益財団法人 日本漢字能力検定協会が実施しており、文法や語彙の知識そのものではなく、会議、電話応対、メール、交渉といった実際の仕事の場面で「何ができるか」を評価する点に特徴があります。</p>
     <p>受験者は、日本企業への就職や転職を目指す外国人材、日本企業と取引する海外のビジネスパーソン、日本で働く留学生などさまざまです。スコアは履歴書に記載でき、採用や配属の判断材料として使う企業も増えています。</p>
     <p>試験はコンピューターで受験するCBT方式で、実施はPearson VUE（ピアソンVUE）のテストセンターです。受験料は8,000円（税込）で、試験日の前日まで申し込みができます。結果は受験後すぐに画面で確認でき、後日スコアレポートが発行されます。</p>
   </section>
 
   <section class="card guide-sec" id="guide-structure">
-    <h2>試験の構成</h2>
+    <h2 data-i18n="guideStructure">試験の構成</h2>
     <p>BJTは3つのパート、合計100問で構成され、制限時間は約120分です。聞く力と読む力を組み合わせて、ビジネス場面への対応力を測ります。</p>
     <table class="level-table">
       <tr><th>パート</th><th>セクションと内容</th><th>問題数</th></tr>
@@ -640,7 +646,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
   </section>
 
   <section class="card guide-sec" id="guide-score">
-    <h2>スコアとレベルの目安</h2>
+    <h2 data-i18n="guideScoreH">スコアとレベルの目安</h2>
     <p>スコアは0〜800点で示され、6段階のレベルに分かれます。合否で判定するのではなく、現在の実力を細かく把握できるのが特徴です。</p>
     <table class="level-table">
       <tr><th>レベル</th><th>スコア</th><th>目安</th></tr>
@@ -655,7 +661,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
   </section>
 
   <section class="card guide-sec" id="guide-study">
-    <h2>対策の進め方</h2>
+    <h2 data-i18n="guideStudy">対策の進め方</h2>
     <p>BJTは知識の暗記だけでは伸びません。実際のビジネス場面を「聞いて、読んで、判断する」練習を、毎日少しずつ積み重ねることが近道です。このサイトでは、次のような進め方をおすすめしています。</p>
     <ol>
       <li><strong>毎日1セットの短い練習</strong> — 聴解・読解・聴読解を日替わりで解き、聞く力と読む力をバランスよく鍛えます。1日12問程度でも、続けることで場面のパターンに慣れていきます。</li>
@@ -667,7 +673,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
   </section>
 
   <section class="card guide-sec" id="guide-howto">
-    <h2>このサイトの使い方</h2>
+    <h2 data-i18n="guideHowto">このサイトの使い方</h2>
     <ul>
       <li><strong>日別の練習問題</strong> — 画面上部のメニューから問題を選びます。同じ資料に属する問題は1つの画面にまとめて表示され、本番と同じように資料を見ながら解けます。聴解では各セクションの初めに練習問題があり、各問題には場面の写真やイラストと、問題ごとの音声が付いています。</li>
       <li><strong>模擬テスト</strong> — 第1部から第3部までを通して解く、本番形式のテストです。パートごとに提出してロックされる流れも、本番同様に再現しています。</li>
@@ -697,11 +703,11 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 
   <footer class="site-footer">
     <nav aria-label="サイト情報">
-      <a href="about.html">このサイトについて</a> ·
-      <a href="privacy.html">プライバシーポリシー</a> ·
-      <a href="#guide-about-bjt">BJTとは</a> ·
-      <a href="#guide-structure">試験の構成</a> ·
-      <a href="#guide-faq">よくある質問</a>
+      <a href="about.html" data-i18n="aboutSite">このサイトについて</a> ·
+      <a href="privacy.html" data-i18n="privacy">プライバシーポリシー</a> ·
+      <a href="#guide-about-bjt" data-i18n="guideAbout">BJTとは</a> ·
+      <a href="#guide-structure" data-i18n="guideStructure">試験の構成</a> ·
+      <a href="#guide-faq" data-i18n="guideFaq">よくある質問</a>
     </nav>
     <p>© BJT - 15 Phút Mỗi Ngày Đạt J1 — ビジネス日本語を学ぶベトナム人学習者のコミュニティによる無料学習サイトです。</p>
   </footer>
@@ -716,21 +722,21 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <h1>BJT模擬テスト01 — 完全な模擬テスト（40問版）</h1>
       <div class="sub">実際の試験と同じ形式で、半分に短縮：40問 · 3パート連続 · 合計約52分</div>
       <div class="mode-row">
-        <span class="lbl">モード：</span>
-        <button class="mode-btn active" id="mkModeReal" onclick="setModeMk('real')">本番 — 音声は1回だけ再生</button>
-        <button class="mode-btn" id="mkModePrac" onclick="setModeMk('practice')">練習 — 聞き直し可能</button>
+        <span class="lbl" data-i18n="mode">モード：</span>
+        <button class="mode-btn active" id="mkModeReal" onclick="setModeMk('real')" data-i18n="modeReal">本番 — 音声は1回だけ再生</button>
+        <button class="mode-btn" id="mkModePrac" onclick="setModeMk('practice')" data-i18n="modePractice">練習 — 聞き直し可能</button>
       </div>
     </div>
     <div class="cbt-timer">
       <div class="t" id="mkTimer">22:00</div>
-      <div class="lbl">現在のパートの時間</div>
+      <div class="lbl" data-i18n="partTime">現在のパートの時間</div>
     </div>
   </div>
 
   <div class="mk-stepper" id="mkStepper" aria-label="3パートの進捗">
-    <div class="mk-step" id="mkStep1"><b class="jp">パート1 — 聴解</b>12問 · 22分<span class="st" id="mkStepSt1">未開始</span></div>
-    <div class="mk-step" id="mkStep2"><b class="jp">パート2 — 聴読解</b>12問 · 15分<span class="st" id="mkStepSt2">未開始</span></div>
-    <div class="mk-step" id="mkStep3"><b class="jp">パート3 — 読解</b>16問 · 15分<span class="st" id="mkStepSt3">未開始</span></div>
+    <div class="mk-step" id="mkStep1"><b class="jp">パート1 — 聴解</b>12問 · 22分<span class="st" id="mkStepSt1" data-i18n="notStarted">未開始</span></div>
+    <div class="mk-step" id="mkStep2"><b class="jp">パート2 — 聴読解</b>12問 · 15分<span class="st" id="mkStepSt2" data-i18n="notStarted">未開始</span></div>
+    <div class="mk-step" id="mkStep3"><b class="jp">パート3 — 読解</b>16問 · 15分<span class="st" id="mkStepSt3" data-i18n="notStarted">未開始</span></div>
   </div>
 
   <section class="start-panel" id="mkStart">
@@ -755,11 +761,11 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       </div>
       <div>
         <div class="candidate" aria-label="BJT模擬テスト01の情報">
-          <div><span>科目</span><b class="jp">BJT — 模擬テスト01</b></div>
-          <div><span>問題数</span><b>40問 · 3パート</b></div>
-          <div><span>時間</span><b>約52分（22 + 15 + 15）</b></div>
-          <div><span>構成</span><b class="jp">聴解 12 · 聴読解 12 · 読解 16</b></div>
-          <div><span>ルール</span><b>時間切れ／パート提出 → パートをロックし、戻れません</b></div>
+          <div><span data-i18n="subject">科目</span><b class="jp">BJT — 模擬テスト01</b></div>
+          <div><span data-i18n="qCount">問題数</span><b>40問 · 3パート</b></div>
+          <div><span data-i18n="timeLabel">時間</span><b>約52分（22 + 15 + 15）</b></div>
+          <div><span data-i18n="structure">構成</span><b class="jp">聴解 12 · 聴読解 12 · 読解 16</b></div>
+          <div><span data-i18n="rules">ルール</span><b>時間切れ／パート提出 → パートをロックし、戻れません</b></div>
         </div>
         <div class="note" style="margin-top:14px"><strong>注意：</strong> 開始前に静かな時間を約52分確保してください。途中で別の問題のタブに切り替えても、現在のパートのタイマーは動き続けます。</div>
       </div>
@@ -775,26 +781,26 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
         <div class="count" id="mkPalCount">回答済み 0 / 12</div>
         <div class="pal-grid" id="mkPalGrid"></div>
         <div class="legend">
-          <span><i style="background:var(--card)"></i>未回答</span>
-          <span><i style="background:var(--ok);border-color:var(--ok)"></i>選択済み</span>
-          <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>表示中</span>
-          <span>⚑ フラグ済み</span>
+          <span><i style="background:var(--card)"></i><span data-i18n="unanswered">未回答</span></span>
+          <span><i style="background:var(--ok);border-color:var(--ok)"></i><span data-i18n="answeredMark">選択済み</span></span>
+          <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i><span data-i18n="showing">表示中</span></span>
+          <span data-i18n="flaggedMark">⚑ フラグ済み</span>
         </div>
-        <button class="btn btn-primary submit-wide" id="mkSubmitBtnSide" type="button" onclick="mkAskSubmitPart()">このパートを提出</button>
+        <button class="btn btn-primary submit-wide" id="mkSubmitBtnSide" type="button" onclick="mkAskSubmitPart()" data-i18n="submitPart">このパートを提出</button>
         <div class="kbd-hint">ショートカット： <kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> 答えを選択 · <kbd>←</kbd> <kbd>→</kbd> 問題を移動（現在のパート内）</div>
       </aside>
       <div class="cbt-main">
         <div id="mkGroups" aria-label="現在のパートのセットと問題"></div>
         <div class="cbt-footnav">
-          <button class="nav-btn" id="mkPrevBtn" type="button" onclick="mkPrevQ()">← 前の問題</button>
+          <button class="nav-btn" id="mkPrevBtn" type="button" onclick="mkPrevQ()" data-i18n="prevQ">← 前の問題</button>
           <span class="foot-status" id="mkFootStatus">問題 1 / 40</span>
-          <button class="nav-btn primary" id="mkNextBtn" type="button" onclick="mkNextQ()">次の問題 →</button>
+          <button class="nav-btn primary" id="mkNextBtn" type="button" onclick="mkNextQ()" data-i18n="nextQ">次の問題 →</button>
         </div>
       </div>
     </div>
     <div class="d1-submitbar">
       <p id="mkSubmitHint">このパートの回答済み 0 / 12問。</p>
-      <button class="btn btn-primary" id="mkSubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mkAskSubmitPart()">このパートを提出</button>
+      <button class="btn btn-primary" id="mkSubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mkAskSubmitPart()" data-i18n="submitPart">このパートを提出</button>
     </div>
   </section>
 
@@ -803,7 +809,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <h2 id="mkScoreTitle">BJT模擬テスト01の結果</h2>
     <div class="mk-scoregrid" id="mkScoreGrid"></div>
     <p id="mkScoreDetail"></p>
-    <p style="font-size:14px">答え、ベトナム語の解説、トランスクリプト、各文の翻訳はすぐ下にあります。</p>
+    <p style="font-size:14px" data-i18n="resultNoteMk">答え、ベトナム語の解説、トランスクリプト、各文の翻訳はすぐ下にあります。</p>
     <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mkReset()">↺ 模擬テスト01をもう一度</button>
   </section>
   <div id="mkReview"></div>
@@ -816,21 +822,21 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <h1>BJT模擬テスト02 — 完全な模擬テスト（80問版）</h1>
       <div class="sub">実際の試験とまったく同じ形式：80問 · 3パート連続 · 合計約105分</div>
       <div class="mode-row">
-        <span class="lbl">モード：</span>
-        <button class="mode-btn active" id="mk2ModeReal" onclick="setModeMk2('real')">本番 — 音声は1回だけ再生</button>
-        <button class="mode-btn" id="mk2ModePrac" onclick="setModeMk2('practice')">練習 — 聞き直し可能</button>
+        <span class="lbl" data-i18n="mode">モード：</span>
+        <button class="mode-btn active" id="mk2ModeReal" onclick="setModeMk2('real')" data-i18n="modeReal">本番 — 音声は1回だけ再生</button>
+        <button class="mode-btn" id="mk2ModePrac" onclick="setModeMk2('practice')" data-i18n="modePractice">練習 — 聞き直し可能</button>
       </div>
     </div>
     <div class="cbt-timer">
       <div class="t" id="mk2Timer">45:00</div>
-      <div class="lbl">現在のパートの時間</div>
+      <div class="lbl" data-i18n="partTime">現在のパートの時間</div>
     </div>
   </div>
 
   <div class="mk-stepper" id="mk2Stepper" aria-label="3パートの進捗">
-    <div class="mk-step" id="mk2Step1"><b class="jp">パート1 — 聴解</b>25問 · 45分<span class="st" id="mk2StepSt1">未開始</span></div>
-    <div class="mk-step" id="mk2Step2"><b class="jp">パート2 — 聴読解</b>25問 · 30分<span class="st" id="mk2StepSt2">未開始</span></div>
-    <div class="mk-step" id="mk2Step3"><b class="jp">パート3 — 読解</b>30問 · 30分<span class="st" id="mk2StepSt3">未開始</span></div>
+    <div class="mk-step" id="mk2Step1"><b class="jp">パート1 — 聴解</b>25問 · 45分<span class="st" id="mk2StepSt1" data-i18n="notStarted">未開始</span></div>
+    <div class="mk-step" id="mk2Step2"><b class="jp">パート2 — 聴読解</b>25問 · 30分<span class="st" id="mk2StepSt2" data-i18n="notStarted">未開始</span></div>
+    <div class="mk-step" id="mk2Step3"><b class="jp">パート3 — 読解</b>30問 · 30分<span class="st" id="mk2StepSt3" data-i18n="notStarted">未開始</span></div>
   </div>
 
   <section class="start-panel" id="mk2Start">
@@ -855,11 +861,11 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       </div>
       <div>
         <div class="candidate" aria-label="BJT模擬テスト02の情報">
-          <div><span>科目</span><b class="jp">BJT — 模擬テスト02</b></div>
-          <div><span>問題数</span><b>80問 · 3パート</b></div>
-          <div><span>時間</span><b>約105分（45 + 30 + 30）</b></div>
-          <div><span>構成</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
-          <div><span>ルール</span><b>時間切れ／パート提出 → パートをロックし、戻れません</b></div>
+          <div><span data-i18n="subject">科目</span><b class="jp">BJT — 模擬テスト02</b></div>
+          <div><span data-i18n="qCount">問題数</span><b>80問 · 3パート</b></div>
+          <div><span data-i18n="timeLabel">時間</span><b>約105分（45 + 30 + 30）</b></div>
+          <div><span data-i18n="structure">構成</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
+          <div><span data-i18n="rules">ルール</span><b>時間切れ／パート提出 → パートをロックし、戻れません</b></div>
         </div>
         <div class="note" style="margin-top:14px"><strong>注意：</strong> 開始前に静かな時間を約105分確保してください。途中で別の問題のタブに切り替えても、現在のパートのタイマーは動き続けます。</div>
       </div>
@@ -875,26 +881,26 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
         <div class="count" id="mk2PalCount">回答済み 0 / 25</div>
         <div class="pal-grid" id="mk2PalGrid"></div>
         <div class="legend">
-          <span><i style="background:var(--card)"></i>未回答</span>
-          <span><i style="background:var(--ok);border-color:var(--ok)"></i>選択済み</span>
-          <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>表示中</span>
-          <span>⚑ フラグ済み</span>
+          <span><i style="background:var(--card)"></i><span data-i18n="unanswered">未回答</span></span>
+          <span><i style="background:var(--ok);border-color:var(--ok)"></i><span data-i18n="answeredMark">選択済み</span></span>
+          <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i><span data-i18n="showing">表示中</span></span>
+          <span data-i18n="flaggedMark">⚑ フラグ済み</span>
         </div>
-        <button class="btn btn-primary submit-wide" id="mk2SubmitBtnSide" type="button" onclick="mk2AskSubmitPart()">このパートを提出</button>
+        <button class="btn btn-primary submit-wide" id="mk2SubmitBtnSide" type="button" onclick="mk2AskSubmitPart()" data-i18n="submitPart">このパートを提出</button>
         <div class="kbd-hint">ショートカット： <kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> 答えを選択 · <kbd>←</kbd> <kbd>→</kbd> 問題を移動（現在のパート内）</div>
       </aside>
       <div class="cbt-main">
         <div id="mk2Groups" aria-label="現在のパートのセットと問題"></div>
         <div class="cbt-footnav">
-          <button class="nav-btn" id="mk2PrevBtn" type="button" onclick="mk2PrevQ()">← 前の問題</button>
+          <button class="nav-btn" id="mk2PrevBtn" type="button" onclick="mk2PrevQ()" data-i18n="prevQ">← 前の問題</button>
           <span class="foot-status" id="mk2FootStatus">問題 1 / 80</span>
-          <button class="nav-btn primary" id="mk2NextBtn" type="button" onclick="mk2NextQ()">次の問題 →</button>
+          <button class="nav-btn primary" id="mk2NextBtn" type="button" onclick="mk2NextQ()" data-i18n="nextQ">次の問題 →</button>
         </div>
       </div>
     </div>
     <div class="d1-submitbar">
       <p id="mk2SubmitHint">このパートの回答済み 0 / 25問。</p>
-      <button class="btn btn-primary" id="mk2SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk2AskSubmitPart()">このパートを提出</button>
+      <button class="btn btn-primary" id="mk2SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk2AskSubmitPart()" data-i18n="submitPart">このパートを提出</button>
     </div>
   </section>
 
@@ -903,7 +909,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <h2 id="mk2ScoreTitle">BJT模擬テスト02の結果</h2>
     <div class="mk-scoregrid" id="mk2ScoreGrid"></div>
     <p id="mk2ScoreDetail"></p>
-    <p style="font-size:14px">答え、ベトナム語の解説、トランスクリプト、各文の翻訳はすぐ下にあります。</p>
+    <p style="font-size:14px" data-i18n="resultNoteMk">答え、ベトナム語の解説、トランスクリプト、各文の翻訳はすぐ下にあります。</p>
     <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mk2Reset()">↺ 模擬テスト02をもう一度</button>
   </section>
   <div id="mk2Review"></div>
@@ -916,21 +922,21 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <h1>模擬試験 BJT 03 — 80問の完全模擬試験</h1>
       <div class="sub">本番と同じ形式：80問 · 3部連続 · 合計約105分</div>
       <div class="mode-row">
-        <span class="lbl">モード：</span>
+        <span class="lbl" data-i18n="mode">モード：</span>
         <button class="mode-btn active" id="mk3ModeReal" onclick="setModeMk3('real')">本番モード — 音声は1回のみ</button>
         <button class="mode-btn" id="mk3ModePrac" onclick="setModeMk3('practice')">練習モード — 音声をくり返し聞ける</button>
       </div>
     </div>
     <div class="cbt-timer">
       <div class="t" id="mk3Timer">45:00</div>
-      <div class="lbl">現在の部の残り時間</div>
+      <div class="lbl" data-i18n="sectionTime">現在の部の残り時間</div>
     </div>
   </div>
 
   <div class="mk-stepper" id="mk3Stepper" aria-label="3部の進み具合">
-    <div class="mk-step" id="mk3Step1"><b class="jp">第1部 — 聴解</b>25問 · 45分<span class="st" id="mk3StepSt1">未開始</span></div>
-    <div class="mk-step" id="mk3Step2"><b class="jp">第2部 — 聴読解</b>25問 · 30分<span class="st" id="mk3StepSt2">未開始</span></div>
-    <div class="mk-step" id="mk3Step3"><b class="jp">第3部 — 読解</b>30問 · 30分<span class="st" id="mk3StepSt3">未開始</span></div>
+    <div class="mk-step" id="mk3Step1"><b class="jp">第1部 — 聴解</b>25問 · 45分<span class="st" id="mk3StepSt1" data-i18n="notStarted">未開始</span></div>
+    <div class="mk-step" id="mk3Step2"><b class="jp">第2部 — 聴読解</b>25問 · 30分<span class="st" id="mk3StepSt2" data-i18n="notStarted">未開始</span></div>
+    <div class="mk-step" id="mk3Step3"><b class="jp">第3部 — 読解</b>30問 · 30分<span class="st" id="mk3StepSt3" data-i18n="notStarted">未開始</span></div>
   </div>
 
   <section class="start-panel" id="mk3Start">
@@ -956,10 +962,10 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <div>
         <div class="candidate" aria-label="模擬試験 BJT 03の情報">
           <div><span>試験</span><b class="jp">BJT — 模擬試験 03</b></div>
-          <div><span>問題数</span><b>80問 · 3部</b></div>
-          <div><span>時間</span><b>約105分（45 + 30 + 30）</b></div>
-          <div><span>構成</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
-          <div><span>ルール</span><b>時間切れ／部の提出 → 部をロック、戻れません</b></div>
+          <div><span data-i18n="qCount">問題数</span><b>80問 · 3部</b></div>
+          <div><span data-i18n="timeLabel">時間</span><b>約105分（45 + 30 + 30）</b></div>
+          <div><span data-i18n="structure">構成</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
+          <div><span data-i18n="rules">ルール</span><b>時間切れ／部の提出 → 部をロック、戻れません</b></div>
         </div>
         <div class="note" style="margin-top:14px"><strong>注意：</strong>始める前に約105分の静かな時間を確保してください。途中で他の試験のタブに切り替えても、現在の部のタイマーは進み続けます。</div>
       </div>
@@ -975,26 +981,26 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
         <div class="count" id="mk3PalCount">回答済み 0 / 25</div>
         <div class="pal-grid" id="mk3PalGrid"></div>
         <div class="legend">
-          <span><i style="background:var(--card)"></i>未回答</span>
+          <span><i style="background:var(--card)"></i><span data-i18n="unanswered">未回答</span></span>
           <span><i style="background:var(--ok);border-color:var(--ok)"></i>回答済み</span>
           <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>開いている問題</span>
           <span>⚑ 印付き</span>
         </div>
-        <button class="btn btn-primary submit-wide" id="mk3SubmitBtnSide" type="button" onclick="mk3AskSubmitPart()">この部を提出する</button>
+        <button class="btn btn-primary submit-wide" id="mk3SubmitBtnSide" type="button" onclick="mk3AskSubmitPart()" data-i18n="submitSection">この部を提出する</button>
         <div class="kbd-hint">ショートカット：<kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd>で答えを選ぶ · <kbd>←</kbd> <kbd>→</kbd>で問題を移動する（現在の部のみ）</div>
       </aside>
       <div class="cbt-main">
         <div id="mk3Groups" aria-label="現在の部のセットと問題"></div>
         <div class="cbt-footnav">
-          <button class="nav-btn" id="mk3PrevBtn" type="button" onclick="mk3PrevQ()">← 前の問題</button>
+          <button class="nav-btn" id="mk3PrevBtn" type="button" onclick="mk3PrevQ()" data-i18n="prevQ">← 前の問題</button>
           <span class="foot-status" id="mk3FootStatus">第1問 / 80</span>
-          <button class="nav-btn primary" id="mk3NextBtn" type="button" onclick="mk3NextQ()">次の問題 →</button>
+          <button class="nav-btn primary" id="mk3NextBtn" type="button" onclick="mk3NextQ()" data-i18n="nextQ">次の問題 →</button>
         </div>
       </div>
     </div>
     <div class="d1-submitbar">
       <p id="mk3SubmitHint">この部は 0 / 25問に回答しました。</p>
-      <button class="btn btn-primary" id="mk3SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk3AskSubmitPart()">この部を提出する</button>
+      <button class="btn btn-primary" id="mk3SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk3AskSubmitPart()" data-i18n="submitSection">この部を提出する</button>
     </div>
   </section>
 
@@ -1003,7 +1009,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <h2 id="mk3ScoreTitle">模擬試験 BJT 03の結果</h2>
     <div class="mk-scoregrid" id="mk3ScoreGrid"></div>
     <p id="mk3ScoreDetail"></p>
-    <p style="font-size:14px">答え、解説、トランスクリプトと各問題の訳はすぐ下にあります。</p>
+    <p style="font-size:14px" data-i18n="resultNoteAlt">答え、解説、トランスクリプトと各問題の訳はすぐ下にあります。</p>
     <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mk3Reset()">↺ 模擬試験 03をもう一度解く</button>
   </section>
   <div id="mk3Review"></div>
@@ -1016,21 +1022,21 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <h1>模擬試験 BJT 04 — 80問の完全模擬試験</h1>
       <div class="sub">本番と同じ形式：80問 · 3部連続 · 合計約105分</div>
       <div class="mode-row">
-        <span class="lbl">モード：</span>
+        <span class="lbl" data-i18n="mode">モード：</span>
         <button class="mode-btn active" id="mk4ModeReal" onclick="setModeMk4('real')">本番モード — 音声は1回のみ</button>
         <button class="mode-btn" id="mk4ModePrac" onclick="setModeMk4('practice')">練習モード — 音声をくり返し聞ける</button>
       </div>
     </div>
     <div class="cbt-timer">
       <div class="t" id="mk4Timer">45:00</div>
-      <div class="lbl">現在の部の残り時間</div>
+      <div class="lbl" data-i18n="sectionTime">現在の部の残り時間</div>
     </div>
   </div>
 
   <div class="mk-stepper" id="mk4Stepper" aria-label="3部の進み具合">
-    <div class="mk-step" id="mk4Step1"><b class="jp">第1部 — 聴解</b>25問 · 45分<span class="st" id="mk4StepSt1">未開始</span></div>
-    <div class="mk-step" id="mk4Step2"><b class="jp">第2部 — 聴読解</b>25問 · 30分<span class="st" id="mk4StepSt2">未開始</span></div>
-    <div class="mk-step" id="mk4Step3"><b class="jp">第3部 — 読解</b>30問 · 30分<span class="st" id="mk4StepSt3">未開始</span></div>
+    <div class="mk-step" id="mk4Step1"><b class="jp">第1部 — 聴解</b>25問 · 45分<span class="st" id="mk4StepSt1" data-i18n="notStarted">未開始</span></div>
+    <div class="mk-step" id="mk4Step2"><b class="jp">第2部 — 聴読解</b>25問 · 30分<span class="st" id="mk4StepSt2" data-i18n="notStarted">未開始</span></div>
+    <div class="mk-step" id="mk4Step3"><b class="jp">第3部 — 読解</b>30問 · 30分<span class="st" id="mk4StepSt3" data-i18n="notStarted">未開始</span></div>
   </div>
 
   <section class="start-panel" id="mk4Start">
@@ -1056,10 +1062,10 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <div>
         <div class="candidate" aria-label="模擬試験 BJT 04の情報">
           <div><span>試験</span><b class="jp">BJT — 模擬試験 04</b></div>
-          <div><span>問題数</span><b>80問 · 3部</b></div>
-          <div><span>時間</span><b>約105分（45 + 30 + 30）</b></div>
-          <div><span>構成</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
-          <div><span>ルール</span><b>時間切れ／部の提出 → 部をロック、戻れません</b></div>
+          <div><span data-i18n="qCount">問題数</span><b>80問 · 3部</b></div>
+          <div><span data-i18n="timeLabel">時間</span><b>約105分（45 + 30 + 30）</b></div>
+          <div><span data-i18n="structure">構成</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
+          <div><span data-i18n="rules">ルール</span><b>時間切れ／部の提出 → 部をロック、戻れません</b></div>
         </div>
         <div class="note" style="margin-top:14px"><strong>注意：</strong>始める前に約105分の静かな時間を確保してください。途中で他の試験のタブに切り替えても、現在の部のタイマーは進み続けます。</div>
       </div>
@@ -1075,26 +1081,26 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
         <div class="count" id="mk4PalCount">回答済み 0 / 25</div>
         <div class="pal-grid" id="mk4PalGrid"></div>
         <div class="legend">
-          <span><i style="background:var(--card)"></i>未回答</span>
+          <span><i style="background:var(--card)"></i><span data-i18n="unanswered">未回答</span></span>
           <span><i style="background:var(--ok);border-color:var(--ok)"></i>回答済み</span>
           <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>開いている問題</span>
           <span>⚑ 印付き</span>
         </div>
-        <button class="btn btn-primary submit-wide" id="mk4SubmitBtnSide" type="button" onclick="mk4AskSubmitPart()">この部を提出する</button>
+        <button class="btn btn-primary submit-wide" id="mk4SubmitBtnSide" type="button" onclick="mk4AskSubmitPart()" data-i18n="submitSection">この部を提出する</button>
         <div class="kbd-hint">ショートカット：<kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd>で答えを選ぶ · <kbd>←</kbd> <kbd>→</kbd>で問題を移動する（現在の部のみ）</div>
       </aside>
       <div class="cbt-main">
         <div id="mk4Groups" aria-label="現在の部のセットと問題"></div>
         <div class="cbt-footnav">
-          <button class="nav-btn" id="mk4PrevBtn" type="button" onclick="mk4PrevQ()">← 前の問題</button>
+          <button class="nav-btn" id="mk4PrevBtn" type="button" onclick="mk4PrevQ()" data-i18n="prevQ">← 前の問題</button>
           <span class="foot-status" id="mk4FootStatus">第1問 / 80</span>
-          <button class="nav-btn primary" id="mk4NextBtn" type="button" onclick="mk4NextQ()">次の問題 →</button>
+          <button class="nav-btn primary" id="mk4NextBtn" type="button" onclick="mk4NextQ()" data-i18n="nextQ">次の問題 →</button>
         </div>
       </div>
     </div>
     <div class="d1-submitbar">
       <p id="mk4SubmitHint">この部は 0 / 25問に回答しました。</p>
-      <button class="btn btn-primary" id="mk4SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk4AskSubmitPart()">この部を提出する</button>
+      <button class="btn btn-primary" id="mk4SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk4AskSubmitPart()" data-i18n="submitSection">この部を提出する</button>
     </div>
   </section>
 
@@ -1103,7 +1109,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <h2 id="mk4ScoreTitle">模擬試験 BJT 04の結果</h2>
     <div class="mk-scoregrid" id="mk4ScoreGrid"></div>
     <p id="mk4ScoreDetail"></p>
-    <p style="font-size:14px">答え、解説、トランスクリプトと各問題の訳はすぐ下にあります。</p>
+    <p style="font-size:14px" data-i18n="resultNoteAlt">答え、解説、トランスクリプトと各問題の訳はすぐ下にあります。</p>
     <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mk4Reset()">↺ 模擬試験 04をもう一度解く</button>
   </section>
   <div id="mk4Review"></div>
@@ -1116,21 +1122,21 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <h1>模擬試験 BJT 05 — 80問の完全模擬試験</h1>
       <div class="sub">本番と同じ形式：80問 · 3部連続 · 合計約105分</div>
       <div class="mode-row">
-        <span class="lbl">モード：</span>
+        <span class="lbl" data-i18n="mode">モード：</span>
         <button class="mode-btn active" id="mk5ModeReal" onclick="setModeMk5('real')">本番モード — 音声は1回のみ</button>
         <button class="mode-btn" id="mk5ModePrac" onclick="setModeMk5('practice')">練習モード — 音声をくり返し聞ける</button>
       </div>
     </div>
     <div class="cbt-timer">
       <div class="t" id="mk5Timer">45:00</div>
-      <div class="lbl">現在の部の残り時間</div>
+      <div class="lbl" data-i18n="sectionTime">現在の部の残り時間</div>
     </div>
   </div>
 
   <div class="mk-stepper" id="mk5Stepper" aria-label="3部の進み具合">
-    <div class="mk-step" id="mk5Step1"><b class="jp">第1部 — 聴解</b>25問 · 45分<span class="st" id="mk5StepSt1">未開始</span></div>
-    <div class="mk-step" id="mk5Step2"><b class="jp">第2部 — 聴読解</b>25問 · 30分<span class="st" id="mk5StepSt2">未開始</span></div>
-    <div class="mk-step" id="mk5Step3"><b class="jp">第3部 — 読解</b>30問 · 30分<span class="st" id="mk5StepSt3">未開始</span></div>
+    <div class="mk-step" id="mk5Step1"><b class="jp">第1部 — 聴解</b>25問 · 45分<span class="st" id="mk5StepSt1" data-i18n="notStarted">未開始</span></div>
+    <div class="mk-step" id="mk5Step2"><b class="jp">第2部 — 聴読解</b>25問 · 30分<span class="st" id="mk5StepSt2" data-i18n="notStarted">未開始</span></div>
+    <div class="mk-step" id="mk5Step3"><b class="jp">第3部 — 読解</b>30問 · 30分<span class="st" id="mk5StepSt3" data-i18n="notStarted">未開始</span></div>
   </div>
 
   <section class="start-panel" id="mk5Start">
@@ -1156,10 +1162,10 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
       <div>
         <div class="candidate" aria-label="模擬試験 BJT 05の情報">
           <div><span>試験</span><b class="jp">BJT — 模擬試験 05</b></div>
-          <div><span>問題数</span><b>80問 · 3部</b></div>
-          <div><span>時間</span><b>約105分（45 + 30 + 30）</b></div>
-          <div><span>構成</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
-          <div><span>ルール</span><b>時間切れ／部の提出 → 部をロック、戻れません</b></div>
+          <div><span data-i18n="qCount">問題数</span><b>80問 · 3部</b></div>
+          <div><span data-i18n="timeLabel">時間</span><b>約105分（45 + 30 + 30）</b></div>
+          <div><span data-i18n="structure">構成</span><b class="jp">聴解 25 · 聴読解 25 · 読解 30</b></div>
+          <div><span data-i18n="rules">ルール</span><b>時間切れ／部の提出 → 部をロック、戻れません</b></div>
         </div>
         <div class="note" style="margin-top:14px"><strong>注意：</strong>始める前に約105分の静かな時間を確保してください。途中で他の試験のタブに切り替えても、現在の部のタイマーは進み続けます。</div>
       </div>
@@ -1175,26 +1181,26 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
         <div class="count" id="mk5PalCount">回答済み 0 / 25</div>
         <div class="pal-grid" id="mk5PalGrid"></div>
         <div class="legend">
-          <span><i style="background:var(--card)"></i>未回答</span>
+          <span><i style="background:var(--card)"></i><span data-i18n="unanswered">未回答</span></span>
           <span><i style="background:var(--ok);border-color:var(--ok)"></i>回答済み</span>
           <span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>開いている問題</span>
           <span>⚑ 印付き</span>
         </div>
-        <button class="btn btn-primary submit-wide" id="mk5SubmitBtnSide" type="button" onclick="mk5AskSubmitPart()">この部を提出する</button>
+        <button class="btn btn-primary submit-wide" id="mk5SubmitBtnSide" type="button" onclick="mk5AskSubmitPart()" data-i18n="submitSection">この部を提出する</button>
         <div class="kbd-hint">ショートカット：<kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd>で答えを選ぶ · <kbd>←</kbd> <kbd>→</kbd>で問題を移動する（現在の部のみ）</div>
       </aside>
       <div class="cbt-main">
         <div id="mk5Groups" aria-label="現在の部のセットと問題"></div>
         <div class="cbt-footnav">
-          <button class="nav-btn" id="mk5PrevBtn" type="button" onclick="mk5PrevQ()">← 前の問題</button>
+          <button class="nav-btn" id="mk5PrevBtn" type="button" onclick="mk5PrevQ()" data-i18n="prevQ">← 前の問題</button>
           <span class="foot-status" id="mk5FootStatus">第1問 / 80</span>
-          <button class="nav-btn primary" id="mk5NextBtn" type="button" onclick="mk5NextQ()">次の問題 →</button>
+          <button class="nav-btn primary" id="mk5NextBtn" type="button" onclick="mk5NextQ()" data-i18n="nextQ">次の問題 →</button>
         </div>
       </div>
     </div>
     <div class="d1-submitbar">
       <p id="mk5SubmitHint">この部は 0 / 25問に回答しました。</p>
-      <button class="btn btn-primary" id="mk5SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk5AskSubmitPart()">この部を提出する</button>
+      <button class="btn btn-primary" id="mk5SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" onclick="mk5AskSubmitPart()" data-i18n="submitSection">この部を提出する</button>
     </div>
   </section>
 
@@ -1203,7 +1209,7 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
     <h2 id="mk5ScoreTitle">模擬試験 BJT 05の結果</h2>
     <div class="mk-scoregrid" id="mk5ScoreGrid"></div>
     <p id="mk5ScoreDetail"></p>
-    <p style="font-size:14px">答え、解説、トランスクリプトと各問題の訳はすぐ下にあります。</p>
+    <p style="font-size:14px" data-i18n="resultNoteAlt">答え、解説、トランスクリプトと各問題の訳はすぐ下にあります。</p>
     <button class="btn" style="background:#fff;color:#14365e;margin-top:10px" onclick="mk5Reset()">↺ 模擬試験 05をもう一度解く</button>
   </section>
   <div id="mk5Review"></div>
@@ -1317,73 +1323,73 @@ table.vid-vocab .r{display:block;font-size:12.5px;color:var(--muted);font-weight
 </main>
 <main class="wrap hidden" id="videoLibrary">
   <div class="vid-head">
-    <h1>BJT状況ビデオライブラリ</h1>
-    <p class="sub">オフィスの状況ビデオ63本、テーマ別に分類。再生を押してページ内ですぐ見られます。ボタンを押すと <strong>拡大</strong> プレーヤーのすぐ下にあり、ページ内で画面いっぱいに大きく見られます — 各ビデオには3言語（日本語 – ベトナム語 – 英語）のセリフと、プレーヤーの下の展開部分に単語表が付いています。</p>
+    <h1 data-i18n="videoLibTitle">BJT状況ビデオライブラリ</h1>
+    <p class="sub" data-i18n-html="videoLibSub">オフィスの状況ビデオ63本、テーマ別に分類。再生を押してページ内ですぐ見られます。ボタンを押すと <strong>拡大</strong> プレーヤーのすぐ下にあり、ページ内で画面いっぱいに大きく見られます — 各ビデオには3言語（日本語 – ベトナム語 – 英語）のセリフと、プレーヤーの下の展開部分に単語表が付いています。</p>
     <div class="vid-filters" id="vidFilters" role="group" aria-label="テーマ別にビデオを絞り込む"></div>
   </div>
   <div id="vidCats"></div>
-  <p class="footer-note">BJT状況ビデオ — 日本語・ベトナム語・英語の3言語字幕がビデオに埋め込まれています。</p>
+  <p class="footer-note" data-i18n="videoLibNote">BJT状況ビデオ — 日本語・ベトナム語・英語の3言語字幕がビデオに埋め込まれています。</p>
 </main>
 
 <!-- ================= THẺ TỪ VỰNG — 884 TỪ THEO NGÀY ================= -->
 <main class="wrap hidden" id="vocabCards">
   <div class="vid-head">
-    <h1>単語カード — BJT 884語リスト</h1>
-    <p class="sub">すべて <strong>884語</strong> BJT単語リストのうち、日々の学習進度どおりに分けられています · 学習済み： <strong>131語</strong> （第11回–第17回）· 「これから学ぶ」グループは1日24語のペースで続きます。下の行から日を選んでその日のカードを見ましょう — カードをクリックするとめくれて、読み方、ベトナム語の意味、一緒に使う表現が見られます。</p>
+    <h1 data-i18n="vocabTitle">単語カード — BJT 884語リスト</h1>
+    <p class="sub" data-i18n-html="vocabSub">すべて <strong>884語</strong> BJT単語リストのうち、日々の学習進度どおりに分けられています · 学習済み： <strong>131語</strong> （第11回–第17回）· 「これから学ぶ」グループは1日24語のペースで続きます。下の行から日を選んでその日のカードを見ましょう — カードをクリックするとめくれて、読み方、ベトナム語の意味、一緒に使う表現が見られます。</p>
     <div class="vid-filters" id="vocabDays" role="group" aria-label="単語学習の日を選ぶ"></div>
   </div>
   <h2 class="section-title" id="vocabGroupTitle">第17回</h2>
   <p class="section-sub" id="vocabGroupSub"></p>
   <div class="fc-grid" id="vocabGrid"></div>
-  <p class="footer-note">BJT単語カード — 元の884語リストに基づくベトナム語の意味。一緒に使う表現は、仕事の文体での典型的な使い方です。</p>
+  <p class="footer-note" data-i18n="vocabNote">BJT単語カード — 元の884語リストに基づくベトナム語の意味。一緒に使う表現は、仕事の文体での典型的な使い方です。</p>
 </main>
 <div class="modal-overlay" id="mkModal" role="dialog" aria-modal="true" aria-labelledby="mkModalTitle">
   <div class="modal">
-    <h3 id="mkModalTitle">このパートを提出しますか？</h3>
-    <p id="mkModalText">このパートを提出すると、パートはロックされ、次のパートへ進みます — 戻ることはできません。</p>
+    <h3 id="mkModalTitle" data-i18n="submitPartQ">このパートを提出しますか？</h3>
+    <p id="mkModalText" data-i18n="submitPartNote">このパートを提出すると、パートはロックされ、次のパートへ進みます — 戻ることはできません。</p>
     <div class="row">
-      <button class="btn btn-ghost" id="mkModalCancel" type="button" onclick="mkCloseModal()">続ける</button>
-      <button class="btn btn-primary" id="mkModalConfirm" type="button" onclick="mkConfirmSubmitPart()">パートを提出</button>
+      <button class="btn btn-ghost" id="mkModalCancel" type="button" onclick="mkCloseModal()" data-i18n="continueBtn">続ける</button>
+      <button class="btn btn-primary" id="mkModalConfirm" type="button" onclick="mkConfirmSubmitPart()" data-i18n="submitPartBtn">パートを提出</button>
     </div>
   </div>
 </div>
 <div class="modal-overlay" id="mk2Modal" role="dialog" aria-modal="true" aria-labelledby="mk2ModalTitle">
   <div class="modal">
-    <h3 id="mk2ModalTitle">このパートを提出しますか？</h3>
-    <p id="mk2ModalText">このパートを提出すると、パートはロックされ、次のパートへ進みます — 戻ることはできません。</p>
+    <h3 id="mk2ModalTitle" data-i18n="submitPartQ">このパートを提出しますか？</h3>
+    <p id="mk2ModalText" data-i18n="submitPartNote">このパートを提出すると、パートはロックされ、次のパートへ進みます — 戻ることはできません。</p>
     <div class="row">
-      <button class="btn btn-ghost" id="mk2ModalCancel" type="button" onclick="mk2CloseModal()">続ける</button>
-      <button class="btn btn-primary" id="mk2ModalConfirm" type="button" onclick="mk2ConfirmSubmitPart()">パートを提出</button>
+      <button class="btn btn-ghost" id="mk2ModalCancel" type="button" onclick="mk2CloseModal()" data-i18n="continueBtn">続ける</button>
+      <button class="btn btn-primary" id="mk2ModalConfirm" type="button" onclick="mk2ConfirmSubmitPart()" data-i18n="submitPartBtn">パートを提出</button>
     </div>
   </div>
 </div>
 <div class="modal-overlay" id="mk3Modal" role="dialog" aria-modal="true" aria-labelledby="mk3ModalTitle">
   <div class="modal">
-    <h3 id="mk3ModalTitle">この部を提出しますか？</h3>
-    <p id="mk3ModalText">この部を提出すると部がロックされ、次の部へ進みます — 戻ることはできません。</p>
+    <h3 id="mk3ModalTitle" data-i18n="submitSectionQ">この部を提出しますか？</h3>
+    <p id="mk3ModalText" data-i18n="submitSectionNote">この部を提出すると部がロックされ、次の部へ進みます — 戻ることはできません。</p>
     <div class="row">
-      <button class="btn btn-ghost" id="mk3ModalCancel" type="button" onclick="mk3CloseModal()">続けて解く</button>
-      <button class="btn btn-primary" id="mk3ModalConfirm" type="button" onclick="mk3ConfirmSubmitPart()">部を提出する</button>
+      <button class="btn btn-ghost" id="mk3ModalCancel" type="button" onclick="mk3CloseModal()" data-i18n="keepSolving">続けて解く</button>
+      <button class="btn btn-primary" id="mk3ModalConfirm" type="button" onclick="mk3ConfirmSubmitPart()" data-i18n="submitSectionBtn">部を提出する</button>
     </div>
   </div>
 </div>
 <div class="modal-overlay" id="mk4Modal" role="dialog" aria-modal="true" aria-labelledby="mk4ModalTitle">
   <div class="modal">
-    <h3 id="mk4ModalTitle">この部を提出しますか？</h3>
-    <p id="mk4ModalText">この部を提出すると部がロックされ、次の部へ進みます — 戻ることはできません。</p>
+    <h3 id="mk4ModalTitle" data-i18n="submitSectionQ">この部を提出しますか？</h3>
+    <p id="mk4ModalText" data-i18n="submitSectionNote">この部を提出すると部がロックされ、次の部へ進みます — 戻ることはできません。</p>
     <div class="row">
-      <button class="btn btn-ghost" id="mk4ModalCancel" type="button" onclick="mk4CloseModal()">続けて解く</button>
-      <button class="btn btn-primary" id="mk4ModalConfirm" type="button" onclick="mk4ConfirmSubmitPart()">部を提出する</button>
+      <button class="btn btn-ghost" id="mk4ModalCancel" type="button" onclick="mk4CloseModal()" data-i18n="keepSolving">続けて解く</button>
+      <button class="btn btn-primary" id="mk4ModalConfirm" type="button" onclick="mk4ConfirmSubmitPart()" data-i18n="submitSectionBtn">部を提出する</button>
     </div>
   </div>
 </div>
 <div class="modal-overlay" id="mk5Modal" role="dialog" aria-modal="true" aria-labelledby="mk5ModalTitle">
   <div class="modal">
-    <h3 id="mk5ModalTitle">この部を提出しますか？</h3>
-    <p id="mk5ModalText">この部を提出すると部がロックされ、次の部へ進みます — 戻ることはできません。</p>
+    <h3 id="mk5ModalTitle" data-i18n="submitSectionQ">この部を提出しますか？</h3>
+    <p id="mk5ModalText" data-i18n="submitSectionNote">この部を提出すると部がロックされ、次の部へ進みます — 戻ることはできません。</p>
     <div class="row">
-      <button class="btn btn-ghost" id="mk5ModalCancel" type="button" onclick="mk5CloseModal()">続けて解く</button>
-      <button class="btn btn-primary" id="mk5ModalConfirm" type="button" onclick="mk5ConfirmSubmitPart()">部を提出する</button>
+      <button class="btn btn-ghost" id="mk5ModalCancel" type="button" onclick="mk5CloseModal()" data-i18n="keepSolving">続けて解く</button>
+      <button class="btn btn-primary" id="mk5ModalConfirm" type="button" onclick="mk5ConfirmSubmitPart()" data-i18n="submitSectionBtn">部を提出する</button>
     </div>
   </div>
 </div>
@@ -2061,7 +2067,7 @@ function mkBuildPracticeCard(p){
   if(p.img){
     var iw = document.createElement('div');
     iw.style.cssText = 'margin:18px 22px 2px;text-align:center';
-    var im = document.createElement('img'); im.src = p.img; im.alt = '練習問題の絵';
+    var im = document.createElement('img'); im.src = p.img; im.alt = t('practiceImage');
     im.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
     iw.appendChild(im); card.appendChild(iw);
   }
@@ -2097,16 +2103,16 @@ function mkBuildPracticeCard(p){
     revealed = true;
     btns.forEach(function(x, xi){ if(letters[xi] === p.answer){ x.style.outline = '2px solid #2e7d32'; } });
     var ok = (sel === p.answer);
-    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? '✓ 正解です。' : '✗ 不正解です。') + ' 正しい答えは ' + p.answer + '：</strong><span class="jp"></span></p>';
+    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? t('verdictOkFull') : t('verdictBadFull')) + t('correctAnswerIsThe') + p.answer + '：</strong><span class="jp"></span></p>';
     res.querySelector('.jp').textContent = p.answerText || p.options[parseInt(p.answer, 10) - 1] || '';
-    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = p.explain; res.appendChild(ex); }
+    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = pickExpl(p); ex.setAttribute('data-expl-idx', regExpl(p)); res.appendChild(ex); }
     if(p.lines && p.lines.length){
       var tr = document.createElement('div'); tr.className = 'transcript jp';
       tr.innerHTML = '<strong>トランスクリプト（練習）：</strong>\n' + p.lines.map(function(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }).join('\n');
       res.appendChild(tr);
     }
     if(p.vi && p.vi.length){
-      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, 'ベトナム語訳');
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, t('vietTranslation'));
       while(vt.firstChild) res.appendChild(vt.firstChild);
     }
     res.classList.remove('hidden');
@@ -2160,13 +2166,13 @@ function mkBuildGroups(){
       var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = item.q;
       var opts = document.createElement('div');
       opts.className = 'options'; opts.id = 'mkqOptions' + n;
-      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','問題の答え ' + n);
+      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label',t('qAnswerAria') + n);
       card.appendChild(meta);
       if(item.img){
         var qimg = document.createElement('div');
         qimg.style.cssText = 'margin:18px 22px 2px;text-align:center';
         var qim = document.createElement('img');
-        qim.src = item.img; qim.alt = '場面の絵';
+        qim.src = item.img; qim.alt = t('sceneImage');
         qim.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
         qimg.appendChild(qim); card.appendChild(qimg);
       }
@@ -2223,7 +2229,7 @@ function mkUpdateQuestion(n){
   var fb = document.getElementById('mkflagBtn' + n);
   if(fb){
     fb.classList.toggle('on', !!mkFlag[n]);
-    fb.textContent = mkFlag[n] ? '⚑ フラグ済み — 押して解除' : '⚑ この問題にフラグ';
+    fb.textContent = mkFlag[n] ? t('flagQOn') : t('flagQ');
   }
   var box = document.getElementById('mkqOptions' + n);
   if(!box) return;
@@ -2474,7 +2480,7 @@ function mkFinish(auto){
   cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">正答率による推定換算（' + pct + '%) · 参考レベル：' + level + '</div></div>';
   document.getElementById('mkScoreGrid').innerHTML = cells;
   document.getElementById('mkScoreDetail').textContent = (auto ? '⏱ パート3の時間切れ — 自動で提出されました。' : '')
-    + '全体：正解 ' + grand + '/40 (' + pct + '%）。上の /800 のスコアは正答率による推定にすぎません — 実際の試験のスコアは主催者の独自のアルゴリズムで計算され、線形には換算されません。';
+    + t('scoreLine') + grand + '/40 (' + pct + t('estNote1');
   var rv = document.getElementById('mkReview'); rv.innerHTML = '';
   var shownTr = {};
   var lastPart = 0;
@@ -2491,17 +2497,17 @@ function mkFinish(auto){
     var isOk = mkSel[item.n] === item.ans;
     var html = '<div class="q-num">問題 ' + item.n + ' · セット ' + item.g + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
-    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mkSel[item.n] ? mkSel[item.n] + ' — ' : '未選択') + '</strong>' + (mkSel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mkSel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">' + t('yourAnswer') + '<strong>' + (mkSel[item.n] ? mkSel[item.n] + ' — ' : t('notSelected')) + '</strong>' + (mkSel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mkSel[item.n])] + '</span>' : '') + '</p>';
     html += '<p style="margin:0 0 6px">正しい答え：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['1234'.indexOf(item.ans)] + '</span></p>';
-    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ Sai') + '</div>';
-    html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? t('verdictOk') : '✗ Sai') + '</div>';
+    html += '<p style="margin:8px 0 0" data-expl-idx="' + regExpl(item) + '">' + pickExpl(item) + '</p>';
     var grp = mkGroupById[item.g];
     if(grp && grp.lines && !shownTr[item.g]){
       shownTr[item.g] = true;
       var tr = grp.lines.join('\n');
-      html += reviewAudioHtml(grp.audio, '聞き直し：セット ' + item.g);
+      html += reviewAudioHtml(grp.audio, t('replaySet') + item.g);
       html += '<div class="transcript jp"><strong>トランスクリプト：セット ' + item.g + ':</strong>\n' + tr + '</div>';
-      html += viTrHtml(grp.vi, '翻訳：セット ' + item.g);
+      html += viTrHtml(grp.vi, t('translationSet') + item.g);
     }
     card.innerHTML = html;
     rv.appendChild(card);
@@ -2579,7 +2585,7 @@ function updateProgress(){
   document.getElementById('progressTxt').textContent = '選択済み ' + n + ' / 3';
   document.getElementById('progressBar').style.width = (n/3*100) + '%';
   document.getElementById('submitBtn').disabled = (n < 3 || submitted);
-  document.getElementById('submitHint').textContent = submitted ? '提出済み — 各問題の解説をご覧ください。' : (n<3 ? 'あと ' + (3-n) + ' 問が未選択です。' : '3問すべて選択しました — 「提出」を押して今すぐ採点しましょう。');
+  document.getElementById('submitHint').textContent = submitted ? '提出済み — 各問題の解説をご覧ください。' : (n<3 ? 'あと ' + (3-n) + t('unansweredQs') : '3問すべて選択しました — 「提出」を押して今すぐ採点しましょう。');
 }
 document.querySelectorAll('#examDemo .opt').forEach(function(btn){
   btn.addEventListener('click', function(){
@@ -2978,7 +2984,7 @@ function mk2BuildPracticeCard(p){
   if(p.img){
     var iw = document.createElement('div');
     iw.style.cssText = 'margin:18px 22px 2px;text-align:center';
-    var im = document.createElement('img'); im.src = p.img; im.alt = '練習問題の絵';
+    var im = document.createElement('img'); im.src = p.img; im.alt = t('practiceImage');
     im.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
     iw.appendChild(im); card.appendChild(iw);
   }
@@ -3014,16 +3020,16 @@ function mk2BuildPracticeCard(p){
     revealed = true;
     btns.forEach(function(x, xi){ if(letters[xi] === p.answer){ x.style.outline = '2px solid #2e7d32'; } });
     var ok = (sel === p.answer);
-    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? '✓ 正解です。' : '✗ 不正解です。') + ' 正しい答えは ' + p.answer + '：</strong><span class="jp"></span></p>';
+    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? t('verdictOkFull') : t('verdictBadFull')) + t('correctAnswerIsThe') + p.answer + '：</strong><span class="jp"></span></p>';
     res.querySelector('.jp').textContent = p.answerText || p.options[parseInt(p.answer, 10) - 1] || '';
-    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = p.explain; res.appendChild(ex); }
+    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = pickExpl(p); ex.setAttribute('data-expl-idx', regExpl(p)); res.appendChild(ex); }
     if(p.lines && p.lines.length){
       var tr = document.createElement('div'); tr.className = 'transcript jp';
       tr.innerHTML = '<strong>トランスクリプト（練習）：</strong>\n' + p.lines.map(function(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }).join('\n');
       res.appendChild(tr);
     }
     if(p.vi && p.vi.length){
-      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, 'ベトナム語訳');
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, t('vietTranslation'));
       while(vt.firstChild) res.appendChild(vt.firstChild);
     }
     res.classList.remove('hidden');
@@ -3077,13 +3083,13 @@ function mk2BuildGroups(){
       var qt = document.createElement('p'); qt.className = 'q-text jp'; qt.textContent = item.q;
       var opts = document.createElement('div');
       opts.className = 'options'; opts.id = 'mkqOptions' + n;
-      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label','問題の答え ' + n);
+      opts.setAttribute('role','radiogroup'); opts.setAttribute('aria-label',t('qAnswerAria') + n);
       card.appendChild(meta);
       if(item.img){
         var qimg = document.createElement('div');
         qimg.style.cssText = 'margin:18px 22px 2px;text-align:center';
         var qim = document.createElement('img');
-        qim.src = item.img; qim.alt = '場面の絵';
+        qim.src = item.img; qim.alt = t('sceneImage');
         qim.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
         qimg.appendChild(qim); card.appendChild(qimg);
       }
@@ -3140,7 +3146,7 @@ function mk2UpdateQuestion(n){
   var fb = document.getElementById('mkflagBtn' + n);
   if(fb){
     fb.classList.toggle('on', !!mk2Flag[n]);
-    fb.textContent = mk2Flag[n] ? '⚑ フラグ済み — 押して解除' : '⚑ この問題にフラグ';
+    fb.textContent = mk2Flag[n] ? t('flagQOn') : t('flagQ');
   }
   var box = document.getElementById('mkqOptions' + n);
   if(!box) return;
@@ -3391,7 +3397,7 @@ function mk2Finish(auto){
   cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">正答率による推定換算（' + pct + '%) · 参考レベル：' + level + '</div></div>';
   document.getElementById('mk2ScoreGrid').innerHTML = cells;
   document.getElementById('mk2ScoreDetail').textContent = (auto ? '⏱ パート3の時間切れ — 自動で提出されました。' : '')
-    + '全体：正解 ' + grand + '/80 (' + pct + '%）。上の /800 のスコアは正答率による推定にすぎません — 実際の試験のスコアは主催者の独自のアルゴリズムで計算され、線形には換算されません。';
+    + t('scoreLine') + grand + '/80 (' + pct + t('estNote1');
   var rv = document.getElementById('mk2Review'); rv.innerHTML = '';
   var shownTr = {};
   var lastPart = 0;
@@ -3408,17 +3414,17 @@ function mk2Finish(auto){
     var isOk = mk2Sel[item.n] === item.ans;
     var html = '<div class="q-num">問題 ' + item.n + ' · セット ' + item.g + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
-    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk2Sel[item.n] ? mk2Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk2Sel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mk2Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">' + t('yourAnswer') + '<strong>' + (mk2Sel[item.n] ? mk2Sel[item.n] + ' — ' : t('notSelected')) + '</strong>' + (mk2Sel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mk2Sel[item.n])] + '</span>' : '') + '</p>';
     html += '<p style="margin:0 0 6px">正しい答え：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['1234'.indexOf(item.ans)] + '</span></p>';
-    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ Sai') + '</div>';
-    html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? t('verdictOk') : '✗ Sai') + '</div>';
+    html += '<p style="margin:8px 0 0" data-expl-idx="' + regExpl(item) + '">' + pickExpl(item) + '</p>';
     var grp = mk2GroupById[item.g];
     if(grp && grp.lines && !shownTr[item.g]){
       shownTr[item.g] = true;
       var tr = grp.lines.join('\n');
-      html += reviewAudioHtml(grp.audio, '聞き直し：セット ' + item.g);
+      html += reviewAudioHtml(grp.audio, t('replaySet') + item.g);
       html += '<div class="transcript jp"><strong>トランスクリプト：セット ' + item.g + ':</strong>\n' + tr + '</div>';
-      html += viTrHtml(grp.vi, '翻訳：セット ' + item.g);
+      html += viTrHtml(grp.vi, t('translationSet') + item.g);
     }
     card.innerHTML = html;
     rv.appendChild(card);
@@ -3575,7 +3581,7 @@ function mk3BuildPracticeCard(p){
   if(p.img){
     var iw = document.createElement('div');
     iw.style.cssText = 'margin:18px 22px 2px;text-align:center';
-    var im = document.createElement('img'); im.src = p.img; im.alt = '練習問題の絵';
+    var im = document.createElement('img'); im.src = p.img; im.alt = t('practiceImage');
     im.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
     iw.appendChild(im); card.appendChild(iw);
   }
@@ -3611,16 +3617,16 @@ function mk3BuildPracticeCard(p){
     revealed = true;
     btns.forEach(function(x, xi){ if(letters[xi] === p.answer){ x.style.outline = '2px solid #2e7d32'; } });
     var ok = (sel === p.answer);
-    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? '✓ 正解です。' : '✗ 不正解です。') + ' 正しい答えは ' + p.answer + '：</strong><span class="jp"></span></p>';
+    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? t('verdictOkFull') : t('verdictBadFull')) + t('correctAnswerIsThe') + p.answer + '：</strong><span class="jp"></span></p>';
     res.querySelector('.jp').textContent = p.answerText || p.options[parseInt(p.answer, 10) - 1] || '';
-    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = p.explain; res.appendChild(ex); }
+    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = pickExpl(p); ex.setAttribute('data-expl-idx', regExpl(p)); res.appendChild(ex); }
     if(p.lines && p.lines.length){
       var tr = document.createElement('div'); tr.className = 'transcript jp';
       tr.innerHTML = '<strong>トランスクリプト（練習）：</strong>\n' + p.lines.map(function(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }).join('\n');
       res.appendChild(tr);
     }
     if(p.vi && p.vi.length){
-      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, 'ベトナム語訳');
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, t('vietTranslation'));
       while(vt.firstChild) res.appendChild(vt.firstChild);
     }
     res.classList.remove('hidden');
@@ -3680,7 +3686,7 @@ function mk3BuildGroups(){
         var qimg = document.createElement('div');
         qimg.style.cssText = 'margin:18px 22px 2px;text-align:center';
         var qim = document.createElement('img');
-        qim.src = item.img; qim.alt = '場面の絵';
+        qim.src = item.img; qim.alt = t('sceneImage');
         qim.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
         qimg.appendChild(qim); card.appendChild(qimg);
       }
@@ -3737,7 +3743,7 @@ function mk3UpdateQuestion(n){
   var fb = document.getElementById('mkflagBtn' + n);
   if(fb){
     fb.classList.toggle('on', !!mk3Flag[n]);
-    fb.textContent = mk3Flag[n] ? '⚑ 印付き — 押して外す' : '⚑ この問題に印を付ける';
+    fb.textContent = mk3Flag[n] ? t('flagMarkOn') : t('flagMarkQ');
   }
   var box = document.getElementById('mkqOptions' + n);
   if(!box) return;
@@ -3988,7 +3994,7 @@ function mk3Finish(auto){
   cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">正答率からの推定換算（' + pct + '%）· 目安のレベル：' + level + '</div></div>';
   document.getElementById('mk3ScoreGrid').innerHTML = cells;
   document.getElementById('mk3ScoreDetail').textContent = (auto ? '⏱ 第3部の時間切れ — 自動で提出されました。' : '')
-    + '全問：正解 ' + grand + '/80（' + pct + '%）。上の/800の点数は、正答率からの推定換算にすぎません — 本番の点数は主催者の独自の方法で計算され、単純な比例換算ではありません。';
+    + '全問：正解 ' + grand + '/80（' + pct + t('estNote2');
   var rv = document.getElementById('mk3Review'); rv.innerHTML = '';
   var shownTr = {};
   var lastPart = 0;
@@ -4005,10 +4011,10 @@ function mk3Finish(auto){
     var isOk = mk3Sel[item.n] === item.ans;
     var html = '<div class="q-num">第' + item.n + '問 · セット' + item.g + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
-    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk3Sel[item.n] ? mk3Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk3Sel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mk3Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">' + t('yourAnswer') + '<strong>' + (mk3Sel[item.n] ? mk3Sel[item.n] + ' — ' : t('notSelected')) + '</strong>' + (mk3Sel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mk3Sel[item.n])] + '</span>' : '') + '</p>';
     html += '<p style="margin:0 0 6px">正解：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['1234'.indexOf(item.ans)] + '</span></p>';
-    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ 不正解') + '</div>';
-    html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? t('verdictOk') : t('verdictBad')) + '</div>';
+    html += '<p style="margin:8px 0 0" data-expl-idx="' + regExpl(item) + '">' + pickExpl(item) + '</p>';
     var grp = mk3GroupById[item.g];
     if(grp && grp.lines && !shownTr[item.g]){
       shownTr[item.g] = true;
@@ -4172,7 +4178,7 @@ function mk4BuildPracticeCard(p){
   if(p.img){
     var iw = document.createElement('div');
     iw.style.cssText = 'margin:18px 22px 2px;text-align:center';
-    var im = document.createElement('img'); im.src = p.img; im.alt = '練習問題の絵';
+    var im = document.createElement('img'); im.src = p.img; im.alt = t('practiceImage');
     im.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
     iw.appendChild(im); card.appendChild(iw);
   }
@@ -4208,16 +4214,16 @@ function mk4BuildPracticeCard(p){
     revealed = true;
     btns.forEach(function(x, xi){ if(letters[xi] === p.answer){ x.style.outline = '2px solid #2e7d32'; } });
     var ok = (sel === p.answer);
-    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? '✓ 正解です。' : '✗ 不正解です。') + ' 正しい答えは ' + p.answer + '：</strong><span class="jp"></span></p>';
+    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? t('verdictOkFull') : t('verdictBadFull')) + t('correctAnswerIsThe') + p.answer + '：</strong><span class="jp"></span></p>';
     res.querySelector('.jp').textContent = p.answerText || p.options[parseInt(p.answer, 10) - 1] || '';
-    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = p.explain; res.appendChild(ex); }
+    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = pickExpl(p); ex.setAttribute('data-expl-idx', regExpl(p)); res.appendChild(ex); }
     if(p.lines && p.lines.length){
       var tr = document.createElement('div'); tr.className = 'transcript jp';
       tr.innerHTML = '<strong>トランスクリプト（練習）：</strong>\n' + p.lines.map(function(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }).join('\n');
       res.appendChild(tr);
     }
     if(p.vi && p.vi.length){
-      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, 'ベトナム語訳');
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, t('vietTranslation'));
       while(vt.firstChild) res.appendChild(vt.firstChild);
     }
     res.classList.remove('hidden');
@@ -4277,7 +4283,7 @@ function mk4BuildGroups(){
         var qimg = document.createElement('div');
         qimg.style.cssText = 'margin:18px 22px 2px;text-align:center';
         var qim = document.createElement('img');
-        qim.src = item.img; qim.alt = '場面の絵';
+        qim.src = item.img; qim.alt = t('sceneImage');
         qim.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
         qimg.appendChild(qim); card.appendChild(qimg);
       }
@@ -4334,7 +4340,7 @@ function mk4UpdateQuestion(n){
   var fb = document.getElementById('mkflagBtn' + n);
   if(fb){
     fb.classList.toggle('on', !!mk4Flag[n]);
-    fb.textContent = mk4Flag[n] ? '⚑ 印付き — 押して外す' : '⚑ この問題に印を付ける';
+    fb.textContent = mk4Flag[n] ? t('flagMarkOn') : t('flagMarkQ');
   }
   var box = document.getElementById('mkqOptions' + n);
   if(!box) return;
@@ -4585,7 +4591,7 @@ function mk4Finish(auto){
   cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">正答率からの推定換算（' + pct + '%）· 目安のレベル：' + level + '</div></div>';
   document.getElementById('mk4ScoreGrid').innerHTML = cells;
   document.getElementById('mk4ScoreDetail').textContent = (auto ? '⏱ 第3部の時間切れ — 自動で提出されました。' : '')
-    + '全問：正解 ' + grand + '/80（' + pct + '%）。上の/800の点数は、正答率からの推定換算にすぎません — 本番の点数は主催者の独自の方法で計算され、単純な比例換算ではありません。';
+    + '全問：正解 ' + grand + '/80（' + pct + t('estNote2');
   var rv = document.getElementById('mk4Review'); rv.innerHTML = '';
   var shownTr = {};
   var lastPart = 0;
@@ -4602,10 +4608,10 @@ function mk4Finish(auto){
     var isOk = mk4Sel[item.n] === item.ans;
     var html = '<div class="q-num">第' + item.n + '問 · セット' + item.g + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
-    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk4Sel[item.n] ? mk4Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk4Sel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mk4Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">' + t('yourAnswer') + '<strong>' + (mk4Sel[item.n] ? mk4Sel[item.n] + ' — ' : t('notSelected')) + '</strong>' + (mk4Sel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mk4Sel[item.n])] + '</span>' : '') + '</p>';
     html += '<p style="margin:0 0 6px">正解：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['1234'.indexOf(item.ans)] + '</span></p>';
-    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ 不正解') + '</div>';
-    html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? t('verdictOk') : t('verdictBad')) + '</div>';
+    html += '<p style="margin:8px 0 0" data-expl-idx="' + regExpl(item) + '">' + pickExpl(item) + '</p>';
     var grp = mk4GroupById[item.g];
     if(grp && grp.lines && !shownTr[item.g]){
       shownTr[item.g] = true;
@@ -4769,7 +4775,7 @@ function mk5BuildPracticeCard(p){
   if(p.img){
     var iw = document.createElement('div');
     iw.style.cssText = 'margin:18px 22px 2px;text-align:center';
-    var im = document.createElement('img'); im.src = p.img; im.alt = '練習問題の絵';
+    var im = document.createElement('img'); im.src = p.img; im.alt = t('practiceImage');
     im.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
     iw.appendChild(im); card.appendChild(iw);
   }
@@ -4805,16 +4811,16 @@ function mk5BuildPracticeCard(p){
     revealed = true;
     btns.forEach(function(x, xi){ if(letters[xi] === p.answer){ x.style.outline = '2px solid #2e7d32'; } });
     var ok = (sel === p.answer);
-    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? '✓ 正解です。' : '✗ 不正解です。') + ' 正しい答えは ' + p.answer + '：</strong><span class="jp"></span></p>';
+    res.innerHTML = '<p style="margin:0 0 6px"><strong>' + (ok ? t('verdictOkFull') : t('verdictBadFull')) + t('correctAnswerIsThe') + p.answer + '：</strong><span class="jp"></span></p>';
     res.querySelector('.jp').textContent = p.answerText || p.options[parseInt(p.answer, 10) - 1] || '';
-    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = p.explain; res.appendChild(ex); }
+    if(p.explain){ var ex = document.createElement('p'); ex.style.cssText = 'margin:0 0 6px'; ex.textContent = pickExpl(p); ex.setAttribute('data-expl-idx', regExpl(p)); res.appendChild(ex); }
     if(p.lines && p.lines.length){
       var tr = document.createElement('div'); tr.className = 'transcript jp';
       tr.innerHTML = '<strong>トランスクリプト（練習）：</strong>\n' + p.lines.map(function(s){ return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }).join('\n');
       res.appendChild(tr);
     }
     if(p.vi && p.vi.length){
-      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, 'ベトナム語訳');
+      var vt = document.createElement('div'); vt.innerHTML = viTrHtml(p.vi, t('vietTranslation'));
       while(vt.firstChild) res.appendChild(vt.firstChild);
     }
     res.classList.remove('hidden');
@@ -4874,7 +4880,7 @@ function mk5BuildGroups(){
         var qimg = document.createElement('div');
         qimg.style.cssText = 'margin:18px 22px 2px;text-align:center';
         var qim = document.createElement('img');
-        qim.src = item.img; qim.alt = '場面の絵';
+        qim.src = item.img; qim.alt = t('sceneImage');
         qim.style.cssText = 'max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px';
         qimg.appendChild(qim); card.appendChild(qimg);
       }
@@ -4931,7 +4937,7 @@ function mk5UpdateQuestion(n){
   var fb = document.getElementById('mkflagBtn' + n);
   if(fb){
     fb.classList.toggle('on', !!mk5Flag[n]);
-    fb.textContent = mk5Flag[n] ? '⚑ 印付き — 押して外す' : '⚑ この問題に印を付ける';
+    fb.textContent = mk5Flag[n] ? t('flagMarkOn') : t('flagMarkQ');
   }
   var box = document.getElementById('mkqOptions' + n);
   if(!box) return;
@@ -5182,7 +5188,7 @@ function mk5Finish(auto){
   cells += '<div class="mk-scorecell"><div class="v">≈ ' + est + ' / 800</div><div class="k">正答率からの推定換算（' + pct + '%）· 目安のレベル：' + level + '</div></div>';
   document.getElementById('mk5ScoreGrid').innerHTML = cells;
   document.getElementById('mk5ScoreDetail').textContent = (auto ? '⏱ 第3部の時間切れ — 自動で提出されました。' : '')
-    + '全問：正解 ' + grand + '/80（' + pct + '%）。上の/800の点数は、正答率からの推定換算にすぎません — 本番の点数は主催者の独自の方法で計算され、単純な比例換算ではありません。';
+    + '全問：正解 ' + grand + '/80（' + pct + t('estNote2');
   var rv = document.getElementById('mk5Review'); rv.innerHTML = '';
   var shownTr = {};
   var lastPart = 0;
@@ -5199,10 +5205,10 @@ function mk5Finish(auto){
     var isOk = mk5Sel[item.n] === item.ans;
     var html = '<div class="q-num">第' + item.n + '問 · セット' + item.g + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px">' + item.q + '</p>';
-    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (mk5Sel[item.n] ? mk5Sel[item.n] + ' — ' : '未選択') + '</strong>' + (mk5Sel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mk5Sel[item.n])] + '</span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">' + t('yourAnswer') + '<strong>' + (mk5Sel[item.n] ? mk5Sel[item.n] + ' — ' : t('notSelected')) + '</strong>' + (mk5Sel[item.n] ? '<span class="jp">' + item.opts['1234'.indexOf(mk5Sel[item.n])] + '</span>' : '') + '</p>';
     html += '<p style="margin:0 0 6px">正解：<strong>' + item.ans + ' — </strong><span class="jp">' + item.opts['1234'.indexOf(item.ans)] + '</span></p>';
-    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ 不正解') + '</div>';
-    html += '<p style="margin:8px 0 0">' + item.explain + '</p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? t('verdictOk') : t('verdictBad')) + '</div>';
+    html += '<p style="margin:8px 0 0" data-expl-idx="' + regExpl(item) + '">' + pickExpl(item) + '</p>';
     var grp = mk5GroupById[item.g];
     if(grp && grp.lines && !shownTr[item.g]){
       shownTr[item.g] = true;
