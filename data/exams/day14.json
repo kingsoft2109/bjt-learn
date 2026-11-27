@@ -27,6 +27,22 @@
         "40 sản phẩm còn lại có đến được trước thứ Hai ngày 16 tháng 11 không?",
         "Vâng, chúng tôi sẽ giao trước thứ Hai ngày 16 tháng 11. Ngoài ra, báo giá chúng tôi vẫn chưa gửi, nên sau khi quý khách xác nhận số tiền chúng tôi mới gửi ạ.",
         "Tôi hiểu rồi. Tôi sẽ liên lạc sau khi xác nhận số tiền."
+      ],
+      "en": [
+        "Thank you for calling. This is about the delivery deadline, isn't it?",
+        "Yes. Of the 100 products I ordered, I would like to shorten the delivery deadline.",
+        "Understood. At present, 60 products have been shipped, and 40 products remain.",
+        "Can the remaining 40 products arrive before Monday, November 16?",
+        "Yes, we will deliver them before Monday, November 16. In addition, we have not yet sent the quotation, so we will send it after you have confirmed the amount.",
+        "I understand. I will contact you after confirming the amount."
+      ],
+      "ja": [
+        "お電話ありがとうございます。納期についての件ですね。",
+        "はい。注文した100個の製品のうち、納期を短くしていただきたいのですが。",
+        "承知しました。現在、60個はすでに出荷済みで、残りは40個です。",
+        "残りの40個は11月16日（月）までに届きますか。",
+        "はい、11月16日（月）までにお届けします。それから、見積書はまだお送りしていませんので、金額をご確認いただいた後にお送りいたします。",
+        "分かりました。金額を確認してからご連絡します。"
       ]
     },
     "2": {
@@ -46,6 +62,20 @@
         "Đúng là vậy, nhưng vì lý do hội trường nên đã đổi sang 11 giờ sáng thứ Sáu ngày 4 tháng 12. Buổi đào tạo sản phẩm vẫn giữ nguyên 4 giờ chiều thứ Sáu ngày 4 tháng 12, nên sáng và chiều đều tham gia được cả hai.",
         "Tôi đã rõ. Về tài liệu của buổi đào tạo sản phẩm, vì vẫn chưa được phê duyệt nên hôm đó chỉ giải thích phần tổng quan thôi phải không ạ?",
         "Đúng vậy. Tài liệu sẽ gửi cho người tham dự sau khi được phê duyệt."
+      ],
+      "en": [
+        "There is a change to the December schedule.",
+        "Yes. The internal briefing session is at 2 p.m. on Wednesday, December 2, isn't it?",
+        "That is correct, but due to the venue, it has been changed to 11 a.m. on Friday, December 4. The product training session remains unchanged at 4 p.m. on Friday, December 4, so you can attend both in the morning and the afternoon.",
+        "Understood. As for the materials for the product training session, since they have not yet been approved, only the overview will be explained on that day, won't it?",
+        "That is right. The materials will be sent to the attendees after they are approved."
+      ],
+      "ja": [
+        "12月のスケジュールに変更があります。",
+        "はい。社内説明会は12月2日（水）の午後2時ですね。",
+        "そのとおりですが、会場の都合で12月4日（金）の午前11時に変更になりました。製品研修は変更なく12月4日（金）の午後4時ですので、午前と午後の両方に参加できます。",
+        "承知しました。製品研修の資料はまだ承認されていないので、当日は概要だけを説明するのですね。",
+        "そうです。資料は承認された後、参加者に送ります。"
       ]
     },
     "3": {
@@ -63,6 +93,18 @@
         "80 sản phẩm còn lại có xuất hết được trước thứ Năm ngày 19 tháng 11 không?",
         "Vâng, dự kiến sẽ gửi đi trước thứ Năm ngày 19 tháng 11. Ngoài ra, hợp đồng vẫn chưa được ký, nên ngay khi số tiền được quyết định chúng tôi sẽ ký hợp đồng.",
         "Hiểu rồi. Vậy cứ tiến hành theo nội dung đó nhé."
+      ],
+      "en": [
+        "Manager, I would like to report on the inventory of the new product. Of a total of 200 products, 120 products have been shipped. There are 80 products remaining.",
+        "Can all of the remaining 80 products be shipped before Thursday, November 19?",
+        "Yes, they are scheduled to be sent out before Thursday, November 19. In addition, the contract has not yet been signed, so we will sign the contract as soon as the amount is decided.",
+        "Understood. Please proceed on that basis."
+      ],
+      "ja": [
+        "部長、新製品の在庫についてご報告します。全200個のうち、120個は出荷済みです。残りは80個です。",
+        "残りの80個は11月19日（木）までに全部出荷できますか。",
+        "はい、11月19日（木）までに出荷する予定です。それから、契約はまだ締結していないので、金額が決まり次第、契約を結びます。",
+        "分かりました。では、その内容で進めてください。"
       ]
     },
     "4": {
@@ -86,6 +128,24 @@
         "Vui lòng đăng ký trước thứ Hai ngày 7 tháng 12.",
         "Ngoài ra, tài liệu vẫn chưa chuẩn bị xong nên chúng tôi sẽ phát tại hội trường vào hôm đó.",
         "Nếu có điểm nào chưa rõ, xin vui lòng liên hệ phòng Tổng vụ."
+      ],
+      "en": [
+        "An announcement to everyone.",
+        "On Wednesday, December 9, we will hold a business etiquette training course for new employees.",
+        "The time is from 10 a.m. to 3 p.m., and the venue is Meeting Room B on the 5th floor of the head office.",
+        "Participation is free of charge.",
+        "Please register by Monday, December 7.",
+        "In addition, the materials have not yet been prepared, so we will distribute them at the venue on the day.",
+        "If there is anything unclear, please contact the General Affairs Department."
+      ],
+      "ja": [
+        "皆様へのお知らせです。",
+        "12月9日（水）に、新入社員向けのビジネスマナー研修を実施します。",
+        "時間は午前10時から午後3時まで、場所は本社5階の会議室Bです。",
+        "参加費は無料です。",
+        "12月7日（月）までにお申し込みください。",
+        "なお、資料はまだ準備ができていないため、当日会場で配布します。",
+        "ご不明な点があれば、総務部までご連絡ください。"
       ]
     }
   },

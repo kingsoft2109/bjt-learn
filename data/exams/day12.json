@@ -16,6 +16,14 @@
       "vi": [
         "Doanh số tháng 11: chi nhánh Tokyo 460 vạn yên, chi nhánh Osaka 390 vạn yên, chi nhánh Nagoya 330 vạn yên, tổng cộng 1.180 vạn yên, tăng 80 vạn yên so với tháng trước.",
         "Dự báo doanh số tháng 12: Tokyo 480 vạn yên, Osaka 410 vạn yên, Nagoya 350 vạn yên, tổng cộng 1.240 vạn yên. Xin lưu ý, kế hoạch mở cửa hàng mới ở Sendai vẫn chưa được phê duyệt nội bộ nên chưa tính vào dự báo tháng 12."
+      ],
+      "en": [
+        "November sales: Tokyo branch 460 ten thousand yen, Osaka branch 390 ten thousand yen, Nagoya branch 330 ten thousand yen, 1,180 ten thousand yen in total, an increase of 80 ten thousand yen compared with the previous month.",
+        "December sales forecast: Tokyo 480 ten thousand yen, Osaka 410 ten thousand yen, Nagoya 350 ten thousand yen, 1,240 ten thousand yen in total. Please note that the plan to open a new store in Sendai has not yet been approved internally, so it is not included in the December forecast."
+      ],
+      "ja": [
+        "11月の売上：東京支店460万円、大阪支店390万円、名古屋支店330万円、合計1,180万円で、前月より80万円増加しました。",
+        "12月の売上予測：東京480万円、大阪410万円、名古屋350万円、合計1,240万円です。なお、仙台の新店舗開設の計画はまだ社内で承認されていないため、12月の予測には含まれていません。"
       ]
     },
     "2": {
@@ -26,6 +34,14 @@
       "vi": [
         "Người tham dự: phòng Kinh doanh 4 người, phòng Phát triển 3 người, phòng Kế hoạch 1 người, tổng cộng 8 người.",
         "Các quyết định: 1. Ngày ra mắt sản phẩm mới \"X-200\" là thứ Ba, ngày 15/12. 2. Giá bán là 3.980 yên (đã gồm thuế). 3. Thiết kế bao bì vẫn chưa được phê duyệt cuối cùng, vì vậy nếu đến một tuần trước ngày ra mắt vẫn chưa được duyệt thì sẽ hoãn ngày ra mắt một tuần."
+      ],
+      "en": [
+        "Attendees: Sales Department 4 people, Development Department 3 people, Planning Department 1 person, 8 people in total.",
+        "Decisions: 1. The launch date of the new product \"X-200\" is Tuesday, December 15. 2. The selling price is 3,980 yen (tax included). 3. The packaging design has not yet received final approval, so if it is still not approved one week before the launch date, the launch date will be postponed by one week."
+      ],
+      "ja": [
+        "参加者：営業部4名、開発部3名、企画部1名、合計8名です。",
+        "決定事項：1．新製品「X-200」の発売日は12月15日（火）です。2．販売価格は3,980円（税込）です。3．パッケージデザインはまだ最終承認を受けていないため、発売日の1週間前までに承認されなければ、発売日を1週間延期します。"
       ]
     },
     "3": {
@@ -37,6 +53,16 @@
         "1. Chi phí khách sạn: tối đa 12.000 yên mỗi đêm. Tuy nhiên, nếu đi cùng cán bộ cấp cao (役員) thì có thể thanh toán vượt mức tối đa.",
         "2. Chi phí đi lại được thanh toán theo chi phí thực tế. Tuy nhiên, chỉ được dùng taxi trong trường hợp lỡ chuyến tàu cuối.",
         "3. Hãy nộp đơn xin thanh toán trong vòng một tuần sau khi kết thúc chuyến công tác. Nếu nộp muộn sẽ chuyển sang kỳ thanh toán của tháng sau."
+      ],
+      "en": [
+        "1. Hotel expenses: up to 12,000 yen per night. However, if you are accompanied by a senior executive (役員), payment in excess of the maximum may be made.",
+        "2. Travel expenses will be paid based on the actual cost. However, a taxi may be used only in the case of missing the last train.",
+        "3. Please submit the reimbursement application within one week after the business trip ends. If you submit it late, it will be carried over to the next month's payment period."
+      ],
+      "ja": [
+        "1．宿泊費：1泊につき上限12,000円です。ただし、役員に同行する場合は、上限を超えて支払うことができます。",
+        "2．交通費は実費で支払われます。ただし、タクシーを利用できるのは終電に乗り遅れた場合に限ります。",
+        "3．精算申請は出張終了後1週間以内に提出してください。提出が遅れた場合は、翌月の支払い期に回されます。"
       ]
     },
     "4": {
@@ -49,6 +75,18 @@
         "Tôi là Sato ở Xưởng chế tạo △△, cảm ơn anh luôn hỗ trợ. Tôi xin liên hệ về việc thay đổi quy cách và điều chỉnh giá của linh kiện X. Từ ngày 1/12, linh kiện X sẽ chuyển sang quy cách mới. Quy cách mới giúp độ bền cao hơn, nhưng giá sẽ tăng 5%, từ 2.000 yên lên 2.100 yên mỗi chiếc.",
         "Xin lưu ý, các đơn hàng đặt đến hết ngày 30/11 vẫn được áp dụng giá hiện tại (2.000 yên/chiếc).",
         "Mong anh thông cảm, và nếu được anh vui lòng phản hồi về việc có chấp nhận thay đổi quy cách hay không trước ngày 20/11."
+      ],
+      "en": [
+        "Dear Mr. Yamada, Sales Department, ○○ Parts Co., Ltd.",
+        "I am Sato from the △△ Manufacturing Plant. Thank you for your continued support. I am contacting you regarding a change in the specifications and a price adjustment for Part X. From December 1, Part X will switch to new specifications. The new specifications provide greater durability, but the price will increase by 5%, from 2,000 yen to 2,100 yen per unit.",
+        "Please note that orders placed up to November 30 will still be charged at the current price (2,000 yen per unit).",
+        "We ask for your understanding, and if possible, please reply by November 20 as to whether you accept the specification change."
+      ],
+      "ja": [
+        "株式会社○○部品 営業部 山田様",
+        "△△製作所の佐藤と申します。いつもお世話になっております。部品Xの仕様変更と価格改定についてご連絡いたします。12月1日より、部品Xは新しい仕様に切り替わります。新仕様では耐久性が高くなりますが、価格は5％値上げとなり、1個2,000円から2,100円になります。",
+        "なお、11月30日までにご注文いただいた分については、現行価格（1個2,000円）が適用されます。",
+        "ご理解のほどよろしくお願いいたします。可能であれば、仕様変更をご了承いただけるかどうか、11月20日までにご返信ください。"
       ]
     }
   },

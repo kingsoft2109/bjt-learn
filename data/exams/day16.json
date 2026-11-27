@@ -27,6 +27,22 @@
         "Vậy tính lại tổng giúp tôi nhé.",
         "Vâng. 520 vạn yên cộng 350 vạn yên, 290 vạn yên và 180 vạn yên thì tổng là 1.340 vạn yên ạ.",
         "Rõ rồi. Vậy làm báo cáo theo con số đó nhé."
+      ],
+      "en": [
+        "Manager, here is the October sales report. Tokyo branch 480 ten thousand yen, Osaka 350 ten thousand yen, Nagoya 290 ten thousand yen, Fukuoka 180 ten thousand yen.",
+        "Wait a moment. The figure for the Tokyo branch is wrong. In the end, 520 ten-thousand yen is correct.",
+        "Ah, that's right. The Tokyo branch is 520 ten-thousand yen. I'm sorry.",
+        "Then please recalculate the total for me.",
+        "Yes. 520 ten-thousand yen plus 350 ten-thousand yen, 290 ten-thousand yen and 180 ten-thousand yen gives a total of 1,340 ten-thousand yen.",
+        "Understood. Then please prepare the report using those figures."
+      ],
+      "ja": [
+        "部長、10月の売上報告です。東京支店480万円、大阪350万円、名古屋290万円、福岡180万円です。",
+        "ちょっと待ってください。東京支店の数字が間違っています。最終的には520万円が正しいです。",
+        "あ、そうですね。東京支店は520万円です。申し訳ございません。",
+        "では、合計を計算し直してください。",
+        "はい。520万円に350万円、290万円、180万円を加えると、合計は1,340万円です。",
+        "分かりました。では、その数字で報告書を作成してください。"
       ]
     },
     "2": {
@@ -48,6 +64,22 @@
         "120 chiếc cộng 150 chiếc và 180 chiếc thì tổng là 450 chiếc ạ.",
         "Tháng 10 giảm một chút so với tháng 9 nhỉ.",
         "Vâng. Giảm 20 chiếc, từ 180 chiếc xuống còn 160 chiếc ạ."
+      ],
+      "en": [
+        "Let's confirm the production quantity of Product X from July to October.",
+        "Yes. July was 120 units, August was 150 units, September was 180 units, and October was 160 units.",
+        "September was the highest, wasn't it? What is the total from July to September?",
+        "120 units plus 150 units and 180 units gives a total of 450 units.",
+        "October decreased a little compared with September, didn't it?",
+        "Yes. It decreased by 20 units, from 180 units down to 160 units."
+      ],
+      "ja": [
+        "製品Xの7月から10月までの生産数量を確認しましょう。",
+        "はい。7月は120個、8月は150個、9月は180個、10月は160個です。",
+        "一番多いのは9月ですね。7月から9月までの合計はいくつですか。",
+        "120個に150個と180個を加えると、合計は450個です。",
+        "10月は9月に比べて少し減りましたね。",
+        "はい。180個から160個へ、20個減りました。"
       ]
     },
     "3": {
@@ -67,6 +99,20 @@
         "Xin lỗi chị. Hóa đơn vẫn chưa phát hành nên chúng tôi sẽ phát hành sau khi giao hàng.",
         "Tôi hiểu rồi. Hạn thanh toán là đến khi nào ạ?",
         "Xin vui lòng thanh toán trước cuối tháng 11 ạ."
+      ],
+      "en": [
+        "I'm contacting you about the delivery. On Friday, November 13, we will deliver 100 products.",
+        "Thank you. Could you send the invoice together with it?",
+        "I'm sorry. The invoice has not been issued yet, so we will issue it after delivery.",
+        "I understand. What is the payment deadline?",
+        "Please pay by the end of November."
+      ],
+      "ja": [
+        "納品の件でご連絡しています。11月13日金曜日に、製品を100個納品いたします。",
+        "ありがとうございます。請求書も一緒に送っていただけますか。",
+        "申し訳ございません。請求書はまだ発行されていないため、納品後に発行いたします。",
+        "分かりました。支払期限はいつまでですか。",
+        "11月末までにお支払いください。"
       ]
     },
     "4": {
@@ -88,6 +134,22 @@
         "Rõ rồi. Chuyến về thì thế nào?",
         "Em về bằng chuyến shinkansen lúc 5 giờ chiều thứ Năm ngày 19 tháng 11. Chỗ ở dự kiến là khách sạn A ạ.",
         "Đã rõ. Vậy cứ tiến hành theo nội dung đó nhé."
+      ],
+      "en": [
+        "Manager, I would like to consult you about the business trip to Osaka from Wednesday, November 18.",
+        "The meeting is from 10 a.m., right?",
+        "Yes. However, due to the other party's circumstances, it has been changed to 2 p.m.",
+        "Understood. What about the return trip?",
+        "I will return on the shinkansen at 5 p.m. on Thursday, November 19. My accommodation is scheduled to be Hotel A.",
+        "Understood. Then please proceed on that basis."
+      ],
+      "ja": [
+        "課長、大阪出張の件でご相談があります。11月18日水曜日からの出張です。",
+        "会議は午前10時からですよね。",
+        "はい。しかし、先方の都合により、午後2時に変更になりました。",
+        "分かりました。帰りはどうなりますか。",
+        "11月19日木曜日の午後5時の新幹線で帰ります。宿泊先はホテルAの予定です。",
+        "分かりました。では、その内容で進めてください。"
       ]
     }
   },

@@ -27,6 +27,22 @@
         "Nam: Quý trước là 720 vạn yên nhỉ, mức tăng thế nào?",
         "Nữ: Tăng 80 vạn yên. Tháng 10 là 340 vạn yên nhưng đó là số của quý 4 nên không tính vào tổng quý 3.",
         "Nam: Rõ rồi, tháng 9 là tốt nhất nhỉ."
+      ],
+      "en": [
+        "Woman: Manager, I'd like to report the sales of the new product.",
+        "Man: Yes, what's the total from July to September?",
+        "Woman: July was 2.4 million yen, August was 2.6 million yen, September was 3 million yen, for a total of 8 million yen.",
+        "Man: Last quarter was 7.2 million yen, right? How much is the increase?",
+        "Woman: It increased by 800,000 yen. October was 3.4 million yen, but that's a Q4 figure, so it's not included in the Q3 total.",
+        "Man: I see, September was the best, wasn't it?"
+      ],
+      "ja": [
+        "女：課長、新製品の売上についてご報告いたします。",
+        "男：うん、7月から9月までの合計はいくらですか。",
+        "女：7月は240万円、8月は260万円、9月は300万円で、合計800万円です。",
+        "男：前四半期は720万円でしたね。増加はどのくらいですか。",
+        "女：80万円の増加です。10月は340万円ですが、第4四半期の数字ですので、第3四半期の合計には含まれていません。",
+        "男：分かりました。9月が一番良かったですね。"
       ]
     },
     "2": {
@@ -44,6 +60,18 @@
         "Nam: Vậy à, thế thì sản phẩm E là 216.000 yên, tổng cộng thành 396.000 yên nhỉ.",
         "Nữ: Vâng. Hạn giao hàng cũng đổi từ ngày 12 tháng 11 thành ngày 16 tháng 11. Hóa đơn thì vẫn chưa phát hành nên sau khi giao hàng mới phát hành.",
         "Nam: Rõ rồi, cứ tiến hành theo nội dung đó."
+      ],
+      "en": [
+        "Woman: Manager, I'm contacting you about the order details. The quantity of Product E has changed from 150 units to 180 units.",
+        "Man: I see, then Product E is 216,000 yen, and the total comes to 396,000 yen, right?",
+        "Woman: Yes. The delivery date has also changed from November 12 to November 16. The invoice hasn't been issued yet, so it will be issued after delivery.",
+        "Man: Understood, please proceed as described."
+      ],
+      "ja": [
+        "女：課長、注文内容についてご連絡いたします。製品Eの数量が150個から180個に変更になりました。",
+        "男：そうですか。では、製品Eは216,000円で、合計は396,000円になりますね。",
+        "女：はい。納期も11月12日から11月16日に変更になりました。請求書はまだ発行されていないため、納品後に発行いたします。",
+        "男：分かりました。その内容で進めてください。"
       ]
     },
     "3": {
@@ -63,6 +91,20 @@
         "Nam: Đúng là vậy, nhưng vì lý do phía đối tác nên đã đổi thành 2 giờ chiều thứ Tư ngày 18 tháng 11. Cuộc họp nội bộ vẫn giữ 11 giờ sáng thứ Tư ngày 18 tháng 11 nên sáng và chiều đều làm được cả.",
         "Nữ: Em hiểu rồi. Tài liệu cho chuyến thăm công ty A thì vẫn chưa được phê duyệt nên hôm đó chỉ giải thích bằng miệng thôi đúng không ạ.",
         "Nam: Đúng vậy, tài liệu thì gửi sau khi phê duyệt được cấp."
+      ],
+      "en": [
+        "Man: Regarding the November schedule, there's a change to the schedule.",
+        "Woman: Yes, the training is at 3 p.m. on Tuesday, November 17, isn't it?",
+        "Man: That's right, but due to circumstances on the partner's side, it has been changed to 2 p.m. on Wednesday, November 18. The internal meeting remains at 11 a.m. on Wednesday, November 18, so both morning and afternoon can be done.",
+        "Woman: I understand. The documents for the visit to Company A haven't been approved yet, so on that day we'll only explain verbally, is that right?",
+        "Man: That's right, the documents will be sent after approval is granted."
+      ],
+      "ja": [
+        "男：11月のスケジュールについて、日程の変更があります。",
+        "女：はい、研修は11月17日火曜日の午後3時ですね。",
+        "男：そのとおりですが、取引先の都合により、11月18日水曜日の午後2時に変更になりました。社内会議は11月18日水曜日の午前11時のままですので、午前も午後も両方できます。",
+        "女：承知いたしました。A社訪問の資料はまだ承認されていないため、当日は口頭での説明のみですね。",
+        "男：そのとおりです。資料は承認が下りてから送ります。"
       ]
     },
     "4": {
@@ -82,6 +124,20 @@
         "Nam: Đúng là vậy, nhưng giờ đã đổi thành từ 3 giờ đến 5 giờ chiều. Phòng họp cũng đổi thành phòng họp C. Số người tham gia tăng lên 15 người.",
         "Nữ: Em hiểu rồi. Về máy chiếu thì vẫn chưa được phê duyệt nên ngay khi có phê duyệt em sẽ sắp xếp.",
         "Nam: Rõ rồi, cứ tiến hành theo nội dung đó."
+      ],
+      "en": [
+        "Man: Let me confirm the meeting room reservation.",
+        "Woman: Yes, from 2 to 4 p.m. on Friday, November 20, would Meeting Room B be all right? The number of participants is 10.",
+        "Man: That's right, but the time has changed to from 3 to 5 p.m. The meeting room has also changed to Meeting Room C. The number of participants has increased to 15.",
+        "Woman: I understand. The projector hasn't been approved yet, so as soon as approval is granted, I'll arrange it.",
+        "Man: Understood, please proceed as described."
+      ],
+      "ja": [
+        "男：会議室の予約について確認させてください。",
+        "女：はい、11月20日金曜日の午後2時から4時まで、会議室Bでよろしいでしょうか。参加者は10名です。",
+        "男：そのとおりですが、時間は午後3時から5時に変更になりました。会議室も会議室Cに変更になりました。参加者は15名に増えました。",
+        "女：承知いたしました。プロジェクターについてはまだ承認されていないため、承認が下り次第、手配いたします。",
+        "男：分かりました。その内容で進めてください。"
       ]
     }
   },

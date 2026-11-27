@@ -23,6 +23,18 @@
         "120 sản phẩm còn lại có nhập về kịp trước thứ Năm ngày 26 tháng 11 không?",
         "Vâng, dự kiến sẽ nhập về trước thứ Năm ngày 26 tháng 11. Ngoài ra, hợp đồng vẫn chưa được ký, nên ngay khi số tiền được quyết định chúng tôi sẽ ký hợp đồng.",
         "Tôi hiểu rồi. Khi số tiền được quyết định, tôi sẽ liên lạc."
+      ],
+      "en": [
+        "I'm calling about a delivery of goods. Of a total of 300 products, 180 products have already been delivered. There are 120 products remaining.",
+        "Will the remaining 120 products be delivered in time before Thursday, November 26?",
+        "Yes, they are scheduled to be delivered before Thursday, November 26. In addition, the contract has not yet been signed, so as soon as the amount is decided, we will sign the contract.",
+        "I understand. When the amount is decided, I will contact you."
+      ],
+      "ja": [
+        "入荷の件でお電話しています。全300個のうち、180個はすでに入荷しています。残りは120個です。",
+        "残りの120個は、11月26日木曜日までに間に合うように入荷しますか。",
+        "はい、11月26日木曜日までに入荷する予定です。また、契約書はまだ締結されていないため、金額が決まり次第、契約を締結いたします。",
+        "分かりました。金額が決まりましたら、ご連絡いたします。"
       ]
     },
     "2": {
@@ -42,6 +54,20 @@
         "Đúng là vậy, nhưng vì lý do của đối tác nên đã đổi sang 3 giờ chiều thứ Năm ngày 19 tháng 11. Buổi đào tạo nội bộ vẫn giữ nguyên 11 giờ sáng thứ Năm ngày 19 tháng 11, nên sáng và chiều đều tham gia được cả hai.",
         "Tôi đã rõ. Về tài liệu của buổi đào tạo, vì vẫn chưa được phê duyệt nên hôm đó chỉ giải thích phần tổng quan thôi phải không ạ?",
         "Đúng vậy. Tài liệu sẽ gửi sau khi được phê duyệt."
+      ],
+      "en": [
+        "There is a change to the November schedule.",
+        "Yes. The negotiation with Company A is at 10 a.m. on Tuesday, November 17, isn't it?",
+        "That's right, but due to the other party's circumstances, it has been changed to 3 p.m. on Thursday, November 19. The internal training remains as scheduled at 11 a.m. on Thursday, November 19, so it is possible to attend both in the morning and the afternoon.",
+        "Understood. As for the training materials, since they have not yet been approved, on that day only the overview will be explained, is that right?",
+        "That's right. The materials will be sent after they are approved."
+      ],
+      "ja": [
+        "11月のスケジュールに変更があります。",
+        "はい。A社との商談は11月17日火曜日の午前10時ですよね。",
+        "その通りですが、先方の都合により、11月19日木曜日の午後3時に変更になりました。社内研修は予定通り11月19日木曜日の午前11時ですので、午前と午後の両方に参加できます。",
+        "分かりました。研修資料については、まだ承認されていないため、当日は概要のみを説明するということですね。",
+        "その通りです。資料は承認後に送ります。"
       ]
     },
     "3": {
@@ -59,6 +85,18 @@
         "Ừ, 25 người. Tài liệu chuẩn bị mỗi người 2 bản nhé.",
         "Tôi đã rõ ạ. Là 50 bản phải không ạ. Ngoài ra, thông báo về buổi thuyết trình vẫn chưa gửi cho đối tác, nên sau khi chốt được người tham gia chúng tôi sẽ gửi.",
         "Hiểu rồi. Vậy cứ tiến hành theo nội dung đó nhé."
+      ],
+      "en": [
+        "Manager, please let me confirm the materials for the meeting on Tuesday, December 1. The number of participants is 25 people, is that correct?",
+        "Yes, 25 people. Please prepare 2 copies of the materials for each person.",
+        "Understood. That's 50 copies, isn't it? In addition, the notice about the presentation has not yet been sent to the partner, so after the participants are finalized, we will send it.",
+        "Understood. Please proceed on that basis."
+      ],
+      "ja": [
+        "課長、12月1日火曜日の会議資料について確認させてください。参加者は25名でよろしいですか。",
+        "うん、25名だ。資料は1人2部ずつ準備してください。",
+        "分かりました。50部ですね。また、プレゼンテーションに関する通知はまだ取引先に送っていないため、参加者が確定した後に送ります。",
+        "分かりました。では、その内容で進めてください。"
       ]
     },
     "4": {
@@ -82,6 +120,24 @@
         "Vậy à. Cho đến khi xác nhận xong thì đừng in nhé. Ngay khi xác nhận xong thì in.",
         "Tôi đã rõ ạ. Ngoài ra, thông báo về buổi giới thiệu vẫn chưa gửi cho đối tác, nên sau khi chốt được người tham gia chúng tôi sẽ gửi.",
         "Hiểu rồi. Vậy cứ tiến hành theo nội dung đó nhé."
+      ],
+      "en": [
+        "I would like to confirm the new product launch event. How is the schedule looking?",
+        "Yes. The launch event will be held from 2 p.m. on Friday, November 27, in Meeting Room B. 40 people are expected to participate.",
+        "Understood. What about the materials?",
+        "The materials will be prepared for the 40 participants, 3 copies per person, for a total of 120 copies. In addition, the final confirmation has not yet been received from the department head.",
+        "I see. Until the confirmation is complete, please don't print them. As soon as the confirmation is complete, please print them.",
+        "Understood. In addition, the notice about the launch event has not yet been sent to the partner, so after the participants are finalized, we will send it.",
+        "Understood. Please proceed on that basis."
+      ],
+      "ja": [
+        "新製品発表会について確認したいのですが。スケジュールはどうなっていますか。",
+        "はい。発表会は11月27日金曜日の午後2時から、会議室Bで開催されます。参加者は40名の予定です。",
+        "分かりました。資料はどうですか。",
+        "資料は参加者40名分、1人3部ずつ、合計120部を準備します。また、最終確認はまだ部長からいただいていません。",
+        "そうですか。確認が終わるまでは印刷しないでください。確認が終わり次第、印刷してください。",
+        "分かりました。また、発表会に関する通知はまだ取引先に送っていないため、参加者が確定した後に送ります。",
+        "分かりました。では、その内容で進めてください。"
       ]
     }
   },

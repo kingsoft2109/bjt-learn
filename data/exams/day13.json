@@ -15,6 +15,12 @@
       "body": "各文の（　　）に入る最も適切なものを、A・B・C・Dの中から一つ選びなさい。",
       "vi": [
         "§1 — Với mỗi câu, hãy chọn đáp án đúng nhất trong A・B・C・D để điền vào chỗ trống （　　）."
+      ],
+      "en": [
+        "§1 — For each sentence, choose the most correct answer from A・B・C・D to fill in the blank （　　）."
+      ],
+      "ja": [
+        "§1 — 各文について、（　　）に入れる最も正しい答えをA・B・C・Dから選びなさい。"
       ]
     },
     "2": {
@@ -24,6 +30,12 @@
       "body": "各会話の（　　）に入る最も適切な表現を、A・B・C・Dの中から一つ選びなさい。",
       "vi": [
         "§2 — Với mỗi đoạn hội thoại, hãy chọn biểu hiện phù hợp nhất trong A・B・C・D để điền vào chỗ trống （　　）."
+      ],
+      "en": [
+        "§2 — For each conversation, choose the most appropriate expression from A・B・C・D to fill in the blank （　　）."
+      ],
+      "ja": [
+        "§2 — 各会話について、（　　）に入れる最も適切な表現をA・B・C・Dから選びなさい。"
       ]
     },
     "3": {
@@ -34,6 +46,14 @@
       "vi": [
         "Ngân sách chi phí đào tạo tháng 11 là 120 vạn yên. Thực tế: chi nhánh Tokyo 45 vạn yên, chi nhánh Osaka 32 vạn yên, chi nhánh Nagoya 28 vạn yên, tổng cộng 105 vạn yên.",
         "Dự báo tháng 12: chi nhánh Tokyo 50 vạn yên, chi nhánh Osaka 35 vạn yên, chi nhánh Nagoya 30 vạn yên, tổng cộng 115 vạn yên. Xin lưu ý, kế hoạch đào tạo mới ở Fukuoka vẫn chưa được phê duyệt nội bộ nên chưa tính vào dự báo tháng 12."
+      ],
+      "en": [
+        "The November training expense budget is 120 ten thousand yen. Actual figures: Tokyo branch 45 ten thousand yen, Osaka branch 32 ten thousand yen, Nagoya branch 28 ten thousand yen, 105 ten thousand yen in total.",
+        "December forecast: Tokyo branch 50 ten thousand yen, Osaka branch 35 ten thousand yen, Nagoya branch 30 ten thousand yen, 115 ten thousand yen in total. Please note that the new training plan in Fukuoka has not yet been approved internally, so it is not included in the December forecast."
+      ],
+      "ja": [
+        "11月の研修費用の予算は120万円です。実績：東京支店45万円、大阪支店32万円、名古屋支店28万円、合計105万円です。",
+        "12月の予測：東京支店50万円、大阪支店35万円、名古屋支店30万円、合計115万円です。なお、福岡での新しい研修の計画はまだ社内で承認されていないため、12月の予測には含まれていません。"
       ]
     },
     "4": {
@@ -45,6 +65,16 @@
         "Doanh số nửa đầu năm: trong nước 1.250 vạn yên, nước ngoài 860 vạn yên, tổng cộng 2.110 vạn yên.",
         "Dự báo doanh số nửa cuối năm: trong nước 1.400 vạn yên, nước ngoài 900 vạn yên, tổng cộng 2.300 vạn yên. Xin lưu ý, kế hoạch kinh doanh mới ở Kyushu vẫn chưa được Hội đồng quản trị phê duyệt nên chưa tính vào dự báo nửa cuối năm.",
         "Chi phí phát triển sản phẩm mới cho kỳ tới dự kiến là 500 vạn yên."
+      ],
+      "en": [
+        "Sales for the first half of the year: domestic 1,250 ten thousand yen, overseas 860 ten thousand yen, 2,110 ten thousand yen in total.",
+        "Sales forecast for the second half of the year: domestic 1,400 ten thousand yen, overseas 900 ten thousand yen, 2,300 ten thousand yen in total. Please note that the new business plan in Kyushu has not yet been approved by the Board of Directors, so it is not included in the forecast for the second half of the year.",
+        "The cost of developing new products for the next period is expected to be 500 ten thousand yen."
+      ],
+      "ja": [
+        "上半期の売上：国内1,250万円、海外860万円、合計2,110万円です。",
+        "下半期の売上予測：国内1,400万円、海外900万円、合計2,300万円です。なお、九州での新規事業の計画はまだ取締役会で承認されていないため、下半期の予測には含まれていません。",
+        "来期の新製品開発費用は500万円の見込みです。"
       ]
     }
   },

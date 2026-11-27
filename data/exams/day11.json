@@ -25,6 +25,20 @@
         "Nữ: Đã rõ, 60 bản ạ. Ngoài ra, việc xác nhận cuối cùng tài liệu vẫn chưa nhận được từ trưởng bộ phận, có sao không ạ?",
         "Nam: Ừ, giờ tôi sẽ xác nhận. Cho đến khi xác nhận xong thì đừng in nhé.",
         "Nữ: Đã rõ. Ngay khi xác nhận xong tôi sẽ in."
+      ],
+      "en": [
+        "Woman: Manager, let me confirm the documents for the meeting on Thursday, 12/11. The number of attendees is 20, is that correct?",
+        "Man: Yes, 20 people. Please prepare 3 copies of the documents per person.",
+        "Woman: Understood, 60 copies. Also, we haven't yet received the final confirmation of the documents from the department head — is that all right?",
+        "Man: Yes, I'll confirm it now. Please don't print until the confirmation is done.",
+        "Woman: Understood. I'll print as soon as the confirmation is done."
+      ],
+      "ja": [
+        "女：課長、11月12日木曜日の会議資料について確認させてください。出席者は20名でよろしいでしょうか。",
+        "男：うん、20名です。資料は1人3部ずつ準備してください。",
+        "女：承知いたしました。60部ですね。それから、資料の最終確認を部長からまだいただいておりませんが、よろしいでしょうか。",
+        "男：うん、今確認します。確認が終わるまでは印刷しないでください。",
+        "女：承知いたしました。確認が終わり次第、印刷いたします。"
       ]
     },
     "2": {
@@ -44,6 +58,20 @@
         "Nam: Vốn là vậy, nhưng vì lý do phía đối tác nên đổi sang 2 giờ chiều thứ Năm 12/11. Buổi báo cáo vẫn giữ 10 giờ sáng thứ Năm 12/11 nên sáng và chiều đều làm được cả.",
         "Nữ: Đã rõ. Tài liệu buổi báo cáo vẫn chưa được phê duyệt nên hôm đó chỉ giải thích phần tóm tắt thôi, đúng không ạ?",
         "Nam: Đúng vậy. Tài liệu sẽ gửi sau khi có phê duyệt."
+      ],
+      "en": [
+        "Man: Regarding the November schedule, there's a change.",
+        "Woman: Yes. The meeting with Company B is at 11 a.m. on Tuesday, 10/11, isn't it?",
+        "Man: That was the original plan, but due to circumstances on the partner's side, it has been changed to 2 p.m. on Thursday, 12/11. The report session remains at 10 a.m. on Thursday, 12/11, so both morning and afternoon can be done.",
+        "Woman: Understood. The documents for the report session haven't been approved yet, so on that day we'll only explain the summary, is that right?",
+        "Man: That's right. The documents will be sent after approval is granted."
+      ],
+      "ja": [
+        "男：11月のスケジュールについて、変更があります。",
+        "女：はい。B社との会議は11月10日火曜日の午前11時ですね。",
+        "男：もともとはそうでしたが、取引先の都合により、11月12日木曜日の午後2時に変更になりました。報告会は11月12日木曜日の午前10時のままですので、午前も午後も両方できます。",
+        "女：承知いたしました。報告会の資料はまだ承認されていないため、当日は要約部分のみ説明するのですね。",
+        "男：そのとおりです。資料は承認が下りてから送ります。"
       ]
     },
     "3": {
@@ -61,6 +89,18 @@
         "Nam: Đến thứ Sáu 20/11 có xuất hết được không?",
         "Nữ: Vâng. 15 chiếc còn lại dự kiến gửi đi trước thứ Sáu 20/11. Ngoài ra, hóa đơn vẫn chưa phát hành nên sẽ phát hành sau khi giao hàng.",
         "Nam: Đã rõ. Cứ tiến hành theo nội dung đó."
+      ],
+      "en": [
+        "Woman: Manager, I'd like to report the shipment progress. Out of a total of 50 units, 35 have been shipped, leaving 15.",
+        "Man: Can you ship all of them by Friday, 20/11?",
+        "Woman: Yes. The remaining 15 units are scheduled to be sent before Friday, 20/11. Also, the invoice hasn't been issued yet, so it will be issued after delivery.",
+        "Man: Understood. Please proceed as described."
+      ],
+      "ja": [
+        "女：課長、出荷の進捗についてご報告いたします。全50台のうち35台が出荷済みで、残りは15台です。",
+        "男：11月20日金曜日までにすべて出荷できますか。",
+        "女：はい。残りの15台は11月20日金曜日までに発送する予定です。それから、請求書はまだ発行されていないため、納品後に発行いたします。",
+        "男：分かりました。その内容で進めてください。"
       ]
     },
     "4": {
@@ -84,6 +124,24 @@
         "Nam: Vậy à. Cho đến khi xác nhận xong thì đừng in. Ngay khi xác nhận xong thì in nhé.",
         "Nữ: Đã rõ. Ngoài ra, thông báo về buổi thuyết trình vẫn chưa gửi cho đối tác nên ngay khi hội trường chốt xong sẽ gửi.",
         "Nam: Đã rõ. Cứ tiến hành theo nội dung đó."
+      ],
+      "en": [
+        "Man: I'd like to confirm about the presentation. How is the venue?",
+        "Woman: Yes. For the venue, Meeting Room A has been booked from 2 p.m. on Thursday, 19/11. The number of attendees is expected to be 30.",
+        "Man: Understood. What about the materials?",
+        "Man (lowering his voice): The materials are to be prepared for 30 people, 2 copies per person, 60 copies in total. In addition, the final confirmation has not yet been received from the department head.",
+        "Man: I see. Do not print them until the confirmation is complete. Please print them as soon as the confirmation is complete.",
+        "Woman: Understood. In addition, the notice about the presentation has not yet been sent to the business partner, so I will send it as soon as the venue is finalized.",
+        "Man: Understood. Please proceed as described."
+      ],
+      "ja": [
+        "男：プレゼンテーションについて確認したいのですが、会場はどうなりましたか。",
+        "女：はい。会場は11月19日木曜日の午後2時から会議室Aを予約しております。参加者は30名の予定です。",
+        "男：承知しました。資料はどうですか。",
+        "男（声を落として）：資料は30人分で、1人2部ずつ、合計60部です。それから、部長からの最終確認はまだいただいていません。",
+        "男：そうですか。確認が終わるまでは印刷しないでください。確認が終わったらすぐに印刷してくださいね。",
+        "女：承知しました。それから、プレゼンテーションのご案内はまだ取引先に送っていないので、会場が決まり次第送ります。",
+        "男：分かりました。その内容で進めてください。"
       ]
     }
   },
