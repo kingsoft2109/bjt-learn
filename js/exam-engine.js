@@ -72,7 +72,7 @@ ExamEngine.prototype.openExam = function(){
 ExamEngine.prototype.start = function(){
   if(this.started && !this.submitted) return;
   var status = el(this.p + 'StartStatus');
-  if(status) status.textContent = '問題を開いています…';
+  if(status) status.textContent = t('opening');
   this.started = true;
   var self = this;
   try{
@@ -98,7 +98,7 @@ ExamEngine.prototype.start = function(){
     try{
       this.openExam();
       try{ this.buildGroups(); this.renderPalette(); this.updateSubmitHint(); }catch(e3){}
-      if(status) status.textContent = '問題が開きました — 問題が見えない場合は、少し下にスクロールしてください。';
+      if(status) status.textContent = t('opened');
     }catch(e4){}
   }
 };
@@ -120,7 +120,7 @@ ExamEngine.prototype.buildGroups = function(){
     var st = document.createElement('div'); st.className = 'seg-title jp'; st.textContent = seg.title;
     var sd = document.createElement('div'); sd.className = 'seg-desc';
     if(self.hasAudio){
-      sd.textContent = seg.desc + (self.mode==='real' ? ' · 本番モード：この音声は1回だけ再生されます。' : ' · 練習モード：聞き直しできます。');
+      sd.textContent = seg.desc + (self.mode==='real' ? t('modeRealNote') : t('modePracNote'));
     } else {
       sd.textContent = seg.desc;
     }
@@ -130,7 +130,7 @@ ExamEngine.prototype.buildGroups = function(){
       var arow = document.createElement('div'); arow.className = 'audio-row';
       var pb = document.createElement('button');
       pb.type = 'button'; pb.className = 'play-btn'; pb.id = self.p + 'playBtn' + segNum;
-      pb.innerHTML = '<span class="tri">▶</span><span>音声 ' + segNum + '</span>';
+      pb.innerHTML = '<span class="tri">▶</span><span>' + t('audioLabel') + ' ' + segNum + '</span>';
       (function(s){ pb.addEventListener('click', function(){ self.playSegment(s); }); })(segNum);
       var ps = document.createElement('span'); ps.className = 'play-state'; ps.id = self.p + 'playState' + segNum;
       arow.appendChild(pb); arow.appendChild(ps);
@@ -162,7 +162,7 @@ ExamEngine.prototype.buildGroups = function(){
       var qn = document.createElement('span'); qn.className = 'q-num';
       var segLabel = cfg.segLabel || (isReading ? 'セット' : 'セット');
       var segName = cfg.segNames ? cfg.segNames[item.seg] : (isReading ? '' : '');
-      qn.textContent = '問題 ' + item.n + ' / ' + self.qCount + ' · ' + segLabel + ' ' + item.seg + (segName ? ' — ' + segName : '');
+      qn.textContent = t('questionWord') + ' ' + item.n + ' / ' + self.qCount + ' · ' + segLabel + ' ' + item.seg + (segName ? ' — ' + segName : '');
 
       var fb = document.createElement('button');
       fb.type = 'button'; fb.className = 'flag-btn'; fb.id = self.p + 'flagBtn' + item.n;
@@ -187,7 +187,7 @@ ExamEngine.prototype.buildGroups = function(){
         var qarow = document.createElement('div'); qarow.className = 'audio-row';
         var qpb = document.createElement('button');
         qpb.type = 'button'; qpb.className = 'play-btn'; qpb.id = self.p + 'qPlayBtn' + item.n;
-        qpb.innerHTML = '<span class="tri">▶</span><span>音声（問題 ' + item.n + '）</span>';
+        qpb.innerHTML = '<span class="tri">▶</span><span>' + t('audioOfQ') + item.n + '）</span>';
         (function(n){ qpb.addEventListener('click', function(){ self.playQuestion(n); }); })(item.n);
         var qps = document.createElement('span'); qps.className = 'play-state'; qps.id = self.p + 'qPlayState' + item.n;
         qarow.appendChild(qpb); qarow.appendChild(qps);
@@ -236,14 +236,14 @@ ExamEngine.prototype.renderPalette = function(){
   }
   var done = Object.keys(this.sel).filter(function(k){return self.sel[k];}).length;
   var palCount = el(this.p + 'PalCount');
-  if(palCount) palCount.textContent = this.submitted ? ('採点済み — 正解 ' + this.score() + ' / ' + this.qCount) : ('回答済み ' + done + ' / ' + this.qCount);
+  if(palCount) palCount.textContent = this.submitted ? (t('gradedCount') + this.score() + ' / ' + this.qCount) : (t('answeredCount') + done + ' / ' + this.qCount);
   this.updateFootNav();
 };
 
 ExamEngine.prototype.updateFootNav = function(){
   var fs = el(this.p + 'FootStatus');
   var done = Object.keys(this.sel).filter(function(k){return this.sel[k];}.bind(this)).length;
-  if(fs) fs.textContent = '表示中：問題 ' + this.current + ' / ' + this.qCount + ' · 回答済み ' + done + ' / ' + this.qCount;
+  if(fs) fs.textContent = t('showingQ') + this.current + ' / ' + this.qCount + ' · ' + t('answeredCount') + done + ' / ' + this.qCount;
 };
 
 ExamEngine.prototype.markActiveCard = function(){
@@ -279,7 +279,7 @@ ExamEngine.prototype.updateQuestion = function(n){
   var fb = el(this.p + 'flagBtn' + n);
   if(fb){
     fb.classList.toggle('on', !!this.flag[n]);
-    fb.textContent = this.flag[n] ? '⚑ フラグ済み — 押して解除' : '⚑ この問題にフラグ';
+    fb.textContent = this.flag[n] ? t('flagQOn') : t('flagQ');
   }
   var box = el(this.p + 'qOptions' + n);
   if(!box) return;
@@ -301,8 +301,8 @@ ExamEngine.prototype.updateSubmitHint = function(){
   var done = Object.keys(this.sel).filter(function(k){ return this.sel[k]; }.bind(this)).length;
   var hint = el(this.p + 'SubmitHint');
   if(hint) hint.textContent = done === this.qCount
-    ? 'すべて回答しました' + this.qCount + ' / ' + this.qCount + ' — 「提出」を押して採点しましょう。'
-    : '回答済み ' + done + ' / ' + this.qCount + ' — あと ' + (this.qCount - done) + ' 問が未選択です。「提出」を押して提出できます（空欄は不正解になります）。';
+    ? t('allAnsweredHead') + ' ' + this.qCount + ' / ' + this.qCount + t('submitTail')
+    : t('answeredCount') + done + ' / ' + this.qCount + t('remainingNote') + (this.qCount - done) + t('unansweredQs') + t('submitAnywayNote');
 };
 
 ExamEngine.prototype.pick = function(n, v){
@@ -351,8 +351,8 @@ ExamEngine.prototype.askSubmit = function(){
   for(var i=1;i<=this.qCount;i++){ if(!this.sel[i]) missing.push(i); }
   var modalText = el(this.p + 'ModalText');
   if(modalText) modalText.textContent = done===this.qCount
-    ? '全問回答しました：' + this.qCount + '/' + this.qCount + ' 問。提出して答えと解説を見ますか？'
-    : '回答済みはまだ ' + done + '/' + this.qCount + ' 問だけです。未回答の問題：' + missing.join(', ') + '。今提出すると空欄は不正解になります — それでも提出しますか？';
+    ? t('modalAllAnswered') + this.qCount + '/' + this.qCount + t('modalAllTail')
+    : t('modalPartialHead') + done + '/' + this.qCount + t('modalPartialMid') + missing.join(', ') + t('modalPartialTail');
   var modal = el(this.p + 'Modal');
   modal.classList.add('show');
   modal.style.display = 'flex';
@@ -389,7 +389,7 @@ ExamEngine.prototype.grade = function(auto){
       if(score >= this.cfg.scoreMessages[si].min){ scoreTitle = this.cfg.scoreMessages[si].text; break; }
     }
   }
-  el(this.p + 'ScoreTitle').textContent = scoreTitle || ('結果 ' + this.cfg.id);
+  el(this.p + 'ScoreTitle').textContent = scoreTitle || (t('resultWord') + this.cfg.id);
 
   var cfg = this.cfg;
   var self = this;
@@ -403,7 +403,7 @@ ExamEngine.prototype.grade = function(auto){
     var name = cfg.segNames ? cfg.segNames[s] : '';
     return segLabel + ' ' + s + (name ? ' (' + name + ')' : '') + ': ' + c + '/' + perSeg;
   });
-  el(this.p + 'ScoreDetail').textContent = (auto ? '⏱ 時間切れ — 自動で提出されました。' : '') + segScore.join('  ·  ');
+  el(this.p + 'ScoreDetail').textContent = (auto ? t('timeUp') : '') + segScore.join('  ·  ');
 
   var rv = el(this.p + 'Review'); rv.innerHTML = '';
   var lastSeg = 0;
@@ -415,7 +415,7 @@ ExamEngine.prototype.grade = function(auto){
       var segName = cfg.segNames ? cfg.segNames[item.seg] : '';
       var thtml = '<div class="q-num">' + segLabel + ' ' + item.seg + (segName ? ' — ' + segName : '') + '</div>';
       thtml += '<p class="q-text jp" style="font-size:16px;margin:6px 0 8px"></p>';
-      thtml += viTrHtml(seg.vi, '参考訳 — ' + segLabel + ' ' + item.seg);
+      thtml += viTrHtml(seg.vi, t('refTranslation') + segLabel + ' ' + item.seg);
       tcard.innerHTML = thtml;
       tcard.querySelector('.q-text').textContent = seg.subject || '';
       rv.appendChild(tcard);
@@ -426,10 +426,10 @@ ExamEngine.prototype.grade = function(auto){
     var segName2 = cfg.segNames ? cfg.segNames[item.seg] : '';
     var html = '<div class="q-num">問題 ' + item.n + ' · ' + segLabel + ' ' + item.seg + (segName2 ? ' — ' + segName2 : '') + '</div>';
     html += '<p class="q-text jp" style="font-size:17px;margin:6px 0 10px"></p>';
-    html += '<p style="margin:0 0 6px">あなたの答え：<strong>' + (self.sel[item.n] ? self.sel[item.n] + ' — ' : '未選択') + '</strong>' + (self.sel[item.n] ? '<span class="jp"></span>' : '') + '</p>';
-    html += '<p style="margin:0 0 6px">正しい答え：<strong>' + item.ans + ' — </strong><span class="jp"></span></p>';
-    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? '✓ 正解' : '✗ Sai');
-    if(item.trap) html += ' · 注意： ' + item.trap;
+    html += '<p style="margin:0 0 6px">' + t('yourAnswer') + '<strong>' + (self.sel[item.n] ? self.sel[item.n] + ' — ' : '未選択') + '</strong>' + (self.sel[item.n] ? '<span class="jp"></span>' : '') + '</p>';
+    html += '<p style="margin:0 0 6px">' + t('correctAnswerIs') + '<strong>' + item.ans + ' — </strong><span class="jp"></span></p>';
+    html += '<div class="verdict" style="font-weight:800;color:' + (isOk ? 'var(--ok)' : 'var(--bad)') + '">' + (isOk ? t('verdictOk') : t('verdictBad'));
+    if(item.trap) html += t('caution') + item.trap;
     html += '</div>';
     html += '<p style="margin:8px 0 0"></p>';
 
@@ -437,17 +437,17 @@ ExamEngine.prototype.grade = function(auto){
       lastSeg = item.seg;
       var segData = cfg.segments[item.seg];
       if(segData){
-        if(segData.mp3) html += reviewAudioHtml(segData.mp3, '聞き直し ' + segLabel.toLowerCase() + ' ' + item.seg);
+        if(segData.mp3) html += reviewAudioHtml(segData.mp3, t('replayListen') + segLabel.toLowerCase() + ' ' + item.seg);
         if(segData.lines){
           var tr = segData.lines.map(function(l){ return (typeof l === 'string') ? l : (l.text || ''); }).join('\n');
           html += '<div class="transcript jp"><strong>Transcript ' + segLabel.toLowerCase() + ' ' + item.seg + ':</strong>\n' + tr + '</div>';
         }
-        html += viTrHtml(segData.vi, '翻訳 ' + segLabel.toLowerCase() + ' ' + item.seg);
+        html += viTrHtml(segData.vi, t('translationWord') + ' ' + segLabel.toLowerCase() + ' ' + item.seg);
       }
     }
 
     if(!isReading && item.audio){
-      html += reviewAudioHtml(item.audio, '聞き直し 問題 ' + item.n + ' の音声');
+      html += reviewAudioHtml(item.audio, t('replayListen') + t('questionWord') + ' ' + item.n + t('audioSuffix'));
     }
 
     card.innerHTML = html;
@@ -457,7 +457,7 @@ ExamEngine.prototype.grade = function(auto){
     var ansSpan = spans[self.sel[item.n] ? 1 : 0];
     if(ansSpan) ansSpan.textContent = item.opts['1234'.indexOf(item.ans)];
     var ps = card.querySelectorAll('p');
-    ps[ps.length-1].textContent = item.explain;
+    var __pe = ps[ps.length-1]; __pe.textContent = pickExpl(item); __pe.setAttribute('data-expl-idx', regExpl(item));
     rv.appendChild(card);
   });
 
@@ -466,14 +466,14 @@ ExamEngine.prototype.grade = function(auto){
   if(wrong.length === 0){
     var tr0 = document.createElement('tr');
     var td0 = document.createElement('td'); td0.colSpan = 3; td0.style.color = 'var(--ok)';
-    td0.textContent = '間違えた問題はありません — 全 ' + this.qCount + ' 問正解です。🎉';
+    td0.textContent = t('noMistakes') + this.qCount + t('noMistakesTail');
     tr0.appendChild(td0); lb.appendChild(tr0);
   } else {
     wrong.forEach(function(q){
       var tr = document.createElement('tr');
-      var td1 = document.createElement('td'); td1.innerHTML = '<strong>問題 ' + q.n + '</strong><br>あなたの選択：' + (self.sel[q.n] || '—') + ' · 正解：' + q.ans;
+      var td1 = document.createElement('td'); td1.innerHTML = '<strong>' + t('questionWord') + ' ' + q.n + '</strong><br>' + t('yourChoice') + (self.sel[q.n] || '—') + t('correctIs') + q.ans;
       var td2 = document.createElement('td'); td2.textContent = q.trap;
-      var td3 = document.createElement('td'); td3.textContent = q.explain;
+      var td3 = document.createElement('td'); td3.textContent = pickExpl(q); td3.setAttribute('data-expl-idx', regExpl(q));
       tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3);
       lb.appendChild(tr);
     });
@@ -498,10 +498,10 @@ ExamEngine.prototype.reset = function(){
   el(this.p+'Result').classList.remove('show');
   el(this.p+'Review').innerHTML = '';
   var lb = el(this.p+'LogBody');
-  if(lb) lb.innerHTML = '<tr><td colspan="3" style="color:var(--muted)">データはまだありません — 上で提出すると、ミスノートに間違えた問題が自動で入ります。</td></tr>';
+  if(lb) lb.innerHTML = '<tr><td colspan="3" style="color:var(--muted)">' + t('noDataYet') + '</td></tr>';
   var ex = el(this.p+'Exam'); ex.classList.add('hidden'); ex.style.display = '';
   var g = el(this.p+'Groups'); if(g) g.innerHTML = '';
-  var h = el(this.p+'SubmitHint'); if(h) h.textContent = '回答済み 0 / ' + this.qCount + ' — 回答が終わったら「提出」を押して採点しましょう。';
+  var h = el(this.p+'SubmitHint'); if(h) h.textContent = t('answeredCount') + '0 / ' + this.qCount + t('submitHintTail');
   var sp = el(this.p+'Start'); sp.classList.remove('hidden'); sp.style.display = '';
   var st = el(this.p+'StartStatus'); if(st) st.textContent = '';
   window.scrollTo({top:0, behavior:'smooth'});
@@ -523,21 +523,21 @@ ExamEngine.prototype.currentAudioLabel = function(){
 ExamEngine.prototype.refreshOnePlayUI = function(seg){
   var btn = el(this.p + 'playBtn' + seg), st = el(this.p + 'playState' + seg);
   if(!btn || !st) return;
-  if(this.speaking && this.audioSeg===seg && !this.audioQ){ btn.disabled = true; st.textContent = '音声 ' + seg + '…'; return; }
-  if(this.mode==='real' && this.plays[seg]>=1){ btn.disabled = true; st.textContent = '音声 ' + seg + ' は1/1回再生済みです（本番モード）。'; return; }
+  if(this.speaking && this.audioSeg===seg && !this.audioQ){ btn.disabled = true; st.textContent = t('audioLabel') + ' ' + seg + '…'; return; }
+  if(this.mode==='real' && this.plays[seg]>=1){ btn.disabled = true; st.textContent = t('audioLabel') + ' ' + seg + t('playedOnceReal'); return; }
   btn.disabled = false;
-  if(this.speaking){ st.textContent = this.currentAudioLabel() + ' を再生中 — このボタンを押すと停止し、代わりに音声 ' + seg + '.'; return; }
-  st.textContent = this.plays[seg]>0 ? ('再生済み ' + this.plays[seg] + ' 回' + (this.mode==='practice' ? ' — 聞き直しできます。' : '')) : '未再生 — 押して音声 ' + seg + '.';
+  if(this.speaking){ st.textContent = this.currentAudioLabel() + t('playingNowSeg') + seg + '.'; return; }
+  st.textContent = this.plays[seg]>0 ? (t('playedTimes') + this.plays[seg] + t('timesSuffix') + (this.mode==='practice' ? t('replaySuffix') : '')) : t('notPlayedSeg') + seg + '.';
 };
 
 ExamEngine.prototype.refreshOneQPlayUI = function(n){
   var btn = el(this.p + 'qPlayBtn' + n), st = el(this.p + 'qPlayState' + n);
   if(!btn || !st) return;
-  if(this.speaking && this.audioQ===n){ btn.disabled = true; st.textContent = '問題 ' + n + ' の音声を再生中…'; return; }
-  if(this.mode==='real' && (this.qPlays[n]||0)>=1){ btn.disabled = true; st.textContent = 'この音声は1/1回再生済みです（本番モード）。'; return; }
+  if(this.speaking && this.audioQ===n){ btn.disabled = true; st.textContent = t('questionWord') + ' ' + n + t('playingQAudio'); return; }
+  if(this.mode==='real' && (this.qPlays[n]||0)>=1){ btn.disabled = true; st.textContent = t('thisAudioPlayedOnce'); return; }
   btn.disabled = false;
-  if(this.speaking){ st.textContent = this.currentAudioLabel() + ' を再生中 — このボタンを押すと停止し、代わりにこの音声を再生します。'; return; }
-  st.textContent = (this.qPlays[n]||0)>0 ? ('再生済み ' + this.qPlays[n] + ' 回' + (this.mode==='practice' ? ' — 聞き直しできます。' : '')) : '未再生 — 押してこの問題の音声を聞きましょう。';
+  if(this.speaking){ st.textContent = this.currentAudioLabel() + t('playingNow'); return; }
+  st.textContent = (this.qPlays[n]||0)>0 ? (t('playedTimes') + this.qPlays[n] + t('timesSuffix') + (this.mode==='practice' ? t('replaySuffix') : '')) : t('notPlayedQ');
 };
 
 ExamEngine.prototype.setPlayState = function(seg, msg){
@@ -617,7 +617,7 @@ ExamEngine.prototype._play = function(o){
     if(self.playWatchdog){ clearTimeout(self.playWatchdog); self.playWatchdog = null; }
     self.player = null; self.speaking = false;
     self.refreshPlayUI();
-    o.setState('音声ファイルを読み込めませんでした — ネットワーク接続を確認して、もう一度再生してください。');
+    o.setState(t('audioLoadFail'));
   };
   var wdWaits = 0;
   function armStartWatchdog(){
@@ -628,31 +628,31 @@ ExamEngine.prototype._play = function(o){
       var loading = false;
       try{ loading = (a.readyState > 0) || (a.networkState === 2) || (a.buffered && a.buffered.length > 0); }catch(e){}
       if(loading && wdWaits < 5){
-        o.setState('読み込み中：' + o.loadingLabel + '… ネットワークが少し遅いです。もう少しお待ちください。');
+        o.setState(t('loadingLabel') + o.loadingLabel + t('audioSlowNet'));
         armStartWatchdog();
         return;
       }
       if(!loading && wdWaits === 1 && typeof bjtAutoRetryOnce === 'function' && bjtAutoRetryOnce(o.retryKey)){
         self.stopAudio();
         self._play(o);
-        o.setState('最初の再生が止まりました — 自動でもう一度再生を試みています…');
+        o.setState(t('audioRetry'));
         return;
       }
       self.stopAudio();
       self.refreshPlayUI();
-      o.setState('音声がまだ再生できません — もう一度再生ボタンを押してください。');
+      o.setState(t('audioNotReady'));
     }, 8000);
   }
   bjtStartAudio(a, o.url, {
     isCurrent: function(){ return self.player===a; },
     arm: armStartWatchdog,
-    onLoading: function(){ o.setState('読み込み中：' + o.loadingLabel + '…'); },
+    onLoading: function(){ o.setState(t('loadingLabel') + o.loadingLabel + '…'); },
     onBlocked: function(){
       if(self.player!==a || counted) return;
       if(self.playWatchdog){ clearTimeout(self.playWatchdog); self.playWatchdog = null; }
       self.player = null; self.speaking = false;
       self.refreshPlayUI();
-      o.setState('ブラウザが音声の再生をブロックしました — もう一度再生ボタンを押してください。');
+      o.setState(t('audioBlocked'));
     }
   });
 };
@@ -680,73 +680,73 @@ ExamEngine.prototype.generateHTML = function(){
   html += '<div class="cbt-head"><div>';
   html += '<h1>' + cfg.title + '</h1>';
   html += '<div class="sub">' + cfg.subtitle + '</div>';
-  html += '<div class="mode-row"><span class="lbl">モード：</span>';
+  html += '<div class="mode-row"><span class="lbl" data-i18n="mode">モード：</span>';
   if(this.hasAudio){
-    html += '<button class="mode-btn active" id="modeReal' + suffix + '">本番 — 音声は1回だけ再生</button>';
-    html += '<button class="mode-btn" id="modePrac' + suffix + '">練習 — 聞き直し可能</button>';
+    html += '<button class="mode-btn active" data-i18n="modeReal" id="modeReal' + suffix + '">本番 — 音声は1回だけ再生</button>';
+    html += '<button class="mode-btn" data-i18n="modePractice" id="modePrac' + suffix + '">練習 — 聞き直し可能</button>';
   } else {
-    html += '<button class="mode-btn active" id="modeReal' + suffix + '">本番</button>';
-    html += '<button class="mode-btn" id="modePrac' + suffix + '">練習</button>';
+    html += '<button class="mode-btn active" data-i18n="modeRealShort" id="modeReal' + suffix + '">本番</button>';
+    html += '<button class="mode-btn" data-i18n="modePracShort" id="modePrac' + suffix + '">練習</button>';
   }
   html += '</div></div>';
   html += '<div class="cbt-timer"><div class="t" id="' + p + 'Timer">' + fmtT(cfg.timeSeconds) + '</div>';
-  html += '<div class="lbl">残り時間</div></div></div>';
+  html += '<div class="lbl" data-i18n="remainingTime">残り時間</div></div></div>';
 
   html += '<section class="start-panel" id="' + p + 'Start">';
-  html += '<h2>受験の案内 — 開始を押す前に読んでください</h2>';
+  html += '<h2 data-i18n="startGuide">受験の案内 — 開始を押す前に読んでください</h2>';
   html += '<div class="start-grid"><div>';
   html += cfg.instructions || '';
-  html += '<p style="margin-top:14px"><button class="btn btn-primary" id="' + p + 'StartBtn" type="button" style="font-size:16px">開始</button></p>';
+  html += '<p style="margin-top:14px"><button class="btn btn-primary" id="' + p + 'StartBtn" type="button" style="font-size:16px" data-i18n="start">開始</button></p>';
   html += '<p class="start-status" id="' + p + 'StartStatus" role="status" aria-live="polite"></p>';
-  html += '<p class="note js-warn" id="' + p + 'JsWarn">ページを読み込み中…</p>';
+  html += '<p class="note js-warn" id="' + p + 'JsWarn" data-i18n="pageLoading">ページを読み込み中…</p>';
   html += '</div><div>';
   if(cfg.candidateInfo){
     html += '<div class="candidate" aria-label="試験情報">';
     var ci = cfg.candidateInfo;
-    html += '<div><span>科目</span><b class="jp">' + (ci.subject||'') + '</b></div>';
-    html += '<div><span>問題数</span><b>' + (ci.questionInfo||'') + '</b></div>';
-    html += '<div><span>時間</span><b>' + (ci.time||'') + '</b></div>';
-    if(ci.format) html += '<div><span>形式</span><b class="jp">' + ci.format + '</b></div>';
+    html += '<div><span data-i18n="subject">科目</span><b class="jp">' + (ci.subject||'') + '</b></div>';
+    html += '<div><span data-i18n="qCount">問題数</span><b>' + (ci.questionInfo||'') + '</b></div>';
+    html += '<div><span data-i18n="timeLabel">時間</span><b>' + (ci.time||'') + '</b></div>';
+    if(ci.format) html += '<div><span data-i18n="formatLabel">形式</span><b class="jp">' + ci.format + '</b></div>';
     html += '</div>';
   }
   if(cfg.tips) html += '<div class="note" style="margin-top:14px">' + cfg.tips + '</div>';
   html += '</div></div></section>';
 
   html += '<section id="' + p + 'Exam" class="hidden"><div class="cbt-layout">';
-  html += '<aside class="palette"><h3>問題一覧</h3>';
+  html += '<aside class="palette"><h3 data-i18n="qList">問題一覧</h3>';
   html += '<div class="count" id="' + p + 'PalCount">回答済み 0 / ' + this.qCount + '</div>';
   html += '<div class="pal-grid" id="' + p + 'PalGrid"></div>';
-  html += '<div class="legend"><span><i style="background:var(--card)"></i>未回答</span>';
-  html += '<span><i style="background:var(--ok);border-color:var(--ok)"></i>選択済み</span>';
-  html += '<span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i>表示中</span>';
-  html += '<span>⚑ フラグ済み</span></div>';
-  html += '<button class="btn btn-primary submit-wide" id="' + p + 'SubmitBtnSide" type="button">提出</button>';
-  html += '<div class="kbd-hint">ショートカット：<kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> で答えを選択 · <kbd>←</kbd> <kbd>→</kbd> で問題を移動</div>';
+  html += '<div class="legend"><span><i style="background:var(--card)"></i><span data-i18n="unanswered">未回答</span></span>';
+  html += '<span><i style="background:var(--ok);border-color:var(--ok)"></i><span data-i18n="answeredMark">選択済み</span></span>';
+  html += '<span><i style="background:var(--card);outline:3px solid var(--accent);outline-offset:-1px"></i><span data-i18n="showing">表示中</span></span>';
+  html += '<span data-i18n="flaggedMark">⚑ フラグ済み</span></div>';
+  html += '<button class="btn btn-primary submit-wide" id="' + p + 'SubmitBtnSide" type="button" data-i18n="submit">提出</button>';
+  html += '<div class="kbd-hint" data-i18n-html="kbdHint">ショートカット：<kbd>A</kbd> <kbd>B</kbd> <kbd>C</kbd> <kbd>D</kbd> で答えを選択 · <kbd>←</kbd> <kbd>→</kbd> で問題を移動</div>';
   html += '</aside>';
   html += '<div class="cbt-main"><div id="' + p + 'Groups"></div>';
   html += '<div class="cbt-footnav">';
-  html += '<button class="nav-btn" id="' + p + 'PrevBtn" type="button">← 前の問題</button>';
+  html += '<button class="nav-btn" id="' + p + 'PrevBtn" type="button" data-i18n="prevQ">← 前の問題</button>';
   html += '<span class="foot-status" id="' + p + 'FootStatus">問題 1 / ' + this.qCount + '</span>';
-  html += '<button class="nav-btn primary" id="' + p + 'NextBtn" type="button">次の問題 →</button>';
+  html += '<button class="nav-btn primary" id="' + p + 'NextBtn" type="button" data-i18n="nextQ">次の問題 →</button>';
   html += '</div></div></div>';
   html += '<div class="d1-submitbar">';
   html += '<p id="' + p + 'SubmitHint">回答済み 0 / ' + this.qCount + ' — 回答が終わったら「提出」を押して採点しましょう。</p>';
-  html += '<button class="btn btn-primary" id="' + p + 'SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px">提出</button>';
+  html += '<button class="btn btn-primary" id="' + p + 'SubmitBtnBottom" type="button" style="font-size:16px;padding:14px 34px" data-i18n="submit">提出</button>';
   html += '</div></section>';
 
   html += '<section class="result-panel" id="' + p + 'Result">';
   html += '<div class="big" id="' + p + 'ScoreBig">0 / ' + this.qCount + '</div>';
   html += '<h2 id="' + p + 'ScoreTitle">結果</h2>';
   html += '<p id="' + p + 'ScoreDetail"></p>';
-  html += '<p style="font-size:14px">各問題の詳細（解説付き）とミスノートはすぐ下にあります。</p>';
-  html += '<button class="btn" style="background:#fff;color:#14365e;margin-top:10px" id="' + p + 'ResetBtn">↺ もう一度</button>';
+  html += '<p style="font-size:14px" data-i18n="resultDetailNote">各問題の詳細（解説付き）とミスノートはすぐ下にあります。</p>';
+  html += '<button class="btn" style="background:#fff;color:#14365e;margin-top:10px" id="' + p + 'ResetBtn" data-i18n="retry">↺ もう一度</button>';
   html += '</section>';
   html += '<div id="' + p + 'Review"></div>';
 
-  html += '<h2 class="section-title">ミスノート</h2>';
-  html += '<p class="section-sub">提出後、間違えた問題がここに自動で一覧表示されます。</p>';
+  html += '<h2 class="section-title" data-i18n="mistakeNote">ミスノート</h2>';
+  html += '<p class="section-sub" data-i18n="mistakeNoteSub">提出後、間違えた問題がここに自動で一覧表示されます。</p>';
   html += '<div class="card" style="padding:6px 6px"><div class="log-wrap">';
-  html += '<table class="log"><thead><tr><th style="width:70px">問題</th><th style="width:180px">注意点の種類</th><th>覚えるポイント</th></tr></thead>';
+  html += '<table class="log"><thead><tr><th style="width:70px" data-i18n="questionWord">問題</th><th style="width:180px" data-i18n="logColTrap">注意点の種類</th><th data-i18n="logColPoint">覚えるポイント</th></tr></thead>';
   html += '<tbody id="' + p + 'LogBody"><tr><td colspan="3" style="color:var(--muted)">データはまだありません — 上で提出すると、ミスノートに間違えた問題が自動で入ります。</td></tr></tbody>';
   html += '</table></div></div>';
 
@@ -754,11 +754,11 @@ ExamEngine.prototype.generateHTML = function(){
   html += '</main>';
 
   html += '<div class="modal-overlay" id="' + p + 'Modal" role="dialog" aria-modal="true">';
-  html += '<div class="modal"><h3>提出しますか？</h3>';
+  html += '<div class="modal"><h3 data-i18n="submitConfirm">提出しますか？</h3>';
   html += '<p id="' + p + 'ModalText"></p>';
   html += '<div class="row">';
-  html += '<button class="btn btn-ghost" id="' + p + 'ModalCancel" type="button">続ける</button>';
-  html += '<button class="btn btn-primary" id="' + p + 'ModalConfirm" type="button">提出</button>';
+  html += '<button class="btn btn-ghost" id="' + p + 'ModalCancel" type="button" data-i18n="continueBtn">続ける</button>';
+  html += '<button class="btn btn-primary" id="' + p + 'ModalConfirm" type="button" data-i18n="submit">提出</button>';
   html += '</div></div></div>';
 
   return html;
