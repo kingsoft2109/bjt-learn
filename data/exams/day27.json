@@ -150,6 +150,8 @@
       "ans": "1",
       "trap": "スタッフの行動 — 他の人の行動と取り違えないこと",
       "explain": "Trong ảnh, nhân viên nữ đang đưa tờ rơi (パンフレット) cho khách nam; 2/3/4 không có ai làm trong ảnh (bẫy gắn nhầm người ↔ hành động — vị khách khác chỉ cầm túi tote đứng chờ, không phải nhân viên).",
+      "explain_en": "In the picture, the female staff member is handing a leaflet (パンフレット) to a male customer; nobody is doing 2/3/4 in the picture (the trap misattaching person ↔ action — another customer is only standing and waiting holding a tote bag, and is not a staff member).",
+      "explain_ja": "写真では、女性店員が男性客にチラシ（パンフレット）を渡しています。2/3/4は写真の中で誰もしていません（人と行動を結び付け間違えるわな — 別の客はトートバッグを持って立って待っているだけで、店員ではありません）。",
       "img": "assets/day27-L1a-scene.jpg",
       "audio": "assets/day27-L1-q1.mp3"
     },
@@ -166,6 +168,8 @@
       "ans": "2",
       "trap": "バナーの文字 — 絵の文字を正確に読むこと",
       "explain": "Băng rôn lớn sau lưng nhân viên ghi rõ 「新製品発表会」; các lựa chọn còn lại đều là chữ thường thấy trên băng rôn/poster nhưng không có trong ảnh này.",
+      "explain_en": "The large banner behind the staff member clearly says 「新製品発表会」; the other options are all wording commonly seen on banners/posters but not in this picture.",
+      "explain_ja": "店員の後ろの大きな横断幕には「新製品発表会」とはっきり書かれています。ほかの選択肢はどれも横断幕やポスターによくある言葉ですが、この写真にはありません。",
       "img": "assets/day27-L1b-scene.jpg",
       "audio": "assets/day27-L1-q2.mp3"
     },
@@ -182,6 +186,8 @@
       "ans": "2",
       "trap": "時計の時刻 — 長針と短針を読み分けること",
       "explain": "Kim giờ chỉ số 10, kim phút chỉ số 12 → 午前10時; 1/3/4 là các giờ hay gặp trong đề nghe, không khớp đồng hồ trong ảnh.",
+      "explain_en": "The hour hand points to 10 and the minute hand to 12 → 午前10時; 1/3/4 are times often seen in listening tests and do not match the clock in the picture.",
+      "explain_ja": "短針が10、長針が12を指しています → 午前10時です。1/3/4は聴解問題によく出る時間で、写真の時計とは一致しません。",
       "img": "assets/day27-L1c-scene.jpg",
       "audio": "assets/day27-L1-q3.mp3"
     },
@@ -199,6 +205,8 @@
       "audio": "assets/day27-L2-q4.mp3",
       "trap": "佐藤は11時に戻る — 11時は戻る時間",
       "explain": "Khách đã hẹn 11 giờ với 佐藤 → lễ tân báo 佐藤 đang họp, khoảng 11 giờ về là phù hợp nhất (câu trả lời phải mở ra bước tiếp theo: chờ/gọi lại); 2 đảo ngược (11 giờ là giờ VỀ, không phải giờ đi); 3 bịa thêm nghỉ làm; 4 gắn nhầm tên (鈴木 là khách, không phải người đang họp).",
+      "explain_en": "The customer has an appointment at 11 o'clock with 佐藤 → the receptionist saying 佐藤 is in a meeting and will be back around 11 o'clock is the most appropriate (the reply must open up the next step: wait / call again); 2 is reversed (11 o'clock is the time he RETURNS, not the time he leaves); 3 invents a day off; 4 attaches the wrong name (鈴木 is the customer, not the person in the meeting).",
+      "explain_ja": "客は11時に佐藤と約束しています → 受付が佐藤は会議中で、11時ごろに戻ると言うのが最も適切です（返答は次のステップにつながるものでなければなりません：待つ／かけ直す）。2は逆です（11時は戻る時間で、出かける時間ではありません）。3は休みを作り上げています。4は名前を結び付け間違えています（鈴木は客で、会議中の人ではありません）。",
       "img": "assets/day27-seg2-q4.jpg"
     },
     {
@@ -215,6 +223,8 @@
       "audio": "assets/day27-L2-q5.mp3",
       "trap": "新しい時間は午後2時",
       "explain": "Giờ mới là 午後2時 (đổi từ 午前10時 sang 午後2時 ngày 11月24日) → xác nhận lại giờ mới + cảm ơn; 2 giữ giờ cũ 午前10時; 3 bịa thành hủy thăm; 4 nói \"tôi sẽ đổi\" trong khi nhân viên đã xác nhận xong — sai vai.",
+      "explain_en": "The new time is 午後2時 (changed from 午前10時 to 午後2時 on 11月24日) → confirming the new time again + thanking; 2 keeps the old time 午前10時; 3 invents a cancellation of the visit; 4 says \"I will change it\" even though the staff member has already finished confirming — wrong role.",
+      "explain_ja": "新しい時間は午後2時です（午前10時から11月24日の午後2時に変更）→ 新しい時間を再確認してお礼を言います。2は古い時間の午前10時のままです。3は訪問の中止を作り上げています。4は店員がすでに確認を終えたのに「私が変更します」と言っており、役割が間違いです。",
       "img": "assets/day27-seg2-q5.jpg"
     },
     {
@@ -231,6 +241,8 @@
       "audio": "assets/day27-L2-q6.mp3",
       "trap": "はじめましてのあいさつ — こちらこそ",
       "explain": "Sau khi đối tác tự giới thiệu đáp lại lời chào lần đầu gặp, khách đáp bằng câu chào tương xứng (こちらこそ… + よろしくお願いいたします) là phù hợp nhất; 2 là câu mở đầu của phía gọi điện/thăm hỏi, không phải câu đáp chào lần đầu; 3 là câu xin lỗi, không khớp ngữ cảnh chào hỏi; 4 quá mơ hồ, không phải câu chào.",
+      "explain_en": "After the partner introduces themselves in return in a first-meeting greeting, the customer replying with a matching greeting (こちらこそ… + よろしくお願いいたします) is the most appropriate; 2 is an opening line for the side phoning/visiting, not a reply to a first greeting; 3 is an apology, which does not fit the greeting context; 4 is too vague and is not a greeting.",
+      "explain_ja": "初めての挨拶に対して相手が自己紹介で応じた後、客が釣り合う挨拶（こちらこそ… + よろしくお願いいたします）で返すのが最も適切です。2は電話をかける側・訪問する側の切り出しの言葉で、初めての挨拶への返答ではありません。3は謝罪で、挨拶の文脈に合いません。4は漠然としすぎていて、挨拶ではありません。",
       "img": "assets/day27-seg2-q6.jpg"
     },
     {
@@ -246,6 +258,8 @@
       "ans": "3",
       "trap": "総数・検品済み・不良品・残りの項目名を付けること",
       "explain": "全部800個 − 検品済み650個 = 残り150個; 800個 là tổng số; 650個 là số ĐÃ kiểm xong; 30個 là số lỗi (bẫy nhãn số: tổng / đã xong / còn lại — cùng họ lỗi Ngày 23 Câu 7).",
+      "explain_en": "全部800個 − 検品済み650個 = 残り150個; 800個 is the total; 650個 is the number ALREADY inspected; 30個 is the number of defects (the number-label trap: total / done / remaining — the same error family as Day 23, Question 7).",
+      "explain_ja": "全部800個 − 検品済み650個 = 残り150個です。800個は総数、650個はすでに検品が終わった数、30個は不良品の数です（数字のラベルのわな：総数／済み／残り — 23日目7問と同じタイプのミスです）。",
       "img": "assets/day27-seg3-q7.jpg"
     },
     {
@@ -261,6 +275,8 @@
       "ans": "1",
       "trap": "不良品は30個 — 返品は12月1日",
       "explain": "650個 đã kiểm có 30個不良品; 2 gắn nhầm số còn lại 150個 vào số lỗi; 3 sai thời điểm — 返品 là 12月1日火曜日 (theo lịch đã định), không phải 今日中; 4 mâu thuẫn (đã tìm thấy 30個）.",
+      "explain_en": "Of the 650個 inspected, there are 30個不良品; 2 wrongly attaches the remaining number 150個 to the defect count; 3 is the wrong timing — 返品 is on 12月1日火曜日 (per the set schedule), not 今日中; 4 contradicts (30個 have already been found).",
+      "explain_ja": "検品した650個の中に30個不良品があります。2は残りの数150個を不良品の数に結び付け間違えています。3は時期が違います — 返品は12月1日火曜日（決められた予定どおり）で、今日中ではありません。4は矛盾します（30個はすでに見つかっています）。",
       "img": "assets/day27-seg3-q8.jpg"
     },
     {
@@ -276,6 +292,8 @@
       "ans": "2",
       "trap": "まだ〜ていない（未＋結果）",
       "explain": "追加の発注はまだ決まっていません — bẫy まだ〜ていない (dạng Nghe, sạch từ Ngày 14); hệ quả: 検品が終わってから決める. 1 là bẫy \"đã xong rồi\" mặc định; 3/4 bịa thêm kết luận chưa được nêu.",
+      "explain_en": "追加の発注はまだ決まっていません — the まだ〜ていない trap (Listening form, clean since Day 14); the consequence: 検品が終わってから決める. 1 is the default \"already done\" trap; 3/4 invent conclusions that were not stated.",
+      "explain_ja": "追加の発注はまだ決まっていません — まだ〜ていないのわなです（聴解の形、14日目からきれいに聞き取れています）。その結果、検品が終わってから決める、となります。1は「もう終わった」という思い込みのわなです。3/4は述べられていない結論を作り上げています。",
       "img": "assets/day27-seg3-q9.jpg"
     },
     {
@@ -291,6 +309,8 @@
       "ans": "1",
       "trap": "締め切り・審査結果・融資実行の3つの日を結びつけること",
       "explain": "申し込みの締め切りは12月1日火曜日; 2 là ngày biết kết quả審査 (12月10日木曜日）; 3 là ngày融資実行予定 (12月15日火曜日）; 4 ghép ngày của締め切り với thứ của ngày khác — bẫy gắn chéo ngày↔vai trò (cùng họ lỗi Ngày 14/20/22/23: 3 ngày 3 vai trò trong một đoạn).",
+      "explain_en": "申し込みの締め切りは12月1日火曜日; 2 is the date the 審査 result is known (12月10日木曜日); 3 is the date the 融資 is scheduled to be executed (12月15日火曜日); 4 combines the 締め切り date with the weekday of another date — the trap cross-attaching date ↔ role (the same error family as Days 14/20/22/23: 3 dates, 3 roles in one passage).",
+      "explain_ja": "申し込みの締め切りは12月1日火曜日です。2は審査の結果が分かる日（12月10日木曜日）、3は融資実行予定の日（12月15日火曜日）です。4は締め切りの日付と別の日の曜日を組み合わせています — 日付と役割を結び付け間違えるわなです（14/20/22/23日目と同じタイプのミスです：1つの文章に3つの日付、3つの役割）。",
       "img": "assets/day27-seg4-q10.jpg"
     },
     {
@@ -306,6 +326,8 @@
       "ans": "3",
       "trap": "必要・手元・不足の項目名を付けること",
       "explain": "必要500万円 − 手元300万円 = 不足200万円; 500万円 là số CẦN; 300万円 là số ĐANG CÓ; 800万円 = 500+300 (cộng nhầm tổng với số đang có — cùng họ lỗi Ngày 23 Câu 7/11: tổng / đã có / còn thiếu, giá / số lượng).",
+      "explain_en": "必要500万円 − 手元300万円 = 不足200万円; 500万円 is the amount NEEDED; 300万円 is the amount ON HAND; 800万円 = 500+300 (wrongly adding the total to the amount on hand — the same error family as Day 23, Questions 7/11: total / on hand / shortfall, price / quantity).",
+      "explain_ja": "必要500万円 − 手元300万円 = 不足200万円です。500万円は必要な額、300万円は手元にある額です。800万円 = 500+300（総数と手元の額を足した計算 — 23日目7/11問と同じタイプのミスです：総数／手元／不足、価格／数量）。",
       "img": "assets/day27-seg4-q11.jpg"
     },
     {
@@ -321,6 +343,8 @@
       "ans": "2",
       "trap": "まだ〜ていない（未＋結果）",
       "explain": "審査はまだ終わっていません — bẫy まだ〜ていない + bẫy \"chưa được phê duyệt → không tính vào\": kết quả審査 dự kiến 12月10日ごろ, 融資実行 12月15日 chỉ là予定, chưa phải đã quyết. 1/3 là bẫy \"đã xong rồi\" mặc định; 4 bịa thêm kết luận.",
+      "explain_en": "審査はまだ終わっていません — the まだ〜ていない trap + the \"not yet approved → do not count it in\" trap: the 審査 result is expected around 12月10日ごろ, and the 融資実行 on 12月15日 is only a 予定, not yet decided. 1/3 are the default \"already done\" traps; 4 invents a conclusion.",
+      "explain_ja": "審査はまだ終わっていません — まだ〜ていないのわな＋「まだ承認されていない → 含めない」のわなです。審査の結果は12月10日ごろの予定で、12月15日の融資実行も予定にすぎず、まだ決まっていません。1/3は「もう終わった」という思い込みのわなです。4は結論を作り上げています。",
       "img": "assets/day27-seg4-q12.jpg"
     }
   ],
