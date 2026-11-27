@@ -1806,11 +1806,12 @@ function bjtStartAudio(a, url, opts){
     if(p && p.catch){ p.catch(function(){ if(opts.onBlocked) opts.onBlocked(); }); }
   }
   if(bjtBlobUrls[url]){ go(bjtBlobUrls[url]); return; }
-  if(opts.onLoading) opts.onLoading();
-  /* Làn ưu tiên: đoạn vừa được bấm Phát tải ngay, không xếp hàng sau
-     các đoạn đang tải nền của đề. */
-  bjtFetchBlob(url, function(u){ go(u || url); }, true);
-  setTimeout(function(){ go(url); }, 25000);
+  /* iOS FIX 23/11/2026: phát NGAY bằng URL gốc, trong cùng thao tác bấm.
+     Trước đây hàm chờ fetch blob xong mới play() — lệnh phát rơi ngoài
+     cửa sổ thao tác chạm nên iOS Safari chặn (NotAllowedError) và audio
+     không phát được. Blob chỉ tải nền để lần phát sau dùng lại. */
+  go(url);
+  bjtFetchBlob(url, null, true);
 }
 var bjtRetryMarks = {};
 function bjtAutoRetryOnce(key){
