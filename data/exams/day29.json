@@ -1,0 +1,318 @@
+{
+ "id": "day29",
+ "type": "choudokkai",
+ "title": "第29回 — 練習 <span class=\"jp\">聴読解</span>",
+ "subtitle": "4セット · 12問 · <span class=\"jp\">状況把握</span>（出張の予定変更 + プリンターの不具合） · <span class=\"jp\">資料聴読解</span>（備品カタログ） · <span class=\"jp\">総合聴読解</span>（採用面接スケジュール） · 2026年11月27日（金）",
+ "timeSeconds": 2400,
+ "questionCount": 12,
+ "segmentCount": 4,
+ "segLabel": "セット",
+ "segments": {
+  "1": {
+   "title": "第1問 — 状況把握（出張の予定変更 + 経費精算）",
+   "mp3": "assets/ngay29-doan1.mp3",
+   "desc": "問題1–3 · 資料はありません — 会話だけを聞いて、話の内容と、これからすることを推測しましょう。飛行機の時間が午前9時から午後1時に変わり、打ち合わせは12月4日金曜日の午前10時、経費精算書は12月7日月曜日までに提出します。",
+   "lines": [
+    "課長、12月3日木曜日の出張の件でご相談があります。",
+    "どうしたのかな。",
+    "はい。飛行機の時間が変更になりまして、午前9時の便が、午後1時の便になりました。そのため、ホテルのチェックインも、午後3時以降になります。",
+    "分かった。では、現地での打ち合わせは、12月4日金曜日の午前10時からで大丈夫かな。",
+    "はい、問題ありません。なお、経費精算書は、12月7日月曜日までに提出いたします。",
+    "よろしく頼むよ。"
+   ],
+   "vi": [
+    "Thưa trưởng phòng, tôi có việc muốn trao đổi về chuyến công tác ngày thứ Năm 3 tháng 12 ạ.",
+    "Có chuyện gì vậy?",
+    "Vâng. Giờ bay đã thay đổi, chuyến 9 giờ sáng đổi thành chuyến 1 giờ chiều ạ. Vì vậy, giờ nhận phòng khách sạn cũng đổi thành từ 3 giờ chiều trở đi ạ.",
+    "Hiểu rồi. Vậy buổi họp tại hiện trường từ 10 giờ sáng thứ Sáu ngày 4 tháng 12 có ổn không?",
+    "Vâng, không có vấn đề gì ạ. Ngoài ra, tôi sẽ nộp bảng quyết toán chi phí trước thứ Hai ngày 7 tháng 12 ạ.",
+    "Nhờ em nhé."
+   ]
+  },
+  "2": {
+   "title": "第2問 — 資料聴読解（新オフィス用備品カタログ）",
+   "mp3": "assets/ngay29-doan2.mp3",
+   "desc": "問題4–6 · カタログを見ながら会話を聞いてください：デスク45,000円×6台、チェア18,000円×6脚、プリンター32,000円×1台。10点以上の購入で5%引きです。数字ごとに項目名（デスク・チェア・プリンター）を付けてから計算しましょう。見積書の状態に注意。",
+   "visual": "<div class=\"jp\" style=\"font-size:15px;line-height:1.7\"><strong>オフィス用品カタログ — 新オフィス用</strong><table style=\"border-collapse:collapse;margin-top:8px;min-width:320px\"><tr><th style=\"border:1px solid #999;padding:4px 10px\">商品</th><th style=\"border:1px solid #999;padding:4px 10px\">価格</th></tr><tr><td style=\"border:1px solid #999;padding:4px 10px\">デスク</td><td style=\"border:1px solid #999;padding:4px 10px\">1台 45,000円</td></tr><tr><td style=\"border:1px solid #999;padding:4px 10px\">チェア</td><td style=\"border:1px solid #999;padding:4px 10px\">1脚 18,000円</td></tr><tr><td style=\"border:1px solid #999;padding:4px 10px\">プリンター</td><td style=\"border:1px solid #999;padding:4px 10px\">1台 32,000円</td></tr><tr><td style=\"border:1px solid #999;padding:4px 10px\">ホワイトボード</td><td style=\"border:1px solid #999;padding:4px 10px\">1枚 12,000円</td></tr></table><p style=\"margin-top:8px\">※10点以上まとめて購入の場合、合計金額から5%引きになります。</p></div>",
+   "lines": [
+    "新オフィス用の備品についてご連絡します。デスクを6台、チェアを6脚お願いしたいのですが。",
+    "はい。デスクは1台45,000円で、6台で270,000円です。チェアは1脚18,000円で、6脚で108,000円です。",
+    "プリンターも1台お願いします。",
+    "プリンターは1台32,000円です。合計で410,000円になります。10点以上のご購入ですので、5%引きで389,500円になります。なお、見積書は、まだお客様の承認を得ていませんので、金額はまだ確定していません。"
+   ],
+   "vi": [
+    "Tôi xin liên hệ về đồ dùng cho văn phòng mới. Tôi muốn đặt 6 bàn làm việc và 6 ghế ạ.",
+    "Vâng. Bàn làm việc 45.000 yên một chiếc, 6 chiếc là 270.000 yên. Ghế 18.000 yên một chiếc, 6 chiếc là 108.000 yên ạ.",
+    "Cho tôi thêm 1 máy in nữa ạ.",
+    "Máy in 32.000 yên một chiếc ạ. Tổng cộng là 410.000 yên. Vì quý khách mua từ 10 món trở lên nên được giảm 5%, còn 389.500 yên ạ. Ngoài ra, báo giá vẫn chưa được quý khách phê duyệt nên số tiền vẫn chưa được chốt ạ."
+   ]
+  },
+  "3": {
+   "title": "第3問 — 総合聴読解（採用面接スケジュール + 人事部メモ）",
+   "mp3": "assets/ngay29-doan3.mp3",
+   "desc": "問題7–9 · 面接スケジュール表と人事部メモの両方を見ながら会話を聞いてください。12月8日火曜日は午前10時に佐藤健太さん（営業職・会議室A）、午後2時に鈴木美咲さん（事務職・会議室B）。営業職の面接は山田課長、事務職の面接は鈴木部長が担当します。結果は12月11日金曜日までにメールで連絡します。",
+   "visual": "<div class=\"jp\" style=\"font-size:15px;line-height:1.7\"><strong>面接スケジュール表</strong><table style=\"border-collapse:collapse;margin-top:8px;min-width:340px\"><tr><th style=\"border:1px solid #999;padding:4px 10px\">日時</th><th style=\"border:1px solid #999;padding:4px 10px\">応募者（職種）</th><th style=\"border:1px solid #999;padding:4px 10px\">会議室</th></tr><tr><td style=\"border:1px solid #999;padding:4px 10px\">12月8日火曜日 午前10時</td><td style=\"border:1px solid #999;padding:4px 10px\">佐藤 健太（営業職）</td><td style=\"border:1px solid #999;padding:4px 10px\">会議室A</td></tr><tr><td style=\"border:1px solid #999;padding:4px 10px\">12月8日火曜日 午後2時</td><td style=\"border:1px solid #999;padding:4px 10px\">鈴木 美咲（事務職）</td><td style=\"border:1px solid #999;padding:4px 10px\">会議室B</td></tr><tr><td style=\"border:1px solid #999;padding:4px 10px\">12月9日水曜日 午前10時</td><td style=\"border:1px solid #999;padding:4px 10px\">田中 翔太（営業職）</td><td style=\"border:1px solid #999;padding:4px 10px\">会議室A</td></tr></table><p style=\"margin-top:10px\"><strong>人事部メモ</strong><br>面接官は山田課長と鈴木部長。営業職の面接は山田課長、事務職の面接は鈴木部長が担当する。面接の結果は、12月11日金曜日までにメールで連絡する。</p></div>",
+   "lines": [
+    "来月の採用面接の件で確認します。12月8日火曜日の午前10時は、佐藤健太さんの営業職の面接で、会議室Aですね。",
+    "はい。面接官は山田課長です。同じ日の午後2時は、鈴木美咲さんの事務職の面接で、会議室B、面接官は鈴木部長です。",
+    "12月9日水曜日の午前10時は、田中翔太さんの営業職の面接で、会議室A、面接官は山田課長ですね。",
+    "はい、そのとおりです。面接の結果は、12月11日金曜日までにメールで連絡することになっています。"
+   ],
+   "vi": [
+    "Tôi xin xác nhận về buổi phỏng vấn tuyển dụng tháng tới. 10 giờ sáng thứ Ba ngày 8 tháng 12 là buổi phỏng vấn vị trí kinh doanh của anh Sato Kenta, tại phòng họp A, đúng không ạ?",
+    "Vâng. Người phỏng vấn là trưởng phòng Yamada. Cùng ngày lúc 2 giờ chiều là buổi phỏng vấn vị trí văn phòng của chị Suzuki Misaki, tại phòng họp B, người phỏng vấn là giám đốc Suzuki ạ.",
+    "10 giờ sáng thứ Tư ngày 9 tháng 12 là buổi phỏng vấn vị trí kinh doanh của anh Tanaka Shota, tại phòng họp A, người phỏng vấn là trưởng phòng Yamada, đúng không ạ?",
+    "Vâng, đúng vậy ạ. Kết quả phỏng vấn sẽ được thông báo qua email trước thứ Sáu ngày 11 tháng 12 ạ."
+   ]
+  },
+  "4": {
+   "title": "第4問 — 状況把握（プリンターの不具合 — クレームの電話）",
+   "mp3": "assets/ngay29-doan4.mp3",
+   "desc": "問題10–12 · 資料はありません — クレームの電話だけを聞いて、問題の内容と、これからすることを推測しましょう。12月1日に届いたプリンターは、電源を入れても画面に何も表示されません。交換用のプリンターは12月2日水曜日の午前中に届き、故障したプリンターはそのときに回収します。",
+   "lines": [
+    "12月1日火曜日に届いたプリンターの件でご連絡します。電源を入れても、画面に何も表示されないんです。",
+    "大変申し訳ございません。お手数ですが、電源コードがしっかり差し込まれているか、ご確認いただけますでしょうか。",
+    "確認しましたが、やはり表示されません。",
+    "承知いたしました。では、12月2日水曜日の午前中に、交換用の新しいプリンターをお届けいたします。故障したプリンターは、そのときに回収させていただきます。",
+    "分かりました。よろしくお願いします。"
+   ],
+   "vi": [
+    "Tôi xin liên hệ về chiếc máy in đã nhận được vào thứ Ba ngày 1 tháng 12. Bật nguồn lên mà màn hình không hiển thị gì cả ạ.",
+    "Chúng tôi thành thật xin lỗi. Phiền anh/chị kiểm tra giúp xem dây nguồn đã được cắm chặt chưa ạ.",
+    "Tôi đã kiểm tra rồi nhưng vẫn không hiển thị.",
+    "Tôi hiểu rồi ạ. Vậy vào buổi sáng thứ Tư ngày 2 tháng 12, chúng tôi sẽ giao máy in mới để đổi ạ. Chiếc máy in bị hỏng chúng tôi sẽ thu lại vào lúc đó ạ.",
+    "Tôi hiểu rồi. Nhờ anh/chị giúp ạ."
+   ]
+  }
+ },
+ "segNames": null,
+ "questions": [
+  {
+   "n": 1,
+   "seg": 1,
+   "q": "二人は何について話していますか。",
+   "opts": [
+    "出張の予定変更について",
+    "新製品の発表会について",
+    "研修の申し込みについて",
+    "会議室の予約について"
+   ],
+   "ans": "1",
+   "trap": "会話全体の話題 — 出張の予定変更",
+   "explain": "Cả cuộc hội thoại đều xoay quanh việc thay đổi lịch công tác (giờ bay đổi, giờ họp, hạn nộp bảng quyết toán); các lựa chọn 2/3/4 không hề được nhắc tới.",
+   "explain_en": "The whole conversation is about the change in the business-trip schedule (the flight time, the meeting time, and the deadline for the expense report); options 2/3/4 are never mentioned.",
+   "explain_ja": "会話全体が出張の予定変更（飛行機の時間変更・打ち合わせの日時・経費精算書の提出期限）についてです。2・3・4は話に出てきません。"
+  },
+  {
+   "n": 2,
+   "seg": 1,
+   "q": "打ち合わせはいつ行われますか。",
+   "opts": [
+    "12月3日木曜日午後1時",
+    "12月4日金曜日午前10時",
+    "12月7日月曜日",
+    "12月3日木曜日午前9時"
+   ],
+   "ans": "2",
+   "trap": "打ち合わせ→12月4日金曜日午前10時",
+   "explain": "Buổi họp là 10 giờ sáng thứ Sáu ngày 4 tháng 12; lựa chọn 1 là giờ bay MỚI (1 giờ chiều — bẫy gắn chéo giờ của sự kiện khác); 3 là hạn nộp bảng quyết toán; 4 là giờ bay CŨ.",
+   "explain_en": "The meeting is at 10 a.m. on Friday, December 4; option 1 is the NEW flight time (1 p.m. — a cross-binding trap using another event's time); 3 is the expense-report deadline; 4 is the OLD flight time.",
+   "explain_ja": "打ち合わせは12月4日金曜日午前10時です。1は新しい飛行機の時間（午後1時 — 他の予定の時間を使うひっかけ）、3は経費精算書の提出期限、4は古い飛行機の時間です。"
+  },
+  {
+   "n": 3,
+   "seg": 1,
+   "q": "社員はこのあと何をしなければなりませんか。",
+   "opts": [
+    "経費精算書を12月7日月曜日までに提出する",
+    "ホテルをキャンセルする",
+    "飛行機を午前9時の便に変更する",
+    "打ち合わせを12月3日に変更する"
+   ],
+   "ans": "1",
+   "trap": "〜までに提出いたします — 次にすること",
+   "explain": "Nhân viên phải nộp bảng quyết toán chi phí trước thứ Hai ngày 7 tháng 12 (「〜までに提出いたします」= việc phải làm tiếp theo); 2 không được nhắc; 3 lấy ngược (chuyến bay đã đổi sang 1 giờ chiều); 4 lấy ngược (buổi họp đã chốt ngày 4 tháng 12).",
+   "explain_en": "The employee must submit the expense report by Monday, December 7 (「〜までに提出いたします」 = the next thing to do); 2 is never mentioned; 3 is reversed (the flight has already changed to 1 p.m.); 4 is reversed (the meeting is already set for December 4).",
+   "explain_ja": "社員は経費精算書を12月7日月曜日までに提出しなければなりません（「〜までに提出いたします」= 次にすること）。2は話に出てきません。3は逆です（飛行機はすでに午後1時の便に変わっています）。4も逆です（打ち合わせはすでに12月4日に決まっています）。"
+  },
+  {
+   "n": 4,
+   "seg": 2,
+   "q": "デスク6台とチェア6脚の合計はいくらですか。",
+   "opts": [
+    "270,000円",
+    "378,000円",
+    "410,000円",
+    "108,000円"
+   ],
+   "ans": "2",
+   "trap": "デスク+チェアだけ — プリンターを足さないこと",
+   "explain": "270.000 yên (6 bàn) + 108.000 yên (6 ghế) = 378.000 yên; 1 chỉ tính bàn; 4 chỉ tính ghế; 3 là tổng đã cộng thêm máy in (chưa giảm giá) — bẫy cộng thừa.",
+   "explain_en": "270,000 yen (6 desks) + 108,000 yen (6 chairs) = 378,000 yen; 1 counts only the desks; 4 counts only the chairs; 3 is the total including the printer (before discount) — an over-adding trap.",
+   "explain_ja": "270,000円（デスク6台）+ 108,000円（チェア6脚）= 378,000円です。1はデスクだけ、4はチェアだけ、3はプリンターを足した合計（割引前）です — 足しすぎのひっかけです。"
+  },
+  {
+   "n": 5,
+   "seg": 2,
+   "q": "割引後の合計金額はいくらですか。",
+   "opts": [
+    "410,000円",
+    "369,000円",
+    "389,500円",
+    "378,000円"
+   ],
+   "ans": "3",
+   "trap": "13点 ≥ 10点 → 5%引き",
+   "explain": "Tổng 410.000 yên, 13 món (6+6+1) ≥ 10 món nên được giảm 5% → 410.000 × 0,95 = 389.500 yên; 1 là giá trước giảm; 2 là giảm 10% (410.000 × 0,9) — sai tỉ lệ; 4 là tổng chưa cộng máy in.",
+   "explain_en": "Total 410,000 yen; 13 items (6+6+1) is 10 or more, so a 5% discount applies → 410,000 × 0.95 = 389,500 yen; 1 is the price before the discount; 2 is a 10% discount (410,000 × 0.9) — the wrong rate; 4 is the total without the printer.",
+   "explain_ja": "合計410,000円、13点（6+6+1）は10点以上なので5%引き → 410,000×0.95=389,500円です。1は割引前の金額、2は10%引き（410,000×0.9）で割合が違います、4はプリンターを足していない合計です。"
+  },
+  {
+   "n": 6,
+   "seg": 2,
+   "q": "金額について正しいものはどれですか。",
+   "opts": [
+    "389,500円で確定している",
+    "見積書はすでに承認を得ている",
+    "金額はカタログに書いていない",
+    "まだ確定していない（見積書はまだ承認を得ていないため）"
+   ],
+   "ans": "4",
+   "trap": "まだ〜ていない（未＋結果）二重",
+   "explain": "Báo giá vẫn chưa được khách phê duyệt nên số tiền vẫn chưa được chốt — bẫy まだ〜ていない hai lớp (báo giá chưa duyệt → số tiền chưa chốt); 1 lấy con số 389.500 yên làm số đã chốt — sai vì trạng thái chưa xác nhận; 2 lấy ngược ý; 3 sai (giá có trong catalog).",
+   "explain_en": "The quotation has not yet been approved by the customer, so the amount is not yet fixed — a double まだ〜ていない trap (quotation not approved → amount not fixed); 1 treats 389,500 yen as a fixed amount, which is wrong because the status is unconfirmed; 2 reverses the meaning; 3 is wrong (the prices are in the catalog).",
+   "explain_ja": "見積書はまだお客様の承認を得ていないので、金額はまだ確定していません — まだ〜ていないの二重のわなです（見積書が未承認 → 金額が未確定）。1は389,500円を確定した金額としていますが、状態が未確定なので間違いです。2は意味が逆です。3は間違いです（金額はカタログに書いてあります）。"
+  },
+  {
+   "n": 7,
+   "seg": 3,
+   "q": "12月8日火曜日の午前10時の面接について正しいものはどれですか。",
+   "opts": [
+    "佐藤健太さんの営業職の面接で、会議室A、面接官は山田課長",
+    "鈴木美咲さんの事務職の面接で、会議室A、面接官は山田課長",
+    "佐藤健太さんの営業職の面接で、会議室B、面接官は鈴木部長",
+    "田中翔太さんの営業職の面接で、会議室A、面接官は鈴木部長"
+   ],
+   "ans": "1",
+   "trap": "2つの資料を合わせて読むこと",
+   "explain": "Phải tổng hợp CẢ hai nguồn: lịch (Sato Kenta · vị trí kinh doanh · phòng họp A) + ghi chú (vị trí kinh doanh → trưởng phòng Yamada); 2 hoán đổi ứng viên (Suzuki Misaki là 2 giờ chiều · vị trí văn phòng); 3 hoán đổi phòng + người phỏng vấn; 4 hoán đổi ứng viên + người phỏng vấn (Tanaka Shota là ngày 9 tháng 12).",
+   "explain_en": "You must combine BOTH sources: the schedule (Sato Kenta · sales position · Room A) + the memo (sales position → Manager Yamada); 2 swaps in the wrong candidate (Suzuki Misaki is the 2 p.m. · office position interview); 3 swaps the room and the interviewer; 4 swaps the candidate and the interviewer (Tanaka Shota is on December 9).",
+   "explain_ja": "2つの資料を合わせて読まなければなりません：スケジュール表（佐藤健太・営業職・会議室A）+ メモ（営業職 → 山田課長）。2は応募者を入れ替えています（鈴木美咲は午後2時・事務職）。3は会議室と面接官を入れ替えています。4は応募者と面接官を入れ替えています（田中翔太は12月9日）。"
+  },
+  {
+   "n": 8,
+   "seg": 3,
+   "q": "鈴木部長が面接官を担当するのは誰の面接ですか。",
+   "opts": [
+    "佐藤健太さん",
+    "鈴木美咲さん",
+    "田中翔太さん",
+    "山田課長"
+   ],
+   "ans": "2",
+   "trap": "事務職の面接は鈴木部長",
+   "explain": "Phỏng vấn vị trí văn phòng do giám đốc Suzuki phụ trách → Suzuki Misaki (ngày 8 tháng 12 lúc 2 giờ chiều · phòng họp B); 1/3 là vị trí kinh doanh → trưởng phòng Yamada; 4 là một người phỏng vấn khác, không phải ứng viên.",
+   "explain_en": "Office-position interviews are handled by Director Suzuki → Suzuki Misaki (December 8, 2 p.m. · Room B); 1/3 are sales positions → Manager Yamada; 4 is another interviewer, not a candidate.",
+   "explain_ja": "事務職の面接は鈴木部長が担当します → 鈴木美咲さん（12月8日午後2時・会議室B）。1・3は営業職 → 山田課長です。4は別の面接官で、応募者ではありません。"
+  },
+  {
+   "n": 9,
+   "seg": 3,
+   "q": "面接の結果はいつまでに連絡しますか。",
+   "opts": [
+    "12月9日水曜日までにメールで",
+    "12月11日金曜日までに電話で",
+    "12月11日金曜日までにメールで",
+    "12月8日火曜日までにメールで"
+   ],
+   "ans": "3",
+   "trap": "12月11日金曜日までにメールで",
+   "explain": "Kết quả phỏng vấn sẽ được thông báo qua email trước thứ Sáu ngày 11 tháng 12; 1/4 hoán đổi ngày (ngày 9 và ngày 8 tháng 12 là ngày phỏng vấn); 2 hoán đổi phương tiện (điện thoại thay vì email).",
+   "explain_en": "Interview results will be sent by email by Friday, December 11; 1/4 swap in the wrong dates (December 9 and 8 are interview days); 2 swaps the means (phone instead of email).",
+   "explain_ja": "面接の結果は12月11日金曜日までにメールで連絡します。1・4は日を入れ替えています（12月9日・12月8日は面接の日です）。2は連絡方法を入れ替えています（電話ではなくメールです）。"
+  },
+  {
+   "n": 10,
+   "seg": 4,
+   "q": "お客様はどんな問題で連絡しましたか。",
+   "opts": [
+    "プリンターが紙を出さない",
+    "電源を入れても画面に何も表示されない",
+    "プリンターの音がうるさい",
+    "プリンターが届いていない"
+   ],
+   "ans": "2",
+   "trap": "音声に出てきた問題だけを選ぶこと",
+   "explain": "Bật nguồn lên mà màn hình không hiển thị gì; 1/3/4 không được nhắc tới (bẫy \"vấn đề máy in thường gặp\" — chỉ lấy đúng vấn đề trong audio).",
+   "explain_en": "The screen shows nothing even when the power is turned on; 1/3/4 are never mentioned (a \"common printer problem\" trap — take only the problem actually in the audio).",
+   "explain_ja": "電源を入れても画面に何も表示されません。1・3・4は話に出てきません（「よくあるプリンターの問題」というひっかけ — 音声に出てきた問題だけを選びます）。"
+  },
+  {
+   "n": 11,
+   "seg": 4,
+   "q": "社員はこのあと何をしますか。",
+   "opts": [
+    "修理のために技術者を派遣する",
+    "代金を返金する",
+    "交換用のプリンターを届けるが、故障したプリンターは回収しない",
+    "12月2日水曜日の午前中に交換用のプリンターを届け、故障したプリンターを回収する"
+   ],
+   "ans": "4",
+   "trap": "届ける + 回収する — 両方の行動と日付",
+   "explain": "Nhân viên sẽ mang máy in mới tới đổi VÀ thu lại máy in hỏng vào sáng ngày 2 tháng 12 — phải khớp CẢ hai hành động + ngày; 1/2 không được nêu; 3 bỏ mất hành động thu hồi.",
+   "explain_en": "The employee will deliver a replacement printer AND collect the faulty printer on the morning of December 2 — both actions and the date must match; 1/2 are never mentioned; 3 drops the collection action.",
+   "explain_ja": "社員は12月2日水曜日の午前中に交換用のプリンターを届け、故障したプリンターを回収します — 両方の行動と日付が合わなければなりません。1・2は話に出てきません。3は回収の行動が抜けています。"
+  },
+  {
+   "n": 12,
+   "seg": 4,
+   "q": "お客様はこの電話のあと何をしなければなりませんか。",
+   "opts": [
+    "交換用のプリンターが届くのを待つ（特に何もする必要はない）",
+    "電源コードを買いに行く",
+    "プリンターを店に持っていく",
+    "もう一度電話をかける"
+   ],
+   "ans": "1",
+   "trap": "推論 — 待つだけでいい",
+   "explain": "Câu suy luận — nhân viên đã hẹn mang hàng đổi tới + thu hàng hỏng, khách chỉ cần chờ; 2/3/4 đều là việc khách KHÔNG được yêu cầu làm (dây nguồn đã kiểm tra xong; không ai bảo mang máy đi hay gọi lại).",
+   "explain_en": "An inference question — the employee has already arranged to deliver the replacement and collect the faulty printer, so the customer only needs to wait; 2/3/4 are all things the customer was NOT asked to do (the power cord has already been checked; nobody asked them to bring the printer in or to call again).",
+   "explain_ja": "推論の問題です — 社員はすでに交換と回収を約束しているので、お客様は待つだけです。2・3・4はお客様が頼まれていないことです（電源コードは確認済みです。店に持っていくことも、もう一度電話をかけることも言われていません）。"
+  }
+ ],
+ "instructions": "<li>聴読解12問で <strong>40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>4セット</strong> で、各セットに会話の音声があり、セット2とセット3には読む資料（備品カタログ／面接スケジュール表＋人事部メモ）もあります。<strong>セットの3問はすべて1画面に一緒に</strong>、その資料のすぐ下に、CBT試験室形式の解答画面で表示されます — 聞いたら3問まとめて答えましょう。1問ずつ行き来する必要はありません。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、<strong>話者の名前は読み上げません</strong>。試験室と同じです。各セットの音声は、本番と同じ <strong>合図音（チャイム）</strong> から始まります。</li>\n          <li>セット1は <strong><span class=\"jp\">状況把握</span>（出張の予定変更）</strong>：資料はありません — 会話だけを聞いて、話の内容と、これからすることを推測しましょう。飛行機の時間は午前9時から午後1時に変わります。セット2は <strong><span class=\"jp\">資料聴読解</span>（備品カタログ）</strong>：デスク45,000円×6台、チェア18,000円×6脚、プリンター32,000円×1台 — 10点以上で5%引きです。数字ごとに項目名を付けてから計算しましょう。セット3は <strong><span class=\"jp\">総合聴読解</span>（採用面接スケジュール＋人事部メモ）</strong>：2つの資料を合わせて読む問題です。営業職の面接は山田課長、事務職の面接は鈴木部長が担当します。セット4は <strong><span class=\"jp\">状況把握</span>（プリンターの不具合 — クレームの電話）</strong>：資料はありません — 問題の内容と、これからすることを推測しましょう。交換と回収は12月2日水曜日の午前中です。</li>\n          <li>セット2には <strong><span class=\"jp\">まだ〜ていない</span></strong> の注意点の問題があります — この表現が聞こえたら、4つの選択肢を見る前に「未＋結果」をすぐメモしましょう。「もう終わった」というタイプの選択肢は、最初に除外すべき定番の引っかけです。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>1</kbd>–<kbd>4</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです — 別の答えを選ぶと前の答えが置き換わります。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、ベトナム語訳付きのトランスクリプト、ミスノートが表示されます。</li>",
+ "candidateInfo": {
+  "subject": "BJT 聴読解 — 第29回 練習",
+  "questionInfo": "12問 · 4セット",
+  "time": "40分",
+  "format": "状況把握 · 資料聴読解（カタログ） · 総合聴読解（面接） · 状況把握"
+ },
+ "tips": "<p><strong>聞きながら数字に項目名を付けるテクニック：</strong>セット2 — 聞いた瞬間に数字ごとに項目名を書き（デスク45,000×6=270,000・チェア18,000×6=108,000・プリンター32,000・合計410,000・5%引き→389,500）、選択肢を見る前にペアごとに計算しましょう。問題4はデスク+チェア（378,000）だけ、問題5は割引後（389,500）だけ — プリンターを足した合計（410,000）や割引前の金額を取り違えないこと。</p>\n          <p><strong>イベント → 日付・時刻・部屋のテクニック：</strong>セット1 — 「飛行機→12/3（木）13時（9時から変更）」「打ち合わせ→12/4（金）10時」「経費精算書→12/7（月）までに提出」とすぐ書きましょう。セット3 — 「佐藤健太・営業職・12/8 10時・会議室A・山田課長」「鈴木美咲・事務職・12/8 14時・会議室B・鈴木部長」「田中翔太・営業職・12/9 10時・会議室A・山田課長」と、聞いたらすぐ3つの行を書きましょう。聞かれている人の行だけを読みます。</p>\n          <p><strong>聴解形式での まだ〜ていない の注意点：</strong>セット2の問題6 — 見積書はまだ承認を得ていないので、金額はまだ確定していません。「まだ〜ていない」が聞こえたら、選択肢を見る前に「未＋結果」をすぐメモしましょう。「確定している」というタイプの選択肢は、最初に除外すべき定番の引っかけです。セット4の問題12は推論です — 社員が交換と回収を約束したら、お客様は待つだけです。</p>",
+ "footerNote": "第29回 — 練習 聴読解：状況把握 出張の予定変更（飛行機の時間変更・打ち合わせ12月4日金曜日午前10時・経費精算書12月7日月曜日まで）、資料聴読解 新オフィス用備品カタログ（デスク・チェア・プリンター、10点以上で5%引き）、総合聴読解 採用面接スケジュール＋人事部メモ（佐藤健太・鈴木美咲・田中翔太、面接官は山田課長と鈴木部長）、状況把握 プリンターの不具合（電源を入れても画面に何も表示されない、12月2日水曜日午前中に交換と回収）。音声は録音済みのMP3ファイルで、話者の名前は読み上げません。各セットの音声は本番と同じ合図音（チャイム）から始まります。",
+ "scoreMessages": [
+  {
+   "min": 12,
+   "text": "優秀 — 第29回の聴読解12問すべて正解！"
+  },
+  {
+   "min": 10,
+   "text": "とても良い — 数字の項目名と取り違えをほぼ回避できています"
+  },
+  {
+   "min": 8,
+   "text": "まずまず安定 — 細部の注意点がまだいくつかあります"
+  },
+  {
+   "min": 5,
+   "text": "調子が出てきました — 数字の項目名、取り違え、未完了の件に注意しましょう"
+  },
+  {
+   "min": 1,
+   "text": "もう少し練習が必要です — 数字の項目名と取り違えにまだ負けています"
+  },
+  {
+   "min": 0,
+   "text": "聞き取りの基礎に穴があります — セットごとにトランスクリプトを聞き直しましょう"
+  }
+ ]
+}
