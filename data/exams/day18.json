@@ -73,7 +73,9 @@
       ],
       "ans": "B",
       "trap": "「〜にあたって」= nhân dịp, khi tiến hành việc gì; 「あたり」 là \"mỗi/khoảng\", không đi với dạng này",
-      "explain": "「出張にあたって」= nhân dịp, khi tiến hành chuyến công tác; 「あたり」 là \"mỗi/khoảng\" (1人あたり), không đi với dạng này; 「あたっては」 thiếu に và mang nghĩa điều kiện \"khi nói đến…\"; 「あたりに」 không phải dạng đúng."
+      "explain": "「出張にあたって」= nhân dịp, khi tiến hành chuyến công tác; 「あたり」 là \"mỗi/khoảng\" (1人あたり), không đi với dạng này; 「あたっては」 thiếu に và mang nghĩa điều kiện \"khi nói đến…\"; 「あたりに」 không phải dạng đúng.",
+      "explain_en": "「出張にあたって」 = on the occasion of / when undertaking the business trip; 「あたり」 means \"per / approximately\" (1人あたり) and does not go with this form; 「あたっては」 lacks に and carries a conditional meaning, \"when it comes to…\"; 「あたりに」 is not the correct form.",
+      "explain_ja": "「出張にあたって」は「出張をする際に」という意味です。「あたり」は「1人あたり」のように「～ごとに・約」を表し、この形には付きません。「あたっては」は「に」が欠けており、「～ということになれば」という条件の意味になります。「あたりに」は正しい形ではありません。"
     },
     {
       "n": 2,
@@ -87,7 +89,9 @@
       ],
       "ans": "A",
       "trap": "お問い合わせください là dạng nhờ vả chuẩn; いただきます là phía mình nhận — sai hướng nhờ vả",
-      "explain": "お問い合わせください là dạng nhờ vả chuẩn; いただきます là phía mình nhận (sai hướng — người hỏi là phía đọc văn bản); なさいます là câu trần thuật tôn kính, không phải câu nhờ; くださいませ là dạng cổ, sai văn phong."
+      "explain": "お問い合わせください là dạng nhờ vả chuẩn; いただきます là phía mình nhận (sai hướng — người hỏi là phía đọc văn bản); なさいます là câu trần thuật tôn kính, không phải câu nhờ; くださいませ là dạng cổ, sai văn phong.",
+      "explain_en": "お問い合わせください is the standard request form; いただきます is what one's own side receives (wrong direction — the person asking is the reader of the text); なさいます is an honorific declarative statement, not a request; くださいませ is an old-fashioned form, wrong in style.",
+      "explain_ja": "お問い合わせくださいが標準的な依頼の形です。いただきますは自分の側が受け取る場合に使い、方向が違います（質問する側は文章を読む人です）。なさいますは尊敬の陳述文で、依頼ではありません。くださいませは古い形で、文体に合いません。"
     },
     {
       "n": 3,
@@ -101,7 +105,9 @@
       ],
       "ans": "C",
       "trap": "「ご案内いたします」 là dạng khiêm nhường chuẩn (phía mình thông báo cho đối phương)",
-      "explain": "「ご案内いたします」 là dạng khiêm nhường chuẩn (phía mình thông báo); A dở dang, B sai dạng, D là thể thường, sai văn phong trang trọng."
+      "explain": "「ご案内いたします」 là dạng khiêm nhường chuẩn (phía mình thông báo); A dở dang, B sai dạng, D là thể thường, sai văn phong trang trọng.",
+      "explain_en": "「ご案内いたします」 is the standard humble form (one's own side giving notice); A is incomplete, B is the wrong form, D is the plain form, wrong for a formal register.",
+      "explain_ja": "「ご案内いたします」が標準的な謙譲表現です（自分の側が案内します）。Aは未完成、Bは形が間違い、Dは普通体で、改まった文体には合いません。"
     },
     {
       "n": 4,
@@ -115,7 +121,9 @@
       ],
       "ans": "B",
       "trap": "Cộng 3 khoản tháng 11 (30+26+20); 90万円 là予算, 85万円 là見込み tháng 12",
-      "explain": "30+26+20=76万円; 90万円 là予算, 85万円 là見込み12月, 66万円 là cộng nhầm (30+26+10 — lấy nhầm教材費)."
+      "explain": "30+26+20=76万円; 90万円 là予算, 85万円 là見込み12月, 66万円 là cộng nhầm (30+26+10 — lấy nhầm教材費).",
+      "explain_en": "30+26+20=76万円; 90万円 is the 予算, 85万円 is the 見込み for 12月, and 66万円 is a miscalculation (30+26+10 — taking the wrong 教材費).",
+      "explain_ja": "30+26+20=76万円です。90万円は予算、85万円は12月の見込み、66万円は計算ミスです（30+26+10 — 教材費を取り違えています）。"
     },
     {
       "n": 5,
@@ -129,7 +137,9 @@
       ],
       "ans": "A",
       "trap": "予算90−実績76=14万円余った; 9万円 và 5万円 đều lấy cặp số sai (không phải hai vế của câu hỏi)",
-      "explain": "予算90−実績76=14万円余った; 9万円 là見込み12月85−実績76 (cặp sai — không phải hai vế câu hỏi), 5万円 là予算90−見込み85 (cặp sai)."
+      "explain": "予算90−実績76=14万円余った; 9万円 là見込み12月85−実績76 (cặp sai — không phải hai vế câu hỏi), 5万円 là予算90−見込み85 (cặp sai).",
+      "explain_en": "予算90−実績76=14万円 left over; 9万円 is 見込み12月85−実績76 (the wrong pair — not the two sides the question asks for), and 5万円 is 予算90−見込み85 (the wrong pair).",
+      "explain_ja": "予算90−実績76=14万円余りました。9万円は見込み12月85−実績76（間違った組み合わせ — 質問の2つの項目ではありません）、5万円は予算90−見込み85（間違った組み合わせ）です。"
     },
     {
       "n": 6,
@@ -143,7 +153,9 @@
       ],
       "ans": "C",
       "trap": "「まだ社内承認を得ていないため、見込みには含めていない」— chưa duyệt = không tính vào dự báo",
-      "explain": "福岡の新規研修計画はまだ社内承認を得ていないため、12月の見込みには含めていない."
+      "explain": "福岡の新規研修計画はまだ社内承認を得ていないため、12月の見込みには含めていない.",
+      "explain_en": "The new training plan in Fukuoka has not yet received internal approval, so it is not included in the December forecast.",
+      "explain_ja": "福岡の新規研修計画はまだ社内承認を得ていないため、12月の見込みには含めていない。"
     },
     {
       "n": 7,
@@ -157,7 +169,9 @@
       ],
       "ans": "B",
       "trap": "Việc chính là検討 bao bì KK-200 +措置 thích đáng; 不具合・製品名 không hề được nhắc tới; D đảo chủ thể",
-      "explain": "手紙はKK-200のパッケージがAA-100と似ていると指摘し、至急検討してしかるべき措置を取るよう求めている; A 不具合 không được nhắc tới, C 製品名 không được nhắc tới, D đảo chủ thể (AA-100 là sản phẩm của bên gửi, không phải bên bị yêu cầu đổi)."
+      "explain": "手紙はKK-200のパッケージがAA-100と似ていると指摘し、至急検討してしかるべき措置を取るよう求めている; A 不具合 không được nhắc tới, C 製品名 không được nhắc tới, D đảo chủ thể (AA-100 là sản phẩm của bên gửi, không phải bên bị yêu cầu đổi).",
+      "explain_en": "The letter points out that KK-200's packaging resembles AA-100's and asks that it be examined urgently and appropriate measures taken; A, 不具合, is not mentioned; C, 製品名, is not mentioned; D reverses the subjects (AA-100 is the sender's product, not the one asked to change).",
+      "explain_ja": "手紙はKK-200のパッケージがAA-100と似ていると指摘し、至急検討してしかるべき措置を取るよう求めている。Aの不具合は触れられていません。Cの製品名は触れられていません。Dは主体が逆です（AA-100は送り主の製品で、変更を求められている側ではありません）。"
     },
     {
       "n": 8,
@@ -171,7 +185,9 @@
       ],
       "ans": "A",
       "trap": "Hạn trả lời ghi rõ trong thư: 11月25日水曜日まで; hai ngày còn lại không xuất hiện trong thư",
-      "explain": "ご検討の結果を11月25日水曜日までにご回答ください; 11月20日・12月25日 không xuất hiện trong thư; 期限 đã nêu rõ nên D sai."
+      "explain": "ご検討の結果を11月25日水曜日までにご回答ください; 11月20日・12月25日 không xuất hiện trong thư; 期限 đã nêu rõ nên D sai.",
+      "explain_en": "ご検討の結果を11月25日水曜日までにご回答ください; 11月20日・12月25日 do not appear in the letter; the 期限 is clearly stated, so D is wrong.",
+      "explain_ja": "ご検討の結果を11月25日水曜日までにご回答ください。11月20日・12月25日は手紙に出てきません。期限がはっきり書かれているので、Dは間違いです。"
     },
     {
       "n": 9,
@@ -185,7 +201,9 @@
       ],
       "ans": "A",
       "trap": "Bên gửi là công ty của AA-100 (当社); KK-200 là của bên nhận (貴社); 指摘を受けたのも当社 — D đảo chủ thể",
-      "explain": "送り主はAA-100の会社 (当社の商品「AA-100」); KK-200 là sản phẩm của貴社 (bên nhận thư); 指摘を受けたのは当社 (bên gửi) chứ không phải KK-200の会社 — D đảo chủ thể."
+      "explain": "送り主はAA-100の会社 (当社の商品「AA-100」); KK-200 là sản phẩm của貴社 (bên nhận thư); 指摘を受けたのは当社 (bên gửi) chứ không phải KK-200の会社 — D đảo chủ thể.",
+      "explain_en": "The sender is AA-100's company (当社の商品「AA-100」); KK-200 is 貴社's product (the letter's recipient); the one who received the 指摘 is 当社 (the sender), not KK-200の会社 — D reverses the subjects.",
+      "explain_ja": "送り主はAA-100の会社です（当社の商品「AA-100」）。KK-200は貴社（手紙の受け手）の製品です。指摘を受けたのは当社（送り主）で、KK-200の会社ではありません — Dは主体が逆です。"
     },
     {
       "n": 10,
@@ -199,7 +217,9 @@
       ],
       "ans": "A",
       "trap": "発売日 đã決定 (12月15日火曜日); cái \"chưa xác nhận\" chỉ áp cho広告掲載, không phải発売日",
-      "explain": "発売日は12月15日火曜日と決定した; 11月10日 là ngày họp; D sai vì発売日 đã決定 — chỉ広告掲載 là chờ最終確認, không phải発売日. Phải phân biệt \"chưa xác nhận\" áp cho hạng mục nào."
+      "explain": "発売日は12月15日火曜日と決定した; 11月10日 là ngày họp; D sai vì発売日 đã決定 — chỉ広告掲載 là chờ最終確認, không phải発売日. Phải phân biệt \"chưa xác nhận\" áp cho hạng mục nào.",
+      "explain_en": "発売日は12月15日火曜日と決定した; 11月10日 is the date of the meeting; D is wrong because the 発売日 has been decided — only the 広告掲載 awaits 最終確認, not the 発売日. You must distinguish which item \"not yet confirmed\" applies to.",
+      "explain_ja": "発売日は12月15日火曜日と決定した。11月10日は会議の日です。発売日はすでに決まっているのでDは間違いです — 最終確認を待っているのは広告掲載だけで、発売日ではありません。「まだ確認されていない」がどの項目にかかるかを区別しなければなりません。"
     },
     {
       "n": 11,
@@ -213,7 +233,9 @@
       ],
       "ans": "B",
       "trap": "まだ〜ていない dạng Đọc: 最終確認 chưa xong → hoãn掲載 (控える), không phải hủy bỏ hẳn",
-      "explain": "最終確認はまだ開発部長から得ていないため、確認が終わるまでは広告の掲載を控える — bẫy まだ〜ていない dạng Đọc: chưa xong → hoãn hành động, không phải hủy bỏ (C) hay làm ngay (A)."
+      "explain": "最終確認はまだ開発部長から得ていないため、確認が終わるまでは広告の掲載を控える — bẫy まだ〜ていない dạng Đọc: chưa xong → hoãn hành động, không phải hủy bỏ (C) hay làm ngay (A).",
+      "explain_en": "最終確認はまだ開発部長から得ていないため、確認が終わるまでは広告の掲載を控える — the まだ〜ていない trap in Reading form: not yet done → postpone the action, not cancel it (C) or do it right away (A).",
+      "explain_ja": "最終確認はまだ開発部長から得ていないため、確認が終わるまでは広告の掲載を控える — 読解でのまだ〜ていないのわなです。まだ終わっていないので行動を先延ばしします。中止する（C）のではなく、すぐに行う（A）のでもありません。"
     },
     {
       "n": 12,
@@ -227,7 +249,9 @@
       ],
       "ans": "B",
       "trap": "Hoán đổi vai trò hai người: 販売店への案内＝鈴木さん (総務部); 佐藤さん phụ trách広告",
-      "explain": "販売店への案内は総務部の鈴木さんが担当; 広告の担当は営業部の佐藤さん — bẫy hoán đổi vai trò hai người (giữ đúng cặp \"việc → người\")."
+      "explain": "販売店への案内は総務部の鈴木さんが担当; 広告の担当は営業部の佐藤さん — bẫy hoán đổi vai trò hai người (giữ đúng cặp \"việc → người\").",
+      "explain_en": "販売店への案内は総務部の鈴木さんが担当; 広告の担当は営業部の佐藤さん — the trap swapping the two people's roles (keep the correct \"task → person\" pairing).",
+      "explain_ja": "販売店への案内は総務部の鈴木さんが担当です。広告の担当は営業部の佐藤さんです — 2人の役割を取り違えるわなです（「仕事→担当者」の組み合わせを正しく押さえます）。"
     }
   ],
   "instructions": "<li>読解12問で <strong>約40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>4セット</strong> で、各セットはテキスト1つ + 問題3問です。<strong>セットの3問はすべて一緒に</strong>、そのテキストのすぐ下に、CBT試験室形式の解答画面で表示されます — 読んだら3問まとめて答えましょう。1問ずつ行き来する必要はありません。<strong>音声はありません</strong> — 今回は読解の練習だけです。</li>\n          <li>全体は <span class=\"jp\">語彙・文法</span>（穴埋め）1セットと <span class=\"jp\">短文読解</span>（短い文章を読んで答える）3セットです。すべてのセットで、<strong>選ぶ前に文章全体をよく読みましょう</strong> — 最初の行に見覚えのある表現が出たからといって、すぐ選ばないこと。</li>\n          <li>穴埋めのセットでは、空欄の前後の構造と一緒に使われる <strong>固定表現</strong> と <strong>敬語の方向</strong> に注意しましょう：誰が行動をして、誰が受けるのか — 尊敬か謙譲かはその関係に合っていなければなりません。</li>\n          <li>読解のセットでは、注意点が置かれやすい3点に注意しましょう：(1) 各行動の <strong>主体</strong> — 業務文書にはたいてい2つの当事者がやり取りしています。一方の仕事を他方に帰属させないこと。(2) <strong>確認済み／未確認</strong> の状態 — 「まだ…」が出たら、その状態が <em>どの項目</em> に当てはまるかを明確にし、文章全体に広げて解釈しないこと。(3) <strong>数値と期限</strong> — 比較や計算の問題では、数字ごとに <em>項目名を付けて</em>（どの月か、どの項目か、実績か予測か）メモに書いてから、問われたペアを正確に加減すること。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。答え、ベトナム語の解説、<strong>各テキストの参考訳</strong> は、ミスノートと一緒に、提出後にのみ表示されます。</li>",

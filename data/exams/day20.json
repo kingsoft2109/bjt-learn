@@ -85,7 +85,9 @@
       ],
       "ans": "B",
       "trap": "Giờ cũ vs giờ mới của buổi họp",
-      "explain": "打ち合わせの時間は午後2時から午後3時に変更; 午後2時 là giờ cũ; 11月25日・11月23日 không được nhắc tới."
+      "explain": "打ち合わせの時間は午後2時から午後3時に変更; 午後2時 là giờ cũ; 11月25日・11月23日 không được nhắc tới.",
+      "explain_en": "打ち合わせの時間は午後2時から午後3時に変更; 午後2時 is the old time; 11月25日・11月23日 are not mentioned.",
+      "explain_ja": "打ち合わせの時間は午後2時から午後3時に変更されます。午後2時は変更前の時間です。11月25日・11月23日は触れられていません。"
     },
     {
       "n": 2,
@@ -99,7 +101,9 @@
       ],
       "ans": "C",
       "trap": "Tổng số vs đã xác nhận vs chưa trả lời",
-      "explain": "全部25名のうち18名は参加が決まっている; 7名 là số chưa trả lời; 25名 là tổng số; 43名 = 25+18, không xuất hiện trong audio."
+      "explain": "全部25名のうち18名は参加が決まっている; 7名 là số chưa trả lời; 25名 là tổng số; 43名 = 25+18, không xuất hiện trong audio.",
+      "explain_en": "Of 全部25名, 18名 are confirmed to participate; 7名 is the number who have not yet replied; 25名 is the total; 43名 = 25+18 and does not appear in the audio.",
+      "explain_ja": "全部25名のうち18名は参加が決まっています。7名はまだ返事をしていない人数、25名は総数です。43名 = 25+18で、音声には出てきません。"
     },
     {
       "n": 3,
@@ -113,7 +117,9 @@
       ],
       "ans": "C",
       "trap": "「まだ返事が来ていない」— 7 người chưa trả lời",
-      "explain": "残りの7名はまだ返事が来ていません — bẫy まだ〜ていない: nghe thấy まだ〜ていない thì ghi ngay “CHƯA + hệ quả”."
+      "explain": "残りの7名はまだ返事が来ていません — bẫy まだ〜ていない: nghe thấy まだ〜ていない thì ghi ngay “CHƯA + hệ quả”.",
+      "explain_en": "残りの7名はまだ返事が来ていません — the まだ〜ていない trap: when you hear まだ〜ていない, immediately note down \"NOT YET + consequence\".",
+      "explain_ja": "残りの7名はまだ返事が来ていません — まだ〜ていないのわなです。まだ〜ていないと聞いたら、すぐに「まだ〜ていない＋その結果」をメモします。"
     },
     {
       "n": 4,
@@ -127,7 +133,9 @@
       ],
       "ans": "B",
       "trap": "Phòng cũ vs phòng mới + hai sự kiện cùng ngày",
-      "explain": "研修 giữ giờ 午前10時 nhưng đổi 会場 sang 3階大会議室; 2階研修室 là 会場 cũ; 1階食堂 là nơi tổ chức 懇親会 cùng ngày."
+      "explain": "研修 giữ giờ 午前10時 nhưng đổi 会場 sang 3階大会議室; 2階研修室 là 会場 cũ; 1階食堂 là nơi tổ chức 懇親会 cùng ngày.",
+      "explain_en": "研修 keeps the time 午前10時 but changes the 会場 to 3階大会議室; 2階研修室 is the old 会場; 1階食堂 is where the 懇親会 will be held on the same day.",
+      "explain_ja": "研修は午前10時のままですが、会場が3階大会議室に変わります。2階研修室は変更前の会場です。1階食堂は同じ日に懇親会が行われる場所です。"
     },
     {
       "n": 5,
@@ -141,7 +149,9 @@
       ],
       "ans": "B",
       "trap": "Ghép chéo giờ của hai sự kiện cùng ngày",
-      "explain": "懇親会は同じ日 (11月26日木曜日) の午後6時から; 午前10時 cùng ngày là 研修; 11月27日 không được nhắc tới."
+      "explain": "懇親会は同じ日 (11月26日木曜日) の午後6時から; 午前10時 cùng ngày là 研修; 11月27日 không được nhắc tới.",
+      "explain_en": "懇親会は同じ日 (11月26日木曜日) の午後6時から; 午前10時 on the same day is the 研修; 11月27日 is not mentioned.",
+      "explain_ja": "懇親会は同じ日 (11月26日木曜日) の午後6時からです。同じ日の午前10時は研修です。11月27日は触れられていません。"
     },
     {
       "n": 6,
@@ -155,7 +165,9 @@
       ],
       "ans": "C",
       "trap": "「まだ全員に送っていない」— thư mời chưa gửi hết",
-      "explain": "懇親会の案内はまだ全員に送っていないので今日中に送る — bẫy まだ〜ていない gắn với hệ quả + thời hạn cụ thể (今日中); đáp án B chỉ nêu hệ quả mà bỏ trạng thái “chưa gửi”."
+      "explain": "懇親会の案内はまだ全員に送っていないので今日中に送る — bẫy まだ〜ていない gắn với hệ quả + thời hạn cụ thể (今日中); đáp án B chỉ nêu hệ quả mà bỏ trạng thái “chưa gửi”.",
+      "explain_en": "懇親会の案内はまだ全員に送っていないので今日中に送る — the まだ〜ていない trap tied to a consequence + a specific deadline (今日中); answer B only states the consequence and omits the \"not yet sent\" state.",
+      "explain_ja": "懇親会の案内はまだ全員に送っていないので今日中に送る — まだ〜ていないのわなで、その結果と具体的な期限（今日中）が結び付いています。答えのBは結果だけを述べて、「まだ送っていない」という状態が抜けています。"
     },
     {
       "n": 7,
@@ -169,7 +181,9 @@
       ],
       "ans": "A",
       "trap": "Phí phòng vs phí thuê 1 máy vs tổng cộng",
-      "explain": "会議室の利用料は1日5万円; 1万円 là レンタル料 của 1台プロジェクター; 7万円 là 合計."
+      "explain": "会議室の利用料は1日5万円; 1万円 là レンタル料 của 1台プロジェクター; 7万円 là 合計.",
+      "explain_en": "会議室の利用料は1日5万円; 1万円 is the レンタル料 for 1台プロジェクター; 7万円 is the 合計.",
+      "explain_ja": "会議室の利用料は1日5万円です。1万円はプロジェクター1台のレンタル料、7万円は合計です。"
     },
     {
       "n": 8,
@@ -183,7 +197,9 @@
       ],
       "ans": "C",
       "trap": "Tổng tiền = phí phòng + phí thuê 2 máy",
-      "explain": "会議室5万円 + プロジェクター1万円×2台 = 7万円; 6万円 là quên nhân 2台 (5+1); 10万円 = 5万円×2, không xuất hiện trong audio."
+      "explain": "会議室5万円 + プロジェクター1万円×2台 = 7万円; 6万円 là quên nhân 2台 (5+1); 10万円 = 5万円×2, không xuất hiện trong audio.",
+      "explain_en": "会議室5万円 + プロジェクター1万円×2台 = 7万円; 6万円 is forgetting to multiply by 2台 (5+1); 10万円 = 5万円×2 and does not appear in the audio.",
+      "explain_ja": "会議室5万円 + プロジェクター1万円×2台 = 7万円です。6万円は2台分に掛けるのを忘れた計算です（5+1）。10万円 = 5万円×2で、音声には出てきません。"
     },
     {
       "n": 9,
@@ -197,7 +213,9 @@
       ],
       "ans": "C",
       "trap": "「まだ発行していない」— hóa đơn chưa phát hành",
-      "explain": "請求書はまだ発行していませんので、ご利用後に発行いたします — bẫy まだ〜ていない: nghe thấy まだ〜ていない thì ghi ngay “CHƯA + hệ quả”."
+      "explain": "請求書はまだ発行していませんので、ご利用後に発行いたします — bẫy まだ〜ていない: nghe thấy まだ〜ていない thì ghi ngay “CHƯA + hệ quả”.",
+      "explain_en": "請求書はまだ発行していませんので、ご利用後に発行いたします — the まだ〜ていない trap: when you hear まだ〜ていない, immediately note down \"NOT YET + consequence\".",
+      "explain_ja": "請求書はまだ発行していませんので、ご利用後に発行いたします — まだ〜ていないのわなです。まだ〜ていないと聞いたら、すぐに「まだ〜ていない＋その結果」をメモします。"
     },
     {
       "n": 10,
@@ -211,7 +229,9 @@
       ],
       "ans": "B",
       "trap": "Ngày 研修 vs ngày gửi 資料 vs hạn đăng ký",
-      "explain": "研修は12月2日水曜日に行う; 12月1日 là ngày gửi 資料 (前日); 11月27日 là 申込締切."
+      "explain": "研修は12月2日水曜日に行う; 12月1日 là ngày gửi 資料 (前日); 11月27日 là 申込締切.",
+      "explain_en": "研修は12月2日水曜日に行う; 12月1日 is the date for sending the 資料 (前日); 11月27日 is the 申込締切.",
+      "explain_ja": "研修は12月2日水曜日に行います。12月1日は資料を送る日（前日）、11月27日は申込締切です。"
     },
     {
       "n": 11,
@@ -225,7 +245,9 @@
       ],
       "ans": "C",
       "trap": "Hạn đăng ký vs ngày diễn ra 研修 (gắn nhầm vai trò của ngày)",
-      "explain": "申込の締め切りは11月27日金曜日; 12月2日 là ngày 研修 (gắn nhầm vai trò của ngày — cùng họ lỗi Ngày 14 câu 10: hạn đăng ký ↔ ngày sự kiện); 12月1日 là ngày gửi 資料."
+      "explain": "申込の締め切りは11月27日金曜日; 12月2日 là ngày 研修 (gắn nhầm vai trò của ngày — cùng họ lỗi Ngày 14 câu 10: hạn đăng ký ↔ ngày sự kiện); 12月1日 là ngày gửi 資料.",
+      "explain_en": "申込の締め切りは11月27日金曜日; 12月2日 is the date of the 研修 (attaching the wrong role to the date — the same error family as Day 14, question 10: registration deadline ↔ event date); 12月1日 is the date for sending the 資料.",
+      "explain_ja": "申込の締め切りは11月27日金曜日です。12月2日は研修の日です（日付に間違った役割を結び付ける — 14日目10問と同じタイプのミスです：申込締切 ↔ 行事の日）。12月1日は資料を送る日です。"
     },
     {
       "n": 12,
@@ -239,7 +261,9 @@
       ],
       "ans": "B",
       "trap": "「まだ用意していない」— tài liệu chưa chuẩn bị + hạn gửi",
-      "explain": "研修の資料はまだ用意していない; 研修の前日 (12月1日火曜日) までにメールで送る — bẫy “chưa làm” gắn với điều kiện + hạn chót cụ thể."
+      "explain": "研修の資料はまだ用意していない; 研修の前日 (12月1日火曜日) までにメールで送る — bẫy “chưa làm” gắn với điều kiện + hạn chót cụ thể.",
+      "explain_en": "研修の資料はまだ用意していない; 研修の前日 (12月1日火曜日) までにメールで送る — the \"not yet done\" trap tied to a condition + a specific deadline.",
+      "explain_ja": "研修の資料はまだ用意していません。研修の前日 (12月1日火曜日) までにメールで送ります — 「まだしていない」のわなで、条件と具体的な期限が結び付いています。"
     }
   ],
   "instructions": "<li>聴解12問で <strong>40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>聴解4セット</strong> で、各セットに問題が3問あり、<strong>セットの3問はすべて1画面に一緒に</strong>、そのセットの再生ボタンのすぐ下に、CBT試験室形式の解答画面で表示されます — 聞いたら3問まとめて答えましょう。1問ずつ行き来する必要はありません。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li>セット1は <strong><span class=\"jp\">打ち合わせ</span> についての電話</strong>：会議の時刻が変更されます — 聞いた瞬間に「旧時刻 → 新時刻」のペアをメモに書きましょう。参加人数には3つもの数字があります（合計／参加確認済み／未回答）。数字ごとに項目名を結びつけ、役割を取り違えないこと。セット2は <strong>同じ日の2つのイベントの日程確認</strong>：<span class=\"jp\">研修</span> は時刻は同じで会場が変わり、<span class=\"jp\">懇親会</span> は同じ日の午後に行われます — イベントごとに「イベント → 時刻 + 場所」のペアを書き、取り違えないこと。同時に、<span class=\"jp\">懇親会</span> の招待状が全員に送られたかどうかをよく聞きましょう。セット3は <strong>会議室の料金 + 機器レンタル</strong>：部屋の料金、プロジェクター1台のレンタル料、合計は3つの異なる数字です — 合計を出すには単価にレンタル台数を掛けます。そして <span class=\"jp\">請求書</span> がどの状態にあるかをよく聞きましょう。セット4は <strong>ローテーション形式</strong> — <span class=\"jp\">説明・案内</span> で、1人が <span class=\"jp\">社内研修</span> について案内します：3つの異なる日付があります（<span class=\"jp\">研修</span> の実施日／申込期限／<span class=\"jp\">資料</span> の送付日）。聞いた瞬間に日付ごとに役割をメモしましょう。<span class=\"jp\">資料</span> はまだ「未対応」で、具体的な送付期限があります。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです — 別の答えを選ぶと前の答えが置き換わります。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、ベトナム語訳付きのトランスクリプト、ミスノートが表示されます。</li>",

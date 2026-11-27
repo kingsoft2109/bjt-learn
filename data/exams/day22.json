@@ -98,7 +98,9 @@
       ],
       "ans": "2",
       "trap": "Tổng của A vs tổng của B vs tổng A+B",
-      "explain": "320+350+380=1,050万円; 710万円 là tổng 製品B (210+240+260); 1,760万円 là tổng A+B; 1,000万円 là số tròn nhiễu."
+      "explain": "320+350+380=1,050万円; 710万円 là tổng 製品B (210+240+260); 1,760万円 là tổng A+B; 1,000万円 là số tròn nhiễu.",
+      "explain_en": "320+350+380=1,050万円; 710万円 is the total for 製品B (210+240+260); 1,760万円 is the total for A+B; 1,000万円 is a round-number distractor.",
+      "explain_ja": "320+350+380=1,050万円です。710万円は製品Bの合計（210+240+260）、1,760万円はA+Bの合計、1,000万円は切りのいい数字のひっかけです。"
     },
     {
       "n": 2,
@@ -112,7 +114,9 @@
       ],
       "ans": "1",
       "trap": "Cộng đúng cặp tháng được hỏi",
-      "explain": "210+240=450万円; 710万円 là tổng 製品B cả quý (kể cả 12月見込み — không phải hai tháng được hỏi); 500万円 là 240+260 (11月+12月, cặp sai); 470万円 là 210+260 (10月+12月, cặp sai)."
+      "explain": "210+240=450万円; 710万円 là tổng 製品B cả quý (kể cả 12月見込み — không phải hai tháng được hỏi); 500万円 là 240+260 (11月+12月, cặp sai); 470万円 là 210+260 (10月+12月, cặp sai).",
+      "explain_en": "210+240=450万円; 710万円 is the total for 製品B for the whole quarter (including the 12月見込み — not the two months asked about); 500万円 is 240+260 (11月+12月, the wrong pair); 470万円 is 210+260 (10月+12月, the wrong pair).",
+      "explain_ja": "210+240=450万円です。710万円は製品Bの四半期全体の合計です（12月の見込みを含む — 質問された2か月ではありません）。500万円は240+260（11月+12月、間違った組み合わせ）、470万円は210+260（10月+12月、間違った組み合わせ）です。"
     },
     {
       "n": 3,
@@ -126,7 +130,9 @@
       ],
       "ans": "3",
       "trap": "「まだ確定していない」— số tháng 12 của B chưa chốt",
-      "explain": "12月の製品Bの数字はまだ確定していない、見込みの数字です — bẫy まだ〜ていない: nghe thấy まだ〜ていない thì ghi ngay “CHƯA + hệ quả”; đáp án 4 là bẫy “đã xong rồi” mặc định."
+      "explain": "12月の製品Bの数字はまだ確定していない、見込みの数字です — bẫy まだ〜ていない: nghe thấy まだ〜ていない thì ghi ngay “CHƯA + hệ quả”; đáp án 4 là bẫy “đã xong rồi” mặc định.",
+      "explain_en": "12月の製品Bの数字はまだ確定していない、見込みの数字です — the まだ〜ていない trap: when you hear まだ〜ていない, immediately note down \"NOT YET + consequence\"; answer 4 is the default \"already done\" trap.",
+      "explain_ja": "12月の製品Bの数字はまだ確定していない、見込みの数字です — まだ〜ていないのわなです。まだ〜ていないと聞いたら、すぐに「まだ〜ていない＋その結果」をメモします。答えの4は「もう終わった」という思い込みのわなです。"
     },
     {
       "n": 4,
@@ -140,7 +146,9 @@
       ],
       "ans": "4",
       "trap": "Ngày mới của 研修 vs giờ của 商談",
-      "explain": "研修 đổi sang 11月27日金曜日午前10時 (đổi ngày, giữ giờ); 11月26日午前10時 là lịch cũ; 午後3時 là giờ của 商談 cùng ngày cũ — bẫy gắn chéo giờ sự kiện khác."
+      "explain": "研修 đổi sang 11月27日金曜日午前10時 (đổi ngày, giữ giờ); 11月26日午前10時 là lịch cũ; 午後3時 là giờ của 商談 cùng ngày cũ — bẫy gắn chéo giờ sự kiện khác.",
+      "explain_en": "研修 moves to 11月27日金曜日午前10時 (date changed, time kept); 11月26日午前10時 is the old schedule; 午後3時 is the time of the 商談 on the same old day — the trap cross-attaching another event's time.",
+      "explain_ja": "研修は11月27日金曜日午前10時に変わります（日は変更、時間はそのまま）。11月26日午前10時は変更前の予定です。午後3時は同じ変更前の日の商談の時間です — 別の行事の時間を結び付けるわなです。"
     },
     {
       "n": 5,
@@ -154,7 +162,9 @@
       ],
       "ans": "1",
       "trap": "Phòng của 商談 vs phòng của 研修",
-      "explain": "商談は本社5階の会議室B; 本社3階の会議室A là nơi tổ chức 研修 — bẫy hoán đổi phòng của hai sự kiện (giữ đúng cặp “sự kiện → phòng”)."
+      "explain": "商談は本社5階の会議室B; 本社3階の会議室A là nơi tổ chức 研修 — bẫy hoán đổi phòng của hai sự kiện (giữ đúng cặp “sự kiện → phòng”).",
+      "explain_en": "商談は本社5階の会議室B; 本社3階の会議室A is where the 研修 will be held — the trap swapping the rooms of the two events (keep the correct \"event → room\" pairing).",
+      "explain_ja": "商談は本社5階の会議室Bです。本社3階の会議室Aは研修が行われる場所です — 2つの行事の部屋を取り違えるわなです（「行事→部屋」の組み合わせを正しく押さえます）。"
     },
     {
       "n": 6,
@@ -168,7 +178,9 @@
       ],
       "ans": "3",
       "trap": "「まだ承認を得ていない」— tài liệu chưa duyệt",
-      "explain": "商談の資料はまだ承認を得ていないので、26日は口頭での説明のみ — bẫy まだ〜ていない gắn với hệ quả + ngày cụ thể (26日); đáp án 4 là bẫy “đã xong rồi” mặc định."
+      "explain": "商談の資料はまだ承認を得ていないので、26日は口頭での説明のみ — bẫy まだ〜ていない gắn với hệ quả + ngày cụ thể (26日); đáp án 4 là bẫy “đã xong rồi” mặc định.",
+      "explain_en": "商談の資料はまだ承認を得ていないので、26日は口頭での説明のみ — the まだ〜ていない trap tied to a consequence + a specific date (26日); answer 4 is the default \"already done\" trap.",
+      "explain_ja": "商談の資料はまだ承認を得ていないので、26日は口頭での説明のみです — まだ〜ていないのわなで、その結果と具体的な日（26日）が結び付いています。答えの4は「もう終わった」という思い込みのわなです。"
     },
     {
       "n": 7,
@@ -182,7 +194,9 @@
       ],
       "ans": "3",
       "trap": "Giá sau giảm 1割 vs giá gốc 3 ngày",
-      "explain": "8万円×3日=24万円, 1割引 → 24×0.9=21万6千円; 24万円 là giá trước giảm; 8万円 là 1 ngày; 16万円 = 8万円×2日."
+      "explain": "8万円×3日=24万円, 1割引 → 24×0.9=21万6千円; 24万円 là giá trước giảm; 8万円 là 1 ngày; 16万円 = 8万円×2日.",
+      "explain_en": "8万円×3日=24万円, 1割引 → 24×0.9=21万6千円; 24万円 is the price before the discount; 8万円 is 1 day; 16万円 = 8万円×2日.",
+      "explain_ja": "8万円×3日=24万円、1割引 → 24×0.9=21万6千円です。24万円は割引前の価格、8万円は1日分、16万円 = 8万円×2日です。"
     },
     {
       "n": 8,
@@ -196,7 +210,9 @@
       ],
       "ans": "1",
       "trap": "Tổng = giá phòng sau giảm + thuê 2 máy chiếu",
-      "explain": "21万6千円 + プロジェクター1万円×2台=2万円 → 23万6千円; 26万円 là 24万円 (chưa giảm) + 2万円; 25万6千円 là cộng trùng 2万円 hai lần."
+      "explain": "21万6千円 + プロジェクター1万円×2台=2万円 → 23万6千円; 26万円 là 24万円 (chưa giảm) + 2万円; 25万6千円 là cộng trùng 2万円 hai lần.",
+      "explain_en": "21万6千円 + プロジェクター1万円×2台=2万円 → 23万6千円; 26万円 is 24万円 (before discount) + 2万円; 25万6千円 is adding the 2万円 twice.",
+      "explain_ja": "21万6千円 + プロジェクター1万円×2台=2万円 → 23万6千円です。26万円は24万円（割引前）+ 2万円、25万6千円は2万円を2回足した計算です。"
     },
     {
       "n": 9,
@@ -210,7 +226,9 @@
       ],
       "ans": "4",
       "trap": "「まだ発行していない」— hóa đơn chưa phát hành",
-      "explain": "請求書はまだ発行していませんので、ご利用後に発行いたします — bẫy まだ〜ていない; đáp án 2 là bẫy “đã xong rồi” mặc định."
+      "explain": "請求書はまだ発行していませんので、ご利用後に発行いたします — bẫy まだ〜ていない; đáp án 2 là bẫy “đã xong rồi” mặc định.",
+      "explain_en": "請求書はまだ発行していませんので、ご利用後に発行いたします — the まだ〜ていない trap; answer 2 is the default \"already done\" trap.",
+      "explain_ja": "請求書はまだ発行していませんので、ご利用後に発行いたします — まだ〜ていないのわなです。答えの2は「もう終わった」という思い込みのわなです。"
     },
     {
       "n": 10,
@@ -224,7 +242,9 @@
       ],
       "ans": "3",
       "trap": "Ngày giao mới trong audio vs ngày cũ trên form",
-      "explain": "納品日 đổi 11月25日水曜日 → 11月27日金曜日; 11月25日 là ngày cũ trên biểu mẫu (audio ghi đè biểu mẫu); 11月26日・11月28日 không được nhắc tới."
+      "explain": "納品日 đổi 11月25日水曜日 → 11月27日金曜日; 11月25日 là ngày cũ trên biểu mẫu (audio ghi đè biểu mẫu); 11月26日・11月28日 không được nhắc tới.",
+      "explain_en": "納品日 changes 11月25日水曜日 → 11月27日金曜日; 11月25日 is the old date on the form (the audio overrides the form); 11月26日・11月28日 are not mentioned.",
+      "explain_ja": "納品日は11月25日水曜日 → 11月27日金曜日に変わります。11月25日は書類に書かれた変更前の日です（音声が書類の内容を上書きします）。11月26日・11月28日は触れられていません。"
     },
     {
       "n": 11,
@@ -238,7 +258,9 @@
       ],
       "ans": "4",
       "trap": "Số lượng vs số tiền trên form (nhãn số)",
-      "explain": "数量は20台のまま (không đổi); 40 là 金額 (40万円) trên biểu mẫu — bẫy nhãn số: 40 thuộc về 金額, không phải 数量."
+      "explain": "数量は20台のまま (không đổi); 40 là 金額 (40万円) trên biểu mẫu — bẫy nhãn số: 40 thuộc về 金額, không phải 数量.",
+      "explain_en": "数量は20台のまま (unchanged); 40 is the 金額 (40万円) on the form — the number-label trap: 40 belongs to the 金額, not the 数量.",
+      "explain_ja": "数量は20台のままです（変更なし）。40は書類の金額（40万円）です — 数字のラベルのわなです。40は金額にかかるもので、数量ではありません。"
     },
     {
       "n": 12,
@@ -252,7 +274,9 @@
       ],
       "ans": "4",
       "trap": "「まだ確定していない」— số tiền chưa chốt dù form ghi 40万円",
-      "explain": "見積書はまだお客様の承認を得ていないので、金額はまだ確定していない — bẫy まだ〜ていない hai lớp (見積書 chưa duyệt → 金額 chưa chốt); đáp án 3 lấy số 40万円 trên biểu mẫu làm số đã chốt — sai vì trạng thái chưa xác nhận."
+      "explain": "見積書はまだお客様の承認を得ていないので、金額はまだ確定していない — bẫy まだ〜ていない hai lớp (見積書 chưa duyệt → 金額 chưa chốt); đáp án 3 lấy số 40万円 trên biểu mẫu làm số đã chốt — sai vì trạng thái chưa xác nhận.",
+      "explain_en": "見積書はまだお客様の承認を得ていないので、金額はまだ確定していない — a two-layer まだ〜ていない trap (見積書 not yet approved → 金額 not yet fixed); answer 3 takes the 40万円 figure on the form as the fixed amount — wrong, because the status is unconfirmed.",
+      "explain_ja": "見積書はまだお客様の承認を得ていないので、金額はまだ確定していない — まだ〜ていないの二重のわなです（見積書が未承認 → 金額が未確定）。答えの3は書類の40万円を確定した金額としていますが、まだ確認されていない状態なので間違いです。"
     }
   ],
   "instructions": "<li>聴読解12問で <strong>40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>4セット</strong> で、各セットには読む資料（棒グラフ／価格表／フォーム）と <strong>会話の音声</strong> があり、<strong>セットの3問はすべて1画面に一緒に</strong>、その資料のすぐ下に、CBT試験室形式の解答画面で表示されます — 聞いたら3問まとめて答えましょう。1問ずつ行き来する必要はありません。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li>セット1は <strong><span class=\"jp\">製品A / 製品B</span> の10–12月の売上棒グラフ</strong>：聞いた瞬間に数字ごとに項目名を書き（A: 320・350・380; B: 210・240・260）、答えを見る前にペアごとに加算しましょう。Bの12月の数字は <span class=\"jp\">見込み</span>（未 <span class=\"jp\">確定</span>）なので、問題2は10月+11月だけを加算することに注意。セット2は <strong>日付の近い2つのイベント</strong>：<span class=\"jp\">研修</span> は日付が変わりますが時刻と部屋は同じ、<span class=\"jp\">商談</span> は元の日付の午後に行われます — 「<span class=\"jp\">研修</span>→11/27（金）10時・3F会議室A」「<span class=\"jp\">商談</span>→11/26（木）15時・5F会議室B」とすぐ書きましょう。セット3は <strong><span class=\"jp\">大会議室</span> のレンタル料金表</strong>：8<span class=\"jp\">万円</span>×3日=24<span class=\"jp\">万円</span> → 1割引 → 21<span class=\"jp\">万</span>6<span class=\"jp\">千円</span> にしてから、<span class=\"jp\">プロジェクター</span> 2<span class=\"jp\">万円</span> を加算します。割引前の価格を加算しないこと。セット4は <strong>ローテーション形式</strong> — <span class=\"jp\">納品依頼書</span> フォーム + 項目を修正する音声：フォームの納品日は音声で変更され、数量はそのまま（<span class=\"jp\">〜のまま</span>）、金額はフォームに数字があっても未 <span class=\"jp\">確定</span> です。</li>\n          <li>4セットすべてに <strong><span class=\"jp\">まだ〜ていない</span></strong> の注意点の問題が1問あります — この表現が聞こえたら、4つの選択肢を見る前に「未＋結果」をすぐメモしましょう。「もう終わった」というタイプの選択肢2つは、最初に除外すべき定番の引っかけです。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです — 別の答えを選ぶと前の答えが置き換わります。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、ベトナム語訳付きのトランスクリプト、ミスノートが表示されます。</li>",

@@ -67,7 +67,9 @@
       ],
       "ans": "A",
       "trap": "Hạn chót dùng 「〜以内に」; 「で」chỉ phương tiện/địa điểm, không dùng cho hạn",
-      "explain": "Hạn chót dùng 「〜以内に」; 「で」 chỉ phương tiện/địa điểm, không dùng cho hạn; 「以内の」 là dạng bổ nghĩa danh từ, không kết thúc mệnh đề; 「以内だ」 là thể thường, sai văn phong."
+      "explain": "Hạn chót dùng 「〜以内に」; 「で」 chỉ phương tiện/địa điểm, không dùng cho hạn; 「以内の」 là dạng bổ nghĩa danh từ, không kết thúc mệnh đề; 「以内だ」 là thể thường, sai văn phong.",
+      "explain_en": "For a deadline, use 「〜以内に」; 「で」 indicates means/place and is not used for a deadline; 「以内の」 is the noun-modifying form and does not end a clause; 「以内だ」 is the plain form and is wrong in style.",
+      "explain_ja": "期限には「〜以内に」を使います。「で」は手段・場所を表し、期限には使いません。「以内の」は名詞を修飾する形で、文は終わりません。「以内だ」は普通体で、文体が不適切です。"
     },
     {
       "n": 2,
@@ -81,7 +83,9 @@
       ],
       "ans": "B",
       "trap": "「〜どころじゃない」= không phải lúc để làm việc đó (không có thời gian nghỉ)",
-      "explain": "「〜どころじゃない」= không phải lúc để làm việc đó (không có thời gian nghỉ); 「ばかりじゃない」 không đi với động từ dạng này theo nghĩa đó; 「までじゃない」「だけじゃない」 sai nghĩa."
+      "explain": "「〜どころじゃない」= không phải lúc để làm việc đó (không có thời gian nghỉ); 「ばかりじゃない」 không đi với động từ dạng này theo nghĩa đó; 「までじゃない」「だけじゃない」 sai nghĩa.",
+      "explain_en": "「〜どころじゃない」 = this is no time to be doing that (there is no time to rest); 「ばかりじゃない」 does not go with a verb in this form with that meaning; 「までじゃない」「だけじゃない」 have the wrong meaning.",
+      "explain_ja": "「〜どころじゃない」＝そんなことをしている場合ではない（休む時間がない）という意味です。「ばかりじゃない」はこの意味ではこの動詞の形には続きません。「までじゃない」「だけじゃない」は意味が違います。"
     },
     {
       "n": 3,
@@ -95,7 +99,9 @@
       ],
       "ans": "A",
       "trap": "Bên mình hoãn họp → khiêm nhường ngữ させていただく; tôn kính ngữ là cho hành động của đối phương",
-      "explain": "Bên mình hoãn họp → dùng khiêm nhường ngữ させていただく; B là nhận ơn đối phương hoãn (sai chủ thể); C・D là tôn kính ngữ cho hành động của đối phương (sai chủ thể)."
+      "explain": "Bên mình hoãn họp → dùng khiêm nhường ngữ させていただく; B là nhận ơn đối phương hoãn (sai chủ thể); C・D là tôn kính ngữ cho hành động của đối phương (sai chủ thể).",
+      "explain_en": "Our side is postponing the meeting → use the humble form させていただく; B means receiving the favour of the other party postponing it (wrong subject); C・D are honorific forms for the other party's action (wrong subject).",
+      "explain_ja": "こちらが会議を延期するので、謙譲語のさせていただくを使います。Bは相手に延期してもらう意味で（主体が違います）、C・Dは相手の行為に対する尊敬語です（主体が違います）。"
     },
     {
       "n": 4,
@@ -109,7 +115,9 @@
       ],
       "ans": "B",
       "trap": "ご覧になられました là kính ngữ kép (ご覧 + になられる) — sai",
-      "explain": "Hỏi cấp trên đã xem chưa → ご覧になりました; A là kính ngữ kép (ご覧 + になられる) sai; C 「お目通しになりました」 không phải dạng chuẩn (đúng là お目通しいただけましたか); D 拝見しました là người nói đã xem (sai hướng)."
+      "explain": "Hỏi cấp trên đã xem chưa → ご覧になりました; A là kính ngữ kép (ご覧 + になられる) sai; C 「お目通しになりました」 không phải dạng chuẩn (đúng là お目通しいただけましたか); D 拝見しました là người nói đã xem (sai hướng).",
+      "explain_en": "Asking whether a superior has already looked at it → ご覧になりました; A is double honorific (ご覧 + になられる) and is wrong; C 「お目通しになりました」 is not the standard form (the correct form is お目通しいただけましたか); D 拝見しました means the speaker has looked at it (wrong direction).",
+      "explain_ja": "上司が見たかどうかを尋ねるので、ご覧になりましたを使います。Aは二重敬語（ご覧 + になられる）で誤りです。C「お目通しになりました」は標準的な形ではありません（正しくはお目通しいただけましたか）。D 拝見しましたは話し手が見たという意味で（方向が違います）。"
     },
     {
       "n": 5,
@@ -123,7 +131,9 @@
       ],
       "ans": "C",
       "trap": "Nói về cấp trên của mình với người ngoài → khiêm nhường ngữ 外しております, không dùng tôn kính ngữ",
-      "explain": "Nói về cấp trên của mình với người ngoài → dùng khiêm nhường ngữ 外しております; A là tôn kính ngữ, sai khi nói về người trong công ty với khách; B sai dạng; D là thể thường, không đủ kính ngữ với khách."
+      "explain": "Nói về cấp trên của mình với người ngoài → dùng khiêm nhường ngữ 外しております; A là tôn kính ngữ, sai khi nói về người trong công ty với khách; B sai dạng; D là thể thường, không đủ kính ngữ với khách.",
+      "explain_en": "Speaking about your own superior to an outsider → use the humble form 外しております; A is an honorific form, which is wrong when speaking about someone in your own company to a client; B is the wrong form; D is the plain form and does not show enough respect to a client.",
+      "explain_ja": "社外の人に自分の上司について話すので、謙譲語の外しておりますを使います。Aは尊敬語で、顧客に自社の人間について話すときには不適切です。Bは形が誤りです。Dは普通体で、顧客に対する敬意が不十分です。"
     },
     {
       "n": 6,
@@ -137,7 +147,9 @@
       ],
       "ans": "B",
       "trap": "Xin lỗi vì để chờ lâu → 申し訳ございません",
-      "explain": "Xin lỗi vì để chờ lâu → 申し訳ございません; A dùng khi kết thúc công việc, C là chào hỏi, D là nhờ vả."
+      "explain": "Xin lỗi vì để chờ lâu → 申し訳ございません; A dùng khi kết thúc công việc, C là chào hỏi, D là nhờ vả.",
+      "explain_en": "Apologising for making someone wait a long time → 申し訳ございません; A is used when finishing work, C is a greeting, and D is for making a request.",
+      "explain_ja": "長く待たせたことを謝るので、申し訳ございませんを使います。Aは仕事を終えるとき、Cは挨拶、Dは依頼のときに使います。"
     },
     {
       "n": 7,
@@ -151,7 +163,9 @@
       ],
       "ans": "A",
       "trap": "Cộng 3 chi nhánh tháng 11 (45+32+28); 120 là ngân sách, 115 là dự báo tháng 12",
-      "explain": "45+32+28=105万円; 120万円 là ngân sách, 115万円 là dự báo tháng 12."
+      "explain": "45+32+28=105万円; 120万円 là ngân sách, 115万円 là dự báo tháng 12.",
+      "explain_en": "45+32+28=105万円; 120万円 is the budget, and 115万円 is the December forecast.",
+      "explain_ja": "45+32+28=105万円です。120万円は予算で、115万円は12月の予測です。"
     },
     {
       "n": 8,
@@ -165,7 +179,9 @@
       ],
       "ans": "A",
       "trap": "So thực tế với ngân sách (120−105); 10万円 là mức tăng dự báo tháng 12 so với thực tế tháng 11 (115−105)",
-      "explain": "120−105=15万円余った (dưới ngân sách); 10万円 là mức tăng dự báo tháng 12 so với thực tế tháng 11 (115−105), không phải so với ngân sách."
+      "explain": "120−105=15万円余った (dưới ngân sách); 10万円 là mức tăng dự báo tháng 12 so với thực tế tháng 11 (115−105), không phải so với ngân sách.",
+      "explain_en": "120−105=15万円余った (under budget); 10万円 is the forecast increase for December compared with the actual November result (115−105), not compared with the budget.",
+      "explain_ja": "120−105=15万円余った（予算以下）です。10万円は12月の予測の11月実績に対する増加分（115−105）であり、予算に対するものではありません。"
     },
     {
       "n": 9,
@@ -179,7 +195,9 @@
       ],
       "ans": "B",
       "trap": "「まだ社内承認を得ていないため、見込みには含めていない」— chưa duyệt = không tính vào dự báo",
-      "explain": "福岡の新規研修計画はまだ社内承認を得ていないため、12月の見込みには含めていない — đúng dạng bẫy \"chưa duyệt = không tính vào dự báo\"."
+      "explain": "福岡の新規研修計画はまだ社内承認を得ていないため、12月の見込みには含めていない — đúng dạng bẫy \"chưa duyệt = không tính vào dự báo\".",
+      "explain_en": "福岡の新規研修計画はまだ社内承認を得ていないため、12月の見込みには含めていない — this is exactly the trap pattern \"not yet approved = not included in the forecast\".",
+      "explain_ja": "福岡の新規研修計画はまだ社内承認を得ていないため、12月の見込みには含めていない — 「まだ承認されていない＝見込みに含めない」という引っかけのパターンそのものです。"
     },
     {
       "n": 10,
@@ -193,7 +211,9 @@
       ],
       "ans": "D",
       "trap": "Cộng trong nước + nước ngoài (1,250+860); 2,300 là dự báo nửa cuối năm, 1,250 chỉ là trong nước",
-      "explain": "1,250+860=2,110万円; 2,300万円 là dự báo nửa cuối năm, 1,250万円 chỉ là doanh số trong nước."
+      "explain": "1,250+860=2,110万円; 2,300万円 là dự báo nửa cuối năm, 1,250万円 chỉ là doanh số trong nước.",
+      "explain_en": "1,250+860=2,110万円; 2,300万円 is the forecast for the second half of the year, and 1,250万円 is only domestic sales.",
+      "explain_ja": "1,250+860=2,110万円です。2,300万円は下半期の予測で、1,250万円は国内売上だけです。"
     },
     {
       "n": 11,
@@ -207,7 +227,9 @@
       ],
       "ans": "C",
       "trap": "2,300−2,110=190; 290 là lấy tổng sai 2,010万円 để trừ (2,300−2,010)",
-      "explain": "2,300−2,110=190万円の増加; 290万円 là lấy tổng sai 2,010万円 để trừ (2,300−2,010)."
+      "explain": "2,300−2,110=190万円の増加; 290万円 là lấy tổng sai 2,010万円 để trừ (2,300−2,010).",
+      "explain_en": "2,300−2,110=190万円の増加; 290万円 comes from subtracting using the wrong total 2,010万円 (2,300−2,010).",
+      "explain_ja": "2,300−2,110=190万円の増加です。290万円は、誤った合計2,010万円を使って引いたものです（2,300−2,010）。"
     },
     {
       "n": 12,
@@ -221,7 +243,9 @@
       ],
       "ans": "B",
       "trap": "「まだ取締役会の承認を得ていないため、見込みには含めていない」— chưa duyệt = không tính vào dự báo",
-      "explain": "九州の新規事業計画はまだ取締役会の承認を得ていないため、下半期の見込みには含めていない."
+      "explain": "九州の新規事業計画はまだ取締役会の承認を得ていないため、下半期の見込みには含めていない.",
+      "explain_en": "九州の新規事業計画はまだ取締役会の承認を得ていないため、下半期の見込みには含めていない.",
+      "explain_ja": "九州の新規事業計画はまだ取締役会の承認を得ていないため、下半期の見込みには含めていない."
     }
   ],
   "instructions": "<li><strong>時間測定テスト：ちょうど40分</strong> で読解12問。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>4セット</strong> で、各セット3問、<strong>セット全体が1画面に一緒に</strong>（テキスト + そのすぐ下に問題3問）、CBT試験室形式の解答画面で表示されます。<strong>音声はありません</strong> — 今回は読解の練習だけです。</li>\n          <li>セット1は <span class=\"jp\">§1 文法語彙問題</span> — 穴埋め3問（期限の <span class=\"jp\">〜以内に</span>、<span class=\"jp\">〜どころじゃない</span>、謙譲語の <span class=\"jp\">させていただく</span>）。セット2は <span class=\"jp\">§2 表現力問題</span> — 短い会話で、上下関係と会社の内外関係に応じた正しい敬語表現を選びます。</li>\n          <li>セット3は <span class=\"jp\">§3 短文読解</span> — 11月の研修費を報告する社内メール：3支店を合計し、予算と比較します。福岡の計画は <span class=\"jp\">まだ社内承認を得ていない</span> ので、12月の予測には入れないことに注意。セット4は <strong>新形式の <span class=\"jp\">長文</span></strong> — 半期報告書：上半期の売上、下半期の予測、取締役会の承認がまだの九州の計画 — 同じ <span class=\"jp\">まだ〜ていない</span> の注意点が、より長い文章のレベルで出ます。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。答え、ベトナム語の解説、<strong>各テキストの参考訳</strong> は、ミスノートと一緒に、提出後にのみ表示されます。</li>",

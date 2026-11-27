@@ -103,7 +103,9 @@
       ],
       "ans": "C",
       "trap": "Số đã đặt vs số đã gửi vs số còn lại",
-      "explain": "注文は100個；60個 là số đã発送, 40個 là số còn lại."
+      "explain": "注文は100個；60個 là số đã発送, 40個 là số còn lại.",
+      "explain_en": "注文は100個; 60個 is the number already 発送, and 40個 is the number remaining.",
+      "explain_ja": "注文は100個です。60個はすでに発送した数で、40個は残りの数です。"
     },
     {
       "n": 2,
@@ -117,7 +119,9 @@
       ],
       "ans": "B",
       "trap": "Hạn giao phần còn lại",
-      "explain": "残り40個は11月16日月曜日までにお届けする."
+      "explain": "残り40個は11月16日月曜日までにお届けする.",
+      "explain_en": "残り40個は11月16日月曜日までにお届けする.",
+      "explain_ja": "残り40個は11月16日月曜日までにお届けする."
     },
     {
       "n": 3,
@@ -131,7 +135,9 @@
       ],
       "ans": "B",
       "trap": "「まだ送っていない」— 見積書 chưa gửi",
-      "explain": "見積書はまだ送っていないので、金額を確認してから送る."
+      "explain": "見積書はまだ送っていないので、金額を確認してから送る.",
+      "explain_en": "見積書はまだ送っていないので、金額を確認してから送る.",
+      "explain_ja": "見積書はまだ送っていないので、金額を確認してから送る."
     },
     {
       "n": 4,
@@ -145,7 +151,9 @@
       ],
       "ans": "B",
       "trap": "Lịch cũ vs lịch mới + hai sự kiện cùng ngày",
-      "explain": "社内説明会 đổi từ 12月2日水曜日午後2時 sang 12月4日金曜日午前11時；午後4時 cùng ngày là商品研修, không phải説明会."
+      "explain": "社内説明会 đổi từ 12月2日水曜日午後2時 sang 12月4日金曜日午前11時；午後4時 cùng ngày là商品研修, không phải説明会.",
+      "explain_en": "社内説明会 changed from 12月2日水曜日午後2時 to 12月4日金曜日午前11時; 午後4時 on the same day is the 商品研修, not the 説明会.",
+      "explain_ja": "社内説明会は12月2日水曜日午後2時から12月4日金曜日午前11時に変更されました。同日の午後4時は商品研修であり、説明会ではありません。"
     },
     {
       "n": 5,
@@ -159,7 +167,9 @@
       ],
       "ans": "C",
       "trap": "「まだ承認を得ていない」— chưa được duyệt thì chỉ giải thích 概要",
-      "explain": "資料はまだ承認を得ていないので当日は概要のみ；資料 sẽ gửi sau khi承認が下りてから."
+      "explain": "資料はまだ承認を得ていないので当日は概要のみ；資料 sẽ gửi sau khi承認が下りてから.",
+      "explain_en": "資料はまだ承認を得ていないので当日は概要のみ; 資料 will be sent after 承認が下りてから.",
+      "explain_ja": "資料はまだ承認を得ていないので当日は概要のみです。資料は承認が下りてから送ります。"
     },
     {
       "n": 6,
@@ -173,7 +183,9 @@
       ],
       "ans": "A",
       "trap": "Ghép chéo giờ của hai sự kiện cùng ngày",
-      "explain": "商品研修 giữ nguyên 12月4日金曜日午後4時；午前11時 cùng ngày là社内説明会 đã dời tới."
+      "explain": "商品研修 giữ nguyên 12月4日金曜日午後4時；午前11時 cùng ngày là社内説明会 đã dời tới.",
+      "explain_en": "商品研修 remains unchanged at 12月4日金曜日午後4時; 午前11時 on the same day is the 社内説明会 that was moved there.",
+      "explain_ja": "商品研修は12月4日金曜日午後4時のままです。同日の午前11時は、そこへ移された社内説明会です。"
     },
     {
       "n": 7,
@@ -187,7 +199,9 @@
       ],
       "ans": "C",
       "trap": "Đã xuất vs còn lại vs tổng số",
-      "explain": "全200個のうち出荷済み120個；80 là số còn lại, 200 là tổng số."
+      "explain": "全200個のうち出荷済み120個；80 là số còn lại, 200 là tổng số.",
+      "explain_en": "全200個のうち出荷済み120個; 80 is the number remaining, and 200 is the total number.",
+      "explain_ja": "全200個のうち出荷済み120個です。80は残りの数で、200は総数です。"
     },
     {
       "n": 8,
@@ -201,7 +215,9 @@
       ],
       "ans": "C",
       "trap": "Gắn đúng số với đúng đối tượng",
-      "explain": "残りは80個；120 là số đã出荷, 200 là tổng số."
+      "explain": "残りは80個；120 là số đã出荷, 200 là tổng số.",
+      "explain_en": "残りは80個; 120 is the number already 出荷, and 200 is the total number.",
+      "explain_ja": "残りは80個です。120はすでに出荷した数で、200は総数です。"
     },
     {
       "n": 9,
@@ -215,7 +231,9 @@
       ],
       "ans": "B",
       "trap": "「まだ結んでいない」— 契約書 chưa ký",
-      "explain": "契約書はまだ結んでいない、金額が決まり次第結ぶ."
+      "explain": "契約書はまだ結んでいない、金額が決まり次第結ぶ.",
+      "explain_en": "契約書はまだ結んでいない、金額が決まり次第結ぶ.",
+      "explain_ja": "契約書はまだ結んでいない、金額が決まり次第結ぶ."
     },
     {
       "n": 10,
@@ -229,7 +247,9 @@
       ],
       "ans": "A",
       "trap": "Ghép đúng ngày + giờ + địa điểm; 12月7日 là hạn đăng ký",
-      "explain": "研修は12月9日水曜日午前10時から午後3時まで、本社5階の会議室B；12月7日 là hạn申し込み, không phải ngày研修."
+      "explain": "研修は12月9日水曜日午前10時から午後3時まで、本社5階の会議室B；12月7日 là hạn申し込み, không phải ngày研修.",
+      "explain_en": "研修は12月9日水曜日午前10時から午後3時まで、本社5階の会議室B; 12月7日 is the application deadline, not the training date.",
+      "explain_ja": "研修は12月9日水曜日午前10時から午後3時まで、本社5階の会議室Bです。12月7日は申し込み期限であり、研修日ではありません。"
     },
     {
       "n": 11,
@@ -243,7 +263,9 @@
       ],
       "ans": "B",
       "trap": "Hạn đăng ký vs ngày tổ chức研修",
-      "explain": "申し込みは12月7日月曜日まで；12月9日 là ngày研修, 参加費は無料 nhưng vẫn cần申し込み."
+      "explain": "申し込みは12月7日月曜日まで；12月9日 là ngày研修, 参加費は無料 nhưng vẫn cần申し込み.",
+      "explain_en": "申し込みは12月7日月曜日まで; 12月9日 is the training date, and 参加費は無料 but an application is still required.",
+      "explain_ja": "申し込みは12月7日月曜日までです。12月9日は研修日で、参加費は無料ですが、申し込みは必要です。"
     },
     {
       "n": 12,
@@ -257,7 +279,9 @@
       ],
       "ans": "B",
       "trap": "「まだ用意できていない」— 資料 chưa chuẩn bị xong",
-      "explain": "資料はまだ用意できていないので当日会場で配る."
+      "explain": "資料はまだ用意できていないので当日会場で配る.",
+      "explain_en": "資料はまだ用意できていないので当日会場で配る.",
+      "explain_ja": "資料はまだ用意できていないので当日会場で配る."
     }
   ],
   "instructions": "<li>聴解12問で <strong>40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>聴解4セット</strong> で、各セットに問題が3問あり、<strong>セットの3問はすべて1画面に一緒に</strong>、そのセットの再生ボタンのすぐ下に、CBT試験室形式の解答画面で表示されます — 聞いたら3問まとめて答えましょう。1問ずつ行き来する必要はありません。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li>セット1は <strong>お客様からの電話</strong>：聞いた瞬間に数字ごとに項目名を結びつけ（注文済み <span class=\"jp\">100個</span>／送付済み <span class=\"jp\">60個</span>／残り <span class=\"jp\">40個</span>）、<span class=\"jp\">見積書</span> <span class=\"jp\">まだ送っていない</span> ことに注意 — お客様が金額を確認した後に送ります。セット2は <strong>日程変更</strong>：<span class=\"jp\">社内説明会</span> と <span class=\"jp\">商品研修</span> はどちらも12/4ですが時刻が異なります — 「イベント → 時刻」のペアをメモに書き、取り違えないこと。<span class=\"jp\">商品研修</span> の資料は <span class=\"jp\">まだ承認を得ていない</span> ので、その日は <span class=\"jp\">概要</span> だけを説明します。セット3は <strong>出荷の進捗</strong>（合計 <span class=\"jp\">200個</span>／出荷済み <span class=\"jp\">120個</span>／残り <span class=\"jp\">80個</span>）と <span class=\"jp\">契約書</span> <span class=\"jp\">まだ結んでいない</span> — 金額が決まり次第締結します。セット4は <strong>新形式の <span class=\"jp\">説明・案内</span></strong> — <span class=\"jp\">社内研修</span> について1人が案内します：実施日（12/9）と申込期限（12/7）をはっきり分け、<span class=\"jp\">資料</span> は <span class=\"jp\">まだ用意できていない</span> ので当日会場で配ります。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです — 別の答えを選ぶと前の答えが置き換わります。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、ベトナム語訳付きのトランスクリプト、ミスノートが表示されます。</li>",

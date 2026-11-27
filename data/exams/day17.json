@@ -99,7 +99,9 @@
       ],
       "ans": "C",
       "trap": "Đã nhập vs còn lại vs tổng số",
-      "explain": "全300個のうち入荷済み180個；120個 là số còn lại, 300個 là tổng số."
+      "explain": "全300個のうち入荷済み180個；120個 là số còn lại, 300個 là tổng số.",
+      "explain_en": "全300個のうち入荷済み180個; 120個 is the number remaining, and 300個 is the total number.",
+      "explain_ja": "全300個のうち入荷済み180個です。120個は残りの数で、300個は総数です。"
     },
     {
       "n": 2,
@@ -113,7 +115,9 @@
       ],
       "ans": "B",
       "trap": "Hạn nhập phần còn lại",
-      "explain": "残り120個は11月26日木曜日までに入荷する予定."
+      "explain": "残り120個は11月26日木曜日までに入荷する予定.",
+      "explain_en": "残り120個は11月26日木曜日までに入荷する予定.",
+      "explain_ja": "残り120個は11月26日木曜日までに入荷する予定."
     },
     {
       "n": 3,
@@ -127,7 +131,9 @@
       ],
       "ans": "C",
       "trap": "「まだ結んでいない」— 契約書 chưa ký",
-      "explain": "契約書はまだ結んでいませんので、金額が決まり次第、契約を結びます — bẫy まだ〜ていない: nghe thấy まだ〜ていない thì ghi ngay \"CHƯA + hệ quả\"."
+      "explain": "契約書はまだ結んでいませんので、金額が決まり次第、契約を結びます — bẫy まだ〜ていない: nghe thấy まだ〜ていない thì ghi ngay \"CHƯA + hệ quả\".",
+      "explain_en": "契約書はまだ結んでいませんので、金額が決まり次第、契約を結びます — the まだ〜ていない trap: as soon as you hear まだ〜ていない, note down \"NOT YET + the consequence\" right away.",
+      "explain_ja": "契約書はまだ結んでいませんので、金額が決まり次第、契約を結びます — まだ〜ていないの引っかけです。まだ〜ていないと聞いたら、すぐに「まだ＋その後の結果」とメモします。"
     },
     {
       "n": 4,
@@ -141,7 +147,9 @@
       ],
       "ans": "C",
       "trap": "Lịch cũ vs lịch mới + hai sự kiện cùng ngày",
-      "explain": "商談 đổi từ 11月17日火曜日午前10時 sang 11月19日木曜日午後3時；午前11時 cùng ngày là社内研修, không phải商談."
+      "explain": "商談 đổi từ 11月17日火曜日午前10時 sang 11月19日木曜日午後3時；午前11時 cùng ngày là社内研修, không phải商談.",
+      "explain_en": "商談 changed from 11月17日火曜日午前10時 to 11月19日木曜日午後3時; 午前11時 on the same day is the 社内研修, not the 商談.",
+      "explain_ja": "商談は11月17日火曜日午前10時から11月19日木曜日午後3時に変更されました。同日の午前11時は社内研修であり、商談ではありません。"
     },
     {
       "n": 5,
@@ -155,7 +163,9 @@
       ],
       "ans": "C",
       "trap": "「まだ承認を得ていない」— chưa được duyệt thì chỉ giải thích 概要",
-      "explain": "資料はまだ承認を得ていないので当日は概要のみ；資料 sẽ gửi sau khi承認が下りてから."
+      "explain": "資料はまだ承認を得ていないので当日は概要のみ；資料 sẽ gửi sau khi承認が下りてから.",
+      "explain_en": "資料はまだ承認を得ていないので当日は概要のみ; 資料 will be sent after 承認が下りてから.",
+      "explain_ja": "資料はまだ承認を得ていないので当日は概要のみです。資料は承認が下りてから送ります。"
     },
     {
       "n": 6,
@@ -169,7 +179,9 @@
       ],
       "ans": "A",
       "trap": "Ghép chéo giờ của hai sự kiện cùng ngày",
-      "explain": "研修 giữ nguyên 11月19日木曜日午前11時；午後3時 cùng ngày là商談 đã dời tới. Ghi cặp \"sự kiện → giờ/ngày\" ra nháp ngay khi nghe （商談19日15時・研修19日11時), không giữ trong đầu."
+      "explain": "研修 giữ nguyên 11月19日木曜日午前11時；午後3時 cùng ngày là商談 đã dời tới. Ghi cặp \"sự kiện → giờ/ngày\" ra nháp ngay khi nghe （商談19日15時・研修19日11時), không giữ trong đầu.",
+      "explain_en": "研修 remains unchanged at 11月19日木曜日午前11時; 午後3時 on the same day is the 商談 that was moved there. Write the \"event → time/date\" pairs down on your scratch paper as soon as you hear them （商談19日15時・研修19日11時), instead of keeping them in your head.",
+      "explain_ja": "研修は11月19日木曜日午前11時のままです。同日の午後3時は、そこへ移された商談です。「出来事→時刻・日付」のペアを聞いたらすぐにメモに書き出します（商談19日15時・研修19日11時）。頭の中だけで覚えようとしてはいけません。"
     },
     {
       "n": 7,
@@ -183,7 +195,9 @@
       ],
       "ans": "B",
       "trap": "Số người × số bản mỗi người",
-      "explain": "25名 × 1人2部 = 50部；25部 là số người, 2部 là số bản mỗi người."
+      "explain": "25名 × 1人2部 = 50部；25部 là số người, 2部 là số bản mỗi người.",
+      "explain_en": "25名 × 1人2部 = 50部; 25部 is the number of people, and 2部 is the number of copies per person.",
+      "explain_ja": "25名 × 1人2部 = 50部です。25部は人数で、2部は1人あたりの部数です。"
     },
     {
       "n": 8,
@@ -197,7 +211,9 @@
       ],
       "ans": "A",
       "trap": "Ghép đúng ngày + địa điểm của会議",
-      "explain": "会議は12月1日火曜日、本社3階会議室A；会議室B・12月2日・本社5階 không được nhắc tới."
+      "explain": "会議は12月1日火曜日、本社3階会議室A；会議室B・12月2日・本社5階 không được nhắc tới.",
+      "explain_en": "会議は12月1日火曜日、本社3階会議室A; 会議室B・12月2日・本社5階 are not mentioned.",
+      "explain_ja": "会議は12月1日火曜日、本社3階会議室Aです。会議室B・12月2日・本社5階には触れられていません。"
     },
     {
       "n": 9,
@@ -211,7 +227,9 @@
       ],
       "ans": "C",
       "trap": "「まだ送っていない」— 案内 chưa gửi",
-      "explain": "案内はまだ取引先に送っていないので、参加者が決まり次第送る — bẫy \"chưa làm\" gắn với điều kiện tiếp theo."
+      "explain": "案内はまだ取引先に送っていないので、参加者が決まり次第送る — bẫy \"chưa làm\" gắn với điều kiện tiếp theo.",
+      "explain_en": "案内はまだ取引先に送っていないので、参加者が決まり次第送る — the \"not done yet\" trap combined with the next condition.",
+      "explain_ja": "案内はまだ取引先に送っていないので、参加者が決まり次第送る — 「まだしていない」という引っかけが、次の条件と結びついています。"
     },
     {
       "n": 10,
@@ -225,7 +243,9 @@
       ],
       "ans": "A",
       "trap": "Ghép đúng ngày + giờ + phòng họp",
-      "explain": "発表会は11月27日金曜日午後2時から会議室B；11月26日 không xuất hiện trong audio, 会議室A không được nhắc tới."
+      "explain": "発表会は11月27日金曜日午後2時から会議室B；11月26日 không xuất hiện trong audio, 会議室A không được nhắc tới.",
+      "explain_en": "発表会は11月27日金曜日午後2時から会議室B; 11月26日 does not appear in the audio, and 会議室A is not mentioned.",
+      "explain_ja": "発表会は11月27日金曜日午後2時から会議室Bです。11月26日は音声には出てこず、会議室Aにも触れられていません。"
     },
     {
       "n": 11,
@@ -239,7 +259,9 @@
       ],
       "ans": "B",
       "trap": "Số người × số bản mỗi người",
-      "explain": "参加者40名 × 1人3部 = 120部；40 là số người, 3 là số bản mỗi người."
+      "explain": "参加者40名 × 1人3部 = 120部；40 là số người, 3 là số bản mỗi người.",
+      "explain_en": "参加者40名 × 1人3部 = 120部; 40 is the number of people, and 3 is the number of copies per person.",
+      "explain_ja": "参加者40名 × 1人3部 = 120部です。40は人数で、3は1人あたりの部数です。"
     },
     {
       "n": 12,
@@ -253,7 +275,9 @@
       ],
       "ans": "C",
       "trap": "「まだ送っていない」— 案内 chưa gửi",
-      "explain": "案内はまだ取引先に送っていないので、参加者が決まり次第送る — bẫy \"chưa làm\" gắn với điều kiện tiếp theo."
+      "explain": "案内はまだ取引先に送っていないので、参加者が決まり次第送る — bẫy \"chưa làm\" gắn với điều kiện tiếp theo.",
+      "explain_en": "案内はまだ取引先に送っていないので、参加者が決まり次第送る — the \"not done yet\" trap combined with the next condition.",
+      "explain_ja": "案内はまだ取引先に送っていないので、参加者が決まり次第送る — 「まだしていない」という引っかけが、次の条件と結びついています。"
     }
   ],
   "instructions": "<li>聴解12問で <strong>40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>聴解4セット</strong> で、各セットに問題が3問あり、<strong>セットの3問はすべて1画面に一緒に</strong>、そのセットの再生ボタンのすぐ下に、CBT試験室形式の解答画面で表示されます — 聞いたら3問まとめて答えましょう。1問ずつ行き来する必要はありません。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li>セット1は <strong>入荷についての電話</strong>：聞いた瞬間に数字ごとに項目名を結びつけ（合計 <span class=\"jp\">300個</span>／入荷済み <span class=\"jp\">180個</span>／残り <span class=\"jp\">120個</span>）、残りの入荷期限は <span class=\"jp\">11月26日木曜日</span> で、<span class=\"jp\">契約書</span> は <span class=\"jp\">まだ結んでいない</span> — 金額が決まり次第締結します。セット2は <strong>日程変更</strong>：A社との <span class=\"jp\">商談</span> は <span class=\"jp\">11月17日火曜日午前10時</span> から <span class=\"jp\">11月19日木曜日午後3時</span> に移り、<span class=\"jp\">社内研修</span> は <span class=\"jp\">11月19日木曜日午前11時</span> のままです — 「イベント → 時刻」のペアをメモに書き、取り違えないこと。<span class=\"jp\">研修</span> の資料は <span class=\"jp\">まだ承認を得ていない</span> ので、その日は <span class=\"jp\">概要</span> だけを説明します。セット3は <span class=\"jp\">12月1日火曜日</span> の <strong>会議資料の準備</strong>：<span class=\"jp\">25名</span> × <span class=\"jp\">1人2部</span> = <span class=\"jp\">50部</span> — 正しく掛けましょう。人数を部数にしないこと。<span class=\"jp\">発表会の案内</span> は <span class=\"jp\">まだ取引先に送っていない</span> — 参加者が確定したら送ります。セット4は <strong>ローテーション形式</strong> — <span class=\"jp\">11月27日金曜日午後2時</span> に <span class=\"jp\">会議室B</span> で行う <span class=\"jp\">新製品発表会</span> の準備をする3人の会議：資料は <span class=\"jp\">40名</span> × <span class=\"jp\">1人3部</span> = <span class=\"jp\">120部</span>、<span class=\"jp\">最終確認</span> を <span class=\"jp\">まだ部長からいただいていない</span> のでまだ印刷しておらず、<span class=\"jp\">案内</span> もまだ送られていません。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです — 別の答えを選ぶと前の答えが置き換わります。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、ベトナム語訳付きのトランスクリプト、ミスノートが表示されます。</li>",

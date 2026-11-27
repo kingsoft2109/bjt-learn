@@ -98,6 +98,8 @@
       "ans": "3",
       "trap": "Nhân số người × số bộ mỗi người",
       "explain": "参加者は30名、資料は1人3部 → 30×3=90部; 60部 là 30×2 (nhân nhầm số bộ); 120部 là 30×4.",
+      "explain_en": "参加者は30名、資料は1人3部 → 30×3=90部; 60部 is 30×2 (multiplying by the wrong number of copies); 120部 is 30×4.",
+      "explain_ja": "参加者は30名、資料は1人3部 → 30×3=90部です。60部は30×2（部数を掛け違えた計算）、120部は30×4です。",
       "img": "assets/day23-seg1-q1.jpg"
     },
     {
@@ -113,6 +115,8 @@
       "ans": "2",
       "trap": "Địa điểm mới vs địa điểm cũ",
       "explain": "会場 đổi 本社2階の研修室 → 本社4階の大会議室; 1 là địa điểm cũ; 3/4 là phòng của hai sự kiện ở bộ 2.",
+      "explain_en": "会場 changes 本社2階の研修室 → 本社4階の大会議室; 1 is the old location; 3/4 are the rooms of the two events in set 2.",
+      "explain_ja": "会場は本社2階の研修室 → 本社4階の大会議室に変わります。1は変更前の場所です。3/4はセット2の2つの行事の部屋です。",
       "img": "assets/day23-seg1-q2.jpg"
     },
     {
@@ -128,6 +132,8 @@
       "ans": "2",
       "trap": "「まだいただいていない」— chưa nhận xác nhận cuối",
       "explain": "資料の最終確認はまだ部長からいただいていません — bẫy まだ〜ていない: chưa nhận xác nhận thì chưa in; hệ quả là 確認が終わり次第印刷する. Đáp án 1 là bẫy “đã xong rồi” mặc định.",
+      "explain_en": "資料の最終確認はまだ部長からいただいていません — the まだ〜ていない trap: without the confirmation, it cannot be printed yet; the consequence is 確認が終わり次第印刷する. Answer 1 is the default \"already done\" trap.",
+      "explain_ja": "資料の最終確認はまだ部長からいただいていません — まだ〜ていないのわなです。確認を受けていないので、まだ印刷できません。その結果、確認が終わり次第印刷する、となります。答えの1は「もう終わった」という思い込みのわなです。",
       "img": "assets/day23-seg1-q3.jpg"
     },
     {
@@ -143,6 +149,8 @@
       "ans": "3",
       "trap": "Ngày giờ mới của 説明会 vs giờ của 商品研修",
       "explain": "説明会 đổi sang 12月3日木曜日午後2時 (đổi cả ngày lẫn giờ, giữ phòng); 12月4日午前11時 là lịch cũ; 午後4時 là giờ của 商品研修 — bẫy gắn chéo.",
+      "explain_en": "説明会 moves to 12月3日木曜日午後2時 (both date and time changed, room kept); 12月4日午前11時 is the old schedule; 午後4時 is the time of the 商品研修 — the cross-attachment trap.",
+      "explain_ja": "説明会は12月3日木曜日午後2時に変わります（日も時間も変更、部屋はそのまま）。12月4日午前11時は変更前の予定です。午後4時は商品研修の時間です — 結び付けを間違えるわなです。",
       "img": "assets/day23-seg2-q4.jpg"
     },
     {
@@ -158,6 +166,8 @@
       "ans": "1",
       "trap": "Phòng của 商品研修 vs phòng của 説明会",
       "explain": "商品研修は本社5階の会議室B; 本社3階の会議室A là phòng của 説明会 — bẫy hoán đổi phòng giữa hai sự kiện.",
+      "explain_en": "商品研修は本社5階の会議室B; 本社3階の会議室A is the room for the 説明会 — the trap swapping the rooms between the two events.",
+      "explain_ja": "商品研修は本社5階の会議室Bです。本社3階の会議室Aは説明会の部屋です — 2つの行事の部屋を取り違えるわなです。",
       "img": "assets/day23-seg2-q5.jpg"
     },
     {
@@ -173,6 +183,8 @@
       "ans": "2",
       "trap": "「まだ送っていない」— thông báo chưa gửi hết",
       "explain": "研修の案内はまだ全員に送っていないので、今日中に送ります — bẫy まだ〜ていない gắn với hệ quả + mốc thời gian cụ thể (今日中).",
+      "explain_en": "研修の案内はまだ全員に送っていないので、今日中に送ります — the まだ〜ていない trap tied to a consequence + a specific time point (今日中).",
+      "explain_ja": "研修の案内はまだ全員に送っていないので、今日中に送ります — まだ〜ていないのわなで、その結果と具体的な時点（今日中）が結び付いています。",
       "img": "assets/day23-seg2-q6.jpg"
     },
     {
@@ -188,6 +200,8 @@
       "ans": "3",
       "trap": "Số còn lại vs số đã xuất vs tổng số",
       "explain": "全60台のうち45台が出荷済み → 残りは60−45=15台; 45台 là số đã xuất xong; 105台 là cộng tổng với đã xuất (60+45).",
+      "explain_en": "Of 全60台, 45台が出荷済み → the remainder is 60−45=15台; 45台 is the number already shipped; 105台 is adding the total to the shipped number (60+45).",
+      "explain_ja": "全60台のうち45台が出荷済み → 残りは60−45=15台です。45台はすでに出荷した数、105台は総数と出荷済みを足した計算です（60+45）。",
       "img": "assets/day23-seg3-q7.jpg"
     },
     {
@@ -203,6 +217,8 @@
       "ans": "1",
       "trap": "Hạn gửi của phần còn lại",
       "explain": "残りの15台は11月27日金曜日までに発送する予定です — hạn này được trưởng phòng nêu và nhân viên xác nhận lại.",
+      "explain_en": "残りの15台は11月27日金曜日までに発送する予定です — this deadline was stated by the manager and confirmed back by the staff member.",
+      "explain_ja": "残りの15台は11月27日金曜日までに発送する予定です — この期限は部長が述べ、社員が確認し直したものです。",
       "img": "assets/day23-seg3-q8.jpg"
     },
     {
@@ -218,6 +234,8 @@
       "ans": "3",
       "trap": "「まだ発行していない」— hóa đơn chưa phát hành",
       "explain": "請求書はまだ発行していませんので、納品後に発行いたします — bẫy まだ〜ていない; đáp án 1 là bẫy “đã xong rồi” mặc định.",
+      "explain_en": "請求書はまだ発行していませんので、納品後に発行いたします — the まだ〜ていない trap; answer 1 is the default \"already done\" trap.",
+      "explain_ja": "請求書はまだ発行していませんので、納品後に発行いたします — まだ〜ていないのわなです。答えの1は「もう終わった」という思い込みのわなです。",
       "img": "assets/day23-seg3-q9.jpg"
     },
     {
@@ -233,6 +251,8 @@
       "ans": "3",
       "trap": "Ngày phát hành vs ngày của các sự kiện khác",
       "explain": "発売日は12月10日木曜日 (xác nhận cuối buổi: 日木曜日のまま — không đổi); 12月3日・12月4日 là ngày của các sự kiện ở bộ 1 và bộ 2.",
+      "explain_en": "発売日は12月10日木曜日 (confirmed at the end of the session: 日木曜日のまま — unchanged); 12月3日・12月4日 are the dates of the events in set 1 and set 2.",
+      "explain_ja": "発売日は12月10日木曜日です（最後に確認されました：日木曜日のまま — 変更なし）。12月3日・12月4日はセット1とセット2の行事の日です。",
       "img": "assets/day23-seg4-q10.jpg"
     },
     {
@@ -248,6 +268,8 @@
       "ans": "2",
       "trap": "Số lượng sản xuất vs giá tiền (nhãn số)",
       "explain": "初回の生産台数は1,000台; 8,000 là 価格 (8,000円/台) — bẫy nhãn số: 8,000 thuộc về giá, không phải số lượng.",
+      "explain_en": "初回の生産台数は1,000台; 8,000 is the 価格 (8,000円/台) — the number-label trap: 8,000 belongs to the price, not the quantity.",
+      "explain_ja": "初回の生産台数は1,000台です。8,000は価格（8,000円/台）です — 数字のラベルのわなです。8,000は価格にかかるもので、数量ではありません。",
       "img": "assets/day23-seg4-q11.jpg"
     },
     {
@@ -263,6 +285,8 @@
       "ans": "2",
       "trap": "「まだいただいていない」— quảng cáo chưa được xác nhận cuối",
       "explain": "広告の最終確認はまだ部長からいただいていません — bẫy まだ〜ていない; hệ quả: 確認が終わり次第、出す. Đáp án 1 là bẫy “đã xong rồi” mặc định.",
+      "explain_en": "広告の最終確認はまだ部長からいただいていません — the まだ〜ていない trap; the consequence: 確認が終わり次第、出す. Answer 1 is the default \"already done\" trap.",
+      "explain_ja": "広告の最終確認はまだ部長からいただいていません — まだ〜ていないのわなです。その結果、確認が終わり次第、出す、となります。答えの1は「もう終わった」という思い込みのわなです。",
       "img": "assets/day23-seg4-q12.jpg"
     }
   ],

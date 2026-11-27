@@ -70,7 +70,9 @@
       ],
       "ans": "C",
       "trap": "「〜にあたって」= nhân dịp, khi tiến hành việc gì; 「あたり」 là \"mỗi/khoảng\", không đi với に theo nghĩa này",
-      "explain": "「〜にあたって」= nhân dịp, khi tiến hành việc gì (移転にあたって); 「あたり」 là \"mỗi/khoảng\" (1人あたり), không đi với に theo nghĩa này; 「あたっては」 mang nghĩa điều kiện \"khi nói đến…\" (sai ngữ cảnh); 「あたりに」 không phải dạng đúng."
+      "explain": "「〜にあたって」= nhân dịp, khi tiến hành việc gì (移転にあたって); 「あたり」 là \"mỗi/khoảng\" (1人あたり), không đi với に theo nghĩa này; 「あたっては」 mang nghĩa điều kiện \"khi nói đến…\" (sai ngữ cảnh); 「あたりに」 không phải dạng đúng.",
+      "explain_en": "「〜にあたって」 = on the occasion of / when carrying something out (移転にあたって); 「あたり」 means \"per/approximately\" (1人あたり) and does not go with に in this meaning; 「あたっては」 carries a conditional meaning, \"when it comes to…\" (wrong context); 「あたりに」 is not the correct form.",
+      "explain_ja": "「〜にあたって」＝何かを行う際・その機会に（移転にあたって）という意味です。「あたり」は「1人あたり」のように「〜につき・およそ」を表し、この意味ではにとは続きません。「あたっては」は「〜については」という条件的な意味になり（文脈が違います）、「あたりに」は正しい形ではありません。"
     },
     {
       "n": 2,
@@ -84,7 +86,9 @@
       ],
       "ans": "A",
       "trap": "「何とぞご理解のほどお願い申し上げます」 là cụm cố định trong văn bản trang trọng",
-      "explain": "「何とぞご理解のほどお願い申し上げます」 là cụm cố định trong văn bản trang trọng; 「どうぞ」 dùng với lời nhờ cụ thể (どうぞお越しください), 「ぜひ」 diễn tả mong muốn mạnh chứ không phải cụm xin thông cảm trang trọng, 「どうか」 không đi với お願い申し上げます theo dạng này."
+      "explain": "「何とぞご理解のほどお願い申し上げます」 là cụm cố định trong văn bản trang trọng; 「どうぞ」 dùng với lời nhờ cụ thể (どうぞお越しください), 「ぜひ」 diễn tả mong muốn mạnh chứ không phải cụm xin thông cảm trang trọng, 「どうか」 không đi với お願い申し上げます theo dạng này.",
+      "explain_en": "「何とぞご理解のほどお願い申し上げます」 is a fixed phrase in formal documents; 「どうぞ」 is used with a specific request (どうぞお越しください), 「ぜひ」 expresses a strong wish rather than the formal phrase asking for understanding, and 「どうか」 does not go with お願い申し上げます in this form.",
+      "explain_ja": "「何とぞご理解のほどお願い申し上げます」は正式な文書の定型表現です。「どうぞ」は具体的な依頼に使い（どうぞお越しください）、「ぜひ」は強い希望を表すもので正式な理解を求める表現ではなく、「どうか」はこの形ではお願い申し上げますには続きません。"
     },
     {
       "n": 3,
@@ -98,7 +102,9 @@
       ],
       "ans": "D",
       "trap": "「お知らせいたします」 là khiêm nhường ngữ chuẩn; 「お〜になる」 là tôn kính ngữ, sai hướng",
-      "explain": "「お知らせいたします」 là dạng khiêm nhường ngữ chuẩn; A 「お知らせして…いたします」 sai ngữ pháp; B 「知らせ」 là thể thường, sai văn phong trang trọng; C 「お知らせになっ」 là dạng tôn kính ngữ dở dang, sai hướng."
+      "explain": "「お知らせいたします」 là dạng khiêm nhường ngữ chuẩn; A 「お知らせして…いたします」 sai ngữ pháp; B 「知らせ」 là thể thường, sai văn phong trang trọng; C 「お知らせになっ」 là dạng tôn kính ngữ dở dang, sai hướng.",
+      "explain_en": "「お知らせいたします」 is the standard humble form; A 「お知らせして…いたします」 is ungrammatical; B 「知らせ」 is the plain form and is wrong in formal style; C 「お知らせになっ」 is an incomplete honorific form and has the wrong direction.",
+      "explain_ja": "「お知らせいたします」が標準的な謙譲語です。A「お知らせして…いたします」は文法的に誤りです。B「知らせ」は普通体で、正式な文体には不適切です。C「お知らせになっ」は中途半端な尊敬語の形で、方向が違います。"
     },
     {
       "n": 4,
@@ -112,7 +118,9 @@
       ],
       "ans": "B",
       "trap": "Cộng 3 chi nhánh tháng 10 (520+410+360); 1,360 là dự báo tháng 11, 1,220 là doanh số tháng 9 suy ra",
-      "explain": "520+410+360=1,290万円; 1,220万円 là doanh số tháng 9 suy ra (1,290−70), 1,360万円 là dự báo tháng 11, 1,320万円 là cộng nhầm tháng (550+410+360 — lấy số tháng 11 của東京)."
+      "explain": "520+410+360=1,290万円; 1,220万円 là doanh số tháng 9 suy ra (1,290−70), 1,360万円 là dự báo tháng 11, 1,320万円 là cộng nhầm tháng (550+410+360 — lấy số tháng 11 của東京).",
+      "explain_en": "520+410+360=1,290万円; 1,220万円 is September sales, derived as (1,290−70), 1,360万円 is the November forecast, and 1,320万円 is a total with the wrong month added (550+410+360 — taking 東京's November figure).",
+      "explain_ja": "520+410+360=1,290万円です。1,220万円は逆算した9月の売上（1,290−70）で、1,360万円は11月の予測、1,320万円は月を誤って合計したもの（550+410+360 ― 東京の11月の数字を使用）です。"
     },
     {
       "n": 5,
@@ -126,7 +134,9 @@
       ],
       "ans": "A",
       "trap": "1,360−1,290=70万円の増加; 140 là cộng gấp đôi mức tăng (70+70) — bẫy nhân đôi",
-      "explain": "1,360−1,290=70万円の増加; 140万円 là cộng gấp đôi mức tăng (70+70), bẫy nhân đôi."
+      "explain": "1,360−1,290=70万円の増加; 140万円 là cộng gấp đôi mức tăng (70+70), bẫy nhân đôi.",
+      "explain_en": "1,360−1,290=70万円の増加; 140万円 is the increase doubled (70+70) — a doubling trap.",
+      "explain_ja": "1,360−1,290=70万円の増加です。140万円は増加分を2倍にしたもの（70+70）で、2倍の引っかけです。"
     },
     {
       "n": 6,
@@ -140,7 +150,9 @@
       ],
       "ans": "C",
       "trap": "「まだ社内承認を得ていないため、見込みには含めていない」— chưa duyệt = không tính vào dự báo",
-      "explain": "札幌の新規出店計画はまだ社内承認を得ていないため、11月の見込みには含めていない — bẫy \"chưa duyệt = không tính vào dự báo\"."
+      "explain": "札幌の新規出店計画はまだ社内承認を得ていないため、11月の見込みには含めていない — bẫy \"chưa duyệt = không tính vào dự báo\".",
+      "explain_en": "札幌の新規出店計画はまだ社内承認を得ていないため、11月の見込みには含めていない — the trap \"not yet approved = not included in the forecast\".",
+      "explain_ja": "札幌の新規出店計画はまだ社内承認を得ていないため、11月の見込みには含めていない — 「まだ承認されていない＝見込みに含めない」という引っかけです。"
     },
     {
       "n": 7,
@@ -154,7 +166,9 @@
       ],
       "ans": "B",
       "trap": "420件 là tổng 3 tháng (trung bình 140件/tháng), không phải 420件/tháng; 満足度は高い",
-      "explain": "窓口は来期も継続する; 420件 là tổng 3 tháng (trung bình 140件/tháng), không phải 420件/tháng; 満足度は高い."
+      "explain": "窓口は来期も継続する; 420件 là tổng 3 tháng (trung bình 140件/tháng), không phải 420件/tháng; 満足度は高い.",
+      "explain_en": "窓口は来期も継続する; 420件 is the total for 3 months (an average of 140件/month), not 420件/month; 満足度は高い.",
+      "explain_ja": "窓口は来期も継続する。420件は3か月の合計（平均140件/月）であり、420件/月ではありません。満足度は高いです。"
     },
     {
       "n": 8,
@@ -168,7 +182,9 @@
       ],
       "ans": "D",
       "trap": "来期からは午前9時から午後7時まで延長; 午後5時まで là giờ hiện tại, thứ Bảy vẫn không tiếp nhận",
-      "explain": "来期からは午前9時から午後7時までに延長; 午後5時まで là giờ hiện tại, 土曜日の受付は来期も行わない."
+      "explain": "来期からは午前9時から午後7時までに延長; 午後5時まで là giờ hiện tại, 土曜日の受付は来期も行わない.",
+      "explain_en": "来期からは午前9時から午後7時までに延長; 午後5時まで is the current closing time, and 土曜日の受付は来期も行わない.",
+      "explain_ja": "来期からは午前9時から午後7時までに延長します。午後5時までは現在の終了時刻で、土曜日の受付は来期も行いません。"
     },
     {
       "n": 9,
@@ -182,7 +198,9 @@
       ],
       "ans": "A",
       "trap": "Lý do nêu thẳng trong bài: nhiều ý kiến muốn tư vấn buổi tối — không suy diễn từ件数 hay満足度",
-      "explain": "利用者の声として「夜間の相談を希望する」という意見が多かったため、延長の判断に至った — phải giữ đúng lý do được nêu (nhu cầu buổi tối), không suy diễn từ件数 hay満足度."
+      "explain": "利用者の声として「夜間の相談を希望する」という意見が多かったため、延長の判断に至った — phải giữ đúng lý do được nêu (nhu cầu buổi tối), không suy diễn từ件数 hay満足度.",
+      "explain_en": "利用者の声として「夜間の相談を希望する」という意見が多かったため、延長の判断に至った — you must keep the exact reason given (demand in the evening), and not infer it from 件数 or 満足度.",
+      "explain_ja": "利用者の声として「夜間の相談を希望する」という意見が多かったため、延長の判断に至った — 述べられた理由（夜間の需要）をそのまま押さえ、件数や満足度から推測してはいけません。"
     },
     {
       "n": 10,
@@ -196,7 +214,9 @@
       ],
       "ans": "C",
       "trap": "Nguyên tắc 週2日まで + ngoại lệ ただし繁忙期は週1日まで — phải giữ cả hai vế, không tuyệt đối hóa vế nào",
-      "explain": "テレワークは週2日まで、ただし繁忙期は週1日まで — phải giữ cả hai vế (nguyên tắc + ngoại lệ), không tuyệt đối hóa vế nào; 週1日 chỉ là ngoại lệ繁忙期."
+      "explain": "テレワークは週2日まで、ただし繁忙期は週1日まで — phải giữ cả hai vế (nguyên tắc + ngoại lệ), không tuyệt đối hóa vế nào; 週1日 chỉ là ngoại lệ繁忙期.",
+      "explain_en": "テレワークは週2日まで、ただし繁忙期は週1日まで — you must keep both parts (the principle + the exception) and not make either part absolute; 週1日 is only the 繁忙期 exception.",
+      "explain_ja": "テレワークは週2日まで、ただし繁忙期は週1日まで — 両方の部分（原則＋例外）を押さえ、どちらか一方を絶対化してはいけません。週1日は繁忙期の例外にすぎません。"
     },
     {
       "n": 11,
@@ -210,7 +230,9 @@
       ],
       "ans": "B",
       "trap": "Hạn đăng ký là 前日の午後5時まで; 申請が遅れた場合は利用できない",
-      "explain": "前日の午後5時までに上司に申請する; 申請が遅れた場合は利用できない."
+      "explain": "前日の午後5時までに上司に申請する; 申請が遅れた場合は利用できない.",
+      "explain_en": "前日の午後5時までに上司に申請する; 申請が遅れた場合は利用できない.",
+      "explain_ja": "前日の午後5時までに上司に申請する。申請が遅れた場合は利用できない。"
     },
     {
       "n": 12,
@@ -224,7 +246,9 @@
       ],
       "ans": "D",
       "trap": "Kênh liên lạc chính là 社内チャット; 電話は緊急の場合に限る",
-      "explain": "連絡は社内チャットで行い、電話は緊急の場合に限る."
+      "explain": "連絡は社内チャットで行い、電話は緊急の場合に限る.",
+      "explain_en": "連絡は社内チャットで行い、電話は緊急の場合に限る.",
+      "explain_ja": "連絡は社内チャットで行い、電話は緊急の場合に限る."
     }
   ],
   "instructions": "<li>読解12問で <strong>約40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>4セット</strong> で、各セットはテキスト1つ + 問題3問です。<strong>セットの3問はすべて一緒に</strong>、そのテキストのすぐ下に、CBT試験室形式の解答画面で表示されます — 読んだら3問まとめて答えましょう。1問ずつ行き来する必要はありません。<strong>音声はありません</strong> — 今回は読解の練習だけです。</li>\n          <li>セット1は <span class=\"jp\">語彙・文法</span> — 新オフィスへの移転についての <span class=\"jp\">社内連絡</span> の穴埋め（<span class=\"jp\">〜にあたって</span>、<span class=\"jp\">何とぞ</span>、謙譲語の <span class=\"jp\">お知らせいたします</span>）。セット2は <span class=\"jp\">短文読解</span> — 3支店の10月の売上報告と11月の予測のメール。<span class=\"jp\">札幌</span> の出店計画は <span class=\"jp\">まだ社内承認を得ていない</span> ので予測に入れないことに注意。セット3は <span class=\"jp\">短文読解</span> — オンライン相談窓口の報告書（420件は3か月の合計、受付時間は次期から延長）。セット4は在宅勤務についての <span class=\"jp\">社内規定</span> — <span class=\"jp\">ただし</span>（例外）の文、申請期限、連絡手段に注意。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。答え、ベトナム語の解説、<strong>各テキストの参考訳</strong> は、ミスノートと一緒に、提出後にのみ表示されます。</li>",

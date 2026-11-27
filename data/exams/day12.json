@@ -66,7 +66,9 @@
       ],
       "ans": "B",
       "trap": "Cộng 3 chi nhánh tháng 11 (460+390+330); 1,100 là tháng 10 suy ra, 1,240 là dự báo tháng 12",
-      "explain": "460 + 390 + 330 = 1,180万円. 1,100万円 là doanh số tháng 10 suy ra từ mức tăng (1,180 − 80); 1,240万円 là dự báo tháng 12, không phải thực tế tháng 11."
+      "explain": "460 + 390 + 330 = 1,180万円. 1,100万円 là doanh số tháng 10 suy ra từ mức tăng (1,180 − 80); 1,240万円 là dự báo tháng 12, không phải thực tế tháng 11.",
+      "explain_en": "460 + 390 + 330 = 1,180万円. 1,100万円 is October sales, derived from the increase (1,180 − 80); 1,240万円 is the December forecast, not the actual November result.",
+      "explain_ja": "460 + 390 + 330 = 1,180万円です。1,100万円は増加分から逆算した10月の売上（1,180 − 80）で、1,240万円は12月の予測であり、11月の実績ではありません。"
     },
     {
       "n": 2,
@@ -80,7 +82,9 @@
       ],
       "ans": "A",
       "trap": "So dự báo tháng 12 với thực tế tháng 11; 80万円 là mức tăng của tháng 11 so với tháng 10",
-      "explain": "1,240 − 1,180 = 60万円の増加. 80万円 là mức tăng của tháng 11 so với tháng 10, không phải của tháng 12 so với tháng 11."
+      "explain": "1,240 − 1,180 = 60万円の増加. 80万円 là mức tăng của tháng 11 so với tháng 10, không phải của tháng 12 so với tháng 11.",
+      "explain_en": "1,240 − 1,180 = 60万円の増加. 80万円 is the increase of November compared with October, not of December compared with November.",
+      "explain_ja": "1,240 − 1,180 = 60万円の増加です。80万円は11月の10月に対する増加分であり、12月の11月に対する増加分ではありません。"
     },
     {
       "n": 3,
@@ -94,7 +98,9 @@
       ],
       "ans": "B",
       "trap": "「まだ社内承認を得ていないため、見込みには含めていない」",
-      "explain": "仙台の新規出店計画はまだ社内承認を得ていないため、12月の見込みには含めていない — chưa được duyệt nội bộ thì chưa tính vào dự báo."
+      "explain": "仙台の新規出店計画はまだ社内承認を得ていないため、12月の見込みには含めていない — chưa được duyệt nội bộ thì chưa tính vào dự báo.",
+      "explain_en": "仙台の新規出店計画はまだ社内承認を得ていないため、12月の見込みには含めていない — if it has not yet been approved internally, it is not included in the forecast.",
+      "explain_ja": "仙台の新規出店計画はまだ社内承認を得ていないため、12月の見込みには含めていない — 社内承認を得ていなければ、見込みには含めません。"
     },
     {
       "n": 4,
@@ -108,7 +114,9 @@
       ],
       "ans": "A",
       "trap": "12月8日 là hạn chót duyệt bao bì (1 tuần trước), 11月5日 là ngày họp",
-      "explain": "発売日は12月15日火曜日. 12月8日 là mốc 1週間前 — hạn chót để bao bì được duyệt; 11月5日 là ngày họp; 12月22日 là ngày ra mắt nếu bị hoãn 1 tuần."
+      "explain": "発売日は12月15日火曜日. 12月8日 là mốc 1週間前 — hạn chót để bao bì được duyệt; 11月5日 là ngày họp; 12月22日 là ngày ra mắt nếu bị hoãn 1 tuần.",
+      "explain_en": "発売日は12月15日火曜日. 12月8日 is the mark 1週間前 — the deadline for the packaging to be approved; 11月5日 is the meeting date; 12月22日 is the launch date if it is postponed by 1 week.",
+      "explain_ja": "発売日は12月15日火曜日です。12月8日は1週間前の目安で、包装の承認期限です。11月5日は会議の日で、12月22日は1週間延期された場合の発売日です。"
     },
     {
       "n": 5,
@@ -122,7 +130,9 @@
       ],
       "ans": "A",
       "trap": "税込み hay 税抜き — văn bản ghi rõ 税込み",
-      "explain": "販売価格は税込み3,980円 — giá bán đã gồm thuế."
+      "explain": "販売価格は税込み3,980円 — giá bán đã gồm thuế.",
+      "explain_en": "販売価格は税込み3,980円 — the selling price already includes tax.",
+      "explain_ja": "販売価格は税込み3,980円 — 販売価格にはすでに税金が含まれています。"
     },
     {
       "n": 6,
@@ -136,7 +146,9 @@
       ],
       "ans": "B",
       "trap": "「まだ最終承認を得ていない」+ hoãn có điều kiện — giữ cả hai vế",
-      "explain": "デザインはまだ最終承認を得ていない；条件付き延期 — phải giữ cả hai vế (chưa duyệt + điều kiện: đến 1 tuần trước ngày ra mắt chưa duyệt thì hoãn 1 tuần)."
+      "explain": "デザインはまだ最終承認を得ていない；条件付き延期 — phải giữ cả hai vế (chưa duyệt + điều kiện: đến 1 tuần trước ngày ra mắt chưa duyệt thì hoãn 1 tuần).",
+      "explain_en": "デザインはまだ最終承認を得ていない；条件付き延期 — you must keep both parts (not yet approved + the condition: if it is not approved by 1 week before the launch date, it is postponed by 1 week).",
+      "explain_ja": "デザインはまだ最終承認を得ていない；条件付き延期 — 両方の部分を押さえる必要があります（まだ承認されていないこと＋条件：発売日の1週間前までに承認されなければ、1週間延期する）。"
     },
     {
       "n": 7,
@@ -150,7 +162,9 @@
       ],
       "ans": "A",
       "trap": "実費 là cách tính của 交通費, không phải trần 宿泊費",
-      "explain": "宿泊費は1泊あたり12,000円を上限. 実費 là cách thanh toán của 交通費."
+      "explain": "宿泊費は1泊あたり12,000円を上限. 実費 là cách thanh toán của 交通費.",
+      "explain_en": "宿泊費は1泊あたり12,000円を上限. 実費 is how 交通費 is paid.",
+      "explain_ja": "宿泊費は1泊あたり12,000円を上限です。実費は交通費の精算方法です。"
     },
     {
       "n": 8,
@@ -164,7 +178,9 @@
       ],
       "ans": "B",
       "trap": "Điều kiện 役員 thuộc về 宿泊費, không phải taxi",
-      "explain": "タクシーの利用は終電を逃した場合に限る. 「役員に同行する場合」 là ngoại lệ của 宿泊費 (được thanh toán vượt trần), không liên quan đến taxi."
+      "explain": "タクシーの利用は終電を逃した場合に限る. 「役員に同行する場合」 là ngoại lệ của 宿泊費 (được thanh toán vượt trần), không liên quan đến taxi.",
+      "explain_en": "タクシーの利用は終電を逃した場合に限る. 「役員に同行する場合」 is an exception for 宿泊費 (reimbursement above the cap is allowed); it is not related to taxis.",
+      "explain_ja": "タクシーの利用は終電を逃した場合に限る。「役員に同行する場合」は宿泊費の例外（上限を超えて精算できる）であり、タクシーとは関係ありません。"
     },
     {
       "n": 9,
@@ -178,7 +194,9 @@
       ],
       "ans": "B",
       "trap": "Nộp muộn chỉ đổi kỳ thanh toán, không mất quyền 精算",
-      "explain": "申請が遅れた場合は翌月の精算になる — chỉ đổi kỳ 精算, không mất quyền 精算. 「上限を超えて精算できる」 thuộc về trường hợp đi cùng 役員 của 宿泊費."
+      "explain": "申請が遅れた場合は翌月の精算になる — chỉ đổi kỳ 精算, không mất quyền 精算. 「上限を超えて精算できる」 thuộc về trường hợp đi cùng 役員 của 宿泊費.",
+      "explain_en": "申請が遅れた場合は翌月の精算になる — only the 精算 period changes; the right to 精算 is not lost. 「上限を超えて精算できる」 belongs to the case of accompanying a 役員 under 宿泊費.",
+      "explain_ja": "申請が遅れた場合は翌月の精算になる — 精算の時期が変わるだけで、精算できる権利は失われません。「上限を超えて精算できる」は、宿泊費における役員に同行する場合に属します。"
     },
     {
       "n": 10,
@@ -192,7 +210,9 @@
       ],
       "ans": "B",
       "trap": "Giá mới 2,100 vs giá cũ 2,000",
-      "explain": "価格は1個あたり2,000円から2,100円に5％値上げ. 2,000円 là giá cũ (áp dụng cho đơn đặt đến 30/11)."
+      "explain": "価格は1個あたり2,000円から2,100円に5％値上げ. 2,000円 là giá cũ (áp dụng cho đơn đặt đến 30/11).",
+      "explain_en": "価格は1個あたり2,000円から2,100円に5％値上げ. 2,000円 is the old price (applicable to orders placed by 30/11).",
+      "explain_ja": "価格は1個あたり2,000円から2,100円に5％値上げです。2,000円は旧価格です（30/11までの注文に適用）。"
     },
     {
       "n": 11,
@@ -206,7 +226,9 @@
       ],
       "ans": "B",
       "trap": "Nhân theo giá mới 2,100, không phải giá cũ 2,000",
-      "explain": "500 × 2,100 = 1,050,000円. 1,000,000円 là tổng theo giá cũ (500 × 2,000)."
+      "explain": "500 × 2,100 = 1,050,000円. 1,000,000円 là tổng theo giá cũ (500 × 2,000).",
+      "explain_en": "500 × 2,100 = 1,050,000円. 1,000,000円 is the total at the old price (500 × 2,000).",
+      "explain_ja": "500 × 2,100 = 1,050,000円です。1,000,000円は旧価格での合計です（500 × 2,000）。"
     },
     {
       "n": 12,
@@ -220,7 +242,9 @@
       ],
       "ans": "A",
       "trap": "11月30日 là hạn đặt hàng theo giá cũ; 12月1日 là ngày quy cách mới có hiệu lực",
-      "explain": "仕様変更の可否について11月20日までにご返信 — hạn trả lời là 20/11. 11月30日 là hạn cuối đặt hàng theo giá cũ."
+      "explain": "仕様変更の可否について11月20日までにご返信 — hạn trả lời là 20/11. 11月30日 là hạn cuối đặt hàng theo giá cũ.",
+      "explain_en": "仕様変更の可否について11月20日までにご返信 — the reply deadline is 20/11. 11月30日 is the last day to order at the old price.",
+      "explain_ja": "仕様変更の可否について11月20日までにご返信 — 回答期限は20/11です。11月30日は旧価格で注文できる最終日です。"
     }
   ],
   "instructions": "<li>読解12問で <strong>約40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>4セット</strong> で、各セットはテキスト1つ + 問題3問です。<strong>セットの3問はすべて一緒に</strong>、そのテキストのすぐ下に、CBT試験室形式の解答画面で表示されます — 読んだら3問まとめて答えましょう。1問ずつ行き来する必要はありません。<strong>音声はありません</strong> — 今回は読解の練習だけです。</li>\n          <li>セット1は11月の <span class=\"jp\">営業報告書</span> で、3支店の売上と12月の予測を加算・照合します。セット2は新製品発売の準備会議の <span class=\"jp\">議事録</span>（発売日、販売価格、パッケージの最終承認がまだのため延期する条件）。セット3は出張費の精算についての <span class=\"jp\">社内規定</span> — <span class=\"jp\">ただし</span>（例外）の文に注意。セット4は仕様変更と <span class=\"jp\">部品X</span> の値上げを知らせる <strong>取引先からの手紙</strong> — 11/20と11/30の2つの日付を取り違えないこと。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。答え、ベトナム語の解説、<strong>各テキストの参考訳</strong> は、ミスノートと一緒に、提出後にのみ表示されます。</li>",

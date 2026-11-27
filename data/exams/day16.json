@@ -105,7 +105,9 @@
       ],
       "ans": "B",
       "trap": "Số cũ trên bảng vs số đã đính chính trong hội thoại",
-      "explain": "東京は480万円ではなく520万円に訂正 → 520+350+290+180=1,340万円."
+      "explain": "東京は480万円ではなく520万円に訂正 → 520+350+290+180=1,340万円.",
+      "explain_en": "東京 was corrected from 480万円 to 520万円 → 520+350+290+180=1,340万円.",
+      "explain_ja": "東京は480万円ではなく520万円に訂正されました → 520+350+290+180=1,340万円です。"
     },
     {
       "n": 2,
@@ -119,7 +121,9 @@
       ],
       "ans": "A",
       "trap": "Chi nhánh cao nhất — theo số sau đính chính",
-      "explain": "東京支店520万円が一番多い."
+      "explain": "東京支店520万円が一番多い.",
+      "explain_en": "東京支店520万円が一番多い.",
+      "explain_ja": "東京支店520万円が一番多い."
     },
     {
       "n": 3,
@@ -133,7 +137,9 @@
       ],
       "ans": "B",
       "trap": "Hiệu số phải tính theo số mới của Tokyo",
-      "explain": "520−180=340万円； 300万円 là lấy số cũ 480−180."
+      "explain": "520−180=340万円； 300万円 là lấy số cũ 480−180.",
+      "explain_en": "520−180=340万円; 300万円 comes from using the old figure, 480−180.",
+      "explain_ja": "520−180=340万円です。300万円は古い数字を使ったものです（480−180）。"
     },
     {
       "n": 4,
@@ -147,7 +153,9 @@
       ],
       "ans": "C",
       "trap": "Tháng sản xuất nhiều nhất trên biểu đồ",
-      "explain": "9月180台が一番多い."
+      "explain": "9月180台が一番多い.",
+      "explain_en": "9月180台が一番多い.",
+      "explain_ja": "9月180台が一番多い."
     },
     {
       "n": 5,
@@ -161,7 +169,9 @@
       ],
       "ans": "A",
       "trap": "Tổng đúng 3 tháng — không cộng tháng 10",
-      "explain": "120+150+180=450台； 610台 là cộng cả tháng 10."
+      "explain": "120+150+180=450台； 610台 là cộng cả tháng 10.",
+      "explain_en": "120+150+180=450台; 610台 includes October as well.",
+      "explain_ja": "120+150+180=450台です。610台は10月まで含めたものです。"
     },
     {
       "n": 6,
@@ -175,7 +185,9 @@
       ],
       "ans": "B",
       "trap": "Chiều thay đổi — tăng hay giảm",
-      "explain": "180−160=20台の減少."
+      "explain": "180−160=20台の減少.",
+      "explain_en": "180−160=20台の減少.",
+      "explain_ja": "180−160=20台の減少."
     },
     {
       "n": 7,
@@ -189,7 +201,9 @@
       ],
       "ans": "C",
       "trap": "「まだ発行していない」— chưa phát hành",
-      "explain": "請求書はまだ発行していませんので、納品後に発行いたします."
+      "explain": "請求書はまだ発行していませんので、納品後に発行いたします.",
+      "explain_en": "請求書はまだ発行していませんので、納品後に発行いたします.",
+      "explain_ja": "請求書はまだ発行していませんので、納品後に発行いたします."
     },
     {
       "n": 8,
@@ -203,7 +217,9 @@
       ],
       "ans": "B",
       "trap": "Ngày giao hàng vs hạn thanh toán",
-      "explain": "11月13日金曜日に納品する； 11月末 là hạn thanh toán, không phải ngày giao."
+      "explain": "11月13日金曜日に納品する； 11月末 là hạn thanh toán, không phải ngày giao.",
+      "explain_en": "11月13日金曜日に納品する; 11月末 is the payment deadline, not the delivery date.",
+      "explain_ja": "11月13日金曜日に納品します。11月末は支払期限であり、納品日ではありません。"
     },
     {
       "n": 9,
@@ -217,7 +233,9 @@
       ],
       "ans": "A",
       "trap": "Hạn thanh toán vs ngày giao hàng",
-      "explain": "お支払いは11月末までにお願いいたします."
+      "explain": "お支払いは11月末までにお願いいたします.",
+      "explain_en": "お支払いは11月末までにお願いいたします.",
+      "explain_ja": "お支払いは11月末までにお願いいたします."
     },
     {
       "n": 10,
@@ -231,7 +249,9 @@
       ],
       "ans": "C",
       "trap": "Giờ họp cũ vs giờ họp mới sau khi đổi",
-      "explain": "打ち合わせは午後2時からに変更になった； 午前10時 là giờ cũ trước khi đổi."
+      "explain": "打ち合わせは午後2時からに変更になった； 午前10時 là giờ cũ trước khi đổi.",
+      "explain_en": "打ち合わせは午後2時からに変更になった; 午前10時 is the old time before the change.",
+      "explain_ja": "打ち合わせは午後2時からに変更になりました。午前10時は変更前の古い時刻です。"
     },
     {
       "n": 11,
@@ -245,7 +265,9 @@
       ],
       "ans": "D",
       "trap": "Ngày về và giờ về — không ghép chéo",
-      "explain": "11月19日木曜日の午後5時の新幹線で帰る； 午後2時 ngày 19 là giờ họp đã đổi (ở lựa chọn C của câu 10), không phải giờ tàu."
+      "explain": "11月19日木曜日の午後5時の新幹線で帰る； 午後2時 ngày 19 là giờ họp đã đổi (ở lựa chọn C của câu 10), không phải giờ tàu.",
+      "explain_en": "11月19日木曜日の午後5時の新幹線で帰る; 午後2時 on the 19th is the changed meeting time (in option C of question 10), not the train time.",
+      "explain_ja": "11月19日木曜日の午後5時の新幹線で帰ります。19日の午後2時は変更された会議の時刻（問10の選択肢C）であり、電車の時刻ではありません。"
     },
     {
       "n": 12,
@@ -259,7 +281,9 @@
       ],
       "ans": "A",
       "trap": "Nơi ở ghi trong đơn và được xác nhận trong hội thoại",
-      "explain": "宿泊はホテルAの予定です."
+      "explain": "宿泊はホテルAの予定です.",
+      "explain_en": "宿泊はホテルAの予定です.",
+      "explain_ja": "宿泊はホテルAの予定です."
     }
   ],
   "instructions": "<li>聴読解12問で <strong>約40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>4セット</strong> で、各セットには読む資料（売上表／棒グラフ／メール／出張申請書）と <strong>会話の音声</strong> があり、<strong>セットの3問はすべて一緒に</strong>、その資料のすぐ下に、CBT試験室形式の解答画面で表示されます。各セットの先頭で <strong>▶ 音声を再生</strong> を押してください — 録音済みのMP3音声で、会話の声が2つ使われ、<strong>話者の名前は読み上げません</strong>。試験室と同じです。</li>\n          <li>セット1は <strong>10月の売上表</strong>：表に印刷された <span class=\"jp\">東京支店</span> の数字（480<span class=\"jp\">万円</span>）は古い数字です — 会話では520<span class=\"jp\">万円</span>に訂正されます。計算（合計、差額）はすべて新しい数字を使います。セット2は <strong><span class=\"jp\">製品X</span> の生産棒グラフ</strong>：合計の問題は7–9月だけを加算し、10月は入れません。10月は9月より20<span class=\"jp\">台</span>減ります。セット3は <strong>納品のメール</strong>：<span class=\"jp\">請求書</span> は <span class=\"jp\">まだ発行していない</span> ので納品後に発行します — 納品日（11/13）と支払期限（11月末）をはっきり分けましょう。セット4は <strong><span class=\"jp\">出張申請書</span></strong>：会議の時刻は、取引先の都合で11/18の午前10時から午後2時に変更されました。帰りは11/19の午後5時の新幹線で、ホテルAに泊まります。</li>\n          <li><strong>本番モード</strong> では、各セットは <strong>1回だけ</strong> 再生されます。セットを最後まで聞いてから、そのセットの3問に答えましょう。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。提出後にのみ、答え、ベトナム語の解説、翻訳付きのトランスクリプト、ミスノートが表示されます。</li>",

@@ -66,7 +66,9 @@
       ],
       "ans": "1",
       "trap": "Cụm cố định 「分かり次第」",
-      "explain": "「分かり次第、ご連絡いたします」= ngay khi rõ kết quả sẽ liên lạc lại; trong văn bản trang trọng viết bằng chữ Hán 次第 (2 viết hiragana しだい không phải dạng chuẩn của cụm này); 3 là thể thường, sai văn phong; 4 là \"cho tới khi hiểu\" — sai nghĩa (không phải \"ngay khi\")."
+      "explain": "「分かり次第、ご連絡いたします」= ngay khi rõ kết quả sẽ liên lạc lại; trong văn bản trang trọng viết bằng chữ Hán 次第 (2 viết hiragana しだい không phải dạng chuẩn của cụm này); 3 là thể thường, sai văn phong; 4 là \"cho tới khi hiểu\" — sai nghĩa (không phải \"ngay khi\").",
+      "explain_en": "「分かり次第、ご連絡いたします」 = will contact you as soon as the result is known; in formal writing it is written with the kanji 次第 (2, written in hiragana しだい, is not the standard form of this phrase); 3 is the plain form, wrong in style; 4 is \"until I understand\" — wrong in meaning (not \"as soon as\").",
+      "explain_ja": "「分かり次第、ご連絡いたします」は「結果が分かったらすぐに連絡する」という意味です。改まった文章では漢字の次第と書きます（2のひらがなのしだいは、この言い方の標準的な形ではありません）。3は普通体で、文体に合いません。4は「分かるまで」という意味で間違いです（「すぐに」ではありません）。"
     },
     {
       "n": 2,
@@ -80,7 +82,9 @@
       ],
       "ans": "2",
       "trap": "Cụm cố định 「深くお詫び申し上げます」",
-      "explain": "「深くお詫び申し上げます」= xin lỗi sâu sắc (hiện tại, đang xin lỗi); 1 là quá khứ (đã xin lỗi rồi), sai thì; 3 là trạng thái tiếp diễn, không dùng trong lời xin lỗi này; 4 là \"muốn xin lỗi\" — chưa phải lời xin lỗi."
+      "explain": "「深くお詫び申し上げます」= xin lỗi sâu sắc (hiện tại, đang xin lỗi); 1 là quá khứ (đã xin lỗi rồi), sai thì; 3 là trạng thái tiếp diễn, không dùng trong lời xin lỗi này; 4 là \"muốn xin lỗi\" — chưa phải lời xin lỗi.",
+      "explain_en": "「深くお詫び申し上げます」 = deeply apologise (present, apologising now); 1 is past tense (already apologised), wrong tense; 3 is a progressive state, not used in this apology; 4 is \"want to apologise\" — not yet an apology itself.",
+      "explain_ja": "「深くお詫び申し上げます」は「深くお詫びします」という意味です（現在、謝っているところ）。1は過去形（すでに謝った）で、時制が違います。3は進行中の状態で、この謝罪には使いません。4は「謝りたい」という意味で、謝罪そのものにはなっていません。"
     },
     {
       "n": 3,
@@ -94,7 +98,9 @@
       ],
       "ans": "3",
       "trap": "「徹底してまいります」— khiêm nhường ngữ",
-      "explain": "「徹底してまいります」 là dạng khiêm nhường ngữ chuẩn cho cam kết của phía mình (sẽ triệt để thực hiện); 1 là thể thường, sai văn phong trang trọng; 2 sai động từ; 4 sai hướng (きます = đi về phía người nói)."
+      "explain": "「徹底してまいります」 là dạng khiêm nhường ngữ chuẩn cho cam kết của phía mình (sẽ triệt để thực hiện); 1 là thể thường, sai văn phong trang trọng; 2 sai động từ; 4 sai hướng (きます = đi về phía người nói).",
+      "explain_en": "「徹底してまいります」 is the standard humble form for one's own side's commitment (will thoroughly carry it out); 1 is the plain form, wrong for a formal register; 2 has the wrong verb; 4 is the wrong direction (きます = come toward the speaker).",
+      "explain_ja": "「徹底してまいります」は、自分の側の約束に使う標準的な謙譲表現です（徹底して実行します）。1は普通体で、改まった文体には合いません。2は動詞が違います。4は方向が違います（きます = 話し手のほうへ来る）。"
     },
     {
       "n": 4,
@@ -108,7 +114,9 @@
       ],
       "ans": "4",
       "trap": "Đồng cảm trước rồi mới từ chối: 「よくわかりますが」",
-      "explain": "「ご要望はよくわかりますが」 là cách mềm mỏng để từ chối sau khi tỏ ý đồng cảm (đã hiểu yêu cầu rồi mới nêu lý do khó); 1 mâu thuẫn với vế sau (đã hiểu rõ nên mới từ chối có lý do); 2 là suy đoán, không phải lời đáp lịch sự; 3 sai nghĩa (không hiểu)."
+      "explain": "「ご要望はよくわかりますが」 là cách mềm mỏng để từ chối sau khi tỏ ý đồng cảm (đã hiểu yêu cầu rồi mới nêu lý do khó); 1 mâu thuẫn với vế sau (đã hiểu rõ nên mới từ chối có lý do); 2 là suy đoán, không phải lời đáp lịch sự; 3 sai nghĩa (không hiểu).",
+      "explain_en": "「ご要望はよくわかりますが」 is a soft way to decline after showing empathy (stating the reason it is difficult only after showing the request is understood); 1 contradicts the following clause (it is precisely because it is well understood that the decline has a reason); 2 is a conjecture, not a polite reply; 3 is wrong in meaning (not understood).",
+      "explain_ja": "「ご要望はよくわかりますが」は、共感を示したうえでやんわり断る言い方です（要望が分かったことを示してから、難しい理由を述べます）。1は後ろの節と矛盾します（よく分かっているからこそ、理由のある断りになります）。2は推測で、丁寧な返答ではありません。3は意味が違います（分かっていない）。"
     },
     {
       "n": 5,
@@ -122,7 +130,9 @@
       ],
       "ans": "1",
       "trap": "「ご確認いただけますでしょうか」— nhờ vả lịch sự",
-      "explain": "「ご確認いただけますでしょうか」 là cách nhờ vả lịch sự chuẩn (xin đối phương xác nhận giúp); 2 là mệnh lệnh, thô; 3 chỉ là câu hỏi \"ngài có xác nhận không?\" — không phải lời nhờ; 4 là câu trần thuật, không phải lời nhờ."
+      "explain": "「ご確認いただけますでしょうか」 là cách nhờ vả lịch sự chuẩn (xin đối phương xác nhận giúp); 2 là mệnh lệnh, thô; 3 chỉ là câu hỏi \"ngài có xác nhận không?\" — không phải lời nhờ; 4 là câu trần thuật, không phải lời nhờ.",
+      "explain_en": "「ご確認いただけますでしょうか」 is the standard polite way to ask (asking the other party to kindly confirm); 2 is a command, blunt; 3 is only the question \"will you confirm?\" — not a request; 4 is a declarative statement, not a request.",
+      "explain_ja": "「ご確認いただけますでしょうか」は標準的な丁寧な依頼の言い方です（相手に確認してもらうよう頼みます）。2は命令で、ぶっきらぼうです。3は「確認しますか」という質問だけで、依頼ではありません。4は陳述文で、依頼ではありません。"
     },
     {
       "n": 6,
@@ -136,7 +146,9 @@
       ],
       "ans": "2",
       "trap": "「恐縮ですが」— mở đầu cuộc gọi lịch sự",
-      "explain": "「恐縮ですが」 là cụm mở đầu lịch sự khi gọi điện/yêu cầu (xin lỗi vì làm phiền); 1 dùng khi nhờ làm việc gây phiền phức, không khớp với mở đầu cuộc gọi; 3 và 4 không phải cụm mở đầu chuẩn trong tình huống này."
+      "explain": "「恐縮ですが」 là cụm mở đầu lịch sự khi gọi điện/yêu cầu (xin lỗi vì làm phiền); 1 dùng khi nhờ làm việc gây phiền phức, không khớp với mở đầu cuộc gọi; 3 và 4 không phải cụm mở đầu chuẩn trong tình huống này.",
+      "explain_en": "「恐縮ですが」 is a polite opening phrase when phoning / making a request (apologising for the trouble); 1 is used when asking someone to do something troublesome and does not fit the opening of a call; 3 and 4 are not standard opening phrases in this situation.",
+      "explain_ja": "「恐縮ですが」は、電話をかける・依頼をするときの丁寧な切り出しの言い方です（お手数をかけることを詫びます）。1は迷惑な仕事を頼むときに使い、電話の切り出しには合いません。3と4はこの場面での標準的な切り出しの言い方ではありません。"
     },
     {
       "n": 7,
@@ -150,7 +162,9 @@
       ],
       "ans": "3",
       "trap": "対象 = 2027年3月に大学を卒業予定の方",
-      "explain": "対象 là 2027年3月に大学を卒業予定の方; 1 và 2 không khớp dòng 対象."
+      "explain": "対象 là 2027年3月に大学を卒業予定の方; 1 và 2 không khớp dòng 対象.",
+      "explain_en": "対象 is 2027年3月に大学を卒業予定の方; 1 and 2 do not match the 対象 line.",
+      "explain_ja": "対象は2027年3月に大学を卒業予定の方です。1と2は対象の行と一致しません。"
     },
     {
       "n": 8,
@@ -164,7 +178,9 @@
       ],
       "ans": "4",
       "trap": "Hạn đăng ký 12月10日 vs ngày tổ chức 12月15日",
-      "explain": "12月10日木曜日までにメールで申し込む; 12月15日 là ngày tổ chức説明会 (không phải hạn đăng ký); 12月4日 không được nhắc tới."
+      "explain": "12月10日木曜日までにメールで申し込む; 12月15日 là ngày tổ chức説明会 (không phải hạn đăng ký); 12月4日 không được nhắc tới.",
+      "explain_en": "Apply by email by 12月10日木曜日までにメールで申し込む; 12月15日 is the date the 説明会 is held (not the application deadline); 12月4日 is not mentioned.",
+      "explain_ja": "12月10日木曜日までにメールで申し込む。12月15日は説明会が行われる日です（申込期限ではありません）。12月4日は触れられていません。"
     },
     {
       "n": 9,
@@ -178,7 +194,9 @@
       ],
       "ans": "3",
       "trap": "「事前の送付はいたしません」— không gửi trước",
-      "explain": "資料は当日、会場でお渡しいたします; 事前の送付はいたしません — bẫy \"chưa/gửi trước\": 1 lấy ngược ý (事前に送る = điều văn bản nói rõ KHÔNG làm)."
+      "explain": "資料は当日、会場でお渡しいたします; 事前の送付はいたしません — bẫy \"chưa/gửi trước\": 1 lấy ngược ý (事前に送る = điều văn bản nói rõ KHÔNG làm).",
+      "explain_en": "資料は当日、会場でお渡しいたします; 事前の送付はいたしません — the \"not yet / send in advance\" trap: 1 reverses the meaning (事前に送る = exactly what the text clearly says will NOT be done).",
+      "explain_ja": "資料は当日、会場でお渡しいたします。事前の送付はいたしません — 「まだ／事前に送る」のわなです。1は意味が逆です（事前に送る = 文章がはっきり「しない」と言っていることです）。"
     },
     {
       "n": 10,
@@ -192,7 +210,9 @@
       ],
       "ans": "1",
       "trap": "申請 7日前 + 承認; 緊急の出張は例外",
-      "explain": "出張の7日前までに申請書を提出し、承認を得る; 緊急の出張は例外. 2 sai số ngày (3日前 không được nêu); 3 sai (申請 là bắt buộc); 4 hoán đổi 申請 với 精算 (精算 mới làm sau khi về)."
+      "explain": "出張の7日前までに申請書を提出し、承認を得る; 緊急の出張は例外. 2 sai số ngày (3日前 không được nêu); 3 sai (申請 là bắt buộc); 4 hoán đổi 申請 với 精算 (精算 mới làm sau khi về).",
+      "explain_en": "出張の7日前までに申請書を提出し、承認を得る; 緊急の出張は例外. 2 has the wrong number of days (3日前 is not stated); 3 is wrong (申請 is mandatory); 4 swaps 申請 with 精算 (精算 is done only after returning).",
+      "explain_ja": "出張の7日前までに申請書を提出し、承認を得る。緊急の出張は例外です。2は日数が違います（3日前は述べられていません）。3は間違いです（申請は必須です）。4は申請と精算を取り違えています（精算は戻ってから行います）。"
     },
     {
       "n": 11,
@@ -206,7 +226,9 @@
       ],
       "ans": "3",
       "trap": "グリーン車は支給しない vs 指定席まで支給",
-      "explain": "グリーン車の料金は支給しない; 1 là quy tắc chung của 交通費 (thực phí) nhưng có ngoại lệ cho グリーン車; 2 là mức支給 của 指定席, không phải グリーン車 — bẫy hoán đổi mức支給 giữa hai hạng ghế."
+      "explain": "グリーン車の料金は支給しない; 1 là quy tắc chung của 交通費 (thực phí) nhưng có ngoại lệ cho グリーン車; 2 là mức支給 của 指定席, không phải グリーン車 — bẫy hoán đổi mức支給 giữa hai hạng ghế.",
+      "explain_en": "グリーン車の料金は支給しない; 1 is the general rule for 交通費 (actual cost) but there is an exception for グリーン車; 2 is the 支給 amount for 指定席, not グリーン車 — the trap swapping the 支給 amounts between the two seat classes.",
+      "explain_ja": "グリーン車の料金は支給しない。1は交通費の一般的なルール（実費）ですが、グリーン車には例外があります。2は指定席の支給額で、グリーン車ではありません — 2つの座席クラスの支給額を取り違えるわなです。"
     },
     {
       "n": 12,
@@ -220,7 +242,9 @@
       ],
       "ans": "2",
       "trap": "Mức chung 10,000円 vs 東京23区内 12,000円",
-      "explain": "宿泊費は1泊上限10,000円, 東京23区内は上限12,000円; 1 lấy mức ngoại lệ làm mức chung; 3 hoán đổi hai mức."
+      "explain": "宿泊費は1泊上限10,000円, 東京23区内は上限12,000円; 1 lấy mức ngoại lệ làm mức chung; 3 hoán đổi hai mức.",
+      "explain_en": "宿泊費は1泊上限10,000円, 東京23区内は上限12,000円; 1 takes the exception amount as the general amount; 3 swaps the two amounts.",
+      "explain_ja": "宿泊費は1泊上限10,000円、東京23区内は上限12,000円です。1は例外の額を一般の額としています。3は2つの額を取り違えています。"
     }
   ],
   "instructions": "<li>読解12問で <strong>約40分</strong>。タイマーは <em>開始</em> を押したときにスタートします。時間が終わると自動で提出されます。</li>\n          <li>全体は <strong>4セット</strong> で、各セットはテキスト1つ + 問題3問です。<strong>セットの3問はすべて一緒に</strong>、そのテキストのすぐ下に、CBT試験室形式の解答画面で表示されます — 読んだら3問まとめて答えましょう。1問ずつ行き来する必要はありません。<strong>音声はありません</strong> — 今回は読解の練習だけです。</li>\n          <li>全体は <span class=\"jp\">語彙・文法</span>（商品の不具合についての社内通知の穴埋め）1セット、<span class=\"jp\">表現読解</span>（見積り・価格交渉の会話の穴埋め — 丁寧で柔らかい言い方）1セット、<span class=\"jp\">お知らせ</span>（採用説明会）1セット、長文の <span class=\"jp\">社内規則</span>（出張旅費規程）1セットです。すべてのセットで、<strong>選ぶ前に文章全体をよく読みましょう</strong> — 最初の行に見覚えのある表現が出たからといって、すぐ選ばないこと。</li>\n          <li>穴埋めのセットでは、空欄の前後の構造と一緒に使われる <strong>固定表現</strong> と <strong>敬語の方向</strong> に注意しましょう：誰が行動をして、誰が受けるのか — 自分側は謙譲（<span class=\"jp\">お〜いたします</span>／<span class=\"jp\">〜てまいります</span>）、相手側は尊敬です。<span class=\"jp\">表現読解</span> のセットでは、<strong>まず共感してから断る</strong> 言い方と、電話の切り出し方にも注意しましょう。</li>\n          <li>読解のセットでは、注意点が置かれやすい3点に注意しましょう：(1) <strong>例外</strong>（<span class=\"jp\">ただし…</span>）と <strong>済み／未</strong> の状態 — 「まだ…」や「事前に送らない」が出たら、その状態が <em>どの項目</em> に当てはまるかと、それに伴う結果を明確にすること。(2) <strong>数値</strong> — 比較や計算の問題では、数字ごとに <em>項目名を付けて</em>（どの座席クラスか、どのエリアか、一般の額か例外の額か）メモに書いてから、問われたペアを正確に選ぶこと。(3) 各行動の <strong>主体</strong> — 一方の人の仕事を他方に帰属させたり、一方の項目の仕事を他方に帰属させたりしないこと。</li>\n          <li>左側の <strong>問題一覧</strong> を使って任意の問題へジャンプできます（ページがその問題までスクロールします）。または <kbd>←</kbd> <kbd>→</kbd> キーで前／次の問題へスクロールします。<kbd>A</kbd>–<kbd>D</kbd> キーは、最後にクリックした問題の答えを選びます。各問題で選べる答えは <strong>1つ</strong> だけです。</li>\n          <li>自信のない問題は、その問題の <strong>⚑ フラグ</strong> を押して、後で戻ってきましょう。</li>\n          <li><strong>提出</strong> ボタンは常にページ下部のバー（と左側の列）にあります — 押すと確認ボックスが表示され、その中の <em>提出</em> を押して初めて採点されます。答え、ベトナム語の解説、<strong>各テキストの参考訳</strong> は、ミスノートと一緒に、提出後にのみ表示されます。</li>",

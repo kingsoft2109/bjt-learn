@@ -147,6 +147,8 @@
       "ans": "1",
       "trap": "店員の行動 — 他の人の行動と取り違えないこと",
       "explain": "Trong hình, nhân viên (áo xanh sau quầy レジ) đang đưa túi giấy cho khách; 2 là hành động của vị khách KHÁC đang xếp hàng với giỏ mua hàng (bẫy gắn nhầm người ↔ hành động); 3 và 4 không có ai làm trong ảnh.",
+      "explain_en": "In the picture, the staff member (in blue, behind the レジ counter) is handing a paper bag to a customer; 2 is the action of ANOTHER customer queuing with a shopping basket (the trap misattaching person ↔ action); nobody is doing 3 or 4 in the picture.",
+      "explain_ja": "写真では、店員（青い服、レジの後ろ）が客に紙袋を渡しています。2は買い物かごを持って並んでいる別の客の行動です（人と行動を結び付け間違えるわな）。3と4は写真の中で誰もしていません。",
       "img": "assets/day25-L1a-scene.jpg",
       "audio": "assets/day25-L1-q1.mp3"
     },
@@ -163,6 +165,8 @@
       "ans": "2",
       "trap": "ポスターの文字 — 絵の文字を正確に読むこと",
       "explain": "Poster đỏ trên tường ghi lớn 「セール」(kèm 全品20%オフ); các lựa chọn còn lại đều là chữ thường thấy trên poster nhưng không có trong ảnh này.",
+      "explain_en": "The red poster on the wall says 「セール」 in large letters (with 全品20%オフ); the other options are all wording commonly seen on posters but not in this picture.",
+      "explain_ja": "壁の赤いポスターには大きく「セール」と書かれています（全品20%オフと併記）。ほかの選択肢はどれもポスターによくある言葉ですが、この写真にはありません。",
       "img": "assets/day25-L1b-scene.jpg",
       "audio": "assets/day25-L1-q2.mp3"
     },
@@ -179,6 +183,8 @@
       "ans": "2",
       "trap": "時計の時刻 — 長針と短針を読み分けること",
       "explain": "Kim giờ chỉ số 3, kim phút chỉ số 12 → 午後3時; 1/3/4 là các giờ hay gặp trong đề nghe, không khớp đồng hồ trong ảnh.",
+      "explain_en": "The hour hand points to 3 and the minute hand to 12 → 午後3時; 1/3/4 are times often seen in listening tests and do not match the clock in the picture.",
+      "explain_ja": "短針が3、長針が12を指しています → 午後3時です。1/3/4は聴解問題によく出る時間で、写真の時計とは一致しません。",
       "img": "assets/day25-L1c-scene.jpg",
       "audio": "assets/day25-L1-q3.mp3"
     },
@@ -196,6 +202,8 @@
       "audio": "assets/day25-L2-q4.mp3",
       "trap": "田中は午後4時ごろ戻る — 待つのは自分から電話すること",
       "explain": "Nhân viên đã nói 田中 sẽ về khoảng 4 giờ → người gọi hẹn gọi lại lúc đó là phù hợp nhất; 2 sai hướng (bảo NHÂN VIÊN chờ — người chờ phải là người gọi); 3 hỏi lại điều vừa được trả lời; 4 bịa thêm 出張 (không được nhắc tới).",
+      "explain_en": "The staff member said 田中 will be back around 4 o'clock → the caller saying they will call again at that time is the most appropriate; 2 is the wrong direction (telling the STAFF MEMBER to wait — the one who must wait is the caller); 3 asks again about something just answered; 4 invents a 出張 (not mentioned).",
+      "explain_ja": "店員は田中が4時ごろに戻ると言いました → 電話をかけた人がその時間にかけ直すと言うのが最も適切です。2は方向が違います（店員に待つよう言っている — 待たなければならないのはかけた人です）。3は答えられたばかりのことを聞き直しています。4は出張を作り上げています（触れられていません）。",
       "img": "assets/day25-seg2-q4.jpg"
     },
     {
@@ -212,6 +220,8 @@
       "audio": "assets/day25-L2-q5.mp3",
       "trap": "新しい時間は午後3時",
       "explain": "Giờ mới là 午後3時 (đổi từ 午後2時 sang 午後3時) → xác nhận lại giờ mới + cảm ơn; 2 và 4 giữ giờ cũ 午後2時; 3 bịa thành hủy họp.",
+      "explain_en": "The new time is 午後3時 (changed from 午後2時 to 午後3時) → confirming the new time again + thanking; 2 and 4 keep the old time 午後2時; 3 invents a cancellation of the meeting.",
+      "explain_ja": "新しい時間は午後3時です（午後2時から午後3時に変更）→ 新しい時間を再確認してお礼を言います。2と4は古い時間の午後2時のままです。3は会議の中止を作り上げています。",
       "img": "assets/day25-seg2-q5.jpg"
     },
     {
@@ -228,6 +238,8 @@
       "audio": "assets/day25-L2-q6.mp3",
       "trap": "メールアドレスをもらったあとの行動",
       "explain": "Đã nhận được địa chỉ email → cảm ơn + hẹn gửi trong hôm nay; 2 quá mơ hồ (không nói sẽ làm gì); 3 là câu của phía nhân viên, người gọi nói thì vô nghĩa; 4 mâu thuẫn với việc gửi qua email vừa thống nhất.",
+      "explain_en": "The email address has been received → thanking + saying it will be sent within today; 2 is too vague (does not say what will be done); 3 is a line for the staff side, meaningless if the caller says it; 4 contradicts sending by the email just agreed on.",
+      "explain_ja": "メールアドレスを受け取りました → お礼を言い、今日中に送ると言います。2は漠然としすぎています（何をするか言っていません）。3は店員側の言葉で、かけた人が言っても意味がありません。4は今決めたばかりのメールでの送信と矛盾します。",
       "img": "assets/day25-seg2-q6.jpg"
     },
     {
@@ -244,6 +256,8 @@
       "audio": "assets/day25-L3-q7.mp3",
       "trap": "支払い期限は今月末",
       "explain": "Hạn thanh toán là 今月末 → xác nhận trả trong tháng này; 2 và 4 dời sang 来月 (sai hạn); 3 nói về việc gửi hóa đơn, không liên quan tới hạn trả.",
+      "explain_en": "The payment deadline is 今月末 → confirming payment within this month; 2 and 4 move it to 来月 (wrong deadline); 3 is about sending the invoice, unrelated to the payment deadline.",
+      "explain_ja": "支払期限は今月末です → 今月中に払うと確認します。2と4は来月に延ばしています（期限が間違い）。3は請求書の送付についての話で、支払期限とは関係ありません。",
       "img": "assets/day25-seg3-q7.jpg"
     },
     {
@@ -260,6 +274,8 @@
       "audio": "assets/day25-L3-q8.mp3",
       "trap": "支払い条件は月末締め翌月末払い",
       "explain": "Đối phương đã đồng ý điều kiện 月末締め翌月末払い → tiến hành soạn hợp đồng theo đúng điều kiện đó; 2 đổi thành 当月末払い (sai điều kiện); 3/4 mâu thuẫn với việc vừa thống nhất.",
+      "explain_en": "The other party has agreed to the condition 月末締め翌月末払い → proceed to draw up the contract on exactly that condition; 2 changes it to 当月末払い (wrong condition); 3/4 contradict what was just agreed.",
+      "explain_ja": "相手は月末締め翌月末払いの条件に同意しました → その条件のとおりに契約書の作成を進めます。2は当月末払いに変えています（条件が間違い）。3/4は今決めたばかりのことと矛盾します。",
       "img": "assets/day25-seg3-q8.jpg"
     },
     {
@@ -276,6 +292,8 @@
       "audio": "assets/day25-L3-q9.mp3",
       "trap": "すぐに再発行する — その場でお礼を言うこと",
       "explain": "Nhân viên đã nhận lời phát hành lại ngay → cảm ơn + nhờ vả; 2 mâu thuẫn với câu vừa nghe (すぐに再発行いたします); 3 không liên quan; 4 dời việc sang 来週 trong khi nhân viên nói làm ngay.",
+      "explain_en": "The staff member has agreed to reissue it right away → thanking + making the request; 2 contradicts the line just heard (すぐに再発行いたします); 3 is unrelated; 4 postpones the matter to 来週 even though the staff member said it would be done right away.",
+      "explain_ja": "店員はすぐに再発行すると引き受けました → お礼を言ってお願いします。2は今聞いた言葉（すぐに再発行いたします）と矛盾します。3は関係ありません。4は店員がすぐに行うと言ったのに、来週に延ばしています。",
       "img": "assets/day25-seg3-q9.jpg"
     },
     {
@@ -291,6 +309,8 @@
       "ans": "2",
       "trap": "総数・間違い・正しいの項目名を付けること",
       "explain": "全部500件のうち120件が間違って表示されている; 500件 là tổng số; 380件 = 500−120 (số đúng); 620件 = 500+120 (cộng nhầm tổng với số sai — cùng họ lỗi Ngày 23 Câu 7: tổng / đã xong / còn lại).",
+      "explain_en": "Of 全部500件, 120件が間違って表示されている; 500件 is the total; 380件 = 500−120 (the correct number); 620件 = 500+120 (wrongly adding the total to the wrong number — the same error family as Day 23, Question 7: total / done / remaining).",
+      "explain_ja": "全部500件のうち120件が間違って表示されています。500件は総数です。380件 = 500−120（正しい数）、620件 = 500+120（総数と間違った数を足した計算 — 23日目7問と同じタイプのミスです：総数／済み／残り）。",
       "img": "assets/day25-seg4-q10.jpg"
     },
     {
@@ -306,6 +326,8 @@
       "ans": "2",
       "trap": "原因はデータの移行のミス",
       "explain": "原因はデータの移行のミス; 1/3 là nguyên nhân plausible nhưng không được nêu; 4 mâu thuẫn (nguyên nhân đã rõ).",
+      "explain_en": "原因はデータの移行のミス; 1/3 are plausible causes but are not stated; 4 contradicts (the cause is already clear).",
+      "explain_ja": "原因はデータの移行のミスです。1/3はありそうな原因ですが、述べられていません。4は矛盾します（原因はすでに明らかです）。",
       "img": "assets/day25-seg4-q11.jpg"
     },
     {
@@ -321,6 +343,8 @@
       "ans": "2",
       "trap": "まだ〜ていない（未＋結果）",
       "explain": "修正の最終確認はまだ部長からいただいていません — bẫy まだ〜ていない (dạng Nghe, sạch từ Ngày 14); hệ quả: 確認が終わり次第、ご報告いたします. 1 là bẫy \"đã xong rồi\" mặc định.",
+      "explain_en": "修正の最終確認はまだ部長からいただいていません — the まだ〜ていない trap (Listening form, clean since Day 14); the consequence: 確認が終わり次第、ご報告いたします. 1 is the default \"already done\" trap.",
+      "explain_ja": "修正の最終確認はまだ部長からいただいていません — まだ〜ていないのわなです（聴解の形、14日目からきれいに聞き取れています）。その結果、確認が終わり次第、ご報告いたします、となります。1は「もう終わった」という思い込みのわなです。",
       "img": "assets/day25-seg4-q12.jpg"
     }
   ],
