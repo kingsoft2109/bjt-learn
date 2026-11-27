@@ -40,6 +40,20 @@
         "Cửa hàng Q, tháng 4 là 1,8 triệu yên, là tháng thấp nhất trong nửa đầu năm, nhưng sau đó tăng dần lên, đến tháng 9 đã tăng lên 2,25 triệu yên.",
         "Vâng, tôi đã rõ. Trước cuộc họp tháng tới, hãy tổng hợp cả triển vọng nửa cuối năm giúp tôi nhé.",
         "Vâng, tôi đã rõ ạ."
+      ],
+      "en": [
+        "This is the sales report for the first half of the year. Store P, in the third quarter, had 2.6 million yen in July, 2.5 million yen in August, and 2.7 million yen in September, and September was the highest month in the first half of the year.",
+        "What about Store Q?",
+        "Store Q had 1.8 million yen in April, which was the lowest month in the first half of the year, but after that it gradually increased, rising to 2.25 million yen by September.",
+        "Yes, I understand. Before next month's meeting, please also summarize the outlook for the second half of the year.",
+        "Yes, I understand."
+      ],
+      "ja": [
+        "こちらは上半期の売上報告です。P店は、第3四半期では、7月が260万円、8月が250万円、9月が270万円で、9月が上半期で最も高い月でした。",
+        "Q店はどうですか。",
+        "Q店は、4月が180万円で上半期で最も低い月でしたが、その後徐々に増え、9月には225万円まで上がりました。",
+        "はい、分かりました。来月の会議までに、下半期の見通しもまとめておいてください。",
+        "はい、かしこまりました。"
       ]
     },
     "2": {
@@ -84,6 +98,24 @@
         "Đúng vậy. Điểm còn lại là kho E vào thứ Sáu. Do tồn kho không đủ nên tuần này hủy, dời sang thứ Hai tuần tới lúc 10 giờ 30.",
         "Vâng, tôi đã rõ. Các ngày khác vẫn theo đúng lịch đúng không ạ.",
         "Đúng vậy, thứ Hai và thứ Ba không có thay đổi."
+      ],
+      "en": [
+        "Regarding this week's delivery schedule, there are two changes.",
+        "Yes, please go ahead.",
+        "First, the delivery to Warehouse C on Wednesday has been changed to Thursday at 9:30 due to the partner's circumstances.",
+        "Yes, I understand. On Thursday there is also the delivery for Warehouse D at 11:00, is that correct?",
+        "That's right. The other point is Warehouse E on Friday. Due to insufficient stock, it is cancelled this week and postponed to next Monday at 10:30.",
+        "Yes, I understand. The other days remain as scheduled, is that correct?",
+        "That's right, Monday and Tuesday have no changes."
+      ],
+      "ja": [
+        "今週の配送スケジュールについて、変更が2点あります。",
+        "はい、お願いいたします。",
+        "まず、水曜日のC倉庫への配送は、先方の都合により木曜日の9時30分に変更になりました。",
+        "はい、分かりました。木曜日にはD倉庫の11時の便もありますよね。",
+        "その通りです。もう1点は金曜日のE倉庫です。在庫不足のため今週は中止し、来週月曜日の10時30分に延期します。",
+        "はい、分かりました。その他の日はスケジュール通りでよろしいでしょうか。",
+        "はい、その通りです。月曜日と火曜日は変更ありません。"
       ]
     },
     "3": {
@@ -123,6 +155,22 @@
         "Thuê 3 ngày thì có giảm giá đúng không nhỉ.",
         "Vâng, thuê từ 3 ngày trở lên thì phí thiết bị được giảm 10%. Tất cả đều tính theo 3 ngày ạ.",
         "Được rồi. Cứ tiến hành sắp xếp theo nội dung đó nhé."
+      ],
+      "en": [
+        "The quotation for the equipment to be used for next week's training is ready.",
+        "Please tell me the details.",
+        "Two laptops, and one each of a projector and a conference speaker, for a rental period of 3 days.",
+        "If we rent for 3 days, there is a discount, isn't there?",
+        "Yes, for rentals of 3 days or more, the equipment fee is reduced by 10%. Everything is calculated on a 3-day basis.",
+        "All right. Please proceed with arranging it with those details."
+      ],
+      "ja": [
+        "来週の研修で使う機材の見積書ができました。",
+        "内容を教えてください。",
+        "ノートパソコン2台、プロジェクターと会議用スピーカーが各1台で、レンタル期間は3日間です。",
+        "3日間レンタルすると割引がありますよね。",
+        "はい、3日間以上のレンタルで機材費が10％割引になります。すべて3日間で計算しています。",
+        "分かりました。その内容で手配を進めてください。"
       ]
     }
   },

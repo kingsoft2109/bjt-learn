@@ -40,6 +40,20 @@
         "Ngoài ra, cửa hàng B chênh lệch theo tháng khá lớn, nên hãy xác nhận cả tháng thấp nhất nữa nhé.",
         "Vâng. Ngoài ra, tôi nghĩ tháng 8 chênh lệch giữa hai cửa hàng khá rõ rệt. Tôi sẽ xem cả phần đó ạ.",
         "Nhờ em nhé."
+      ],
+      "en": [
+        "At next week's meeting, please report on third-quarter sales. Store A and Store B, please each prepare in advance.",
+        "Yes, I understand. The third quarter is from July to September, is that correct?",
+        "In addition, Store B has a fairly large variation by month, so please also check the lowest month.",
+        "Yes. In addition, I think the difference between the two stores in August is quite pronounced. I will also look at that part.",
+        "Please take care of it."
+      ],
+      "ja": [
+        "来週の会議で、第3四半期の売上を報告してください。A店とB店、それぞれ準備しておいてください。",
+        "はい、分かりました。第3四半期は7月から9月まででよろしいでしょうか。",
+        "それから、B店は月ごとの差がかなり大きいので、最も低い月も確認してください。",
+        "はい。それから、8月は2店舗の差がかなりはっきりしていると思います。その部分も見ておきます。",
+        "よろしくお願いします。"
       ]
     },
     "2": {
@@ -84,6 +98,24 @@
         "Cuộc họp kinh doanh vào thứ Hai, giờ vẫn giữ nguyên, nhưng địa điểm đổi từ Phòng họp số 1 sang Phòng họp số 3.",
         "Tôi đã nắm được ạ. Các cuộc họp khác không thay đổi đúng không ạ.",
         "Đúng vậy, các cuộc họp còn lại theo đúng bảng."
+      ],
+      "en": [
+        "I am a staff member of the General Affairs Department. Regarding next week's meeting schedule, there are two changes.",
+        "Yes, please go ahead.",
+        "First, the company-wide meeting on Wednesday will be moved to Thursday, starting at 13:00, because the Director is on a business trip. The venue will also change from the Large Meeting Room to Meeting Room No. 2.",
+        "Yes, I understand. What is the other point?",
+        "The business meeting on Monday will keep the same time, but the venue will change from Meeting Room No. 1 to Meeting Room No. 3.",
+        "I have noted that. The other meetings are unchanged, is that correct?",
+        "That's right, the remaining meetings are as shown in the table."
+      ],
+      "ja": [
+        "総務部の者です。来週の会議スケジュールについて、変更が2点あります。",
+        "はい、お願いいたします。",
+        "まず、水曜日の全社会議は、部長が出張のため木曜日に変更し、13時開始となります。場所も大会議室から第2会議室に変わります。",
+        "はい、分かりました。もう1点は何でしょうか。",
+        "月曜日の営業会議は時間はそのままですが、場所が第1会議室から第3会議室に変わります。",
+        "承知いたしました。その他の会議は変更なしでよろしいでしょうか。",
+        "はい、その通りです。その他の会議は表の通りです。"
       ]
     },
     "3": {
@@ -113,6 +145,18 @@
         "18 người thì là Phòng họp B nhỉ. Đặt phòng từ 9 giờ sáng đến 12 giờ giúp tôi. Có dùng máy chiếu nữa đấy.",
         "Vâng, tôi đã rõ. Phòng họp B trong 3 giờ ạ. Vì sử dụng 3 giờ nên phí phòng được giảm 10% ạ.",
         "Nhờ em nhé."
+      ],
+      "en": [
+        "Regarding next week's training, the number of participants has become 18.",
+        "With 18 people, it would be Meeting Room B, wouldn't it? Please book the room from 9:00 a.m. to 12:00 p.m. We will also use a projector.",
+        "Yes, I understand. Meeting Room B for 3 hours. Because it is used for 3 hours, the room fee is reduced by 10%.",
+        "Please take care of it."
+      ],
+      "ja": [
+        "来週の研修について、参加人数が18人になりました。",
+        "18人なら会議室Bですね。午前9時から12時まで予約してください。プロジェクターも使います。",
+        "はい、分かりました。会議室Bを3時間ですね。3時間の利用のため、室料が10％割引になります。",
+        "よろしくお願いします。"
       ]
     }
   },
