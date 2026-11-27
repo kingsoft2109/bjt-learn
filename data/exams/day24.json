@@ -15,6 +15,12 @@
       "body": "先日、お客様より商品の不具合についてご指摘をいただきました。原因の調査を進めております。調査結果につきましては、（　　1　　）改めてご連絡いたします。お客様にはご迷惑をおかけしたことを、深くお詫び（　　2　　）。今後、このようなことがないよう、品質管理を徹底して（　　3　　）。",
       "vi": [
         "Mới đây, chúng tôi đã nhận được phản ánh của khách hàng về lỗi của sản phẩm. Chúng tôi đang tiến hành điều tra nguyên nhân. Về kết quả điều tra, chúng tôi sẽ liên lạc lại ngay khi có kết quả. Chúng tôi xin lỗi sâu sắc vì đã gây phiền phức cho quý khách. Từ nay, để không xảy ra việc như vậy nữa, chúng tôi sẽ triệt để thực hiện quản lý chất lượng."
+      ],
+      "en": [
+        "Recently, we received a complaint from a customer about a defect in the product. We are currently investigating the cause. Regarding the results of the investigation, we will contact you as soon as they are available. We sincerely apologize for the inconvenience caused to you. Going forward, to ensure that this does not happen again, we will thoroughly implement quality control."
+      ],
+      "ja": [
+        "このたび、製品の不具合についてお客様からご指摘をいただきました。現在、原因を調査しております。調査結果につきましては、結果が分かり次第、改めてご連絡いたします。お客様にはご迷惑をおかけし、深くお詫び申し上げます。今後、このようなことがないよう、品質管理を徹底してまいります。"
       ]
     },
     "2": {
@@ -26,6 +32,16 @@
         "A: Về bảng báo giá lần này, vì lý do ngân sách, liệu có thể giảm giá thêm một chút được không ạ. B: Tôi rất hiểu yêu cầu của anh/chị, nhưng xét về mặt chi phí gốc thì việc giảm giá mạnh e là khó ạ.",
         "A: Làm phiền anh/chị, xin anh/chị xác nhận giúp bảng báo giá này ạ.",
         "A: Về cuộc điện thoại vừa rồi tôi nhận được, xin lỗi đã làm phiền, tôi có một việc muốn trao đổi về thời hạn giao hàng ạ."
+      ],
+      "en": [
+        "A: Regarding this quotation, for budget reasons, could you lower the price a little more? B: I fully understand your request, but in terms of cost price, a significant price reduction would be difficult.",
+        "A: Excuse me, could you please check this quotation for me?",
+        "A: Regarding the phone call I just received, I apologize for troubling you, but there is something I would like to discuss with you about the delivery deadline."
+      ],
+      "ja": [
+        "A: 今回の見積書について、予算の都合上、もう少し値引きしていただけないでしょうか。B: ご要望はよく分かりますが、原価の面から、大幅な値引きは難しいかと思います。",
+        "A: 恐れ入りますが、この見積書をご確認いただけますか。",
+        "A: 先ほどいただいたお電話の件ですが、お手数をおかけして申し訳ありません。納期についてご相談したいことがあります。"
       ]
     },
     "3": {
@@ -35,6 +51,12 @@
       "body": "人事部では、2027年度新卒採用の会社説明会を下記のとおり開催いたします。\n対象：2027年3月に大学を卒業予定の方\n日時：12月15日火曜日、午後2時から午後4時まで\n場所：本社5階の大会議室\n定員：50名\n参加を希望される方は、12月10日木曜日までに、人事部の採用担当までメールでお申し込みください。\nなお、説明会の資料は、当日、会場でお渡しいたします。事前の送付はいたしませんので、ご了承ください。",
       "vi": [
         "Phòng Nhân sự sẽ tổ chức buổi thuyết minh công ty cho đợt tuyển dụng sinh viên mới năm tài chính 2027 như dưới đây. Đối tượng: những người dự kiến tốt nghiệp đại học vào tháng 3 năm 2027. Thời gian: thứ Ba ngày 15 tháng 12, từ 2 giờ chiều đến 4 giờ chiều. Địa điểm: phòng họp lớn tầng 5 trụ sở chính. Số lượng: 50 người. Những ai muốn tham gia, vui lòng đăng ký qua email cho người phụ trách tuyển dụng của Phòng Nhân sự trước thứ Năm ngày 10 tháng 12. Ngoài ra, tài liệu của buổi thuyết minh sẽ được phát tại hội trường vào ngày diễn ra. Chúng tôi sẽ không gửi trước, mong quý vị thông cảm."
+      ],
+      "en": [
+        "The Human Resources Department will hold a company briefing session for the recruitment of new graduates for fiscal year 2027 as follows. Eligible participants: those expected to graduate from university in March 2027. Time: Tuesday, December 15, from 2 p.m. to 4 p.m. Venue: Large meeting room on the 5th floor of the head office. Capacity: 50 people. Those who wish to participate, please apply by email to the recruitment officer of the Human Resources Department by Thursday, December 10. In addition, the briefing materials will be distributed at the venue on the day of the session. Please note that we will not send them in advance."
+      ],
+      "ja": [
+        "人事部では、2027年度の新卒採用に向けた会社説明会を以下のとおり開催いたします。対象：2027年3月に大学を卒業見込みの方。日時：12月15日火曜日、午後2時から午後4時まで。場所：本社5階の大会議室。定員：50名。参加を希望される方は、12月10日木曜日までに人事部の採用担当者へメールでお申し込みください。なお、説明会の資料は当日に会場で配布いたします。事前には送付いたしませんので、ご了承ください。"
       ]
     },
     "4": {
@@ -44,6 +66,12 @@
       "body": "第5条（出張の申請）出張する社員は、出張の7日前までに、出張申請書を直属の上司に提出し、承認を得なければならない。ただし、緊急の出張については、この限りではない。\n第6条（交通費）出張の交通費は、実費を支給する。ただし、新幹線を利用する場合は、指定席の料金までを支給するものとし、グリーン車の料金は支給しない。\n第7条（宿泊費）宿泊費は、1泊につき上限10,000円までを支給する。ただし、出張先が東京23区内の場合は、上限を12,000円とする。\n第8条（精算）出張から戻った社員は、帰着後5営業日以内に、領収書を添えて精算書を経理部に提出しなければならない。",
       "vi": [
         "Quy định về chi phí công tác (trích). Điều 5 (Đăng ký công tác): Nhân viên đi công tác phải nộp đơn đăng ký công tác cho cấp trên trực tiếp ít nhất 7 ngày trước khi đi công tác và phải được phê duyệt. Tuy nhiên, trường hợp công tác khẩn cấp thì không áp dụng quy định này. Điều 6 (Chi phí đi lại): Chi phí đi lại khi công tác được chi trả theo thực phí. Tuy nhiên, khi sử dụng Shinkansen, chỉ chi trả đến mức phí ghế chỉ định, không chi trả phí toa Green. Điều 7 (Chi phí lưu trú): Chi phí lưu trú được chi trả tối đa 10.000 yên một đêm. Tuy nhiên, nếu nơi công tác nằm trong 23 quận của Tokyo thì mức tối đa là 12.000 yên. Điều 8 (Quyết toán): Nhân viên trở về từ chuyến công tác phải nộp bảng quyết toán kèm hóa đơn cho Phòng Kế toán trong vòng 5 ngày làm việc sau khi về."
+      ],
+      "en": [
+        "Business Trip Expense Regulations (Excerpt). Article 5 (Business Trip Application): Employees going on a business trip must submit a business trip application to their immediate supervisor at least 7 days before the business trip and must obtain approval. However, this does not apply in the case of an urgent business trip. Article 6 (Travel Expenses): Travel expenses for a business trip will be reimbursed at actual cost. However, when using the Shinkansen, only up to the reserved seat fare will be reimbursed, and the Green Car fare will not be reimbursed. Article 7 (Accommodation Expenses): Accommodation expenses will be reimbursed up to a maximum of 10,000 yen per night. However, if the business trip destination is within the 23 wards of Tokyo, the maximum is 12,000 yen. Article 8 (Settlement): Employees returning from a business trip must submit a settlement statement together with receipts to the Accounting Department within 5 business days after returning."
+      ],
+      "ja": [
+        "出張旅費規程（抜粋）。第5条（出張申請）：出張する社員は、出張の少なくとも7日前までに直属の上司に出張申請書を提出し、承認を受けなければならない。ただし、緊急の出張の場合はこの限りではない。第6条（交通費）：出張の交通費は実費を支給する。ただし、新幹線を利用する場合は指定席料金までとし、グリーン料金は支給しない。第7条（宿泊費）：宿泊費は1泊につき10,000円を上限として支給する。ただし、出張先が東京23区内の場合は上限を12,000円とする。第8条（精算）：出張から戻った社員は、帰着後5営業日以内に領収書を添えて精算書を経理部に提出しなければならない。"
       ]
     }
   },

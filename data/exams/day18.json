@@ -16,6 +16,14 @@
       "vi": [
         "Về chuyến công tác tháng 12, vui lòng nộp đơn trước ngày khởi hành 2 tuần. Nhân dịp đi công tác, việc nộp đơn là cần thiết. Xin lưu ý trước rằng nếu nộp đơn trễ, có thể sẽ không đặt được chuyến bay mong muốn.",
         "Nếu có điểm nào chưa rõ, xin vui lòng liên hệ phòng Tổng vụ. Ngoài ra, chi tiết về chuyến công tác sẽ được phòng Tổng vụ thông báo sau."
+      ],
+      "en": [
+        "Regarding business trips in December, please submit your application 2 weeks before the departure date. An application is required when going on a business trip. Please note in advance that if you submit your application late, it may not be possible to book your desired flight.",
+        "If anything is unclear, please contact the General Affairs Department. In addition, details of the business trip will be announced later by the General Affairs Department."
+      ],
+      "ja": [
+        "12月の出張については、出発日の2週間前までに申請書を提出してください。出張の際には申請が必要です。申請が遅れると、希望の航空便を予約できない場合がありますので、あらかじめご注意ください。",
+        "不明な点があれば、総務部までお問い合わせください。また、出張の詳細は後日、総務部からお知らせします。"
       ]
     },
     "2": {
@@ -26,6 +34,14 @@
       "vi": [
         "Chi phí đào tạo tháng 11: phí địa điểm 30 vạn yên, phí giảng viên 26 vạn yên, phí tài liệu 20 vạn yên, tổng cộng 76 vạn yên. Ngân sách là 90 vạn yên nên còn dư 14 vạn yên.",
         "Dự báo chi phí đào tạo tháng 12 là 85 vạn yên. Ngoài ra, kế hoạch đào tạo mới ở Fukuoka vẫn chưa được phê duyệt nội bộ nên chưa được tính vào dự báo tháng 12."
+      ],
+      "en": [
+        "November training costs: venue fee 30 ten-thousand yen, lecturer fee 26 ten-thousand yen, materials fee 20 ten-thousand yen, for a total of 76 ten-thousand yen. The budget is 90 ten-thousand yen, so there is 14 ten-thousand yen remaining.",
+        "The forecast for December training costs is 85 ten-thousand yen. In addition, the new training plan in Fukuoka has not yet been internally approved, so it is not included in the December forecast."
+      ],
+      "ja": [
+        "11月の研修費用は、会場費30万円、講師費26万円、資料費20万円で、合計76万円です。予算は90万円ですので、14万円余ります。",
+        "12月の研修費用の見込みは85万円です。また、福岡での新しい研修計画はまだ社内承認されていないため、12月の見込みには含まれていません。"
       ]
     },
     "3": {
@@ -39,6 +55,20 @@
         "Chúng tôi đã nhận được phản ánh từ khách hàng rằng thiết kế này rất giống bao bì của sản phẩm 「AA-100」 của công ty chúng tôi. Vì vậy, kính mong quý công ty khẩn trương xem xét và có biện pháp xử lý thích đáng.",
         "Kính mong quý công ty gửi kết quả xem xét cho chúng tôi trước thứ Tư, ngày 25 tháng 11.",
         "Kính thư"
+      ],
+      "en": [
+        "Dear Sir/Madam: We wish your company continued prosperity.",
+        "We would like to inquire about the packaging design of the product 「KK-200」 that your company is selling.",
+        "We have received feedback from customers that this design is very similar to the packaging of our company's product 「AA-100」. Therefore, we respectfully ask your company to promptly review this matter and take appropriate measures.",
+        "We respectfully ask that you send us the results of your review by Wednesday, November 25.",
+        "Yours sincerely"
+      ],
+      "ja": [
+        "拝啓：貴社ますますご繁栄のこととお慶び申し上げます。",
+        "貴社が販売している製品「KK-200」のパッケージデザインについてお伺いいたします。",
+        "このデザインが弊社の製品「AA-100」のパッケージに非常によく似ているというご指摘をお客様からいただいております。つきましては、貴社におかれましては早急にご検討の上、適切なご対応をいただきますようお願い申し上げます。",
+        "ご検討の結果を、11月25日水曜日までに弊社へお送りいただきますようお願い申し上げます。",
+        "敬具"
       ]
     },
     "4": {
@@ -51,6 +81,18 @@
         "1. Về ngày phát hành sản phẩm mới 「SV-600」: Ngày phát hành đã được quyết định là thứ Ba, ngày 15 tháng 12. Tuy nhiên, vì vẫn chưa nhận được xác nhận cuối cùng từ Trưởng phòng Phát triển, nên đã quyết định tạm hoãn việc đăng quảng cáo cho đến khi xác nhận xong.",
         "2. Về mục tiêu bán hàng: Mục tiêu bán hàng tháng đầu tiên đã được quyết định là 500 chiếc. Ngoài ra, tình hình đạt được mục tiêu sẽ do phòng Kinh doanh kiểm tra vào mỗi thứ Hai hằng tuần.",
         "3. Về phân công: Anh/chị Sato của phòng Kinh doanh phụ trách quảng cáo, anh/chị Suzuki của phòng Tổng vụ phụ trách việc thông báo đến các cửa hàng bán lẻ."
+      ],
+      "en": [
+        "Attendees: Sales Department Manager, Development Department Manager, General Affairs Department Manager.",
+        "1. Regarding the release date of the new product 「SV-600」: The release date has been decided as Tuesday, December 15. However, since the final confirmation from the Development Department Manager has not yet been received, it has been decided to temporarily postpone posting the advertisement until the confirmation is complete.",
+        "2. Regarding the sales target: The sales target for the first month has been decided as 500 units. In addition, the status of achievement of the target will be checked by the Sales Department every Monday.",
+        "3. Regarding the assignment of responsibilities: Mr./Ms. Sato of the Sales Department is in charge of advertising, and Mr./Ms. Suzuki of the General Affairs Department is in charge of notifying retail stores."
+      ],
+      "ja": [
+        "出席者：営業部長、開発部長、総務部長。",
+        "1. 新製品「SV-600」の発売日について：発売日は12月15日火曜日に決定しました。しかし、開発部長からの最終確認をまだいただいていないため、確認が終わるまで広告の掲載を一時的に延期することになりました。",
+        "2. 販売目標について：初月の販売目標は500個に決定しました。また、目標の達成状況は、営業部が毎週月曜日に確認します。",
+        "3. 担当分担について：営業部の佐藤さんが広告を担当し、総務部の鈴木さんが小売店への通知を担当します。"
       ]
     }
   },

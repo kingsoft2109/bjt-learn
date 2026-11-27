@@ -25,6 +25,20 @@
         "Vâng, 90 bộ ạ. À, về địa điểm buổi đào tạo, đã đổi từ phòng đào tạo ở tầng 2 trụ sở chính sang phòng họp lớn ở tầng 4 trụ sở chính ạ.",
         "Hiểu rồi. Việc xác nhận cuối cùng về tài liệu thì thế nào rồi?",
         "Bản xác nhận cuối cùng của tài liệu thì tôi vẫn chưa nhận được từ trưởng bộ phận ạ. Ngay khi xác nhận xong, tôi sẽ cho in ạ."
+      ],
+      "en": [
+        "Manager, I would like to report on the new employee training session on Thursday, December 3. The number of participants is 30, and we will prepare 3 sets of materials per person.",
+        "30 people, 3 sets each, so 90 sets in total, right?",
+        "Yes, 90 sets. Oh, regarding the training venue, it has been changed from the training room on the 2nd floor of the head office to the large meeting room on the 4th floor of the head office.",
+        "I see. What about the final confirmation of the materials?",
+        "I have not yet received the final confirmation of the materials from the department head. As soon as it is confirmed, I will have them printed."
+      ],
+      "ja": [
+        "課長、新入社員研修についてご報告いたします。研修は12月3日木曜日で、参加者は30名、資料は1人3部ずつ準備いたします。",
+        "30名で1人3部ずつなら、合計90部ですね。",
+        "はい、90部です。あ、それから研修の会場ですが、本社2階の研修室から本社4階の大会議室に変更になりました。",
+        "分かりました。資料の最終確認はどうなっていますか。",
+        "資料の最終確認は、まだ部長からいただいていません。確認が終わり次第、印刷いたします。"
       ]
     },
     "2": {
@@ -44,6 +58,20 @@
         "Buổi thuyết minh đã đổi sang 14 giờ thứ Năm ngày 3 tháng 12. Địa điểm vẫn giữ nguyên là phòng họp A tầng 3 trụ sở chính. Buổi đào tạo sản phẩm sẽ diễn ra từ 16 giờ thứ Sáu ngày 4 tháng 12 tại phòng họp B tầng 5 trụ sở chính.",
         "Tôi hiểu rồi ạ. Về thông báo buổi đào tạo, tôi vẫn chưa gửi cho tất cả mọi người, nên sẽ gửi trong hôm nay ạ.",
         "Nhờ cậu nhé."
+      ],
+      "en": [
+        "Let me confirm the schedule for Friday, December 4.",
+        "Yes. There is an internal briefing session from 11 a.m. in Meeting Room A on the 3rd floor of the head office, isn't there?",
+        "The briefing session has been changed to 14:00 on Thursday, December 3. The venue remains the same, Meeting Room A on the 3rd floor of the head office. The product training session will be held from 16:00 on Friday, December 4 in Meeting Room B on the 5th floor of the head office.",
+        "I understand. Regarding the training announcement, I have not yet sent it to everyone, so I will send it today.",
+        "Please do."
+      ],
+      "ja": [
+        "12月4日金曜日のスケジュールを確認しますね。",
+        "はい。午前11時から本社3階の会議室Aで社内説明会がありますね。",
+        "説明会は12月3日木曜日の14時に変更になりました。場所は変わらず、本社3階の会議室Aです。製品研修は12月4日金曜日の16時から本社5階の会議室Bで行われます。",
+        "承知いたしました。研修の案内はまだ全員に送っていませんので、本日中に送ります。",
+        "お願いしますね。"
       ]
     },
     "3": {
@@ -61,6 +89,18 @@
         "Đến thứ Sáu ngày 27 tháng 11 có xuất hết được không?",
         "Vâng. 15 chiếc còn lại dự kiến sẽ gửi đi trước thứ Sáu ngày 27 tháng 11. À, hóa đơn thì vẫn chưa phát hành, nên sẽ phát hành sau khi giao hàng ạ.",
         "Hiểu rồi. Vậy cứ tiến hành theo nội dung đó nhé."
+      ],
+      "en": [
+        "Manager, I would like to report on the shipment progress. Of a total of 60 units, 45 have been shipped. There are 15 remaining.",
+        "Can you finish shipping them all by Friday, November 27?",
+        "Yes. The remaining 15 units are scheduled to be sent out before Friday, November 27. Oh, the invoice has not yet been issued, so we will issue it after delivery.",
+        "Understood. Please proceed on that basis."
+      ],
+      "ja": [
+        "課長、出荷の進捗についてご報告いたします。全60台のうち、45台は出荷済みです。残りは15台です。",
+        "11月27日金曜日までに全部出荷できますか。",
+        "はい。残りの15台は11月27日金曜日までに発送する予定です。あ、請求書はまだ発行していませんので、納品後に発行いたします。",
+        "分かりました。では、その内容で進めてください。"
       ]
     },
     "4": {
@@ -80,6 +120,20 @@
         "Số lượng sản xuất đợt đầu dự kiến là 1.000 chiếc. À, bản xác nhận cuối cùng của quảng cáo thì vẫn chưa nhận được từ trưởng bộ phận ạ.",
         "Hiểu rồi. Quảng cáo thì ngay khi xác nhận xong sẽ đăng nhé. Ngày phát hành không thay đổi chứ?",
         "Vâng. Ngày phát hành vẫn giữ nguyên là thứ Năm ngày 10 tháng 12 ạ."
+      ],
+      "en": [
+        "Let me confirm the release of the new product. What is the release date?",
+        "Yes. The release date is Thursday, December 10. The price is 8,000 yen per unit.",
+        "The initial production quantity is planned to be 1,000 units. Oh, I have not yet received the final confirmation of the advertisement from the department head.",
+        "I see. We will publish the advertisement as soon as it is confirmed. The release date hasn't changed, has it?",
+        "Yes. The release date remains Thursday, December 10."
+      ],
+      "ja": [
+        "新製品の発売について確認しますね。発売日はどうなっていますか。",
+        "はい。発売日は12月10日木曜日です。価格は1台8,000円です。",
+        "初回生産数は1,000台の予定です。あ、広告の最終確認は、まだ部長からいただいていません。",
+        "分かりました。広告は確認が終わり次第、掲載しますね。発売日に変更はないですね。",
+        "はい。発売日は変わらず、12月10日木曜日です。"
       ]
     }
   },

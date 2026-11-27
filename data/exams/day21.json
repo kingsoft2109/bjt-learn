@@ -16,6 +16,14 @@
       "vi": [
         "Từ tháng sau, công ty sẽ triển khai hệ thống quản lý bán hàng mới. Nhân dịp triển khai hệ thống mới, vào tuần tới chúng tôi sẽ tổ chức buổi đào tạo cho toàn bộ các phòng ban. Về lịch trình buổi đào tạo, người phụ trách sẽ liên lạc lại sau.",
         "Về việc này, rất mong nhận được sự thông cảm và hợp tác của quý vị. Trân trọng cảm ơn."
+      ],
+      "en": [
+        "From next month, the company will introduce a new sales management system. On the occasion of introducing the new system, next week we will hold a training session for all departments. The person in charge will contact you later about the training schedule.",
+        "Regarding this matter, we kindly ask for your understanding and cooperation. Thank you very much."
+      ],
+      "ja": [
+        "来月から、会社では新しい販売管理システムを導入します。新しいシステムの導入にあたり、来週、全ての部署を対象に研修を行います。研修の日程については、担当者から改めてご連絡いたします。",
+        "この件につきまして、ご理解とご協力を賜りますようお願い申し上げます。よろしくお願いいたします。"
       ]
     },
     "2": {
@@ -27,6 +35,16 @@
         "A: Anh/chị có thể tăng thêm một chút ngân sách được không ạ? B: Tôi rất hiểu điều anh/chị nói, nhưng vì ngân sách có giới hạn nên lần này e là khó.",
         "“Có phải số điện thoại của ông Tanaka không ạ? Tôi là Sato ở công ty IS Shoji, hiện tại bây giờ có tiện nghe điện thoại không ạ?”",
         "“Vậy thì, xin đi thẳng vào vấn đề, mời anh/chị xem tài liệu trước mặt.”"
+      ],
+      "en": [
+        "A: Could you increase the budget a little? B: I fully understand what you're saying, but since the budget is limited, I'm afraid it will be difficult this time.",
+        "“Is this Mr. Tanaka's phone number? This is Sato from IS Shoji Company. Is now a convenient time to talk?”",
+        "“Well then, let's get straight to the point. Please look at the document in front of you.”"
+      ],
+      "ja": [
+        "A：予算をもう少し増やしていただけませんか。B：おっしゃることはよくわかりますが、予算に限りがありますので、今回は難しいと思います。",
+        "“田中様の電話番号でしょうか。IS商事の佐藤と申します。今、お電話よろしいでしょうか。”",
+        "“それでは、早速本題に入ります。お手元の資料をご覧ください。”"
       ]
     },
     "3": {
@@ -37,6 +55,14 @@
       "vi": [
         "Chi phí quảng cáo tháng 10: phí sản xuất 42 vạn yên, phí phương tiện truyền thông 68 vạn yên, phí sự kiện 35 vạn yên, tổng cộng 145 vạn yên. Ngân sách là 160 vạn yên nên còn dư 15 vạn yên.",
         "Dự báo chi phí quảng cáo tháng 11 là 150 vạn yên. Ngoài ra, chiến dịch mới ở Sapporo vẫn chưa được phê duyệt nội bộ nên chưa được tính vào dự báo tháng 11."
+      ],
+      "en": [
+        "October advertising expenses: production costs 420,000 yen, media costs 680,000 yen, event costs 350,000 yen, for a total of 1,450,000 yen. The budget is 1,600,000 yen, so there is 150,000 yen remaining.",
+        "The forecast for November advertising expenses is 1,500,000 yen. In addition, the new campaign in Sapporo has not yet been approved internally, so it is not included in the November forecast."
+      ],
+      "ja": [
+        "10月の広告費：制作費42万円、媒体費68万円、イベント費35万円、合計145万円です。予算は160万円ですので、15万円残っています。",
+        "11月の広告費の見通しは150万円です。また、札幌での新しいキャンペーンはまだ社内の承認が得られていないため、11月の見通しには含まれていません。"
       ]
     },
     "4": {
@@ -48,6 +74,16 @@
         "1. Về kết quả bán hàng tháng 10: Số lượng bán ra trong tháng 10 của sản phẩm mới “TX-300” là 860 chiếc so với mục tiêu 800 chiếc, vượt 60 chiếc. Chi tiết: khu vực Tokyo 480 chiếc, khu vực Osaka 380 chiếc.",
         "2. Về chiến dịch tháng 11: Từ thứ Sáu ngày 20 tháng 11, chiến dịch sẽ được triển khai tại các cửa hàng bán lẻ trên toàn quốc. Tuy nhiên, vì tờ rơi của chiến dịch vẫn chưa in xong, nên đã quyết định sẽ gửi đến từng cửa hàng ngay khi in xong.",
         "3. Về phân công: Anh/chị Yamada của phòng Kinh doanh phụ trách chiến dịch, anh/chị Takahashi của phòng Tổng vụ phụ trách việc gửi tờ rơi."
+      ],
+      "en": [
+        "1. Regarding October sales results: The number of units of the new product “TX-300” sold in October was 860 units against a target of 800 units, exceeding it by 60 units. Details: Tokyo area 480 units, Osaka area 380 units.",
+        "2. Regarding the November campaign: From Friday, November 20, the campaign will be rolled out at retail stores nationwide. However, since the campaign flyers have not yet finished printing, it has been decided that they will be sent to each store as soon as printing is complete.",
+        "3. Regarding assignments: Yamada from the Sales Department is in charge of the campaign, and Takahashi from the General Affairs Department is in charge of sending the flyers."
+      ],
+      "ja": [
+        "1. 10月の販売実績について：新製品「TX-300」の10月の販売数は、目標800台に対して860台で、60台上回りました。内訳は、東京地区480台、大阪地区380台です。",
+        "2. 11月のキャンペーンについて：11月20日金曜日から、全国の小売店でキャンペーンを実施します。ただし、キャンペーンのチラシがまだ印刷できていないため、印刷が終わり次第、各店舗へ送ることになりました。",
+        "3. 担当について：営業部の山田さんがキャンペーンを担当し、総務部の高橋さんがチラシの発送を担当します。"
       ]
     }
   },

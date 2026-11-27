@@ -23,6 +23,18 @@
         "Tôi hiểu rồi. Là thứ Sáu ngày 20 tháng 11 phải không ạ. Khoảng mấy giờ ạ?",
         "Dự kiến khoảng 10 giờ sáng. Về số lượng, trong tổng số 500 sản phẩm, chúng tôi sẽ giao trước 300 sản phẩm, còn 200 sản phẩm còn lại sẽ giao vào thứ Hai ngày 23 tháng 11.",
         "Tôi đã rõ. Vậy xin nhờ giao 300 sản phẩm vào 10 giờ sáng thứ Sáu ngày 20 tháng 11."
+      ],
+      "en": [
+        "I'm calling about the delivery. It was scheduled for Wednesday, November 18, but due to personal circumstances, I would like to change it to Friday, November 20.",
+        "I understand. Friday, November 20, is that right? At about what time?",
+        "It is scheduled for around 10 a.m. As for the quantity, out of a total of 500 products, we will deliver 300 products first, and the remaining 200 products will be delivered on Monday, November 23.",
+        "Understood. Then please deliver 300 products at 10 a.m. on Friday, November 20."
+      ],
+      "ja": [
+        "納品の件でお電話しています。11月18日水曜日の予定でしたが、こちらの都合により、11月20日金曜日に変更したいのですが。",
+        "分かりました。11月20日金曜日ですね。何時頃ですか。",
+        "午前10時頃の予定です。数量については、全500製品のうち、まず300製品をお届けし、残りの200製品は11月23日月曜日に納品いたします。",
+        "承知いたしました。それでは、11月20日金曜日午前10時に300製品の納品をお願いいたします。"
       ]
     },
     "2": {
@@ -42,6 +54,20 @@
         "Cuộc họp kinh doanh vẫn giữ nguyên 10 giờ sáng, nhưng phòng họp đã đổi sang phòng họp C tầng 5. Buổi giới thiệu sản phẩm sẽ diễn ra cùng ngày từ 2 giờ chiều tại phòng họp A tầng 3.",
         "Tôi đã rõ. Về tài liệu của buổi giới thiệu sản phẩm, vì vẫn chưa được trưởng bộ phận xác nhận nên hôm đó chỉ giải thích phần tổng quan thôi phải không ạ?",
         "Đúng vậy. Ngay khi xác nhận xong tôi sẽ gửi tài liệu."
+      ],
+      "en": [
+        "I would like to confirm the schedule for Thursday, December 3.",
+        "Yes. There is a business meeting from 10 a.m. in Meeting Room A on the 3rd floor, isn't there?",
+        "The business meeting remains at 10 a.m., but the meeting room has been changed to Meeting Room C on the 5th floor. The product presentation will be held on the same day from 2 p.m. in Meeting Room A on the 3rd floor.",
+        "Understood. As for the materials for the product presentation, since they have not yet been confirmed by the department manager, on that day you will only explain the overview, is that right?",
+        "That's right. As soon as the confirmation is done, I will send the materials."
+      ],
+      "ja": [
+        "12月3日木曜日の予定を確認したいのですが。",
+        "はい。午前10時から3階の会議室Aで営業会議がありますね。",
+        "営業会議は午前10時のままですが、会議室が5階の会議室Cに変更になりました。製品説明会は同日午後2時から3階の会議室Aで行われます。",
+        "承知いたしました。製品説明会の資料については、まだ部長の確認が取れていないため、当日は概要のみの説明になるということですね。",
+        "そのとおりです。確認が取れ次第、資料をお送りします。"
       ]
     },
     "3": {
@@ -59,6 +85,18 @@
         "Vâng, đúng vậy. Tổng số tiền là 700.000 yên phải không ạ?",
         "Vâng. Ngoài ra, về việc thanh toán, hóa đơn vẫn chưa được phát hành nên chúng tôi sẽ phát hành sau khi giao hàng.",
         "Tôi hiểu rồi. Xin nhờ anh/chị giúp."
+      ],
+      "en": [
+        "I'm calling about the order. You ordered 200 of Product A and 150 of Product B, for a total of 350 products, is that correct?",
+        "Yes, that's right. The total amount is 700,000 yen, isn't it?",
+        "Yes. In addition, regarding payment, the invoice has not yet been issued, so we will issue it after delivery.",
+        "I understand. Please take care of it."
+      ],
+      "ja": [
+        "ご注文の件でお電話しております。製品Aを200点、製品Bを150点、合計350点ご注文いただいておりますが、よろしいでしょうか。",
+        "はい、そのとおりです。合計金額は700,000円ですね。",
+        "はい。また、お支払いにつきましては、請求書がまだ発行されておりませんので、納品後に発行いたします。",
+        "わかりました。よろしくお願いいたします。"
       ]
     },
     "4": {
@@ -74,6 +112,16 @@
         "Tôi là Tanaka. Cảm ơn anh/chị đã luôn giúp đỡ. Tôi gọi điện về buổi họp ngày thứ Ba 24 tháng 11.",
         "Thời gian buổi họp đã đổi từ 3 giờ chiều sang 4 giờ chiều. Địa điểm vẫn là phòng họp D tầng 2 của trụ sở chính.",
         "Ngoài ra, tài liệu cuộc họp vẫn chưa gửi cho trưởng bộ phận. Sau khi xác nhận xong, tôi sẽ gửi qua email trước thứ Sáu ngày 20 tháng 11. Xin nhờ anh/chị giúp đỡ."
+      ],
+      "en": [
+        "This is Tanaka. Thank you for your continued support. I'm calling about the meeting on Tuesday, November 24.",
+        "The meeting time has been changed from 3 p.m. to 4 p.m. The venue remains Meeting Room D on the 2nd floor of the head office.",
+        "In addition, the meeting materials have not yet been sent to the department manager. Once confirmation is done, I will send them by email before Friday, November 20. Thank you for your cooperation."
+      ],
+      "ja": [
+        "田中です。いつもお世話になっております。11月24日火曜日の会議の件でお電話しております。",
+        "会議の時間が午後3時から午後4時に変更になりました。場所は本社2階の会議室Dのままです。",
+        "また、会議資料はまだ部長に送っておりません。確認が取れ次第、11月20日金曜日までにメールでお送りします。よろしくお願いいたします。"
       ]
     }
   },

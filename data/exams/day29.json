@@ -27,6 +27,22 @@
     "Hiểu rồi. Vậy buổi họp tại hiện trường từ 10 giờ sáng thứ Sáu ngày 4 tháng 12 có ổn không?",
     "Vâng, không có vấn đề gì ạ. Ngoài ra, tôi sẽ nộp bảng quyết toán chi phí trước thứ Hai ngày 7 tháng 12 ạ.",
     "Nhờ em nhé."
+   ],
+   "en": [
+    "Manager, I have something I would like to discuss with you about the business trip on Thursday, December 3.",
+    "What is the matter?",
+    "Yes. The flight time has changed; the 9 a.m. flight has been changed to the 1 p.m. flight. Therefore, the hotel check-in time has also been changed to from 3 p.m. onwards.",
+    "Understood. Then is the meeting on site from 10 a.m. on Friday, December 4 all right?",
+    "Yes, there is no problem. In addition, I will submit the expense settlement sheet before Monday, December 7.",
+    "Please take care of it."
+   ],
+   "ja": [
+    "部長、12月3日木曜日の出張についてご相談があります。",
+    "どうしましたか。",
+    "はい。飛行機の時間が変更になり、午前9時の便が午後1時の便になりました。そのため、ホテルのチェックインも午後3時以降に変更になりました。",
+    "分かりました。では、12月4日金曜日午前10時からの現地での会議は大丈夫ですか。",
+    "はい、問題ありません。また、経費精算書は12月7日月曜日までに提出いたします。",
+    "よろしくお願いします。"
    ]
   },
   "2": {
@@ -45,6 +61,18 @@
     "Vâng. Bàn làm việc 45.000 yên một chiếc, 6 chiếc là 270.000 yên. Ghế 18.000 yên một chiếc, 6 chiếc là 108.000 yên ạ.",
     "Cho tôi thêm 1 máy in nữa ạ.",
     "Máy in 32.000 yên một chiếc ạ. Tổng cộng là 410.000 yên. Vì quý khách mua từ 10 món trở lên nên được giảm 5%, còn 389.500 yên ạ. Ngoài ra, báo giá vẫn chưa được quý khách phê duyệt nên số tiền vẫn chưa được chốt ạ."
+   ],
+   "en": [
+    "I am contacting you about supplies for the new office. I would like to order 6 desks and 6 chairs.",
+    "Yes. Desks are 45,000 yen each, so 6 desks are 270,000 yen. Chairs are 18,000 yen each, so 6 chairs are 108,000 yen.",
+    "Please add 1 more printer for me.",
+    "Printers are 32,000 yen each. The total is 410,000 yen. Because you are purchasing 10 items or more, there is a 5% discount, bringing it to 389,500 yen. In addition, the quotation has not yet been approved by you, so the amount has not yet been finalized."
+   ],
+   "ja": [
+    "新しいオフィス用の備品についてご連絡いたします。机を6台と椅子を6脚注文したいのですが。",
+    "はい。机は1台45,000円で、6台で270,000円です。椅子は1脚18,000円で、6脚で108,000円です。",
+    "プリンターをもう1台追加してください。",
+    "プリンターは1台32,000円です。合計は410,000円です。10点以上お買い上げのため5％割引となり、389,500円です。また、見積書はまだお客様に承認されていないため、金額はまだ確定しておりません。"
    ]
   },
   "3": {
@@ -63,6 +91,18 @@
     "Vâng. Người phỏng vấn là trưởng phòng Yamada. Cùng ngày lúc 2 giờ chiều là buổi phỏng vấn vị trí văn phòng của chị Suzuki Misaki, tại phòng họp B, người phỏng vấn là giám đốc Suzuki ạ.",
     "10 giờ sáng thứ Tư ngày 9 tháng 12 là buổi phỏng vấn vị trí kinh doanh của anh Tanaka Shota, tại phòng họp A, người phỏng vấn là trưởng phòng Yamada, đúng không ạ?",
     "Vâng, đúng vậy ạ. Kết quả phỏng vấn sẽ được thông báo qua email trước thứ Sáu ngày 11 tháng 12 ạ."
+   ],
+   "en": [
+    "I would like to confirm the recruitment interviews for next month. The interview for the sales position of Mr. Sato Kenta is at 10 a.m. on Tuesday, December 8, in Meeting Room A, is that correct?",
+    "Yes. The interviewer is Manager Yamada. On the same day at 2 p.m. is the interview for the office position of Ms. Suzuki Misaki, in Meeting Room B, and the interviewer is President Suzuki.",
+    "The interview for the sales position of Mr. Tanaka Shota is at 10 a.m. on Wednesday, December 9, in Meeting Room A, and the interviewer is Manager Yamada, is that correct?",
+    "Yes, that is correct. The interview results will be notified by email before Friday, December 11."
+   ],
+   "ja": [
+    "来月の採用面接について確認いたします。12月8日火曜日午前10時は、営業職の佐藤健太さんの面接で、会議室Aでよろしいでしょうか。",
+    "はい。面接官は山田部長です。同日午後2時は、事務職の鈴木美咲さんの面接で、会議室B、面接官は鈴木社長です。",
+    "12月9日水曜日午前10時は、営業職の田中翔太さんの面接で、会議室A、面接官は山田部長でよろしいでしょうか。",
+    "はい、そのとおりです。面接結果は12月11日金曜日までにメールでお知らせいたします。"
    ]
   },
   "4": {
@@ -82,6 +122,20 @@
     "Tôi đã kiểm tra rồi nhưng vẫn không hiển thị.",
     "Tôi hiểu rồi ạ. Vậy vào buổi sáng thứ Tư ngày 2 tháng 12, chúng tôi sẽ giao máy in mới để đổi ạ. Chiếc máy in bị hỏng chúng tôi sẽ thu lại vào lúc đó ạ.",
     "Tôi hiểu rồi. Nhờ anh/chị giúp ạ."
+   ],
+   "en": [
+    "I am contacting you about the printer received on Tuesday, December 1. When I turn on the power, nothing is displayed on the screen.",
+    "We sincerely apologize. Could you please check whether the power cord is plugged in firmly?",
+    "I have already checked, but it still does not display anything.",
+    "I understand. Then on the morning of Wednesday, December 2, we will deliver a new printer as a replacement. We will collect the broken printer at that time.",
+    "I understand. Thank you for your help."
+   ],
+   "ja": [
+    "12月1日火曜日に受け取ったプリンターについてご連絡いたします。電源を入れても、画面に何も表示されません。",
+    "誠に申し訳ございません。電源コードがしっかり差し込まれているか、ご確認いただけますでしょうか。",
+    "確認しましたが、やはり表示されません。",
+    "かしこまりました。それでは、12月2日水曜日の午前中に、新しいプリンターをお届けして交換いたします。故障したプリンターはその際に回収いたします。",
+    "分かりました。よろしくお願いいたします。"
    ]
   }
  },

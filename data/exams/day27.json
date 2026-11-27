@@ -68,6 +68,64 @@
         "Đồng hồ chỉ 11 giờ sáng.",
         "4.",
         "Đồng hồ chỉ 3 giờ chiều."
+      ],
+      "en": [
+        "Question 1.",
+        "1.",
+        "The employee is handing a flyer to a customer.",
+        "2.",
+        "The employee is arranging the merchandise.",
+        "3.",
+        "The employee is putting up a poster.",
+        "4.",
+        "The employee is making a phone call.",
+        "Question 2.",
+        "1.",
+        "The banner behind says the business hours.",
+        "2.",
+        "The banner behind says the new product presentation.",
+        "3.",
+        "The banner behind says SALE.",
+        "4.",
+        "The banner behind says a notice of closure.",
+        "Question 3.",
+        "1.",
+        "The clock shows 9 a.m.",
+        "2.",
+        "The clock shows 10 a.m.",
+        "3.",
+        "The clock shows 11 a.m.",
+        "4.",
+        "The clock shows 3 p.m."
+      ],
+      "ja": [
+        "第1問。",
+        "1.",
+        "従業員がお客様にチラシを渡しています。",
+        "2.",
+        "従業員が商品を並べています。",
+        "3.",
+        "従業員がポスターを貼っています。",
+        "4.",
+        "従業員が電話をかけています。",
+        "第2問。",
+        "1.",
+        "後ろの横断幕には営業時間が書かれています。",
+        "2.",
+        "後ろの横断幕には新製品発表会と書かれています。",
+        "3.",
+        "後ろの横断幕にはSALEと書かれています。",
+        "4.",
+        "後ろの横断幕には閉店のお知らせと書かれています。",
+        "第3問。",
+        "1.",
+        "時計は午前9時を指しています。",
+        "2.",
+        "時計は午前10時を指しています。",
+        "3.",
+        "時計は午前11時を指しています。",
+        "4.",
+        "時計は午後3時を指しています。"
       ]
     },
     "2": {
@@ -88,6 +146,22 @@
         "Tôi hiểu rồi ạ. Buổi thăm ngày 24 tháng 11 là từ 2 giờ chiều, đúng không ạ.",
         "Xin chào, tôi là Suzuki của công ty thương mại ABC.",
         "Xin chào, tôi là Tanaka của công ty thương mại XYZ."
+      ],
+      "en": [
+        "This is ABC Trading Company. How may I help you?",
+        "I am Suzuki, and I have an appointment with Mr. Sato of ABC Company at 11 a.m.",
+        "I would like to change the visit on November 24 at 10 a.m. to 2 p.m.",
+        "I understand. The visit on November 24 is from 2 p.m., is that correct?",
+        "Hello, I am Suzuki of ABC Trading Company.",
+        "Hello, I am Tanaka of XYZ Trading Company."
+      ],
+      "ja": [
+        "ABC商事です。どのようなご用件でしょうか。",
+        "鈴木と申します。ABC社の佐藤さんと午前11時に約束をしております。",
+        "11月24日午前10時の訪問を午後2時に変更したいのですが。",
+        "かしこまりました。11月24日の訪問は午後2時からでよろしいでしょうか。",
+        "こんにちは、ABC商事の鈴木と申します。",
+        "こんにちは、XYZ商事の田中と申します。"
       ]
     },
     "3": {
@@ -109,6 +183,22 @@
         "Còn lại bao nhiêu chiếc?",
         "150 chiếc ạ. Số còn lại dự định kiểm tra xong trong hôm nay. Ngoài ra, việc đặt hàng thêm thì vẫn chưa quyết định ạ. Sau khi kiểm tra xong mới quyết định ạ.",
         "Hiểu rồi. Khi kiểm tra xong thì báo cáo ngay cho tôi nhé."
+      ],
+      "en": [
+        "Manager, I would like to report on the inspection of the new product. This time, a total of 800 units were received.",
+        "How far has the inspection progressed?",
+        "Yes. The inspection of 650 units has been completed. Among them, 30 defective units were found. The defective goods will be returned to the manufacturer on Tuesday, December 1.",
+        "How many units are left?",
+        "150 units. The rest are scheduled to be inspected within today. In addition, an additional order has not yet been decided. It will be decided after the inspection is finished.",
+        "Understood. When the inspection is finished, please report to me right away."
+      ],
+      "ja": [
+        "部長、新製品の検品についてご報告いたします。今回は合計800個入荷しました。",
+        "検品はどこまで終わっていますか。",
+        "はい。650個の検品が終わりました。そのうち、30個に不良が見つかりました。不良品は12月1日火曜日にメーカーへ返品します。",
+        "残りは何個ですか。",
+        "150個です。残りは今日中に検品を終える予定です。また、追加発注についてはまだ決まっておりません。検品が終わってから決めます。",
+        "分かりました。検品が終わったら、すぐに報告してください。"
       ]
     },
     "4": {
@@ -132,6 +222,24 @@
         "Khi nào thì biết kết quả xét duyệt?",
         "Dự kiến khoảng thứ Năm, ngày 10 tháng 12 sẽ biết ạ. Việc giải ngân dự kiến vào thứ Ba, ngày 15 tháng 12 ạ. Ngoài ra, việc xét duyệt vẫn chưa xong, nên chưa phải là đã quyết định được vay ạ. Khi có kết quả, tôi sẽ báo cáo ngay ạ.",
         "Hiểu rồi. Hãy nộp giấy tờ trước hạn chót nhé."
+      ],
+      "en": [
+        "Regarding the bank loan application, how are the preparations going?",
+        "Yes. The application deadline is Tuesday, December 1. All the necessary documents have been prepared.",
+        "How much capital is needed?",
+        "5 million yen is needed. At present, the funds on hand are 3 million yen, so we are short by 2 million yen.",
+        "When will the screening result be known?",
+        "It is expected to be known around Thursday, December 10. The disbursement is scheduled for Tuesday, December 15. In addition, the screening is not yet finished, so it has not yet been decided that we can borrow. When the result comes out, I will report it right away.",
+        "Understood. Please submit the documents before the deadline."
+      ],
+      "ja": [
+        "銀行融資の申し込みについて、準備はどうなっていますか。",
+        "はい。申し込みの締め切りは12月1日火曜日です。必要な書類はすべて準備できています。",
+        "いくら資金が必要ですか。",
+        "500万円必要です。現在の手元資金は300万円ですので、200万円不足しています。",
+        "審査結果はいつ分かりますか。",
+        "12月10日木曜日ごろに分かる見込みです。融資の実行は12月15日火曜日の予定です。また、審査はまだ終わっていないため、融資が決まったわけではありません。結果が出次第、すぐにご報告いたします。",
+        "分かりました。締め切りまでに書類を提出してください。"
       ]
     }
   },

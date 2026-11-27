@@ -68,6 +68,64 @@
         "Đồng hồ chỉ 4 giờ chiều.",
         "4.",
         "Đồng hồ chỉ 10 giờ sáng."
+      ],
+      "en": [
+        "Question 1.",
+        "1.",
+        "The employee is handing a paper bag to a customer.",
+        "2.",
+        "The employee is lining up with a shopping basket.",
+        "3.",
+        "The employee is putting up a poster.",
+        "4.",
+        "The employee is counting money at the cash register.",
+        "Question 2.",
+        "1.",
+        "The poster stuck on the wall says the working hours.",
+        "2.",
+        "The poster stuck on the wall says SALE.",
+        "3.",
+        "The poster stuck on the wall says new products.",
+        "4.",
+        "The poster stuck on the wall says a notice of closure.",
+        "Question 3.",
+        "1.",
+        "The clock shows 2 p.m.",
+        "2.",
+        "The clock shows 3 p.m.",
+        "3.",
+        "The clock shows 4 p.m.",
+        "4.",
+        "The clock shows 10 a.m."
+      ],
+      "ja": [
+        "第1問。",
+        "1.",
+        "従業員がお客様に紙袋を渡しています。",
+        "2.",
+        "従業員が買い物かごを持って並んでいます。",
+        "3.",
+        "従業員がポスターを貼っています。",
+        "4.",
+        "従業員がレジでお金を数えています。",
+        "第2問。",
+        "1.",
+        "壁に貼ってあるポスターには勤務時間が書いてあります。",
+        "2.",
+        "壁に貼ってあるポスターにはSALEと書いてあります。",
+        "3.",
+        "壁に貼ってあるポスターには新製品と書いてあります。",
+        "4.",
+        "壁に貼ってあるポスターには閉店のお知らせと書いてあります。",
+        "第3問。",
+        "1.",
+        "時計は午後2時を指しています。",
+        "2.",
+        "時計は午後3時を指しています。",
+        "3.",
+        "時計は午後4時を指しています。",
+        "4.",
+        "時計は午前10時を指しています。"
       ]
     },
     "2": {
@@ -88,6 +146,22 @@
         "Tôi hiểu rồi ạ. Cuộc họp ngày mai là từ 3 giờ chiều, đúng không ạ.",
         "Tôi muốn gửi tài liệu qua email, anh/chị có thể cho tôi biết địa chỉ email được không ạ.",
         "Vâng, địa chỉ email là abc@xyz.co.jp ạ."
+      ],
+      "en": [
+        "Hello. I am Suzuki from ABC Trading Company. Is Manager Tanaka there, please?",
+        "I'm sorry. Tanaka is currently out. He is expected to return around 4 p.m.",
+        "I would like to change tomorrow's meeting time from 2 p.m. to 3 p.m.",
+        "I understand. Tomorrow's meeting is from 3 p.m., is that correct?",
+        "I would like to send the materials by email. Could you tell me your email address?",
+        "Yes, the email address is abc@xyz.co.jp."
+      ],
+      "ja": [
+        "お世話になっております。ABC商事の鈴木です。田中課長はいらっしゃいますか。",
+        "申し訳ありません。田中は現在外出しております。午後4時ごろ戻る予定です。",
+        "明日の会議の時間を午後2時から午後3時に変更したいのですが。",
+        "承知いたしました。明日の会議は午後3時からですね。",
+        "資料をメールで送りたいのですが、メールアドレスを教えていただけますか。",
+        "はい、メールアドレスはabc@xyz.co.jpです。"
       ]
     },
     "3": {
@@ -108,6 +182,22 @@
         "Vâng, được ạ.",
         "Anh/chị có thể phát hành lại hóa đơn được không ạ?",
         "Tôi hiểu rồi ạ. Tôi sẽ phát hành lại ngay ạ."
+      ],
+      "en": [
+        "Regarding this month's invoice, what is the payment deadline?",
+        "We would very much appreciate it if you could pay within this month.",
+        "Regarding the contract, would payment terms of closing at the end of the month and payment at the end of the following month be acceptable?",
+        "Yes, that's fine.",
+        "Could you reissue the invoice?",
+        "I understand. I will reissue it right away."
+      ],
+      "ja": [
+        "今月の請求書について、お支払期限はいつまでですか。",
+        "ぜひ今月中にお支払いをお願いいたします。",
+        "契約について、支払条件は月末締め、翌月末払いでよろしいでしょうか。",
+        "はい、結構です。",
+        "請求書を再発行していただけますか。",
+        "承知いたしました。すぐに再発行いたします。"
       ]
     },
     "4": {
@@ -129,6 +219,22 @@
         "120 dữ liệu à. Đã biết nguyên nhân chưa?",
         "Vâng. Nguyên nhân là do lỗi chuyển đổi dữ liệu ạ. Việc sửa chữa mất khoảng 3 ngày. Ngoài ra, việc xác nhận cuối cùng về bản sửa chữa thì tôi vẫn chưa nhận được từ trưởng bộ phận ạ. Ngay khi xác nhận xong, tôi sẽ báo cáo ạ.",
         "Hiểu rồi. Khi sửa xong thì kiểm tra lại một lần nữa nhé."
+      ],
+      "en": [
+        "Manager, I would like to report on the new sales management system. It was scheduled to be put into use from December, but a problem was discovered during testing.",
+        "What kind of problem is it?",
+        "The product inventory quantity sometimes does not display correctly. Out of a total of 500 data records, 120 records are displayed incorrectly.",
+        "120 records? Do you know the cause yet?",
+        "Yes. The cause is a data conversion error. The repair will take about 3 days. In addition, I have not yet received the final confirmation of the fix from the department head. As soon as the confirmation is complete, I will report it.",
+        "Understood. When the repair is finished, please check it once more."
+      ],
+      "ja": [
+        "部長、新しい販売管理システムについてご報告いたします。12月から使用する予定でしたが、テスト中に問題が見つかりました。",
+        "どんな問題ですか。",
+        "製品の在庫数が正しく表示されないことがあります。全500件のデータのうち、120件が誤って表示されています。",
+        "120件ですか。原因はもう分かっていますか。",
+        "はい。原因はデータ変換のエラーです。修正には約3日かかります。また、修正内容の最終確認は、まだ部長からいただいておりません。確認が終わり次第、ご報告いたします。",
+        "分かりました。修正が終わったら、もう一度確認してください。"
       ]
     }
   },
