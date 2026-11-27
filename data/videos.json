@@ -69,6 +69,135 @@
   ],
   "videos": [
     {
+      "slug": "shodaku-suru",
+      "date": "2026-11-27",
+      "duration_sec": 66,
+      "category": "irai-koushou",
+      "situation": {
+        "jp": "承諾する ― 提案を受け入れ、条件と納期を確認する",
+        "vi": "Chấp nhận đề nghị: xác nhận điều kiện và thời hạn với đối tác",
+        "en": "Accepting a proposal: confirming terms and deadline with the client"
+      },
+      "dialogue": [
+        {
+          "speaker": "kimura",
+          "jp": "お世話になっております。先日ご提案した件ですが、ご検討いただけましたでしょうか。",
+          "vi": "Xin chào, rất cảm ơn sự hợp tác của quý công ty. Về đề xuất hôm trước chúng tôi đã gửi, không biết quý công ty đã xem xét chưa ạ?",
+          "en": "Thank you for your continued support. Regarding the proposal we sent the other day, have you had a chance to review it?"
+        },
+        {
+          "speaker": "ohno",
+          "jp": "ああ、社内で検討した結果、提案を承諾することにしたよ。",
+          "vi": "À, sau khi xem xét trong nội bộ, chúng tôi đã quyết định chấp nhận đề xuất của cô.",
+          "en": "Yes, after reviewing it internally, we've decided to accept your proposal."
+        },
+        {
+          "speaker": "kimura",
+          "jp": "ありがとうございます。では、条件について確認させていただけますでしょうか。",
+          "vi": "Cảm ơn ông rất nhiều. Vậy cho phép tôi được xác nhận lại các điều kiện được không ạ?",
+          "en": "Thank you very much. Then, may I confirm the terms with you?"
+        },
+        {
+          "speaker": "ohno",
+          "jp": "うん、まず納期は来月の十五日まででいいんだな。",
+          "vi": "Ừ, trước hết hạn giao hàng là đến ngày 15 tháng sau, đúng không?",
+          "en": "Right, first, the delivery deadline is the 15th of next month, correct?"
+        },
+        {
+          "speaker": "kimura",
+          "jp": "はい、来月十五日までの納品で承知いたしました。数量は五百個でよろしいでしょうか。",
+          "vi": "Vâng, tôi đã rõ là giao hàng trước ngày 15 tháng sau. Số lượng là 500 chiếc, có được không ạ?",
+          "en": "Yes, understood — delivery by the 15th of next month. And the quantity is 500 units, is that correct?"
+        },
+        {
+          "speaker": "ohno",
+          "jp": "ええ、五百個でお願いする。価格は見積もり通りで頼むよ。",
+          "vi": "Ừ, 500 chiếc nhé. Giá thì cứ theo như bảng báo giá.",
+          "en": "Yes, 500 units, please. And the price as quoted in the estimate."
+        },
+        {
+          "speaker": "kimura",
+          "jp": "かしこまりました。正式な契約書を今週中にご用意いたします。",
+          "vi": "Dạ vâng. Tôi sẽ chuẩn bị hợp đồng chính thức trong tuần này ạ.",
+          "en": "Certainly. I'll prepare the formal contract within this week."
+        },
+        {
+          "speaker": "ohno",
+          "jp": "そうしてくれ。取り決めの内容は、契約書にすべて盛り込んでおいてくれ。",
+          "vi": "Cứ làm vậy nhé. Nhớ đưa toàn bộ nội dung đã thỏa thuận vào hợp đồng.",
+          "en": "Please do. Make sure all the agreed terms are included in the contract."
+        },
+        {
+          "speaker": "kimura",
+          "jp": "はい、承知いたしました。ご不明な点がございましたら、いつでもご連絡ください。",
+          "vi": "Vâng, tôi đã rõ ạ. Nếu có điểm nào chưa rõ, xin ông cứ liên hệ với tôi bất cứ lúc nào.",
+          "en": "Yes, understood. If anything is unclear, please feel free to contact me anytime."
+        },
+        {
+          "speaker": "ohno",
+          "jp": "分かった。よろしく頼むよ。",
+          "vi": "Được rồi. Nhờ cô nhé.",
+          "en": "Got it. I'm counting on you."
+        }
+      ],
+      "vocabulary": [
+        {
+          "jp": "承諾",
+          "reading": "しょうだく",
+          "vi": "chấp nhận (đề nghị)",
+          "en": "acceptance, approval"
+        },
+        {
+          "jp": "提案",
+          "reading": "ていあん",
+          "vi": "đề xuất",
+          "en": "proposal"
+        },
+        {
+          "jp": "検討",
+          "reading": "けんとう",
+          "vi": "xem xét",
+          "en": "consideration, review"
+        },
+        {
+          "jp": "条件",
+          "reading": "じょうけん",
+          "vi": "điều kiện",
+          "en": "terms, conditions"
+        },
+        {
+          "jp": "納期",
+          "reading": "のうき",
+          "vi": "hạn giao hàng",
+          "en": "delivery deadline"
+        },
+        {
+          "jp": "数量",
+          "reading": "すうりょう",
+          "vi": "số lượng",
+          "en": "quantity"
+        },
+        {
+          "jp": "契約書",
+          "reading": "けいやくしょ",
+          "vi": "hợp đồng",
+          "en": "contract"
+        },
+        {
+          "jp": "正式",
+          "reading": "せいしき",
+          "vi": "chính thức",
+          "en": "formal, official"
+        },
+        {
+          "jp": "取り決め",
+          "reading": "とりきめ",
+          "vi": "thỏa thuận",
+          "en": "agreement"
+        }
+      ]
+    },
+    {
       "slug": "shincho-hokoku",
       "date": "2026-10-30",
       "duration_sec": 45,
